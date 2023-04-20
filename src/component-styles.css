@@ -1,0 +1,86 @@
+@layer components {
+     /*=============Navbar CSS=================*/
+    .navbar{
+        @apply fixed top-0 border-solid border-gray-200  w-full   border-b py-3 bg-white  z-50;
+    }
+    .nav-link{
+        @apply text-gray-900 text-sm  font-medium transition-all duration-500 mx-0 mb-2 block md:mx-6 md:mb-0;
+    }
+    .nav-link:hover{
+        @apply text-indigo-700 
+    }
+     /*=============Button CSS=================*/
+    .btn-secondary{
+        @apply py-3 px-6 text-sm bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-sm transition-all duration-500;
+    }
+    .btn-secondary:hover{
+        @apply bg-indigo-100;
+    }
+    .btn-primary{
+        @apply bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-sm transition-all duration-500 py-3 px-6 text-sm md:ml-5 ;
+    }
+    .btn-primary:hover{
+       @apply bg-indigo-600;
+    }
+    /*=============IconBox CSS=================*/
+    .icon-box{
+        @apply relative flex h-full w-full cursor-auto items-center justify-center rounded-2xl text-slate-900 border border-solid border-slate-200 lg:w-[140px] mx-auto;
+    }
+    .icon-box svg{
+        @apply w-6 h-6;
+    }
+    .box-overlay{
+        @apply absolute inset-0 grid grid-cols-1 grid-rows-2 gap-1 p-1.5 opacity-0 transition-all duration-300 group-hover:opacity-100;
+    }
+    .copy-btn{
+        @apply flex cursor-pointer items-center justify-center rounded-tl-xl rounded-tr-xl bg-indigo-500 text-sm font-normal text-white;
+    }
+    .download-btn{
+        @apply flex cursor-pointer items-center justify-center rounded-bl-xl rounded-br-xl  bg-slate-600 text-sm font-normal text-white; 
+    }
+    /*=============Custom CSS=================*/
+    .btn-dropdown:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 50px;
+        padding: 1px;
+        background: linear-gradient(270deg, #EAEDF5 4.5%, rgba(234, 237, 245, 0) 70.64%);
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        transition: all .6s ease-in-out;
+    }
+
+    .btn-dropdown:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 50px;
+        padding: 1px;
+        background: linear-gradient(270deg, #A3AAC5 4.5%, rgba(234, 237, 245, 0) 70.64%);
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0;
+        transition: all .6s ease-in-out;
+    }
+
+    .btn-dropdown:hover::before {
+        opacity: 0;
+    }
+
+    .btn-dropdown:hover::after {
+        opacity: 1;
+    }
+
+    #left-bar.scrollbar-thumb-rounded::-webkit-scrollbar-thumb,
+    #left-bar.scrollbar-track-rounded::-webkit-scrollbar-track {
+        border-radius: 15px;
+    }
+
+}
