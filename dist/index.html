@@ -62,7 +62,7 @@
               </svg>
             </a>
             <div class=" items-center ml-4 hidden lg:flex">
-              <span class="text-xs uppercase text-gray-200 font-medium">FOR</span>
+              <span class="text-xs uppercase text-slate-300 font-medium">FOR</span>
               <div class="dropdown inline-block relative">  
                 <button
                   class="btn-dropdown w-36 h-11 bg-white shadow-[16px-9px-13px-rgba(0,0,0,0.02)] rounded-full text-gray-900 font-normal py-3 px-5  inline-flex items-center relative transition-all duration-500">
@@ -351,7 +351,7 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="max-w-full lg:max-w-4xl relative z-30">
             <h1 class="font-manrope text-4xl font-semibold text-gray-900 ">
-              Expertly Crafted <span class="text-indigo-500">455</span> SVG Icons
+              Expertly Crafted <span class="text-indigo-600">455</span> SVG Icons
             </h1>
             <p class="py-8 text-lg font-normal leading-8 text-gray-700">
               Transform your designs with our expertly crafted SVG icons, designed to enhance the visual appeal of your
@@ -409,18 +409,17 @@
     <!----------Navbar End---------->
     <main>
       <!----------Search Start---------->
-      <div class=" sticky top-[70px] z-50 overflow-hidden   bg-white border-b border-gray-200 border-solid">
+      <div class=" sticky top-[68px] z-50 overflow-hidden bg-white border-t border-b border-gray-200 border-solid">
         <div class="relative z-10">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center">
             <div class="relative flex-auto">
               <input type="text" aria-label="Search Icons " placeholder="Search Icons"
                 class="block w-full appearance-none rounded-lg bg-transparent py-4 pr-4 pl-9 text-base text-gray-600 transition placeholder:text-slate-400 focus:outline-none sm:text-[0.8125rem] sm:leading-6 "
-                value=""><svg viewBox="0 0 20 20" aria-hidden="true"
-                class="absolute inset-y-0 left-0 h-full w-5 fill-slate-900 transition">
-                <path
-                  d="M16.72 17.78a.75.75 0 1 0 1.06-1.06l-1.06 1.06ZM9 14.5A5.5 5.5 0 0 1 3.5 9H2a7 7 0 0 0 7 7v-1.5ZM3.5 9A5.5 5.5 0 0 1 9 3.5V2a7 7 0 0 0-7 7h1.5ZM9 3.5A5.5 5.5 0 0 1 14.5 9H16a7 7 0 0 0-7-7v1.5Zm3.89 10.45 3.83 3.83 1.06-1.06-3.83-3.83-1.06 1.06ZM14.5 9a5.48 5.48 0 0 1-1.61 3.89l1.06 1.06A6.98 6.98 0 0 0 16 9h-1.5Zm-1.61 3.89A5.48 5.48 0 0 1 9 14.5V16a6.98 6.98 0 0 0 4.95-2.05l-1.06-1.06Z">
-                </path>
-              </svg>
+                value="">
+              <svg class="absolute inset-y-0 left-0 h-full w-5  transition" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.4998 17.5L15.8332 15.8333M16.6665 9.16666C16.6665 13.3088 13.3086 16.6667 9.1665 16.6667C5.02437 16.6667 1.6665 13.3088 1.6665 9.16666C1.6665 5.02452 5.02437 1.66666 9.1665 1.66666C13.3086 1.66666 16.6665 5.02452 16.6665 9.16666Z" stroke="#111827" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
             </div>
           </div>
         </div>
@@ -429,7 +428,7 @@
       <div class="w-full relative z-10 bg-white lg:flex">
         <!----------Leftbar Start---------->
         <aside id="left-bar"
-          class="sticky top-[120px] overflow-y-auto pr-3  z-20 flex-none hidden   xl:w-72 xl:block py-9 px-8 scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-indigo-600  scrollbar-thumb-rounded scrollbar-track-rounded"
+          class="sticky top-[120px] overflow-y-auto pr-3  z-20 flex-none hidden   xl:w-72 xl:block py-9 px-8  scrollbar-y "
           style="height:calc(100vh - 120px)">
           <ul class="mb-0 list-unstyled grid gap-6">
             <li class="group">
@@ -1172,6 +1171,7 @@
                 <input id="default-range" type="range" value="50"
                   class="w-full h-1 bg-gray-100 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
               </div>
+             
               <div class="block mb-8">
                 <div class="flex items-center justify-between mb-4">
                   <label class="text-sm text-gray-900 font-normal capitalize">Stroke</label>
@@ -1184,13 +1184,11 @@
                 <div class="flex items-center justify-between mb-4 gap-3">
                   <label class="text-sm text-gray-900 font-normal capitalize">Color</label>
                   <div
-                    class="color-palette border border-solid border-gray-300 rounded-md w-28 h-8 p-1 flex items-center justify-between">
-                    <span class="color w-7 h-5 bg-black rounded-sm flex cursor-pointer">
-                    </span>
-                    <span class="color-name text-sm text-gray-900 font-normal pr-2">#111827</span>
+                    class="border border-solid border-gray-300 rounded-md w-28 h-8 p-1 flex items-center justify-between">
+                    <input  id="colorpicker" type="color" value="#000000" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"/>
+                    <input  id="hexcolor"  type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#000000" class="text-sm text-gray-900 font-normal  w-16 focus:outline-none"></input>
                   </div>
                 </div>
-
               </div>
             </div>
              <!----------Rightbar End---------->
@@ -1210,5 +1208,4 @@
     });
   </script> -->
 </body>
-
 </html>
