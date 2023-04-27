@@ -1,49 +1,64 @@
 @layer components {
-     /*=============Navbar CSS=================*/
-    .navbar{
-        @apply fixed top-0 border-solid border-gray-200  w-full   border-b py-3 bg-white  z-50;
+
+    /*=============Navbar CSS=================*/
+    .navbar {
+        @apply fixed top-0 border-solid border-gray-200 w-full border-b py-3 bg-white z-50;
     }
-    .nav-link{
-        @apply text-gray-900 text-sm  font-medium transition-all duration-500 mx-0 mb-2 block md:mx-6 md:mb-0;
+
+    .nav-link {
+        @apply text-gray-900 text-sm font-medium transition-all duration-500 mx-0 mb-2 block md:mx-6 md:mb-0;
     }
-    .nav-link:hover{
-        @apply text-indigo-700 
+
+    .nav-link:hover {
+        @apply text-indigo-700
     }
-     /*=============Button CSS=================*/
-    .btn-secondary{
-        @apply py-3 px-6 text-sm bg-indigo-50 text-indigo-600 rounded-full cursor-pointer font-semibold text-center shadow-sm transition-all duration-500;
+
+    /*=============Button CSS=================*/
+    .btn-secondary {
+        @apply py-3 px-6 text-sm bg-white border border-solid border-gray-300 text-gray-900 rounded-full cursor-pointer font-semibold text-center shadow-sm transition-all duration-500 ;
     }
-    .btn-secondary:hover{
-        @apply bg-indigo-100;
+
+    .btn-secondary:hover {
+        @apply bg-gray-100;
     }
-    .btn-primary{
-        @apply bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-sm transition-all duration-500 py-3 px-6 text-sm md:ml-5 ;
+
+    .btn-primary {
+        @apply bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-sm transition-all duration-500 py-3 px-6 text-sm md:ml-5;
     }
-    .btn-primary:hover{
-       @apply bg-indigo-700;
-    }
-    /*=============IconBox CSS=================*/
-    .icon-box{
-        @apply relative flex h-full w-full cursor-auto items-center justify-center rounded-2xl text-slate-900 border border-solid border-slate-200 lg:w-[140px] mx-auto;
-    }
-    .icon-box svg{
-        @apply w-6 h-6;
-    }
-    .box-overlay{
-        @apply absolute inset-0 w-full grid grid-cols-1 grid-rows-2 gap-1 p-1.5 opacity-0 transition-all duration-300 group-hover:opacity-100 lg:w-[140px];
-    }
-    .copy-btn{
-        @apply flex cursor-pointer items-center justify-center rounded-tl-xl rounded-tr-xl bg-indigo-600 text-sm font-normal text-white transition-all duration-300;
-    }
-    .copy-btn:hover{
+
+    .btn-primary:hover {
         @apply bg-indigo-700;
     }
-    .download-btn{
-        @apply flex cursor-pointer items-center justify-center rounded-bl-xl rounded-br-xl  bg-gray-900 text-sm font-normal text-white transition-all duration-300; 
+
+    /*=============IconBox CSS=================*/
+    .icon-box {
+        @apply relative flex h-full w-full cursor-auto items-center justify-center rounded-2xl text-slate-900 border border-solid border-slate-200 lg:w-[140px] mx-auto;
     }
-    .download-btn:hover{
+
+    .icon-box svg {
+        @apply w-6 h-6;
+    }
+
+    .box-overlay {
+        @apply absolute inset-0 w-full grid grid-cols-1 grid-rows-2 gap-1 p-1.5 opacity-0 transition-all duration-300 group-hover:opacity-100 lg:w-[140px];
+    }
+
+    .copy-btn {
+        @apply flex cursor-pointer items-center justify-center rounded-tl-xl rounded-tr-xl bg-indigo-600 text-sm font-normal text-white transition-all duration-300;
+    }
+
+    .copy-btn:hover {
+        @apply bg-indigo-700;
+    }
+
+    .download-btn {
+        @apply flex cursor-pointer items-center justify-center rounded-bl-xl rounded-br-xl bg-gray-900 text-sm font-normal text-white transition-all duration-300;
+    }
+
+    .download-btn:hover {
         @apply bg-gray-800;
     }
+
     /*=============Custom CSS=================*/
     .btn-dropdown:before {
         content: "";
@@ -83,33 +98,142 @@
     .btn-dropdown:hover::after {
         opacity: 1;
     }
-     /*=============Scrollbar=================*/
+
+    /*=============Scrollbar=================*/
     .scrollbar-y::-webkit-scrollbar {
-        @apply w-1 bg-indigo-50;
-        
+        @apply w-1 bg-transparent;
+
     }
-    
+
     .scrollbar-y::-webkit-scrollbar-thumb {
-        @apply bg-indigo-500 rounded-xl;
+        @apply bg-transparent rounded-xl;
     }
-   
+
     .scrollbar-y::-webkit-scrollbar-track {
-        @apply  rounded-xl;
-       
+        @apply rounded-xl;
+
     }
+
     /*============Color Picker============*/
     [type='color'] {
         @apply appearance-none p-0 w-7 h-5 border-none cursor-pointer;
-      }
-      
-      [type='color']::-webkit-color-swatch-wrapper {
+    }
+
+    [type='color']::-webkit-color-swatch-wrapper {
         @apply p-0;
-      }
-      
-      [type='color']::-webkit-color-swatch {
+    }
+
+    [type='color']::-webkit-color-swatch {
         @apply border-none rounded;
-        
-      }
-      
-      
+
+    }
+
+    /*=========== Code blocks============ */
+    code[class*="language-"],
+    pre[class*="language-"] {
+        color: #fff;
+        font-size: .9375em;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        -webkit-hyphens: none;
+        hyphens: none;
+        text-shadow: none;
+    }
+
+    pre[class*="language-"] {
+        padding: 50px 30px 30px;
+        overflow-x: auto;
+    }
+
+    pre[class*="language-"]::-moz-selection,
+    pre[class*="language-"] ::-moz-selection,
+    code[class*="language-"]::-moz-selection,
+    code[class*="language-"] ::-moz-selection {
+        text-shadow: none;
+        background: #1c4980;
+    }
+
+    pre[class*="language-"]::-moz-selection,
+    pre[class*="language-"] ::-moz-selection,
+    code[class*="language-"]::-moz-selection,
+    code[class*="language-"] ::-moz-selection {
+        text-shadow: none;
+        background: #1c4980;
+    }
+
+    pre[class*="language-"]::selection,
+    pre[class*="language-"] ::selection,
+    code[class*="language-"]::selection,
+    code[class*="language-"] ::selection {
+        text-shadow: none;
+        background: #1c4980;
+    }
+
+    :not(pre)>code[class*="language-"],
+    pre[class*="language-"] {
+        background: #0F172A;
+    }
+
+    .token.number,
+    .token.boolean,
+    .token.deleted {
+        --tw-text-opacity: 1;
+        color: rgb(248 113 113 / var(--tw-text-opacity))
+    }
+
+    .token.tag,
+    .token.class-name,
+    .token.selector,
+    .token.selector .class,
+    .token.selector.class,
+    .token.function {
+        color: #f472b6
+    }
+
+    .token.attr-name,
+    .token.keyword,
+    .token.rule,
+    .token.pseudo-class,
+    .token.important {
+        color: #cbd5e1
+    }
+
+    .token.attr-value,
+    .token.class,
+    .token.string,
+    .token.property {
+        color: #7dd3fc
+    }
+
+    .token.punctuation,
+    .token.attr-equals {
+        color: #64748b
+    }
+
+    .token.unit,
+    .language-css .token.function {
+        color: #a5f3fc
+    }
+
+    .token.comment,
+    .token.module,
+    .token.operator,
+    .token.combinator {
+        color: #94a3b8
+    }
+
+    .token.comment {
+        font-style: normal
+    }
+
+    .language-diff {
+        color: #9ca3af !important;
+    }
+
+    .token.entity {
+        cursor: help;
+    }
+   
 }
