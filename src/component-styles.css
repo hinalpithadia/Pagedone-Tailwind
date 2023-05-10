@@ -58,7 +58,29 @@
     .download-btn:hover {
         @apply bg-gray-800;
     }
-
+    /*=========Blocks CSS==========*/
+    .block-card{
+       @apply bg-slate-50 rounded-2xl p-6 mb-14 overflow-x-hidden lg:p-10;
+    }
+    .block-title{
+        @apply text-lg text-gray-900 font-medium flex items-center;
+    }
+    .block-title span{
+        @apply text-base font-medium text-gray-400 border-l-2 border-solid border-gray-300 ml-3 pl-3 hidden lg:flex;
+    }
+    .view-all-link{
+        @apply flex items-center gap-2 text-base text-gray-600 font-medium transition-all duration-500;
+    }
+    .view-all-link:hover,.view-all-link:hover svg{
+        @apply text-indigo-600;
+    }
+    .view-all-link svg{
+        @apply text-gray-600;
+    }
+   
+    .block-cards{
+        @apply bg-white rounded-xl shadow-sm p-1.5 w-64 h-auto;
+    }
     /*=============Custom CSS=================*/
     .btn-dropdown:before {
         content: "";
@@ -235,5 +257,43 @@
     .token.entity {
         cursor: help;
     }
-   
+    .text-bg-shape{
+        position: relative;
+        margin-top: 4px;
+        /* left: -126px; */
+        z-index: -1;
+        animation: position-anim 0.3s  forwards;
+    }
+    @keyframes position-anim {
+        0% {
+            right: 160px;
+        }
+        100% {
+            right: 0px;
+        }
+    }
+    .text-bg-shape:before{
+        content:'';
+        position: absolute;
+        height: 65px;
+        background: linear-gradient(270deg, rgba(85, 81, 255, 0.19) 0%, rgba(85, 81, 255, 0) 100%);
+        left:-120px;
+        z-index: -1;
+        top: 0px;
+        animation: width-anim 0.3s  forwards;
+    }
+    @keyframes width-anim {
+        0% {width:0px;
+            left:0px;
+        }
+        100% {width:150px;
+            left:-120px;
+        }
+    }
+    .animated {
+        opacity: 0;
+    }
+    .visible {
+        opacity: 1;
+    }
 }

@@ -14,6 +14,7 @@ module.exports = {
   },
   plugins: [
     require('tailwind-scrollbar'),
+    require('postcss-import'),
   ],
 }
 
