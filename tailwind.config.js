@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  
   content: [
     './dist/**/*.{html,js}',
     './dist/index.html',
+    
   ],
   theme: {
     extend: {
@@ -13,8 +15,14 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwind-scrollbar'),
+    
     require('postcss-import'),
+    require('textify.js')
   ],
+  // safelist: [
+  //   '!duration-[0ms]',
+  //   '!delay-[0ms]',
+  //   'html.js :where([class*="taos:"]:not(.taos-init))'
+  // ]
 }
 

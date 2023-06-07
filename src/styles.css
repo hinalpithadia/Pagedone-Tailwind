@@ -6,4 +6,5 @@
 @import 'tailwindcss/utilities';
 
 @import './component-styles.css';
+@import './doc-styles.css';
 
