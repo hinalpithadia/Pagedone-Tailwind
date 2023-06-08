@@ -1,0 +1,11 @@
+@layer components {
+    .accordion.active > .accordion-toggle.accordion-active\:text-indigo-600 {
+        @apply text-indigo-600;
+    }
+    .accordion.active > .accordion-toggle .accordion-active\:text-indigo-600{
+        @apply text-indigo-600;
+    }
+    .accordion.active > .accordion-toggle .accordion-active\:rotate-180{
+        @apply rotate-180;
+    }
+}

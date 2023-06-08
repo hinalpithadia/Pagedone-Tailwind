@@ -960,12 +960,12 @@ pre[class*="language-"]::-moz-selection,
     code[class*="language-"]::-moz-selection,
     code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #1c4980;
+  background: #cee2fb;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection, code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #1c4980;
+  background: #cee2fb;
 }
 
 pre[class*="language-"]::selection,
@@ -973,7 +973,7 @@ pre[class*="language-"]::selection,
     code[class*="language-"]::selection,
     code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #1c4980;
+  background: #cee2fb;
 }
 
 :not(pre)>code[class*="language-"],
@@ -1578,7 +1578,7 @@ svg, rect, circle, path{
 
 .code-wrapper pre[class*="language-"]{
   margin-bottom: 0px;
-  overflow: hidden;
+  overflow-x: auto;
   padding: 1.25rem;
 }
 
@@ -1630,6 +1630,21 @@ svg, rect, circle, path{
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.accordion.active > .accordion-toggle.accordion-active\:text-indigo-600{
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.accordion.active > .accordion-toggle .accordion-active\:text-indigo-600{
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.accordion.active > .accordion-toggle .accordion-active\:rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .sr-only{
@@ -1975,6 +1990,10 @@ svg, rect, circle, path{
   aspect-ratio: 2/1;
 }
 
+.h-0{
+  height: 0px;
+}
+
 .h-1{
   height: 0.25rem;
 }
@@ -2015,6 +2034,10 @@ svg, rect, circle, path{
   height: 1.5rem;
 }
 
+.h-7{
+  height: 1.75rem;
+}
+
 .h-8{
   height: 2rem;
 }
@@ -2033,6 +2056,10 @@ svg, rect, circle, path{
 
 .h-screen{
   height: 100vh;
+}
+
+.max-h-72{
+  max-height: 18rem;
 }
 
 .min-h-\[450px\]{
@@ -2299,6 +2326,10 @@ svg, rect, circle, path{
   white-space: nowrap;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
 .rounded-2xl{
   border-radius: 1rem;
 }
@@ -2360,6 +2391,16 @@ svg, rect, circle, path{
   border-style: solid;
 }
 
+.border-amber-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(251 191 36 / var(--tw-border-opacity));
+}
+
+.border-emerald-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(52 211 153 / var(--tw-border-opacity));
+}
+
 .border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -2370,6 +2411,21 @@ svg, rect, circle, path{
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-indigo-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(129 140 248 / var(--tw-border-opacity));
+}
+
+.border-red-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
+}
+
 .border-slate-200{
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
@@ -2377,6 +2433,16 @@ svg, rect, circle, path{
 
 .border-transparent{
   border-color: transparent;
+}
+
+.bg-amber-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+}
+
+.bg-amber-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 251 235 / var(--tw-bg-opacity));
 }
 
 .bg-blue-50{
@@ -2389,6 +2455,11 @@ svg, rect, circle, path{
   background-color: rgb(236 253 245 / var(--tw-bg-opacity));
 }
 
+.bg-emerald-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+}
+
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -2399,6 +2470,11 @@ svg, rect, circle, path{
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.bg-gray-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
 .bg-gray-700{
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -2407,6 +2483,11 @@ svg, rect, circle, path{
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-50{
@@ -2422,6 +2503,16 @@ svg, rect, circle, path{
 .bg-orange-50{
   --tw-bg-opacity: 1;
   background-color: rgb(255 247 237 / var(--tw-bg-opacity));
+}
+
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-red-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100{
@@ -2663,6 +2754,16 @@ svg, rect, circle, path{
   padding-right: 2rem;
 }
 
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-0\.5{
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -2744,12 +2845,20 @@ svg, rect, circle, path{
   padding-bottom: 4rem;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .pb-7{
   padding-bottom: 1.75rem;
 }
 
 .pb-8{
   padding-bottom: 2rem;
+}
+
+.pl-1{
+  padding-left: 0.25rem;
 }
 
 .pl-12{
@@ -2798,10 +2907,6 @@ svg, rect, circle, path{
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
 }
 
 .text-left{
@@ -2912,9 +3017,19 @@ svg, rect, circle, path{
   letter-spacing: 0.05em;
 }
 
+.text-amber-600{
+  --tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-emerald-600{
+  --tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
 }
 
 .text-gray-300{
@@ -2955,6 +3070,11 @@ svg, rect, circle, path{
 .text-indigo-600{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .text-slate-300{
