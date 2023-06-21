@@ -8,4 +8,11 @@
     .accordion.active > .accordion-toggle .accordion-active\:rotate-180{
         @apply rotate-180;
     }
+    .accordion.active.accordion-active\:bg-indigo-50 {
+        @apply bg-indigo-50;
+    }
+    .accordion.active.accordion-active\:border-indigo-600 {
+        @apply border-indigo-600;
+    }
+    
 }

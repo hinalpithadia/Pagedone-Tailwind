@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
-  <link href="css/styles-output.css" rel="stylesheet">
+  <link href="../css/styles-output.css" rel="stylesheet">
 </head>
 
 <body class="font-inter ">
   <div class="page-container">
-   
      <!----------Navbar Start---------->
      <nav class="navbar ">
         <div class="xl:px-12 lg:px-8 px-5">
@@ -348,9 +347,7 @@
         </div>
       </nav>
       <!----------Navbar End---------->
-    
     <main>
-    
       <div class="w-full relative z-10 bg-white lg:flex">
         <!----------Leftbar Start---------->
         <aside id="left-bar"
@@ -611,54 +608,29 @@
                <!--Header-->  
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Components</span>
-                <h1 class="doc-heading ">Tailwind CSS Badge</h1>
-                <p class="doc-paragraph-big">A visual indicator for a value or status descriptor for UI elements.</p>
-              
+                <h1 class="doc-heading ">Tailwind CSS Buttons</h1>
+                <p class="doc-paragraph-big">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
                
             </div>
             <!--Header End-->
             <div id="mainContent">
-                <p>The badge component can be used to complement other elements such as buttons or text elements as a label or to show the count of a given data, such as the number of comments for an article or how much time has passed by since a comment has been made.</p>
-                <p>Alternatively, badges can also be used as standalone elements that link to a certain page by using the anchor tag instead of a span element.</p>              
+                <p>The button component is probably the most widely used element in any user interface or website as it can be used to launch an action but also to link to other pages.</p>
+                <p>Pagedone provides a large variety of styles and sizes for the button component including outlined buttons, multiple colors, sizes, buttons with icons, and more.</p>              
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Default  badge</h2>
-                    <p>Use the following badge elements to indicate counts or labels inside or outside components.</p>
+                    <h2 class="doc-sub-heading relative group">Default Button types</h2>
+                    <p>Use the following most commonly used button styles</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                                <iframe class="w-full h-0" scrolling="no" height="auto"  onload="resizeIframe(this)" srcdoc="<html lang='en'>
-                                    <head>
-                                      <meta charset='UTF-8'>
-                                      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-                                      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                                      <title>Document</title>
-                                    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap' rel='stylesheet'>
-                                      <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
-                                      <script src='https://cdn.tailwindcss.com'></script>
-                                      <script>
-                                        tailwind.config = {
-                                          theme: {
-                                            fontFamily: {
-                                                manrope: ['Manrope', 'sans-serif'],
-                                                inter: ['Inter', 'serif'],
-                                            },
-                                          }
-                                        }
-                                      </script>
-                                    </head>
-                                    <body class='font-inter'>
-                                        <div class='flex justify-center'>
-                                        <span class='bg-gray-100 text-gray-700 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                        <span class='bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                        <span class='bg-red-50 text-red-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                        <span class='bg-amber-50 text-amber-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                        <span class='bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                        </div>
-                                    </body>
-                                    </html>">
-                                </iframe>
+                              <div class='flex justify-center gap-2'>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>Primary</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100'>Secondary</button>
+                                <button type='button' class='py-2.5 px-5 text-xs border border-gray-300 rounded-full shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-50'>Outline</button>
+                                <button type='button' class='py-2.5 px-5 text-xs rounded-full font-semibold text-indigo-500 transition-all duration-500 hover:bg-indigo-100 hover:shadow-xs hover:text-indigo-700'>Tertiary</button>
+                                <button type='button' class='py-2.5 px-5 text-xs font-semibold text-indigo-500 transition-all duration-500 hover:text-indigo-700'>Link</button>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -681,11 +653,11 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;span class='bg-gray-100 text-gray-700 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-red-50 text-red-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-amber-50 text-amber-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;Label&lt;/span&gt;</code></pre>
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100&quot;&gt;Secondary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs border border-gray-300 rounded-full shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-50&quot;&gt;Outline&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs rounded-full font-semibold text-indigo-500 transition-all duration-500 hover:bg-indigo-100 hover:shadow-xs hover:text-indigo-700&quot;&gt;Tertiary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs font-semibold text-indigo-500 transition-all duration-500 hover:text-indigo-700&quot;&gt;Link&lt;/button&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
                             </div>
@@ -693,42 +665,20 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Badges with size</h2>
-                    <p>Use the utility class and increase the paddings to create a larger variant of the badges.</p>
+                    <h2 class="doc-sub-heading relative group">Destructive Button types</h2>
+                    <p>Use the following most commonly used button styles</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                                <iframe class="w-full h-0" scrolling="no" height="auto"  onload="resizeIframe(this)" srcdoc="<html lang='en'>
-                                    <head>
-                                      <meta charset='UTF-8'>
-                                      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-                                      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                                      <title>Document</title>
-                                    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap' rel='stylesheet'>
-                                      <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
-                                      <script src='https://cdn.tailwindcss.com'></script>
-                                      <script>
-                                        tailwind.config = {
-                                          theme: {
-                                            fontFamily: {
-                                                manrope: ['Manrope', 'sans-serif'],
-                                                inter: ['Inter', 'serif'],
-                                            },
-                                          }
-                                        }
-                                      </script>
-                                    </head>
-                                    <body class='font-inter'>
-                                        <div class='text-center'>
-                                            <span class='bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                            <span class='bg-emerald-50 text-emerald-600 text-sm font-medium mr-2 px-3 py-1 rounded-full h-6'>Label</span>
-                                            <span class='bg-emerald-50 text-emerald-600 text-sm font-medium mr-2 px-3 py-1.5 rounded-full h-7'>Label</span>
-                                        </div>
-                                    </body>
-                                    </html>">
-                                </iframe>
+                              <div class='flex justify-center gap-2'>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-red-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-700'>Primary</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-red-50 text-red-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-100 hover:text-red-700'>Secondary</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-white border border-red-300  text-red-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-50 hover:text-red-700'>Outline</button>
+                                <button type='button' class='py-2.5 px-5 text-xs text-red-500 rounded-full cursor-pointer font-semibold text-center  transition-all duration-500 hover:bg-red-100 hover:text-red-700 hover:shadow-xs'>Tertiary</button>
+                                <button type='button' class='py-2.5 px-5 text-xs text-red-500 rounded-full cursor-pointer font-semibold text-center  transition-all duration-500 hover:text-red-700'>Link</button>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -751,9 +701,11 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;span class='bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-emerald-50 text-emerald-600 text-sm font-medium mr-2 px-3 py-1 rounded-full h-6'&gt;Label&lt;/span&gt;
-&lt;span class='bg-emerald-50 text-emerald-600 text-sm font-medium mr-2 px-3 py-1.5 rounded-full h-7'&gt;Label&lt;/span&gt;</code></pre>
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-red-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-700&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-red-50 text-red-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-100 hover:text-red-700&quot;&gt;Secondary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-white border border-red-300  text-red-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-50 hover:text-red-700&quot;&gt;Outline&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs text-red-500 rounded-full cursor-pointer font-semibold text-center  transition-all duration-500 hover:bg-red-100 hover:text-red-700 hover:shadow-xs&quot;&gt;Tertiary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs text-red-500 rounded-full cursor-pointer font-semibold text-center  transition-all duration-500 hover:text-red-700&quot;&gt;Link&lt;/button&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
                             </div>
@@ -761,44 +713,20 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Badges with Border</h2>
-                    <p>This example can be used to add a border accent to the badge component.</p>
+                    <h2 class="doc-sub-heading relative group">Button Sizes</h2>
+                    <p>Buttons stacked small to large sizes.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                                <iframe class="w-full h-0" scrolling="no" height="auto"  onload="resizeIframe(this)" srcdoc="<html lang='en'>
-                                    <head>
-                                      <meta charset='UTF-8'>
-                                      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-                                      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                                      <title>Document</title>
-                                    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap' rel='stylesheet'>
-                                      <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
-                                      <script src='https://cdn.tailwindcss.com'></script>
-                                      <script>
-                                        tailwind.config = {
-                                          theme: {
-                                            fontFamily: {
-                                                manrope: ['Manrope', 'sans-serif'],
-                                                inter: ['Inter', 'serif'],
-                                            },
-                                          }
-                                        }
-                                      </script>
-                                    </head>
-                                    <body class='font-inter'>
-                                        <div class='text-center'>
-                                            <span class='bg-gray-100 text-gray-700 border border-gray-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                            <span class='bg-indigo-50 text-indigo-500 border border-indigo-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                            <span class='bg-red-50 text-red-600 border border-red-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                            <span class='bg-amber-50 text-amber-600 border border-amber-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                            <span class='bg-emerald-50 text-emerald-600 border border-emerald-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'>Label</span>
-                                        </div>
-                                    </body>
-                                    </html>">
-                                </iframe>
+                              <div class='flex justify-center items-center gap-2'>
+                                <button type='button' class=' py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>Tiny</button>
+                                <button type='button' class='py-3 px-6 text-sm bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>Small</button>
+                                <button type='button' class='py-3.5 px-7 text-base bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>Medium</button>
+                                <button type='button' class='py-4 px-8 text-lg bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>Large</button>
+                                <button type='button' class='py-5 px-9 text-xl bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>Huge</button>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -821,11 +749,11 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;span class='bg-gray-100 text-gray-700 border border-gray-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-indigo-50 text-indigo-500 border border-indigo-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-red-50 text-red-600 border border-red-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-amber-50 text-amber-600 border border-amber-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-emerald-50 text-emerald-600 border border-emerald-400 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;Label&lt;/span&gt;</code></pre>
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Tiny&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-3 px-6 text-sm bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Small&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-3.5 px-7 text-base bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Medium&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-4 px-8 text-lg bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Large&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-5 px-9 text-xl bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Huge&lt;/button&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
                             </div>
@@ -833,44 +761,20 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Badges Style</h2>
-                    <p>Use this example to make the corners less rounded like pills for the badge component.</p>
+                    <h2 class="doc-sub-heading relative group">Button Square</h2>
+                    <p>Use the following most commonly used button styles</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                                <iframe class="w-full h-0" scrolling="no" height="auto"  onload="resizeIframe(this)" srcdoc="<html lang='en'>
-                                    <head>
-                                      <meta charset='UTF-8'>
-                                      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-                                      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                                      <title>Document</title>
-                                    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap' rel='stylesheet'>
-                                      <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
-                                      <script src='https://cdn.tailwindcss.com'></script>
-                                      <script>
-                                        tailwind.config = {
-                                          theme: {
-                                            fontFamily: {
-                                                manrope: ['Manrope', 'sans-serif'],
-                                                inter: ['Inter', 'serif'],
-                                            },
-                                          }
-                                        }
-                                      </script>
-                                    </head>
-                                    <body class='font-inter'>
-                                        <div class='text-center'>
-                                            <span class='bg-gray-100 text-gray-700 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'>Label</span>
-                                            <span class='bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'>Label</span>
-                                            <span class='bg-red-50 text-red-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'>Label</span>
-                                            <span class='bg-amber-50 text-amber-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'>Label</span>
-                                            <span class='bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'>Label</span>
-                                        </div>
-                                    </body>
-                                    </html>">
-                                </iframe>
+                              <div class='flex justify-center gap-2'>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>Primary</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100'>Secondary</button>
+                                <button type='button' class='py-2.5 px-5 text-xs border border-gray-300 rounded-lg shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-50'>Outline</button>
+                                <button type='button' class='py-2.5 px-5 text-xs rounded-lg font-semibold text-indigo-500 transition-all duration-500 hover:bg-indigo-100 hover:shadow-xs hover:text-indigo-700'>Tertiary</button>
+                                <button type='button' class='py-2.5 px-5 text-xs font-semibold text-indigo-500 transition-all duration-500 hover:text-indigo-700'>Link</button>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -893,11 +797,11 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;span class='bg-gray-100 text-gray-700 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-red-50 text-red-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-amber-50 text-amber-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'&gt;Label&lt;/span&gt;
-&lt;span class='bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded h-5'&gt;Label&lt;/span&gt;</code></pre>
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100&quot;&gt;Secondary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs border border-gray-300 rounded-lg shadow-xs bg-white font-semibold text-gray-900 transition-all duration-500 hover:bg-gray-50&quot;&gt;Outline&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs rounded-lg font-semibold text-indigo-500 transition-all duration-500 hover:bg-indigo-100 hover:shadow-xs hover:text-indigo-700&quot;&gt;Tertiary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs font-semibold text-indigo-500 transition-all duration-500 hover:text-indigo-700&quot;&gt;Link&lt;/button&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
                             </div>
@@ -905,44 +809,22 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Badges with indicator</h2>
-                    <p>Use this example to add indicator in badge component.</p>
+                    <h2 class="doc-sub-heading relative group">Button Color Varient</h2>
+                    <p>Use the following most commonly used button styles</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                                <iframe class="w-full h-0" scrolling="no" height="auto"  onload="resizeIframe(this)" srcdoc="<html lang='en'>
-                                    <head>
-                                      <meta charset='UTF-8'>
-                                      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-                                      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                                      <title>Document</title>
-                                    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap' rel='stylesheet'>
-                                      <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
-                                      <script src='https://cdn.tailwindcss.com'></script>
-                                      <script>
-                                        tailwind.config = {
-                                          theme: {
-                                            fontFamily: {
-                                                manrope: ['Manrope', 'sans-serif'],
-                                                inter: ['Inter', 'serif'],
-                                            },
-                                          }
-                                        }
-                                      </script>
-                                    </head>
-                                    <body class='font-inter'>
-                                        <div class='text-center'>
-                                            <span class='inline-flex items-center bg-gray-100 text-gray-700 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'><span class='w-1 h-1 mr-1 rounded-full bg-gray-500 flex'></span>Label</span>
-    <span class='inline-flex items-center bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'><span class='w-1 h-1 mr-1 rounded-full bg-indigo-400 flex'></span>Label</span>
-    <span class='inline-flex items-center bg-red-50 text-red-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'><span class='w-1 h-1 mr-1 rounded-full bg-red-400 flex'></span>Label</span>
-    <span class='inline-flex items-center bg-amber-50 text-amber-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'><span class='w-1 h-1 mr-1 rounded-full bg-amber-400 flex'></span>Label</span>
-    <span class='inline-flex items-center bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'><span class='w-1 h-1 mr-1 rounded-full bg-emerald-500 flex'></span>Label</span>
-                                        </div>
-                                    </body>
-                                    </html>">
-                                </iframe>
+                              <div class='flex justify-center gap-2 flex-wrap'>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-red-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-700'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-yellow-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-yellow-700'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-green-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-green-700'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-purple-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-purple-700'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-orange-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-600 hover:bg-orange-700'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-gray-700 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gray-900'>Button</button>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -965,11 +847,13 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;span class='inline-flex items-center bg-gray-100 text-gray-700 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;&lt;span class='w-1 h-1 mr-1 rounded-full bg-gray-500 flex'&gt;&lt;/span&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;&lt;span class='w-1 h-1 mr-1 rounded-full bg-indigo-400 flex'&gt;&lt;/span&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-red-50 text-red-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;&lt;span class='w-1 h-1 mr-1 rounded-full bg-red-400 flex'&gt;&lt;/span&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-amber-50 text-amber-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;&lt;span class='w-1 h-1 mr-1 rounded-full bg-amber-400 flex'&gt;&lt;/span&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full h-5'&gt;&lt;span class='w-1 h-1 mr-1 rounded-full bg-emerald-500 flex'&gt;&lt;/span&gt;Label&lt;/span&gt;</code></pre>
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-red-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-700&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-yellow-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-yellow-700&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-green-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-green-700&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-purple-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-purple-700&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-orange-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-600 hover:bg-orange-700&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-gray-700 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gray-900&quot;&gt;Button&lt;/button&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
                             </div>
@@ -977,44 +861,22 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Badges with avatar</h2>
-                    <p>Use this example to add avatar in badge component.</p>
+                    <h2 class="doc-sub-heading relative group">Button Outline Varient</h2>
+                    <p>Predefined outline color button styles.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                                <iframe class="w-full h-0" scrolling="no" height="auto"  onload="resizeIframe(this)" srcdoc="<html lang='en'>
-                                    <head>
-                                      <meta charset='UTF-8'>
-                                      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-                                      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                                      <title>Document</title>
-                                    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap' rel='stylesheet'>
-                                      <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
-                                      <script src='https://cdn.tailwindcss.com'></script>
-                                      <script>
-                                        tailwind.config = {
-                                          theme: {
-                                            fontFamily: {
-                                                manrope: ['Manrope', 'sans-serif'],
-                                                inter: ['Inter', 'serif'],
-                                            },
-                                          }
-                                        }
-                                      </script>
-                                    </head>
-                                    <body class='font-inter'>
-                                        <div class='text-center'>
-                                            <span class='inline-flex items-center bg-gray-100 text-gray-700 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'><img src='../images/avatar-img.png' class='w-4 h-4 mr-1'>Label</span>
-                                            <span class='inline-flex items-center bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'><img src='../images/avatar-img.png' class='w-4 h-4 mr-1'>Label</span>
-                                            <span class='inline-flex items-center bg-red-50 text-red-600 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'><img src='../images/avatar-img.png' class='w-4 h-4 mr-1'>Label</span>
-                                            <span class='inline-flex items-center bg-amber-50 text-amber-600 text-xs font-medium mr-2 pl-1 pr-2  py-0.5 rounded-full h-5'><img src='../images/avatar-img.png' class='w-4 h-4 mr-1'>Label</span>
-                                            <span class='inline-flex items-center bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'><img src='../images/avatar-img.png' class='w-4 h-4 mr-1'>Label</span>
-                                        </div>
-                                    </body>
-                                    </html>">
-                                </iframe>
+                              <div class='flex justify-center gap-2 flex-wrap'>
+                                <button type='button' class='py-2.5 px-5 text-xs border border-solid border-indigo-200 text-indigo-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-600 hover:text-white'>Button</button>
+<button type='button' class='py-2.5 px-5 text-xs border border-solid border-red-200 text-red-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-600 hover:text-white'>Button</button>
+<button type='button' class='py-2.5 px-5 text-xs border border-solid border-amber-200 text-amber-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-amber-600 hover:text-white'>Button</button>
+<button type='button' class='py-2.5 px-5 text-xs border border-solid border-emerald-200 text-emerald-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-emerald-600 hover:text-white'>Button</button>
+<button type='button' class='py-2.5 px-5 text-xs border border-solid border-blue-200 text-blue-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-blue-600 hover:text-white'>Button</button>
+<button type='button' class='py-2.5 px-5 text-xs border border-solid border-purple-200 text-purple-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-purple-600 hover:text-white'>Button</button>
+<button type='button' class='py-2.5 px-5 text-xs border border-solid border-gray-200 text-gray-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gray-900 hover:text-white'>Button</button>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -1037,11 +899,13 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;span class='inline-flex items-center bg-gray-100 text-gray-700 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'&gt;&lt;img src='../images/avatar-img.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'&gt;&lt;img src='../images/avatar-img.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-red-50 text-red-600 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'&gt;&lt;img src='../images/avatar-img.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-amber-50 text-amber-600 text-xs font-medium mr-2 pl-1 pr-2  py-0.5 rounded-full h-5'&gt;&lt;img src='../images/avatar-img.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'&gt;&lt;img src='../images/avatar-img.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;</code></pre>
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs border border-solid border-indigo-200 text-indigo-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-600 hover:text-white&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs border border-solid border-red-200 text-red-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-red-600 hover:text-white&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs border border-solid border-amber-200 text-amber-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-amber-600 hover:text-white&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs border border-solid border-emerald-200 text-emerald-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-emerald-600 hover:text-white&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs border border-solid border-blue-200 text-blue-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-blue-600 hover:text-white&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs border border-solid border-purple-200 text-purple-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-purple-600 hover:text-white&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs border border-solid border-gray-200 text-gray-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gray-900 hover:text-white&quot;&gt;Button&lt;/button&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
                             </div>
@@ -1049,44 +913,22 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Badges with flag</h2>
-                    <p>Use this example to add flag in badge component.</p>
+                    <h2 class="doc-sub-heading relative group">Button Gradient</h2>
+                    <p>These buttons use a style that includes two contrasted colors creating an impressive mesh gradient effect.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                                <iframe class="w-full h-0" scrolling="no" height="auto"  onload="resizeIframe(this)" srcdoc="<html lang='en'>
-                                    <head>
-                                      <meta charset='UTF-8'>
-                                      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-                                      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                                      <title>Document</title>
-                                    <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap' rel='stylesheet'>
-                                      <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
-                                      <script src='https://cdn.tailwindcss.com'></script>
-                                      <script>
-                                        tailwind.config = {
-                                          theme: {
-                                            fontFamily: {
-                                                manrope: ['Manrope', 'sans-serif'],
-                                                inter: ['Inter', 'serif'],
-                                            },
-                                          }
-                                        }
-                                      </script>
-                                    </head>
-                                    <body class='font-inter'>
-                                        <div class='text-center'>
-                                            <span class='inline-flex items-center bg-gray-100 text-gray-700 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'><img src='../images/flag.png' class='w-4 h-4 mr-1'>Label</span>
-                                            <span class='inline-flex items-center bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'><img src='../images/flag.png' class='w-4 h-4 mr-1'>Label</span>
-                                            <span class='inline-flex items-center bg-red-50 text-red-600 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'><img src='../images/flag.png' class='w-4 h-4 mr-1'>Label</span>
-                                            <span class='inline-flex items-center bg-amber-50 text-amber-600 text-xs font-medium mr-2 pl-1 pr-2  py-0.5 rounded-full h-5'><img src='../images/flag.png' class='w-4 h-4 mr-1'>Label</span>
-                                            <span class='inline-flex items-center bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'><img src='../images/flag.png' class='w-4 h-4 mr-1'>Label</span>
-                                        </div>
-                                    </body>
-                                    </html>">
-                                </iframe>
+                              <div class='flex justify-center gap-2 flex-wrap'>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-gradient-to-r from-indigo-600 to-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-gradient-to-r from-blue-500 to-blue-300 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-gradient-to-r from-green-500 to-green-300 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-gradient-to-r from-pink-500 to-pink-400 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-gradient-to-r from-orange-500 to-orange-300 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-gradient-to-r from-yellow-400 to-yellow-200 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l'>Button</button>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-gradient-to-r from-gray-700 to-gray-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l'>Button</button>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -1109,11 +951,384 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;span class='inline-flex items-center bg-gray-100 text-gray-700 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'&gt;&lt;img src='../images/flag.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-indigo-50 text-indigo-500 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'&gt;&lt;img src='../images/flag.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-red-50 text-red-600 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'&gt;&lt;img src='../images/flag.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-amber-50 text-amber-600 text-xs font-medium mr-2 pl-1 pr-2  py-0.5 rounded-full h-5'&gt;&lt;img src='../images/flag.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;
-&lt;span class='inline-flex items-center bg-emerald-50 text-emerald-600 text-xs font-medium mr-2 pl-1 pr-2 py-0.5 rounded-full h-5'&gt;&lt;img src='../images/flag.png' class='w-4 h-4 mr-1'&gt;Label&lt;/span&gt;</code></pre>
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-gradient-to-r from-indigo-600 to-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-gradient-to-r from-blue-500 to-blue-300 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-gradient-to-r from-green-500 to-green-300 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-gradient-to-r from-pink-500 to-pink-400 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-gradient-to-r from-orange-500 to-orange-300 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-gradient-to-r from-yellow-400 to-yellow-200 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-gradient-to-r from-gray-700 to-gray-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-gradient-to-l&quot;&gt;Button&lt;/button&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group">Button with gradient outline</h2>
+                    <p>This is a special button style that incorporates a gradient color for the outline that can be used as a secondary style to the fully colored gradient buttons..</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class='flex justify-center gap-2 flex-wrap'>
+                                <button class='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-indigo-600 font-semibold rounded-full group bg-gradient-to-br from-indigo-600 to-indigo-500 group-hover:from-indigo-600 group-hover:to-indigo-500 hover:text-white'>
+                                  <span class='relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0'>
+                                      Button
+                                  </span>
+                                </button>
+                                <button class='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-blue-600 font-semibold rounded-full group bg-gradient-to-br from-blue-500 to-blue-300 group-hover:from-blue-500 group-hover:to-blue-300 hover:text-white'>
+                                  <span class='relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0'>
+                                      Button
+                                  </span>
+                                </button>
+                                <button class='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-green-600 font-semibold rounded-full group bg-gradient-to-br from-green-500 to-green-300 group-hover:from-green-500 group-hover:to-green-300 hover:text-white'>
+                                  <span class='relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0'>
+                                      Button
+                                  </span>
+                                </button>
+                                <button class='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-pink-600 font-semibold rounded-full group bg-gradient-to-br from-pink-500 to-pink-400 group-hover:from-pink-500 group-hover:to-pink-400 hover:text-white'>
+                                  <span class='relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0'>
+                                      Button
+                                  </span>
+                                </button>
+                                <button class='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-orange-600 font-semibold rounded-full group bg-gradient-to-br from-orange-500 to-orange-300 group-hover:from-orange-500 group-hover:to-orange-300 hover:text-white'>
+                                  <span class='relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0'>
+                                      Button
+                                  </span>
+                                </button>
+                                <button class='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-yellow-600 font-semibold rounded-full group bg-gradient-to-br from-yellow-400 to-yellow-200 group-hover:from-yellow-400 group-hover:to-yellow-200 hover:text-white'>
+                                  <span class='relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0'>
+                                      Button
+                                  </span>
+                                </button>
+                                <button class='relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-gray-600 font-semibold rounded-full group bg-gradient-to-br from-gray-700 to-gray-500 group-hover:from-gray-700 group-hover:to-gray-500 hover:text-white'>
+                                  <span class='relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0'>
+                                      Button
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button class=&quot;relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-indigo-600 font-semibold rounded-full group bg-gradient-to-br from-indigo-600 to-indigo-500 group-hover:from-indigo-600 group-hover:to-indigo-500 hover:text-white&quot;&gt;
+  &lt;span class=&quot;relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0&quot;&gt;
+      Button
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-blue-600 font-semibold rounded-full group bg-gradient-to-br from-blue-500 to-blue-300 group-hover:from-blue-500 group-hover:to-blue-300 hover:text-white&quot;&gt;
+  &lt;span class=&quot;relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0&quot;&gt;
+      Button
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-green-600 font-semibold rounded-full group bg-gradient-to-br from-green-500 to-green-300 group-hover:from-green-500 group-hover:to-green-300 hover:text-white&quot;&gt;
+  &lt;span class=&quot;relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0&quot;&gt;
+      Button
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-pink-600 font-semibold rounded-full group bg-gradient-to-br from-pink-500 to-pink-400 group-hover:from-pink-500 group-hover:to-pink-400 hover:text-white&quot;&gt;
+  &lt;span class=&quot;relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0&quot;&gt;
+      Button
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-orange-600 font-semibold rounded-full group bg-gradient-to-br from-orange-500 to-orange-300 group-hover:from-orange-500 group-hover:to-orange-300 hover:text-white&quot;&gt;
+  &lt;span class=&quot;relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0&quot;&gt;
+      Button
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-yellow-600 font-semibold rounded-full group bg-gradient-to-br from-yellow-400 to-yellow-200 group-hover:from-yellow-400 group-hover:to-yellow-200 hover:text-white&quot;&gt;
+  &lt;span class=&quot;relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0&quot;&gt;
+      Button
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs text-gray-600 font-semibold rounded-full group bg-gradient-to-br from-gray-700 to-gray-500 group-hover:from-gray-700 group-hover:to-gray-500 hover:text-white&quot;&gt;
+  &lt;span class=&quot;relative py-2.5 px-5 transition-all ease-in duration-75 bg-white rounded-full group-hover:bg-opacity-0&quot;&gt;
+      Button
+  &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group">Button with icons</h2>
+                    <p>Use the following examples to add a SVG icon inside the button either on the left or right side.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class='flex justify-center gap-2 flex-wrap'>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 flex items-center hover:bg-indigo-700'>
+                                  <svg class='mr-3' width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                      <path d='M5 1L2.41421 3.58579C1.74755 4.25245 1.41421 4.58579 1.41421 5C1.41421 5.41421 1.74755 5.74755 2.41421 6.41421L5 9' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
+                                  </svg>
+                                  Primary
+                              </button>
+                              <button type='button' class='py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 flex items-center hover:bg-indigo-100'>
+                                <svg class='mr-3' width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M5 1L2.41421 3.58579C1.74755 4.25245 1.41421 4.58579 1.41421 5C1.41421 5.41421 1.74755 5.74755 2.41421 6.41421L5 9' stroke='#5551FF' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
+                                </svg>
+                                Secondary
+                              </button>
+                              <button type='button' class='py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 flex items-center hover:bg-indigo-700'>
+                                Primary
+                                <svg class='ml-3' width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
+                                </svg>
+                            </button>
+                            <button type='button' class='py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 flex items-center hover:bg-indigo-100'>
+                              Secondary
+                              <svg class='ml-3' width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                  <path d='M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1' stroke='#5551FF' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
+                              </svg>
+                            </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex justify-center gap-2 flex-wrap&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 flex items-center hover:bg-indigo-700&quot;&gt;
+    &lt;svg class=&quot;mr-3&quot; width=&quot;6&quot; height=&quot;10&quot; viewBox=&quot;0 0 6 10&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M5 1L2.41421 3.58579C1.74755 4.25245 1.41421 4.58579 1.41421 5C1.41421 5.41421 1.74755 5.74755 2.41421 6.41421L5 9&quot; stroke=&quot;white&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt; Primary &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 flex items-center hover:bg-indigo-100&quot;&gt;
+    &lt;svg class=&quot;mr-3&quot; width=&quot;6&quot; height=&quot;10&quot; viewBox=&quot;0 0 6 10&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M5 1L2.41421 3.58579C1.74755 4.25245 1.41421 4.58579 1.41421 5C1.41421 5.41421 1.74755 5.74755 2.41421 6.41421L5 9&quot; stroke=&quot;#5551FF&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt; Secondary &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 flex items-center hover:bg-indigo-700&quot;&gt; Primary &lt;svg class=&quot;ml-3&quot; width=&quot;6&quot; height=&quot;10&quot; viewBox=&quot;0 0 6 10&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1&quot; stroke=&quot;white&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 flex items-center hover:bg-indigo-100&quot;&gt; Secondary &lt;svg class=&quot;ml-3&quot; width=&quot;6&quot; height=&quot;10&quot; viewBox=&quot;0 0 6 10&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1&quot; stroke=&quot;#5551FF&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group">Icon buttons</h2>
+                    <p>Sometimes you need a button to indicate an action using only an icon.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class='flex justify-center gap-2 flex-wrap'>
+                                <button type='button' class='w-8 h-8  bg-indigo-500 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500  hover:bg-indigo-700'>
+                                  <svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                      <path d='M1.22229 5.00019H8.77785M5.00007 8.77797V1.22241' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
+                                  </svg>
+                                </button>
+                                <button type='button' class='w-8 h-8  bg-indigo-50 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500  hover:bg-indigo-100'>
+                                  <svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                      <path d='M1.22229 5.00013H8.77785M5.00007 8.77791V1.22235' stroke='#5551FF' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
+                                  </svg>
+                              </button>
+                              <button type='button' class='w-8 h-8  bg-white shadow-xs border border-gray-300 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500  hover:bg-gray-50'>
+                                <svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.22229 5.0001H8.77785M5.00007 8.77788V1.22232' stroke='#101828' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
+                                </svg>
+                              </button>
+                              <button type='button' class='w-8 h-8  rounded-full flex items-center justify-center cursor-pointer transition-all duration-500  hover:bg-indigo-200'>
+                                <svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M1.22229 5.00011H8.77785M5.00007 8.77789V1.22233' stroke='#5551FF' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
+                                </svg>
+                              </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;w-8 h-8  bg-indigo-500 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 flex items-center hover:bg-indigo-700&quot;&gt;
+  &lt;svg width=&quot;10&quot; height=&quot;10&quot; viewBox=&quot;0 0 10 10&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M1.22229 5.00019H8.77785M5.00007 8.77797V1.22241&quot; stroke=&quot;white&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;w-8 h-8  bg-indigo-50 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 flex items-center hover:bg-indigo-100&quot;&gt;
+  &lt;svg width=&quot;10&quot; height=&quot;10&quot; viewBox=&quot;0 0 10 10&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M1.22229 5.00013H8.77785M5.00007 8.77791V1.22235&quot; stroke=&quot;#5551FF&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;w-8 h-8  bg-white shadow-xs border border-gray-300 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 flex items-center hover:bg-gray-50&quot;&gt;
+&lt;svg width=&quot;10&quot; height=&quot;10&quot; viewBox=&quot;0 0 10 10&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+    &lt;path d=&quot;M1.22229 5.0001H8.77785M5.00007 8.77788V1.22232&quot; stroke=&quot;#101828&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;w-8 h-8  rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 flex items-center hover:bg-indigo-200&quot;&gt;
+&lt;svg width=&quot;10&quot; height=&quot;10&quot; viewBox=&quot;0 0 10 10&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+    &lt;path d=&quot;M1.22229 5.00011H8.77785M5.00007 8.77789V1.22233&quot; stroke=&quot;#5551FF&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;
+&lt;/button&gt;
+</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group">Loader</h2>
+                    <p>Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class='flex justify-center gap-2 flex-wrap'>
+                                <button type='button' class='w-12 h-12 text-xs bg-indigo-500 text-white rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>
+                                  <span class='animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-white rounded-full' role='status' aria-label='loading'>
+                                    <span class='sr-only'>Loading...</span>
+                                  </span>
+                                </button>
+                                <button type='button' class='py-3 px-4 inline-flex justify-center items-center gap-2 bg-indigo-500 text-white rounded-lg cursor-pointer font-semibold text-base text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>
+                                  <span class='animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-white rounded-full' role='status' aria-label='loading'>
+                                    <span class='sr-only'>Loading...</span>
+                                  </span>
+                                  Loading
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;button type=&quot;button&quot; class=&quot;w-12 h-12 text-xs bg-indigo-500 text-white rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;
+  &lt;span class=&quot;animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-white rounded-full&quot; role=&quot;status&quot; aria-label=&quot;loading&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 bg-indigo-500 text-white rounded-lg cursor-pointer font-semibold text-base text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;
+  &lt;span class=&quot;animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-white rounded-full&quot; role=&quot;status&quot; aria-label=&quot;loading&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+  &lt;/span&gt;
+  Loading
+&lt;/button&gt;
+</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group">Disabled</h2>
+                    <p>Use the following styles to indicate a disabled button. This can be often used inside form elements to disable the submit button before all the form elements have been completed and validated.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class='flex justify-center gap-2 flex-wrap'>
+                                <button type='button' class='py-2.5 px-5 text-xs bg-indigo-200 text-white rounded-full font-semibold text-center shadow-xs transition-all duration-500 cursor-not-allowed'>Button</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class='flex justify-center gap-2 flex-wrap'&gt;
+  &lt;button type='button' class='py-2.5 px-5 text-xs bg-indigo-200 text-white rounded-full font-semibold text-center shadow-xs transition-all duration-500 cursor-not-allowed'&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
                             </div>
@@ -1131,14 +1346,21 @@
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Accordion</a>
+                  <a href="#" class="mb-5 block active:text-indigo-600">Button</a>
                     <ul class="space-y-4 ">
-                      <li><a href="#">Default accordion</a></li>
-                      <li><a href="#">Always open</a></li>
-                      <li><a href="#">With border</a></li>
-                      <li><a href="#">Arrow style</a></li>
-                      <li><a href="#">With background</a></li>
-                      <li><a href="#">Nested accordion</a></li>
+                      <li><a href="#">Default Button</a></li>
+                      <li><a href="#">Destructive Button </a></li>
+                      <li><a href="#">Button Sizes</a></li>
+                      <li><a href="#">Button Shape</a></li>
+                      <li><a href="#">Button Color Varient</a></li>
+                      <li><a href="#">Button Outline Varient</a></li>
+                      <li><a href="#">Button Gradient</a></li>
+                      <li><a href="#">Button With Gradient Outline</a></li>
+                      <li><a href="#">Button With Icons</a></li>
+                      <li><a href="#">Icon Buttons</a></li>
+                      <li><a href="#">Loader</a></li>
+                      <li><a href="#">Disabled</a></li>
+                      
                     </ul>
                   </li>
                 </ul>  
@@ -1155,19 +1377,6 @@
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
 
-    var initiateExpandCode = function initiateExpandCode(element) {
-  var expandCodeButton = element.querySelector('[data-expand-code]');
-  var codeWrapperEl = element.querySelector('[data-code-wrapper]');
-  var codeWrapperHeight = codeWrapperEl.offsetHeight;
-  if (codeWrapperHeight > 250) {
-    expandCodeButton.classList.remove('hidden');
-  }
-  expandCodeButton.addEventListener('click', function () {
-    codeWrapperEl.classList.remove('max-h-72');
-    expandCodeButton.classList.add('hidden');
-  });
-};
-initiateExpandCode(c);
   </script>
 </body>
 </html>

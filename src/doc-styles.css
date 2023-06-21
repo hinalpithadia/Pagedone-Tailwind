@@ -6,7 +6,7 @@
         @apply text-4xl text-gray-900 font-semibold capitalize mb-6;
     }
     .doc-sub-heading{
-        @apply text-2xl text-gray-900 font-semibold capitalize mb-6;
+        @apply text-2xl text-gray-900 font-semibold capitalize mb-2;
     }
     .doc-paragraph-big{
         @apply text-lg text-gray-600 leading-8;
@@ -30,16 +30,16 @@
     #mainContent p{
         @apply text-base text-gray-600 leading-8 mb-4;
     }
-    #mainContent>ul {
+    #mainContent ul {
         @apply list-disc;
     }
-    #mainContent>ol, #mainContent>ul {
+     #mainContent ul {
         @apply pl-4;
     }
-    #mainContent>ol>li, #mainContent>ul>li {
-        @apply text-base text-gray-600 mb-4 leading-5;
+    #mainContent ul>li {
+        @apply text-base text-gray-600 mb-4 leading-8;
     }
-    #mainContent>ol>li>code, #mainContent p>code, #mainContent>ul>li>code {
+     #mainContent p>code, #mainContent ul>li>code {
         @apply text-indigo-600 text-sm px-1;
     }
     .code-preview{
@@ -52,7 +52,10 @@
         @apply grid w-full grid-cols-2 border-b border-gray-200 pl-4;
     }
     .code-head-list{
-        @apply flex text-base font-medium text-center text-gray-900;
+        @apply flex text-base font-medium text-center text-gray-900 !pl-0 !list-none;
+    }
+    .code-head-list>li{
+        @apply !mb-0;
     }
     .code-head-list>li>a{
        @apply inline-block w-full p-4 px-3 text-gray-800 uppercase active:border-b border-gray-800;

@@ -387,7 +387,10 @@
         }
     }
     #TableOfContents>ul>li>ul>li>a{
-        @apply text-gray-900 transition-all duration-300 border-l border-transparent pl-4;
+        @apply text-gray-900 transition-all duration-300 border-l border-transparent ;
+    }
+    #TableOfContents>ul>li>ul>li>a{
+        @apply pl-4 block;
     }
     #TableOfContents>ul>li>a{
         @apply text-gray-900 transition-all duration-300 border-l border-transparent pl-2;
