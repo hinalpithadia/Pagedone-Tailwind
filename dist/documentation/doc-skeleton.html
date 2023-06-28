@@ -610,22 +610,22 @@
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Components</span>
                 <h1 class="doc-heading ">Tailwind CSS Skeleton </h1>
-                <p class="doc-paragraph-big">Provide a placeholder while you wait for content to load, or to visualise content that doesn't exist yet.</p>
+                <p class="doc-paragraph-big">Placeholders are a useful component to display temporary content while waiting for actual content to load or to visualize content that is not yet available.</p>
                
             </div>
             <!--Header End-->
             <div id="mainContent">
-                <p>Placeholders can be used to enhance the experience of your application. They're built only with HTML and CSS, meaning you don't need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, color, and sizing can be easily customized with our utility classes.</p>
-                <p>When to use Skeleton:</p>
-                <ul>
-                    <li>When a resource needs long time to load.</li>
-                    <li>When the component contains lots of information, such as List or Card.</li>
-                    <li>Only works when loading data for the first time.</li>
+                <p class="page-para">To create placeholders, you can utilize HTML and CSS without requiring any JavaScript. Custom JavaScript may be needed if you want to toggle their visibility dynamically.You can easily customize the appearance, color, and size of placeholders by using utility classes provided. These classes allow you to modify their style to match your application's design or branding.</p>
+                <p class="page-para">When to use Skeleton:</p>
+                <ul class="page-list">
+                    <li>When a content takes a long time to load.</li>
+                    <li>When a component contains a large amount of information, such as a list or card.</li>
+                    <li>Placeholders are typically used only during the initial data loading process.</li>
                     <li>Could be replaced by Spin in any situation, but can provide a better user experience.</li>
                 </ul>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Default placeholder </h2>
-                    <p>Use this example to show a placeholder when loading text content.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-placeholder">Default placeholder </h2>
+                    <p class="page-para">Following example show a placeholder when loading text content with heading.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -672,8 +672,8 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Image placegholder </h2>
-                    <p>This example can be used to show a placeholder when loading an image and text content.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="image-placeholder">Image placegholder </h2>
+                    <p class="page-para">Following example show a placeholder when loading text content with image.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -729,8 +729,8 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group">Card placegholder </h2>
-                    <p>Use this example to show a placeholder when loading content inside a card.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="card-placeholder">Card placegholder </h2>
+                    <p class="page-para">Following example show a placeholder when loading content inside card.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -805,14 +805,9 @@
                   <li>
                   <a href="#" class="mb-5 block active:text-indigo-600">Progress</a>
                     <ul class="space-y-4 ">
-                      <li><a href="#">Default Progress Bar</a></li>
-                      <li><a href="#">Progress Bar With Label</a></li>
-                      <li><a href="#">Progress Bar With Label Inside</a></li>
-                      <li><a href="#">Progress Bar With Floating Label</a></li>
-                      <li><a href="#">Progress Bar With Sizes</a></li>
-                      <li><a href="#">Vertical Progress Bar</a></li>
-                      <li><a href="#">Progress Bar With Colors</a></li>
-                      <li><a href="#">Multiple Bar</a></li>
+                      <li><a href="#default-placeholder">Default Placeholder</a></li>
+                      <li><a href="#image-placeholder">Image Placegholder</a></li>
+                      <li><a href="#card-placeholder">Card Placegholdere</a></li>
                     </ul>
                   </li>
                 </ul>  

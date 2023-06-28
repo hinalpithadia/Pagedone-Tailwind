@@ -608,22 +608,32 @@
                <!--Header-->  
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Components</span>
-                <h1 class="doc-heading ">Tailwind CSS Progress </h1>
-                <p class="doc-paragraph-big">the progress bar visually represents the completion rate of a task or data set.It can be use as an animated loader element </p>
+                <h1 class="doc-heading ">Tailwind CSS Button Group</h1>
+                <p class="doc-paragraph-big">You can group a series of buttons together in two ways: on a single line or in a vertical column.Whether you choose a single-line or vertical column layout, ensure that the buttons are visually consistent in terms of size, style, and color.</p>
+               
             </div>
             <!--Header End-->
             <div id="mainContent">
-                <p class="page-para"> The progress bar comes in various sizes, colors, and styles, allowing you to customize its appearance to match your design.</p>
+                <p class="page-para">Pagedone offers multiple styles, colors, sizes, gradients, and shadows that you can apply to your buttons.You can also select different colors and sizes to make your buttons stand out or blend in with your design.</p>
+                     
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-progress">Default progress bar </h2>
-                    <p class="page-para">To show a completion rate of 50% using a progress bar element and Tailwind CSS utility classes, you can use the following example:</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-button-group">Default Button Group</h2>
+                    <p class="page-para">Use these default button group styles to display multiple buttons together.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                              <div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-                                  <div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 50%'></div>
+                              <div class="flex justify-center ">
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm ">
+                                  Cut
+                                </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm ">
+                                  Copy
+                                </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm ">
+                                  Paste
+                                </button>
                               </div>
                             </div>
                         </div>
@@ -647,8 +657,10 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-2.5 &quot;&gt;
-    &lt;div class=&quot;bg-indigo-600 h-2.5 rounded-3xl&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex justify-center &quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm &quot;&gt; Cut &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm &quot;&gt; Copy &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm &quot;&gt; Paste &lt;/button&gt;
 &lt;/div&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
@@ -657,19 +669,49 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="progress-with-label">Progress bar with label </h2>
-                    <p class="page-para">You can use a progress bar with a label to visually represent the completion of a task or goal in percentage. Here's an example:</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="button-group-size">Button Group Size</h2>
+                    <p class="page-para">Following example shows different sizes of button group which you can change by using utility classes of Tailwind CSS. </p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                              <div class='relative flex items-center'>
-                                <div class='relative w-full h-2.5  overflow-hidden rounded-3xl bg-gray-100'>
-                                    <div role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%' class='flex h-full items-center justify-center bg-indigo-600  text-white rounded-3xl'></div>
-                                </div>
-                                <span class='ml-2 bg-white  rounded-full  text-gray-800 text-xs font-medium flex justify-center items-center '>50%</span>
-                            </div>
+                              <div class="flex justify-center">
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm ">
+                                  Small
+                                </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm ">
+                                  Small
+                                </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm ">
+                                  Small
+                                </button>
+                              </div>
+                              <br>
+                              <div class="flex justify-center">
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-4">
+                                  Default
+                                </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-4">
+                                  Default
+                                </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-4">
+                                  Default
+                                </button>
+                              </div>
+                              <br>
+                              <div class="flex justify-center">
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-[1.3125rem]">
+                                  Large
+                                </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-[1.3125rem]">
+                                  Large
+                                </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-[1.3125rem]">
+                                  Large
+                                </button>
+                              </div>
+                             
                             </div>
                         </div>
                     </div>
@@ -692,28 +734,59 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;relative flex items-center&quot;&gt;
-    &lt;div class=&quot;relative  w-full h-2.5  overflow-hidden rounded-3xl bg-gray-100&quot;&gt;
-        &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot; class=&quot;flex h-full items-center justify-center bg-indigo-600  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;span class=&quot;ml-2 bg-white  rounded-full  text-gray-800 text-xs font-medium flex justify-center items-center &quot;&gt;50%&lt;/span&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex justify-center&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm &quot;&gt; 
+    Small 
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm &quot;&gt; 
+    Small 
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm &quot;&gt; 
+    Small 
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;flex justify-center&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-4&quot;&gt; 
+    Default 
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-4&quot;&gt; 
+    Default 
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-4&quot;&gt; 
+    Default
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;flex justify-center&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-[1.3125rem]&quot;&gt; 
+    Large
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-[1.3125rem]&quot;&gt; 
+    Large 
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm sm:p-[1.3125rem]&quot;&gt; 
+        Large 
+  &lt;/button&gt;
 &lt;/div&gt;</code></pre>
                                 </div>
-                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
+                                <button data-expand-code type="button" class="code-exapnd-button " >Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="progress-inside-label">Progress bar with label inside</h2>
-                    <p class="page-para">Use Following example to add label or text inside progress bar.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="button-group-link">Button group links</h2>
+                    <p class="page-para">You can also use the button group component as links.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                              <div class='w-full  bg-gray-100 rounded-3xl h-3.5 '>
-                                  <div class='bg-indigo-600 h-3.5 rounded-3xl text-xs text-white text-center' role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'>50%</div>
+                              <div class="flex justify-center ">
+                                <a href="#"  class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-900 hover:text-white focus:z-10 focus:outline-none   transition-all text-sm "> Cut </a>
+                                <a href="#"  class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-900 hover:text-white focus:z-10 focus:outline-none   transition-all text-sm "> Copy </a>
+                                <a href="#"  class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-900 hover:text-white focus:z-10 focus:outline-none   transition-all text-sm "> Paste </a>
                               </div>
                             </div>
                         </div>
@@ -737,8 +810,10 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-3.5 &quot;&gt;
-    &lt;div class=&quot;bg-indigo-600 h-3.5 rounded-3xl text-xs text-white text-center&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;50%&lt;/div&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex justify-center &quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-900 hover:text-white focus:z-10 focus:outline-none   transition-all text-sm &quot;&gt; Cut &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-900 hover:text-white focus:z-10 focus:outline-none   transition-all text-sm &quot;&gt; Copy &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-900 hover:text-white focus:z-10 focus:outline-none   transition-all text-sm &quot;&gt; Paste &lt;/a&gt;
 &lt;/div&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
@@ -747,19 +822,33 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24 " id="progress-floting-label">Progress bar with floating label</h2>
-                    <p class="page-para">You can set label position floating according to progress bar completion by using Tailwind utility classes. Here's an example:</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="button-group-with-icon">Button group with icon</h2>
+                    <p class="page-para">You can also use SVG icons in button group component.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                              <div class='relative w-full pt-12'>
-                                <span class='absolute bottom-0 mb-4 -translate-x-1/2 w-12 h-10 bg-white shadow-[0px_12px_30px_0px_rgba(16,24,40,0.1)] rounded-full px-3.5 py-2 text-gray-800 text-xs font-medium flex justify-center items-center after:absolute after:bg-white after:flex after:bottom-[-5px] after:left-1/2 after:-z-10 after:h-3 after:w-3 after:-translate-x-1/2 after:rotate-45' style='left: 50%'>50%</span>
-                                <div class='relative flex w-full h-2.5  overflow-hidden rounded-3xl bg-gray-100'>
-                                <div role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%' class='flex h-full items-center justify-center bg-indigo-600  text-white rounded-3xl'></div>
-                                </div>
-                            </div>
+                              <div class="flex justify-center ">
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm "> <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.52464 15.8155C9.58965 17.0908 9.4241 18.9922 8.15487 20.0624C6.88565 21.1325 4.99338 20.9661 3.92838 19.6908C2.86337 18.4155 3.02892 16.5141 4.29815 15.4439C5.56737 14.3738 7.45964 14.5401 8.52464 15.8155ZM8.52464 15.8155L19.2493 6.77307" stroke="#111827" stroke-width="1.6" stroke-linecap="round" class="my-path"></path>
+                                  <path d="M8.71703 8.18449C7.65202 9.45984 5.75975 9.62619 4.49053 8.55605C3.22131 7.48591 3.05575 5.58452 4.12076 4.30917C5.18576 3.03383 7.07803 2.86748 8.34726 3.93762C9.61648 5.00776 9.78203 6.90915 8.71703 8.18449ZM8.71703 8.18449L19.4416 17.2269" stroke="#111827" stroke-width="1.6" stroke-linecap="round" class="my-path"></path>
+                                  <path d="M17 12H19M21 12H22" stroke="#111827" stroke-width="1.6" stroke-linecap="round" class="my-path"></path>
+                                  </svg>
+                                  Cut </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm "> <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8.66667 15.3333V19.3333C8.66667 20.8061 9.86057 22 11.3333 22H19.3333C20.8061 22 22 20.8061 22 19.3333V11.3333C22 9.86057 20.8061 8.66667 19.3333 8.66667H15.3333M4.66667 15.3333H12.6667C14.1394 15.3333 15.3333 14.1394 15.3333 12.6667V4.66667C15.3333 3.19391 14.1394 2 12.6667 2H4.66667C3.19391 2 2 3.19391 2 4.66667V12.6667C2 14.1394 3.19391 15.3333 4.66667 15.3333Z" stroke="#111827" stroke-width="1.6" stroke-linecap="round" class="my-path"></path>
+                                  </svg>
+                                  Copy </button>
+                                <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm "> 
+                                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20 8.25V18C20 21 18.21 22 16 22H8C5.79 22 4 21 4 18V8.25C4 5 5.79 4.25 8 4.25C8 4.87 8.24997 5.43 8.65997 5.84C9.06997 6.25 9.63 6.5 10.25 6.5H13.75C14.99 6.5 16 5.49 16 4.25C18.21 4.25 20 5 20 8.25Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M16 4.25C16 5.49 14.99 6.5 13.75 6.5H10.25C9.63 6.5 9.06997 6.25 8.65997 5.84C8.24997 5.43 8 4.87 8 4.25C8 3.01 9.01 2 10.25 2H13.75C14.37 2 14.93 2.25 15.34 2.66C15.75 3.07 16 3.63 16 4.25Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M8 13H12" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M8 17H16" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                  Paste </button>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -782,286 +871,27 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;relative w-full pt-12&quot;&gt;
-    &lt;span class=&quot;absolute bottom-0 mb-4 -translate-x-1/2 w-12 h-10 bg-white shadow-[0px_12px_30px_0px_rgba(16,24,40,0.1)] rounded-full px-3.5 py-2 text-gray-800 text-xs font-medium flex justify-center items-center after:absolute after:bg-white after:flex after:bottom-[-5px] after:left-1/2 after:-z-10 after:h-3 after:w-3 after:-translate-x-1/2 after:rotate-45&quot; style=&quot;left: 50%&quot;&gt;50%&lt;/span&gt;
-    &lt;div class=&quot;relative flex w-full h-2.5  overflow-hidden rounded-3xl bg-gray-100&quot;&gt;
-    &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot; class=&quot;flex h-full items-center justify-center bg-indigo-600  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex justify-center &quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm &quot;&gt;
+    &lt;svg class=&quot;w-4 h-4&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M8.52464 15.8155C9.58965 17.0908 9.4241 18.9922 8.15487 20.0624C6.88565 21.1325 4.99338 20.9661 3.92838 19.6908C2.86337 18.4155 3.02892 16.5141 4.29815 15.4439C5.56737 14.3738 7.45964 14.5401 8.52464 15.8155ZM8.52464 15.8155L19.2493 6.77307&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; class=&quot;my-path&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;M8.71703 8.18449C7.65202 9.45984 5.75975 9.62619 4.49053 8.55605C3.22131 7.48591 3.05575 5.58452 4.12076 4.30917C5.18576 3.03383 7.07803 2.86748 8.34726 3.93762C9.61648 5.00776 9.78203 6.90915 8.71703 8.18449ZM8.71703 8.18449L19.4416 17.2269&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; class=&quot;my-path&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;M17 12H19M21 12H22&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; class=&quot;my-path&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt; Cut &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm &quot;&gt;
+    &lt;svg class=&quot;w-4 h-4&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M8.66667 15.3333V19.3333C8.66667 20.8061 9.86057 22 11.3333 22H19.3333C20.8061 22 22 20.8061 22 19.3333V11.3333C22 9.86057 20.8061 8.66667 19.3333 8.66667H15.3333M4.66667 15.3333H12.6667C14.1394 15.3333 15.3333 14.1394 15.3333 12.6667V4.66667C15.3333 3.19391 14.1394 2 12.6667 2H4.66667C3.19391 2 2 3.19391 2 4.66667V12.6667C2 14.1394 3.19391 15.3333 4.66667 15.3333Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; class=&quot;my-path&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt; Copy &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;py-3 px-4 inline-flex justify-center items-center gap-2 -ml-px first:rounded-l-lg first:ml-0 last:rounded-r-lg border font-medium bg-white text-gray-900 align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all text-sm &quot;&gt;
+    &lt;svg class=&quot;w-4 h-4&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M20 8.25V18C20 21 18.21 22 16 22H8C5.79 22 4 21 4 18V8.25C4 5 5.79 4.25 8 4.25C8 4.87 8.24997 5.43 8.65997 5.84C9.06997 6.25 9.63 6.5 10.25 6.5H13.75C14.99 6.5 16 5.49 16 4.25C18.21 4.25 20 5 20 8.25Z&quot; stroke=&quot;#292D32&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;path d=&quot;M16 4.25C16 5.49 14.99 6.5 13.75 6.5H10.25C9.63 6.5 9.06997 6.25 8.65997 5.84C8.24997 5.43 8 4.87 8 4.25C8 3.01 9.01 2 10.25 2H13.75C14.37 2 14.93 2.25 15.34 2.66C15.75 3.07 16 3.63 16 4.25Z&quot; stroke=&quot;#292D32&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;path d=&quot;M8 13H12&quot; stroke=&quot;#292D32&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;path d=&quot;M8 17H16&quot; stroke=&quot;#292D32&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt; Paste &lt;/button&gt;
 &lt;/div&gt;</code></pre>
                                 </div>
-                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="progress-size">Progress bar with sizes</h2>
-                    <p class="page-para">To achieve different sizes for your progress bars, you can utilize various sizing utility classes available in Tailwind CSS.</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full">
-                              <div class='grid gap-6'>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-1.5 '>
-                                    <div role='progressbar' class='bg-indigo-600 h-1.5 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-                                    <div role='progressbar' class='bg-indigo-600 h-2.5 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-4 '>
-                                    <div role='progressbar' class='bg-indigo-600 h-4 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-6 '>
-                                    <div role='progressbar' class='bg-indigo-600 h-6 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-1.5 &quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 h-1.5 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-2.5 &quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 h-2.5 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-4 &quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 h-4 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-6 &quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 h-6 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                                </div>
-                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="progress-vertical">Vertical progress bar</h2>
-                    <p class="page-para">A base form of vertical progress represents a vertical progress bar that visually indicates the completion or progress of a task.</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full">
-                              <div class='flex gap-6'>
-                                <div class='flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 '>
-                                    <div role='progressbar' class='bg-indigo-600 w-2 h-32 rounded-3xl' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100' style='height:10%'></div>
-                                </div>
-                                <div class='flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 '>
-                                    <div role='progressbar' class='bg-indigo-600 w-2 h-32 rounded-3xl' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100' style='height: 25%'></div>
-                                </div>
-                                <div class='flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 '>
-                                    <div role='progressbar' class='bg-indigo-600 w-2 h-32 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='height: 50%'></div>
-                                </div>
-                                <div class='flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 '>
-                                    <div role='progressbar' class='bg-indigo-600 w-2 h-32 rounded-3xl' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='height: 80%'></div>
-                                </div>
-                                <div class='flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 '>
-                                    <div role='progressbar' class='bg-indigo-600 w-2 h-32 rounded-3xl' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100' style='height: 90%'></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 &quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 w-2 h-32 rounded-3xl&quot; aria-valuenow=&quot;10&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;height:10%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 &quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 w-2 h-32 rounded-3xl&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;height: 25%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 &quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 w-2 h-32 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 &quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 w-2 h-32 rounded-3xl&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;height: 80%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex flex-col flex-nowrap justify-end bg-gray-100 rounded-3xl w-2 h-32 &quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 w-2 h-32 rounded-3xl&quot; aria-valuenow=&quot;90&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                                </div>
-                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="progress-with-color">Progress bar with colors</h2>
-                    <p class="page-para">To apply any color to your progress bar, you can utilize the "bg-{color}" utility classes available in Tailwind CSS.These classes allow you to customize the background color of the progress bar. </p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full">
-                              <div class='block'>
-                                <span class='text-lg mb-1 text-indigo-600'>Indigo</span>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-2.5 mb-4'>
-                                    <div role='progressbar' class='bg-indigo-600 h-2.5 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                                <span class='text-lg mb-1 text-red-600'>Red</span>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-2.5 mb-4'>
-                                    <div role='progressbar' class='bg-red-600 h-2.5 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                                <span class='text-lg mb-1 text-yellow-600'>Yellow</span>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-2.5 mb-4'>
-                                    <div role='progressbar' class='bg-yellow-600 h-2.5 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                                <span class='text-lg mb-1 text-green-600'>Green</span>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-2.5 mb-4'>
-                                    <div role='progressbar' class='bg-green-600 h-2.5 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                                <span class='text-lg mb-1 text-purple-600'>Purple</span>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-2.5 mb-4'>
-                                    <div role='progressbar' class='bg-purple-600 h-2.5 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                                <span class='text-lg mb-1 text-orange-600'>Orange</span>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-2.5 mb-4'>
-                                    <div role='progressbar' class='bg-orange-600 h-2.5 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                                <span class='text-lg mb-1 text-gray-900'>Dark</span>
-                                <div class='w-full  bg-gray-100 rounded-3xl h-2.5 mb-4'>
-                                    <div role='progressbar' class='bg-gray-900 h-2.5 rounded-3xl' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;span class=&quot;text-lg mb-1 text-indigo-600&quot;&gt;Indigo&lt;/span&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-2.5 mb-4&quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-indigo-600 h-2.5 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;span class=&quot;text-lg mb-1 text-red-600&quot;&gt;Red&lt;/span&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-2.5 mb-4&quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-red-600 h-2.5 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;span class=&quot;text-lg mb-1 text-yellow-600&quot;&gt;Yellow&lt;/span&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-2.5 mb-4&quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-yellow-600 h-2.5 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;span class=&quot;text-lg mb-1 text-green-600&quot;&gt;Green&lt;/span&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-2.5 mb-4&quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-green-600 h-2.5 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;span class=&quot;text-lg mb-1 text-purple-600&quot;&gt;Purple&lt;/span&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-2.5 mb-4&quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-purple-600 h-2.5 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;span class=&quot;text-lg mb-1 text-orange-600&quot;&gt;Orange&lt;/span&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-2.5 mb-4&quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-orange-600 h-2.5 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;span class=&quot;text-lg mb-1 text-gray-900&quot;&gt;Dark&lt;/span&gt;
-&lt;div class=&quot;w-full  bg-gray-100 rounded-3xl h-2.5 mb-4&quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;bg-gray-900 h-2.5 rounded-3xl&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                                </div>
-                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="progress-multiple">multiple bar </h2>
-                    <p class="page-para">You can create multiple bar by placing multiple progress bar component within the container. </p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full">
-                              <div class='block'>
-                                <div class='flex w-full  bg-gray-100 rounded-3xl h-2.5 overflow-hidden'>
-                                    <div role='progressbar' class='flex flex-col justify-center overflow-hidden bg-indigo-600 h-2.5 ' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100' style='width: 20%'></div>
-                                    <div role='progressbar' class='flex flex-col justify-center overflow-hidden bg-orange-600 h-2.5 ' aria-valuenow='30' aria-valuemin='0' aria-valuemax='100' style='width: 30%'></div>
-                                    <div role='progressbar' class='flex flex-col justify-center overflow-hidden bg-gray-900 h-2.5 ' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex w-full  bg-gray-100 rounded-3xl h-2.5 overflow-hidden&quot;&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;flex flex-col justify-center overflow-hidden bg-indigo-600 h-2.5 &quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;&lt;/div&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;flex flex-col justify-center overflow-hidden bg-orange-600 h-2.5 &quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 30%&quot;&gt;&lt;/div&gt;
-    &lt;div role=&quot;progressbar&quot; class=&quot;flex flex-col justify-center overflow-hidden bg-gray-900 h-2.5 &quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 50%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                                </div>
-                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
+                                <button data-expand-code type="button" class="code-exapnd-button " >Show more code</button>
                             </div>
                         </div>
                     </div>
@@ -1077,16 +907,12 @@
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Progress</a>
+                  <a href="#" class="mb-5 block active:text-indigo-600">Button Group</a>
                     <ul class="space-y-4 ">
-                      <li><a href="#default-progress">Default Progress Bar</a></li>
-                      <li><a href="#progress-with-label">Progress Bar With Label</a></li>
-                      <li><a href="#progress-inside-label">Progress Bar With Label Inside</a></li>
-                      <li><a href="#progress-floting-label">Progress Bar With Floating Label</a></li>
-                      <li><a href="#progress-size">Progress Bar With Sizes</a></li>
-                      <li><a href="#progress-vertical">Vertical Progress Bar</a></li>
-                      <li><a href="#progress-with-color">Progress Bar With Colors</a></li>
-                      <li><a href="#progress-multiple">Multiple Bar</a></li>
+                      <li><a href="#default-button-group">Default Button Group</a></li>
+                      <li><a href="#button-group-size">Button Group Size </a></li>
+                      <li><a href="#button-group-link">Button group links</a></li>
+                      <li><a href="#button-group-with-icon">Button group with icon</a></li>
                     </ul>
                   </li>
                 </ul>  
