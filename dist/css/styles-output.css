@@ -2146,6 +2146,10 @@ svg, rect, circle, path{
   height: 8.5rem;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .h-full{
   height: 100%;
 }
@@ -2404,6 +2408,20 @@ svg, rect, circle, path{
           appearance: none;
 }
 
+.columns-1{
+  -moz-columns: 1;
+       columns: 1;
+}
+
+.break-inside-avoid{
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-\[repeat\(auto-fill\2c minmax\(8rem\2c 1fr\)\)\]{
   grid-template-columns: repeat(auto-fill,minmax(8rem,1fr));
 }
@@ -2466,6 +2484,10 @@ svg, rect, circle, path{
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
 }
 
 .gap-8{
@@ -4845,8 +4867,17 @@ svg, rect, circle, path{
     width: 100%;
   }
 
+  .md\:columns-2{
+    -moz-columns: 2;
+         columns: 2;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{
@@ -5108,6 +5139,11 @@ svg, rect, circle, path{
 
   .xl\:max-w-4xl{
     max-width: 56rem;
+  }
+
+  .xl\:columns-3{
+    -moz-columns: 3;
+         columns: 3;
   }
 
   .xl\:grid-cols-4{
