@@ -99,6 +99,10 @@
     .code-exapnd-button {
         @apply absolute bottom-0 left-0 py-2.5 px-5 w-full text-sm font-medium text-gray-900 bg-gray-100 border-t border-gray-200 rounded-b-2xl hover:bg-gray-100 hover:text-indigo-600;
     }
+    code.language-javascript {
+        color:#0057FF!important;
+    }
+   
     /* .code-preview ul{
         @apply !pl-0 !list-none;
     } */
