@@ -2442,6 +2442,18 @@ code.language-javascript {
   scroll-margin-top: 7rem;
 }
 
+.list-inside{
+  list-style-position: inside;
+}
+
+.list-disc{
+  list-style-type: disc;
+}
+
+.list-decimal{
+  list-style-type: decimal;
+}
+
 .appearance-none{
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2587,6 +2599,14 @@ code.language-javascript {
   row-gap: 2rem;
 }
 
+.gap-y-4{
+  row-gap: 1rem;
+}
+
+.gap-y-2{
+  row-gap: 0.5rem;
+}
+
 .-space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(-1rem * var(--tw-space-x-reverse));
@@ -2645,6 +2665,12 @@ code.language-javascript {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]){
@@ -3157,6 +3183,11 @@ code.language-javascript {
   background-color: rgb(55 65 81 / 0.6);
 }
 
+.bg-blue-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -3249,6 +3280,22 @@ code.language-javascript {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-sky-400{
+  --tw-gradient-from: #38bdf8 var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(56 189 248 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-violet-400{
+  --tw-gradient-from: #a78bfa var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(167 139 250 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-purple-500{
   --tw-gradient-via-position:  ;
   --tw-gradient-to: rgb(168 85 247 / 0)  var(--tw-gradient-to-position);
@@ -3298,6 +3345,11 @@ code.language-javascript {
 
 .to-yellow-200{
   --tw-gradient-to: #fef08a var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
+.to-emerald-600{
+  --tw-gradient-to: #059669 var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
 }
 
@@ -3428,6 +3480,14 @@ code.language-javascript {
 
 .stroke-yellow-400{
   stroke: #facc15;
+}
+
+.stroke-green-500{
+  stroke: #22c55e;
+}
+
+.stroke-green-700{
+  stroke: #15803d;
 }
 
 .object-cover{
@@ -3740,6 +3800,14 @@ code.language-javascript {
   text-align: center;
 }
 
+.text-right{
+  text-align: right;
+}
+
+.text-start{
+  text-align: start;
+}
+
 .align-middle{
   vertical-align: middle;
 }
@@ -3796,6 +3864,31 @@ code.language-javascript {
   line-height: 1rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-9xl{
+  font-size: 8rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -3816,12 +3909,20 @@ code.language-javascript {
   font-weight: 600;
 }
 
+.font-light{
+  font-weight: 300;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
 
 .capitalize{
   text-transform: capitalize;
+}
+
+.italic{
+  font-style: italic;
 }
 
 .leading-6{
@@ -3842,6 +3943,10 @@ code.language-javascript {
 
 .leading-\[5\.5rem\]{
   line-height: 5.5rem;
+}
+
+.leading-tight{
+  line-height: 1.25;
 }
 
 .tracking-wider{
@@ -4252,6 +4357,22 @@ code.language-javascript {
   color: rgb(24 24 27 / var(--tw-text-opacity));
 }
 
+.underline{
+  text-decoration-line: underline;
+}
+
+.decoration-blue-400{
+  text-decoration-color: #60a5fa;
+}
+
+.decoration-indigo-600{
+  text-decoration-color: #4f46e5;
+}
+
+.decoration-8{
+  text-decoration-thickness: 8px;
+}
+
 .opacity-0{
   opacity: 0;
 }
@@ -4416,6 +4537,41 @@ code.language-javascript {
 
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.first-letter\:float-left::first-letter{
+  float: left;
+}
+
+.first-letter\:mr-3::first-letter{
+  margin-right: 0.75rem;
+}
+
+.first-letter\:text-7xl::first-letter{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.first-letter\:text-6xl::first-letter{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.first-letter\:font-bold::first-letter{
+  font-weight: 700;
+}
+
+.first-letter\:text-gray-900::first-letter{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.first-line\:uppercase::first-line{
+  text-transform: uppercase;
+}
+
+.first-line\:tracking-widest::first-line{
+  letter-spacing: 0.1em;
 }
 
 .placeholder\:text-gray-400::-moz-placeholder{
@@ -5204,6 +5360,11 @@ code.language-javascript {
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
   }
 
+  .dark\:bg-blue-500{
+    --tw-bg-opacity: 1;
+    background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  }
+
   .dark\:text-gray-400{
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -5212,6 +5373,15 @@ code.language-javascript {
   .dark\:text-slate-400{
     --tw-text-opacity: 1;
     color: rgb(148 163 184 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-blue-500{
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246 / var(--tw-text-opacity));
+  }
+
+  .dark\:decoration-blue-600{
+    text-decoration-color: #2563eb;
   }
 
   .dark\:ring-1{
@@ -5226,6 +5396,11 @@ code.language-javascript {
 
   .dark\:ring-white\/10{
     --tw-ring-color: rgb(255 255 255 / 0.1);
+  }
+
+  .dark\:first-letter\:text-gray-100::first-letter{
+    --tw-text-opacity: 1;
+    color: rgb(243 244 246 / var(--tw-text-opacity));
   }
 
   .dark\:hover\:bg-gray-700:hover{
@@ -5395,6 +5570,16 @@ code.language-javascript {
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -5567,6 +5752,16 @@ code.language-javascript {
   .lg\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:after\:left-5::after{
