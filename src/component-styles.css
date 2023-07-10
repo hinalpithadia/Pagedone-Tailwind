@@ -82,6 +82,9 @@
         @apply bg-white rounded-xl shadow-sm p-1.5 w-64 h-auto;
     }
     /*=============Custom CSS=================*/
+    .btn-dropdown{
+        box-shadow: 16px 9px 13px 0px rgba(0, 0, 0, 0.02);
+    }
     .btn-dropdown:before {
         content: "";
         position: absolute;
@@ -132,6 +135,19 @@
     }
 
     .scrollbar-y::-webkit-scrollbar-track {
+        @apply rounded-xl;
+
+    }
+    .tb-overflow::-webkit-scrollbar {
+        @apply w-1 bg-gray-200;
+
+    }
+
+    .tb-overflow::-webkit-scrollbar-thumb {
+        @apply bg-gray-400 rounded-xl;
+    }
+
+    .tb-overflow::-webkit-scrollbar-track {
         @apply rounded-xl;
 
     }

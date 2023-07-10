@@ -693,7 +693,7 @@
                             Basic usage
                           </a>
                     </h2>
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Using the container</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="using-container">Using the container</h2>
                     <p class="page-para">The <code>'container'</code> class sets the <code>'max-width'</code> of an element to match the <code>'min-width'</code> of the current breakpoint. This is useful if you’d prefer to design for a fixed set of screen sizes instead of trying to accommodate a fully fluid viewport.</p>
                     <p class="page-para">Note that unlike containers you might have used in other frameworks, <b>Tailwind's container does not center itself automatically and does not have any built-in horizontal padding.</b></p>
                     <p class="page-para">To center a container, use the <code>'mx-auto'</code> utility:</p>
@@ -731,12 +731,12 @@
                         If you'd like to center your containers by default or include default horizontal padding, see the <a class="text-indigo-600 decoration-2 hover:underline font-medium" href="https://tailwindcss.com/docs/container#customizing" target="_blank">customization options</a> below.</p>
                     </div>
                     <div class="mt-8">
-                        <h2 class="scroll-mt-24" id="basic-usage">
-                            <a class="group relative text-sm text-indigo-600 font-semibold" href="#basic-usage">
+                        <h2 class="scroll-mt-24" id="applying-condition">
+                            <a class="group relative text-sm text-indigo-600 font-semibold" href="#applying-condition">
                                 Applying conditionally
                               </a>
                         </h2>
-                        <h2 class="doc-sub-heading relative group scroll-mt-24" >Responsive variants</h2>
+                        <h2 class="doc-sub-heading relative group scroll-mt-24" id="responsive-variant">Responsive variants</h2>
                         <p class="page-para">The <code>'container'</code> class also includes responsive variants like <code>'md:container'</code> by default that allow you to make something behave like a container at only a certain breakpoint and up:</p>
                       </div>
                       <div class="mt-4 code-example">
@@ -753,12 +753,12 @@
                         </div>
                         </div>
                         <div class="mt-8">
-                            <h2 class="scroll-mt-24" id="basic-usage">
-                                <a class="group relative text-sm text-indigo-600 font-semibold" href="#basic-usage">
+                            <h2 class="scroll-mt-24" id="customizing">
+                                <a class="group relative text-sm text-indigo-600 font-semibold" href="#customizing">
                                     Customizing
                                   </a>
                             </h2>
-                            <h2 class="doc-sub-heading relative group scroll-mt-24" >Centering by default</h2>
+                            <h2 class="doc-sub-heading relative group scroll-mt-24" id="center-by-default">Centering by default</h2>
                             <p class="page-para">To center containers by default, set the <code>'center'</code> option to <code>'true'</code> in the <code>'theme.container</code> section of your config file:</p>
                           </div> 
                           <div class="mt-4 code-example">
@@ -779,7 +779,7 @@ module.exports = {
                             </div>
                             </div>
                             <div class="mt-8">
-                                <h2 class="doc-sub-heading relative group scroll-mt-24" >Adding horizontal padding</h2>
+                                <h2 class="doc-sub-heading relative group scroll-mt-24" id="adding-horizontal-padding">Adding horizontal padding</h2>
                                 <p class="page-para">To add horizontal padding by default, specify the amount of padding you’d like using the <code>'padding'</code> option in the <code>'theme.container'</code> section of your config file:</p>
                               </div> 
                               <div class="mt-4 code-example">
@@ -839,48 +839,20 @@ module.exports = {
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Styles</a>
+                  <a href="#" class="mb-5 block active:text-indigo-600">Layout</a>
                     <ul class="space-y-4 ">
                       <li>
-                        <a href="#headings">Headings</a>
-                        <a href="#custom-heading" class="mt-4 ml-4">Customize Headings</a>
+                        <a href="#basic-usage">Basic Usage</a>
+                        <a href="#using-container" class="mt-4 ml-4">Using The Container</a>
                       </li>
                       <li>
-                        <a href="#paragraphs">Paragraphs</a>
-                        <a href="#leading-paragraph" class="mt-4 ml-4">Leading Paragraph</a>
-                        <a href="#first-letter" class="mt-4 ml-4">First Letter</a>
-                        <a href="#paragraph-link-underline" class="mt-4 ml-4">Paragraph Link & Underline</a>
+                        <a href="#applying-condition">Applying conditionally</a>
+                        <a href="#responsive-variant" class="mt-4 ml-4">Responsive Variants</a>
                       </li>
                       <li>
-                        <a href="#font-size">Font Size</a>
-                      </li>
-                      <li>
-                        <a href="#font-weight-italics">Font Weight And Italics</a>
-                      </li>
-                      <li>
-                        <a href="#text-alignment">Text Alignment</a>
-                      </li>
-                      <li>
-                        <a href="#text-color">Text Color</a>
-                      </li>
-                      <li>
-                        <a href="#letter-spacing">Letter Spacing</a>
-                      </li>
-                      <li>
-                        <a href="#text-decoration">Text Decoration</a>
-                      </li>
-                      <li>
-                        <a href="#line-height">Line Height</a>
-                        <a href="#leading-normal" class="mt-4 ml-4">Leading Normal</a>
-                        <a href="#leading-tight" class="mt-4 ml-4">Leading Tight</a>
-                        <a href="#leading-relax" class="mt-4 ml-4">Leading Relaxed</a>
-                        <a href="#leading-loose" class="mt-4 ml-4">Leading Loose</a>
-                      </li>
-                      <li>
-                        <a href="#blockquote">Blockquote</a>
-                      </li>
-                      <li>
-                        <a href="#list">Lists</a>
+                        <a href="#customizing">Customizing</a>
+                        <a href="#center-by-default" class="mt-4 ml-4">Centering By Default</a>
+                        <a href="#adding-horizontal-padding" class="mt-4 ml-4">Adding Horizontal Padding</a>
                       </li>
                     </ul>
                   </li>
