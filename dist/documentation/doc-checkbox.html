@@ -635,52 +635,30 @@
                <!--Header-->  
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Component</span>
-                <h1 class="doc-heading ">Tailwind CSS Tabs</h1>
-                <p class="doc-paragraph-big">Use the powerful mobile-first flexbox grid to build layouts of all shapes and sizes use twelve column system and dozens of predefined classes.</p>
+                <h1 class="doc-heading ">Tailwind CSS Checkbox</h1>
+                <p class="doc-paragraph-big">Imagine you're building a fancy form and you want to give your users the power to choose one or more options. Well, the checkbox component is here to save the day! </p>
             </div>
             <!--Header End-->
             <div id="mainContent">
+              <p class="page-para"> It's like a versatile little square box that comes in different styles, sizes, and colors. You can easily add it to your form using Tailwind CSS, a toolkit that helps you style your components effortlessly.</p>
+              <p class="page-para">Make sure that you have included Pagedone as a plugin inside your Tailwind CSS project to apply all the necessary styles for the checkbox component.</p>
                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Tabs with underline</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Default Checkbox</h2>
+                    <p class="page-para">Use following example of a checkbox element in a checked and unchecked state.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full">
-                              <div >
-                                <div class="border-b border-gray-200 dark:border-gray-700">
-                                    <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
-                                      <button type="button" class="pd-tab-active:font-semibold pd-tab-active:border-blue-600 pd-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 active" id="tabs-with-underline-item-1" data-pd-tab="#tabs-with-underline-1" aria-controls="tabs-with-underline-1" role="tab">
-                                        Tab 1
-                                      </button>
-                                      <button type="button" class="pd-tab-active:font-semibold pd-tab-active:border-blue-600 pd-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600" id="tabs-with-underline-item-2" data-pd-tab="#tabs-with-underline-2" aria-controls="tabs-with-underline-2" role="tab">
-                                        Tab 2
-                                      </button>
-                                      <button type="button" class="pd-tab-active:font-semibold pd-tab-active:border-blue-600 pd-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600" id="tabs-with-underline-item-3" data-pd-tab="#tabs-with-underline-3" aria-controls="tabs-with-underline-3" role="tab">
-                                        Tab 3
-                                      </button>
-                                    </nav>
-                                  </div>
-                                  
-                                  <div class="mt-3">
-                                    <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1">
-                                      <p class="text-gray-500 dark:text-gray-400">
-                                        This is the <em class="font-semibold text-gray-800 dark:text-gray-200">first</em> item's tab body.
-                                      </p>
-                                    </div>
-                                    <div id="tabs-with-underline-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-2">
-                                      <p class="text-gray-500 dark:text-gray-400">
-                                        This is the <em class="font-semibold text-gray-800 dark:text-gray-200">second</em> item's tab body.
-                                      </p>
-                                    </div>
-                                    <div id="tabs-with-underline-3" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-3">
-                                      <p class="text-gray-500 dark:text-gray-400">
-                                        This is the <em class="font-semibold text-gray-800 dark:text-gray-200">third</em> item's tab body.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
+                            <div class="w-full relative">
+                              <div class="flex items-center  mb-4">
+                                <input id="checkbox-default" type="checkbox" value="" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 hover:border-indigo-500 hover:bg-indigo-100 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                <label for="checkbox-default" class="text-sm font-normal text-gray-600">Default checkbox</label>
+                              </div>
+                              <div class="flex items-center">
+                                <input id="checked-checkbox" type="checkbox" value="" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 hover:border-indigo-500 hover:bg-indigo-100 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked>
+                                <label for="checked-checkbox" class="text-sm font-normal text-gray-600">
+                                  Checked checkbox</label>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -703,56 +681,36 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-code
-                                </div>
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Vertical</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Disabled</h2>
+                    <p class="page-para">Use following example for disabled checkbox</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full">
-                              <div >
-                                <div class="flex flex-wrap">
-                                    <div class="border-r border-gray-200 dark:border-gray-700">
-                                      <nav class="flex flex-col space-y-2" aria-label="Tabs" role="tablist" data-pd-tabs-vertical="true">
-                                        <button type="button" class="pd-tab-active:border-blue-500 pd-tab-active:text-blue-600 dark:pd-tab-active:text-blue-600 py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 active" id="vertical-tab-with-border-item-1" data-pd-tab="#vertical-tab-with-border-1" aria-controls="vertical-tab-with-border-1" role="tab">
-                                          Tab 1
-                                        </button>
-                                        <button type="button" class="pd-tab-active:border-blue-500 pd-tab-active:text-blue-600 dark:pd-tab-active:text-blue-600 py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 dark:hover:text-gray-300" id="vertical-tab-with-border-item-2" data-pd-tab="#vertical-tab-with-border-2" aria-controls="vertical-tab-with-border-2" role="tab">
-                                          Tab 2
-                                        </button>
-                                        <button type="button" class="pd-tab-active:border-blue-500 pd-tab-active:text-blue-600 dark:pd-tab-active:text-blue-600 py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 dark:hover:text-gray-300" id="vertical-tab-with-border-item-3" data-pd-tab="#vertical-tab-with-border-3" aria-controls="vertical-tab-with-border-3" role="tab">
-                                          Tab 3
-                                        </button>
-                                      </nav>
-                                    </div>
-                                  
-                                    <div class="ml-3">
-                                      <div id="vertical-tab-with-border-1" role="tabpanel" aria-labelledby="vertical-tab-with-border-item-1">
-                                        <p class="text-gray-500 dark:text-gray-400">
-                                          This is the <em class="font-semibold text-gray-800 dark:text-gray-200">first</em> item's tab body.
-                                        </p>
-                                      </div>
-                                      <div id="vertical-tab-with-border-2" class="hidden" role="tabpanel" aria-labelledby="vertical-tab-with-border-item-2">
-                                        <p class="text-gray-500 dark:text-gray-400">
-                                          This is the <em class="font-semibold text-gray-800 dark:text-gray-200">second</em> item's tab body.
-                                        </p>
-                                      </div>
-                                      <div id="vertical-tab-with-border-3" class="hidden" role="tabpanel" aria-labelledby="vertical-tab-with-border-item-3">
-                                        <p class="text-gray-500 dark:text-gray-400">
-                                          This is the <em class="font-semibold text-gray-800 dark:text-gray-200">third</em> item's tab body.
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  </div>
+                            <div class="w-full relative">
+                              <div class="flex items-center mb-4">
+                                <input id="disabled-checkbox" type="checkbox" value="" class="w-5 h-5 appearance-none cursor-not-allowed border border-gray-300 bg-gray-100  rounded-md mr-2 " disabled>
+                                <label for="disabled-checkbox" class="text-gray-300 cursor-not-allowed text-sm font-normal ">Disabled checkbox</label>
+                              </div>
+                              <div class="flex items-center mb-4">
+                                <input id="disabled-checked-checkbox" type="checkbox" value="" class="w-5 h-5 appearance-none cursor-not-allowed border border-gray-300 bg-gray-100  rounded-md mr-2 checked:bg-no-repeat checked:bg-center" checked disabled>
+                                <label for="disabled-checked-checkbox" class="text-gray-300 cursor-not-allowed text-sm font-normal ">Disabled checkbox</label>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -775,8 +733,598 @@ code
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-code
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Checkbox group</h2>
+                    <p class="page-para">Use following example for group of checkbox</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative space-y-5">
+                             <div class="flex gap-x-6">
+                              <div class="flex">
+                                <input id="checkbox-group-1" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                <label for="checkbox-group-1" class="text-sm font-normal text-gray-600">Kiwi</label>
+                              </div>
+                              <div class="flex">
+                                <input id="checkbox-group-2" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                <label for="checkbox-group-2" class="text-sm font-normal text-gray-600">Jackfruit</label>
+                              </div>
+                              <div class="flex">
+                                <input id="checkbox-group-3" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                <label for="checkbox-group-3" class="text-sm font-normal text-gray-600">Mango</label>
+                              </div>
+                             </div>
+                             <div class="flex gap-x-6">
+                              <div class="flex">
+                                <input id="checkbox-group-4" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked>
+                                <label for="checkbox-group-4" class="text-sm font-normal text-gray-600">Kiwi</label>
+                              </div>
+                              <div class="flex">
+                                <input id="checkbox-group-5" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked>
+                                <label for="checkbox-group-5" class="text-sm font-normal text-gray-600">Jackfruit</label>
+                              </div>
+                              <div class="flex">
+                                <input id="checkbox-group-6" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked>
+                                <label for="checkbox-group-6" class="text-sm font-normal text-gray-600">Mango</label>
+                              </div>
+                             </div>
+                             <div class="flex gap-x-6">
+                              <div class="flex">
+                                <input id="checkbox-group-7" type="checkbox" class="w-5 h-5 appearance-none cursor-not-allowed border border-gray-300 bg-gray-100  rounded-md mr-2 checked:bg-no-repeat checked:bg-center" checked disabled>
+                                <label for="checkbox-group-7" class="text-sm font-normal text-gray-600">Kiwi</label>
+                              </div>
+                              <div class="flex">
+                                <input id="checkbox-group-8" type="checkbox" class="w-5 h-5 appearance-none cursor-not-allowed border border-gray-300 bg-gray-100  rounded-md mr-2 " disabled>
+                                <label for="checkbox-group-8" class="text-sm font-normal text-gray-600">Jackfruit</label>
+                              </div>
+                              <div class="flex">
+                                <input id="checkbox-group-9" type="checkbox" class="w-5 h-5 appearance-none cursor-not-allowed border border-gray-300 bg-gray-100  rounded-md mr-2 " disabled>
+                                <label for="checkbox-group-9" class="text-sm font-normal text-gray-600">Mango</label>
+                              </div>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >List with description</h2>
+                    <p class="page-para">Use following example for checkbox with description</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative">
+                              <div class="grid space-y-5">
+                                <div class="flex ">
+                                  <input id="checkbox-des1" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                  <label for="checkbox-des1">
+                                      <div class="text-sm font-normal text-gray-600">Check box</div>
+                                      <div class="text-sm font-normal text-gray-400 mt-1 w-full">Used for selecting multiple options</div>
+                                  </label>
+                              </div>
+                              <div class="flex ">
+                                <input id="checkbox-des2" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked>
+                                <label for="checkbox-des2">
+                                    <div class="text-sm font-normal text-gray-600">Check box</div>
+                                    <div class="text-sm font-normal text-gray-400 mt-1 w-full">Used for selecting multiple options</div>
+                                </label>
+                            </div>
+                            <div class="flex ">
+                              <input id="checkbox-des3" type="checkbox" class="w-5 h-5 appearance-none cursor-not-allowed border border-gray-300 bg-gray-100  rounded-md mr-2 " disabled>
+                              <label for="checkbox-des3">
+                                  <div class="text-sm font-normal text-gray-300 cursor-not-allowed">Check box</div>
+                                  <div class="text-sm font-normal text-gray-300 mt-1 w-full cursor-not-allowed">Used for selecting multiple options</div>
+                              </label>
+                          </div>
+                          <div class="flex ">
+                            <input id="checkbox-des3" type="checkbox" class="w-5 h-5 appearance-none cursor-not-allowed border border-gray-300 bg-gray-100  rounded-md mr-2 checked:bg-no-repeat checked:bg-center" checked disabled>
+                            <label for="checkbox-des3">
+                                <div class="text-sm font-normal text-gray-300 cursor-not-allowed">Check box</div>
+                                <div class="text-sm font-normal text-gray-300 mt-1 w-full cursor-not-allowed">Used for selecting multiple options</div>
+                            </label>
+                        </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Checkbox link</h2>
+                    <p class="page-para">Use following example to add anchor link inside the label of checkbox.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative">
+                              <div class="flex items-center">
+                                <input id="link-checkbox" type="checkbox" value="" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 hover:border-indigo-500 hover:bg-indigo-100 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                <label for="link-checkbox" class="text-sm font-normal text-gray-600">I agree with the <a href="#"  class="text-indigo-600">terms and conditions.</a></label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Checkbox Intermediate </h2>
+                    <p class="page-para">Use following example for intermediate checkbox.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative">
+                              <div class="grid space-y-5">
+                                <div class="flex items-center">
+                                  <input id="intermediate-checkbox" type="checkbox" class="border border-gray-300 rounded-md  w-5 h-5 appearance-none bg-no-repeat bg-center checked:border-indigo-500 checked:bg-indigo-100 indeterminate:border-indigo-500 indeterminate:bg-indigo-100 mr-2 " indeterminate>
+                                  <label for="intermediate-checkbox" class="text-sm font-normal text-gray-600">Checkbox indeterminate</label> 
                                 </div>
+                                <div class="flex items-center">
+                                  <input id="intermediate-checkbox-disabled" type="checkbox" class="cursor-not-allowed border disabled:border-gray-300 disabled:bg-gray-100 rounded-md  w-5 h-5 appearance-none bg-no-repeat bg-center mr-2 " indeterminate disabled>
+                                  <label for="intermediate-checkbox-disabled" class="text-sm font-normal text-gray-600 cursor-not-allowed">Checkbox indeterminate</label> 
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Checkbox sizes </h2>
+                    <p class="page-para">Use following example for different sizes of checkbox.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative">
+                              <div class="flex items-center space-x-5">
+                                <div class="flex items-center">
+                                  <input id="small-checkbox" type="checkbox" class="w-4 h-4 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                  <label for="small-checkbox" class="text-xs font-normal text-gray-600">Small </label>
+                                </div>
+                                <div class="flex items-center">
+                                  <input id="medium-checkbox" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                  <label for="medium-checkbox" class="text-sm font-normal text-gray-600">Medium </label>
+                                </div>
+                                <div class="flex items-center">
+                                  <input id="large-checkbox" type="checkbox" class="w-6 h-6 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                  <label for="large-checkbox" class="text-md font-normal text-gray-600">Large </label>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Checkbox within form input </h2>
+                    <p class="page-para">Checkbox components within form input stacked in a grid format.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative">
+                              <div class="grid sm:grid-cols-2 gap-2">
+                                <label for="hs-checkbox-in-form" class="flex p-3 w-full bg-white border border-gray-300 rounded-md text-sm ">
+                                  <input type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" id="hs-checkbox-in-form">
+                                  <span class="text-sm font-normal text-gray-600 ml-2">Default checkbox</span>
+                                </label>
+                              
+                                <label for="hs-checkbox-checked-in-form" class="flex p-3  w-full bg-white border border-gray-300 rounded-md text-sm ">
+                                  <input type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" id="hs-checkbox-checked-in-form" checked>
+                                  <span class="text-sm font-normal text-gray-600 ml-2">Checked checkbox</span>
+                                </label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >On right </h2>
+                    <p class="page-para">Checkbox placed on the right side.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative">
+                              <div class="grid sm:grid-cols-2 gap-2">
+                                <label for="hs-checkbox-in-form" class="flex p-3 w-full bg-white border border-gray-300 rounded-md text-sm ">
+                                  <span class="text-sm font-normal text-gray-600 ml-2">Default checkbox</span>
+                                  <input type="checkbox" class="w-5 h-5 ml-auto appearance-none border border-gray-300  rounded-md  checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" id="hs-checkbox-in-form">
+                                  
+                                </label>
+                                <label for="hs-checkbox-checked-in-form" class="flex p-3  w-full bg-white border border-gray-300 rounded-md text-sm ">
+                                  <span class="text-sm font-normal text-gray-600 ml-2">Checked checkbox</span>
+                                  <input type="checkbox" class="w-5 h-5 ml-auto appearance-none border border-gray-300  rounded-md  checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" id="hs-checkbox-checked-in-form" checked>
+                                  
+                                </label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >With list group</h2>
+                    <p class="page-para">Make the list item appear with checkbox.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative">
+                                <ul class="max-w-sm flex flex-col">
+                                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="list-group-item-checkbox-1" name="list-group-item-checkbox-1" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked="">
+                                        </div>
+                                        <label for="list-group-item-checkbox-1" class="ml-3.5 block text-sm font-normal text-gray-600 ">
+                                          Kiwi
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700 dark:text-white">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="list-group-item-checkbox-2" name="list-group-item-checkbox-1" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" >
+                                        </div>
+                                        <label for="list-group-item-checkbox-2" class="ml-3.5 block text-sm font-normal text-gray-600 ">
+                                          Jackfruit
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700 dark:text-white">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="list-group-item-checkbox-3" name="list-group-item-checkbox-1" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" >
+                                        </div>
+                                        <label for="list-group-item-checkbox-3" class="ml-3.5 block text-sm font-normal text-gray-600 ">
+                                          Mango
+                                        </label>
+                                      </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >With horizontal list group</h2>
+                    <p class="page-para">Make a horizontal list group item appear with checkbox.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative">
+                                <ul class="flex flex-col sm:flex-row">
+                                    <li class="inline-flex items-center gap-x-2.5 py-3 px-4 text-sm font-medium bg-white border text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ml-px sm:mt-0 sm:first:rounded-tr-none sm:first:rounded-bl-lg sm:last:rounded-bl-none sm:last:rounded-tr-lg ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="list-group-item-checkbox-4" name="list-group-item-checkbox-1" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked="">
+                                        </div>
+                                        <label for="list-group-item-checkbox-4" class="ml-3.5 block text-sm font-normal text-gray-600 ">
+                                          Kiwi
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="inline-flex items-center gap-x-2.5 py-3 px-4 text-sm font-medium bg-white border text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ml-px sm:mt-0 sm:first:rounded-tr-none sm:first:rounded-bl-lg sm:last:rounded-bl-none sm:last:rounded-tr-lg ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="list-group-item-checkbox-5" name="list-group-item-checkbox-1" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" >
+                                        </div>
+                                        <label for="list-group-item-checkbox-5" class="ml-3.5 block text-sm font-normal text-gray-600 ">
+                                          Jackfruit
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="inline-flex items-center gap-x-2.5 py-3 px-4 text-sm font-medium bg-white border text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ml-px sm:mt-0 sm:first:rounded-tr-none sm:first:rounded-bl-lg sm:last:rounded-bl-none sm:last:rounded-tr-lg ">
+                                      <div class="relative flex items-start w-full">
+                                        <div class="flex items-center h-5">
+                                          <input id="list-group-item-checkbox-6" name="list-group-item-checkbox-1" type="checkbox" class="w-5 h-5 appearance-none border border-gray-300  rounded-md checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" >
+                                        </div>
+                                        <label for="list-group-item-checkbox-6" class="ml-3.5 block text-sm font-normal text-gray-600 ">
+                                          Mango
+                                        </label>
+                                      </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>
                         </div>
@@ -838,31 +1386,8 @@ code
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
-       // Get all tab buttons
-       const tabButtons = document.querySelectorAll('[data-pd-tab]');
-
-// Add click event listener to each tab button
-tabButtons.forEach(tabButton => {
-    tabButton.addEventListener('click', () => {
-        // Get the target tab content ID from data attribute
-        const targetTab = tabButton.getAttribute('data-pd-tab');
-
-        // Remove 'hidden' class from target tab content
-        document.querySelector(targetTab).classList.remove('hidden');
-
-        // Hide all other tab contents
-        const otherTabs = document.querySelectorAll('[role="tabpanel"]:not(' + targetTab + ')');
-        otherTabs.forEach(tab => {
-            tab.classList.add('hidden');
-        });
-
-        // Mark the clicked tab button as active
-        tabButtons.forEach(button => {
-            button.classList.remove('active');
-        });
-        tabButton.classList.add('active');
-    });
-});
+      /*===========Intermediate checkbox===========*/
+      document.querySelectorAll("[indeterminate]").forEach(($checkbox) => ($checkbox.indeterminate = true));
   </script>
 </body>
 </html>

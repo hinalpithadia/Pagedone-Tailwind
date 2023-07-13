@@ -1149,7 +1149,7 @@
                               <div class='text-center'>
                                 <span id='badge-dismiss-default' class='inline-flex items-center bg-gray-100 text-gray-700 border border-gray-500 text-xs font-medium mr-2 pl-2.5 pr-1.5 py-0.5 rounded-full h-5'>
                                   Label
-                                  <button type='button' class='inline-flex items-center p-0.5 ml-1 text-sm  bg-transparent rounded-full hover:bg-gray-200  ' data-dismiss-target='#badge-dismiss-default' aria-label='Remove'>
+                                  <button type='button' class='inline-flex items-center p-0.5 ml-1 text-sm  bg-transparent rounded-full hover:bg-gray-200  close-icon' aria-label='Remove'>
                                      <svg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'>
                                         <path d='M1.52539 6.47487L6.47514 1.52512M6.47514 6.47487L1.52539 1.52512' stroke='#6B7280' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'></path>
                                      </svg>
@@ -2026,7 +2026,18 @@
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
+    const closeIcons = document.querySelectorAll('.close-icon');
 
+// Attach event listener to each close icon
+closeIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        // Get the parent alert element
+        const alert = icon.closest('.bg-red-100');
+
+        // Hide the alert by adding a 'hidden' class
+        alert.classList.add('hidden');
+    });
+});
    
   </script>
 </body>

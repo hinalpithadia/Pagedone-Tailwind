@@ -647,7 +647,7 @@
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative">
+                            <div class="w-full relative flex justify-center gap-3">
                                 <div class="pd-tooltip inline-block [--trigger:click] [--placement:left]">
                                     <a class="pd-tooltip-toggle block text-center" href="javascript:;">
                                       <span class="w-10 h-10 inline-flex justify-center items-center gap-2 rounded-md bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
@@ -732,7 +732,7 @@ code
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative">
+                            <div class="w-full relative flex justify-center">
                                 <div class="pd-tooltip inline-block [--trigger:focus]">
                                     <a class="pd-tooltip-toggle block text-center" href="javascript:;">
                                       <span class="w-10 h-10 inline-flex justify-center items-center gap-2 rounded-md bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
@@ -781,7 +781,7 @@ code
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative">
+                            <div class="w-full relative flex justify-center">
                                 <div class="pd-tooltip inline-block [--trigger:hover]">
                                     <a class="pd-tooltip-toggle block text-center" href="javascript:;">
                                       <span class="w-10 h-10 inline-flex justify-center items-center gap-2 rounded-md bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
@@ -830,7 +830,7 @@ code
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative">
+                            <div class="w-full relative flex justify-center">
                                 <div class="pd-tooltip inline-block [--trigger:click]">
                                     <a class="pd-tooltip-toggle block text-center" href="javascript:;">
                                       <span class="w-10 h-10 inline-flex justify-center items-center gap-2 rounded-md bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
@@ -957,6 +957,45 @@ code
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
+    
+    // Get all tooltip-toggle elements
+    const tooltipToggles = document.querySelectorAll('.pd-tooltip-toggle');
+    
+    // Add scroll event listener to update popover positions
+    window.addEventListener('scroll', () => {
+        tooltipToggles.forEach((toggle) => {
+            // Find the corresponding tooltip-content element
+            const tooltipContent = toggle.querySelector('.pd-tooltip-content');
+    
+            // Calculate the translate value based on the scroll position
+            const scrollPosition = window.scrollY;
+            const translateValue = `translate(413px, ${scrollPosition}px)`; // Adjust the horizontal position as needed
+    
+            // Apply the updated translate value to the tooltip-content
+            tooltipContent.style.transform = translateValue;
+        });
+    });
+    
+    // Add click event listener to each tooltip-toggle element
+    tooltipToggles.forEach((toggle) => {
+        toggle.addEventListener('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+    
+            // Find the corresponding tooltip-content element
+            const tooltipContent = toggle.querySelector('.pd-tooltip-content');
+    
+            // Toggle the visibility of tooltip-content
+            tooltipContent.classList.toggle('hidden');
+            tooltipContent.classList.toggle('visible');
+    
+            // Toggle the opacity of tooltip-content
+            tooltipContent.classList.toggle('opacity-0');
+            tooltipContent.classList.toggle('opacity-100');
+        });
+    });
+
+
   </script>
 </body>
 </html>

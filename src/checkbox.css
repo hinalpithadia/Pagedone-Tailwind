@@ -1,0 +1,37 @@
+@layer components {
+    input[type='checkbox']:checked{
+        background-image: url('../images/docs/checkbox/check-sm.png');
+    }
+    input[type='checkbox']:disabled:checked{
+        @apply bg-[url('../images/docs/checkbox/check-sm-disabled.png')];
+    }
+    input[type='checkbox']:indeterminate{
+        background-image: url('../images/docs/checkbox/check-sm-intermediate.png');
+    }
+    input[type='checkbox']:indeterminate:disabled{
+        @apply bg-[url('../images/docs/checkbox/check-sm-intermediate-disabled.png')];
+    }
+     input[type='radio']:disabled{
+         @apply cursor-not-allowed border border-gray-200  rounded-md bg-gray-100;
+     }
+     input[type="radio"] + label span {
+        transition: background .2s,
+          transform .2s;
+    }
+    
+    input[type="radio"]:disabled + label{
+        @apply text-gray-600 text-sm font-normal;
+    }
+    input[type="radio"] + label span:hover,
+    input[type="radio"] + label:hover span{
+         @apply scale-100;
+    } 
+    
+    input[type="radio"]:checked + label span {
+        @apply border-indigo-500 bg-indigo-500 shadow-[inset_0_0px_0px_3.5px_#E7E7FF];
+    }
+    
+    input[type="radio"]:checked:disabled + label span {
+        @apply cursor-not-allowed border border-indigo-200  bg-gray-300 shadow-[inset_0_0px_0px_3.5px_#F2F4F7];
+      }
+}
