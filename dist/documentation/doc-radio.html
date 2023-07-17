@@ -648,12 +648,19 @@
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative">
+                            <div class="w-full relative space-y-5">
                                   <div class="flex items-center">
-                                    <input id="radio1" type="radio" name="options" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                                    <input id="radio1" type="radio" name="default-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
                                     <label for="radio1" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
                                         <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
                                         Default radio
+                                    </label>
+                                  </div>
+                                  <div class="flex items-center">
+                                    <input id="radio2" type="radio" name="default-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked>
+                                    <label for="radio2" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
+                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                                        Checked radio
                                     </label>
                                   </div>
                             </div>
@@ -692,7 +699,64 @@
                         </div>
                     </div>
                   </div>
-                  
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Disabled</h2>
+                    <p class="page-para">You can apply <code>disabled</code> attribute to the radio to disallow the selection for the user.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative space-y-5">
+                                  <div class="flex items-center">
+                                    <input id="radio1" type="radio" name="disabled-radio" class="hidden disabled:cursor-not-allowed disabled:border disabled:border-gray-200  disabled:rounded-md disabled:bg-gray-100" disabled>
+                                    <label for="radio1" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
+                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                                        Default radio
+                                    </label>
+                                  </div>
+                                  <div class="flex items-center">
+                                    <input id="radio2" type="radio" name="disabled-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked disabled>
+                                    <label for="radio2" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
+                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                                        Checked radio
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl p-4 transition-all duration-500 col-span-12  xl:p-7   lg:col-span-3 md:col-span-6 &quot;&gt;
+    &lt;div class=&quot; mb-6 &quot;&gt;
+      &lt;svg width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M8.66699 12.8162L11.3501 15.4993C11.5616 15.7107 11.9043 15.7109 12.1158 15.4997L17.8753 9.75033M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-500 transition-all duration-500 leading-5 &quot;&gt; Provides faster transaction, so money arrives in realtime &lt;/p&gt;
+  &lt;/div&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
             </div>
               </div>
             <!----------Middlebar End---------->

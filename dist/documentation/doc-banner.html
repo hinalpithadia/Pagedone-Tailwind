@@ -648,7 +648,7 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full relative">
-                                <div id="dismiss-banner" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full p-4 border-t border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full p-4 border-t border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
                                     <div class="flex items-center mx-auto">
                                         <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
                                             <span class="inline-flex p-1 mr-3 bg-gray-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center">
@@ -663,7 +663,7 @@
                                         </p>
                                     </div>
                                     <div class="flex items-center">
-                                        <button data-pd-remove-element="#dismiss-banner" type="button" class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
                                             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                                             </svg>
@@ -758,6 +758,234 @@ code
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
+    const closeIcons = document.querySelectorAll('.close-icon');
+
+document.addEventListener('DOMContentLoaded', () => {
+defaultAccordion();
+tooltips();
+alert();
+speedDial();
+sidebar();
+const alwaysOpenAccordionGroup = document.querySelector('.accordion-group[data-accordion="always-open"]');
+const nestedAccordionGroup = document.querySelector('.accordion-group[data-accordion="nested-accordion"]');
+if (alwaysOpenAccordionGroup) {
+    alwaysOpenAccordion(alwaysOpenAccordionGroup);
+}
+
+if (nestedAccordionGroup) {
+    nestedAccordion(nestedAccordionGroup);
+}
+
+});
+
+function defaultAccordion() {
+const accordionGroups = document.querySelectorAll('.accordion-group');
+
+accordionGroups.forEach(group => {
+    const accordionButtons = group.querySelectorAll('.accordion-toggle');
+
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const accordion = button.parentElement;
+            const content = button.nextElementSibling;
+            const isOpen = content.style.maxHeight !== '';
+
+            if (isOpen) {
+                close(button);
+                content.style.maxHeight = '';
+                accordion.classList.remove('open');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                accordion.classList.add('open');
+                const otherButtons = group.querySelectorAll('.accordion-toggle');
+                otherButtons.forEach(otherButton => {
+                    if (otherButton !== button) {
+                        close(otherButton);
+                        const otherContent = otherButton.nextElementSibling;
+                        otherContent.style.maxHeight = '';
+                    }
+                });
+            }
+        });
+
+        function close(element) {
+            const content = element.nextElementSibling;
+            content.style.maxHeight = '';
+        }
+    });
+});
+}
+
+function alwaysOpenAccordion(alwaysOpenAccordionGroup) {
+// Get all accordion headers
+// console.log(alwaysOpenAccordionGroup);
+const accordionHeaders = alwaysOpenAccordionGroup.querySelectorAll('.accordion-toggle');
+const accordion = accordionHeaders.parentElement;
+// Add click event listeners to each accordion header
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        // Toggle the visibility of the clicked accordion content
+        const accordionContent = header.nextElementSibling;
+        accordionContent.classList.toggle('active');
+
+        if (accordionContent.classList.contains('active')) {
+            // Calculate the computed height of the accordion content
+            const contentHeight = accordionContent.scrollHeight + 'px';
+
+            // Set the initial height of the accordion content to 0
+            accordionContent.style.height = '0';
+
+            // Wait for the next frame to apply the new height and trigger the transition
+            requestAnimationFrame(() => {
+                accordionContent.style.height = contentHeight;
+            });
+        } else {
+            // Set the height to 0 to trigger the closing transition
+            accordionContent.style.height = '0';
+        }
+    });
+});
+}
+
+function nestedAccordion(nestedAccordionGroup) {
+const accordionHeaders = nestedAccordionGroup.querySelectorAll('.accordion-toggle');
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+
+        header.classList.toggle('active');
+
+        const accordionContent = header.parentNode.querySelector('.accordion-content');
+
+        if (accordionContent.style.maxHeight) {
+            // Close the accordion
+            accordionContent.style.maxHeight = null;
+        } else {
+            // Open the accordion
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        }
+    });
+});
+}
+
+function tooltips() {
+
+// Get all tooltip-toggle elements
+const tooltipToggles = document.querySelectorAll('.tooltip-toggle');
+
+// Add scroll event listener to update popover positions
+window.addEventListener('scroll', () => {
+    tooltipToggles.forEach((toggle) => {
+        // Find the corresponding tooltip-content element
+        const tooltipContent = toggle.querySelector('.tooltip-content');
+
+        // Calculate the translate value based on the scroll position
+        const scrollPosition = window.scrollY;
+        const translateValue = `translate(413px, ${scrollPosition}px)`; // Adjust the horizontal position as needed
+
+        // Apply the updated translate value to the tooltip-content
+        tooltipContent.style.transform = translateValue;
+    });
+});
+
+// Add click event listener to each tooltip-toggle element
+tooltipToggles.forEach((toggle) => {
+    toggle.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Find the corresponding tooltip-content element
+        const tooltipContent = toggle.querySelector('.tooltip-content');
+
+        // Toggle the visibility of tooltip-content
+        tooltipContent.classList.toggle('hidden');
+        tooltipContent.classList.toggle('visible');
+
+        // Toggle the opacity of tooltip-content
+        tooltipContent.classList.toggle('opacity-0');
+        tooltipContent.classList.toggle('opacity-100');
+    });
+});
+}
+
+function alert() {
+// Get all the close icons
+const closeIcons = document.querySelectorAll('[data-dismiss="alert"]');
+// Attach event listener to each close icon
+closeIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        // Get the parent alert element
+        const alert = icon.closest('[role="alert"]');
+
+        // Hide the alert by adding a 'hidden' class
+        alert.classList.add('hidden');
+    });
+});
+}
+
+function speedDial() {
+
+}
+
+function tabs() {
+// Get all tab buttons
+const tabButtons = document.querySelectorAll('[data-tab]');
+
+// Add click event listener to each tab button
+tabButtons.forEach(tabButton => {
+    tabButton.addEventListener('click', () => {
+        // Get the target tab content ID from data attribute
+        const targetTab = tabButton.getAttribute('data-tab');
+
+        // Remove 'hidden' class from target tab content
+        document.querySelector(targetTab).classList.remove('hidden');
+
+        // Hide all other tab contents
+        const otherTabs = document.querySelectorAll('[role="tabpanel"]:not(' + targetTab + ')');
+        otherTabs.forEach(tab => {
+            tab.classList.add('hidden');
+        });
+
+        // Mark the clicked tab button as active
+        tabButtons.forEach(button => {
+            button.classList.remove('active');
+        });
+        tabButton.classList.add('active');
+    });
+});
+}
+
+function sidebar() {
+const sidebarToggle = document.querySelector('[data-pd-overlay="#docs-sidebar"]');
+
+// Get the sidebar element
+const sidebar = document.getElementById('docs-sidebar');
+// Add event listener to the document
+document.addEventListener('click', function (event) {
+    // Check if the clicked element is the sidebar or a descendant of the sidebar
+    if (!sidebar.contains(event.target) && !sidebarToggle.contains(event.target)) {
+        closeSidebar();
+    }
+});
+
+// Add click event listener to the toggle button
+sidebarToggle.addEventListener('click', () => {
+    // Toggle the visibility of the sidebar
+    sidebar.classList.toggle('hidden');
+    sidebar.classList.toggle('translate-x-0');
+});
+
+// Add event listener to the document
+// document.addEventListener('click', function (event) {
+//     // Check if the clicked element is the sidebar or a descendant of the sidebar
+//         closeSidebar();
+// });
+
+// Function to close the sidebar
+function closeSidebar() {
+    sidebar.classList.add('hidden');
+}
+}
+
   </script>
 </body>
 </html>

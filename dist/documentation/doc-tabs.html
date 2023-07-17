@@ -648,33 +648,33 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                              <div >
+                              <div class="tabs">
                                 <div class="border-b border-gray-200 dark:border-gray-700">
-                                    <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
-                                      <button type="button" class="pd-tab-active:font-semibold pd-tab-active:border-blue-600 pd-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 active" id="tabs-with-underline-item-1" data-pd-tab="#tabs-with-underline-1" aria-controls="tabs-with-underline-1" role="tab">
+                                    <nav class="flex space-x-2" >
+                                      <button type="button" class="pd-tab-active:font-semibold pd-tab-active:border-blue-600 pd-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 active tablink" id="tabs-with-underline-item-1" data-tab="#tabs-with-underline-1" aria-controls="tabs-with-underline-1" role="tab">
                                         Tab 1
                                       </button>
-                                      <button type="button" class="pd-tab-active:font-semibold pd-tab-active:border-blue-600 pd-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600" id="tabs-with-underline-item-2" data-pd-tab="#tabs-with-underline-2" aria-controls="tabs-with-underline-2" role="tab">
+                                      <button type="button" class="pd-tab-active:font-semibold pd-tab-active:border-blue-600 pd-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 tablink" id="tabs-with-underline-item-2 " data-tab="#tabs-with-underline-2" aria-controls="tabs-with-underline-2" role="tab">
                                         Tab 2
                                       </button>
-                                      <button type="button" class="pd-tab-active:font-semibold pd-tab-active:border-blue-600 pd-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600" id="tabs-with-underline-item-3" data-pd-tab="#tabs-with-underline-3" aria-controls="tabs-with-underline-3" role="tab">
+                                      <button type="button" class="pd-tab-active:font-semibold pd-tab-active:border-blue-600 pd-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 tablink" id="tabs-with-underline-item-3" data-tab="#tabs-with-underline-3" aria-controls="tabs-with-underline-3" role="tab">
                                         Tab 3
                                       </button>
                                     </nav>
                                   </div>
                                   
                                   <div class="mt-3">
-                                    <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1">
+                                    <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1" class="tabcontent">
                                       <p class="text-gray-500 dark:text-gray-400">
                                         This is the <em class="font-semibold text-gray-800 dark:text-gray-200">first</em> item's tab body.
                                       </p>
                                     </div>
-                                    <div id="tabs-with-underline-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-2">
+                                    <div id="tabs-with-underline-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-underline-item-2" >
                                       <p class="text-gray-500 dark:text-gray-400">
                                         This is the <em class="font-semibold text-gray-800 dark:text-gray-200">second</em> item's tab body.
                                       </p>
                                     </div>
-                                    <div id="tabs-with-underline-3" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-3">
+                                    <div id="tabs-with-underline-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-underline-item-3">
                                       <p class="text-gray-500 dark:text-gray-400">
                                         This is the <em class="font-semibold text-gray-800 dark:text-gray-200">third</em> item's tab body.
                                       </p>
@@ -838,31 +838,128 @@ code
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
-       // Get all tab buttons
-       const tabButtons = document.querySelectorAll('[data-pd-tab]');
+    const closeIcons = document.querySelectorAll('.close-icon');
 
-// Add click event listener to each tab button
-tabButtons.forEach(tabButton => {
-    tabButton.addEventListener('click', () => {
-        // Get the target tab content ID from data attribute
-        const targetTab = tabButton.getAttribute('data-pd-tab');
+document.addEventListener('DOMContentLoaded', () => {
+defaultAccordion();
+tooltips();
+alert();
+speedDial();
+sidebar();
+tabs();
+const alwaysOpenAccordionGroup = document.querySelector('.accordion-group[data-accordion="always-open"]');
+const nestedAccordionGroup = document.querySelector('.accordion-group[data-accordion="nested-accordion"]');
+if (alwaysOpenAccordionGroup) {
+    alwaysOpenAccordion(alwaysOpenAccordionGroup);
+}
 
-        // Remove 'hidden' class from target tab content
-        document.querySelector(targetTab).classList.remove('hidden');
+if (nestedAccordionGroup) {
+    nestedAccordion(nestedAccordionGroup);
+}
 
-        // Hide all other tab contents
-        const otherTabs = document.querySelectorAll('[role="tabpanel"]:not(' + targetTab + ')');
-        otherTabs.forEach(tab => {
-            tab.classList.add('hidden');
+});
+
+function defaultAccordion() {
+const accordionGroups = document.querySelectorAll('.accordion-group');
+
+accordionGroups.forEach(group => {
+    const accordionButtons = group.querySelectorAll('.accordion-toggle');
+
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const accordion = button.parentElement;
+            const content = button.nextElementSibling;
+            const isOpen = content.style.maxHeight !== '';
+
+            if (isOpen) {
+                close(button);
+                content.style.maxHeight = '';
+                accordion.classList.remove('open');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                accordion.classList.add('open');
+                const otherButtons = group.querySelectorAll('.accordion-toggle');
+                otherButtons.forEach(otherButton => {
+                    if (otherButton !== button) {
+                        close(otherButton);
+                        const otherContent = otherButton.nextElementSibling;
+                        otherContent.style.maxHeight = '';
+                    }
+                });
+            }
         });
 
-        // Mark the clicked tab button as active
-        tabButtons.forEach(button => {
-            button.classList.remove('active');
-        });
-        tabButton.classList.add('active');
+        function close(element) {
+            const content = element.nextElementSibling;
+            content.style.maxHeight = '';
+        }
     });
 });
+}
+
+
+
+function tabs() {
+    document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('click', function (event) {
+            // Check if the clicked element has the "tablink" class
+            if (event.target.classList.contains('tablink')) {
+                var tab = event.target.dataset.tab; // Get the data-tab attribute value
+                var tabContainer = event.target.closest('.tabs'); // Find the closest .tabs container
+                // Hide all tab content within the current tab container
+                var tabcontents = tabContainer.querySelectorAll('.tabcontent');
+                for (var i = 0; i < tabcontents.length; i++) {
+                    tabcontents[i].style.display = 'none';
+                }
+
+                // Remove "active" class from all tab links within the current tab container
+                var tablinks = tabContainer.querySelectorAll('.tablink');
+                for (var i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.remove('active');
+                }
+
+                // Show the current tab content and add "active" class to the clicked tab link
+                var tabcontent = tabContainer.querySelector('#' + tab);
+                tabcontent.style.display = 'block';
+                event.target.classList.add('active');
+            }
+        });
+    });
+}
+
+
+function sidebar() {
+const sidebarToggle = document.querySelector('[data-pd-overlay="#docs-sidebar"]');
+
+// Get the sidebar element
+const sidebar = document.getElementById('docs-sidebar');
+// Add event listener to the document
+document.addEventListener('click', function (event) {
+    // Check if the clicked element is the sidebar or a descendant of the sidebar
+    if (!sidebar.contains(event.target) && !sidebarToggle.contains(event.target)) {
+        closeSidebar();
+    }
+});
+
+// Add click event listener to the toggle button
+sidebarToggle.addEventListener('click', () => {
+    // Toggle the visibility of the sidebar
+    sidebar.classList.toggle('hidden');
+    sidebar.classList.toggle('translate-x-0');
+});
+
+// Add event listener to the document
+// document.addEventListener('click', function (event) {
+//     // Check if the clicked element is the sidebar or a descendant of the sidebar
+//         closeSidebar();
+// });
+
+// Function to close the sidebar
+function closeSidebar() {
+    sidebar.classList.add('hidden');
+}
+}
+
   </script>
 </body>
 </html>
