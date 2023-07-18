@@ -305,5 +305,17 @@
         border-right-color: transparent;
         transform: translateX(-50%);
     }
-  
+    .tooltip-placement-top{
+        @apply top-0;
+    }
+    .tooltip-placement-right{
+        @apply right-0;   
+    }
+    .tooltip-placement-bottom{
+        @apply bottom-0;
+    }
+    .tooltip-placement-left{
+        @apply left-0;
+    }
+   
 }

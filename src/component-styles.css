@@ -508,16 +508,5 @@
     .group:hover .stroke-animation{
         stroke-dasharray: 300;
     }
-    .placement-top{
-        top:0;
-    }
-    .placement-right{
-        right:0;
-    }
-    .placement-bottom{
-        bottom:0;
-    }
-    .placement-left{
-        left:0;
-    }
+    
 }

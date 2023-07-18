@@ -1379,10 +1379,6 @@ svg, rect, circle, path{
   stroke-dasharray: 300;
 }
 
-.placement-left{
-  left:0;
-}
-
 .doc-small-heading{
   display: block;
   font-size: 0.875rem;
@@ -1878,6 +1874,22 @@ code.language-javascript {
   border-left-color: transparent;
   border-right-color: transparent;
   transform: translateX(-50%);
+}
+
+.tooltip-placement-top{
+  top: 0px;
+}
+
+.tooltip-placement-right{
+  right: 0px;
+}
+
+.tooltip-placement-bottom{
+  bottom: 0px;
+}
+
+.tooltip-placement-left{
+  left: 0px;
 }
 
 .accordion.active > .accordion-toggle.accordion-active\:text-indigo-600{
