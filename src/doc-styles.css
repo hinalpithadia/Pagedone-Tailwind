@@ -317,5 +317,16 @@
     .tooltip-placement-left{
         @apply left-0;
     }
-   
+    .tooltip[data-tooltip-placement^=top]>.tooltip-arrow {
+        top: -4px;
+    }
+    .tooltip[data-tooltip-placement^=right]>.tooltip-arrow {
+        right: -4px;
+    }
+    .tooltip[data-tooltip-placement^=bottom]>.tooltip-arrow {
+        bottom: -4px;
+    }
+    .tooltip[data-tooltip-placement^=left]>.tooltip-arrow {
+        left: -4px;
+    }
 }

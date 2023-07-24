@@ -1221,6 +1221,13 @@ pre[class*="language-"]::selection,
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
+#right-menu > #TableOfContents>ul>li>a.active, #right-menu > #TableOfContents>ul>li>ul>li>a.active{
+  --tw-border-opacity: 1;
+  border-color: rgb(79 70 229 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
 #left-bar>ul{
   margin-bottom: 2rem;
   border-bottom-width: 1px;
@@ -1280,12 +1287,12 @@ pre[class*="language-"]::selection,
   content: var(--tw-content);
 }
 
-#left-bar>ul>li>ul>li>a:hover, #left-bar>ul>li>ul>li>a:active{
+#left-bar>ul>li>ul>li>a:hover, #left-bar>ul>li>ul>li>a.active{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
-#left-bar>ul>li>ul>li>a:hover::before, #left-bar>ul>li>ul>li>a:active:before{
+#left-bar>ul>li>ul>li>a:hover::before, #left-bar>ul>li>ul>li>a.active:before{
   opacity: 1;
 }
 
@@ -1876,20 +1883,20 @@ code.language-javascript {
   transform: translateX(-50%);
 }
 
-.tooltip-placement-top{
-  top: 0px;
+.tooltip[data-tooltip-placement^=top]>.tooltip-arrow {
+  top: -4px;
 }
 
-.tooltip-placement-right{
-  right: 0px;
+.tooltip[data-tooltip-placement^=right]>.tooltip-arrow {
+  right: -4px;
 }
 
-.tooltip-placement-bottom{
-  bottom: 0px;
+.tooltip[data-tooltip-placement^=bottom]>.tooltip-arrow {
+  bottom: -4px;
 }
 
-.tooltip-placement-left{
-  left: 0px;
+.tooltip[data-tooltip-placement^=left]>.tooltip-arrow {
+  left: -4px;
 }
 
 .accordion.active > .accordion-toggle.accordion-active\:text-indigo-600{
@@ -2037,12 +2044,16 @@ input[type="radio"]:checked:disabled + label span{
   bottom: -3rem;
 }
 
+.-left-3{
+  left: -0.75rem;
+}
+
 .-left-80{
   left: -20rem;
 }
 
-.-right-2{
-  right: -0.5rem;
+.-right-4{
+  right: -1rem;
 }
 
 .-right-6{
@@ -2063,6 +2074,10 @@ input[type="radio"]:checked:disabled + label span{
 
 .-top-2{
   top: -0.5rem;
+}
+
+.-top-3{
+  top: -0.75rem;
 }
 
 .-top-4{
@@ -2634,6 +2649,10 @@ input[type="radio"]:checked:disabled + label span{
 
 .h-8{
   height: 2rem;
+}
+
+.h-9{
+  height: 2.25rem;
 }
 
 .h-\[2\.875rem\]{
@@ -3758,6 +3777,11 @@ input[type="radio"]:checked:disabled + label span{
   background-color: rgb(254 243 199 / var(--tw-bg-opacity));
 }
 
+.bg-amber-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
 .bg-amber-400{
   --tw-bg-opacity: 1;
   background-color: rgb(251 191 36 / var(--tw-bg-opacity));
@@ -3766,6 +3790,11 @@ input[type="radio"]:checked:disabled + label span{
 .bg-amber-50{
   --tw-bg-opacity: 1;
   background-color: rgb(255 251 235 / var(--tw-bg-opacity));
+}
+
+.bg-amber-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
 .bg-amber-600{
@@ -3791,6 +3820,11 @@ input[type="radio"]:checked:disabled + label span{
 .bg-emerald-100{
   --tw-bg-opacity: 1;
   background-color: rgb(209 250 229 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 243 208 / var(--tw-bg-opacity));
 }
 
 .bg-emerald-50{
@@ -4344,6 +4378,11 @@ input[type="radio"]:checked:disabled + label span{
   padding-right: 0.25rem;
 }
 
+.px-1\.5{
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -4544,10 +4583,6 @@ input[type="radio"]:checked:disabled + label span{
   padding-left: 0.5rem;
 }
 
-.pl-2\.5{
-  padding-left: 0.625rem;
-}
-
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -4574,10 +4609,6 @@ input[type="radio"]:checked:disabled + label span{
 
 .pr-1{
   padding-right: 0.25rem;
-}
-
-.pr-1\.5{
-  padding-right: 0.375rem;
 }
 
 .pr-2{
@@ -4899,6 +4930,11 @@ input[type="radio"]:checked:disabled + label span{
 .text-emerald-50{
   --tw-text-opacity: 1;
   color: rgb(236 253 245 / var(--tw-text-opacity));
+}
+
+.text-emerald-500{
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
 .text-emerald-600{
@@ -5223,6 +5259,10 @@ input[type="radio"]:checked:disabled + label span{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-white\/80{
+  color: rgb(255 255 255 / 0.8);
 }
 
 .text-yellow-50{
@@ -6195,9 +6235,19 @@ input[type="radio"]:checked:disabled + label span{
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
 
+.hover\:text-amber-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity));
+}
+
 .hover\:text-blue-600:hover{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.hover\:text-emerald-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-400:hover{
