@@ -635,33 +635,24 @@
                <!--Header-->  
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Component</span>
-                <h1 class="doc-heading ">Tailwind CSS Radio</h1>
-                <p class="doc-paragraph-big">A radio input is like a multiple-choice question where you can select only one option from a list. It's typically shown as a group of radio buttons, and you can choose only one option from the available choices. Radio buttons are used when you want users to make a single selection from a set of options. </p>
+                <h1 class="doc-heading ">Tailwind CSS Toggle</h1>
+                <p class="doc-paragraph-big">Toggle button can be use to switch between a state of true or false using single click.It can be in different sizes and colors. </p>
             </div>
             <!--Header End-->
             <div id="mainContent">
+                <p class="doc-paragraph-big">It can be used to answer "on" or "off" type of question. You can choose single option from two available options.</p>
                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-radio">Default Radio button</h2>
-                    <p class="page-para">The default way to present a single option from a list.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-toggle">Default Toggle</h2>
+                    <p class="page-para">You can use following example for default form of a toggle.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative space-y-5">
-                                  <div class="flex items-center">
-                                    <input id="radio1" type="radio" name="default-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                    <label for="radio1" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Default radio
-                                    </label>
-                                  </div>
-                                  <div class="flex items-center">
-                                    <input id="radio2" type="radio" name="default-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked>
-                                    <label for="radio2" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Checked radio
-                                    </label>
-                                  </div>
+                            <div class="w-full relative">
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 peer-focus:ring-transparent rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700"></div>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -674,7 +665,10 @@
                                 </li>
                               </ul>
                               <div class="code-copy-button">
-                                  <button class="group">
+                                  <button class="group" data-clipboard-demo="" data-clipboard-text="&lt;label class=&quot;relative inline-flex items-center cursor-pointer&quot;&gt;
+                                  &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+                                  &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 peer-focus:ring-transparent rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700&quot;&gt;&lt;/div&gt;
+                              &lt;/label&gt;">
                                     <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                       <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -684,43 +678,51 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex items-center&quot;&gt;
-  &lt;input id=&quot;radio1&quot; type=&quot;radio&quot; name=&quot;default-radio&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-  &lt;label for=&quot;radio1&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-    &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Default radio &lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex items-center&quot;&gt;
-  &lt;input id=&quot;radio2&quot; type=&quot;radio&quot; name=&quot;default-radio&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; checked&gt;
-  &lt;label for=&quot;radio2&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-    &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Checked radio &lt;/label&gt;
-&lt;/div&gt;</code></div>
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;label class=&quot;relative inline-flex items-center cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+    &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 peer-focus:ring-transparent rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700&quot;&gt;&lt;/div&gt;
+&lt;/label&gt;</code></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="disable-radio">Disabled</h2>
-                    <p class="page-para">You can apply <code>disabled</code> attribute to the radio to disallow the selection for the user.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="toggle-des">Toggle with description</h2>
+                    <p class="page-para">Use following example for toggle with description.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative space-y-5">
-                                  <div class="flex items-center">
-                                    <input id="radio1" type="radio" name="disabled-radio" class="hidden disabled:cursor-not-allowed disabled:border disabled:border-gray-200  disabled:rounded-md disabled:bg-gray-100" disabled>
-                                    <label for="radio1" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Default radio
-                                    </label>
-                                  </div>
-                                  <div class="flex items-center">
-                                    <input id="radio2" type="radio" name="disabled-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked disabled>
-                                    <label for="radio2" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Checked radio
-                                    </label>
-                                  </div>
+                            <div class="w-full relative">
+                                <label class="relative flex items-center mb-5 cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-none  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 "></div>
+                                    <span class="ml-3 text-sm font-medium text-gray-600 ">Unchecked</span>
+                                  </label>
+                                  <label class="relative flex items-center mb-5 cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer" checked>
+                                    <div class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 "></div>
+                                    <span class="ml-3 text-sm font-medium text-gray-600 ">Checked</span>
+                                  </label>
+                                  <div class="flex items-center mb-5">
+                                    <span class="mr-3 text-sm font-medium text-gray-600 ">Off</span>
+                                    <label class="relative flex items-center  cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 "></div>
+                                  </label>
+                                  <span class="ml-3 text-sm font-medium text-gray-600 ">On</span>
+                                </div>
+                                <div class="flex items-center ">
+                                    <label class="relative inline-flex items-center mb-5 cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 "></div>
+                                  </label>
+                                  <div class="block"> 
+                                    <span class="ml-3 text-sm font-normal text-gray-600 mb-1">Toggle Button</span><br>
+                                    <span class="ml-3 text-sm font-normal text-gray-400 ">Used to enable or disable options</span>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -733,7 +735,35 @@
                                 </li>
                               </ul>
                               <div class="code-copy-button">
-                                  <button class="group">
+                                  <button class="group" data-clipboard-demo="" data-clipboard-text="&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+                                  &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+                                  &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-none  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+                                  &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Unchecked&lt;/span&gt;
+                              &lt;/label&gt;
+                              &lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+                                  &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot; checked&gt;
+                                  &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+                                  &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Checked&lt;/span&gt;
+                              &lt;/label&gt;
+                              &lt;div class=&quot;flex items-center&quot;&gt;
+                                  &lt;span class=&quot;mr-3 text-sm font-medium text-gray-600 &quot;&gt;Off&lt;/span&gt;
+                                  &lt;label class=&quot;relative flex items-center  cursor-pointer&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+                                    &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+                                  &lt;/label&gt;
+                                  &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;On&lt;/span&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;flex items-center &quot;&gt;
+                              &lt;label class=&quot;relative inline-flex items-center mb-5 cursor-pointer&quot;&gt;
+                                &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+                                &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+                              &lt;/label&gt;
+                              &lt;div class=&quot;block&quot;&gt;
+                                &lt;span class=&quot;ml-3 text-sm font-normal text-gray-600 mb-1&quot;&gt;Toggle Button&lt;/span&gt;
+                                &lt;br&gt;
+                                &lt;span class=&quot;ml-3 text-sm font-normal text-gray-400 &quot;&gt;Used to enable or disable options&lt;/span&gt;
+                              &lt;/div&gt;
+                              &lt;/div&gt;">
                                     <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                       <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -743,52 +773,58 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex items-center&quot;&gt;
-  &lt;input id=&quot;radio1&quot; type=&quot;radio&quot; name=&quot;disabled-radio&quot; class=&quot;hidden disabled:cursor-not-allowed disabled:border disabled:border-gray-200  disabled:rounded-md disabled:bg-gray-100&quot; disabled&gt;
-  &lt;label for=&quot;radio1&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-    &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Default radio &lt;/label&gt;
-&lt;/div&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+    &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-none  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Unchecked&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot; checked&gt;
+    &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Checked&lt;/span&gt;
+&lt;/label&gt;
 &lt;div class=&quot;flex items-center&quot;&gt;
-  &lt;input id=&quot;radio2&quot; type=&quot;radio&quot; name=&quot;disabled-radio&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; checked disabled&gt;
-  &lt;label for=&quot;radio2&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-    &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Checked radio &lt;/label&gt;
+    &lt;span class=&quot;mr-3 text-sm font-medium text-gray-600 &quot;&gt;Off&lt;/span&gt;
+    &lt;label class=&quot;relative flex items-center  cursor-pointer&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+      &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;On&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex items-center &quot;&gt;
+&lt;label class=&quot;relative inline-flex items-center mb-5 cursor-pointer&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+  &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+&lt;/label&gt;
+&lt;div class=&quot;block&quot;&gt;
+  &lt;span class=&quot;ml-3 text-sm font-normal text-gray-600 mb-1&quot;&gt;Toggle Button&lt;/span&gt;
+  &lt;br&gt;
+  &lt;span class=&quot;ml-3 text-sm font-normal text-gray-400 &quot;&gt;Used to enable or disable options&lt;/span&gt;
+&lt;/div&gt;
 &lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="radio-group">Radio Group</h2>
-                    <p class="page-para">A group of radio components.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="disable-toggle">Disabled</h2>
+                    <p class="page-para">You can apply the <code>disabled</code> attribute to disallow the users from making any further selections.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative space-y-5">
-                                 <div class="flex gap-x-6">
-                                  <div class="flex items-center">
-                                    <input id="radio-group-1" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                    <label for="radio-group-1" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Kiwi
-                                    </label>
-                                  </div>
-                                  <div class="flex items-center">
-                                    <input id="radio-group-2" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                    <label for="radio-group-2" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Jackfruit
-                                    </label>
-                                  </div>
-                                  <div class="flex items-center">
-                                    <input id="radio-group-3" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                    <label for="radio-group-3" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Mango
-                                    </label>
-                                  </div>
-                                 </div>
+                            <div class="w-full relative">
+                                <label class="relative flex items-center mb-5 cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer" disabled="">
+                                    <div class="w-9 h-5 bg-gray-100 peer-focus:outline-none  rounded-full transition-all ease-in-out delay-150 peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 peer-disabled:opacity-50"></div>
+                                    <span class="ml-3 text-sm font-medium text-gray-600 peer-disabled:text-gray-300">Disabled toggle</span>
+                                  </label>
+                                  <label class="relative flex items-center cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer " disabled="" checked>
+                                    <div class="w-9 h-5 bg-gray-100 peer-focus:outline-none  rounded-full transition-all ease-in-out delay-150 peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-200 hover:peer-checked:bg-indigo-200 peer-disabled:opacity-75"></div>
+                                    <span class="ml-3 text-sm font-medium text-gray-600 peer-disabled:text-gray-300">Disabled checked</span>
+                                  </label>
                             </div>
                         </div>
                     </div>
@@ -834,35 +870,99 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="vertical-radio-group">Vertical Radio Group</h2>
-                    <p class="page-para">A vertical group of radio components.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="toggle-size">Sizes</h2>
+                    <p class="page-para">Switches stacked small to large sizes.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative space-y-5">
-                                 <div class="flex flex-col gap-y-3">
-                                  <div class="flex items-center">
-                                    <input id="radio-vertical-group-1" type="radio" name="radio-vertical-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked>
-                                    <label for="radio-vertical-group-1" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Kiwi
-                                    </label>
-                                  </div>
-                                  <div class="flex items-center">
-                                    <input id="radio-vertical-group-2" type="radio" name="radio-vertical-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                    <label for="radio-vertical-group-2" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Jackfruit
-                                    </label>
-                                  </div>
-                                  <div class="flex items-center">
-                                    <input id="radio-vertical-group-3" type="radio" name="radio-vertical-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                    <label for="radio-vertical-group-3" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Mango
-                                    </label>
-                                  </div>
+                            <div class="w-full relative">
+                                <label class="relative flex items-center mb-5 cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 "></div>
+                                    <span class="ml-3 text-sm font-medium text-gray-600 ">Small</span>
+                                  </label>
+                                  <label class="relative flex items-center mb-5 cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 "></div>
+                                    <span class="ml-3 text-sm font-medium text-gray-600 ">Medium</span>
+                                  </label>
+                                  <label class="relative flex items-center mb-5 cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="w-14 h-7 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:-translate-x-full  peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 "></div>
+                                    <span class="ml-3 text-sm font-medium text-gray-600 ">Large</span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+    &lt;div class=&quot;w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Small&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+    &lt;div class=&quot;w-11 h-6 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Medium&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot;&gt;
+    &lt;div class=&quot;w-14 h-7 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:-translate-x-full  peer-checked:after:border-white after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Large&lt;/span&gt;
+&lt;/label&gt;</code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="toggle-color">Colors</h2>
+                    <p class="page-para">Use following example for toggle with different colors.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full relative">
+                                 <div class="flex items-center space-x-5 flex-wrap">
+                                    <label class="relative flex items-center mb-5 cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked="">
+                                        <div class="w-9 h-5 bg-red-200 hover:bg-red-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-red-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-red-600 hover:peer-checked:bg-indigo-700 "></div>
+                                        <span class="ml-3 text-sm font-medium text-gray-600 ">Checked</span>
+                                      </label>
+                                      <label class="relative flex items-center mb-5 cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked="">
+                                        <div class="w-9 h-5 bg-yellow-200 hover:bg-yellow-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-yellow-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-yellow-400 hover:peer-checked:bg-indigo-700 "></div>
+                                        <span class="ml-3 text-sm font-medium text-gray-600 ">Checked</span>
+                                      </label>
+                                      <label class="relative flex items-center mb-5 cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked="">
+                                        <div class="w-9 h-5 bg-green-200 hover:bg-green-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-green-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500 hover:peer-checked:bg-indigo-700 "></div>
+                                        <span class="ml-3 text-sm font-medium text-gray-600 ">Checked</span>
+                                      </label>
+                                      <label class="relative flex items-center mb-5 cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer" checked="">
+                                        <div class="w-9 h-5 bg-blue-200 hover:bg-blue-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-blue-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-500 hover:peer-checked:bg-indigo-700 "></div>
+                                        <span class="ml-3 text-sm font-medium text-gray-600 ">Checked</span>
+                                      </label>
                                  </div>
                             </div>
                         </div>
@@ -886,487 +986,26 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex flex-col gap-y-3&quot;&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input id=&quot;radio-vertical-group-1&quot; type=&quot;radio&quot; name=&quot;radio-vertical-group&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; checked&gt;
-    &lt;label for=&quot;radio-vertical-group-1&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Kiwi &lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input id=&quot;radio-vertical-group-2&quot; type=&quot;radio&quot; name=&quot;radio-vertical-group&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-    &lt;label for=&quot;radio-vertical-group-2&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Jackfruit &lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input id=&quot;radio-vertical-group-3&quot; type=&quot;radio&quot; name=&quot;radio-vertical-group&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-    &lt;label for=&quot;radio-vertical-group-3&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Mango &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="list-with-des">List With Description</h2>
-                    <p class="page-para">Use following example for radio button with description</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                                 <div class="flex flex-col gap-y-3">
-                                  <div class="flex items-center">
-                                    <input id="radio-des-group-1" type="radio" name="radio-with-description" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                    <label for="radio-des-group-1" class="flex items-start cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-1"></span>
-                                          <div class="block">
-                                            <h5 class="w-full text-sm font-normal text-gray-600">Kiwi</h5>
-                                            <p class="text-sm font-normal text-gray-400 mt-1 w-full">Used for selecting only one option</p>
-                                          </div>
-                                    </label>
-                                  </div>
-                                  <div class="flex items-center">
-                                    <input id="radio-des-group-2" type="radio" name="radio-with-description" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked>
-                                    <label for="radio-des-group-2" class="flex items-start cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-1"></span>
-                                          <div class="block">
-                                            <h5 class="w-full text-sm font-normal text-gray-600">Jackfruit</h5>
-                                            <p class="text-sm font-normal text-gray-400 mt-1 w-full">Used for selecting only one option</p>
-                                          </div>
-                                    </label>
-                                  </div>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex flex-col gap-y-3&quot;&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input id=&quot;radio-des-group-1&quot; type=&quot;radio&quot; name=&quot;radio-with-description&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-    &lt;label for=&quot;radio-des-group-1&quot; class=&quot;flex items-start cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 mt-1&quot;&gt;&lt;/span&gt;
-      &lt;div class=&quot;block&quot;&gt;
-        &lt;h5 class=&quot;w-full text-sm font-normal text-gray-600&quot;&gt;Kiwi&lt;/h5&gt;
-        &lt;p class=&quot;text-sm font-normal text-gray-400 mt-1 w-full&quot;&gt;Used for selecting only one option&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input id=&quot;radio-des-group-2&quot; type=&quot;radio&quot; name=&quot;radio-with-description&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; checked&gt;
-    &lt;label for=&quot;radio-des-group-2&quot; class=&quot;flex items-start cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 mt-1&quot;&gt;&lt;/span&gt;
-      &lt;div class=&quot;block&quot;&gt;
-        &lt;h5 class=&quot;w-full text-sm font-normal text-gray-600&quot;&gt;Jackfruit&lt;/h5&gt;
-        &lt;p class=&quot;text-sm font-normal text-gray-400 mt-1 w-full&quot;&gt;Used for selecting only one option&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="radio-size">Radio button Sizes</h2>
-                    <p class="page-para">Use following example for different sizes of radio button</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div class="flex gap-x-6">
-                                <div class="flex items-center">
-                                  <input id="radio-small" type="radio" name="radio-size" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                  <label for="radio-small" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                      <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                      small
-                                  </label>
-                                </div>
-                                <div class="flex items-center">
-                                  <input id="radio-medium" type="radio" name="radio-size" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                  <label for="radio-medium" class="flex items-center cursor-pointer text-gray-600 text-base font-normal">
-                                      <span class="border border-gray-300  rounded-full mr-2 w-5 h-5 "></span>
-                                      Medium
-                                  </label>
-                                </div>
-                                <div class="flex items-center">
-                                  <input id="radio-large" type="radio" name="radio-size" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-                                  <label for="radio-large" class="flex items-center cursor-pointer text-gray-600 text-lg font-normal">
-                                      <span class="border border-gray-300  rounded-full mr-2 w-6 h-6 "></span>
-                                      Large
-                                  </label>
-                                </div>
-                               </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex gap-x-6&quot;&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input id=&quot;radio-small&quot; type=&quot;radio&quot; name=&quot;radio-size&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-    &lt;label for=&quot;radio-small&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; small &lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input id=&quot;radio-medium&quot; type=&quot;radio&quot; name=&quot;radio-size&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-    &lt;label for=&quot;radio-medium&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-base font-normal&quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-5 h-5 &quot;&gt;&lt;/span&gt; Medium &lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input id=&quot;radio-large&quot; type=&quot;radio&quot; name=&quot;radio-size&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-    &lt;label for=&quot;radio-large&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-lg font-normal&quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-6 h-6 &quot;&gt;&lt;/span&gt; Large &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="radio-input">Radio within form input</h2>
-                    <p class="page-para">Radio components within form input stacked in a grid format.</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div class="grid sm:grid-cols-2 gap-2">
-                                <div class="block">
-                                  <input type="radio" name="radio-in-form" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" id="radio-in-form-1">
-                                <label for="radio-in-form-1" class="flex p-3 block w-full bg-white border border-gray-200 rounded-md text-sm ">
-                                  <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5"></span>
-                                  <h5 class="text-sm text-gray-500">Default radio</h5>
-                                </label>
-                              </div>
-                              <div class="block">
-                                <input type="radio" name="radio-in-form" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" id="radio-in-form-2" checked>
-                                <label for="radio-in-form-2" class="flex p-3 block w-full bg-white border border-gray-200 rounded-md text-sm ">
-                                  <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5"></span>
-                                  <h5 class="text-sm text-gray-500">Checked radio</h5>
-                                </label>
-                              </div>  
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;grid sm:grid-cols-2 gap-2&quot;&gt;
-  &lt;div class=&quot;block&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio-in-form&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; id=&quot;radio-in-form-1&quot;&gt;
-    &lt;label for=&quot;radio-in-form-1&quot; class=&quot;flex p-3 block w-full bg-white border border-gray-200 rounded-md text-sm &quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5&quot;&gt;&lt;/span&gt;
-      &lt;h5 class=&quot;text-sm text-gray-500&quot;&gt;Default radio&lt;/h5&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;block&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio-in-form&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; id=&quot;radio-in-form-2&quot; checked&gt;
-    &lt;label for=&quot;radio-in-form-2&quot; class=&quot;flex p-3 block w-full bg-white border border-gray-200 rounded-md text-sm &quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5&quot;&gt;&lt;/span&gt;
-      &lt;h5 class=&quot;text-sm text-gray-500&quot;&gt;Checked radio&lt;/h5&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="radio-on-right">On Right</h2>
-                    <p class="page-para">Radio placed on the right side.</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div class="grid sm:grid-cols-2 gap-2">
-                                <div class="block">
-                                  <input type="radio" name="radio-right" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" id="radio-on-right-1">
-                                <label for="radio-on-right-1" class="flex flex-row-reverse p-3 block w-full bg-white border border-gray-200 rounded-md text-sm ">
-                                  <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5 ml-auto"></span>
-                                  <h5 class="text-sm text-gray-500">Default radio</h5>
-                                </label>
-                              </div>
-                              <div class="block">
-                                <input type="radio" name="radio-right" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" id="radio-on-right-2" checked>
-                                <label for="radio-on-right-2" class="flex flex-row-reverse p-3 block w-full bg-white border border-gray-200 rounded-md text-sm ">
-                                 
-                                  <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5 ml-auto"></span>
-                                  <h5 class="text-sm text-gray-500">Checked radio</h5>
-                                </label>
-                                
-                              </div>  
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;grid sm:grid-cols-2 gap-2&quot;&gt;
-  &lt;div class=&quot;block&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio-right&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; id=&quot;radio-on-right-1&quot;&gt;
-    &lt;label for=&quot;radio-on-right-1&quot; class=&quot;flex flex-row-reverse p-3 block w-full bg-white border border-gray-200 rounded-md text-sm &quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5 ml-auto&quot;&gt;&lt;/span&gt;
-      &lt;h5 class=&quot;text-sm text-gray-500&quot;&gt;Default radio&lt;/h5&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;block&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;radio-right&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; id=&quot;radio-on-right-2&quot; checked&gt;
-    &lt;label for=&quot;radio-on-right-2&quot; class=&quot;flex flex-row-reverse p-3 block w-full bg-white border border-gray-200 rounded-md text-sm &quot;&gt;
-      &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5 ml-auto&quot;&gt;&lt;/span&gt;
-      &lt;h5 class=&quot;text-sm text-gray-500&quot;&gt;Checked radio&lt;/h5&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="radio-list-group">With list group</h2>
-                    <p class="page-para">Make the list item appear with radio.</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <ul class="max-w-sm flex flex-col">
-                                <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg ">
-                                  <div class="flex items-center">
-                                    <input id="list-group-item-radio-1" type="radio" name="list-group-item-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked="">
-                                    <label for="list-group-item-radio-1" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Kiwi
-                                    </label>
-                                  </div>
-                                </li>
-                                <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg ">
-                                  <div class="flex items-center">
-                                    <input id="list-group-item-radio-2" type="radio" name="list-group-item-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" >
-                                    <label for="list-group-item-radio-2" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Jackfruit
-                                    </label>
-                                  </div>
-                                </li>
-                                <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg ">
-                                  <div class="flex items-center">
-                                    <input id="list-group-item-radio-3" type="radio" name="list-group-item-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" >
-                                    <label for="list-group-item-radio-3" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Mango
-                                    </label>
-                                  </div>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;ul class=&quot;max-w-sm flex flex-col&quot;&gt;
-  &lt;li class=&quot;inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg &quot;&gt;
-    &lt;div class=&quot;flex items-center&quot;&gt;
-      &lt;input id=&quot;list-group-item-radio-1&quot; type=&quot;radio&quot; name=&quot;list-group-item-radio&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; checked=&quot;&quot;&gt;
-      &lt;label for=&quot;list-group-item-radio-1&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-        &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Kiwi &lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg &quot;&gt;
-    &lt;div class=&quot;flex items-center&quot;&gt;
-      &lt;input id=&quot;list-group-item-radio-2&quot; type=&quot;radio&quot; name=&quot;list-group-item-radio&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-      &lt;label for=&quot;list-group-item-radio-2&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-        &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Jackfruit &lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg &quot;&gt;
-    &lt;div class=&quot;flex items-center&quot;&gt;
-      &lt;input id=&quot;list-group-item-radio-3&quot; type=&quot;radio&quot; name=&quot;list-group-item-radio&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-      &lt;label for=&quot;list-group-item-radio-3&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-        &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Mango &lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="radio-horizontal-list-group">With Horizontal List Group</h2>
-                    <p class="page-para">Make a horizontal list group item appear with radio.</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <ul class="flex flex-col sm:flex-row">
-                                <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ml-px sm:mt-0 sm:first:rounded-tr-none sm:first:rounded-bl-lg sm:last:rounded-bl-none sm:last:rounded-tr-lg ">
-                                  <div class="flex items-center">
-                                    <input id="horizontal-list-group-item-radio-1" type="radio" name="horizontal-list-group-item-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" checked="">
-                                    <label for="horizontal-list-group-item-radio-1" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Kiwi
-                                    </label>
-                                  </div>
-                                </li>
-                                <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ml-px sm:mt-0 sm:first:rounded-tr-none sm:first:rounded-bl-lg sm:last:rounded-bl-none sm:last:rounded-tr-lg  ">
-                                  <div class="flex items-center">
-                                    <input id="horizontal-list-group-item-radio-2" type="radio" name="horizontal-list-group-item-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" >
-                                    <label for="horizontal-list-group-item-radio-2" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Jackfruit
-                                    </label>
-                                  </div>
-                                </li>
-                                <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ml-px sm:mt-0 sm:first:rounded-tr-none sm:first:rounded-bl-lg sm:last:rounded-bl-none sm:last:rounded-tr-lg ">
-                                  <div class="flex items-center">
-                                    <input id="horizontal-list-group-item-radio-3" type="radio" name="horizontal-list-group-item-radio" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100" >
-                                    <label for="horizontal-list-group-item-radio-3" class="flex items-center cursor-pointer text-gray-600 text-sm font-normal">
-                                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
-                                        Mango
-                                    </label>
-                                  </div>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;ul class=&quot;flex flex-col sm:flex-row&quot;&gt;
-  &lt;li class=&quot;inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ml-px sm:mt-0 sm:first:rounded-tr-none sm:first:rounded-bl-lg sm:last:rounded-bl-none sm:last:rounded-tr-lg &quot;&gt;
-    &lt;div class=&quot;flex items-center&quot;&gt;
-      &lt;input id=&quot;horizontal-list-group-item-radio-1&quot; type=&quot;radio&quot; name=&quot;horizontal-list-group-item-radio&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot; checked=&quot;&quot;&gt;
-      &lt;label for=&quot;horizontal-list-group-item-radio-1&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-        &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Kiwi &lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ml-px sm:mt-0 sm:first:rounded-tr-none sm:first:rounded-bl-lg sm:last:rounded-bl-none sm:last:rounded-tr-lg  &quot;&gt;
-    &lt;div class=&quot;flex items-center&quot;&gt;
-      &lt;input id=&quot;horizontal-list-group-item-radio-2&quot; type=&quot;radio&quot; name=&quot;horizontal-list-group-item-radio&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-      &lt;label for=&quot;horizontal-list-group-item-radio-2&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-        &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Jackfruit &lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ml-px sm:mt-0 sm:first:rounded-tr-none sm:first:rounded-bl-lg sm:last:rounded-bl-none sm:last:rounded-tr-lg &quot;&gt;
-    &lt;div class=&quot;flex items-center&quot;&gt;
-      &lt;input id=&quot;horizontal-list-group-item-radio-3&quot; type=&quot;radio&quot; name=&quot;horizontal-list-group-item-radio&quot; class=&quot;hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100&quot;&gt;
-      &lt;label for=&quot;horizontal-list-group-item-radio-3&quot; class=&quot;flex items-center cursor-pointer text-gray-600 text-sm font-normal&quot;&gt;
-        &lt;span class=&quot;border border-gray-300  rounded-full mr-2 w-4 h-4 &quot;&gt;&lt;/span&gt; Mango &lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</code></div>
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot; checked=&quot;&quot;&gt;
+    &lt;div class=&quot;w-9 h-5 bg-red-200 hover:bg-red-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-red-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-red-600 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Checked&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot; checked=&quot;&quot;&gt;
+    &lt;div class=&quot;w-9 h-5 bg-yellow-200 hover:bg-yellow-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-yellow-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-yellow-400 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Checked&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot; checked=&quot;&quot;&gt;
+    &lt;div class=&quot;w-9 h-5 bg-green-200 hover:bg-green-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-green-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Checked&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;relative flex items-center mb-5 cursor-pointer&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;sr-only peer&quot; checked=&quot;&quot;&gt;
+    &lt;div class=&quot;w-9 h-5 bg-blue-200 hover:bg-blue-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[&apos;&apos;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-blue-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-500 hover:peer-checked:bg-indigo-700 &quot;&gt;&lt;/div&gt;
+    &lt;span class=&quot;ml-3 text-sm font-medium text-gray-600 &quot;&gt;Checked&lt;/span&gt;
+&lt;/label&gt;</code></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1383,36 +1022,21 @@
                 <ul>
                   <li>
                   <a href="#" class="mb-5 block active:text-indigo-600">Component</a>
-                    <ul class="space-y-4 ">
+                    <ul class="space-y-4">
                       <li>
-                        <a href="#default-radio">Default Radio Button</a>
+                        <a href="#default-toggle">Default Toggle</a>
                       </li>
                       <li>
-                        <a href="#disable-radio">Disabled</a>
+                        <a href="#toggle-des">Toggle With Description</a>
                       </li>
                       <li>
-                        <a href="#radio-group">Radio Group</a>
+                        <a href="#disable-toggle">Disabled</a>
                       </li>
                       <li>
-                        <a href="#vertical-radio-group">Vertical Radio Group</a>
+                        <a href="#toggle-size">Sizes</a>
                       </li>
                       <li>
-                        <a href="#list-with-des">List With Description</a>
-                      </li>
-                      <li>
-                        <a href="#radio-size">Radio Button Sizes</a>
-                      </li>
-                      <li>
-                        <a href="#radio-input">Radio Within Form Input</a>
-                      </li>
-                      <li>
-                        <a href="#radio-on-right">On Right</a>
-                      </li>
-                      <li>
-                        <a href="#radio-list-group">With List Group</a>
-                      </li>
-                      <li>
-                        <a href="#radio-horizontal-list-group">With Horizontal List Group</a>
+                        <a href="#toggle-color">Colors</a>
                       </li>
                     </ul>
                   </li>
@@ -1425,12 +1049,51 @@
     </main>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
   <script>
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
       /*===========Intermediate checkbox===========*/
       document.querySelectorAll("[indeterminate]").forEach(($checkbox) => ($checkbox.indeterminate = true));
+
+      var clipboardDemos = new Clipboard('[data-clipboard-demo]');
+
+clipboardDemos.on('success', function(e) {
+    e.clearSelection();
+
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+
+    showTooltip(e.trigger, 'Copied!');
+});
+
+clipboardDemos.on('error', function(e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
+
+    showTooltip(e.trigger, fallbackMessage(e.action));
+});
+
+// tooltips.js
+
+var btns = document.querySelectorAll('.btn');
+
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('mouseleave', clearTooltip);
+    btns[i].addEventListener('blur', clearTooltip);
+}
+
+function clearTooltip(e) {
+    e.currentTarget.setAttribute('class', 'btn');
+    e.currentTarget.removeAttribute('aria-label');
+}
+
+function showTooltip(elem, msg) {
+    elem.setAttribute('class', 'btn tooltipped tooltipped-s');
+    elem.setAttribute('aria-label', msg);
+}
   </script>
 </body>
 </html>
