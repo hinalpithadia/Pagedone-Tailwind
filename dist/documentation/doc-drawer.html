@@ -648,10 +648,10 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full relative">
-                              <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800" data-pd-overlay="#pd-overlay-example">
+                              <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm " data-drawer-position="left">
                                 Open offcanvas
                               </button>
-                              <div id="pd-overlay-example" class="pd-overlay pd-overlay-open:translate-x-0  -translate-x-full fixed top-0 left-0 transition-all duration-300 transform h-full max-w-xs w-full  z-[60] bg-white border-r dark:bg-gray-800 dark:border-gray-700 hidden" tabindex="-1">
+                              <div id="drawer-left-example" class="pd-overlay pd-overlay-open:translate-x-0  -translate-x-full fixed top-0 left-0 transition-all duration-300 transform h-full max-w-xs w-full  z-[60] bg-white border-r  hidden" tabindex="-1">
                                 <div class="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
                                   <h3 class="font-bold text-gray-800 dark:text-white">
                                     Offcanvas title
@@ -705,12 +705,59 @@ code
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative">
-                              <!--top-->
-                              <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800" data-pd-overlay="#pd-overlay-top">
+                          <div class="text-center">
+                            <button
+                                class="drawer-button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                                type="button" data-drawer-target="drawer-bottom-example" data-drawer-show="drawer-bottom-example"
+                                data-drawer-position="bottom" aria-controls="drawer-bottom-example">
+                                Show drawer Bottom
+                            </button>
+                        </div>
+                        
+                        <!-- drawer component -->
+                        <div id="drawer-bottom-example"
+                            class="fixed bottom-0 left-0 right-0 z-40 w-full p-4 overflow-y-auto transition-transform bg-white translate-y-full"
+                            tabindex="-1" aria-labelledby="drawer-label">
+                            <h5 id="drawer-label"
+                                class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg
+                                    class="w-4 h-4 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                                </svg>Info
+                            </h5>
+                            <button type="button" data-drawer-hide="drawer-bottom-example" aria-controls="drawer-bottom-example"
+                                data-drawer-position="left"
+                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                                <span class="sr-only">Close menu</span>
+                            </button>
+                            <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">Supercharge your hiring by taking advantage of our <a
+                                    href="#" class="text-blue-600 underline dark:text-blue-500 hover:no-underline">limited-time sale</a> for
+                                Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job board.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <a href="#"
+                                    class="px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Learn
+                                    more</a>
+                                <a href="#"
+                                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get
+                                    access <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                            <!-- <div class="w-full relative">
+                              top
+                              <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm " data-drawer-position="top" data-drawer-target="drawer-top-example" data-drawer-show="drawer-top-example">
                                 Toggle top offcanvas
                               </button>
-                              <div id="pd-overlay-top" class="pd-overlay pd-overlay-open:translate-y-0 -translate-y-full fixed top-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[60] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden" tabindex="-1">
+                              <div id="drawer-top-example" class="pd-overlay pd-overlay-open:translate-y-0 -translate-y-full fixed top-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[60] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden" tabindex="-1">
                                 <div class="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
                                   <h3 class="font-bold text-gray-800 dark:text-white">
                                     Offcanvas title
@@ -728,11 +775,10 @@ code
                                   </p>
                                 </div>
                               </div>
-                               <!--Right-->
-                               <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800" data-pd-overlay="#pd-overlay-right">
+                               <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm " data-drawer-position="right">
                                 Toggle right offcanvas
                               </button>
-                              <div id="pd-overlay-right" class="pd-overlay pd-overlay-open:translate-x-0 translate-x-full fixed top-0 right-0 transition-all duration-300 transform h-full max-w-xs w-full  z-[60] bg-white border-l dark:bg-gray-800 dark:border-gray-700 hidden" tabindex="-1">
+                              <div id="drawer-right-example" class="pd-overlay pd-overlay-open:translate-x-0 translate-x-full fixed top-0 right-0 transition-all duration-300 transform h-full max-w-xs w-full  z-[60] bg-white border-l dark:bg-gray-800 dark:border-gray-700 hidden" tabindex="-1">
                                 <div class="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
                                   <h3 class="font-bold text-gray-800 dark:text-white">
                                     Offcanvas title
@@ -750,11 +796,10 @@ code
                                   </p>
                                 </div>
                               </div>
-                              <!--bottom-->
-                              <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800" data-hs-overlay="#hs-overlay-bottom">
+                              <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm " data-drawer-position="bottom">
                                 Toggle bottom offcanvas
                               </button>
-                              <div id="pd-overlay-bottom" class="pd-overlay pd-overlay-open:translate-y-0 translate-y-full fixed bottom-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[60] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden" tabindex="-1">
+                              <div id="drawer-bottom-example" class="pd-overlay pd-overlay-open:translate-y-0 translate-y-full fixed bottom-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[60] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden" tabindex="-1">
                                 <div class="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
                                   <h3 class="font-bold text-gray-800 dark:text-white">
                                     Offcanvas title
@@ -772,7 +817,7 @@ code
                                   </p>
                                 </div>
                               </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="code-syntax-wrapper">
@@ -961,5 +1006,178 @@ code
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
   </script>
+  <script>
+   /* document.addEventListener("DOMContentLoaded", function () {
+        var showDrawerButton = document.getElementById("show-drawer-button");
+        var hideDrawerButton = document.querySelector("#drawer-example [data-drawer-hide]");
+        var getDrawerPosition = showDrawerButton.getAttribute("data-drawer-position")
+        
+        document.getElementById("showDrawerButton").addEventListener("click", openDrawer);
+        document.querySelector("#drawer-example [data-drawer-hide]").addEventListener("click", closeDrawer);
+
+        if (getDrawerPosition == 'left') {
+            function openDrawer() {
+                var drawer = document.getElementById("drawer-left-example");
+                drawer.classList.remove("-translate-x-full");
+                drawer.setAttribute("aria-hidden", "false");
+                drawer.focus();
+            }
+
+            function closeDrawer() {
+                var drawer = document.getElementById("drawer-left-example");
+                drawer.classList.add("-translate-x-full");
+                drawer.setAttribute("aria-hidden", "true");
+            }
+        }
+        if (getDrawerPosition == 'right') {
+            function openDrawer() {
+                var drawer = document.getElementById("drawer-right-example");
+                drawer.classList.remove("translate-x-full");
+                drawer.setAttribute("aria-hidden", "false");
+                drawer.focus();
+            }
+
+            function closeDrawer() {
+                var drawer = document.getElementById("drawer-right-example");
+                drawer.classList.add("translate-x-full");
+                drawer.setAttribute("aria-hidden", "true");
+            }
+        }
+        if (getDrawerPosition == 'top') {
+            function openDrawer() {
+                var drawer = document.getElementById("drawer-top-example");
+                drawer.classList.remove("-translate-y-full");
+                drawer.setAttribute("aria-hidden", "false");
+                drawer.focus();
+            }
+
+            function closeDrawer() {
+                var drawer = document.getElementById("drawer-top-example");
+                drawer.classList.add("-translate-y-full");
+                drawer.setAttribute("aria-hidden", "true");
+            }
+        }
+        if (getDrawerPosition == 'bottom') {
+            function openDrawer() {
+                var drawer = document.getElementById("drawer-bottom-example");
+                drawer.classList.remove("translate-y-full");
+                drawer.setAttribute("aria-hidden", "false");
+                drawer.focus();
+            }
+
+            function closeDrawer() {
+                var drawer = document.getElementById("drawer-bottom-example");
+                drawer.classList.add("translate-y-full");
+                drawer.setAttribute("aria-hidden", "true");
+            }
+        }
+        // function openDrawer() {
+        //     var drawer = document.getElementById("drawer-example");
+        //     drawer.classList.remove("-translate-x-full");
+        //     drawer.setAttribute("aria-hidden", "false");
+        //     drawer.focus();
+        // }
+
+        
+
+        // function closeDrawer() {
+        //     var drawer = document.getElementById("drawer-example");
+        //     drawer.classList.add("-translate-x-full");
+        //     drawer.setAttribute("aria-hidden", "true");
+        // }
+    });*/
+    document.addEventListener("DOMContentLoaded", function () {
+            const drawerButtons = document.querySelectorAll('.drawer-button');
+
+            // var showDrawerButton = document.getElementsByClassName("");
+            // var hideDrawerButton = document.querySelector("#drawer-example [data-drawer-hide]");
+            // var getDrawerPosition = showDrawerButton.getAttribute("data-drawer-position")
+            
+
+            drawerButtons.forEach(drawerButton => {
+                drawerButton.addEventListener('click', function (event) {
+
+                    var getDrawerPosition = drawerButton.getAttribute("data-drawer-position")
+                    if (getDrawerPosition == 'left') {
+                        var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                        var drawer = document.getElementById(getDrawerId);
+                        drawer.classList.add("-translate-x-full");
+                        drawer.classList.remove("translate-x-full");
+
+                        function openDrawer() {
+                            var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                            var drawer = document.getElementById(getDrawerId);
+                            drawer.classList.remove("-translate-x-full");
+                            drawer.setAttribute("aria-hidden", "false");
+                            drawer.focus();
+                        }
+
+                        function closeDrawer() {
+                            var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                            var drawer = document.getElementById(getDrawerId);
+                            drawer.classList.add("-translate-x-full");
+                            drawer.setAttribute("aria-hidden", "true");
+                        }
+                    }
+                    if (getDrawerPosition == 'right') {
+                        // console.log(getDrawerPosition);
+                        var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                        var drawer = document.getElementById(getDrawerId);
+                        drawer.classList.remove("-translate-x-full");
+                        drawer.classList.add("translate-x-full");
+
+                        function openDrawer() {
+                            drawer.classList.remove("translate-x-full");
+                            drawer.setAttribute("aria-hidden", "false");
+                            drawer.focus();
+                        }
+
+                        function closeDrawer() {
+                            drawer.classList.add("translate-x-full");
+                            drawer.setAttribute("aria-hidden", "true");
+                        }
+                    }
+                    if (getDrawerPosition == 'top') {
+                        var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                        var drawer = document.getElementById(getDrawerId);
+                        drawer.classList.remove("-translate-x-full");
+                        drawer.classList.add("-translate-y-full");
+
+                        function openDrawer() {
+                            drawer.classList.remove("-translate-y-full");
+                            drawer.setAttribute("aria-hidden", "false");
+                            drawer.focus();
+                        }
+
+                        function closeDrawer() {
+                            drawer.classList.add("-translate-y-full");
+                            drawer.setAttribute("aria-hidden", "true");
+                        }
+                    }
+                    if (getDrawerPosition == 'bottom') {
+                        var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                        var drawer = document.getElementById(getDrawerId);
+                        drawer.classList.remove("translate-y-full");
+                        drawer.classList.add("translate-none");
+
+                        function openDrawer() {
+                            drawer.classList.remove("translate-y-full");
+                            drawer.setAttribute("aria-hidden", "false");
+                            drawer.focus();
+                        }
+
+                        function closeDrawer() {
+                            drawer.classList.add("translate-y-full");
+                            drawer.setAttribute("aria-hidden", "true");
+                        }
+                    }
+                    
+                    drawerButton.addEventListener("click", openDrawer);
+                    console.log(getDrawerId);
+                    document.querySelector("#" + getDrawerId +" [data-drawer-hide]").addEventListener("click", closeDrawer);
+                })
+            })
+          });
+</script>
 </body>
 </html>

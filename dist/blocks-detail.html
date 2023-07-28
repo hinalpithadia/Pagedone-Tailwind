@@ -437,10 +437,10 @@
                                 <div class="flex items-center gap-3">
                                     <!--Tab Select-->
                                     <ul
-                                        class="flex bg-gray-50 hover:bg-gray-100 rounded-xl p-1 gap-2 lg:w-64 h-12 transition-all duration-500">
-                                        <li class=" w-1/2 h-full">
+                                        class="block-switch-tab">
+                                        <li class="" >
                                             <a href="#"
-                                                class="flex items-center justify-center gap-2 text-gray-400 h-full rounded-lg transition-all duration-500  pl-2 pr-2 active:text-indigo-600 active:bg-white active:shadow-md">
+                                                class="active" tab-direction="left">
                                                 <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -450,9 +450,9 @@
                                                 <span class="sr-only lg:not-sr-only ">Preview</span>
                                             </a>
                                         </li>
-                                        <li class=" w-1/2 h-full ">
+                                        <li class="">
                                             <a href="#"
-                                                class="active flex items-center justify-center gap-2 text-gray-400 h-full rounded-lg transition-all duration-500  pl-2 pr-2 active:text-indigo-600 active:bg-white active:shadow-md">
+                                                tab-direction="right">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -618,7 +618,6 @@
         </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
-  
 </body>
 
 </html>
