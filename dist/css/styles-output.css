@@ -701,6 +701,7 @@ video {
 .box-overlay{
   position: absolute;
   inset: 0px;
+  margin: auto;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1436,33 +1437,35 @@ svg, rect, circle, path{
 .block-switch-tab::after{
   position: absolute;
   top: 0.25rem;
+  top: 5px;
   z-index: 0;
-  height: 80%;
-  width: 50%;
+  height: 75%;
+  width: 45%;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
-  --tw-content: '';
-  content: var(--tw-content);
 }
 
 .block-switch-tab.left:after {
-  left: 0;
+  left: 6px;
 }
 
 .block-switch-tab.right:after {
-  left: 50%;
+  left: 53%;
 }
 
 .block-switch-tab>li>a.active{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+#left-bar .group.active a{
+  color:rgb(79 70 229);
+}
+
+#left-bar .group.active a > span{
+  color: rgb(255 255 255 );
+  background-color: rgb(148 163 184);
 }
 
 .doc-small-heading{
@@ -1776,8 +1779,8 @@ code.language-javascript {
 
 .range input[type=range] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: 0;
   width: 100%;
   height: 22px;
@@ -1799,14 +1802,14 @@ code.language-javascript {
   height: 22px;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .range .rangeslider:before {
   box-sizing: border-box;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background: #5551FF;
   border-radius: 100px;
   content: "";
@@ -1818,7 +1821,7 @@ code.language-javascript {
 .range input::-webkit-slider-runnable-track {
   box-sizing: border-box;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background: #e6e6e6;
   border-radius: 100px;
   margin: 11px 0;
@@ -1827,7 +1830,7 @@ code.language-javascript {
 .range input::-moz-range-track {
   box-sizing: border-box;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background: #e6e6e6;
   border-radius: 100px;
   margin: 11px 0;
@@ -1846,7 +1849,7 @@ code.language-javascript {
 }
 
 .range input::-ms-fill-lower,
-    .range input::-ms-fill-upper {
+          .range input::-ms-fill-upper {
   box-sizing: border-box;
   width: 100%;
   height: 2px;
@@ -1870,7 +1873,6 @@ code.language-javascript {
 
 .range input::-webkit-slider-thumb {
   box-sizing: border-box;
-  /* box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);  */
   border: 4px solid #5551FF;
   height: 16px;
   width: 16px;
@@ -1878,7 +1880,7 @@ code.language-javascript {
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   transform: translateY(-50%);
   margin-top: 1px;
 }
@@ -1928,8 +1930,8 @@ code.language-javascript {
   transform-origin: 0 0;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .range .range-output .output {
@@ -4131,6 +4133,10 @@ input[type="radio"]:checked:disabled + label span{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-white\/20{
+  background-color: rgb(255 255 255 / 0.2);
 }
 
 .bg-white\/30{
@@ -7606,8 +7612,8 @@ input[type="radio"]:checked:disabled + label span{
     right: auto;
   }
 
-  .lg\:top-20{
-    top: 5rem;
+  .lg\:top-28{
+    top: 7rem;
   }
 
   .lg\:top-\[4\.5rem\]{

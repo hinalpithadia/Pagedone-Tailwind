@@ -1682,59 +1682,793 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-sm  bg-amber-50&quot; role=&quot;alert&quot;&gt;
-  &lt;div class=&quot;mr-3 w-9 h-9 p-2 bg-amber-200 rounded-full&quot;&gt;
-    &lt;svg class=&quot;flex-shrink-0 w-5 h-5&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-      &lt;path d=&quot;M10.0048 13.3333V9.16663M10.0003 6.66663H10.0078M10.0003 18.3333C5.39795 18.3333 1.66699 14.6023 1.66699 9.99996C1.66699 5.39759 5.39795 1.66663 10.0003 1.66663C14.6027 1.66663 18.3337 5.39759 18.3337 9.99996C18.3337 14.6023 14.6027 18.3333 10.0003 18.3333Z&quot; stroke=&quot;#F59E0B&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
-    &lt;/svg&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block&quot;&gt;
+  &lt;div class=&quot;flex items-center p-4 mb-4 rounded-xl text-sm  bg-amber-50 text-amber-500&quot; role=&quot;alert&quot;&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-amber-500 mr-3&quot; /&gt;
+    &lt;span class=&quot;font-semibold mr-1&quot;&gt;Warning&lt;/span&gt; Your subscription payment is due
   &lt;/div&gt;
-  &lt;div class=&quot;block&quot;&gt;
-    &lt;h3 class=&quot;text-amber-500 font-normal mb-1&quot;&gt;
-      &lt;span class=&quot;font-semibold mr-1&quot;&gt;Warning&lt;/span&gt; Your subscription payment is due
-    &lt;/h3&gt;
-    &lt;p class=&quot;text-gray-600 text-sm&quot;&gt;Kindly renew your subscription of the pagedone by end of this month.&lt;/p&gt;
-    &lt;div class=&quot;flex items-center gap-6 mt-4&quot;&gt;
-      &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500&quot;&gt;Remind later&lt;/button&gt;
-      &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500&quot;&gt;Renew now&lt;/button&gt;
+  &lt;div class=&quot;flex items-center p-4 mb-4 rounded-xl text-sm border border-emerald-400 bg-emerald-50 text-emerald-500&quot; role=&quot;alert&quot;&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-emerald-500 mr-3&quot; /&gt;
+    &lt;span class=&quot;font-semibold mr-1&quot;&gt;Success&lt;/span&gt; Your subscription payment is successful
+  &lt;/div&gt;
+  &lt;div class=&quot;flex items-center p-4 mb-4 rounded-xl text-sm bg-red-500 text-white&quot; role=&quot;alert&quot;&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-white mr-3&quot; /&gt;
+    &lt;span class=&quot;font-semibold mr-1&quot;&gt;Danger&lt;/span&gt; Your subscription payment is failed
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button " >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-avatar">Alert with avatar and content</h2>
+                    <p class="page-para">You can use following examples for alert component with content and buttons.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="block">
+                                <div class="flex p-4 mb-4 rounded-xl bg-amber-50" role="alert">
+                                    <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" class="w-6 h-6 rounded-full border-2 border-amber-500 mr-3"/>                                            
+                                  <div class="block">
+                                      <h3 class="text-amber-500 font-normal text-base"><span class="font-semibold mr-1">Warning</span> Your subscription payment is due</h3>
+                                      <p class="mt-1 text-gray-600 text-sm">2 min ago</p>
+                                  </div>
+                              </div>
+                                <div class="flex p-4 mb-4 rounded-xl text-sm border border-emerald-400 bg-emerald-50 text-emerald-500" role="alert">
+                                  <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" class="w-6 h-6 rounded-full border-2 border-emerald-500 mr-3"/>
+                                  <div class="block">
+                                    <h3 class="text-emerald-500 font-normal text-base"><span class="font-semibold mr-1">Success</span> Your subscription payment is successful</h3>
+                                    <p class="mt-1 text-gray-600 text-sm">2 min ago</p>
+                                </div>
+                              </div>
+                              <div class="flex p-4 mb-4 rounded-xl text-sm bg-red-500 text-white" role="alert">
+                                <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" class="w-6 h-6 rounded-full border-2 border-white mr-3"/>
+                                <div class="block">
+                                  <h3 class="text-white font-normal text-base"><span class="font-semibold mr-1">Danger</span> Your subscription payment is failed</h3>
+                                  <p class="mt-1 text-white/80 text-sm">2 min ago</p>
+                              </div>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block&quot;&gt;
+  &lt;div class=&quot;flex p-4 mb-4 rounded-xl bg-amber-50&quot; role=&quot;alert&quot;&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-amber-500 mr-3&quot;/&gt;                                            
+    &lt;div class=&quot;block&quot;&gt;
+        &lt;h3 class=&quot;text-amber-500 font-normal text-base&quot;&gt;&lt;span class=&quot;font-semibold mr-1&quot;&gt;Warning&lt;/span&gt; Your subscription payment is due&lt;/h3&gt;
+        &lt;p class=&quot;mt-1 text-gray-600 text-sm&quot;&gt;2 min ago&lt;/p&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+  &lt;div class=&quot;flex p-4 mb-4 rounded-xl text-sm border border-emerald-400 bg-emerald-50 text-emerald-500&quot; role=&quot;alert&quot;&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-emerald-500 mr-3&quot;/&gt;
+    &lt;div class=&quot;block&quot;&gt;
+      &lt;h3 class=&quot;text-emerald-500 font-normal text-base&quot;&gt;&lt;span class=&quot;font-semibold mr-1&quot;&gt;Success&lt;/span&gt; Your subscription payment is successful&lt;/h3&gt;
+      &lt;p class=&quot;mt-1 text-gray-600 text-sm&quot;&gt;2 min ago&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-sm  bg-emerald-50 border border-emerald-400&quot; role=&quot;alert&quot;&gt;
-  &lt;div class=&quot;mr-3 w-9 h-9 p-2 bg-emerald-200 rounded-full&quot;&gt;
-    &lt;svg class=&quot;flex-shrink-0 w-5 h-5&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-      &lt;path d=&quot;M10.0048 13.3333V9.16666M10.0003 6.66666H10.0078M10.0003 18.3333C5.39795 18.3333 1.66699 14.6024 1.66699 9.99999C1.66699 5.39762 5.39795 1.66666 10.0003 1.66666C14.6027 1.66666 18.3337 5.39762 18.3337 9.99999C18.3337 14.6024 14.6027 18.3333 10.0003 18.3333Z&quot; stroke=&quot;#10B981&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
-    &lt;/svg&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;flex p-4 mb-4 rounded-xl text-sm bg-red-500 text-white&quot; role=&quot;alert&quot;&gt;
+  &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-white mr-3&quot;/&gt;
   &lt;div class=&quot;block&quot;&gt;
-    &lt;h3 class=&quot;text-emerald-500 font-normal mb-1&quot;&gt;
-      &lt;span class=&quot;font-semibold mr-1&quot;&gt;Success&lt;/span&gt; Your subscription payment is successful
-    &lt;/h3&gt;
-    &lt;p class=&quot;text-gray-600 text-sm&quot;&gt;Kindly renew your subscription of the pagedone by end of this month.&lt;/p&gt;
-    &lt;div class=&quot;flex items-center gap-6 mt-4&quot;&gt;
-      &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500&quot;&gt;Remind later&lt;/button&gt;
-      &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500&quot;&gt;Renew now&lt;/button&gt;
+    &lt;h3 class=&quot;text-white font-normal text-base&quot;&gt;&lt;span class=&quot;font-semibold mr-1&quot;&gt;Danger&lt;/span&gt; Your subscription payment is failed&lt;/h3&gt;
+    &lt;p class=&quot;mt-1 text-white/80 text-sm&quot;&gt;2 min ago&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button " >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-avatar">Alert with avatar and content and button</h2>
+                    <p class="page-para">You can use following examples for alert component with content and buttons.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="block">
+                                <div class="flex  p-4 mb-4 rounded-xl text-sm  bg-amber-50" role="alert">
+                                  <div class="mr-3">
+                                    <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" class="w-6 h-6 rounded-full border-2 border-amber-500">
+                                  </div>
+                                  <div class="block">
+                                    <h3 class="text-amber-500 font-normal mb-1"><span class="font-semibold mr-1">Warning</span> Your subscription payment is due</h3>
+                                    <p class="text-gray-600 text-sm">2 min ago</p>
+                                    <div class="flex items-center gap-6 mt-4">
+                                      <button class="font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500">Remind later</button>
+                                      <button class="font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500">Renew now</button>
+                                  </div>
+                                  </div>  
+                              </div>
+                              <div class="flex  p-4 mb-4 rounded-xl text-sm  bg-emerald-50 border border-emerald-400" role="alert">
+                                <div class="mr-3">
+                                  <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" class="w-6 h-6 rounded-full border-2 border-emerald-500">
+                                </div>
+                                <div class="block">
+                                  <h3 class="text-emerald-500 font-normal mb-1"><span class="font-semibold mr-1">Success</span> Your subscription payment is successful</h3>
+                                  <p class="text-gray-600 text-sm">2 min ago</p>
+                                  <div class="flex items-center gap-6 mt-4">
+                                    <button class="font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500">Remind later</button>
+                                    <button class="font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500">Renew now</button>
+                                </div>
+                                </div>  
+                            </div>
+                            <div class="flex items-start p-4 mb-4 rounded-xl text-sm  bg-red-500" role="alert">
+                              <div class="mr-3">
+                                <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" class="w-6 h-6 rounded-full border-2 border-white">
+                              </div>
+                              <div class="block">
+                                <h3 class="text-white font-normal mb-1"><span class="font-semibold mr-1">Danger</span> Your subscription payment is failed</h3>
+                                <p class="text-white/80 text-sm">2 min ago</p>
+                                <div class="flex items-center gap-6 mt-4">
+                                  <button class="font-semibold text-white transition-all duration-500">Remind later</button>
+                                  <button class="font-semibold text-white transition-all duration-500">Renew now</button>
+                              </div>
+                              </div>  
+                          </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block&quot;&gt;
+  &lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-sm  bg-amber-50&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;mr-3&quot;&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-amber-500&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;block&quot;&gt;
+      &lt;h3 class=&quot;text-amber-500 font-normal mb-1&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Warning&lt;/span&gt; Your subscription payment is due
+      &lt;/h3&gt;
+      &lt;p class=&quot;text-gray-600 text-sm&quot;&gt;2 min ago&lt;/p&gt;
+      &lt;div class=&quot;flex items-center gap-6 mt-4&quot;&gt;
+        &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500&quot;&gt;Remind later&lt;/button&gt;
+        &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500&quot;&gt;Renew now&lt;/button&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex items-start p-4 mb-4 rounded-xl text-sm  bg-red-500&quot; role=&quot;alert&quot;&gt;
-  &lt;div class=&quot;mr-3 w-9 h-9 p-2 bg-white rounded-full&quot;&gt;
-    &lt;svg class=&quot;flex-shrink-0 w-5 h-5&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-      &lt;path d=&quot;M10.0048 13.3333V9.16663M10.0003 6.66663H10.0078M10.0003 18.3333C5.39795 18.3333 1.66699 14.6023 1.66699 9.99996C1.66699 5.39759 5.39795 1.66663 10.0003 1.66663C14.6027 1.66663 18.3337 5.39759 18.3337 9.99996C18.3337 14.6023 14.6027 18.3333 10.0003 18.3333Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
-    &lt;/svg&gt;
+  &lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-sm  bg-emerald-50 border border-emerald-400&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;mr-3&quot;&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-emerald-500&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;block&quot;&gt;
+      &lt;h3 class=&quot;text-emerald-500 font-normal mb-1&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Success&lt;/span&gt; Your subscription payment is successful
+      &lt;/h3&gt;
+      &lt;p class=&quot;text-gray-600 text-sm&quot;&gt;2 min ago&lt;/p&gt;
+      &lt;div class=&quot;flex items-center gap-6 mt-4&quot;&gt;
+        &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500&quot;&gt;Remind later&lt;/button&gt;
+        &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500&quot;&gt;Renew now&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;block&quot;&gt;
-    &lt;h3 class=&quot;text-white font-normal mb-1&quot;&gt;
-      &lt;span class=&quot;font-semibold mr-1&quot;&gt;Danger&lt;/span&gt; Your subscription payment is failed
-    &lt;/h3&gt;
-    &lt;p class=&quot;text-white/80 text-sm&quot;&gt;Kindly renew your subscription of the pagedone by end of this month.&lt;/p&gt;
-    &lt;div class=&quot;flex items-center gap-6 mt-4&quot;&gt;
-      &lt;button class=&quot;font-semibold text-white transition-all duration-500&quot;&gt;Remind later&lt;/button&gt;
-      &lt;button class=&quot;font-semibold text-white transition-all duration-500&quot;&gt;Renew now&lt;/button&gt;
+  &lt;div class=&quot;flex items-start p-4 mb-4 rounded-xl text-sm  bg-red-500&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;mr-3&quot;&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-white&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;block&quot;&gt;
+      &lt;h3 class=&quot;text-white font-normal mb-1&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Danger&lt;/span&gt; Your subscription payment is failed
+      &lt;/h3&gt;
+      &lt;p class=&quot;text-white/80 text-sm&quot;&gt;2 min ago&lt;/p&gt;
+      &lt;div class=&quot;flex items-center gap-6 mt-4&quot;&gt;
+        &lt;button class=&quot;font-semibold text-white transition-all duration-500&quot;&gt;Remind later&lt;/button&gt;
+        &lt;button class=&quot;font-semibold text-white transition-all duration-500&quot;&gt;Renew now&lt;/button&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button " >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-avatar">size</h2>
+                    <p class="page-para">You can use following examples for alert component with different sizes.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="block">
+                                <div class="flex items-center p-4 mb-4 rounded-xl text-sm  bg-amber-50 text-amber-500" role="alert">
+                                  <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" class="w-6 h-6 rounded-full border-2 border-amber-500 mr-3">
+                                  <span class="font-semibold mr-1">Warning</span> Your subscription payment is due
+                              </div>
+                              <div class="flex items-center p-4 mb-4 rounded-xl text-normal  bg-amber-50 text-amber-500" role="alert">
+                                <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" class="w-8 h-8 rounded-full border-2 border-amber-500 mr-3">
+                                <span class="font-semibold mr-1">Warning</span> Your subscription payment is due
+                            </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block&quot;&gt;
+  &lt;div class=&quot;flex items-center p-4 mb-4 rounded-xl text-sm  bg-amber-50 text-amber-500&quot; role=&quot;alert&quot;&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-6 h-6 rounded-full border-2 border-amber-500 mr-3&quot;&gt;
+    &lt;span class=&quot;font-semibold mr-1&quot;&gt;Warning&lt;/span&gt; Your subscription payment is due
+  &lt;/div&gt;
+  &lt;div class=&quot;flex items-center p-4 mb-4 rounded-xl text-normal  bg-amber-50 text-amber-500&quot; role=&quot;alert&quot;&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; class=&quot;w-8 h-8 rounded-full border-2 border-amber-500 mr-3&quot;&gt;
+    &lt;span class=&quot;font-semibold mr-1&quot;&gt;Warning&lt;/span&gt; Your subscription payment is due
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-avatar">Alert with progress</h2>
+                    <p class="page-para">You can use following examples for alert component with progress bar.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="block">
+                                <div class="flex  p-4 mb-4 rounded-xl text-normal  bg-amber-50" role="alert">
+                                  <div class="mr-3">
+                                    <svg class="w-5 h-5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </div>
+                                  <div class="block w-full">
+                                    <h3 class="text-amber-500 font-normal mb-3"><span class="font-semibold mr-1">Pagedone.fig</span> downloading, waiting for network</h3>
+                                    <div class="relative flex items-center">
+                                      <div class="relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white">
+                                          <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%" class="flex h-full items-center justify-center bg-amber-500  text-white rounded-3xl"></div>
+                                      </div>
+                                      <span class="ml-2 text-gray-800 text-sm font-medium flex justify-center items-center ">40%</span>
+                                  </div>
+                                  </div>  
+                              </div>
+                              <div class="flex  p-4 mb-4 rounded-xl text-normal  bg-emerald-50 border border-emerald-400" role="alert">
+                                <div class="mr-3">
+                                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                                </div>
+                                <div class="block w-full">
+                                  <h3 class="text-emerald-500 font-normal mb-3"><span class="font-semibold mr-1">Pagedone.fig</span> downloaded successfully</h3>
+                                  <div class="relative flex items-center">
+                                    <div class="relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white">
+                                        <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%" class="flex h-full items-center justify-center bg-emerald-500  text-white rounded-3xl"></div>
+                                    </div>
+                                    <span class="ml-2 text-gray-800 text-sm font-medium flex justify-center items-center ">100%</span>
+                                </div>
+                                </div>  
+                            </div>
+                            <div class="flex  p-4 mb-4 rounded-xl text-normal  bg-red-500" role="alert">
+                              <div class="mr-3">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>                                                                      
+                              </div>
+                              <div class="block w-full">
+                                <h3 class="text-white font-normal mb-3"><span class="font-semibold mr-1">Pagedone.fig</span> downloading failed</h3>
+                                <div class="relative flex items-center">
+                                  <div class="relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white/20">
+                                      <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="40" style="width: 40%" class="flex h-full items-center justify-center bg-white  text-white rounded-3xl"></div>
+                                  </div>
+                                  <span class="ml-2 text-white text-sm font-medium flex justify-center items-center ">40%</span>
+                              </div>
+                              </div>  
+                          </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block&quot;&gt;
+  &lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-normal  bg-amber-50&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;mr-3&quot;&gt;
+      &lt;svg class=&quot;w-5 h-5&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111&quot; stroke=&quot;#F59E0B&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;block w-full&quot;&gt;
+      &lt;h3 class=&quot;text-amber-500 font-normal mb-3&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Pagedone.fig&lt;/span&gt; downloading, waiting for network
+      &lt;/h3&gt;
+      &lt;div class=&quot;relative flex items-center&quot;&gt;
+        &lt;div class=&quot;relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white&quot;&gt;
+          &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot; class=&quot;flex h-full items-center justify-center bg-amber-500  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;ml-2 text-gray-800 text-sm font-medium flex justify-center items-center &quot;&gt;40%&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-normal  bg-emerald-50 border border-emerald-400&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;mr-3&quot;&gt;
+      &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111&quot; stroke=&quot;#10B981&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;block w-full&quot;&gt;
+      &lt;h3 class=&quot;text-emerald-500 font-normal mb-3&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Pagedone.fig&lt;/span&gt; downloaded successfully
+      &lt;/h3&gt;
+      &lt;div class=&quot;relative flex items-center&quot;&gt;
+        &lt;div class=&quot;relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white&quot;&gt;
+          &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 100%&quot; class=&quot;flex h-full items-center justify-center bg-emerald-500  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;ml-2 text-gray-800 text-sm font-medium flex justify-center items-center &quot;&gt;100%&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-normal  bg-red-500&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;mr-3&quot;&gt;
+      &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111&quot; stroke=&quot;white&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;block w-full&quot;&gt;
+      &lt;h3 class=&quot;text-white font-normal mb-3&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Pagedone.fig&lt;/span&gt; downloading failed
+      &lt;/h3&gt;
+      &lt;div class=&quot;relative flex items-center&quot;&gt;
+        &lt;div class=&quot;relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white/20&quot;&gt;
+          &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;40&quot; style=&quot;width: 40%&quot; class=&quot;flex h-full items-center justify-center bg-white  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;ml-2 text-white text-sm font-medium flex justify-center items-center &quot;&gt;40%&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-avatar">Alert with progress with description</h2>
+                    <p class="page-para">You can use following examples for alert component with progress bar.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="block">
+                                <div class="flex p-4 mb-4 rounded-xl bg-amber-50" role="alert">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3">
+                                      <path d="M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  <div class="block w-full">
+                                      <h3 class="text-amber-500 font-normal text-base"><span class="font-semibold mr-1">Pagedone.fig</span> downloading, waiting for network</h3>
+                                      <p class="mt-1 text-gray-600 text-sm">2 min left</p>
+                                      <div class="relative flex items-center pt-2">
+                                        <div class="relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white">
+                                            <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%" class="flex h-full items-center justify-center bg-amber-500  text-white rounded-3xl"></div>
+                                        </div>
+                                        <span class="ml-2 text-gray-800 text-sm font-medium flex justify-center items-center ">40%</span>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="flex p-4 mb-4 rounded-xl bg-emerald-50 border border-emerald-400" role="alert">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3">
+                                  <path d="M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>                                  
+                              <div class="block w-full">
+                                  <h3 class="text-emerald-500 font-normal text-base"><span class="font-semibold mr-1">Pagedone.fig</span> downloaded successfully</h3>
+                                  <p class="mt-1 text-gray-600 text-sm">2 min left</p>
+                                  <div class="relative flex items-center pt-2">
+                                    <div class="relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white">
+                                        <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%" class="flex h-full items-center justify-center bg-emerald-500  text-white rounded-3xl"></div>
+                                    </div>
+                                    <span class="ml-2 text-gray-800 text-sm font-medium flex justify-center items-center ">100%</span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="flex p-4 mb-4 rounded-xl bg-red-500" role="alert">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-3">
+                              <path d="M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                                                
+                          <div class="block w-full">
+                              <h3 class="text-white font-normal text-base"><span class="font-semibold mr-1">Pagedone.fig</span> downloading failed</h3>
+                              <p class="mt-1 text-white/80 text-sm">2 min left</p>
+                              <div class="relative flex items-center pt-2">
+                                <div class="relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white/20">
+                                    <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%" class="flex h-full items-center justify-center bg-white  text-white rounded-3xl"></div>
+                                </div>
+                                <span class="ml-2 text-white text-sm font-medium flex justify-center items-center ">40%</span>
+                            </div>
+                          </div>
+                      </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block&quot;&gt;
+  &lt;div class=&quot;flex p-4 mb-4 rounded-xl bg-amber-50&quot; role=&quot;alert&quot;&gt;
+    &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;mr-3&quot;&gt;
+      &lt;path d=&quot;M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111&quot; stroke=&quot;#F59E0B&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;block w-full&quot;&gt;
+      &lt;h3 class=&quot;text-amber-500 font-normal text-base&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Pagedone.fig&lt;/span&gt; downloading, waiting for network
+      &lt;/h3&gt;
+      &lt;p class=&quot;mt-1 text-gray-600 text-sm&quot;&gt;2 min left&lt;/p&gt;
+      &lt;div class=&quot;relative flex items-center pt-2&quot;&gt;
+        &lt;div class=&quot;relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white&quot;&gt;
+          &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot; class=&quot;flex h-full items-center justify-center bg-amber-500  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;ml-2 text-gray-800 text-sm font-medium flex justify-center items-center &quot;&gt;40%&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex p-4 mb-4 rounded-xl bg-emerald-50 border border-emerald-400&quot; role=&quot;alert&quot;&gt;
+    &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;mr-3&quot;&gt;
+      &lt;path d=&quot;M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111&quot; stroke=&quot;#10B981&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;block w-full&quot;&gt;
+      &lt;h3 class=&quot;text-emerald-500 font-normal text-base&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Pagedone.fig&lt;/span&gt; downloaded successfully
+      &lt;/h3&gt;
+      &lt;p class=&quot;mt-1 text-gray-600 text-sm&quot;&gt;2 min left&lt;/p&gt;
+      &lt;div class=&quot;relative flex items-center pt-2&quot;&gt;
+        &lt;div class=&quot;relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white&quot;&gt;
+          &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 100%&quot; class=&quot;flex h-full items-center justify-center bg-emerald-500  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;ml-2 text-gray-800 text-sm font-medium flex justify-center items-center &quot;&gt;100%&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex p-4 mb-4 rounded-xl bg-red-500&quot; role=&quot;alert&quot;&gt;
+    &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;mr-3&quot;&gt;
+      &lt;path d=&quot;M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111&quot; stroke=&quot;white&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;block w-full&quot;&gt;
+      &lt;h3 class=&quot;text-white font-normal text-base&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Pagedone.fig&lt;/span&gt; downloading failed
+      &lt;/h3&gt;
+      &lt;p class=&quot;mt-1 text-white/80 text-sm&quot;&gt;2 min left&lt;/p&gt;
+      &lt;div class=&quot;relative flex items-center pt-2&quot;&gt;
+        &lt;div class=&quot;relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white/20&quot;&gt;
+          &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot; class=&quot;flex h-full items-center justify-center bg-white  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;ml-2 text-white text-sm font-medium flex justify-center items-center &quot;&gt;40%&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-avatar">Alert with progress with description and button</h2>
+                    <p class="page-para">You can use following examples for alert component with progress bar.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="block">
+                                <div class="flex  p-4 mb-4 rounded-xl text-sm  bg-amber-50" role="alert">
+                                  <div class="mr-3">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>                                      
+                                  </div>
+                                  <div class="block w-full">
+                                    <h3 class="text-amber-500 font-normal mb-1"><span class="font-semibold mr-1">Pagedone.fig</span>downloading, waiting for network</h3>
+                                    <p class="text-gray-600 text-sm">2 min left</p>
+                                    <div class="relative flex items-center py-2">
+                                      <div class="relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white">
+                                          <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%" class="flex h-full items-center justify-center bg-amber-500  text-white rounded-3xl"></div>
+                                      </div>
+                                      <span class="ml-2 text-gray-800 text-sm font-medium flex justify-center items-center ">40%</span>
+                                  </div>
+                                    <div class="flex items-center gap-6">
+                                      <button class="font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500">Cancel</button>
+                                      <button class="font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500">Retry</button>
+                                  </div>
+                                  </div>  
+                              </div>
+                              <div class="flex  p-4 mb-4 rounded-xl text-sm  bg-emerald-50" role="alert">
+                                <div class="mr-3">
+                                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                      
+                                </div>
+                                <div class="block w-full">
+                                  <h3 class="text-emerald-500 font-normal mb-1"><span class="font-semibold mr-1">Pagedone.fig</span>downloaded successfully</h3>
+                                  <p class="text-gray-600 text-sm">2 min left</p>
+                                  <div class="relative flex items-center py-2">
+                                    <div class="relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white">
+                                        <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%" class="flex h-full items-center justify-center bg-emerald-500  text-white rounded-3xl"></div>
+                                    </div>
+                                    <span class="ml-2 text-gray-800 text-sm font-medium flex justify-center items-center ">100%</span>
+                                </div>
+                                  <div class="flex items-center gap-6">
+                                    <button class="font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500">Cancel</button>
+                                    <button class="font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500">Re-download</button>
+                                </div>
+                                </div>  
+                            </div>
+                            <div class="flex  p-4 mb-4 rounded-xl text-sm  bg-red-500" role="alert">
+                              <div class="mr-3">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                                                                                     
+                              </div>
+                              <div class="block w-full">
+                                <h3 class="text-white font-normal mb-1"><span class="font-semibold mr-1">Pagedone.fig</span>downloading failed</h3>
+                                <p class="text-white/80 text-sm">2 min left</p>
+                                <div class="relative flex items-center py-2">
+                                  <div class="relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white/20">
+                                      <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%" class="flex h-full items-center justify-center bg-white  text-white rounded-3xl"></div>
+                                  </div>
+                                  <span class="ml-2 text-white text-sm font-medium flex justify-center items-center ">40%</span>
+                              </div>
+                                <div class="flex items-center gap-6">
+                                  <button class="font-semibold text-white transition-all duration-500 ">Cancel</button>
+                                  <button class="font-semibold text-white transition-all duration-500 ">Retry</button>
+                              </div>
+                              </div>  
+                          </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block&quot;&gt;
+  &lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-sm  bg-amber-50&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;mr-3&quot;&gt;
+      &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111&quot; stroke=&quot;#F59E0B&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;block w-full&quot;&gt;
+      &lt;h3 class=&quot;text-amber-500 font-normal mb-1&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Pagedone.fig&lt;/span&gt;downloading, waiting for network
+      &lt;/h3&gt;
+      &lt;p class=&quot;text-gray-600 text-sm&quot;&gt;2 min left&lt;/p&gt;
+      &lt;div class=&quot;relative flex items-center py-2&quot;&gt;
+        &lt;div class=&quot;relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white&quot;&gt;
+          &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot; class=&quot;flex h-full items-center justify-center bg-amber-500  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;ml-2 text-gray-800 text-sm font-medium flex justify-center items-center &quot;&gt;40%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center gap-6&quot;&gt;
+        &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500&quot;&gt;Cancel&lt;/button&gt;
+        &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-amber-500&quot;&gt;Retry&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-sm  bg-emerald-50&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;mr-3&quot;&gt;
+      &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111&quot; stroke=&quot;#10B981&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;block w-full&quot;&gt;
+      &lt;h3 class=&quot;text-emerald-500 font-normal mb-1&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Pagedone.fig&lt;/span&gt;downloaded successfully
+      &lt;/h3&gt;
+      &lt;p class=&quot;text-gray-600 text-sm&quot;&gt;2 min left&lt;/p&gt;
+      &lt;div class=&quot;relative flex items-center py-2&quot;&gt;
+        &lt;div class=&quot;relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white&quot;&gt;
+          &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;100&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 100%&quot; class=&quot;flex h-full items-center justify-center bg-emerald-500  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;ml-2 text-gray-800 text-sm font-medium flex justify-center items-center &quot;&gt;100%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center gap-6&quot;&gt;
+        &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500&quot;&gt;Cancel&lt;/button&gt;
+        &lt;button class=&quot;font-semibold text-gray-900 transition-all duration-500 hover:text-emerald-500&quot;&gt;Re-download&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex  p-4 mb-4 rounded-xl text-sm  bg-red-500&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;mr-3&quot;&gt;
+      &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M16.5 9.83333V13.1667V13.1667C16.5 15.0123 15.0123 16.5 13.1667 16.5V16.5H4.83333V16.5C2.98765 16.5 1.5 15.0123 1.5 13.1667V13.1667V9.83333M9 1.5V10.3889M5.66667 7.61111L8.41075 10.3552C8.68852 10.633 8.82741 10.7719 9 10.7719C9.17259 10.7719 9.31148 10.633 9.58926 10.3552L12.3333 7.61111&quot; stroke=&quot;white&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;block w-full&quot;&gt;
+      &lt;h3 class=&quot;text-white font-normal mb-1&quot;&gt;
+        &lt;span class=&quot;font-semibold mr-1&quot;&gt;Pagedone.fig&lt;/span&gt;downloading failed
+      &lt;/h3&gt;
+      &lt;p class=&quot;text-white/80 text-sm&quot;&gt;2 min left&lt;/p&gt;
+      &lt;div class=&quot;relative flex items-center py-2&quot;&gt;
+        &lt;div class=&quot;relative shadow-sm w-full h-2.5  overflow-hidden rounded-3xl bg-white/20&quot;&gt;
+          &lt;div role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot; class=&quot;flex h-full items-center justify-center bg-white  text-white rounded-3xl&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;ml-2 text-white text-sm font-medium flex justify-center items-center &quot;&gt;40%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center gap-6&quot;&gt;
+        &lt;button class=&quot;font-semibold text-white transition-all duration-500 &quot;&gt;Cancel&lt;/button&gt;
+        &lt;button class=&quot;font-semibold text-white transition-all duration-500 &quot;&gt;Retry&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-avatar">Dismissable Alert</h2>
+                    <p class="page-para">You can use following examples for alert component with progress bar.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="block">
+                                <div class="p-4 mb-4 text-sm text-amber-500 rounded-xl bg-amber-50 font-normal" role="alert">
+                                  <div class="flex">
+                                  <span class="font-semibold mr-2">Warning</span>Your subscription payment is in pending
+                                  <button class="pl-3 ml-auto" data-dismiss="alert">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.833497 9.16659L9.16683 0.833253M9.16683 9.16658L0.833496 0.833252" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    </button>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;p-4 mb-4 text-sm text-amber-500 rounded-xl bg-amber-50 font-normal&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;flex&quot;&gt;
+    &lt;span class=&quot;font-semibold mr-2&quot;&gt;Warning&lt;/span&gt;Your subscription payment is in pending &lt;button class=&quot;pl-3 ml-auto &quot;&gt;
+      &lt;svg width=&quot;10&quot; height=&quot;10&quot; viewBox=&quot;0 0 10 10&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M0.833497 9.16659L9.16683 0.833253M9.16683 9.16658L0.833496 0.833252&quot; stroke=&quot;#9CA3AF&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
                             </div>
                         </div>
                     </div>
