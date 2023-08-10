@@ -470,7 +470,7 @@
         @apply fill-indigo-400;
     }
     svg, rect, circle, path{
-        @apply transition-all duration-200;
+        transition: all .3s ease-in-out;
     }
     .width-anim{
         width: 52px;
@@ -522,6 +522,7 @@
         @apply flex items-center justify-center gap-2 text-gray-400 h-full rounded-lg transition-all duration-500 relative pl-2 pr-2 z-10;
     }
     .block-switch-tab::after{
+        content:'';
         position: absolute;
         top: 0.25rem;
         top: 5px;
@@ -531,7 +532,7 @@
         height: 75%;
         width: 45%;
         border-radius: 0.375rem;
-        --tw-bg-opacity: 1;
+        transition: all .3s ease-in-out;
         background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     }
     .block-switch-tab.left:after {
@@ -543,6 +544,9 @@
       }
       .block-switch-tab>li>a.active {
         @apply text-indigo-600;
+      }
+      .block-switch-tab svg,.block-switch-tab path{
+        transition: all 0s ease-in-out;
       }
       #left-bar .group.active a{
         color:rgb(79 70 229);

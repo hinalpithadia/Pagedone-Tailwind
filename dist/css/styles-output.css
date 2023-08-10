@@ -1331,9 +1331,7 @@ pre[class*="language-"]::selection,
 }
 
 svg, rect, circle, path{
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
+  transition: all .3s ease-in-out;
 }
 
 .width-anim{
@@ -1435,6 +1433,7 @@ svg, rect, circle, path{
 }
 
 .block-switch-tab::after{
+  content:'';
   position: absolute;
   top: 0.25rem;
   top: 5px;
@@ -1442,7 +1441,7 @@ svg, rect, circle, path{
   height: 75%;
   width: 45%;
   border-radius: 0.375rem;
-  --tw-bg-opacity: 1;
+  transition: all .3s ease-in-out;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
@@ -1457,6 +1456,10 @@ svg, rect, circle, path{
 .block-switch-tab>li>a.active{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.block-switch-tab svg,.block-switch-tab path{
+  transition: all 0s ease-in-out;
 }
 
 #left-bar .group.active a{
@@ -2411,9 +2414,19 @@ input[type="radio"]:checked:disabled + label span{
   margin-right: 0.25rem;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mx-auto{
@@ -2552,6 +2565,10 @@ input[type="radio"]:checked:disabled + label span{
   margin-left: 1.25rem;
 }
 
+.ml-8{
+  margin-left: 2rem;
+}
+
 .ml-auto{
   margin-left: auto;
 }
@@ -2574,6 +2591,18 @@ input[type="radio"]:checked:disabled + label span{
 
 .mr-3{
   margin-right: 0.75rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
+}
+
+.mr-7{
+  margin-right: 1.75rem;
+}
+
+.mr-8{
+  margin-right: 2rem;
 }
 
 .mt-0{
@@ -2918,10 +2947,6 @@ input[type="radio"]:checked:disabled + label span{
 
 .w-64{
   width: 16rem;
-}
-
-.w-7{
-  width: 1.75rem;
 }
 
 .w-72{
@@ -4469,16 +4494,16 @@ input[type="radio"]:checked:disabled + label span{
   padding: 0.25rem;
 }
 
-.p-1\.5{
-  padding: 0.375rem;
-}
-
 .p-10{
   padding: 2.5rem;
 }
 
 .p-2{
   padding: 0.5rem;
+}
+
+.p-2\.5{
+  padding: 0.625rem;
 }
 
 .p-3{
@@ -4519,6 +4544,11 @@ input[type="radio"]:checked:disabled + label span{
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-11{
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
 
 .px-2{
@@ -4724,6 +4754,10 @@ input[type="radio"]:checked:disabled + label span{
   padding-left: 1rem;
 }
 
+.pl-5{
+  padding-left: 1.25rem;
+}
+
 .pl-6{
   padding-left: 1.5rem;
 }
@@ -4758,6 +4792,10 @@ input[type="radio"]:checked:disabled + label span{
 
 .pr-5{
   padding-right: 1.25rem;
+}
+
+.pr-7{
+  padding-right: 1.75rem;
 }
 
 .pt-0{
@@ -5093,11 +5131,6 @@ input[type="radio"]:checked:disabled + label span{
 .text-fuchsia-900{
   --tw-text-opacity: 1;
   color: rgb(112 26 117 / var(--tw-text-opacity));
-}
-
-.text-gray-200{
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-gray-300{
@@ -6534,6 +6567,11 @@ input[type="radio"]:checked:disabled + label span{
   color: rgb(67 56 202 / var(--tw-text-opacity));
 }
 
+.hover\:text-indigo-800:hover{
+  --tw-text-opacity: 1;
+  color: rgb(55 48 163 / var(--tw-text-opacity));
+}
+
 .hover\:text-red-700:hover{
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
@@ -6709,6 +6747,11 @@ input[type="radio"]:checked:disabled + label span{
 .group:hover .group-hover\:bg-indigo-700{
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-white\/50{
@@ -6929,6 +6972,11 @@ input[type="radio"]:checked:disabled + label span{
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-indigo-800{
+  --tw-text-opacity: 1;
+  color: rgb(55 48 163 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -7079,11 +7127,6 @@ input[type="radio"]:checked:disabled + label span{
   .dark\:bg-blue-600{
     --tw-bg-opacity: 1;
     background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-gray-600{
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99 / var(--tw-bg-opacity));
   }
 
   .dark\:bg-gray-700{
@@ -7487,8 +7530,8 @@ input[type="radio"]:checked:disabled + label span{
     margin-right: auto;
   }
 
-  .md\:ml-1{
-    margin-left: 0.25rem;
+  .md\:ml-2{
+    margin-left: 0.5rem;
   }
 
   .md\:mt-0{
@@ -7501,10 +7544,6 @@ input[type="radio"]:checked:disabled + label span{
 
   .md\:flex{
     display: flex;
-  }
-
-  .md\:inline-flex{
-    display: inline-flex;
   }
 
   .md\:h-96{
@@ -7563,6 +7602,12 @@ input[type="radio"]:checked:disabled + label span{
     --tw-space-x-reverse: 0;
     margin-right: calc(0.625rem * var(--tw-space-x-reverse));
     margin-left: calc(0.625rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-3 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:whitespace-nowrap{
@@ -7659,6 +7704,10 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:min-h-\[780px\]{
     min-height: 780px;
+  }
+
+  .lg\:min-h-\[850px\]{
+    min-height: 850px;
   }
 
   .lg\:w-10{
