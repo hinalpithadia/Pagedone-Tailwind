@@ -336,4 +336,7 @@
     .tooltip[data-tooltip-placement^=left]>.tooltip-arrow {
         left: -4px;
     }
+    .category-list>a.active{
+        @apply border-indigo-600 text-indigo-600;
+    }
 }
