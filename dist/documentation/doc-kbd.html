@@ -642,14 +642,14 @@
             <div id="mainContent">
                 <p class="page-para">The KBD (Keyboard) component can be used to indicate a textual user input from the keyboard inside other elements such as in text, tables, cards, and more. Use the semantic <code>kbd</code> keyboard input tag to use the default monospace font which is best suited for representing input keys.</p>
                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Default KBD</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-kbd">Default KBD</h2>
                     <p class="page-para">Here’s a list of KBD components that you can use inside any other element.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                               <div class="block space-x-2">
+                               <div class="flex items-center gap-x-1 flex-wrap">
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Shift</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Ctrl</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Tab</kbd>
@@ -696,14 +696,14 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >KBD for MAC</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="kbd-mac">KBD for MAC</h2>
                     <p class="page-para">Here’s a list of KBD components that you can use inside any other element.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                               <div class="block space-x-2">
+                               <div class="flex items-center gap-x-1 flex-wrap">
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Cmd</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Win</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Option</kbd>
@@ -739,7 +739,7 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >KBD inside text </h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="kbd-text">KBD inside text </h2>
                     <p class="page-para">Use this example by nesting an inline KBD component inside a paragraph.</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -782,7 +782,7 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Arrow keys </h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="arrow-key">Arrow keys </h2>
                     <p class="page-para">Use this example to show arrow keys inside the KBD styled element.</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -864,14 +864,14 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Special Keys</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="special-key">Special Keys</h2>
                     <p class="page-para">Use this example to show special keys inside the KBD styled element.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                                <div class="block">
+                                <div class="flex items-center gap-x-1 flex-wrap">
                                     <kbd class="inline-flex items-center px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg"><svg class="w-3.5 h-3.5" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.90689 5.87349V8.12651H3.94741C2.8742 8.12651 2 8.96517 2 10.0455C2 11.1258 2.8742 12 3.94741 12C5.02061 12 5.89481 11.1258 5.89481 10.0455V9.09311H8.10519V10.0455C8.10519 11.1258 8.97939 12 10.0526 12C11.1258 12 12 11.1258 12 10.0455C12 8.96517 11.1258 8.12651 10.0526 8.12651H9.086V5.87349H10.0526C11.1258 5.87349 12 5.03483 12 3.95451C12 2.8742 11.1258 2 10.0526 2C8.97939 2 8.10519 2.8742 8.10519 3.95451V4.914H5.89481V3.95451C5.89481 2.8742 5.02061 2 3.94741 2C2.8742 2 2 2.8742 2 3.95451C2 5.03483 2.8742 5.87349 3.94741 5.87349H4.90689ZM3.95451 4.92111C3.42146 4.92111 2.98792 4.48756 2.98792 3.95451C2.98792 3.42146 3.42146 2.98792 3.94741 2.98792C4.47335 2.98792 4.90689 3.42146 4.90689 3.96162V4.92111H3.95451ZM10.0455 4.92111H9.086V3.96162C9.086 3.42146 9.52665 2.98792 10.0526 2.98792C10.5785 2.98792 11.0121 3.42146 11.0121 3.95451C11.0121 4.48756 10.5785 4.92111 10.0455 4.92111ZM5.89481 8.13362V5.86638H8.10519V8.13362H5.89481ZM3.95451 9.07178H4.90689V10.0384C4.90689 10.5714 4.47335 11.005 3.94741 11.005C3.42146 11.005 2.98792 10.5714 2.98792 10.0384C2.98792 9.50533 3.42146 9.07178 3.95451 9.07178ZM10.0455 9.07178C10.5785 9.07178 11.0121 9.50533 11.0121 10.0384C11.0121 10.5714 10.5785 11.005 10.0526 11.005C9.52665 11.005 9.086 10.5714 9.086 10.0384V9.07178H10.0455Z" fill="#111827"/>
                                         </svg>
@@ -945,14 +945,14 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Number keys</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="number-key">Number keys</h2>
                     <p class="page-para">Use this example to show a key inside a KBD component from the english numeral system.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                               <div class="block">
+                               <div class="flex items-center gap-x-1 flex-wrap">
                                 <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">0</kbd>
                                 <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">1</kbd>
                                 <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">2</kbd>
@@ -1001,39 +1001,112 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Letter keys </h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="letter-key">Letter keys </h2>
                     <p class="page-para">Use this example if you need to show a key from the latin alphabet</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
+                                <div class="flex items-center gap-x-1 flex-wrap ">
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Q</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">W</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">E</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">R</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">T</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">Y</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">U</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">I</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">O</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">P</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">A</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">S</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">D</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">F</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">G</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">H</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">J</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">K</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">L</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">Z</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">X</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">C</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">B</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">N</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">M</kbd>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;Q&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;W&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;E&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;R&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;T&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;Y&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;U&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;I&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;O&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;P&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;A&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;S&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;D&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;F&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;G&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;H&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;J&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;K&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;L&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;Z&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;X&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;C&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;B&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;N&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;M&lt;/kbd&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="function-key">Function keys </h2>
+                    <p class="page-para">This example can be used to denote function keys inside the KBD component.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview ">
+                            <div class="w-full relative">
                                 <div class="block">
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">Q</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">W</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">E</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">R</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">T</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">Y</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">U</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">I</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">O</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">P</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">A</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">S</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">D</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">F</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">G</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">H</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">J</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">K</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">L</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">Z</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">X</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">C</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">B</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">N</kbd>
-                                    <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-ray-600 dark:text-gray-100 dark:border-gray-500">M</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F1</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F2</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F3</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F4</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F5</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F6</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F7</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F8</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F9</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F10</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F11</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F12</kbd>
                                 </div>
                             </div>
                         </div>
@@ -1056,382 +1129,18 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;nav class=&quot;flex&quot; aria-label=&quot;Breadcrumb&quot;&gt;
-  &lt;ol class=&quot;inline-flex items-center space-x-1 md:space-x-3&quot;&gt;
-    &lt;li class=&quot;inline-flex items-center&quot;&gt;
-      &lt;div class=&quot;dropdown relative inline-flex&quot;&gt;
-        &lt;button id=&quot;dropdown-default&quot; type=&quot;button&quot; class=&quot;dropdown-toggle inline-flex justify-center items-center gap-3 text-base font-medium text-gray-900 hover:text-indigo-800 bg-transparenta&quot;&gt;
-          &lt;svg class=&quot;w-5 h-5&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-            &lt;g clip-path=&quot;url(#clip0_11192_719)&quot;&gt;
-              &lt;path d=&quot;M1.66663 4.99999C1.66663 3.15904 3.15901 1.66666 4.99996 1.66666C6.84091 1.66666 8.33329 3.15904 8.33329 4.99999C8.33329 6.84094 6.84091 8.33332 4.99996 8.33332C3.15901 8.33332 1.66663 6.84094 1.66663 4.99999Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-              &lt;path d=&quot;M1.66663 15C1.66663 13.4286 1.66663 12.643 2.15478 12.1548C2.64294 11.6667 3.42861 11.6667 4.99996 11.6667C6.57131 11.6667 7.35698 11.6667 7.84514 12.1548C8.33329 12.643 8.33329 13.4286 8.33329 15C8.33329 16.5713 8.33329 17.357 7.84514 17.8452C7.35698 18.3333 6.57131 18.3333 4.99996 18.3333C3.42861 18.3333 2.64294 18.3333 2.15478 17.8452C1.66663 17.357 1.66663 16.5713 1.66663 15Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-              &lt;path d=&quot;M11.6666 4.99999C11.6666 3.42864 11.6666 2.64297 12.1548 2.15481C12.6429 1.66666 13.4286 1.66666 15 1.66666C16.5713 1.66666 17.357 1.66666 17.8451 2.15481C18.3333 2.64297 18.3333 3.42864 18.3333 4.99999C18.3333 6.57134 18.3333 7.35701 17.8451 7.84517C17.357 8.33332 16.5713 8.33332 15 8.33332C13.4286 8.33332 12.6429 8.33332 12.1548 7.84517C11.6666 7.35701 11.6666 6.57134 11.6666 4.99999Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-              &lt;path d=&quot;M11.6666 15C11.6666 13.159 13.159 11.6667 15 11.6667C16.8409 11.6667 18.3333 13.159 18.3333 15C18.3333 16.8409 16.8409 18.3333 15 18.3333C13.159 18.3333 11.6666 16.8409 11.6666 15Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-            &lt;/g&gt;
-            &lt;defs&gt;
-              &lt;clipPath id=&quot;clip0_11192_719&quot;&gt;
-                &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot;&gt;&lt;/rect&gt;
-              &lt;/clipPath&gt;
-            &lt;/defs&gt;
-          &lt;/svg&gt; Tab text &lt;svg class=&quot;w-3 h-2 stroke-gray-900&quot; viewBox=&quot;0 0 12 7&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-            &lt;path d=&quot;M1 1.5L4.58578 5.08578C5.25245 5.75245 5.58579 6.08579 6 6.08579C6.41421 6.08579 6.74755 5.75245 7.41421 5.08579L11 1.5&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
-          &lt;/svg&gt;
-        &lt;/button&gt;
-        &lt;div class=&quot;dropdown-menu transition-[opacity,margin] duration-[0.1ms] dropdown-open:opacity-100 opacity-0 w-72 hidden z-10 mt-2 min-w-[15rem] bg-white shadow-md rounded-lg p-2 &quot; aria-labelledby=&quot;pd-dropdown-default&quot;&gt;
-          &lt;a class=&quot;flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 &quot; href=&quot;#&quot;&gt; Newsletter &lt;/a&gt;
-          &lt;a class=&quot;flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 &quot; href=&quot;#&quot;&gt; Purchases &lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div class=&quot;flex items-center &quot;&gt;
-        &lt;svg class=&quot;mx-1 w-5 h-5&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
-        &lt;/svg&gt;
-        &lt;a href=&quot;#&quot; class=&quot;ml-1 text-base font-medium text-gray-900 hover:text-indigo-800 md:ml-2 &quot;&gt; Tab text &lt;span class=&quot;py-1 px-2 bg-indigo-50 text-indigo-600 text-xs rounded-full ml-3&quot;&gt;New&lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li aria-current=&quot;page&quot;&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot;mx-1 w-5 h-5&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
-        &lt;/svg&gt;
-        &lt;span class=&quot;ml-1 text-base font-medium text-indigo-600 md:ml-2 &quot;&gt;Tab text&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >breadcrumb with solid background</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview ">
-                            <div class="w-full relative">
-                              <nav class="flex" aria-label="Breadcrumb">
-                                <ol class="inline-flex items-center ">
-                                <li class="inline-flex items-center">
-                                    <a href="#" class="inline-flex items-center text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full">
-                                    Tab text
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="flex items-center">
-                                        <svg class=" w-1 h-5 mx-2" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.12561 1.13672L0.999943 18.8633" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round"></path>
-                                            </svg>                                                
-                                        <a href="#" class="text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full "> Tab text</a>
-                                    </div>
-                                </li>
-                                <li aria-current="page">
-                                    <div class="flex items-center">
-                                        <svg class=" w-1 h-5 mx-2" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.12561 1.13672L0.999943 18.8633" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round"></path>
-                                            </svg>    
-                                    <span class="text-base font-medium text-indigo-600 bg-indigo-50  py-2 px-5 rounded-full ">Tab text</span>
-                                    </div>
-                                </li>
-                                </ol>
-                            </nav>
-                            <nav class="flex mt-4" aria-label="Breadcrumb">
-                              <ol class="inline-flex items-center ">
-                              <li class="inline-flex items-center">
-                                  <a href="#" class="inline-flex items-center text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full">
-                                  Tab text
-                                  </a>
-                              </li>
-                              <li>
-                                  <div class="flex items-center">
-                                      <svg class=" w-1 h-5 mx-2" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M4.12561 1.13672L0.999943 18.8633" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round"></path>
-                                          </svg>                                                
-                                      <a href="#" class="text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full "> Tab text</a>
-                                  </div>
-                              </li>
-                              <li aria-current="page">
-                                  <div class="flex items-center">
-                                      <svg class=" w-1 h-5 mx-2" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M4.12561 1.13672L0.999943 18.8633" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round"></path>
-                                          </svg>    
-                                  <span class="text-base font-medium text-indigo-600 bg-indigo-50  py-2 pl-5 pr-2 rounded-full flex items-center">Tab text <span class="py-1 px-2 bg-white text-indigo-600 text-xs rounded-full ml-3">New</span></span>
-                                  </div>
-                              </li>
-                              </ol>
-                          </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;nav class=&quot;flex&quot; aria-label=&quot;Breadcrumb&quot;&gt;
-  &lt;ol class=&quot;inline-flex items-center &quot;&gt;
-    &lt;li class=&quot;inline-flex items-center&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;inline-flex items-center text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full&quot;&gt; Tab text &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot; w-1 h-5 mx-2&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;a href=&quot;#&quot; class=&quot;text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full &quot;&gt; Tab text&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li aria-current=&quot;page&quot;&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot; w-1 h-5 mx-2&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;span class=&quot;text-base font-medium text-indigo-600 bg-indigo-50  py-2 px-5 rounded-full &quot;&gt;Tab text&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;
-&lt;nav class=&quot;flex mt-4&quot; aria-label=&quot;Breadcrumb&quot;&gt;
-  &lt;ol class=&quot;inline-flex items-center &quot;&gt;
-    &lt;li class=&quot;inline-flex items-center&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;inline-flex items-center text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full&quot;&gt; Tab text &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot; w-1 h-5 mx-2&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;a href=&quot;#&quot; class=&quot;text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full &quot;&gt; Tab text&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li aria-current=&quot;page&quot;&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot; w-1 h-5 mx-2&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;span class=&quot;text-base font-medium text-indigo-600 bg-indigo-50  py-2 pl-5 pr-2 rounded-full flex items-center&quot;&gt;Tab text &lt;span class=&quot;py-1 px-2 bg-white text-indigo-600 text-xs rounded-full ml-3&quot;&gt;New&lt;/span&gt;
-        &lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >breadcrumb styles</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview ">
-                            <div class="w-full relative">
-                              <nav class="flex" aria-label="Breadcrumb">
-                                <ol class="inline-flex items-center ">
-                                <li class="inline-flex items-center">
-                                    <a href="#" class="inline-flex items-center text-base font-medium  text-indigo-600 bg-indigo-50 py-2 px-5 rounded-full">
-                                      <svg class="w-5 h-5 text-indigo-600 mr-2" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_11192_719)">
-                                        <path d="M1.66663 4.99999C1.66663 3.15904 3.15901 1.66666 4.99996 1.66666C6.84091 1.66666 8.33329 3.15904 8.33329 4.99999C8.33329 6.84094 6.84091 8.33332 4.99996 8.33332C3.15901 8.33332 1.66663 6.84094 1.66663 4.99999Z" stroke="currentColor" stroke-width="1.6"></path>
-                                        <path d="M1.66663 15C1.66663 13.4286 1.66663 12.643 2.15478 12.1548C2.64294 11.6667 3.42861 11.6667 4.99996 11.6667C6.57131 11.6667 7.35698 11.6667 7.84514 12.1548C8.33329 12.643 8.33329 13.4286 8.33329 15C8.33329 16.5713 8.33329 17.357 7.84514 17.8452C7.35698 18.3333 6.57131 18.3333 4.99996 18.3333C3.42861 18.3333 2.64294 18.3333 2.15478 17.8452C1.66663 17.357 1.66663 16.5713 1.66663 15Z" stroke="currentColor" stroke-width="1.6"></path>
-                                        <path d="M11.6666 4.99999C11.6666 3.42864 11.6666 2.64297 12.1548 2.15481C12.6429 1.66666 13.4286 1.66666 15 1.66666C16.5713 1.66666 17.357 1.66666 17.8451 2.15481C18.3333 2.64297 18.3333 3.42864 18.3333 4.99999C18.3333 6.57134 18.3333 7.35701 17.8451 7.84517C17.357 8.33332 16.5713 8.33332 15 8.33332C13.4286 8.33332 12.6429 8.33332 12.1548 7.84517C11.6666 7.35701 11.6666 6.57134 11.6666 4.99999Z" stroke="currentColor" stroke-width="1.6"></path>
-                                        <path d="M11.6666 15C11.6666 13.159 13.159 11.6667 15 11.6667C16.8409 11.6667 18.3333 13.159 18.3333 15C18.3333 16.8409 16.8409 18.3333 15 18.3333C13.159 18.3333 11.6666 16.8409 11.6666 15Z" stroke="currentColor" stroke-width="1.6"></path>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_11192_719">
-                                        <rect width="20" height="20" fill="white"></rect>
-                                        </clipPath>
-                                        </defs>
-                                        </svg>
-                                      Tab text
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="flex items-center">
-                                        <svg class=" w-1 h-5 mx-2" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.12561 1.13672L0.999943 18.8633" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round"></path>
-                                            </svg>                                                
-                                        <a href="#" class="group text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full "> Tab text <span class="py-1 px-2 bg-indigo-50 text-indigo-600 text-xs rounded-full ml-3 group-hover:bg-white">New</span></a>
-                                    </div>
-                                </li>
-                                <li aria-current="page">
-                                    <div class="flex items-center">
-                                        <svg class=" w-1 h-5 mx-2" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.12561 1.13672L0.999943 18.8633" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round"></path>
-                                            </svg>    
-                                    <a href="#" class="text-base font-medium text-gray-900 py-2 px-5 rounded-full hover:bg-gray-100 hover:text-indigo-800">Tab text</a>
-                                    </div>
-                                </li>
-                                </ol>
-                            </nav>
-                            <nav class="flex mt-5" aria-label="Breadcrumb">
-                              <ol class="inline-flex items-center ">
-                              <li class="inline-flex items-center">
-                                  <a href="#" class="group inline-flex items-center text-base font-medium text-gray-900  hover:text-indigo-800">
-                                    <svg class="w-5 h-5 mr-2 text-gray-900 group-hover:text-indigo-800" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <g clip-path="url(#clip0_11192_719)">
-                                      <path d="M1.66663 4.99999C1.66663 3.15904 3.15901 1.66666 4.99996 1.66666C6.84091 1.66666 8.33329 3.15904 8.33329 4.99999C8.33329 6.84094 6.84091 8.33332 4.99996 8.33332C3.15901 8.33332 1.66663 6.84094 1.66663 4.99999Z" stroke="currentColor" stroke-width="1.6"></path>
-                                      <path d="M1.66663 15C1.66663 13.4286 1.66663 12.643 2.15478 12.1548C2.64294 11.6667 3.42861 11.6667 4.99996 11.6667C6.57131 11.6667 7.35698 11.6667 7.84514 12.1548C8.33329 12.643 8.33329 13.4286 8.33329 15C8.33329 16.5713 8.33329 17.357 7.84514 17.8452C7.35698 18.3333 6.57131 18.3333 4.99996 18.3333C3.42861 18.3333 2.64294 18.3333 2.15478 17.8452C1.66663 17.357 1.66663 16.5713 1.66663 15Z" stroke="currentColor" stroke-width="1.6"></path>
-                                      <path d="M11.6666 4.99999C11.6666 3.42864 11.6666 2.64297 12.1548 2.15481C12.6429 1.66666 13.4286 1.66666 15 1.66666C16.5713 1.66666 17.357 1.66666 17.8451 2.15481C18.3333 2.64297 18.3333 3.42864 18.3333 4.99999C18.3333 6.57134 18.3333 7.35701 17.8451 7.84517C17.357 8.33332 16.5713 8.33332 15 8.33332C13.4286 8.33332 12.6429 8.33332 12.1548 7.84517C11.6666 7.35701 11.6666 6.57134 11.6666 4.99999Z" stroke="currentColor" stroke-width="1.6"></path>
-                                      <path d="M11.6666 15C11.6666 13.159 13.159 11.6667 15 11.6667C16.8409 11.6667 18.3333 13.159 18.3333 15C18.3333 16.8409 16.8409 18.3333 15 18.3333C13.159 18.3333 11.6666 16.8409 11.6666 15Z" stroke="currentColor" stroke-width="1.6"></path>
-                                      </g>
-                                      <defs>
-                                      <clipPath id="clip0_11192_719">
-                                      <rect width="20" height="20" fill="white"></rect>
-                                      </clipPath>
-                                      </defs>
-                                      </svg>Tab text
-                                  </a>
-                              </li>
-                              <li>
-                                  <div class="flex items-center">
-                                      <svg class=" w-1 h-5 mx-5" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M4.12561 1.13672L0.999943 18.8633" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round"></path>
-                                          </svg>                                                
-                                      <span class="text-base font-medium text-gray-400  "> Tab text</span>
-                                  </div>
-                              </li>
-                              <li>
-                                <div class="flex items-center">
-                                    <svg class=" w-1 h-5 mx-5" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.12561 1.13672L0.999943 18.8633" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round"></path>
-                                        </svg>                                                
-                                    <span href="#" class="text-base font-medium text-gray-400  "> Tab text</span>
-                                </div>
-                            </li>
-                              <li aria-current="page">
-                                  <div class="flex items-center">
-                                      <svg class=" w-1 h-5 mx-5" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M4.12561 1.13672L0.999943 18.8633" stroke="#E5E7EB" stroke-width="1.6" stroke-linecap="round"></path>
-                                          </svg>    
-                                  <span class="text-base font-medium text-gray-400  pr-2 rounded-full flex items-center">Tab text <span class="py-1 px-2 bg-indigo-50  text-indigo-600 text-xs rounded-full ml-3">New</span></span>
-                                  </div>
-                              </li>
-                              </ol>
-                          </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;nav class=&quot;flex&quot; aria-label=&quot;Breadcrumb&quot;&gt;
-  &lt;ol class=&quot;inline-flex items-center &quot;&gt;
-    &lt;li class=&quot;inline-flex items-center&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;inline-flex items-center text-base font-medium  text-indigo-600 bg-indigo-50 py-2 px-5 rounded-full&quot;&gt;
-        &lt;svg class=&quot;w-5 h-5 text-indigo-600 mr-2&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;g clip-path=&quot;url(#clip0_11192_719)&quot;&gt;
-            &lt;path d=&quot;M1.66663 4.99999C1.66663 3.15904 3.15901 1.66666 4.99996 1.66666C6.84091 1.66666 8.33329 3.15904 8.33329 4.99999C8.33329 6.84094 6.84091 8.33332 4.99996 8.33332C3.15901 8.33332 1.66663 6.84094 1.66663 4.99999Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-            &lt;path d=&quot;M1.66663 15C1.66663 13.4286 1.66663 12.643 2.15478 12.1548C2.64294 11.6667 3.42861 11.6667 4.99996 11.6667C6.57131 11.6667 7.35698 11.6667 7.84514 12.1548C8.33329 12.643 8.33329 13.4286 8.33329 15C8.33329 16.5713 8.33329 17.357 7.84514 17.8452C7.35698 18.3333 6.57131 18.3333 4.99996 18.3333C3.42861 18.3333 2.64294 18.3333 2.15478 17.8452C1.66663 17.357 1.66663 16.5713 1.66663 15Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-            &lt;path d=&quot;M11.6666 4.99999C11.6666 3.42864 11.6666 2.64297 12.1548 2.15481C12.6429 1.66666 13.4286 1.66666 15 1.66666C16.5713 1.66666 17.357 1.66666 17.8451 2.15481C18.3333 2.64297 18.3333 3.42864 18.3333 4.99999C18.3333 6.57134 18.3333 7.35701 17.8451 7.84517C17.357 8.33332 16.5713 8.33332 15 8.33332C13.4286 8.33332 12.6429 8.33332 12.1548 7.84517C11.6666 7.35701 11.6666 6.57134 11.6666 4.99999Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-            &lt;path d=&quot;M11.6666 15C11.6666 13.159 13.159 11.6667 15 11.6667C16.8409 11.6667 18.3333 13.159 18.3333 15C18.3333 16.8409 16.8409 18.3333 15 18.3333C13.159 18.3333 11.6666 16.8409 11.6666 15Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-          &lt;/g&gt;
-          &lt;defs&gt;
-            &lt;clipPath id=&quot;clip0_11192_719&quot;&gt;
-              &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot;&gt;&lt;/rect&gt;
-            &lt;/clipPath&gt;
-          &lt;/defs&gt;
-        &lt;/svg&gt; Tab text &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot; w-1 h-5 mx-2&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;a href=&quot;#&quot; class=&quot;group text-base font-medium text-gray-900 hover:text-indigo-800 hover:bg-gray-100 py-2 px-5 rounded-full &quot;&gt; Tab text &lt;span class=&quot;py-1 px-2 bg-indigo-50 text-indigo-600 text-xs rounded-full ml-3 group-hover:bg-white&quot;&gt;New&lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li aria-current=&quot;page&quot;&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot; w-1 h-5 mx-2&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;a href=&quot;#&quot; class=&quot;text-base font-medium text-gray-900 py-2 px-5 rounded-full hover:bg-gray-100 hover:text-indigo-800&quot;&gt;Tab text&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;
-&lt;nav class=&quot;flex mt-5&quot; aria-label=&quot;Breadcrumb&quot;&gt;
-  &lt;ol class=&quot;inline-flex items-center &quot;&gt;
-    &lt;li class=&quot;inline-flex items-center&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;group inline-flex items-center text-base font-medium text-gray-900  hover:text-indigo-800&quot;&gt;
-        &lt;svg class=&quot;w-5 h-5 mr-2 text-gray-900 group-hover:text-indigo-800&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;g clip-path=&quot;url(#clip0_11192_719)&quot;&gt;
-            &lt;path d=&quot;M1.66663 4.99999C1.66663 3.15904 3.15901 1.66666 4.99996 1.66666C6.84091 1.66666 8.33329 3.15904 8.33329 4.99999C8.33329 6.84094 6.84091 8.33332 4.99996 8.33332C3.15901 8.33332 1.66663 6.84094 1.66663 4.99999Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-            &lt;path d=&quot;M1.66663 15C1.66663 13.4286 1.66663 12.643 2.15478 12.1548C2.64294 11.6667 3.42861 11.6667 4.99996 11.6667C6.57131 11.6667 7.35698 11.6667 7.84514 12.1548C8.33329 12.643 8.33329 13.4286 8.33329 15C8.33329 16.5713 8.33329 17.357 7.84514 17.8452C7.35698 18.3333 6.57131 18.3333 4.99996 18.3333C3.42861 18.3333 2.64294 18.3333 2.15478 17.8452C1.66663 17.357 1.66663 16.5713 1.66663 15Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-            &lt;path d=&quot;M11.6666 4.99999C11.6666 3.42864 11.6666 2.64297 12.1548 2.15481C12.6429 1.66666 13.4286 1.66666 15 1.66666C16.5713 1.66666 17.357 1.66666 17.8451 2.15481C18.3333 2.64297 18.3333 3.42864 18.3333 4.99999C18.3333 6.57134 18.3333 7.35701 17.8451 7.84517C17.357 8.33332 16.5713 8.33332 15 8.33332C13.4286 8.33332 12.6429 8.33332 12.1548 7.84517C11.6666 7.35701 11.6666 6.57134 11.6666 4.99999Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-            &lt;path d=&quot;M11.6666 15C11.6666 13.159 13.159 11.6667 15 11.6667C16.8409 11.6667 18.3333 13.159 18.3333 15C18.3333 16.8409 16.8409 18.3333 15 18.3333C13.159 18.3333 11.6666 16.8409 11.6666 15Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot;&gt;&lt;/path&gt;
-          &lt;/g&gt;
-          &lt;defs&gt;
-            &lt;clipPath id=&quot;clip0_11192_719&quot;&gt;
-              &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot;&gt;&lt;/rect&gt;
-            &lt;/clipPath&gt;
-          &lt;/defs&gt;
-        &lt;/svg&gt;Tab text &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot; w-1 h-5 mx-5&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;span class=&quot;text-base font-medium text-gray-400  &quot;&gt; Tab text&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot; w-1 h-5 mx-5&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;span href=&quot;#&quot; class=&quot;text-base font-medium text-gray-400  &quot;&gt; Tab text&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li aria-current=&quot;page&quot;&gt;
-      &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;svg class=&quot; w-1 h-5 mx-5&quot; viewBox=&quot;0 0 5 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.12561 1.13672L0.999943 18.8633&quot; stroke=&quot;#E5E7EB&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;span class=&quot;text-base font-medium text-gray-400  pr-2 rounded-full flex items-center&quot;&gt;Tab text &lt;span class=&quot;py-1 px-2 bg-indigo-50  text-indigo-600 text-xs rounded-full ml-3&quot;&gt;New&lt;/span&gt;
-        &lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;</code></pre></div>
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F1&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F2&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F3&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F4&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F5&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F6&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F7&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F8&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F9&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F10&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F11&lt;/kbd&gt;
+&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F12&lt;/kbd&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1450,28 +1159,28 @@
                   <a href="#" class="mb-5 block active:text-indigo-600">Component</a>
                     <ul class="space-y-4 ">
                       <li>
-                        <a href="#">Default Breadcrumb</a>
+                        <a href="#default-kbd">Default KBD</a>
                       </li>
                       <li>
-                        <a href="#">Chevrons Breadcrumb</a>
+                        <a href="#kbd-mac">KBD For Mac</a>
                       </li>
                       <li>
-                        <a href="#">Breadcrumb With Icons</a>
+                        <a href="#kbd-text">KBD Inside Text</a>
                       </li>
                       <li>
-                        <a href="#">Breadcrumb With Dropdown</a>
+                        <a href="#arrow-key">Arrow Keys</a>
                       </li>
                       <li>
-                        <a href="#">Breadcrumb With Icon And Dropdown</a>
+                        <a href="#special-key">Special Keys</a>
                       </li>
                       <li>
-                        <a href="#">Breadcrumb With Badge</a>
+                        <a href="#number-key">Number Keys</a>
                       </li>
                       <li>
-                        <a href="#">Breadcrumb With Solid Background</a>
+                        <a href="#letter-key">Letter Keys</a>
                       </li>
                       <li>
-                        <a href="#">Breadcrumb Styles</a>
+                        <a href="#function-key">Function Keys</a>
                       </li>
                     </ul>
                   </li>

@@ -636,35 +636,78 @@
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Component</span>
                 <h1 class="doc-heading ">Tailwind CSS Toast</h1>
-                <p class="doc-paragraph-big">Use the powerful mobile-first flexbox grid to build layouts of all shapes and sizes use twelve column system and dozens of predefined classes.</p>
+                <p class="doc-paragraph-big">Push notifications to your users using the toast component and choose from multiple sizes, colors, styles, and positions</p>
             </div>
             <!--Header End-->
             <div id="mainContent">
                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Toast</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-toast">Default toast</h2>
+                    <p class="page-para">Use this simple toast component with an icon, message, and dismissable close button to show alert messages to your website visitors. Make sure that you set the correct id for the data-collapse-toggle data attribute to enable the dismissable feature.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                                <div id="dismiss-toast" class="pd-removing:translate-x-5 pd-removing:opacity-0 transition duration-300 max-w-xs bg-white border rounded-md shadow-lg dark:bg-gray-800 dark:border-gray-700" role="alert">
-                                    <div class="flex p-4">
-                                      <p class="text-sm text-gray-700 dark:text-gray-400">
-                                        Your email has been sent
-                                      </p>
-                                  
-                                      <div class="ml-auto">
-                                        <button type="button" class="inline-flex flex-shrink-0 justify-center items-center h-4 w-4 rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800" data-pd-remove-element="#dismiss-toast">
-                                          <span class="sr-only">Close</span>
-                                          <svg class="w-3.5 h-3.5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.92524 0.687069C1.126 0.486219 1.39823 0.373377 1.68209 0.373377C1.96597 0.373377 2.2382 0.486219 2.43894 0.687069L8.10514 6.35813L13.7714 0.687069C13.8701 0.584748 13.9882 0.503105 14.1188 0.446962C14.2494 0.39082 14.3899 0.361248 14.5321 0.360026C14.6742 0.358783 14.8151 0.38589 14.9468 0.439762C15.0782 0.493633 15.1977 0.573197 15.2983 0.673783C15.3987 0.774389 15.4784 0.894026 15.5321 1.02568C15.5859 1.15736 15.6131 1.29845 15.6118 1.44071C15.6105 1.58297 15.5809 1.72357 15.5248 1.85428C15.4688 1.98499 15.3872 2.10324 15.2851 2.20206L9.61883 7.87312L15.2851 13.5441C15.4801 13.7462 15.588 14.0168 15.5854 14.2977C15.5831 14.5787 15.4705 14.8474 15.272 15.046C15.0735 15.2449 14.805 15.3574 14.5244 15.3599C14.2437 15.3623 13.9733 15.2543 13.7714 15.0591L8.10514 9.38812L2.43894 15.0591C2.23704 15.2543 1.96663 15.3623 1.68594 15.3599C1.40526 15.3574 1.13677 15.2449 0.938279 15.046C0.739807 14.8474 0.627232 14.5787 0.624791 14.2977C0.62235 14.0168 0.730236 13.7462 0.92524 13.5441L6.59144 7.87312L0.92524 2.20206C0.724562 2.00115 0.611816 1.72867 0.611816 1.44457C0.611816 1.16047 0.724562 0.887983 0.92524 0.687069Z" fill="currentColor"/>
-                                          </svg>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                 
+                              <div class="flex items-center w-full max-w-sm py-5 px-6 text-gray-600 bg-white rounded-xl border border-gray-200 shadow-sm mb-4" role="alert">
+                                <p class="text-base font-medium">
+                                  Your email has been sent
+                                </p>
+                                <div class="ml-auto flex items-center space-x-3">
+                                  <button type="button" class="inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline">
+                                    Undo
+                                  </button>
+                                  <button type="button" class="inline-flex flex-shrink-0 justify-center items-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>                                      
+                                  </button>
+                                </div>
+                            </div>
+                            <div class="flex items-center w-full max-w-sm py-5 px-6 text-gray-600 bg-white rounded-xl border border-gray-200 shadow-sm mb-4" role="alert">
+                              <div class="inline-flex space-x-3">
+                                <svg class="w-5 h-5 text-gray-600" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.87669 5.83334L6.79903 9.07942C8.55721 10.1343 9.4363 10.6618 10.4021 10.6388C11.368 10.6158 12.221 10.0471 13.927 8.9098L18.1233 5.83334M8.33335 16.6667H11.6667C14.8094 16.6667 16.3807 16.6667 17.357 15.6904C18.3334 14.7141 18.3334 13.1427 18.3334 10C18.3334 6.85731 18.3334 5.28596 17.357 4.30965C16.3807 3.33334 14.8094 3.33334 11.6667 3.33334H8.33335C5.19066 3.33334 3.61931 3.33334 2.643 4.30965C1.66669 5.28596 1.66669 6.85731 1.66669 10C1.66669 13.1427 1.66669 14.7141 2.643 15.6904C3.61931 16.6667 5.19066 16.6667 8.33335 16.6667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                  </svg>
+                                <p class="text-base font-medium">
+                                  Your email has been sent
+                                </p>
+                              </div>
+                              <div class="ml-auto flex items-center space-x-3">
+                                <button type="button" class="inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline">
+                                  Undo
+                                </button>
+                                <button type="button" class="inline-flex flex-shrink-0 justify-center items-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                  <span class="sr-only">Close</span>
+                                  <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                      
+                                </button>
+                              </div>
+                          </div>
+                          <div class="flex items-center w-full max-w-sm py-5 px-6 text-gray-600 bg-white rounded-xl border border-gray-200 shadow-sm " role="alert">
+                            <div class="inline-flex space-x-3 items-center">
+                              <span class="w-9 h-9 rounded-full bg-indigo-50 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.87669 5.83334L6.79903 9.07942C8.55721 10.1343 9.4363 10.6618 10.4021 10.6388C11.368 10.6158 12.221 10.0471 13.927 8.9098L18.1233 5.83334M8.33335 16.6667H11.6667C14.8094 16.6667 16.3807 16.6667 17.357 15.6904C18.3334 14.7141 18.3334 13.1427 18.3334 10C18.3334 6.85731 18.3334 5.28596 17.357 4.30965C16.3807 3.33334 14.8094 3.33334 11.6667 3.33334H8.33335C5.19066 3.33334 3.61931 3.33334 2.643 4.30965C1.66669 5.28596 1.66669 6.85731 1.66669 10C1.66669 13.1427 1.66669 14.7141 2.643 15.6904C3.61931 16.6667 5.19066 16.6667 8.33335 16.6667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                              </span>  
+                              <p class="text-base font-medium">
+                                Your email has been sent
+                              </p>
+                            </div>
+                            <div class="ml-auto flex items-center space-x-3">
+                              <button type="button" class="inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline">
+                                Undo
+                              </button>
+                              <button type="button" class="inline-flex flex-shrink-0 justify-center items-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                <span class="sr-only">Close</span>
+                                <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>                                      
+                              </button>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>
@@ -686,15 +729,567 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex items-center w-full max-w-sm py-5 px-6 text-gray-600 bg-white rounded-xl border border-gray-200 shadow-sm mb-4&quot; role=&quot;alert&quot;&gt;
+  &lt;p class=&quot;text-base font-medium&quot;&gt; Your email has been sent &lt;/p&gt;
+  &lt;div class=&quot;ml-auto flex items-center space-x-3&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline&quot;&gt; Undo &lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center items-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+      &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex items-center w-full max-w-sm py-5 px-6 text-gray-600 bg-white rounded-xl border border-gray-200 shadow-sm mb-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
+    &lt;svg class=&quot;w-5 h-5 text-gray-600&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M1.87669 5.83334L6.79903 9.07942C8.55721 10.1343 9.4363 10.6618 10.4021 10.6388C11.368 10.6158 12.221 10.0471 13.927 8.9098L18.1233 5.83334M8.33335 16.6667H11.6667C14.8094 16.6667 16.3807 16.6667 17.357 15.6904C18.3334 14.7141 18.3334 13.1427 18.3334 10C18.3334 6.85731 18.3334 5.28596 17.357 4.30965C16.3807 3.33334 14.8094 3.33334 11.6667 3.33334H8.33335C5.19066 3.33334 3.61931 3.33334 2.643 4.30965C1.66669 5.28596 1.66669 6.85731 1.66669 10C1.66669 13.1427 1.66669 14.7141 2.643 15.6904C3.61931 16.6667 5.19066 16.6667 8.33335 16.6667Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+    &lt;p class=&quot;text-base font-medium&quot;&gt; Your email has been sent &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ml-auto flex items-center space-x-3&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline&quot;&gt; Undo &lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center items-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+      &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex items-center w-full max-w-sm py-5 px-6 text-gray-600 bg-white rounded-xl border border-gray-200 shadow-sm &quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;inline-flex space-x-3 items-center&quot;&gt;
+    &lt;span class=&quot;w-9 h-9 rounded-full bg-indigo-50 flex items-center justify-center&quot;&gt;
+      &lt;svg class=&quot;w-5 h-5 text-indigo-600&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M1.87669 5.83334L6.79903 9.07942C8.55721 10.1343 9.4363 10.6618 10.4021 10.6388C11.368 10.6158 12.221 10.0471 13.927 8.9098L18.1233 5.83334M8.33335 16.6667H11.6667C14.8094 16.6667 16.3807 16.6667 17.357 15.6904C18.3334 14.7141 18.3334 13.1427 18.3334 10C18.3334 6.85731 18.3334 5.28596 17.357 4.30965C16.3807 3.33334 14.8094 3.33334 11.6667 3.33334H8.33335C5.19066 3.33334 3.61931 3.33334 2.643 4.30965C1.66669 5.28596 1.66669 6.85731 1.66669 10C1.66669 13.1427 1.66669 14.7141 2.643 15.6904C3.61931 16.6667 5.19066 16.6667 8.33335 16.6667Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/span&gt;
+    &lt;p class=&quot;text-base font-medium&quot;&gt; Your email has been sent &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ml-auto flex items-center space-x-3&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline&quot;&gt; Undo &lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center items-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+      &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
-                 
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="toast-des">Toast with description</h2>
+                    <p class="page-para">This component can be used to show messages and a CTA button when receiveing chat messages, comment notifications, and other use cases.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4" role="alert">
+                                <div class="block">
+                                  <h5 class="font-medium text-gray-900 mb-1">Pagedone update is available</h5>
+                                  <p class="text-sm font-medium text-gray-600">
+                                    We’ve added some new components and sections download it now 
+                                  </p>
+                                </div>
+                                  <button type="button" class="inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>                                      
+                                  </button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;block&quot;&gt;
+    &lt;h5 class=&quot;font-medium text-gray-900 mb-1&quot;&gt;Pagedone update is available&lt;/h5&gt;
+    &lt;p class=&quot;text-sm font-medium text-gray-600&quot;&gt; We’ve added some new components and sections download it now &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+    &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="toast-icon">Toast with icon</h2>
+                    <p class="page-para">This component can be used to show messages and a CTA button when receiveing chat messages, comment notifications, and other use cases.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4" role="alert">
+                                <div class="inline-flex space-x-3">
+                                  <span>
+                                    <svg class="w-5 h-5 text-gray-900" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.3333 4.07248V8.5181M18.3333 8.5181H13.7878M18.3333 8.5181L14.8181 5.28763C14.0039 4.49091 12.9966 3.9089 11.8903 3.59591C10.7839 3.28291 9.61444 3.24913 8.49109 3.49772C7.36774 3.74631 6.32708 4.26916 5.46622 5.0175C4.60536 5.76583 3.95236 6.71525 3.56814 7.77717M1.66663 15.9275V11.4818M1.66663 11.4818H6.21208M1.66663 11.4818L5.18178 14.7123C5.99598 15.509 7.00327 16.0911 8.10966 16.4041C9.21605 16.717 10.3855 16.7508 11.5088 16.5022C12.6322 16.2536 13.6728 15.7308 14.5337 14.9825C15.3946 14.2341 16.0476 13.2847 16.4318 12.2228" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </span>
+                                  <div class="block">
+                                  <h5 class="font-medium text-gray-900 mb-1">Pagedone update is available</h5>
+                                  <p class="text-sm font-medium text-gray-600">
+                                    We’ve added some new components and sections download it now 
+                                  </p>
+                                  </div>
+                                </div>
+                                  <button type="button" class="inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>                                      
+                                  </button>
+                            </div>
+                            <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4" role="alert">
+                              <div class="inline-flex space-x-3">
+                                <span class="bg-indigo-50 w-9 h-9 rounded-full flex-shrink-0 flex justify-center items-center">
+                                  <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3333 4.07248V8.5181M18.3333 8.5181H13.7878M18.3333 8.5181L14.8181 5.28763C14.0039 4.49091 12.9966 3.9089 11.8903 3.59591C10.7839 3.28291 9.61444 3.24913 8.49109 3.49772C7.36774 3.74631 6.32708 4.26916 5.46622 5.0175C4.60536 5.76583 3.95236 6.71525 3.56814 7.77717M1.66663 15.9275V11.4818M1.66663 11.4818H6.21208M1.66663 11.4818L5.18178 14.7123C5.99598 15.509 7.00327 16.0911 8.10966 16.4041C9.21605 16.717 10.3855 16.7508 11.5088 16.5022C12.6322 16.2536 13.6728 15.7308 14.5337 14.9825C15.3946 14.2341 16.0476 13.2847 16.4318 12.2228" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div class="block">
+                                <h5 class="font-medium text-gray-900 mb-1">Pagedone update is available</h5>
+                                <p class="text-sm font-medium text-gray-600">
+                                  We’ve added some new components and sections download it now 
+                                </p>
+                                </div>
+                              </div>
+                                <button type="button" class="inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                  <span class="sr-only">Close</span>
+                                  <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                      
+                                </button>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
+    &lt;span&gt;
+      &lt;svg class=&quot;w-5 h-5 text-gray-900&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M18.3333 4.07248V8.5181M18.3333 8.5181H13.7878M18.3333 8.5181L14.8181 5.28763C14.0039 4.49091 12.9966 3.9089 11.8903 3.59591C10.7839 3.28291 9.61444 3.24913 8.49109 3.49772C7.36774 3.74631 6.32708 4.26916 5.46622 5.0175C4.60536 5.76583 3.95236 6.71525 3.56814 7.77717M1.66663 15.9275V11.4818M1.66663 11.4818H6.21208M1.66663 11.4818L5.18178 14.7123C5.99598 15.509 7.00327 16.0911 8.10966 16.4041C9.21605 16.717 10.3855 16.7508 11.5088 16.5022C12.6322 16.2536 13.6728 15.7308 14.5337 14.9825C15.3946 14.2341 16.0476 13.2847 16.4318 12.2228&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/span&gt;
+    &lt;div class=&quot;block&quot;&gt;
+      &lt;h5 class=&quot;font-medium text-gray-900 mb-1&quot;&gt;Pagedone update is available&lt;/h5&gt;
+      &lt;p class=&quot;text-sm font-medium text-gray-600&quot;&gt; We’ve added some new components and sections download it now &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+    &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
+    &lt;span class=&quot;bg-indigo-50 w-9 h-9 rounded-full flex-shrink-0 flex justify-center items-center&quot;&gt;
+      &lt;svg class=&quot;w-5 h-5 text-indigo-600&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;path d=&quot;M18.3333 4.07248V8.5181M18.3333 8.5181H13.7878M18.3333 8.5181L14.8181 5.28763C14.0039 4.49091 12.9966 3.9089 11.8903 3.59591C10.7839 3.28291 9.61444 3.24913 8.49109 3.49772C7.36774 3.74631 6.32708 4.26916 5.46622 5.0175C4.60536 5.76583 3.95236 6.71525 3.56814 7.77717M1.66663 15.9275V11.4818M1.66663 11.4818H6.21208M1.66663 11.4818L5.18178 14.7123C5.99598 15.509 7.00327 16.0911 8.10966 16.4041C9.21605 16.717 10.3855 16.7508 11.5088 16.5022C12.6322 16.2536 13.6728 15.7308 14.5337 14.9825C15.3946 14.2341 16.0476 13.2847 16.4318 12.2228&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/span&gt;
+    &lt;div class=&quot;block&quot;&gt;
+      &lt;h5 class=&quot;font-medium text-gray-900 mb-1&quot;&gt;Pagedone update is available&lt;/h5&gt;
+      &lt;p class=&quot;text-sm font-medium text-gray-600&quot;&gt; We’ve added some new components and sections download it now &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+    &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="toast-avatar">Toast with avatar</h2>
+                    <p class="page-para">This component can be used to show messages and a CTA button when receiveing chat messages, comment notifications, and other use cases.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4" role="alert">
+                                <div class="inline-flex space-x-3">
+                                  <span class="flex-shrink-0">
+                                   <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" alt="image" class="w-12 h-12 rounded-full "/>
+                                  </span>
+                                  <div class="block">
+                                  <h5 class="font-medium text-gray-900 mb-1">Harsh sent you an invite</h5>
+                                  <p class="text-sm font-medium text-gray-600">
+                                    Harsh sent you an invite to the pagedone signup and get reward 
+                                  </p>
+                                  </div>
+                                </div>
+                                  <button type="button" class="inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>                                      
+                                  </button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
+    &lt;span class=&quot;flex-shrink-0&quot;&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; alt=&quot;image&quot; class=&quot;w-12 h-12 rounded-full &quot; /&gt;
+    &lt;/span&gt;
+    &lt;div class=&quot;block&quot;&gt;
+      &lt;h5 class=&quot;font-medium text-gray-900 mb-1&quot;&gt;Harsh sent you an invite&lt;/h5&gt;
+      &lt;p class=&quot;text-sm font-medium text-gray-600&quot;&gt; Harsh sent you an invite to the pagedone signup and get reward &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+    &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="toast-size">Toast with size</h2>
+                    <p class="page-para">This component can be used to show messages and a CTA button when receiveing chat messages, comment notifications, and other use cases.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4" role="alert">
+                                <div class="inline-flex space-x-3">
+                                  <span class="flex-shrink-0">
+                                   <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" alt="image" class="w-16 h-16 rounded-full "/>
+                                  </span>
+                                  <div class="block">
+                                  <h5 class="font-medium text-gray-900 mb-1">Harsh sent you an invite</h5>
+                                  <p class="text-sm font-medium text-gray-600">
+                                    Harsh sent you an invite to the pagedone signup and get reward 
+                                  </p>
+                                  </div>
+                                </div>
+                                  <button type="button" class="inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>                                      
+                                  </button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
+    &lt;span class=&quot;flex-shrink-0&quot;&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; alt=&quot;image&quot; class=&quot;w-16 h-16 rounded-full &quot; /&gt;
+    &lt;/span&gt;
+    &lt;div class=&quot;block&quot;&gt;
+      &lt;h5 class=&quot;font-medium text-gray-900 mb-1&quot;&gt;Harsh sent you an invite&lt;/h5&gt;
+      &lt;p class=&quot;text-sm font-medium text-gray-600&quot;&gt; Harsh sent you an invite to the pagedone signup and get reward &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+    &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="interactive-toast">Interactive toast</h2>
+                    <p class="page-para">Use this interactive toast component to encourage users to make a certain action such as updating to the latest software version. You can set an icon, message, and two CTA buttons.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4" role="alert">
+                                  <div class="block">
+                                  <h5 class="font-medium text-gray-900 mb-1">Pagedone update is available</h5>
+                                  <p class="text-sm font-medium text-gray-600 mb-4">
+                                    We’ve added some new components and sections download it now  
+                                  </p>
+                                  <div class="inline-flex space-x-3">
+                                    <a href="#" class="text-sm font-semibold text-gray-900">Remind later</a>
+                                    <a href="#" class="text-sm font-semibold text-indigo-600">Download now</a>
+                                  </div>
+                                  </div>
+                                  <button type="button" class="inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>                                      
+                                  </button>
+                            </div>
+                              <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4" role="alert">
+                                <div class="inline-flex space-x-3">
+                                  <span class="flex-shrink-0">
+                                   <img src="https://beta.pagedone.io/asset/uploads/1688032245.png" alt="image" class="w-12 h-12 rounded-full "/>
+                                  </span>
+                                  <div class="block">
+                                  <h5 class="font-medium text-gray-900 mb-1">Harsh sent you an invite</h5>
+                                  <p class="text-sm font-medium text-gray-600 mb-4">
+                                    Harsh sent you an invite to the pagedone signup and get reward 
+                                  </p>
+                                  <div class="inline-flex space-x-3">
+                                    <a href="#" class="text-sm font-semibold text-gray-900">Remind later</a>
+                                    <a href="#" class="text-sm font-semibold text-indigo-600">Download now</a>
+                                  </div>
+                                  </div>
+                                </div>
+                                  <button type="button" class="inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 " data-dismiss="alert">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7 17L17 7M17 17L7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>                                      
+                                  </button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;block&quot;&gt;
+    &lt;h5 class=&quot;font-medium text-gray-900 mb-1&quot;&gt;Pagedone update is available&lt;/h5&gt;
+    &lt;p class=&quot;text-sm font-medium text-gray-600 mb-4&quot;&gt; We’ve added some new components and sections download it now &lt;/p&gt;
+    &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;text-sm font-semibold text-gray-900&quot;&gt;Remind later&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;text-sm font-semibold text-indigo-600&quot;&gt;Download now&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+    &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
+    &lt;span class=&quot;flex-shrink-0&quot;&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688032245.png&quot; alt=&quot;image&quot; class=&quot;w-12 h-12 rounded-full &quot; /&gt;
+    &lt;/span&gt;
+    &lt;div class=&quot;block&quot;&gt;
+      &lt;h5 class=&quot;font-medium text-gray-900 mb-1&quot;&gt;Harsh sent you an invite&lt;/h5&gt;
+      &lt;p class=&quot;text-sm font-medium text-gray-600 mb-4&quot;&gt; Harsh sent you an invite to the pagedone signup and get reward &lt;/p&gt;
+      &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;text-sm font-semibold text-gray-900&quot;&gt;Remind later&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;text-sm font-semibold text-indigo-600&quot;&gt;Download now&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+    &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="basic-toast">Basic toast</h2>
+                    <p class="page-para">A basic form of the toasts.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4" role="alert">
+                                  <p class="font-medium text-gray-600">
+                                    Your email has been sent 
+                                  </p>
+                                  <button type="button" class="ml-auto inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline">
+                                    Undo
+                                  </button>
+                            </div>
+                            <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4" role="alert">
+                              <div class="block">
+                                <h5 class="font-medium text-gray-900 mb-1">Pagedone update is available</h5>
+                                <p class="text-sm font-medium text-gray-600">
+                                  We’ve added some new components and sections download it now 
+                                </p>
+                              </div>
+                          </div>
+                          <div class="flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm  gap-4" role="alert">
+                            <div class="block">
+                            <h5 class="font-medium text-gray-900 mb-1">Pagedone update is available</h5>
+                            <p class="text-sm font-medium text-gray-600 mb-4">
+                              We’ve added some new components and sections download it now  
+                            </p>
+                            <div class="inline-flex space-x-3">
+                              <a href="#" class="text-sm font-semibold text-gray-900">Remind later</a>
+                              <a href="#" class="text-sm font-semibold text-indigo-600">Download now</a>
+                            </div>
+                            </div>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;p class=&quot;font-medium text-gray-600&quot;&gt; Your email has been sent &lt;/p&gt;
+  &lt;button type=&quot;button&quot; class=&quot;ml-auto inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline&quot;&gt; Undo &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm mb-4 gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;block&quot;&gt;
+    &lt;h5 class=&quot;font-medium text-gray-900 mb-1&quot;&gt;Pagedone update is available&lt;/h5&gt;
+    &lt;p class=&quot;text-sm font-medium text-gray-600&quot;&gt; We’ve added some new components and sections download it now &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex w-full max-w-sm py-5 px-6 bg-white rounded-xl border border-gray-200 shadow-sm  gap-4&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;block&quot;&gt;
+    &lt;h5 class=&quot;font-medium text-gray-900 mb-1&quot;&gt;Pagedone update is available&lt;/h5&gt;
+    &lt;p class=&quot;text-sm font-medium text-gray-600 mb-4&quot;&gt; We’ve added some new components and sections download it now &lt;/p&gt;
+    &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;text-sm font-semibold text-gray-900&quot;&gt;Remind later&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;text-sm font-semibold text-indigo-600&quot;&gt;Download now&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
             </div>
               </div>
             <!----------Middlebar End---------->
@@ -708,33 +1303,25 @@ code
                   <a href="#" class="mb-5 block active:text-indigo-600">Layout</a>
                     <ul class="space-y-4 ">
                       <li>
-                        <a href="#grid-template-columns">Grid Template Columns</a>
-                        <a href="#specifying-the-columns-in-a-grid" class="mt-4 ml-4">
-                          Specifying The Columns In A Grid</a>
+                        <a href="#default-toast">Default Toast</a>
                       </li>
                       <li>
-                        <a href="#grid-column">Grid Column Start / End</a>
-                        <a href="#spanning-columns" class="mt-4 ml-4">Spanning columns</a>
-                        <a href="#starting-and-ending-lines" class="mt-4 ml-4">Starting and ending lines</a>
+                        <a href="#toast-des">Toast With Description</a>
                       </li>
                       <li>
-                        <a href="#grid-template-rows">Grid Template Rows</a>
-                        <a href="#specifying-the-rows-in-a-grid" class="mt-4 ml-4">Specifying the rows in a grid</a>
+                        <a href="#toast-icon">Toast With Icon</a>
                       </li>
                       <li>
-                        <a href="#grid-row">Grid Row Start / End</a>
-                        <a href="#spanning-rows" class="mt-4 ml-4">Spanning rows</a>
-                        <a href="#starting-and-ending-lines-row" class="mt-4 ml-4">Starting and ending lines</a>
+                        <a href="#toast-avatar">Toast With Avatar</a>
                       </li>
                       <li>
-                        <a href="#grid-auto-flow">Grid Auto Flow</a>
-                        <a href="#controlling-grid-element-placement" class="mt-4 ml-4">Controlling grid element placement</a>
-                        
+                        <a href="#toast-size">Toast With Size</a>
                       </li>
                       <li>
-                        <a href="#gap">Gap</a>
-                        <a href="#setting-the-gap-between-elements" class="mt-4 ml-4">Setting the gap between elements</a>
-                        <a href="#changing-row-and-column-gaps-independently" class="mt-4 ml-4"> Changing row and column gaps independently</a>
+                        <a href="#interactive-toast">Interactive Toast</a>
+                      </li>
+                      <li>
+                        <a href="#basic-toast">Basic Toast</a>
                       </li>
                     </ul>
                   </li>
