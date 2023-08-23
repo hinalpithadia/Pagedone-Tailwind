@@ -621,49 +621,137 @@
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full flex justify-center gap-3">
-                              <div class="tooltip inline-block">
-                                <button type="button" class="tooltip-toggle w-10 h-10 inline-flex justify-center items-center gap-2 rounded-full bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
-                                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2.27921 10.64L7.92565 4.99357C8.12091 4.79831 8.4375 4.79831 8.63276 4.99357L14.2792 10.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                  </svg>
-                                  <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-slate-700" role="tooltip">
-                                    Tooltip on top
-                                  </span>
+                            <div class="w-full flex justify-center gap-3 py-6">
+                              <!-- Show tooltip on top -->
+                              <div class="relative inline-block">
+                                <button class="bg-primary inline-flex rounded text-base font-semibold text-black"  data-tooltip-target="top-tooltip">
+                                  Tooltip on top
                                 </button>
+                                <div class="absolute bottom-full invisible left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_12px_30px_-4px_rgba(16,24,40,0.08);]" role="tooltip" id="top-tooltip">
+                                  <span class="absolute -bottom-1.5 left-1/2 -z-10 h-3 w-3 -translate-x-1/2 rotate-45  bg-white"></span>
+                                  This is a tooltip
+                                </div>
                               </div>
-                              
-                              <div class="tooltip inline-block [--placement:left]">
-                                <button type="button" class="tooltip-toggle w-10 h-10 inline-flex justify-center items-center gap-2 rounded-full bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
-                                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M11.2792 1.64001L5.63273 7.28646C5.43747 7.48172 5.43747 7.79831 5.63273 7.99357L11.2792 13.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                  </svg>
-                                  <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-slate-700" role="tooltip">
-                                    Tooltip on left
-                                  </span>
+                              <!-- Show tooltip on bottom -->
+                              <div class="relative inline-block">
+                                <button class="bg-primary inline-flex rounded text-base font-semibold text-black"  data-tooltip-target="bottom-tooltip">
+                                  Tooltip on bottom
                                 </button>
+                                <div class="absolute top-full invisible left-1/2 z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_-12px_30px_-4px_rgba(16,24,40,0.08)]" role="tooltip" id="bottom-tooltip">
+                                  <span class="absolute -top-1.5 left-1/2 -z-10 h-3 w-3 -translate-x-1/2 rotate-45 bg-white"></span>
+                                  This is a tooltip
+                                </div>
                               </div>
-                              
-                              <div class="tooltip inline-block [--placement:right]">
-                                <button type="button" class="tooltip-toggle w-10 h-10 inline-flex justify-center items-center gap-2 rounded-full bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
-                                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                  </svg>
-                                  <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-slate-700" role="tooltip">
-                                    Tooltip on right
-                                  </span>
+                              <!-- Show tooltip on left -->
+                              <div class="relative inline-block">
+                                <button class="bg-primary inline-flex rounded text-base font-semibold text-black"  data-tooltip-target="left-tooltip">
+                                  Tooltip on left
                                 </button>
+                                <div class="absolute right-full invisible top-1/2 z-20 mr-3 -translate-y-1/2  whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[12px_0px_30px_-4px_rgba(16,24,40,0.08)]" role="tooltip" id="left-tooltip">
+                                  <span class="absolute -right-1 top-1/2 -z-10 h-3 w-3 -translate-y-1/2 rotate-45 rounded-sm bg-white"></span>
+                                  This is a tooltip
+                                </div>
                               </div>
-                              
-                              <div class="tooltip inline-block [--placement:bottom]">
-                                <button type="button" class="tooltip-toggle w-10 h-10 inline-flex justify-center items-center gap-2 rounded-full bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
-                                  <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2.27921 4.64001L7.92565 10.2865C8.12091 10.4817 8.4375 10.4817 8.63276 10.2865L14.2792 4.64001" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                  </svg>
-                                  <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-slate-700" role="tooltip">
-                                    Tooltip on bottom
-                                  </span>
+                              <!-- Show tooltip on right -->
+                              <div class="relative inline-block">
+                                <button class="bg-primary inline-flex rounded text-base font-semibold text-black"  data-tooltip-target="right-tooltip">
+                                  Tooltip on right
                                 </button>
+                                <div class="absolute left-full invisible top-1/2 z-20 ml-3 -translate-y-1/2  whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[-12px_0px_30px_-4px_rgba(16,24,40,0.08)]" role="tooltip" id="right-tooltip">
+                                  <span class="absolute -left-1 top-1/2 -z-10 h-3 w-3 -translate-y-1/2 rotate-45  bg-white"></span>
+                                  This is a tooltip
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+                                    code
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="">Disable arrow </h2>
+                    <p class="page-para">You can also disable the tooltip arrow.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full flex justify-center gap-3 pt-6">
+                              <div class="relative inline-block">
+                                <button class="bg-primary inline-flex rounded text-base font-semibold text-black"  data-tooltip-target="default-tooltip">
+                                  Tooltip without arrow
+                                </button>
+                                <div class="absolute bottom-full invisible left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_12px_30px_-4px_rgba(16,24,40,0.08);]" role="tooltip" id="default-tooltip">
+                                  This is a tooltip
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+                                    code
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="">Detail Tooltip </h2>
+                    <p class="page-para">You can also disable the tooltip arrow.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full flex justify-center gap-3 pt-14">
+                              <div class="relative inline-block">
+                                <button class="bg-primary inline-flex rounded text-base font-semibold text-black"  data-tooltip-target="detail-tooltip">
+                                  Tooltip without arrow
+                                </button>
+                                <div class="w-64 absolute bottom-full invisible mb-2 left-1/2 z-20 -translate-x-1/2 rounded-2xl bg-white py-3 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_12px_30px_-4px_rgba(16,24,40,0.08);]" role="tooltip" id="detail-tooltip">
+                                  <h5 class="text-xs text-gray-800 font-medium mb-1.5">This is a tooltip</h5>
+                                  <p class="text-xs text-gray-500 font-normal ">The tooltip, also known as infotip or hint, is a common graphical user... </p>
+                                </div>
                               </div>
                             </div>
                         </div>
@@ -894,12 +982,16 @@ function speedDial() {
 
             button.addEventListener('mouseenter', () => {
                 tooltip.classList.remove('invisible');
+                tooltip.classList.remove('opacity-0');
                 tooltip.classList.add('visible');
+                tooltip.classList.add('opacity-100');
             });
 
             button.addEventListener('mouseleave', () => {
                 tooltip.classList.remove('visible');
+                tooltip.classList.remove('opacity-100');
                 tooltip.classList.add('invisible');
+                tooltip.classList.add('opacity-0');
             });
         });
     });

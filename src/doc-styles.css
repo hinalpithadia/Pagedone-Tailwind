@@ -324,6 +324,7 @@
     .tooltip-placement-left{
         @apply left-0;
     }
+    .tooltip[data-tooltip-placement^=top]
     .tooltip[data-tooltip-placement^=top]>.tooltip-arrow {
         top: -4px;
     }

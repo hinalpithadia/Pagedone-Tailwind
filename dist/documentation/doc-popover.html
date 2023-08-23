@@ -648,17 +648,17 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full relative flex justify-center gap-3">
-                                <div class="pd-tooltip inline-block [--trigger:click] [--placement:left]">
-                                    <a class="pd-tooltip-toggle block text-center" href="javascript:;">
+                                <div class="pd-tooltip inline-block">
+                                    <button class="pd-tooltip-toggle block text-center" href="javascript:;" data-tooltip-target="left-popover">
                                       <span class="w-10 h-10 inline-flex justify-center items-center gap-2 rounded-md bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
                                         <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                           <path d="M11.2792 1.64001L5.63273 7.28646C5.43747 7.48172 5.43747 7.79831 5.63273 7.99357L11.2792 13.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                         </svg>
                                       </span>
-                                      <div class="pd-tooltip-content pd-tooltip-shown:opacity-100 pd-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400" role="tooltip">
+                                      <div class="pd-tooltip-content pd-tooltip-shown:opacity-100 pd-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border text-sm text-gray-600 rounded-md shadow-md dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400" role="tooltip" id="left-popover">
                                         Left popover
                                       </div>
-                                    </a>
+                                    </button>
                                   </div>
                                   <div class="pd-tooltip inline-block [--trigger:click]">
                                     <a class="pd-tooltip-toggle block text-center" href="javascript:;">
@@ -958,42 +958,30 @@ code
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
     
-    // Get all tooltip-toggle elements
-    const tooltipToggles = document.querySelectorAll('.pd-tooltip-toggle');
+    document.addEventListener('DOMContentLoaded', () => {
+    tooltips();
+    });
+function tooltips() {
     
-    // Add scroll event listener to update popover positions
-    window.addEventListener('scroll', () => {
-        tooltipToggles.forEach((toggle) => {
-            // Find the corresponding tooltip-content element
-            const tooltipContent = toggle.querySelector('.pd-tooltip-content');
-    
-            // Calculate the translate value based on the scroll position
-            const scrollPosition = window.scrollY;
-            const translateValue = `translate(413px, ${scrollPosition}px)`; // Adjust the horizontal position as needed
-    
-            // Apply the updated translate value to the tooltip-content
-            tooltipContent.style.transform = translateValue;
+    // Get all the buttons with tooltips
+    const buttons = document.querySelectorAll('button[data-tooltip-target]');
+
+    // Add event listeners to each button
+    buttons.forEach(button => {
+        const tooltipId = button.getAttribute('data-tooltip-target');
+        const tooltip = document.getElementById(tooltipId);
+
+        button.addEventListener('mouseenter', () => {
+            tooltip.classList.remove('invisible');
+            tooltip.classList.add('visible');
+        });
+
+        button.addEventListener('mouseleave', () => {
+            tooltip.classList.remove('visible');
+            tooltip.classList.add('invisible');
         });
     });
-    
-    // Add click event listener to each tooltip-toggle element
-    tooltipToggles.forEach((toggle) => {
-        toggle.addEventListener('click', (event) => {
-            event.preventDefault();
-            event.stopPropagation();
-    
-            // Find the corresponding tooltip-content element
-            const tooltipContent = toggle.querySelector('.pd-tooltip-content');
-    
-            // Toggle the visibility of tooltip-content
-            tooltipContent.classList.toggle('hidden');
-            tooltipContent.classList.toggle('visible');
-    
-            // Toggle the opacity of tooltip-content
-            tooltipContent.classList.toggle('opacity-0');
-            tooltipContent.classList.toggle('opacity-100');
-        });
-    });
+}
 
 
   </script>
