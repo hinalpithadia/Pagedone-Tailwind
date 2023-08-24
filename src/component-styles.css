@@ -555,4 +555,19 @@
         color: rgb(255 255 255 );
         background-color: rgb(148 163 184);
       }
+      .main{
+        display: flex;
+         min-height: calc(100vh - 64px);
+    }
+    .colors-collection{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap:8px;
+    }
+    .colors-collection>.group{
+        display: flex; 
+        flex: 1 1 200px;
+        padding: 1.5rem;
+    }
 }

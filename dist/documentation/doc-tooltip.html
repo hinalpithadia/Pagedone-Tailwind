@@ -615,8 +615,8 @@
             <div id="mainContent">
                 <p class="page-para">info</p>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-button-group">Default Button Group</h2>
-                    <p class="page-para">Use these default button group styles to display multiple buttons together.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-tooltip">Default Tooltip</h2>
+                    <p class="page-para">Use the following Tailwind CSS powered tooltips to show extra content when hovering or focusing on an element</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -683,16 +683,43 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper class="code-wrapper " >
-                                    code
+                                <div data-code-wrapper class="code-wrapper " ><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;!-- Show tooltip on top --&gt;
+&lt;div class=&quot;relative inline-block&quot;&gt;
+    &lt;button class=&quot;bg-primary inline-flex rounded text-base font-semibold text-black&quot; data-tooltip-target=&quot;top-tooltip&quot;&gt; Tooltip on top &lt;/button&gt;
+    &lt;div class=&quot;absolute bottom-full invisible left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_12px_30px_-4px_rgba(16,24,40,0.08);]&quot; role=&quot;tooltip&quot; id=&quot;top-tooltip&quot;&gt;
+      &lt;span class=&quot;absolute -bottom-1.5 left-1/2 -z-10 h-3 w-3 -translate-x-1/2 rotate-45  bg-white&quot;&gt;&lt;/span&gt; This is a tooltip
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Show tooltip on bottom --&gt;
+&lt;div class=&quot;relative inline-block&quot;&gt;
+    &lt;button class=&quot;bg-primary inline-flex rounded text-base font-semibold text-black&quot; data-tooltip-target=&quot;bottom-tooltip&quot;&gt; Tooltip on bottom &lt;/button&gt;
+    &lt;div class=&quot;absolute top-full invisible left-1/2 z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_-12px_30px_-4px_rgba(16,24,40,0.08)]&quot; role=&quot;tooltip&quot; id=&quot;bottom-tooltip&quot;&gt;
+      &lt;span class=&quot;absolute -top-1.5 left-1/2 -z-10 h-3 w-3 -translate-x-1/2 rotate-45 bg-white&quot;&gt;&lt;/span&gt; This is a tooltip
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Show tooltip on left --&gt;
+&lt;div class=&quot;relative inline-block&quot;&gt;
+    &lt;button class=&quot;bg-primary inline-flex rounded text-base font-semibold text-black&quot; data-tooltip-target=&quot;left-tooltip&quot;&gt; Tooltip on left &lt;/button&gt;
+    &lt;div class=&quot;absolute right-full invisible top-1/2 z-20 mr-3 -translate-y-1/2  whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[12px_0px_30px_-4px_rgba(16,24,40,0.08)]&quot; role=&quot;tooltip&quot; id=&quot;left-tooltip&quot;&gt;
+      &lt;span class=&quot;absolute -right-1 top-1/2 -z-10 h-3 w-3 -translate-y-1/2 rotate-45 rounded-sm bg-white&quot;&gt;&lt;/span&gt; This is a tooltip
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Show tooltip on right --&gt;
+&lt;div class=&quot;relative inline-block&quot;&gt;
+    &lt;button class=&quot;bg-primary inline-flex rounded text-base font-semibold text-black&quot; data-tooltip-target=&quot;right-tooltip&quot;&gt; Tooltip on right &lt;/button&gt;
+    &lt;div class=&quot;absolute left-full invisible top-1/2 z-20 ml-3 -translate-y-1/2  whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[-12px_0px_30px_-4px_rgba(16,24,40,0.08)]&quot; role=&quot;tooltip&quot; id=&quot;right-tooltip&quot;&gt;
+      &lt;span class=&quot;absolute -left-1 top-1/2 -z-10 h-3 w-3 -translate-y-1/2 rotate-45  bg-white&quot;&gt;&lt;/span&gt; This is a tooltip
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
                                 </div>
-                                <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
+                                <button data-expand-code type="button" class="code-exapnd-button" >Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="">Disable arrow </h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="disable-arrow">Disable arrow </h2>
                     <p class="page-para">You can also disable the tooltip arrow.</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -728,8 +755,10 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper class="code-wrapper " >
-                                    code
+                                <div data-code-wrapper class="code-wrapper" ><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;relative inline-block&quot;&gt;
+   &lt;button class=&quot;bg-primary inline-flex rounded text-base font-semibold text-black&quot; data-tooltip-target=&quot;default-tooltip&quot;&gt; Tooltip without arrow &lt;/button&gt;
+   &lt;div class=&quot;absolute bottom-full invisible left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_12px_30px_-4px_rgba(16,24,40,0.08);]&quot; role=&quot;tooltip&quot; id=&quot;default-tooltip&quot;&gt; This is a tooltip &lt;/div&gt;
+ &lt;/div&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
                             </div>
@@ -737,7 +766,7 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="">Detail Tooltip </h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="detail-tooltip">Detail Tooltip </h2>
                     <p class="page-para">You can also disable the tooltip arrow.</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -746,7 +775,7 @@
                             <div class="w-full flex justify-center gap-3 pt-14">
                               <div class="relative inline-block">
                                 <button class="bg-primary inline-flex rounded text-base font-semibold text-black"  data-tooltip-target="detail-tooltip">
-                                  Tooltip without arrow
+                                  Detail Tooltip
                                 </button>
                                 <div class="w-64 absolute bottom-full invisible mb-2 left-1/2 z-20 -translate-x-1/2 rounded-2xl bg-white py-3 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_12px_30px_-4px_rgba(16,24,40,0.08);]" role="tooltip" id="detail-tooltip">
                                   <h5 class="text-xs text-gray-800 font-medium mb-1.5">This is a tooltip</h5>
@@ -774,10 +803,108 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper class="code-wrapper " >
-                                    code
+                                <div data-code-wrapper class="code-wrapper " ><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;relative inline-block&quot;&gt;
+  &lt;button class=&quot;bg-primary inline-flex rounded text-base font-semibold text-black&quot; data-tooltip-target=&quot;detail-tooltip&quot;&gt; Detail Tooltip &lt;/button&gt;
+  &lt;div class=&quot;w-64 absolute bottom-full invisible mb-2 left-1/2 z-20 -translate-x-1/2 rounded-2xl bg-white py-3 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_12px_30px_-4px_rgba(16,24,40,0.08);]&quot; role=&quot;tooltip&quot; id=&quot;detail-tooltip&quot;&gt;
+    &lt;h5 class=&quot;text-xs text-gray-800 font-medium mb-1.5&quot;&gt;This is a tooltip&lt;/h5&gt;
+    &lt;p class=&quot;text-xs text-gray-500 font-normal &quot;&gt;The tooltip, also known as infotip or hint, is a common graphical user... &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                                 </div>
                                 <button data-expand-code type="button" class="code-exapnd-button hidden" >Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tooltip-placement">Detailed Tooltip Placement</h2>
+                    <p class="page-para">You can also disable the tooltip arrow.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full flex justify-center gap-3 pb-14 pt-5">
+                              <div class="relative inline-block">
+                                <button class="bg-primary inline-flex rounded text-base font-semibold text-black"  data-tooltip-target="detail-tooltip-left">
+                                  Tooltip on left
+                                </button>
+                                <div class="w-64 absolute right-full top-1/2 z-20 mr-3 -translate-y-1/2 whitespace-nowrap rounded-2xl bg-white py-3 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[12px_0px_30px_-4px_rgba(16,24,40,0.08)] invisible" role="tooltip" id="detail-tooltip-left">
+                                  <span class="absolute -right-1 top-1/2 -z-10 h-3 w-3 -translate-y-1/2 rotate-45 rounded-sm bg-white"></span>
+                                  <h5 class="text-xs text-gray-800 font-medium mb-1.5">This is a tooltip</h5>
+                                  <p class="text-xs text-gray-500 font-normal whitespace-normal">The tooltip, also known as infotip or hint, is a common graphical user... </p>
+                                </div>
+                              </div>
+                              <div class="relative inline-block">
+                                <button class="bg-primary inline-flex rounded text-base font-semibold text-black" data-tooltip-target="detail-tooltip-bottom">
+                                  Tooltip on bottom
+                                </button>
+                                <div class="w-64 absolute top-full left-1/2 z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-2xl  bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_-12px_30px_-4px_rgba(16,24,40,0.08)] invisible" role="tooltip" id="detail-tooltip-bottom">
+                                  <span class="absolute -top-1.5 left-1/2 -z-10 h-3 w-3 -translate-x-1/2 rotate-45 bg-white"></span>
+                                  <h5 class="text-xs text-gray-800 font-medium mb-1.5">This is a tooltip</h5>
+                                  <p class="text-xs text-gray-500 font-normal whitespace-normal">The tooltip, also known as infotip or hint, is a common graphical user... </p>
+                                </div>
+                              </div>
+                              <div class="relative inline-block">
+                                <button class="bg-primary inline-flex rounded text-base font-semibold text-black" data-tooltip-target="detail-tooltip-right">
+                                  Tooltip on right
+                                </button>
+                                <div class="w-64 absolute left-full top-1/2 z-20 ml-3 -translate-y-1/2  whitespace-nowrap rounded-2xl  bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_-12px_30px_-4px_rgba(16,24,40,0.08)] invisible" role="tooltip" id="detail-tooltip-right">
+                                  <span class="absolute -left-1 top-1/2 -z-10 h-3 w-3 -translate-y-1/2 rotate-45  bg-white"></span>
+                                  <h5 class="text-xs text-gray-800 font-medium mb-1.5">This is a tooltip</h5>
+                                  <p class="text-xs text-gray-500 font-normal whitespace-normal">The tooltip, also known as infotip or hint, is a common graphical user... </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                                <div data-code-wrapper class="code-wrapper " >
+                                  <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;!-- Show tooltip on left --&gt;
+  &lt;div class=&quot;relative inline-block&quot;&gt;
+    &lt;button class=&quot;bg-primary inline-flex rounded text-base font-semibold text-black&quot; data-tooltip-target=&quot;detail-tooltip-left&quot;&gt; Tooltip on left &lt;/button&gt;
+    &lt;div class=&quot;w-64 absolute right-full top-1/2 z-20 mr-3 -translate-y-1/2 whitespace-nowrap rounded-2xl bg-white py-3 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[12px_0px_30px_-4px_rgba(16,24,40,0.08)] invisible&quot; role=&quot;tooltip&quot; id=&quot;detail-tooltip-left&quot;&gt;
+      &lt;span class=&quot;absolute -right-1 top-1/2 -z-10 h-3 w-3 -translate-y-1/2 rotate-45 rounded-sm bg-white&quot;&gt;&lt;/span&gt;
+      &lt;h5 class=&quot;text-xs text-gray-800 font-medium mb-1.5&quot;&gt;This is a tooltip&lt;/h5&gt;
+      &lt;p class=&quot;text-xs text-gray-500 font-normal whitespace-normal&quot;&gt;The tooltip, also known as infotip or hint, is a common graphical user... &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Show tooltip on bottom --&gt;
+  &lt;div class=&quot;relative inline-block&quot;&gt;
+    &lt;button class=&quot;bg-primary inline-flex rounded text-base font-semibold text-black&quot; data-tooltip-target=&quot;detail-tooltip-bottom&quot;&gt; Tooltip on bottom &lt;/button&gt;
+    &lt;div class=&quot;w-64 absolute top-full left-1/2 z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-2xl  bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_-12px_30px_-4px_rgba(16,24,40,0.08)] invisible&quot; role=&quot;tooltip&quot; id=&quot;detail-tooltip-bottom&quot;&gt;
+      &lt;span class=&quot;absolute -top-1.5 left-1/2 -z-10 h-3 w-3 -translate-x-1/2 rotate-45 bg-white&quot;&gt;&lt;/span&gt;
+      &lt;h5 class=&quot;text-xs text-gray-800 font-medium mb-1.5&quot;&gt;This is a tooltip&lt;/h5&gt;
+      &lt;p class=&quot;text-xs text-gray-500 font-normal whitespace-normal&quot;&gt;The tooltip, also known as infotip or hint, is a common graphical user... &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Show tooltip on right --&gt;
+  &lt;div class=&quot;relative inline-block&quot;&gt;
+    &lt;button class=&quot;bg-primary inline-flex rounded text-base font-semibold text-black&quot; data-tooltip-target=&quot;detail-tooltip-right&quot;&gt; Tooltip on right &lt;/button&gt;
+    &lt;div class=&quot;w-64 absolute left-full top-1/2 z-20 ml-3 -translate-y-1/2  whitespace-nowrap rounded-2xl  bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_-12px_30px_-4px_rgba(16,24,40,0.08)] invisible&quot; role=&quot;tooltip&quot; id=&quot;detail-tooltip-right&quot;&gt;
+      &lt;span class=&quot;absolute -left-1 top-1/2 -z-10 h-3 w-3 -translate-y-1/2 rotate-45  bg-white&quot;&gt;&lt;/span&gt;
+      &lt;h5 class=&quot;text-xs text-gray-800 font-medium mb-1.5&quot;&gt;This is a tooltip&lt;/h5&gt;
+      &lt;p class=&quot;text-xs text-gray-500 font-normal whitespace-normal&quot;&gt;The tooltip, also known as infotip or hint, is a common graphical user... &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+                                </div>
+                                <button data-expand-code type="button" class="code-exapnd-button" >Show more code</button>
                             </div>
                         </div>
                     </div>
@@ -793,12 +920,12 @@
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Button Group</a>
+                  <a href="#" class="mb-5 block active:text-indigo-600">Tooltip</a>
                     <ul class="space-y-4 ">
-                      <li><a href="#default-button-group">Default Button Group</a></li>
-                      <li><a href="#button-group-size">Button Group Size </a></li>
-                      <li><a href="#button-group-link">Button group links</a></li>
-                      <li><a href="#button-group-with-icon">Button group with icon</a></li>
+                      <li><a href="#default-tooltip">Default Tooltip</a></li>
+                      <li><a href="#disable-arrow">Disable arrow </a></li>
+                      <li><a href="#detail-tooltip">Detail Tooltip</a></li>
+                      <li><a href="#tooltip-placement">Detailed Tooltip Placement</a></li>
                     </ul>
                   </li>
                 </ul>  
