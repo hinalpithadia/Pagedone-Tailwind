@@ -640,7 +640,7 @@
             <!--Header End-->
             <div id="mainContent">
                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-toast">Select input example </h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-select">Select input example </h2>
                     <p class="page-para">lorem ipsum</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -648,7 +648,7 @@
                         <div class="code-preview">
                             <div class="block w-full">
                                 <label for="countries" class="block mb-2 text-sm font-medium text-gray-600 w-full">Country</label>
-                                <select id="countries" class="border border-gray-300 text-gray-600 text-base rounded-full block w-full py-2.5 px-4 focus:outline-none">
+                                <select id="countries" class="h-12 border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-2.5 px-4 focus:outline-none">
                                   <option selected>Choose a country</option>
                                   <option value="US">United States</option>
                                   <option value="CA">Canada</option>
@@ -676,55 +676,265 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex items-center w-full max-w-sm py-5 px-6 text-gray-600 bg-white rounded-xl border border-gray-200 shadow-sm mb-4&quot; role=&quot;alert&quot;&gt;
-  &lt;p class=&quot;text-base font-medium&quot;&gt; Your email has been sent &lt;/p&gt;
-  &lt;div class=&quot;ml-auto flex items-center space-x-3&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline&quot;&gt; Undo &lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center items-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
-      &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
-      &lt;/svg&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex items-center w-full max-w-sm py-5 px-6 text-gray-600 bg-white rounded-xl border border-gray-200 shadow-sm mb-4&quot; role=&quot;alert&quot;&gt;
-  &lt;div class=&quot;inline-flex space-x-3&quot;&gt;
-    &lt;svg class=&quot;w-5 h-5 text-gray-600&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-      &lt;path d=&quot;M1.87669 5.83334L6.79903 9.07942C8.55721 10.1343 9.4363 10.6618 10.4021 10.6388C11.368 10.6158 12.221 10.0471 13.927 8.9098L18.1233 5.83334M8.33335 16.6667H11.6667C14.8094 16.6667 16.3807 16.6667 17.357 15.6904C18.3334 14.7141 18.3334 13.1427 18.3334 10C18.3334 6.85731 18.3334 5.28596 17.357 4.30965C16.3807 3.33334 14.8094 3.33334 11.6667 3.33334H8.33335C5.19066 3.33334 3.61931 3.33334 2.643 4.30965C1.66669 5.28596 1.66669 6.85731 1.66669 10C1.66669 13.1427 1.66669 14.7141 2.643 15.6904C3.61931 16.6667 5.19066 16.6667 8.33335 16.6667Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; /&gt;
-    &lt;/svg&gt;
-    &lt;p class=&quot;text-base font-medium&quot;&gt; Your email has been sent &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;ml-auto flex items-center space-x-3&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline&quot;&gt; Undo &lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center items-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
-      &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
-      &lt;/svg&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;flex items-center w-full max-w-sm py-5 px-6 text-gray-600 bg-white rounded-xl border border-gray-200 shadow-sm &quot; role=&quot;alert&quot;&gt;
-  &lt;div class=&quot;inline-flex space-x-3 items-center&quot;&gt;
-    &lt;span class=&quot;w-9 h-9 rounded-full bg-indigo-50 flex items-center justify-center&quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 text-indigo-600&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M1.87669 5.83334L6.79903 9.07942C8.55721 10.1343 9.4363 10.6618 10.4021 10.6388C11.368 10.6158 12.221 10.0471 13.927 8.9098L18.1233 5.83334M8.33335 16.6667H11.6667C14.8094 16.6667 16.3807 16.6667 17.357 15.6904C18.3334 14.7141 18.3334 13.1427 18.3334 10C18.3334 6.85731 18.3334 5.28596 17.357 4.30965C16.3807 3.33334 14.8094 3.33334 11.6667 3.33334H8.33335C5.19066 3.33334 3.61931 3.33334 2.643 4.30965C1.66669 5.28596 1.66669 6.85731 1.66669 10C1.66669 13.1427 1.66669 14.7141 2.643 15.6904C3.61931 16.6667 5.19066 16.6667 8.33335 16.6667Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; /&gt;
-      &lt;/svg&gt;
-    &lt;/span&gt;
-    &lt;p class=&quot;text-base font-medium&quot;&gt; Your email has been sent &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;ml-auto flex items-center space-x-3&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;inline-flex justify-center items-center gap-2 text-indigo-600 font-semibold hover:underline&quot;&gt; Undo &lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;inline-flex flex-shrink-0 justify-center items-center text-gray-400 transition-all duration-150 &quot; data-dismiss=&quot;alert&quot;&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
-      &lt;svg class=&quot;w-6 h-6 &quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7 17L17 7M17 17L7 7&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
-      &lt;/svg&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block w-full&quot;&gt;
+  &lt;label for=&quot;countries&quot; class=&quot;block mb-2 text-sm font-medium text-gray-600 w-full&quot;&gt;Country&lt;/label&gt;
+  &lt;select id=&quot;countries&quot; class=&quot;h-12 border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-2.5 px-4 focus:outline-none&quot;&gt;
+    &lt;option selected&gt;Choose a country&lt;/option&gt;
+    &lt;option value=&quot;US&quot;&gt;United States&lt;/option&gt;
+    &lt;option value=&quot;CA&quot;&gt;Canada&lt;/option&gt;
+    &lt;option value=&quot;FR&quot;&gt;France&lt;/option&gt;
+    &lt;option value=&quot;DE&quot;&gt;Germany&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="multiple-select">Multiple options </h2>
+                    <p class="page-para">lorem ipsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="block w-full">
+                                <label for="countries" class="block mb-2 text-sm font-medium text-gray-600 w-full">Country</label>
+                                <select multiple id="countries" class="h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-2.5 px-4 focus:outline-none">
+                                  <option selected>Choose a country</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block w-full&quot;&gt;
+  &lt;label for=&quot;countries&quot; class=&quot;block mb-2 text-sm font-medium text-gray-600 w-full&quot;&gt;Country&lt;/label&gt;
+  &lt;select multiple id=&quot;countries&quot; class=&quot;h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-2.5 px-4 focus:outline-none&quot;&gt;
+    &lt;option selected&gt;Choose a country&lt;/option&gt;
+    &lt;option value=&quot;US&quot;&gt;United States&lt;/option&gt;
+    &lt;option value=&quot;CA&quot;&gt;Canada&lt;/option&gt;
+    &lt;option value=&quot;FR&quot;&gt;France&lt;/option&gt;
+    &lt;option value=&quot;DE&quot;&gt;Germany&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="size-attribute">Size attribute  </h2>
+                    <p class="page-para">lorem ipsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="block w-full">
+                                <label for="countries" class="block mb-2 text-sm font-medium text-gray-600 w-full">Country</label>
+                                <select multiple id="countries" size="3" class="h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-2.5 px-4 focus:outline-none">
+                                  <option selected>Choose a country</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block w-full&quot;&gt;
+  &lt;label for=&quot;countries&quot; class=&quot;block mb-2 text-sm font-medium text-gray-600 w-full&quot;&gt;Country&lt;/label&gt;
+  &lt;select multiple id=&quot;countries&quot; size=&quot;3&quot; class=&quot;h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-2.5 px-4 focus:outline-none&quot;&gt;
+    &lt;option selected&gt;Choose a country&lt;/option&gt;
+    &lt;option value=&quot;US&quot;&gt;United States&lt;/option&gt;
+    &lt;option value=&quot;CA&quot;&gt;Canada&lt;/option&gt;
+    &lt;option value=&quot;FR&quot;&gt;France&lt;/option&gt;
+    &lt;option value=&quot;DE&quot;&gt;Germany&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="disable-state">Disabled state </h2>
+                    <p class="page-para">lorem ipsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="block w-full">
+                                <label for="countries_disabled" class="block mb-2 text-sm font-medium text-gray-600 w-full">Country</label>
+                                <select  disabled id="countries_disabled" class="h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-2.5 px-4 focus:outline-none">
+                                  <option selected>Choose a country</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block w-full&quot;&gt;
+  &lt;label for=&quot;countries&quot; class=&quot;block mb-2 text-sm font-medium text-gray-600 w-full&quot;&gt;Country&lt;/label&gt;
+  &lt;select multiple id=&quot;countries&quot; size=&quot;3&quot; class=&quot;h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-2.5 px-4 focus:outline-none&quot;&gt;
+    &lt;option selected&gt;Choose a country&lt;/option&gt;
+    &lt;option value=&quot;US&quot;&gt;United States&lt;/option&gt;
+    &lt;option value=&quot;CA&quot;&gt;Canada&lt;/option&gt;
+    &lt;option value=&quot;FR&quot;&gt;France&lt;/option&gt;
+    &lt;option value=&quot;DE&quot;&gt;Germany&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="size">Sizes </h2>
+                    <p class="page-para">lorem ipsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview flex-col">
+                            <div class="block w-full mb-4">
+                                <label for="small_select" class="block mb-2 text-sm font-medium text-gray-600 w-full">Small select</label>
+                                <select id="small_select" class="h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-1.5 px-2 focus:outline-none">
+                                  <option selected>Choose a country</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                            </div>
+                            <div class="block w-full mb-4">
+                              <label for="default_select" class="block mb-2 text-sm font-medium text-gray-600 w-full">Default select</label>
+                              <select id="default_select_select" class="h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full p-2.5  focus:outline-none">
+                                <option selected>Choose a country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                          </div>
+                          <div class="block w-full">
+                            <label for="large_select" class="block mb-2 text-sm font-medium text-gray-600 w-full">Large select</label>
+                            <select id="large_select" class="h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full px-4 py-3  focus:outline-none">
+                              <option selected>Choose a country</option>
+                              <option value="US">United States</option>
+                              <option value="CA">Canada</option>
+                              <option value="FR">France</option>
+                              <option value="DE">Germany</option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;block w-full mb-4&quot;&gt;
+  &lt;label for=&quot;small_select&quot; class=&quot;block mb-2 text-sm font-medium text-gray-600 w-full&quot;&gt;Small select&lt;/label&gt;
+  &lt;select id=&quot;small_select&quot; class=&quot;h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full py-1.5 px-2 focus:outline-none&quot;&gt;
+    &lt;option selected&gt;Choose a country&lt;/option&gt;
+    &lt;option value=&quot;US&quot;&gt;United States&lt;/option&gt;
+    &lt;option value=&quot;CA&quot;&gt;Canada&lt;/option&gt;
+    &lt;option value=&quot;FR&quot;&gt;France&lt;/option&gt;
+    &lt;option value=&quot;DE&quot;&gt;Germany&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+&lt;div class=&quot;block w-full mb-4&quot;&gt;
+  &lt;label for=&quot;default_select&quot; class=&quot;block mb-2 text-sm font-medium text-gray-600 w-full&quot;&gt;Default select&lt;/label&gt;
+  &lt;select id=&quot;default_select_select&quot; class=&quot;h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full p-2.5  focus:outline-none&quot;&gt;
+    &lt;option selected&gt;Choose a country&lt;/option&gt;
+    &lt;option value=&quot;US&quot;&gt;United States&lt;/option&gt;
+    &lt;option value=&quot;CA&quot;&gt;Canada&lt;/option&gt;
+    &lt;option value=&quot;FR&quot;&gt;France&lt;/option&gt;
+    &lt;option value=&quot;DE&quot;&gt;Germany&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+&lt;div class=&quot;block w-full&quot;&gt;
+  &lt;label for=&quot;large_select&quot; class=&quot;block mb-2 text-sm font-medium text-gray-600 w-full&quot;&gt;Large select&lt;/label&gt;
+  &lt;select id=&quot;large_select&quot; class=&quot;h-auto border border-gray-300 text-gray-600 text-base rounded-lg block w-full px-4 py-3  focus:outline-none&quot;&gt;
+    &lt;option selected&gt;Choose a country&lt;/option&gt;
+    &lt;option value=&quot;US&quot;&gt;United States&lt;/option&gt;
+    &lt;option value=&quot;CA&quot;&gt;Canada&lt;/option&gt;
+    &lt;option value=&quot;FR&quot;&gt;France&lt;/option&gt;
+    &lt;option value=&quot;DE&quot;&gt;Germany&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
@@ -739,28 +949,22 @@
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Layout</a>
+                  <a href="#" class="mb-5 block active:text-indigo-600">Basic Forms</a>
                     <ul class="space-y-4 ">
                       <li>
-                        <a href="#default-toast">Default Toast</a>
+                        <a href="#default-select">Default Select</a>
                       </li>
                       <li>
-                        <a href="#toast-des">Toast With Description</a>
+                        <a href="#multiple-select">Multiple Select</a>
                       </li>
                       <li>
-                        <a href="#toast-icon">Toast With Icon</a>
+                        <a href="#size-attribute">Size Attribute</a>
                       </li>
                       <li>
-                        <a href="#toast-avatar">Toast With Avatar</a>
+                        <a href="#disable-state">Disabled State</a>
                       </li>
                       <li>
-                        <a href="#toast-size">Toast With Size</a>
-                      </li>
-                      <li>
-                        <a href="#interactive-toast">Interactive Toast</a>
-                      </li>
-                      <li>
-                        <a href="#basic-toast">Basic Toast</a>
+                        <a href="#size">Sizes</a>
                       </li>
                     </ul>
                   </li>

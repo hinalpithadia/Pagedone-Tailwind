@@ -1203,6 +1203,16 @@ pre[class*="language-"]::selection,
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+
+#TableOfContents>ul>li>ul>li>a.active{
+  --tw-border-opacity: 1;
+  border-color: rgb(79 70 229 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+#TableOfContents>ul>li>ul>li>a{
   display: block;
   padding-left: 1rem;
 }

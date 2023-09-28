@@ -405,6 +405,9 @@
     #TableOfContents>ul>li>ul>li>a{
         @apply text-gray-900 transition-all duration-300 border-l border-transparent ;
     }
+    #TableOfContents>ul>li>ul>li>a.active{
+      @apply  text-indigo-600 border-indigo-600;
+    }
     #TableOfContents>ul>li>ul>li>a{
         @apply pl-4 block;
     }
