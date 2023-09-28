@@ -14,5 +14,12 @@
     .accordion.active.accordion-active\:border-indigo-600 {
         @apply border-indigo-600;
     }
-    
+    .accordion-toggle.active ~ .accordion-content{
+        margin-top: 10px;
+      }
+      .accordion-content {
+        overflow: hidden;
+        max-height: 0;
+        /* transition: max-height 0.6s ease-out; */
+      }
 }

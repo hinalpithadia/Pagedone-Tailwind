@@ -636,7 +636,9 @@
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Layout</span>
                 <h1 class="doc-heading ">Tailwind CSS Grid</h1>
-                <p class="doc-paragraph-big">Use the powerful mobile-first flexbox grid to build layouts of all shapes and sizes use twelve column system and dozens of predefined classes.</p>
+                <p class="doc-paragraph-big">Tailwind css provides responsive flexbox grids using a twelve column system
+                  which lets you design various custom layouts of different shapes and sizes
+                  using different classes.</p>
             </div>
             <!--Header End-->
             <div id="mainContent">
@@ -647,7 +649,7 @@
                           </a>
                     </h2>
                     <h2 class="doc-sub-heading relative group scroll-mt-24" >Specifying the columns in a grid</h2>
-                    <p class="page-para">Use the <code>'grid-cols-{n}'</code> utilities to create grids with n equally sized columns.</p>
+                    <p class="page-para">Use the <code>'grid-cols-{n}'</code> utilities will help you create grids of equal sized columns</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -708,7 +710,7 @@
                         </a>
                   </h2>
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="spanning-columns">Spanning columns</h2>
-                    <p class="page-para">Use the <code>'col-span-{n}'</code> utilities to make an element span n columns.</p>
+                    <p class="page-para">number of columns a cell can span can be controlled using <code>col-span-{n}</code></p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -762,8 +764,9 @@
                   </div>
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="starting-and-ending-lines">Starting and ending lines</h2>
-                    <p class="page-para">Use the <code>'col-start-{n}'</code> and <code>'col-end-{n}'</code> utilities to make an element start or end at the nth grid line. These can also be combined with the <code>'col-span-{n}'</code> utilities to span a specific number of columns.</p>
-                    <p class="page-para">CSS grid lines start at 1, not 0, so a full-width element in a 6-column grid would start at line 1 and end at line 7.</p>
+                    <p class="page-para">Use the <code>'col-start-{n}'</code> and <code>'col-end-{n}'</code> utilities can be used as shown in the following example</p>
+                    <p class="page-para">CSS grid lines start from 1 and not 0 and hence,
+                      in a typical 6 column grid it will start from 1 and end at 7.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -824,7 +827,8 @@
                         </a>
                   </h2>
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="specifying-the-rows-in-a-grid">Specifying the rows in a grid</h2>
-                    <p class="page-para">Use the <code>'grid-rows-{n}'</code> utilities to create grids with n equally sized rows.</p>
+                    <p class="page-para">When one needs to design equal sized rows <code>'grid-rows-{n}’</code> can be used as
+                      mentioned below.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -887,7 +891,7 @@
                         </a>
                   </h2>
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="spanning-rows">Spanning rows</h2>
-                    <p class="page-para">Use the <code>'row-span-{n}'</code> utilities to make an element span n rows.</p>
+                    <p class="page-para">By using <code>'row-span-{n}’</code> rows of different span can be placed as required.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -934,7 +938,8 @@
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="starting-and-ending-lines-row">Starting and ending lines</h2>
                     <p class="page-para">Use the <code>'row-start-{n}'</code> and <code>'row-end-{n}'</code> utilities to make an element start or end at the nth grid line. These can also be combined with the <code>'row-span-{n}'</code> utilities to span a specific number of rows.</p>
-                    <p class="page-para">Note that CSS grid lines start at 1, not 0, so a full-height element in a 3-row grid would start at line 1 and end at line 4.</p>
+                    <p class="page-para">CSS grid lines start from 1 and not 0 and hence,
+                      in a typical 6 row grid it will start from 1 and end at 7.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -985,7 +990,7 @@
                         </a>
                   </h2>
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="controlling-grid-element-placement">Controlling grid element placement</h2>
-                    <p class="page-para">Use the <code>'grid-flow-{keyword}'</code> utilities to control how the auto-placement algorithm works for a grid layout.</p>
+                    <p class="page-para">Auto placement algorithm can be set using <code>‘grid-flow-{keyword}’</code></p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -1040,7 +1045,8 @@
                         </a>
                     </h2>
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="setting-the-gap-between-elements">Setting the gap between elements</h2>
-                    <p class="page-para">Use <code>'gap-{size}'</code> to change the gap between both rows and columns in grid and flexbox layouts.</p>
+                    <p class="page-para"><code>‘gap-{size}’</code> can be used to set gaps for both rows and columns in grid and
+                      flexbox layouts.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -1088,7 +1094,8 @@
                   </div>
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="changing-row-and-column-gaps-independently">Changing row and column gaps independently</h2>
-                    <p class="page-para">Use <code>'gap-x-{size}'</code> and <code>'gap-y-{size}'</code> to change the gap between rows and columns independently.</p>
+                    <p class="page-para">By using <code>‘gap-x{size}’</code> and <code>'gap-y(size}’</code> can be used to adjust gaps of rows and
+                      columns individually.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">

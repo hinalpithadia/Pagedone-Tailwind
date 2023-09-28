@@ -570,4 +570,178 @@
         flex: 1 1 200px;
         padding: 1.5rem;
     }
+   
+    .price-info{
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+        color: #5551FF;
+        font-family: Manrope;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    .price-info span{
+        color: #334155;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        margin-left: 10px;
+        letter-spacing: 1.32px;
+    } 
+    .btn-light{
+        border-radius: 100px;
+        background: #E2E0FF;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        color: #4F46E5;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        padding: 10px 15px;
+        width: 100%;
+        transition: all .6s ease-in-out;
+    }
+    .btn-light:hover{
+        background: #d5d3f9;
+    }
+    .btn-dark{
+        border-radius: 100px;
+        background: #4F46E5;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        padding: 10px 15px;
+        width: 100%;
+        transition: all .6s ease-in-out;
+    }
+    .btn-dark:hover{
+        background: #423bd0;
+    }
+    .price-container{
+        position: relative;
+    }
+    .price-container::before{
+        content: '';
+        position: absolute;
+        background: linear-gradient(180deg, #FFF 0%, #F8FAFC 100%);
+        height: 550px;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    }
+    .pricing-main{
+        display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+    }
+    .hidden-box{
+        min-height: 280px;
+    }
+    .pricing-list li{
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        gap: 1em;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        color: #334155;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px; /* 333.333% */
+        padding-left: 35px;
+    }
+    .pricing-heading{
+        position: relative;
+        display: flex;
+        flex-flow: wrap;
+        gap: 8px;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 122.222% */
+    }
+    .pricing-header{
+        height: 240px;
+        position: relative;
+        z-index: 1;
+    }
+    .item-info{
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        gap: 1em;
+        justify-content:center;
+        align-items: center;
+        height: 50px;
+        border-bottom: 1px solid #EDEDFA;
+    }
+    .pricing-card{
+        border-radius: 15px 15px 0px 0px;
+        background: #FFF;
+        padding: 40px 25px;
+    }
+    .top-border{
+        border-top: 1px solid #EDEDFA;
+    }
+    .pricing-list{
+        margin-bottom: 20px;
+    }
+    .developer-card{
+        background: #FFF;
+        box-shadow: 0px -15px 35px 0px rgba(0, 0, 0, 0.03);
+        position: relative;
+    }
+    .developer-card::after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(180deg, rgba(85, 81, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
+        width: 100%;
+        height: 200px;
+        top:0;
+        left: 0;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .developer-card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 15px;
+        padding: 1px;
+        background: linear-gradient(359.57deg,  #5551FF12 0.2%, #5551FF 63.75%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+        transition: all .6s ease-in-out;
+    }
+    .pricing-tag{
+        border-radius: 30px;
+        background: #5551FF;
+        padding: 8px 15px;
+        position: absolute;
+        top: -15px;
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        z-index: 1;
+    }
+   
 }

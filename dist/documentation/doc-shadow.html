@@ -609,7 +609,8 @@
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Styles</span>
                 <h1 class="doc-heading ">Tailwind CSS Shadows & blurs</h1>
-                <p class="doc-paragraph-big">In Tailwind CSS, you can apply box shadow and backdrop blur effects to elements using utility classes. Here's how you can achieve these effects</p>
+                <p class="doc-paragraph-big">Using utility classes in Tailwind CSS, elements of the box shadow and backdrop
+                  blur effects can be achieved. Following examples illustrate the details.</p>
                
             </div>
             <!--Header End-->
@@ -617,12 +618,18 @@
                
                  <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="shadows">Box Shadows:</h2>
-                    <p class="page-para">In Tailwind CSS, you can easily add box shadows to elements using the built-in shadow utility classes. Shadows can add depth and dimension to your design, creating a visually appealing effect.</p>
+                    <p class="page-para">The built-in shadow utility classes in Tailwind CSS make it easy to create box
+                      shadows to elements. Your design can benefit from the depth and dimension
+                      that shadows can offer, making it more appealing visually.</p>
                     <ul class="page-list">
-                      <li>To add a shadow to an element, use the <code>shadow-{size}</code> class. Replace <code>{size}</code> with the desired shadow size, such as <code>sm, md, lg, xl, or 2xl</code>.</li>
-                      <li>
-                        Additionally, you can apply specific shadow colors using the <code>shadow-{color}</code> class. Replace <code>{color}</code> with a Tailwind CSS color name, such as gray, red, blue, etc. For example, shadow-md shadow-red-500 applies a medium-sized shadow with a red color.
-                      </li>
+                      <li>Use the shadow-size class to add a shadow to an element. The desired
+                        shadow size, such as <code>sm, md, lg, xl, or 2xl</code>, should be used for <code>'size'</code></li>
+                          <li>
+                            The shadow-color class allows you to apply particular shadow colors. Instead
+of <code>&quot;color&quot;</code> substitute a Tailwind CSS color name like <code>&quot;gray,&quot; &quot;red,&quot; &quot;blue,&quot;</code> etc.
+For instance, applying a medium-sized red shadow with the command
+shadow-md shadow-red-500.
+                          </li>
                     </ul>
                   </div>
                   <div class="mt-8 code-example">
@@ -688,15 +695,11 @@
                   </div>
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="blurs">Backdrop Blur:</h2>
-                    <p class="page-para">Utilities for applying backdrop blur filters to an element.</p>
-                    <ul class="page-list">
-                      <li>
-                        To add a blur effect to an element, use the <code>backdrop-blur-{amount}</code> class. Replace <code>{amount}</code> with the desired blur level, such as <code>none, sm, md, lg, xl, or 2xl</code>. For instance, blur-md applies a medium-level blur.
-                      </li>
-                      <li>
-                        You can combine blur classes with other utility classes to create custom effects. For example, <code>backdrop-blur-md hover:backdrop-blur-lg</code> applies a medium-level blur by default and increases it to a large level on hover.
-                      </li>
-                    </ul>
+                    <p class="page-para">By using <code>backdrop-blur-{amount}</code> class, blur effect can be added to any
+                      element. You can keep changing <code>{amount}</code> as per your requirement
+                      such as none, <code>sm (small), md (medium), lg (large), xl (extra large) and
+                      2xl (double xl).</code></p>
+                   
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -705,27 +708,27 @@
                             <div class='md:flex flex-wrap items-center gap-2 lg:gap-4 xl:gap-8 2xl:gap-12 justify-center '>
                                 <div class="relative">
                                   <div class="absolute inset-6 backdrop-blur-sm h-20 w-20 bg-white/30"></div>
-                                    <img src="../images/docs/shadow/bg-image.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
+                                    <img src="https://beta.pagedone.io/asset/uploads/1688110228.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
                                     <span class="font-medium text-sm text-gray-500 text-center mt-3 block">backdrop-blur-sm</span>
                                 </div>
                                 <div class="relative">
                                   <div class="absolute inset-6 backdrop-blur-md h-20 w-20 bg-white/30"></div>
-                                    <img src="../images/docs/shadow/bg-image.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
+                                    <img src="https://beta.pagedone.io/asset/uploads/1688110228.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
                                     <span class="font-medium text-sm text-gray-500 text-center mt-3 block">backdrop-blur-md</span>
                                 </div>
                                 <div class="relative">
                                   <div class="absolute inset-6 backdrop-blur-lg h-20 w-20 bg-white/30"></div>
-                                    <img src="../images/docs/shadow/bg-image.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
+                                    <img src="https://beta.pagedone.io/asset/uploads/1688110228.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
                                     <span class="font-medium text-sm text-gray-500 text-center mt-3 block">backdrop-blur-lg</span>
                                 </div>
                                 <div class="relative">
                                   <div class="absolute inset-6 backdrop-blur-xl h-20 w-20 bg-white/30"></div>
-                                    <img src="../images/docs/shadow/bg-image.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
+                                    <img src="https://beta.pagedone.io/asset/uploads/1688110228.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
                                     <span class="font-medium text-sm text-gray-500 text-center mt-3 block">backdrop-blur-xl</span>
                                 </div>
                                 <div class="relative">
                                   <div class="absolute inset-6 backdrop-blur-2xl h-20 w-20 bg-white/30"></div>
-                                    <img src="../images/docs/shadow/bg-image.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
+                                    <img src="https://beta.pagedone.io/asset/uploads/1688110228.png" alt="image" class="w-32 h-32 object-cover rounded-lg shadow-xl"/>
                                     <span class="font-medium text-sm text-gray-500 text-center mt-3 block">backdrop-blur-2xl</span>
                                 </div>
                                
@@ -755,23 +758,23 @@
 <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&apos;flex items-center justify-center gap-8&apos;&gt;
   &lt;div class=&quot;relative&quot;&gt;
     &lt;div class=&quot;absolute inset-6 backdrop-blur-sm h-20 w-20 bg-white/30&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;../images/docs/shadow/bg-image.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688110228.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;relative&quot;&gt;
     &lt;div class=&quot;absolute inset-6 backdrop-blur-md h-20 w-20 bg-white/30&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;../images/docs/shadow/bg-image.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688110228.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;relative&quot;&gt;
     &lt;div class=&quot;absolute inset-6 backdrop-blur-lg h-20 w-20 bg-white/30&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;../images/docs/shadow/bg-image.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688110228.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;relative&quot;&gt;
     &lt;div class=&quot;absolute inset-6 backdrop-blur-xl h-20 w-20 bg-white/30&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;../images/docs/shadow/bg-image.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688110228.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;relative&quot;&gt;
     &lt;div class=&quot;absolute inset-6 backdrop-blur-2xl h-20 w-20 bg-white/30&quot;&gt;&lt;/div&gt;
-    &lt;img src=&quot;../images/docs/shadow/bg-image.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
+    &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1688110228.png&quot; alt=&quot;image&quot; class=&quot;w-32 h-32 object-cover rounded-lg shadow-xl&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                               </div>

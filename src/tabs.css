@@ -1,0 +1,32 @@
+@layer components {
+    [data-tab].active.tab-active\:border-b-indigo-600{ 
+        @apply border-b-indigo-600 ;
+    }
+    [data-tab].active.tab-active\:text-indigo-600{ 
+        @apply  text-indigo-600;
+    }
+    [data-tab].active.tab-active\:text-white{ 
+        @apply  text-white;
+    }
+    [data-tab].active.tab-active\:bg-indigo-50{ 
+        @apply  bg-indigo-50;
+    }
+    [data-tab].active.tab-active\:bg-indigo-600{ 
+        @apply  bg-indigo-600;
+    }
+    [data-tab].active.tab-active\:bg-white{ 
+        @apply  bg-white;
+    }
+    [data-tab].active.tab-active\:rounded-xl{ 
+        @apply  rounded-xl;
+    }
+    [data-tab].active.tab-active\:rounded-full{ 
+        @apply  rounded-full;
+    }
+    [data-tab].active.tab-active\:rounded-t-2xl{
+        @apply rounded-t-2xl;
+    }
+    [data-tab].active .tab-active\:stroke-indigo-600{
+        @apply stroke-indigo-600;
+    }
+} 

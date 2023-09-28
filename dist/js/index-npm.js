@@ -29,10 +29,10 @@ function defaultAccordion() {
                 if (isOpen) {
                     close(button);
                     content.style.maxHeight = '';
-                    accordion.classList.remove('open');
+                    accordion.classList.remove('active');
                 } else {
                     content.style.maxHeight = content.scrollHeight + 'px';
-                    accordion.classList.add('open');
+                    accordion.classList.add('active');
                     const otherButtons = group.querySelectorAll('.accordion-toggle');
                     otherButtons.forEach(otherButton => {
                         if (otherButton !== button) {

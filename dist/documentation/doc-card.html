@@ -636,13 +636,21 @@
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Component</span>
                 <h1 class="doc-heading ">Tailwind CSS card</h1>
-                <p class="doc-paragraph-big">Cards are versatile containers that can hold various types of content and can be customized in numerous ways to suit your needs. They offer a wide range of options and variations to ensure your content is displayed just the way you want it.</p>
+                <p class="doc-paragraph-big">In CSS tailwind card components are very important tools for
+                  representing information in a visually appealing and user friendly
+                  manner. Cards help you put different things together and increase
+                  usability of the page with ease.</p>
             </div>
             <!--Header End-->
             <div id="mainContent">
+              <p class="page-para">
+                Cards generally work to group different things viz. items, products and
+functions. It is essential to understand that cards should not only look
+good but enhance the interface too.
+              </p>
                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Default Card</h2>
-                    <p class="page-para">A basic card containing a title, content and icon.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-card">Default Card</h2>
+                    <p class="page-para">following is simple card with title and description</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -697,8 +705,9 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Card with link</h2>
-                    <p class="page-para">You can use this example to show a link instead of a button inside the card.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="card-with-link">Card with link</h2>
+                    <p class="page-para">Here, instead of a button a link can be used inside the card to make it
+                      work as call to action (CTA).</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -761,8 +770,8 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Card with Button</h2>
-                    <p class="page-para">You can use this example to show a button inside the card.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="card-with-button">Card with Button</h2>
+                    <p class="page-para">By using the following example you can add an action button also.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -819,8 +828,9 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Card with Image</h2>
-                    <p class="page-para">You can use this example add an image inside the card.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="card-with-image">Card with Image</h2>
+                    <p class="page-para">This type is popular when it comes to blogs, here one can add image in
+                      the card. It has other use cases other than blog as well.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -828,7 +838,7 @@
                             <div class="w-full relative">
                                 <div class="relative max-w-xs border border-solid border-gray-200 rounded-2xl transition-all duration-500 ">
                                     <div class="block overflow-hidden">
-                                       <img src="../images/docs/card/card-image1.png"/>
+                                       <img src="https://beta.pagedone.io/asset/uploads/1695365240.png"/>
                                     </div>
                                     <div class="p-4">
                                         <h4 class="text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 ">Fast Transaction</h4>
@@ -862,7 +872,7 @@
                                 <div data-code-wrapper="" class="code-wrapper ">
 <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;relative max-w-xs border border-solid border-gray-200 rounded-2xl transition-all duration-500 &quot;&gt;
     &lt;div class=&quot;block overflow-hidden&quot;&gt;
-      &lt;img src=&quot;../images/docs/card/card-image1.png&quot; /&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1695365240.png&quot; /&gt;
     &lt;/div&gt;
     &lt;div class=&quot;p-4&quot;&gt;
       &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
@@ -876,8 +886,8 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Horizontal Card</h2>
-                    <p class="page-para">You can use this example if you want card to alinged horizontally.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="horizontal-card">Horizontal Card</h2>
+                    <p class="page-para">Here in this card all details are shown horizontally.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -885,7 +895,7 @@
                             <div class="w-full relative">
                                 <div class="relative flex flex-col items-center border border-solid border-gray-200 rounded-2xl transition-all duration-500 md:flex-row md:max-w-lg ">
                                     <div class="block overflow-hidden md:w-52 h-48">
-                                       <img src="../images/docs/card/card-image1.png" class="h-full rounded-2xl object-cover"/>
+                                       <img src="https://beta.pagedone.io/asset/uploads/1695365240.png" class="h-full rounded-2xl object-cover"/>
                                     </div>
                                     <div class="p-4">
                                         <h4 class="text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 ">Fast Transaction</h4>
@@ -919,7 +929,7 @@
                                 <div data-code-wrapper="" class="code-wrapper ">
 <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;relative flex flex-col items-center border border-solid border-gray-200 rounded-2xl transition-all duration-500 md:flex-row md:max-w-lg &quot;&gt;
     &lt;div class=&quot;block overflow-hidden md:w-52 h-48&quot;&gt;
-      &lt;img src=&quot;../images/docs/card/card-image1.png&quot; class=&quot;h-full rounded-2xl object-cover&quot; /&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1695365240.png&quot; class=&quot;h-full rounded-2xl object-cover&quot; /&gt;
     &lt;/div&gt;
     &lt;div class=&quot;p-4&quot;&gt;
       &lt;h4 class=&quot;text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500 &quot;&gt;Fast Transaction&lt;/h4&gt;
@@ -933,8 +943,9 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Call to Action card</h2>
-                    <p class="page-para">Here's an example of a CTA (Call to Action) card that encourages users to download the iOS or Android application for a project.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="call-to-action">Call to Action card</h2>
+                    <p class="page-para">Call to action cards can be used to show download, subscribe or buy
+                      now buttons which encourage users to take certain action.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -1122,8 +1133,9 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Pricing Card</h2>
-                    <p class="page-para">Here's an example of pricing card which shows detailed information of pricing.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="pricing-card">Pricing Card</h2>
+                    <p class="page-para">Pricing plan with buy now button and list of features can be shown using
+                      a pricing card.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -1237,8 +1249,9 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Testimonial Card</h2>
-                    <p class="page-para">Here's an example of testimonial card.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="testimonial-card">Testimonial Card</h2>
+                    <p class="page-para">Reviews and testimonials can be shown using the following style
+                      splitting card into multiple sections.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -1246,7 +1259,7 @@
                             <div class="w-full relative">
                                 <div class="group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-96 hover:border-indigo-600">
                                     <div class="flex items-center gap-5 mb-6">
-                                        <img src="../images/docs/card/avatar-img1.png" alt="avatar">
+                                        <img src="https://beta.pagedone.io/asset/uploads/1695365794.png" alt="avatar">
                                         <div class="grid gap-1">
                                             <h5 class="text-gray-900 font-medium transition-all duration-500  ">Jane D</h5>
                                             <span class="text-sm leading-6 text-gray-500">CEO </span>
@@ -1298,7 +1311,7 @@
                                 <div data-code-wrapper="" class="code-wrapper ">
 <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;group bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-96 hover:border-indigo-600&quot;&gt;
     &lt;div class=&quot;flex items-center gap-5 mb-6&quot;&gt;
-      &lt;img src=&quot;../images/docs/card/avatar-img1.png&quot; alt=&quot;avatar&quot;&gt;
+      &lt;img src=&quot;https://beta.pagedone.io/asset/uploads/1695365794.png&quot; alt=&quot;avatar&quot;&gt;
       &lt;div class=&quot;grid gap-1&quot;&gt;
         &lt;h5 class=&quot;text-gray-900 font-medium transition-all duration-500  &quot;&gt;Jane D&lt;/h5&gt;
         &lt;span class=&quot;text-sm leading-6 text-gray-500&quot;&gt;CEO &lt;/span&gt;
@@ -1338,36 +1351,31 @@
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Layout</a>
+                  <a href="#" class="mb-5 block active:text-indigo-600">Component</a>
                     <ul class="space-y-4 ">
                       <li>
-                        <a href="#grid-template-columns">Grid Template Columns</a>
-                        <a href="#specifying-the-columns-in-a-grid" class="mt-4 ml-4">
-                          Specifying The Columns In A Grid</a>
+                        <a href="#default-card">Defult Card</a>
                       </li>
                       <li>
-                        <a href="#grid-column">Grid Column Start / End</a>
-                        <a href="#spanning-columns" class="mt-4 ml-4">Spanning columns</a>
-                        <a href="#starting-and-ending-lines" class="mt-4 ml-4">Starting and ending lines</a>
+                        <a href="#card-with-link">Card With Link</a>
                       </li>
                       <li>
-                        <a href="#grid-template-rows">Grid Template Rows</a>
-                        <a href="#specifying-the-rows-in-a-grid" class="mt-4 ml-4">Specifying the rows in a grid</a>
+                        <a href="#card-with-button">Card With Button</a>
                       </li>
                       <li>
-                        <a href="#grid-row">Grid Row Start / End</a>
-                        <a href="#spanning-rows" class="mt-4 ml-4">Spanning rows</a>
-                        <a href="#starting-and-ending-lines-row" class="mt-4 ml-4">Starting and ending lines</a>
+                        <a href="#card-with-image">Card With Image</a>
                       </li>
                       <li>
-                        <a href="#grid-auto-flow">Grid Auto Flow</a>
-                        <a href="#controlling-grid-element-placement" class="mt-4 ml-4">Controlling grid element placement</a>
-                        
+                        <a href="#horizontal-card">Horizontal Card</a>                        
                       </li>
                       <li>
-                        <a href="#gap">Gap</a>
-                        <a href="#setting-the-gap-between-elements" class="mt-4 ml-4">Setting the gap between elements</a>
-                        <a href="#changing-row-and-column-gaps-independently" class="mt-4 ml-4"> Changing row and column gaps independently</a>
+                        <a href="#call-to-action-card">Call To Action Card</a>
+                      </li>
+                      <li>
+                        <a href="#pricing-card">Pricing Card</a>
+                      </li>
+                      <li>
+                        <a href="#testimonial-card">Testimonial Card</a>
                       </li>
                     </ul>
                   </li>

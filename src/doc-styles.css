@@ -340,4 +340,15 @@
     .category-list>a.active{
         @apply border-indigo-600 text-indigo-600;
     }
+    select{
+        text-indent: 1px;
+        text-overflow: '';
+        width: 50px;
+        height: 50px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent url("https://beta.pagedone.io/asset/uploads/1695813759.png") no-repeat 98% center;
+    }
+      
 }

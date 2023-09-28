@@ -641,7 +641,7 @@
             <!--Header End-->
             <div id="mainContent">
                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Tabs with underline</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-underline">Tabs with underline</h2>
                     <p class="page-para">lorem ispsum</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -649,18 +649,24 @@
                         <div class="code-preview">
                             <div class="w-full">
                               <div class="tabs">
-                                <div class="border-b border-gray-200 dark:border-gray-700">
-                                    <nav class="flex space-x-2" >
-                                      <button type="button" class=" py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 active tablink" id="tabs-with-underline-item-1" data-tab="#tabs-with-underline-1" aria-controls="tabs-with-underline-1" role="tab">
+                                <div class="block">
+                                    <ul class="flex flex-wrap border-b border-gray-200 space-x-3 transition-all duration-300 -mb-px" >
+                                      <li>
+                                        <a href="#" class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink"  data-tab="tabs-with-underline-1"  role="tab">
                                         Tab 1
-                                      </button>
-                                      <button type="button" class=" py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 tablink" id="tabs-with-underline-item-2 " data-tab="#tabs-with-underline-2" aria-controls="tabs-with-underline-2" role="tab">
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink"  data-tab="tabs-with-underline-2"  role="tab">
                                         Tab 2
-                                      </button>
-                                      <button type="button" class=" py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 tablink" id="tabs-with-underline-item-3" data-tab="#tabs-with-underline-3" aria-controls="tabs-with-underline-3" role="tab">
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink"  data-tab="tabs-with-underline-3"  role="tab">
                                         Tab 3
-                                      </button>
-                                    </nav>
+                                        </a>
+                                      </li>
+                                    </ul>
                                   </div>
                                   <div class="mt-3">
                                     <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1" class="tabcontent">
@@ -701,57 +707,86 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
+                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+     &lt;div class=&quot;tabs&quot;&gt;
+       &lt;div class=&quot;block&quot;&gt;
+         &lt;ul class=&quot;flex flex-wrap border-b border-gray-200 space-x-3 transition-all duration-300 -mb-px&quot;&gt;
+           &lt;li&gt;
+             &lt;a href=&quot;#&quot; class=&quot;inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink&quot; data-tab=&quot;tabs-with-underline-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+           &lt;/li&gt;
+           &lt;li&gt;
+             &lt;a href=&quot;#&quot; class=&quot;inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-underline-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+           &lt;/li&gt;
+           &lt;li&gt;
+             &lt;a href=&quot;#&quot; class=&quot;inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-underline-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+           &lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;mt-3&quot;&gt;
+         &lt;div id=&quot;tabs-with-underline-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-underline-item-1&quot; class=&quot;tabcontent&quot;&gt;
+           &lt;p class=&quot;text-gray-500 dark:text-gray-400&quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 dark:text-gray-200&quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+         &lt;/div&gt;
+         &lt;div id=&quot;tabs-with-underline-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-underline-item-2&quot;&gt;
+           &lt;p class=&quot;text-gray-500 dark:text-gray-400&quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 dark:text-gray-200&quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+         &lt;/div&gt;
+         &lt;div id=&quot;tabs-with-underline-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-underline-item-3&quot;&gt;
+           &lt;p class=&quot;text-gray-500 dark:text-gray-400&quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 dark:text-gray-200&quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;</code></pre>
                                 </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Vertical</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-box-style"">Tabs with box style</h2>
                     <p class="page-para">lorem ispsum</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full">
-                              <div >
-                                <div class="flex flex-wrap">
-                                    <div class="border-r border-gray-200 dark:border-gray-700">
-                                      <nav class="flex flex-col space-y-2" aria-label="Tabs" role="tablist" data-pd-tabs-vertical="true">
-                                        <button type="button" class="pd-tab-active:border-blue-500 pd-tab-active:text-blue-600 dark:pd-tab-active:text-blue-600 py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 active" id="vertical-tab-with-border-item-1" data-pd-tab="#vertical-tab-with-border-1" aria-controls="vertical-tab-with-border-1" role="tab">
-                                          Tab 1
-                                        </button>
-                                        <button type="button" class="pd-tab-active:border-blue-500 pd-tab-active:text-blue-600 dark:pd-tab-active:text-blue-600 py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 dark:hover:text-gray-300" id="vertical-tab-with-border-item-2" data-pd-tab="#vertical-tab-with-border-2" aria-controls="vertical-tab-with-border-2" role="tab">
-                                          Tab 2
-                                        </button>
-                                        <button type="button" class="pd-tab-active:border-blue-500 pd-tab-active:text-blue-600 dark:pd-tab-active:text-blue-600 py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 dark:hover:text-gray-300" id="vertical-tab-with-border-item-3" data-pd-tab="#vertical-tab-with-border-3" aria-controls="vertical-tab-with-border-3" role="tab">
-                                          Tab 3
-                                        </button>
-                                      </nav>
+                              <div class="tabs">
+                                <div class="flex ">
+                                    <ul class="flex flex-wrap border border-gray-200 rounded-xl transition-all duration-300 -mb-px overflow-hidden" >
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 active tablink"  data-tab="tabs-with-box-1"  role="tab">
+                                        Tab 1
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink"  data-tab="tabs-with-box-2"  role="tab">
+                                        Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink"  data-tab="tabs-with-box-3"  role="tab">
+                                        Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3">
+                                    <div id="tabs-with-box-1" role="tabpanel" aria-labelledby="tabs-with-box-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
                                     </div>
-                                  
-                                    <div class="ml-3">
-                                      <div id="vertical-tab-with-border-1" role="tabpanel" aria-labelledby="vertical-tab-with-border-item-1">
-                                        <p class="text-gray-500 dark:text-gray-400">
-                                          This is the <em class="font-semibold text-gray-800 dark:text-gray-200">first</em> item's tab body.
-                                        </p>
-                                      </div>
-                                      <div id="vertical-tab-with-border-2" class="hidden" role="tabpanel" aria-labelledby="vertical-tab-with-border-item-2">
-                                        <p class="text-gray-500 dark:text-gray-400">
-                                          This is the <em class="font-semibold text-gray-800 dark:text-gray-200">second</em> item's tab body.
-                                        </p>
-                                      </div>
-                                      <div id="vertical-tab-with-border-3" class="hidden" role="tabpanel" aria-labelledby="vertical-tab-with-border-item-3">
-                                        <p class="text-gray-500 dark:text-gray-400">
-                                          This is the <em class="font-semibold text-gray-800 dark:text-gray-200">third</em> item's tab body.
-                                        </p>
-                                      </div>
+                                    <div id="tabs-with-box-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-box-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-box-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-box-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
                                     </div>
                                   </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -773,10 +808,925 @@ code
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+   &lt;div class=&quot;tabs&quot;&gt;
+     &lt;div class=&quot;flex &quot;&gt;
+       &lt;ul class=&quot;flex flex-wrap border border-gray-200 rounded-xl transition-all duration-300 -mb-px overflow-hidden&quot;&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 active tablink&quot; data-tab=&quot;tabs-with-box-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-box-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-box-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+         &lt;/li&gt;
+       &lt;/ul&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;mt-3&quot;&gt;
+       &lt;div id=&quot;tabs-with-box-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-box-item-1&quot; class=&quot;tabcontent&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+       &lt;div id=&quot;tabs-with-box-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-box-item-2&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+       &lt;div id=&quot;tabs-with-box-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-box-item-3&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+                              </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-bg-style">Tabs with background style</h2>
+                    <p class="page-para">lorem ispsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="tabs">
+                                <div class="flex ">
+                                    <ul class="flex flex-wrap bg-gray-100 rounded-2xl transition-all duration-300 p-2 overflow-hidden" >
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 active tablink"  data-tab="tabs-with-background-1"  role="tab">
+                                        Tab 1
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink"  data-tab="tabs-with-background-2"  role="tab">
+                                        Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink"  data-tab="tabs-with-background-3"  role="tab">
+                                        Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3">
+                                    <div id="tabs-with-background-1" role="tabpanel" aria-labelledby="tabs-with-background-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-background-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-background-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-background-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-background-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
+                                    </div>
+                                  </div>
                                 </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;flex &quot;&gt;
+      &lt;ul class=&quot;flex flex-wrap bg-gray-100 rounded-2xl transition-all duration-300 p-2 overflow-hidden&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 active tablink&quot; data-tab=&quot;tabs-with-background-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-background-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-background-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mt-3&quot;&gt;
+      &lt;div id=&quot;tabs-with-background-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-1&quot; class=&quot;tabcontent&quot;&gt;
+        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;tabs-with-background-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-2&quot;&gt;
+        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;tabs-with-background-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-3&quot;&gt;
+        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                              </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-pill">Tabs with pill style</h2>
+                    <p class="page-para">lorem ispsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="tabs">
+                                <div class="flex ">
+                                    <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full active tablink"  data-tab="tabs-with-pill-1"  role="tab">
+                                        Tab 1
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink"  data-tab="tabs-with-pill-2"  role="tab">
+                                        Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink"  data-tab="tabs-with-pill-3"  role="tab">
+                                        Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3">
+                                    <div id="tabs-with-pill-1" role="tabpanel" aria-labelledby="tabs-with-pill-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-pill-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-pill-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-pill-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-pill-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+   &lt;div class=&quot;tabs&quot;&gt;
+     &lt;div class=&quot;flex &quot;&gt;
+       &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full active tablink&quot; data-tab=&quot;tabs-with-pill-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+         &lt;/li&gt;
+       &lt;/ul&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;mt-3&quot;&gt;
+       &lt;div id=&quot;tabs-with-pill-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-item-1&quot; class=&quot;tabcontent&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+       &lt;div id=&quot;tabs-with-pill-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-item-2&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+       &lt;div id=&quot;tabs-with-pill-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-item-3&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+                              </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-rounded">Tabs with rounded style</h2>
+                    <p class="page-para">lorem ispsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="tabs">
+                                <div class="flex ">
+                                    <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl active tablink"  data-tab="tabs-with-rounded-1"  role="tab">
+                                        Tab 1
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-2"  role="tab">
+                                        Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-3"  role="tab">
+                                        Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3">
+                                    <div id="tabs-with-rounded-1" role="tabpanel" aria-labelledby="tabs-with-rounded-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-rounded-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-rounded-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-rounded-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-rounded-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+   &lt;div class=&quot;tabs&quot;&gt;
+     &lt;div class=&quot;flex &quot;&gt;
+       &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl active tablink&quot; data-tab=&quot;tabs-with-rounded-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+         &lt;/li&gt;
+       &lt;/ul&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;mt-3&quot;&gt;
+       &lt;div id=&quot;tabs-with-rounded-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-item-1&quot; class=&quot;tabcontent&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+       &lt;div id=&quot;tabs-with-rounded-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-item-2&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+       &lt;div id=&quot;tabs-with-rounded-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-item-3&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+                              </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-card">Tabs with card style</h2>
+                    <p class="page-para">lorem ispsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="tabs">
+                                <div class="flex ">
+                                    <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl active tablink"  data-tab="tabs-with-card-1"  role="tab">
+                                        Tab 1
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink"  data-tab="tabs-with-card-2"  role="tab">
+                                        Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink"  data-tab="tabs-with-card-3"  role="tab">
+                                        Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3">
+                                    <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-card-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-card-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-card-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-card-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+    &lt;div class=&quot;tabs&quot;&gt;
+      &lt;div class=&quot;flex &quot;&gt;
+        &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl active tablink&quot; data-tab=&quot;tabs-with-card-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink&quot; data-tab=&quot;tabs-with-card-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink&quot; data-tab=&quot;tabs-with-card-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-3&quot;&gt;
+        &lt;div id=&quot;tabs-with-card-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-card-item-1&quot; class=&quot;tabcontent&quot;&gt;
+          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;tabs-with-card-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-card-item-2&quot;&gt;
+          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;tabs-with-card-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-card-item-3&quot;&gt;
+          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                              </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-pill-light">Tabs with pill light style</h2>
+                    <p class="page-para">lorem ispsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="tabs">
+                                <div class="flex ">
+                                    <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full active tablink"  data-tab="tabs-with-pill-light-1"  role="tab">
+                                        Tab 1
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink"  data-tab="tabs-with-pill-light-2"  role="tab">
+                                        Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink"  data-tab="tabs-with-pill-light-3"  role="tab">
+                                        Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3">
+                                    <div id="tabs-with-pill-light-1" role="tabpanel" aria-labelledby="tabs-with-pill-light-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-pill-light-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-pill-light-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-pill-light-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-pill-light-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+     &lt;div class=&quot;tabs&quot;&gt;
+       &lt;div class=&quot;flex &quot;&gt;
+         &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+           &lt;li&gt;
+             &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full active tablink&quot; data-tab=&quot;tabs-with-pill-light-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+           &lt;/li&gt;
+           &lt;li&gt;
+             &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-light-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+           &lt;/li&gt;
+           &lt;li&gt;
+             &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-light-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+           &lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;mt-3&quot;&gt;
+         &lt;div id=&quot;tabs-with-pill-light-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-light-item-1&quot; class=&quot;tabcontent&quot;&gt;
+           &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+         &lt;/div&gt;
+         &lt;div id=&quot;tabs-with-pill-light-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-light-item-2&quot;&gt;
+           &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+         &lt;/div&gt;
+         &lt;div id=&quot;tabs-with-pill-light-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-light-item-3&quot;&gt;
+           &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+                              </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-rounded-light">Tabs with rounded light style</h2>
+                    <p class="page-para">lorem ispsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="tabs">
+                                <div class="flex ">
+                                    <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink"  data-tab="tabs-with-rounded-light-1"  role="tab">
+                                        Tab 1
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-light-2"  role="tab">
+                                        Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-light-3"  role="tab">
+                                        Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3">
+                                    <div id="tabs-with-rounded-light-1" role="tabpanel" aria-labelledby="tabs-with-rounded-light-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-rounded-light-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-rounded-light-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-rounded-light-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-rounded-light-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;flex &quot;&gt;
+      &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink&quot; data-tab=&quot;tabs-with-rounded-light-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-light-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-light-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mt-3&quot;&gt;
+      &lt;div id=&quot;tabs-with-rounded-light-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-light-item-1&quot; class=&quot;tabcontent&quot;&gt;
+        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;tabs-with-rounded-light-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-light-item-2&quot;&gt;
+        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;tabs-with-rounded-light-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-light-item-3&quot;&gt;
+        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                              </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-icon">Tabs with icons</h2>
+                    <p class="page-para">lorem ispsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="tabs">
+                                <div class="flex ">
+                                    <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
+                                      <li>
+                                        <a href="#" class="group flex items-center gap-2 py-3 px-6 text-gray-500 border-b border-transparent hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink"  data-tab="tabs-with-icon-1"  role="tab">
+                                          <svg class="stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_11860_5401)">
+                                            <path d="M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            <path d="M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            <path d="M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            <path d="M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_11860_5401">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                            Tab 1
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-icon-2"  role="tab">
+                                          <svg class="stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_11860_5401)">
+                                            <path d="M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            <path d="M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            <path d="M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            <path d="M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_11860_5401">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                          Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-icon-3"  role="tab">
+                                          <svg class="stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_11860_5401)">
+                                            <path d="M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            <path d="M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            <path d="M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            <path d="M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z" stroke="strokeCurrent" stroke-width="1.6"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_11860_5401">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                          Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3">
+                                    <div id="tabs-with-icon-1" role="tabpanel" aria-labelledby="tabs-with-icon-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-icon-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-icon-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-icon-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-icon-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+    &lt;div class=&quot;tabs&quot;&gt;
+      &lt;div class=&quot;flex &quot;&gt;
+        &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;group flex items-center gap-2 py-3 px-6 text-gray-500 border-b border-transparent hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink&quot; data-tab=&quot;tabs-with-icon-1&quot; role=&quot;tab&quot;&gt;
+              &lt;svg class=&quot;stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;g clip-path=&quot;url(#clip0_11860_5401)&quot;&gt;
+                  &lt;path d=&quot;M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                  &lt;path d=&quot;M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                  &lt;path d=&quot;M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                  &lt;path d=&quot;M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                &lt;/g&gt;
+                &lt;defs&gt;
+                  &lt;clipPath id=&quot;clip0_11860_5401&quot;&gt;
+                    &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot; /&gt;
+                  &lt;/clipPath&gt;
+                &lt;/defs&gt;
+              &lt;/svg&gt; Tab 1 &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-icon-2&quot; role=&quot;tab&quot;&gt;
+              &lt;svg class=&quot;stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;g clip-path=&quot;url(#clip0_11860_5401)&quot;&gt;
+                  &lt;path d=&quot;M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                  &lt;path d=&quot;M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                  &lt;path d=&quot;M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                  &lt;path d=&quot;M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                &lt;/g&gt;
+                &lt;defs&gt;
+                  &lt;clipPath id=&quot;clip0_11860_5401&quot;&gt;
+                    &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot; /&gt;
+                  &lt;/clipPath&gt;
+                &lt;/defs&gt;
+              &lt;/svg&gt; Tab 2 &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-icon-3&quot; role=&quot;tab&quot;&gt;
+              &lt;svg class=&quot;stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;g clip-path=&quot;url(#clip0_11860_5401)&quot;&gt;
+                  &lt;path d=&quot;M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                  &lt;path d=&quot;M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                  &lt;path d=&quot;M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                  &lt;path d=&quot;M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+                &lt;/g&gt;
+                &lt;defs&gt;
+                  &lt;clipPath id=&quot;clip0_11860_5401&quot;&gt;
+                    &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot; /&gt;
+                  &lt;/clipPath&gt;
+                &lt;/defs&gt;
+              &lt;/svg&gt; Tab 3 &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-3&quot;&gt;
+        &lt;div id=&quot;tabs-with-icon-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-icon-item-1&quot; class=&quot;tabcontent&quot;&gt;
+          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;tabs-with-icon-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-icon-item-2&quot;&gt;
+          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;tabs-with-icon-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-icon-item-3&quot;&gt;
+          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                              </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-badge"">Tabs with badge</h2>
+                    <p class="page-para">lorem ispsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="tabs">
+                                <div class="flex ">
+                                    <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
+                                      <li>
+                                        <a href="#" class="flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 active tablink"  data-tab="tabs-with-badge-1"  role="tab">
+                                            Tab 1 <span class="bg-indigo-50 py-1 px-2 rounded-full ml-2 text-xs">New</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class=" flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink"  data-tab="tabs-with-badge-2"  role="tab">
+                                        
+                                          Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class=" flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink"  data-tab="tabs-with-badge-3"  role="tab">
+                                         
+                                          Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3">
+                                    <div id="tabs-with-badge-1" role="tabpanel" aria-labelledby="tabs-with-badge-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-badge-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-badge-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-badge-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-badge-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
+   &lt;div class=&quot;tabs&quot;&gt;
+     &lt;div class=&quot;flex &quot;&gt;
+       &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot;flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 active tablink&quot; data-tab=&quot;tabs-with-badge-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;span class=&quot;bg-indigo-50 py-1 px-2 rounded-full ml-2 text-xs&quot;&gt;New&lt;/span&gt;
+           &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot; flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink&quot; data-tab=&quot;tabs-with-badge-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+           &lt;a href=&quot;#&quot; class=&quot; flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink&quot; data-tab=&quot;tabs-with-badge-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+         &lt;/li&gt;
+       &lt;/ul&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;mt-3&quot;&gt;
+       &lt;div id=&quot;tabs-with-badge-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-badge-item-1&quot; class=&quot;tabcontent&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+       &lt;div id=&quot;tabs-with-badge-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-badge-item-2&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+       &lt;div id=&quot;tabs-with-badge-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-badge-item-3&quot;&gt;
+         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+                              </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
@@ -791,37 +1741,39 @@ code
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Layout</a>
+                  <a href="#" class="mb-5 block active:text-indigo-600">Component</a>
                     <ul class="space-y-4 ">
                       <li>
-                        <a href="#grid-template-columns">Grid Template Columns</a>
-                        <a href="#specifying-the-columns-in-a-grid" class="mt-4 ml-4">
-                          Specifying The Columns In A Grid</a>
+                        <a href="#tab-with-underline">Tabs With Underline</a>
                       </li>
                       <li>
-                        <a href="#grid-column">Grid Column Start / End</a>
-                        <a href="#spanning-columns" class="mt-4 ml-4">Spanning columns</a>
-                        <a href="#starting-and-ending-lines" class="mt-4 ml-4">Starting and ending lines</a>
+                        <a href="#tab-with-box-style">Tabs With Box Style</a>
                       </li>
                       <li>
-                        <a href="#grid-template-rows">Grid Template Rows</a>
-                        <a href="#specifying-the-rows-in-a-grid" class="mt-4 ml-4">Specifying the rows in a grid</a>
+                        <a href="#tab-with-bg-style">Tabs With Background Style</a>
                       </li>
                       <li>
-                        <a href="#grid-row">Grid Row Start / End</a>
-                        <a href="#spanning-rows" class="mt-4 ml-4">Spanning rows</a>
-                        <a href="#starting-and-ending-lines-row" class="mt-4 ml-4">Starting and ending lines</a>
+                        <a href="#tab-with-pill">Tabs With Pill Style</a>
                       </li>
                       <li>
-                        <a href="#grid-auto-flow">Grid Auto Flow</a>
-                        <a href="#controlling-grid-element-placement" class="mt-4 ml-4">Controlling grid element placement</a>
-                        
+                        <a href="#tab-with-rounded">Tabs With Rounded Style</a>                        
                       </li>
                       <li>
-                        <a href="#gap">Gap</a>
-                        <a href="#setting-the-gap-between-elements" class="mt-4 ml-4">Setting the gap between elements</a>
-                        <a href="#changing-row-and-column-gaps-independently" class="mt-4 ml-4"> Changing row and column gaps independently</a>
+                        <a href="#tab-with-card">Tabs With Card Style</a>
                       </li>
+                      <li>
+                        <a href="#tab-with-pill-light">Tabs With Pill Light Style</a>
+                      </li>
+                      <li>
+                        <a href="#testimonial-card">Tabs With Rounded Light Style</a>
+                      </li>
+                      <li>
+                        <a href="#tab-with-icon">Tabs With Icons</a>
+                      </li>
+                      <li>
+                        <a href="#tab-with-badge">Tabs With Badge</a>
+                      </li>
+                      
                     </ul>
                   </li>
                 </ul>  
