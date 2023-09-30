@@ -348,7 +348,57 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        background: transparent url("https://beta.pagedone.io/asset/uploads/1695813759.png") no-repeat 98% center;
+        background: transparent url("https://beta.pagedone.io/asset/uploads/1695813759.png") no-repeat 95% center;
     }
-      
+  
+    .account-list li>a{
+        color: #6B7280;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 44px; 
+        padding: 0px 30px;
+        margin-bottom: 5px;
+        display: block;
+        transition: all .6s ease-in-out;
+        position: relative;
+        
+    }
+    .account-list li>a:hover,.account-list li>a.active{
+        color: #4F46E5;
+    }
+    .account-list li>a:hover:before,.account-list li>a.active:before{
+        width: 2px;
+    }
+    .account-list li>a:before{
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 20px;
+        background: #4F46E5;
+        right: 0;
+        top:10px;
+        bottom: 0;
+        border-radius: 20px;
+        transition: all .6s ease-in-out;
+    }
+    @media(max-width:768px){
+        .account-list li>a{
+            padding: 0px 10px;
+        }
+    }
+    @media(max-width:767px){
+       
+        .account-list{
+            display: flex;
+            overflow-x: auto;
+            width: 100%;
+        }
+        .account-list>li>a{
+            white-space: nowrap;
+        }
+        .account-list li>a:hover:before, .account-list li>a.active:before{
+            content:none;
+        }
+    }
 }
