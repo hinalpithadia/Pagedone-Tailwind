@@ -1365,65 +1365,200 @@ code
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Dropdown auto close</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Dropdown with Helper text </h2>
                     <p class="page-para">lorem ispsum</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative">
-                                <div class="mt-1 mx-1 sm:mt-1 pd-dropdown relative sm:inline-flex z-20 [--auto-close:inside]">
-                                    <button id="pd-dropdown-auto-close-inside" type="button" class="pd-dropdown-toggle py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-                                      Clickable inside
-                                      <svg class="pd-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                      </svg>
-                                    </button>
-                                 
-                                    <div class="pd-dropdown-menu transition-[opacity,margin] duration pd-dropdown-open:opacity-100 opacity-0 hidden mt-2 bg-white shadow-md rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700" aria-labelledby="pd-dropdown-auto-close-inside">
-                                      <div class="relative flex items-start py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <div class="flex items-center h-5 mt-1">
-                                          <input id="pd-dropdown-item-checkbox-delete" name="pd-dropdown-item-checkbox-delete" type="checkbox" class="border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" checked>
-                                        </div>
-                                        <label for="pd-dropdown-item-checkbox-delete" class="ml-3.5">
-                                          <span class="mt-1 block text-sm font-semibold text-gray-800 dark:text-gray-300">Delete</span>
-                                        </label>
-                                      </div>
-                                      <div class="relative flex items-start py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <div class="flex items-center h-5 mt-1">
-                                          <input id="pd-dropdown-item-checkbox-archive" name="pd-dropdown-item-checkbox-archive" type="checkbox" class="border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
-                                        </div>
-                                        <label for="pd-dropdown-item-checkbox-archive" class="ml-3.5">
-                                          <span class="mt-1 block text-sm font-semibold text-gray-800 dark:text-gray-300">Archive</span>
-                                        </label>
-                                      </div>
+                          <div class="w-full relative h-[450px]">
+                            <div class="dropdown relative inline-flex">
+                                <button id="dropdown-header" type="button" class="dropdown-toggle inline-flex justify-center items-center gap-2 py-3 px-6 text-sm bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 ">
+                                  Dropdown
+                                  <svg class="dropdown-open:rotate-180 w-2.5 h-2.5 text-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                  </svg>
+                                </button>
+                                <div class="dropdown-menu rounded-xl shadow-lg bg-white absolute top-full w-72 mt-2 divide-y divide-gray-200" aria-labelledby="dropdown-header">
+                                  <div class="px-4 py-3 flex gap-3 ">
+                                    <div class="block mt-1">
+                                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.3331 5.83333C13.3331 7.67428 11.8407 9.16667 9.99976 9.16667C8.15881 9.16667 6.66642 7.67428 6.66642 5.83333C6.66642 3.99238 8.15881 2.5 9.99976 2.5C11.8407 2.5 13.3331 3.99238 13.3331 5.83333Z" stroke="black" stroke-width="1.6"></path>
+                                        <path d="M9.99976 11.6667C7.62619 11.6667 5.54235 12.752 4.36109 14.3865C3.73609 15.2513 3.42359 15.6837 3.88775 16.5918C4.35192 17.5 5.12342 17.5 6.66642 17.5H13.3331C14.8761 17.5 15.6476 17.5 16.1118 16.5918C16.5759 15.6837 16.2634 15.2513 15.6384 14.3865C14.4572 12.752 12.3733 11.6667 9.99976 11.6667Z" stroke="black" stroke-width="1.6"></path>
+                                        </svg>
+                                        
                                     </div>
+                                    <div class="block">
+                                      <div class="text-indigo-600 font-normal mb-1">Harsh11</div>
+                                      <div class="text-sm text-gray-500 font-medium truncate">harsh@pagedone.io</div>
+                                    </div>  
                                   </div>
-
-                                  <div class="mt-40 mx-1 sm:mt-1 pd-dropdown relative sm:inline-flex z-10 [--auto-close:outside]">
-                                    <button id="pd-dropdown-auto-close-outside" type="button" class="pd-dropdown-toggle py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-                                      Clickable outside
-                                      <svg class="pd-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                  
+                                  <ul class="py-2">
+                                    <span class="block px-6 py-2 text-sm font-medium text-gray-500 ">
+                                      Settings
+                                    </span>
+                                  <li>
+                                    <a href="#">
+                                      <div class="flex  gap-3  px-6 py-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-1">
+                                        <path d="M15.4167 7.5C16.5673 7.5 17.5 8.43274 17.5 9.58333V12.5C17.5 14.857 17.5 16.0355 16.7678 16.7678C16.0355 17.5 14.857 17.5 12.5 17.5H7.5C5.14298 17.5 3.96447 17.5 3.23223 16.7678C2.5 16.0355 2.5 14.857 2.5 12.5V9.58333C2.5 8.43274 3.43274 7.5 4.58333 7.5M10 13.3333L6.50337 9.83671M10 13.3333L13.4966 9.83671M10 13.3333V2.5" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg> 
+                                        <div class="block">
+                                          <h6 class="text-gray-900 font-medium">Downloads</h6>
+                                          <p class="text-sm text-gray-500">This is supporting text</p>
+                                        </div>
+                                      </div>
+                                     
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div class="flex  gap-3  px-6 py-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M5 10.8334H11.6667M5 13.3334H8.33333M11.3883 1.9444V5.55551C11.3883 6.47598 12.1345 7.22218 13.055 7.22218H16.6661M10.6985 1.66669H8.5C5.67157 1.66669 4.25736 1.66669 3.37868 2.54537C2.5 3.42405 2.5 4.83826 2.5 7.66669V12.3334C2.5 15.1618 2.5 16.576 3.37868 17.4547C4.25736 18.3334 5.67156 18.3334 8.49997 18.3334C9.30683 18.3334 10.1356 18.3334 10.945 18.3334C13.7731 18.3334 15.1871 18.3334 16.0658 17.4547C16.9444 16.576 16.9444 15.1618 16.9444 12.3334V7.9126C16.9444 7.47057 16.7689 7.04665 16.4563 6.73409L11.877 2.15484C11.5645 1.84228 11.1406 1.66669 10.6985 1.66669Z" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+                                          </svg>                                          
+                                        <div class="block">
+                                          <h6 class="text-gray-900 font-medium">Saved Files</h6>
+                                          <p class="text-sm text-gray-500">This is supporting text</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div class="flex  gap-3  px-6 py-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M15.1116 9.16669C15.2575 10.9606 15.8104 12.3731 16.3475 13.3586C16.7027 14.0105 16.2305 15 15.4881 15H4.51181C3.76939 15 3.27739 13.995 3.61578 13.3342C4.28214 12.0329 4.99996 9.94717 4.99996 7.00002C4.99996 5.58585 5.52663 4.22919 6.46413 3.22919C7.40246 2.22919 8.67496 1.66669 9.99996 1.66669C10.2808 1.66669 10.56 1.69169 10.8333 1.74169M11.4416 17.5C11.2953 17.7528 11.0851 17.9627 10.832 18.1085C10.579 18.2544 10.292 18.3312 9.99996 18.3312C9.70788 18.3312 9.42094 18.2544 9.1679 18.1085C8.91487 17.9627 8.70464 17.7528 8.5583 17.5M15 6.66669C15.663 6.66669 16.2989 6.40329 16.7677 5.93445C17.2366 5.46561 17.5 4.82973 17.5 4.16669C17.5 3.50365 17.2366 2.86776 16.7677 2.39892C16.2989 1.93008 15.663 1.66669 15 1.66669C14.3369 1.66669 13.701 1.93008 13.2322 2.39892C12.7634 2.86776 12.5 3.50365 12.5 4.16669C12.5 4.82973 12.7634 5.46561 13.2322 5.93445C13.701 6.40329 14.3369 6.66669 15 6.66669Z" stroke="#111827" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>                                                                                  
+                                        <div class="block">
+                                          <h6 class="text-gray-900 font-medium">Notifications</h6>
+                                          <p class="text-sm text-gray-500">This is supporting text</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                </li>
+                                  </ul>
+                                  <div class="py-2">
+                                    <span class="block px-6 py-2 text-sm font-medium text-gray-500 ">
+                                      Settings
+                                    </span>
+                                    <a class="block  " href="#">
+                                      <div class="flex  gap-3  px-6 py-2">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M9.16667 17.5L5.83333 17.5V17.5C3.98765 17.5 2.5 16.0123 2.5 14.1667V14.1667L2.5 5.83333V5.83333C2.5 3.98765 3.98765 2.5 5.83333 2.5V2.5L9.16667 2.5M8.22814 10L17.117 10M14.3393 6.66667L17.0833 9.41074C17.3611 9.68852 17.5 9.82741 17.5 10C17.5 10.1726 17.3611 10.3115 17.0833 10.5893L14.3393 13.3333" stroke="#EF4444" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                        <div class="block">
+                                          <h6 class="text-red-500 font-medium">Log Out</h6>
+                                          <p class="text-sm text-gray-500">This is supporting text</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                       </svg>
-                                    </button>
-                                 
-                                    <div class="pd-dropdown-menu transition-[opacity,margin] duration pd-dropdown-open:opacity-100 opacity-0 hidden mt-2 bg-white shadow-md rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700" aria-labelledby="pd-dropdown-auto-close-outside">
-                                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="javascript:;">
-                                        Newsletter
-                                      </a>
-                                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="javascript:;">
-                                        Purchases
-                                      </a>
-                                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="javascript:;">
-                                        Downloads
-                                      </a>
-                                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="javascript:;">
-                                        Team Account
-                                      </a>
-                                    </div>
-                                  </div>
+                                  </button>
+                              </div>
                             </div>
+                            <div class="code-main">
+                                <div data-code-wrapper="" class="code-wrapper ">
+code
+                                </div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Auto close behavior</h2>
+                    <p class="page-para">lorem ispsum</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                          <div class="w-full relative h-64 flex items-start gap-8">
+                            <div class="dropdown relative inline-flex">
+                                <button id="dropdown-default-click-inside" type="button" class="dropdown-toggle inline-flex justify-center items-center gap-2 py-3 px-6 text-sm bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 ">
+                                  Clickable inside
+                                  <svg class="dropdown-open:rotate-180 w-2.5 h-2.5 text-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                  </svg>
+                                </button>
+                                <div class="dropdown-menu rounded-xl shadow-lg bg-white absolute top-full w-full mt-2" aria-labelledby="dropdown-default-click-inside">
+                                  <ul class="py-2">
+                                  <li>
+                                    <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="#">
+                                      Downloads
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="#">
+                                      Saved Files
+                                    </a>
+                                  </li>
+                                  <li>
+                                      <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="#">
+                                        Notifications
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a class="block px-6 py-2 hover:bg-gray-100 text-red-500 font-medium" href="#">
+                                        Log Out
+                                      </a>
+                                  </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="dropdown relative inline-flex">
+                                <button id="dropdown-default-click-outside" type="button" class="dropdown-toggle inline-flex justify-center items-center gap-2 py-3 px-6 text-sm bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 ">
+                                  Clickable outside
+                                  <svg class="dropdown-open:rotate-180 w-2.5 h-2.5 text-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                  </svg>
+                                </button>
+                                <div class="dropdown-menu rounded-xl shadow-lg bg-white absolute top-full w-full mt-2" aria-labelledby="dropdown-default-click-outside">
+                                  <ul class="py-2">
+                                  <li>
+                                    <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="#">
+                                      Downloads
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="#">
+                                      Saved Files
+                                    </a>
+                                  </li>
+                                  <li>
+                                      <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="#">
+                                        Notifications
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a class="block px-6 py-2 hover:bg-gray-100 text-red-500 font-medium" href="#">
+                                        Log Out
+                                      </a>
+                                  </li>
+                                  </ul>
+                                </div>
+                              </div>
+                        </div>
                         </div>
                     </div>
                     <div class="code-syntax-wrapper">
@@ -1481,35 +1616,6 @@ code
                                       <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
                                         Team Account
                                       </a>
-                                    </div>
-                                  </div>
-                                 
-                                  <div class="inline-flex">
-                                    <button type="button" class="relative py-3 px-4 inline-flex justify-center items-center gap-2 rounded-l-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-                                      Split dropup
-                                    </button>
-                                    <div class="pd-dropdown relative inline-flex [--placement:top-left]">
-                                      <button id="pd-split-dropup" type="button" class="pd-dropdown-toggle relative -ml-[.3125rem] py-3 px-4 inline-flex justify-center items-center gap-2 h-[2.875rem] w-[2.875rem] rounded-r-md border font-medium bg-gray-50 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                        <svg class="pd-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        </svg>
-                                      </button>
-                                  
-                                      <div class="pd-dropdown-menu w-72 transition-[opacity,margin] duration pd-dropdown-open:opacity-100 opacity-0 hidden z-10 bg-white shadow-md rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700" aria-labelledby="pd-split-dropup">
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                          Newsletter
-                                        </a>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                          Purchases
-                                        </a>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                          Downloads
-                                        </a>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                          Team Account
-                                        </a>
-                                      </div>
                                     </div>
                                   </div>
                             </div>
@@ -1570,34 +1676,6 @@ code
                                       <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
                                         Team Account
                                       </a>
-                                    </div>
-                                  </div>
-                                  <div class="pd-dropdown relative inline-flex [--placement:right-top]">
-                                    <button type="button" class="relative py-3 px-4 inline-flex justify-center items-center gap-2 rounded-l-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-                                      Split dropright
-                                    </button>
-                                    <div class="pd-dropdown relative inline-flex">
-                                      <button id="pd-split-dropright" type="button" class="pd-dropdown-toggle relative -ml-[.3125rem] py-3 px-4 inline-flex justify-center items-center gap-2 h-[2.875rem] w-[2.875rem] rounded-r-md border font-medium bg-gray-50 text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                        <svg class="w-auto h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M5 1L10.6869 7.16086C10.8637 7.35239 10.8637 7.64761 10.6869 7.83914L5 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        </svg>
-                                      </button>
-                                  
-                                      <div class="pd-dropdown-menu w-72 transition-[opacity,margin] duration pd-dropdown-open:opacity-100 opacity-0 hidden z-10 bg-white shadow-md rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700" aria-labelledby="pd-split-dropright">
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                          Newsletter
-                                        </a>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                          Purchases
-                                        </a>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                          Downloads
-                                        </a>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                          Team Account
-                                        </a>
-                                      </div>
                                     </div>
                                   </div>
                             </div>
