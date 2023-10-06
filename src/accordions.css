@@ -5,11 +5,26 @@
     .accordion.active > .accordion-toggle .accordion-active\:text-indigo-600{
         @apply text-indigo-600;
     }
+    .accordion.active > .accordion-toggle.accordion-active\:text-gray-900{
+        @apply text-gray-900;
+    }
     .accordion.active > .accordion-toggle .accordion-active\:rotate-180{
         @apply rotate-180;
     }
     .accordion.active.accordion-active\:bg-indigo-50 {
         @apply bg-indigo-50;
+    }
+    .accordion.active.accordion-active\:border-b-0 {
+        @apply border-b-0;
+    }
+    .accordion.active > .accordion-toggle.accordion-active\:font-semibold{
+        @apply font-semibold
+    }
+    .accordion.active.accordion-active\:bg-gray-50 {
+        @apply bg-gray-50;
+    }
+    .accordion.active.accordion-active\:rounded-xl{
+        @apply rounded-xl;
     }
     .accordion.active.accordion-active\:border-indigo-600 {
         @apply border-indigo-600;
