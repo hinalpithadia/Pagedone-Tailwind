@@ -746,5 +746,16 @@
         line-height: normal;
         z-index: 1;
     }
-   
+    .open .modal-open\:visible{
+        @apply visible;
+     }
+     .open .modal-open\:opacity-100{
+         @apply opacity-100;
+     } 
+     .open .modal-open\:duration-500{
+         @apply duration-500;
+     }
+     .open .modal-open\:translate-y-0{
+        @apply translate-y-0;
+    }
 }
