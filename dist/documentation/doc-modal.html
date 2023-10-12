@@ -6,11 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
   <link href="../css/styles-output.css" rel="stylesheet">
-  <style>
-
-  </style>
 </head>
-
 <body class="font-inter ">
   <div class="page-container">
      <!----------Navbar Start---------->
@@ -651,37 +647,31 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full relative">
-                              <button type="button" class="modal-button py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-sm dark:focus:ring-offset-gray-800" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal" data-modal-toggle="pd-basic-modal">
-                                Open modal
+                              <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal" data-modal-toggle="pd-basic-modal">
+                                Default modal
                               </button>
                                   <div id="pd-basic-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto ">
-                                    <div class="  transform translate-y-[100px] opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500">
-                                      <div class="flex flex-col bg-white border shadow-sm rounded-xl">
-                                        <div class="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
-                                          <h3 class="font-bold text-gray-800 dark:text-white">
-                                            Modal title
-                                          </h3>
-                                          <button type="button" class="pd-dropdown-toggle inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-sm dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800 close-modal-button" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal">
-                                            <span class="sr-only">Close</span>
-                                            <svg class="w-3.5 h-3.5" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M0.258206 1.00652C0.351976 0.912791 0.479126 0.860131 0.611706 0.860131C0.744296 0.860131 0.871447 0.912791 0.965207 1.00652L3.61171 3.65302L6.25822 1.00652C6.30432 0.958771 6.35952 0.920671 6.42052 0.894471C6.48152 0.868271 6.54712 0.854471 6.61352 0.853901C6.67992 0.853321 6.74572 0.865971 6.80722 0.891111C6.86862 0.916251 6.92442 0.953381 6.97142 1.00032C7.01832 1.04727 7.05552 1.1031 7.08062 1.16454C7.10572 1.22599 7.11842 1.29183 7.11782 1.35822C7.11722 1.42461 7.10342 1.49022 7.07722 1.55122C7.05102 1.61222 7.01292 1.6674 6.96522 1.71352L4.31871 4.36002L6.96522 7.00648C7.05632 7.10078 7.10672 7.22708 7.10552 7.35818C7.10442 7.48928 7.05182 7.61468 6.95912 7.70738C6.86642 7.80018 6.74102 7.85268 6.60992 7.85388C6.47882 7.85498 6.35252 7.80458 6.25822 7.71348L3.61171 5.06702L0.965207 7.71348C0.870907 7.80458 0.744606 7.85498 0.613506 7.85388C0.482406 7.85268 0.357007 7.80018 0.264297 7.70738C0.171597 7.61468 0.119017 7.48928 0.117877 7.35818C0.116737 7.22708 0.167126 7.10078 0.258206 7.00648L2.90471 4.36002L0.258206 1.71352C0.164476 1.61976 0.111816 1.4926 0.111816 1.36002C0.111816 1.22744 0.164476 1.10028 0.258206 1.00652Z" fill="currentColor"/>
-                                            </svg>
+                                    <div class=" opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:opacity-100 transition-all modal-open:duration-500">
+                                      <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
+                                        <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                          <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
+                                          <button class="block cursor-pointer close-modal-button" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                              </svg>
+                                              
                                           </button>
                                         </div>
-                                        <div class="p-4 overflow-y-auto">
-                                          <p class="mt-1 text-gray-800 dark:text-gray-400">
-                                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                                        <div class="overflow-y-auto py-4 min-h-[100px]">
+                                          <p class=" text-gray-600 text-sm">
+                                            This is the regular modal with supporting text below as additional content
                                           </p>
                                         </div>
-                                        <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-gray-700">
-                                          <button type="button" class="pd-dropdown-toggle py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-pd-overlay="#pd-basic-modal">
-                                            Close
-                                          </button>
-                                          <a class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800" href="#">
-                                            Save changes
-                                          </a>
+                                        <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
+                                          <button type="button" class="pd-dropdown-toggle py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 ">Cancel</button>
+                                          <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
                                         </div>
-                                      </div>
+                                    </div>
                                     </div>
                                   </div>
                             </div>
@@ -721,15 +711,15 @@ code
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                           <div class="w-full relative">
-                            <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#slide-down-modal">
-                                Open modal
-                              </button>
-                              <div id="slide-down-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[100] overflow-x-hidden overflow-y-auto">
-                                <div class="pd-overlay-open:opacity-100 pd-overlay-open:duration-500 opacity-1 transition-all sm:max-w-lg sm:w-full m-5 sm:mx-auto">
+                            <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#pd-slide-down-modal" data-modal-target="pd-slide-down-modal" data-modal-toggle="pd-slide-down-modal">
+                              Open modal   
+                            </button>
+                              <div id="pd-slide-down-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+                                <div class="transform -translate-y-3 opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500">
                                   <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
                                       <div class="flex justify-between items-center pb-4 border-b border-gray-200">
                                         <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                        <button class="block cursor-pointer">
+                                        <button class="block cursor-pointer close-modal-button" data-pd-overlay="#pd-slide-down-modal" data-modal-target="pd-slide-down-modal">
                                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
                                             </svg>
@@ -789,7 +779,7 @@ code
                                 Open modal   
                               </button>
                               <div id="pd-slide-up-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-                                <div class="transform translate-y-[100px] opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500">
+                                <div class="transform translate-y-3 opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500">
                                   <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
                                       <div class="flex justify-between items-center pb-4 border-b border-gray-200">
                                         <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
@@ -850,15 +840,15 @@ code
                         <div class="code-preview">
                             <div class="w-full relative">
                                 <!--small-->
-                                <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#small-modal">
+                                <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#small-modal" data-modal-target="small-modal" data-modal-toggle="small-modal">
                                     Small
                                   </button>
-                                  <div id="small-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[100] overflow-x-hidden overflow-y-auto">
-                                    <div class="pd-overlay-open:opacity-100 pd-overlay-open:duration-500 opacity-1 transition-all sm:max-w-lg sm:w-full m-5 sm:mx-auto">
+                                  <div id="small-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto ">
+                                    <div class="opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500 sm:max-w-lg sm:w-full m-5 sm:mx-auto">
                                       <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
                                         <div class="flex justify-between items-center pb-4 border-b border-gray-200">
                                           <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                          <button class="block cursor-pointer">
+                                          <button class="block cursor-pointer close-modal-button" data-pd-overlay="#small-modal" data-modal-target="small-modal">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
                                               </svg>
@@ -878,15 +868,15 @@ code
                                     </div>
                                   </div>
                                    <!--medium-->
-                                   <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#medium-modal">
+                                   <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#medium-modal" data-modal-target="medium-modal" data-modal-toggle="medium-modal">
                                     Medium
                                   </button>
                                   <div id="medium-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-                                    <div class="pd-overlay-open:mt-7 pd-overlay-open:opacity-100 pd-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all md:max-w-2xl md:w-full m-3 md:mx-auto">
+                                    <div class="opacity-0  ease-out  modal-open:opacity-100 transition-all modal-open:duration-500 md:max-w-2xl md:w-full m-3 md:mx-auto">
                                       <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
                                         <div class="flex justify-between items-center pb-4 border-b border-gray-200">
                                           <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                          <button class="block cursor-pointer">
+                                          <button class="block cursor-pointer  close-modal-button" data-pd-overlay="#medium-modal" data-modal-target="medium-modal">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
                                               </svg>
@@ -906,15 +896,15 @@ code
                                     </div>
                                   </div>
                                   <!--large-->
-                                  <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#large-modal">
+                                  <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#large-modal" data-modal-target="large-modal" data-modal-toggle="large-modal">
                                     Large
                                   </button>
                                   <div id="large-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-                                    <div class="pd-overlay-open:mt-7 pd-overlay-open:opacity-100 pd-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all lg:max-w-4xl lg:w-full m-3 lg:mx-auto">
+                                    <div class=" opacity-0 ease-out modal-open:opacity-100 transition-all modal-open:duration-500 lg:max-w-4xl lg:w-full m-3 lg:mx-auto">
                                       <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
                                         <div class="flex justify-between items-center pb-4 border-b border-gray-200">
                                           <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                          <button class="block cursor-pointer">
+                                          <button class="block cursor-pointer close-modal-button" data-pd-overlay="#large-modal" data-modal-target="large-modal">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
                                               </svg>
@@ -1267,6 +1257,7 @@ code
   <script>
     function openModal(modalId) {
         var modal = document.getElementById(modalId);
+        
         // var modal_box = document.getElementById('modal-box');
         var backdrop = document.getElementById('backdrop');
         if (modal) {
@@ -1282,7 +1273,7 @@ code
           
           // animateSlideDown(modal, window.innerHeight, 0, 300, easeOutCubic);
           backdrop.classList.remove('hidden');
-
+        
         }
       }
 

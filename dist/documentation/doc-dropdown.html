@@ -653,13 +653,13 @@
                         <div class="code-preview">
                             <div class="w-full relative h-64">
                                 <div class="dropdown relative inline-flex">
-                                    <button id="dropdown-default-button" type="button" class="dropdown-toggle inline-flex justify-center items-center gap-2 py-3 px-6 text-sm bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 " data-target="dropdown-default">
+                                    <button id="dropdown-default-button" type="button" class="dropdown-toggle inline-flex justify-center items-center gap-2 py-3 px-6 text-sm bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 " data-target="default-default">
                                       Dropdown
                                       <svg class="dropdown-open:rotate-180 w-2.5 h-2.5 text-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                       </svg>
                                     </button>
-                                    <div id="dropdown-default" class="dropdown-menu rounded-xl shadow-lg bg-white absolute top-full w-72 mt-2" aria-labelledby="dropdown-default">
+                                    <div id="default-default" class="dropdown-menu hidden rounded-xl shadow-lg bg-white absolute top-full w-72 mt-2" aria-labelledby="default-default">
                                       <ul class="py-2">
                                       <li>
                                         <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="#">
@@ -1876,46 +1876,29 @@ code
   </script>
   <script>
   document.addEventListener('DOMContentLoaded', function () {
-        // var dropdowns = document.querySelectorAll('.dropdown');
-
-        // dropdowns.forEach(function (dropdown) {
-        //   dropdown.style.display = 'none';
-        // });
-
+      
         var buttons = document.querySelectorAll('.dropdown-toggle');
 
         buttons.forEach(function (button) {
           button.addEventListener('click', function () {
             var targetId = button.getAttribute('data-target');
             var targetDropdown = document.getElementById(targetId);
-
-            if (targetDropdown.style.display === 'none' || targetDropdown.style.display === '') {
-              targetDropdown.style.display = 'block';
+            // targetDropdown.toggleAttribute();
+            if (targetDropdown.classList.contains('hidden')) {
+              setTimeout((function() {
+                targetDropdown.classList.add('open');
+           }
+           ), 200)
+              targetDropdown.classList.remove("hidden");
             } else {
-              targetDropdown.style.display = 'none';
+              targetDropdown.classList.add("hidden");
             }
-          })
-        
-          // button.addEventListener('mouseenter', function () {
-          //   // targetDropdown.style.display = 'block';
-          //   targetDropdown.classList.remove('mt-2')
-          //   targetDropdown.classList.remove('hidden');
-          // });
-
-          // button.addEventListener('mouseleave', function () {
-          //   // targetDropdown.style.display = 'none';
-          //   targetDropdown.classList.add('mt-2');
-          //   targetDropdown.classList.add('hidden');
-          // });
-
-          // button.addEventListener('click', function () {
-          //   var targetId = button.getAttribute('data-target');
-          //   var targetDropdown = document.getElementById(targetId);
-
-            
-          // })
+           
+          })         
         })
+      
       });
+  
   </script>
 </body>
 </html>
