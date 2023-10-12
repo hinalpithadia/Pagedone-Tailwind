@@ -758,4 +758,7 @@
      .open .modal-open\:translate-y-0{
         @apply translate-y-0;
     }
+    .dropdown.open .dropdown-open\:opacity-100{
+        @apply opacity-100;
+    }
 }
