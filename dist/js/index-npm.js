@@ -157,3 +157,78 @@ function alert() {
         });
     });
 }
+/*================modal js===============*/
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+     var backdrop = document.getElementById('backdrop');
+    // var modal_box = document.getElementById('modal-box');
+   
+    
+    if (modal) {
+      document.body.classList.add('overflow-hidden');
+      modal.classList.remove('hidden');
+        setTimeout((function() {
+          modal.classList.add('open');
+          
+       }
+       ), 200)
+      console.log(modal);
+      // slideUp(modal, 3000);
+      // Use requestAnimationFrame to ensure CSS changes are applied
+      
+      // animateSlideDown(modal, window.innerHeight, 0, 300, easeOutCubic);
+      backdrop.classList.remove('hidden');
+    
+    }
+  }
+
+function closeModal(modalId) {
+  console.log(modalId);
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.classList.add('hidden');
+    modal.classList.remove('open')
+    document.body.classList.remove('overflow-hidden');
+    // modalOpacity = modal.querySelector('.opacity-100');
+    // modalOpacity.classList.add('opacity-0')
+    // modalOpacity.classList.remove('opacity-100')
+  }
+  backdrop.classList.add('hidden');
+}
+// var backdrop = document.getElementById('backdrop');
+// backdrop.addEventListener('click', function (event) {
+//   if (currentModal) {
+//     var modal = document.getElementById(currentModal);
+//     if (modal && !modal.contains(event.target)) {
+//       closeModal(currentModal);
+//     }
+//   }
+// });
+const openModalButtons = document.querySelectorAll('.modal-button');
+  openModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modalId = button.getAttribute('data-modal-target');
+      currentModal = modalId;
+      setTimeout(openModal(modalId), 1000);
+    });
+  });
+
+  // Attach event listeners to close modal buttons
+  const closeModalButtons = document.querySelectorAll('.close-modal-button');
+  closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modalId = button.getAttribute('data-modal-target');
+      currentModal = null;
+      closeModal(modalId);
+    });
+  });
+
+  backdrop.addEventListener("click", function() {
+    modal.classList.add("hidden");
+backdrop.classList.add("hidden");
+});
+document.addEventListener("keydown", function (e) {
+if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+closeModal(modalId);
+}
+});

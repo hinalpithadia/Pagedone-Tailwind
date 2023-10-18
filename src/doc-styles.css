@@ -80,8 +80,11 @@
     .code-wrapper pre[class*="language-"] {
         @apply p-5 overflow-x-auto mb-0;
     }
-    .code-wrapper .token.tag, .code-wrapper .token.class-name, .code-wrapper .token.selector, .code-wrapper .token.selector .class, .code-wrapper .token.selector.class, .code-wrapper .token.function {
+    .code-wrapper .token.tag, .code-wrapper .token.class-name, .code-wrapper .token.selector, .code-wrapper .token.selector .class, .code-wrapper .token.selector.class{
         color: #9E1D82;
+    }
+    .code-wrapper .token.function {
+        color: #38ca53;
     }
     .code-wrapper .token.punctuation {
         color: #909090;
@@ -94,13 +97,13 @@
         color: #3ACB49;
     }
     .code-wrapper .token.attr-value, .code-wrapper .token.class, .code-wrapper .token.string, .code-wrapper .token.property {
-        color: #0057FF;
+        color: #276bff;
     }
     .code-exapnd-button {
         @apply absolute bottom-0 left-0 py-2.5 px-5 w-full text-sm font-medium text-gray-900 bg-gray-100 border-t border-gray-200 rounded-b-2xl hover:bg-gray-100 hover:text-indigo-600;
     }
     code.language-javascript {
-        color:#0057FF!important;
+        color:#FF9800!important;
     }
     .bg-stripes-indigo {
         background-color: #38bdf81a;
