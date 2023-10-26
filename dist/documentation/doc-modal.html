@@ -1323,15 +1323,14 @@ code
         });
       });
 
-      backdrop.addEventListener("click", function() {
-        modal.classList.add("hidden");
-    backdrop.classList.add("hidden");
-});
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-    closeModal(modalId);
-  }
-});
+window.onclick = function (event) {
+      var modal = document.getElementById(currentModal);
+        if (event.target == modal) {
+          modal.style.display = "none";
+          var backdrop = document.getElementById('backdrop');
+          backdrop.classList.add('hidden');
+        }
+      }
   </script>
 </body>
 </html>

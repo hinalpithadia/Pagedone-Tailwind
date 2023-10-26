@@ -1,3 +1,6 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 @layer components {
     input[type='checkbox']:checked{
         background-image: url('https://beta.pagedone.io/asset/uploads/1689406942.svg');

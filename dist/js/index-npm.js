@@ -232,3 +232,32 @@ if (e.key === "Escape" && !modal.classList.contains("hidden")) {
 closeModal(modalId);
 }
 });
+/*=====mobile menu==========*/
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('toggleButton');
+    var navbar = document.getElementById('navbar-default');
+    console.log(toggleButton);
+    console.log(navbar);
+
+    toggleButton.addEventListener('click', function () {
+        if (navbar.classList.contains('hidden')) {
+            navbar.classList.remove('hidden');
+            navbar.classList.add('show');
+        } else {
+            navbar.classList.remove('show');
+            navbar.classList.add('hidden');
+        }
+    });
+});
+var toggleButton = document.getElementById('toggleButton');
+            var navbar = document.getElementById('left-bar');
+
+            toggleButton.addEventListener('click', function () {
+                if (navbar.classList.contains('hidden')) {
+                    navbar.classList.remove('hidden');
+                    navbar.classList.add('show');
+                } else {
+                    navbar.classList.remove('show');
+                    navbar.classList.add('hidden');
+                }
+            });
