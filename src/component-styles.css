@@ -785,7 +785,7 @@
     .card-para{
         @apply text-gray-900 text-base py-6;
     }
-    .card-para span{
+    .card-para span{ 
         @apply text-indigo-600;
     }
     .card-bottom-text{
