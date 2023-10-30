@@ -1044,7 +1044,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        border-radius: 25px 25px 0px 0px;
+        border-radius: 0px 0px 25px 25px;
         padding: 2px;
         background: linear-gradient(0deg, #4F46E5 20.41%, #FFFFFF 100%);
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -1087,4 +1087,12 @@
     .top-card.active::before,.bottom-card.active::before{
         opacity: 1;
     }
+    .bg-card{
+        background: linear-gradient(182deg, #FFF 50%, #C0BDFD 98.1%);
+    background-size: 100% 200%;
+    background-position: 100% 000%;
+    }
+    .bg-card:hover {
+        background-position: 100% 65%;
+      }
 }
