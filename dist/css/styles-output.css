@@ -3901,6 +3901,10 @@ input[type="radio"]:checked:disabled + label span{
   height: 100vh;
 }
 
+.h-\[480px\]{
+  height: 480px;
+}
+
 .max-h-40{
   max-height: 10rem;
 }
@@ -9943,6 +9947,10 @@ input[type="radio"]:checked:disabled + label span{
 
   .xl\:flex{
     display: flex;
+  }
+
+  .xl\:h-\[780px\]{
+    height: 780px;
   }
 
   .xl\:min-h-screen{
