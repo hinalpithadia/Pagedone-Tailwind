@@ -1097,7 +1097,10 @@
     }
     .bg-card:hover {
         background-position: 100% 65%;
-      }
+    }
+    .slick-slide{
+        height: auto;
+    }
       @media(max-width:767px){
         .top-card-frame {
             padding: 25px 25px 0 25px;
