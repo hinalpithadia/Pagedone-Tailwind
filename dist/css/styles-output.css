@@ -2178,7 +2178,7 @@ svg, rect, circle, path{
   background-position: 100% 65%;
 }
 
-.icon-slider-one .slick-slide,.icon-slider-two .slick-slide{
+.icon-slider-one .slick-slide,.icon-slider-two .slick-slide,.block-slider .slick-slide{
   height: auto!important;
 }
 
