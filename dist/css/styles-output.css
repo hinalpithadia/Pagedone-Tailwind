@@ -2178,6 +2178,10 @@ svg, rect, circle, path{
   background-position: 100% 65%;
 }
 
+.icon-slider-one .slick-slide,.icon-slider-two .slick-slide{
+  height: auto!important;
+}
+
 @media(max-width:767px){
   .top-card-frame {
     padding: 25px 25px 0 25px;
