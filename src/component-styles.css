@@ -81,6 +81,9 @@
     .block-cards{
         @apply bg-white rounded-xl shadow-sm p-1.5 w-64 h-auto;
     }
+    .block-cards img{
+        @apply rounded-xl;
+    }
     /*=============Custom CSS=================*/
     .btn-dropdown{
         box-shadow: 16px 9px 13px 0px rgba(0, 0, 0, 0.02);
@@ -1094,5 +1097,25 @@
     }
     .bg-card:hover {
         background-position: 100% 65%;
+      }
+      @media(max-width:767px){
+        .top-card-frame {
+            padding: 25px 25px 0 25px;
+        }
+        .bottom-card-frame{
+            padding: 0px 25px 25px 25px;
+        }
+        .wrapper-card{
+            padding: 25px;
+        }
+        .wrapper-text {
+            font-size: 18px;
+        }
+        .gradient-text{
+            font-size: 20px;
+        }
+        .wrapper-card svg{
+            width: 50px;
+        }
       }
 }
