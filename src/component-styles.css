@@ -1098,6 +1098,30 @@
     .bg-card:hover {
         background-position: 100% 65%;
     }
+    .main-2 {
+        background: linear-gradient(135deg, #F3F4F6, #FFF, #6d8ab900);
+        background-size: 100% 200%;
+        background-position: 100% 200%;
+    }
+    .bg-gradient1{
+        border-right: 1px solid #FFF;
+        border-left: 1px solid #FFF;
+        /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 0.4) 50%, rgba(255, 255, 255, 0.10) 100%); */
+        transition: all 0.5s ease-in !important;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, #F3F4F6 50%, rgba(255, 255, 255, 0.10) 100%);
+
+
+    }
+    .last:hover>.flex  .bg-gradient1 {
+        transition: all 0.5s ease !important;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+    }
+    .group:hover > .flex  .bg-gradient1 button .btn-text {
+        background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     .icon-slider-one .slick-slide,.icon-slider-two .slick-slide,.block-slider .slick-slide{
         height: auto!important;
     }

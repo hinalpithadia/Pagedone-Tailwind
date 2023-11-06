@@ -675,6 +675,18 @@ video {
 
 /*=============IconBox CSS=================*/
 
+.last:hover>.icon-box  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .icon-box  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .icon-box{
   position: relative;
   margin-left: auto;
@@ -730,6 +742,18 @@ video {
   }
 }
 
+.last:hover>.copy-btn  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .copy-btn  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .copy-btn{
   display: flex;
   cursor: pointer;
@@ -752,6 +776,18 @@ video {
 .copy-btn:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
+}
+
+.last:hover>.download-btn  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .download-btn  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .download-btn{
@@ -795,6 +831,18 @@ video {
   }
 }
 
+.last:hover>.block-title  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .block-title  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .block-title{
   display: flex;
   align-items: center;
@@ -821,9 +869,33 @@ video {
 }
 
 @media (min-width: 1024px){
+  .last:hover>.block-title span  .bg-gradient1 {
+    transition: all 0.5s ease;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+  }
+
+  .group:hover > .block-title span  .bg-gradient1 button .btn-text {
+    background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .block-title span{
     display: flex;
   }
+}
+
+.last:hover>.view-all-link  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .view-all-link  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .view-all-link{
@@ -1413,6 +1485,18 @@ svg, rect, circle, path{
   stroke-dasharray: 300;
 }
 
+.last:hover>.block-switch-tab  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .block-switch-tab  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .block-switch-tab{
   position: relative;
   display: flex;
@@ -1441,6 +1525,18 @@ svg, rect, circle, path{
 .block-switch-tab>li{
   height: 100%;
   width: 50%;
+}
+
+.last:hover>.block-switch-tab>li>a  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .block-switch-tab>li>a  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .block-switch-tab>li>a{
@@ -1754,11 +1850,35 @@ svg, rect, circle, path{
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.last:hover>.component-list  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .component-list  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .component-list{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   gap: 1.25rem;
+}
+
+.last:hover>.component-card  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .component-card  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .component-card{
@@ -1877,6 +1997,18 @@ svg, rect, circle, path{
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.last:hover>.component-preview  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .component-preview  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .component-preview{
@@ -2178,6 +2310,32 @@ svg, rect, circle, path{
   background-position: 100% 65%;
 }
 
+.main-2 {
+  background: linear-gradient(135deg, #F3F4F6, #FFF, #6d8ab900);
+  background-size: 100% 200%;
+  background-position: 100% 200%;
+}
+
+.bg-gradient1{
+  border-right: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 0.4) 50%, rgba(255, 255, 255, 0.10) 100%); */
+  transition: all 0.5s ease-in !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, #F3F4F6 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.last:hover>.flex  .bg-gradient1 {
+  transition: all 0.5s ease !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .flex  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .icon-slider-one .slick-slide,.icon-slider-two .slick-slide,.block-slider .slick-slide{
   height: auto!important;
 }
@@ -2321,6 +2479,18 @@ svg, rect, circle, path{
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
+.last:hover>.code-preview  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .code-preview  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .code-preview{
   display: flex;
   overflow-x: auto;
@@ -2361,6 +2531,18 @@ svg, rect, circle, path{
   padding-left: 1rem;
 }
 
+.last:hover>.code-head-list  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .code-head-list  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .code-head-list{
   display: flex;
   list-style-type: none !important;
@@ -2395,9 +2577,33 @@ svg, rect, circle, path{
   border-bottom-width: 1px;
 }
 
+.last:hover>.code-copy-button  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .code-copy-button  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .code-copy-button{
   display: flex;
   justify-content: flex-end;
+}
+
+.last:hover>.code-copy-button button  .bg-gradient1 {
+  transition: all 0.5s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .code-copy-button button  .bg-gradient1 button .btn-text {
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .code-copy-button button{
@@ -6378,6 +6584,10 @@ input[type="radio"]:checked:disabled + label span{
   padding-left: 2.5rem;
 }
 
+.pl-11{
+  padding-left: 2.75rem;
+}
+
 .pl-12{
   padding-left: 3rem;
 }
@@ -7585,6 +7795,20 @@ input[type="radio"]:checked:disabled + label span{
           mask-image: linear-gradient(0deg,#fff,rgba(255,255,255,0.6));
 }
 
+.last:hover>.after\:flex  .bg-gradient1::after {
+  content: var(--tw-content);
+  transition: all 0.5s ease !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.group:hover > .after\:flex  .bg-gradient1 button .btn-text::after {
+  content: var(--tw-content);
+  background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (prefers-color-scheme: dark){
   .dark\:scrollbar-y::-webkit-scrollbar{
     width: 0.25rem;
@@ -7634,6 +7858,46 @@ input[type="radio"]:checked:disabled + label span{
     .md\:container{
       max-width: 1536px;
     }
+  }
+
+  .last:hover>.md\:flex  .bg-gradient1 {
+    transition: all 0.5s ease !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+  }
+
+  .group:hover > .md\:flex  .bg-gradient1 button .btn-text {
+    background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (min-width: 1024px){
+  .last:hover>.lg\:flex  .bg-gradient1 {
+    transition: all 0.5s ease !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+  }
+
+  .group:hover > .lg\:flex  .bg-gradient1 button .btn-text {
+    background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (min-width: 1280px){
+  .last:hover>.xl\:flex  .bg-gradient1 {
+    transition: all 0.5s ease !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(192, 189, 253, 1) 50%, rgba(255, 255, 255, 0.10) 100%);
+  }
+
+  .group:hover > .xl\:flex  .bg-gradient1 button .btn-text {
+    background: linear-gradient(263deg, #4F46E5 13.95%, #A05EFF 46.91%, #4F46E5 76.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
