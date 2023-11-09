@@ -2632,7 +2632,7 @@ svg, rect, circle, path{
   border-bottom-left-radius: 1rem;
 }
 
-.code-wrapper :not(pre)>code[class*="language-"], .code-wrapper pre[class*="language-"]{
+.code-wrapper :not(pre)>code[class="language-javascript"], pre[class="language-javascript"]{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
@@ -3328,6 +3328,10 @@ input[type="radio"]:checked:disabled + label span{
 
 .bottom-0{
   bottom: 0px;
+}
+
+.bottom-12{
+  bottom: 3rem;
 }
 
 .bottom-4{

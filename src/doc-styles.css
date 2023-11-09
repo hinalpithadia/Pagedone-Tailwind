@@ -74,7 +74,7 @@
         @apply overflow-x-auto overflow-y-hidden max-h-72 rounded-b-2xl;
     }
    
-    .code-wrapper :not(pre)>code[class*="language-"], .code-wrapper pre[class*="language-"]{
+    .code-wrapper :not(pre)>code[class="language-javascript"], pre[class="language-javascript"]{
         @apply bg-gray-50;
     }
     .code-wrapper pre[class*="language-"] {
