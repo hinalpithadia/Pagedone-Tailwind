@@ -6732,6 +6732,10 @@ input[type="radio"]:checked:disabled + label span{
   padding-top: 2.25rem;
 }
 
+.pb-32{
+  padding-bottom: 8rem;
+}
+
 .text-left{
   text-align: left;
 }
