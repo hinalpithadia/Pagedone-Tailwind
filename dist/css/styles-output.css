@@ -4463,6 +4463,10 @@ input[type="radio"]:checked:disabled + label span{
   max-width: 500px;
 }
 
+.max-w-\[85rem\]{
+  max-width: 85rem;
+}
+
 .max-w-full{
   max-width: 100%;
 }
