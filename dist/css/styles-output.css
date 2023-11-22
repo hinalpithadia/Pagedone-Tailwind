@@ -3057,9 +3057,9 @@ select{
 }
 
 .accordion-content {
-  overflow: hidden;
   max-height: 0;
-  /* transition: max-height 0.6s ease-out; */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
 input[type='checkbox']:checked{
@@ -3664,6 +3664,11 @@ input[type="radio"]:checked:disabled + label span{
 .my-7{
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .-mb-3{
@@ -5527,11 +5532,6 @@ input[type="radio"]:checked:disabled + label span{
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-gray-700{
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
-
 .border-t-transparent{
   border-top-color: transparent;
 }
@@ -6747,6 +6747,10 @@ input[type="radio"]:checked:disabled + label span{
 
 .pt-9{
   padding-top: 2.25rem;
+}
+
+.pl-14{
+  padding-left: 3.5rem;
 }
 
 .text-left{
@@ -10112,10 +10116,6 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:justify-start{
     justify-content: flex-start;
-  }
-
-  .lg\:justify-end{
-    justify-content: flex-end;
   }
 
   .lg\:justify-between{
