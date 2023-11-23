@@ -1140,7 +1140,7 @@
             </div>
           </div>    
             <div class="relative overflow-x-hidden ">
-                <ul id="component-list1" class="component-list mb-5">
+                <ul id="component-list1" class="component-list mb-5" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="horizontal">
                   <li>
                     <div class="component-card ">
                       <div class="component-preview">
@@ -1204,7 +1204,7 @@
                   </li>
                  
                 </ul>
-                <ul id="component-list2" class="component-list">
+                <ul id="component-list2" class="component-list" data-paroller-factor="-0.5" data-paroller-type="foreground" data-paroller-direction="horizontal">
                   <li>
                     <div class="component-card">
                       <div class="component-preview">
@@ -2467,33 +2467,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="js/jquery.paroller.js"></script>
   <script>
-    $(document)
-	.ready(function () {
-		'use strict'; 
-		//initialize paroller.js
-		$('[data-paroller-factor]').paroller();
-		//initialize paroller.js and set options for elements with .paroller class
-		$('#component-list1').paroller({
+  //   $(document)
+	// .ready(function () {
+	// 	'use strict'; 
+	// 	//initialize paroller.js
+	// 	$('[data-paroller-factor]').paroller();
+	// 	//initialize paroller.js and set options for elements with .paroller class
+	// 	$('#component-list1').paroller({
 
-      factor: 0.1, factorXs: 0.2, factorSm: 0.3, factorMd: 0.4, factorLg: 0.5, factorXl: 0.6,
-			type: 'foreground',
-			direction: 'horizontal'
-		});
-	});
+  //     factor: 0.1, factorXs: 0.2, factorSm: 0.3, factorMd: 0.4, factorLg: 0.5, factorXl: 0.6,
+	// 		type: 'foreground',
+	// 		direction: 'horizontal'
+	// 	});
+	// });
+  /*========paroller animation=========*/
+  $('#component-list1').paroller();
+
   </script>
   <script>
-    $(document)
-	.ready(function () {
-		'use strict'; 
-		//initialize paroller.js
-		$('[data-paroller-factor]').paroller();
-		//initialize paroller.js and set options for elements with .paroller class
-		$('#component-list2').paroller({
-      factor: -0.1, factorXs: -0.2, factorSm: -0.3, factorMd: -0.4, factorLg: -0.5, factorXl: -0.6,
-			type: 'foreground',
-			direction: 'horizontal'
-		});
-	});
+  //   $(document)
+	// .ready(function () {
+	// 	'use strict'; 
+	// 	//initialize paroller.js
+	// 	$('[data-paroller-factor]').paroller();
+	// 	//initialize paroller.js and set options for elements with .paroller class
+	// 	$('#component-list2').paroller({
+  //     factor: -0.1, factorXs: -0.2, factorSm: -0.3, factorMd: -0.4, factorLg: -0.5, factorXl: -0.6,
+	// 		type: 'foreground',
+	// 		direction: 'horizontal'
+	// 	});
+	// });
+  $('#component-list2').paroller();
   </script>
   <script>
     $('.icon-slider-one').slick({

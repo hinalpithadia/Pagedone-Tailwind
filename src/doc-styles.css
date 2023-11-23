@@ -62,7 +62,7 @@
     }
     
     .code-copy-button{
-        @apply flex justify-end;
+        @apply flex justify-end items-center text-center;
     }
     .code-copy-button button{
         @apply w-12 flex justify-center items-center border-l border-gray-200;
