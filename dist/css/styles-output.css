@@ -4156,6 +4156,10 @@ input[type="radio"]:checked:disabled + label span{
   max-height: 100%;
 }
 
+.max-h-80{
+  max-height: 20rem;
+}
+
 .min-h-\[100px\]{
   min-height: 100px;
 }
