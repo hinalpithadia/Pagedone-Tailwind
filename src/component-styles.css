@@ -214,7 +214,7 @@
 
     :not(pre)>code[class*="language-"],
     pre[class*="language-"] {
-        background: #f9fafb;
+        background: #f9fafb!important;
     }
 
     .token.number,
