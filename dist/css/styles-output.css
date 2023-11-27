@@ -4160,6 +4160,10 @@ input[type="radio"]:checked:disabled + label span{
   max-height: 100%;
 }
 
+.max-h-80{
+  max-height: 20rem;
+}
+
 .min-h-\[100px\]{
   min-height: 100px;
 }
@@ -9971,6 +9975,11 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:max-h-full{
     max-height: 100%;
+  }
+
+  .lg\:max-h-max{
+    max-height: -moz-max-content;
+    max-height: max-content;
   }
 
   .lg\:min-h-\[780px\]{
