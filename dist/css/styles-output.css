@@ -10006,6 +10006,10 @@ input[type="radio"]:checked:disabled + label span{
     width: 100%;
   }
 
+  .lg\:w-auto{
+    width: auto;
+  }
+
   .lg\:min-w-\[280px\]{
     min-width: 280px;
   }
