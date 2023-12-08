@@ -209,7 +209,7 @@
                             </div>
                         </div>
                         <button data-collapse-toggle="navbar-default" type="button"
-                            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            class="inline-flex items-center p-2 ml-3 text-base text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             aria-controls="navbar-default" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -241,9 +241,9 @@
                                 <div id="menu3"
                                     class="dropdown-menu z-50 absolute top-14 hidden -left-80 bg-white  rounded-lg shadow-[0px_15px_30px_0px_rgba(16,24,40,0.1)]  min-w-[800px]">
                                     <div class="flex justify-between">
-                                        <ul class="text-sm text-gray-700  w-3/5 xl:p-8 lg:p-4 p-2"
+                                        <ul class="text-base text-gray-700  w-3/5 xl:p-8 lg:p-4 p-2"
                                             aria-labelledby="dropdownLargeButton">
-                                            <h6 class="font-medium text-sm text-gray-500 mb-2">Features</h6>
+                                            <h6 class="font-medium text-base text-gray-500 mb-2">Features</h6>
                                             <li class="">
                                                 <a href="#"
                                                     class="px-3 py-5 transition-all duration-500 hover:bg-gray-50 hover:rounded-xl flex items-center ">
@@ -324,7 +324,7 @@
 
                                         </ul>
                                         <div class="bg-gray-50 xl:p-8 lg:p-4 p-2 w-2/5">
-                                            <h6 class="font-medium text-sm text-gray-500 mb-2">App Categories</h6>
+                                            <h6 class="font-medium text-base text-gray-500 mb-2">App Categories</h6>
                                             <ul class="">
                                                 <li>
                                                     <a href="#"
@@ -384,14 +384,14 @@
                     <h1 class="font-manrope text-4xl font-semibold text-gray-900">
                         Frequently asked questions
                     </h1>
-                    <p class=" text-lg font-normal leading-8 text-gray-700 py-8">
+                    <p class=" md:text-lg text-md font-normal leading-8 text-gray-700 py-8">
                         Everything you need to know about Pagedone.
                     </p>
                 
                 </div>
             </div>
             <div class="absolute top-[10%] ">
-                <img src="images/header-shape.png" alt="image" />
+                <img src="https://pagedone.io/asset/uploads/1699265630.png" alt="image" />
             </div>
         </div>
     </header>
@@ -402,14 +402,14 @@
                 <div id="default-accordion-example" class="py-24">
                     <div class="w-full">
                         <div class='accordion-group grid grid-cols-1 gap-0' data-accordion="default-accordion">
-                            <section class="mb-8">
-                                <h3 class="text-xl font-semibold leading-7 text-slate-900 px-8 mb-4">General</h3>
-                                <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                    id='faq-heading-one'>
+                            <section class="mb-10">
+                                <h3 class="text-2xl font-semibold leading-7 text-slate-900 px-4 mb-6">General</h3>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                    id='faq-general-heading-one'>
                                     <button
                                         class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                        aria-controls='faq-collapse-one'>
-                                        <h5 class="font-medium text-lg leading-8">
+                                        aria-controls='faq-general-collapse-one'>
+                                        <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                             What is Pagedone?
                                         </h5>
                                         <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -422,45 +422,17 @@
                                         </svg>
 
                                     </button>
-                                    <div id='faq-collapse-one' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                        aria-labelledby='faq-heading-one'>
-                                        <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Lorem Ipsum is simply
-                                            dummy text
-                                            of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s,</p>
+                                    <div id='faq-general-collapse-one' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                        aria-labelledby='faq-general-heading-one'>
+                                        <p class='font-normal text-base leading-6 text-gray-900 pt-4'>Built on top of Tailwind CSS, Pagedone is a pathbreaking design ecosystem that includes Figma design system, UI kits, block sections, component libraries, and other tools.</p>
                                     </div>
                                 </div>
-                                <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                    id='faq-heading-two'>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                    id='faq-general-heading-two'>
                                     <button
                                         class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                        aria-controls='faq-collapse-two'>
-                                        <h5 class="font-medium text-lg leading-8">
-                                            What do you mean by "Figma assets"?
-                                        </h5>
-                                        <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                            width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                            xmlns='http://www.w3.org/2000/svg'>
-                                            <path
-                                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                                stroke-linejoin='round'></path>
-                                        </svg>
-
-                                    </button>
-                                    <div id='faq-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                        aria-labelledby='faq-heading-two'>
-                                        <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.
-                                        </p>
-                                      
-                                    </div>
-                                </div>
-                                <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                    id='faq-heading-two'>
-                                    <button
-                                        class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                        aria-controls='faq-collapse-two'>
-                                        <h5 class="font-medium text-lg leading-8">
+                                        aria-controls='faq-general-collapse-two'>
+                                        <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                             Why do I need a Pagedone Design System?
                                         </h5>
                                         <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -473,30 +445,48 @@
                                         </svg>
 
                                     </button>
-                                    <div id='faq-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                        aria-labelledby='faq-heading-two'>
-                                        <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Good question! We used
-                                            to ask this all
-                                            the time. You don't realize the power of a high- quality UI kit until you start
-                                            using one. A good UI kit saves you time and money usually spent on meticulously
-                                            building the same components over and over again. It can 10- 100x your workflow.
-                                            A good way to frame it is to ask the question, "will this UI kit save me a few
-                                            hours of work in a project?" If the answer is YES, it's probably worth the
-                                            investment. Then it becomes an asset you can use in unlimited future projects.
+                                    <div id='faq-general-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                        aria-labelledby='faq-general-heading-two'>
+                                        <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                            Good question! We used to ask this all the time. You don't realize the power of a high- quality UI kit until you start using one. A good UI kit saves you time and money usually spent on meticulously building the same components over and over again. It can 10- 100x your workflow. A good way to frame it is to ask the question, "will this UI kit save me a few hours of work in a project?" If the answer is YES, it's probably worth the investment. Then it becomes an asset you can use in unlimited future projects.
                                         </p>
-                                        <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>
-                                            We built Pagedone out of necessity. We tried a bunch of UI kits for Figma, but
-                                            found they lacked in size, flexibility, or quality — usually all three - and we
-                                            ended up having to remake all the poor-quality components.</p>
+                                        <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                            We built Pagedone out of necessity. We tried a bunch of UI kits for Figma, but found they lacked in size, flexibility, or quality — usually all three - and we ended up having to remake all the poor-quality components.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-two'>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                    id='faq-general-heading-three'>
+                                    <button
+                                        class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                        aria-controls='faq-general-collapse-three'>
+                                        <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                            Is Pagedone suitable for both web and mobile design?
+                                        </h5>
+                                        <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                            width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                            xmlns='http://www.w3.org/2000/svg'>
+                                            <path
+                                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                                stroke-linejoin='round'></path>
+                                        </svg>
+
+                                    </button>
+                                    <div id='faq-general-collapse-three' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                        aria-labelledby='faq-general-heading-three'>
+                                        <p class='font-normal text-base leading-6 text-gray-900 pt-4'> Yes, Pagedone is designed to be responsive, making it suitable for various screen sizes and devices. Let's start your new project.
+                                        </p>
+                                      
+                                    </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-general-heading-four'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-two'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        How does support work?
+                                    aria-controls='faq-general-collapse-four'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Can I customise the look and feel of Pagedone for my brand? 
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
                                         width='22' height='22' viewBox='0 0 22 22' fill='none'
@@ -508,99 +498,18 @@
                                     </svg>
 
                                 </button>
-                                <div id='faq-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-two'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>We are aware of the importance of well qualified support, that is why we decided that support will only be provided by the authors that actually worked on this project.
-                                    </p>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>
-                                        You can contact us on this page via email or discuss via the chatroom on the bottom right side of this page.</p>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>
-                                        Feel free to join our Discord channel and let one of the project maintainers know that you have purchased Flowbite Pro. You will then have access to a private support channel.
-                                    </p>    
-                                </div>
-                                </div>
-                                <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-two'>
-                                <button
-                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-two'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        What version of Tailwind CSS is used?
-                                    </h5>
-                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                        xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                            stroke-linejoin='round'></path>
-                                    </svg>
-
-                                </button>
-                                <div id='faq-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-two'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>
-                                        Everything in Pagedone UI is designed and developed for the latest version of Tailwind CSS, which is currently Tailwind CSS v3.3.
+                                <div id='faq-general-collapse-four' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-general-heading-four'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>Yes, Pagedone provides flexibility for customisation, it will let you tailor the design system to align with your brand aesthetics.
                                     </p>
                                 </div>
-                            </div>
-                             </section>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-three'>
-                                <button
-                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-three'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Is Pagedone suitable for both web and mobile design?
-                                    </h5>
-                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                        xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                            stroke-linejoin='round'></path>
-                                    </svg>
-
-                                </button>
-                                <div id='faq-collapse-three' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-three'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes, Pagedone is
-                                        designed to be responsive, making it suitable for various screen sizes and
-                                        devices.</p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-four'>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-general-heading-five'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-four'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Can I customize the look and feel of Pagedone for my brand?
-                                    </h5>
-                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                        xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                            stroke-linejoin='round'></path>
-                                    </svg>
-
-                                </button>
-                                <div id='faq-collapse-four' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-four'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes, Pagedone is
-                                        designed to be responsive, making it suitable for various screen sizes and
-                                        devices.</p>
-                                </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-five'>
-                                <button
-                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-five'>
-                                    <h5 class="font-medium text-lg leading-8">
+                                    aria-controls='faq-general-collapse-five'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                         How often is Pagedone updated?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -613,44 +522,44 @@
                                     </svg>
 
                                 </button>
-                                <div id='faq-collapse-five' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-five'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Updates to Pagedone are
-                                        based on industry trends, user feedback, and emerging design standards. Regular
-                                        updates are scheduled to enhance and improve the system.</p>
+                                <div id='faq-general-collapse-five' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-general-heading-five'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Updates to Pagedone are based on industry trends, user feedback, and emerging design standards. Regular updates are scheduled to enhance and improve the system. Constant and conscious efforts will always be made by our team to keep the system more relevant and useful to the users and the industry. 
+                                    </p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-six'>
-                                <button
-                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-six'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Does Pagedone support dark mode?
-                                    </h5>
-                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                        xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                            stroke-linejoin='round'></path>
-                                    </svg>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                    id='faq-general-heading-six'>
+                                    <button
+                                        class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                        aria-controls='faq-general-collapse-six'>
+                                        <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                            Does Pagedone support dark mode?
+                                        </h5>
+                                        <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                            width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                            xmlns='http://www.w3.org/2000/svg'>
+                                            <path
+                                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                                stroke-linejoin='round'></path>
+                                        </svg>
 
-                                </button>
-                                <div id='faq-collapse-six' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-six'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes, Pagedone is
-                                        designed to be compatible with dark mode, providing a visually comfortable
-                                        experience for users in low-light environments.</p>
+                                    </button>
+                                    <div id='faq-general-collapse-six' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                        aria-labelledby='faq-general-heading-six'>
+                                        <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                            Yes, Pagedone offers facility of dark mode, providing a visually comfortable experience for users in low-light conditions. 
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-seven'>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-general-heading-seven'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-seven'>
-                                    <h5 class="font-medium text-lg leading-8">
+                                    aria-controls='faq-general-collapse-seven'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                         Are there specific design patterns recommended by Pagedone?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -661,21 +570,20 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-seven' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-seven'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes, Pagedone provides
-                                        recommended design patterns that contribute to a seamless and intuitive user
-                                        experience.</p>
+                                <div id='faq-general-collapse-seven' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-general-heading-seven'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Yes, Pagedone provides recommended design patterns that contribute to a flawless and intuitive user experience.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-eight'>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-general-heading-eight'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-eight'>
-                                    <h5 class="font-medium text-lg leading-8">
+                                    aria-controls='faq-general-collapse-eight'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                         Are there community forums or support channels for Pagedone users?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -686,21 +594,20 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-eight' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-eight'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes, Pagedone has a
-                                        community forum, where users can ask questions, share experiences, and seek
-                                        assistance.</p>
+                                <div id='faq-general-collapse-eight' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-general-heading-eight'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Yes, Pagedone has a community forum where users can interact with fellow users, ask questions, share experiences, discuss issues, seek assistance and solve problems.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-nine'>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-general-heading-nine'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-nine'>
-                                    <h5 class="font-medium text-lg leading-8">
+                                    aria-controls='faq-general-collapse-nine'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                         Is there a free version available?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -711,26 +618,20 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-nine' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-nine'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes, we have a free
-                                        version of Pagedone available for you to try out! It's an incredibly powerful
-                                        and large UI kit for Figma in it's on right, but it doesn't use the latest
+                                <div id='faq-general-collapse-nine' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-general-heading-nine'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Sure, feel free to test out our free edition of Pagedone! Though it doesn't employ the most recent capabilities for component properties revealed at Config 2022 or the most recent variables and Auto Layout 5.0 features announced at Config 2023, it is still a very strong and huge UI kit for Figma under development. You are free to copy and use this UI kit in as many projects as you like. Isn't it awesome? Try our version for free right here!
                                     </p>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>
-                                        component property features announced at Config 2022 or the latest variables and
-                                        Auto Layout 5.0 features announced at Config 2023. You can duplicate this free
-                                        UI kit and use it in as many projects as you'd like.</p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-ten'>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-general-heading-ten'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-ten'>
-                                    <h5 class="font-medium text-lg leading-8">
+                                    aria-controls='faq-general-collapse-ten'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                         What does the free version include?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -741,166 +642,20 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-ten' class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-ten'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>The free version of
-                                        Pagedone is essentially a slimmed-down version of the full UI kit. It includes
-                                        global styles, basic components, and a few page examples. Try out the free
-                                        version!</p>
+                                <div id='faq-general-collapse-ten' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-general-heading-ten'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        The free version of Pagedone is essentially a concise version of the full UI kit. It includes global styles, basic components and a few page examples. Try out the free version!
+                                    </p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-eleven'>
+                                </div>
+                                <div class='accordion py-4 px-4 '
+                                id='faq-general-heading-eleven'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-eleven'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Do I need to know how to use Figma?
-                                    </h5>
-                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                        xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                            stroke-linejoin='round'></path>
-                                    </svg>
-
-                                </button>
-                                <div id='faq-collapse-eleven'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-eleven'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>This design system does
-                                        take full advantage of Figma's more advanced features, including nested
-                                        components, variants, Auto Layout 5.0, interactive components, the new component
-                                        properties announced at Config 2022 and the new variables and Auto Layout 5.0
-                                        features announced at Config 2023.</p>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>
-                                        If you're new to Figma, or keen to learn best practices, check out our free
-                                        version to see if it's a good fit. The full version will always be here whenever
-                                        you are ready. We also recommend checking out Figma's Help Center for the best
-                                        tutorials on these features.</p>
-                                </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-twelve'>
-                                <button
-                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-twelve'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Do I need to use variables?
-                                    </h5>
-                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                        xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                            stroke-linejoin='round'></path>
-                                    </svg>
-
-                                </button>
-                                <div id='faq-collapse-twelve'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-twelve'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>You don't have to use
-                                        variables if you don't want or need to!</p>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>
-                                        The decision whether or not to use variables is entirely up to you. We've
-                                        released two different versions of Pagedone Designer and Designer+ one that uses
-                                        color, spacing, and radius variables and one that uses styles instead. Both are
-                                        included so you can try them both and see which suits your workflow better!</p>
-                                </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-thirteen'>
-                                <button
-                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-thirteen'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Do I need to pay for Figma?
-                                    </h5>
-                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                        xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                            stroke-linejoin='round'></path>
-                                    </svg>
-
-                                </button>
-                                <div id='faq-collapse-thirteen'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-thirteen'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Figma's Starter plan is
-                                        100% free for individuals. If you want to use more advanced features such as
-                                        team libraries, dev mode, or multiple variable modes, you'll need to purchase a
-                                        Professional plan. You can review Figma's pricing here.</p>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>
-                                        Figma have generously announced all the paid perks of their plans are 100% free
-                                        for students and educators! You can learn more at Figma Education.</p>
-                                </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-fourteen'>
-                                <button
-                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-fourteen'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Is it a one-time payment?
-                                    </h5>
-                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                        xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                            stroke-linejoin='round'></path>
-                                    </svg>
-
-                                </button>
-                                <div id='faq-collapse-fourteen'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-fourteen'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Just a one-time payment!
-                                        No recurring charges or surprises, we promise.</p>
-                                </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-fifteen'>
-                                <button
-                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-fifteen'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Can I use Pagedone for a single-page application?
-                                    </h5>
-                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                        xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                            stroke-linejoin='round'></path>
-                                    </svg>
-
-                                </button>
-                                <div id='faq-collapse-fifteen'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-fifteen'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes, Pagedone is
-                                        versatile and can be adapted for use in single-page applications, ensuring a
-                                        consistent design language across different sections.</p>
-                                </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-sixteen'>
-                                <button
-                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-sixteen'>
-                                    <h5 class="font-medium text-lg leading-8">
+                                    aria-controls='faq-general-collapse-eleven'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                         What does "lifetime access" exactly mean?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -911,22 +666,128 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-sixteen'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-sixteen'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Once you have purchased
-                                        either the design, code, or both packages, you will have access to all of the
-                                        future updates based on the roadmap, free of charge.</p>
+                                <div id='faq-general-collapse-eleven' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-general-heading-eleven'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Once you have purchased either the code, the design or both packages you will have access to all of the future updates based on the roadmap, at no additional cost.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-seventeen'>
+                                </div>
+                             </section>
+                             <section class="mb-10">
+                                <h3 class="text-2xl font-semibold leading-7 text-slate-900 px-4 mb-6">Designer Plus</h3>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-designer-heading-one'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-seventeen'>
-                                    <h5 class="font-medium text-lg leading-8">
+                                    aria-controls='faq-designer-collapse-one'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Are there specific design patterns recommended by Pagedone?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-designer-collapse-one' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-designer-heading-one'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Yes, Pagedone provides recommended design patterns that contribute to a flawless and intuitive user experience.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-designer-heading-two'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-designer-collapse-two'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Do I need to know how to use Figma?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-designer-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-designer-heading-two'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        This design system does take full advantage of Figma's more advanced features, including nested components, variants, Auto Layout 5.0, interactive components, the new component properties announced at Config 2022 and the new variables and Auto Layout 5.0 features announced at Config 2023.
+                                    </p>
+                                    <p class="font-normal text-base leading-6 text-gray-900 pt-4">
+                                        If you're new to Figma, or keen to learn best practices, we encourage you to check out our free version to see if it's a good fit. The full version will always be here whenever you are ready. We also recommend checking out Figma's Help Center for the best tutorials on these features. Yes, it will be great and more beneficial to you if you are hands on with Figma.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-designer-heading-three'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-designer-collapse-three'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Do I need to use variables?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-designer-collapse-three' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-designer-heading-three'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        You don't have to use variables if you don't want or need to!
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        The decision whether or not to use variables is entirely up to you. We've released two different versions of Pagedone Designer and Designer+ one that uses color, spacing, and radius variables and one that uses styles instead. Both are included so you can try them both and see which suits your workflow better!
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-designer-heading-four'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-designer-collapse-four'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Do I need to pay for Figma?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-designer-collapse-four' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-designer-heading-four'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        For individuals, Figma's Starter plan is completely free. You must purchase a Professional subscription if you wish to use more sophisticated features like team libraries, dev mode, or multiple variable modes. The cost of Figma can be reviewed here.
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Figma has generously declared that all of the premium features of their plans are completely free for educators and students! More information about it is available at Figma for Education.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-designer-heading-five'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-designer-collapse-five'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                         Why do i need a design system?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -937,23 +798,21 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-seventeen'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-seventeen'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>A design system will
-                                        help to streamline the design process, save valuable time and effort, eliminate
-                                        redundancies, and focus on the creative aspects of your projects, all while
-                                        delivering polished and visually appealing designs. It's a no-brainer.</p>
+                                <div id='faq-designer-collapse-five' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-designer-heading-five'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        With a design system, you can produce polished and eye-catching designs while streamlining the process, saving critical time and effort, getting rid of duplication, and concentrating on the creative aspects of your projects.
+                                    </p>
+                                   
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-eighteen'>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-designer-heading-six'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-eighteen'>
-                                    <h5 class="font-medium text-lg leading-8">
+                                    aria-controls='faq-designer-collapse-six'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                         Do I need to be a Figma pro?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -964,24 +823,22 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-eighteen'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-eighteen'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Number one Pagedone is
-                                        suitable for beginners and pros alike. While Pagedone uses advanced Figma
-                                        features, those getting started will find value in the comprehensive library and
-                                        the opportunity to learn the basics of UI Design.</p>
+                                <div id='faq-designer-collapse-six' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-designer-heading-six'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Pagedone is appropriate for both novices and experts. Even though Pagedone makes use of advanced Figma technologies, beginners will benefit from the extensive library and the opportunity to study the fundamentals of UI Design.
+                                    </p>
+                                   
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-nineteen'>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-designer-heading-seven'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-nineteen'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Can I use Pagedone for client projects?
+                                    aria-controls='faq-designer-collapse-seven'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        What do you mean by "Figma assets"?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
                                         width='22' height='22' viewBox='0 0 22 22' fill='none'
@@ -991,22 +848,22 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-nineteen'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-nineteen'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes. You can use
-                                        Pagedone for any number of client projects.</p>
+                                <div id='faq-designer-collapse-seven' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-designer-heading-seven'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images available on the screens.
+                                    </p>
+                                   
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-twenty'>
+                                </div>
+                                <div class='accordion py-4 px-4 '
+                                id='faq-designer-heading-seven'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-twenty'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Is Pagedone suitable for e-commerce design?
+                                    aria-controls='faq-designer-collapse-seven'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Where can I access my download files?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
                                         width='22' height='22' viewBox='0 0 22 22' fill='none'
@@ -1016,23 +873,26 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-twenty'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-twenty'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes, Pagedone is
-                                        adaptable for various design needs, including e-commerce, providing a consistent
-                                        and user-friendly experience for online shoppers.</p>
+                                <div id='faq-designer-collapse-seven' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-designer-heading-seven'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        After you purchased one of the plans, you will get two emails: one for the invoice, and another one with the download files.
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>Soon we will create a way that you will be able to access the download files from the lemonsqueezy.com account.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-twentyone'>
+                                </div>
+                             </section>   
+                             <section class="mb-10">
+                                <h3 class="text-2xl font-semibold leading-7 text-slate-900 px-4 mb-6">Developer Plus</h3>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-developer-heading-one'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-twentyone'>
-                                    <h5 class="font-medium text-lg leading-8">
-                                        Are payment secure?
+                                    aria-controls='faq-developer-collapse-one'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Can I use Pagedone for a single-page application?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
                                         width='22' height='22' viewBox='0 0 22 22' fill='none'
@@ -1042,21 +902,20 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-twentyone'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-twentyone'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes. Payment are
-                                        processed by lemonsqueezy.com and are 128-bit SSL encrypted.</p>
+                                <div id='faq-developer-collapse-one' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-developer-heading-one'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Yes, Pagedone is adaptable and suitable for one-page apps, guaranteeing a unified style for various sections.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                                id='faq-heading-twentytwo'>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-developer-heading-two'>
                                 <button
                                     class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                    aria-controls='faq-collapse-twentytwo'>
-                                    <h5 class="font-medium text-lg leading-8">
+                                    aria-controls='faq-developer-collapse-two'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
                                         Can I integrate Pagedone with my existing design tools?
                                     </h5>
                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
@@ -1067,263 +926,333 @@
                                             stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
                                             stroke-linejoin='round'></path>
                                     </svg>
-
                                 </button>
-                                <div id='faq-collapse-twentytwo'
-                                    class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                    aria-labelledby='faq-heading-twentytwo'>
-                                    <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yes, Pagedone is
-                                        designed to integrate seamlessly with popular design tools, facilitating a
-                                        smooth workflow for designers.</p>
+                                <div id='faq-developer-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-developer-heading-two'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Yes, Pagedone is designed to integrate seamlessly with popular design tools, facilitating a smooth workflow for designers.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                            id='faq-heading-twentytwo'>
-                            <button
-                                class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                aria-controls='faq-collapse-twentytwo'>
-                                <h5 class="font-medium text-lg leading-8">
-                                    What browsers are supported?
-                                </h5>
-                                <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                    width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'>
-                                    <path
-                                        d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                        stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                        stroke-linejoin='round'></path>
-                                </svg>
-
-                            </button>
-                            <div id='faq-collapse-twentytwo'
-                                class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                aria-labelledby='faq-heading-twentytwo'>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>The components and templates in Pagedone UI are designed to work in the latest, stable releases of all major browsers, including Chrome, Firefox, Safari, and Edge.</p>
-
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'> We don't support Internet Explorer 11.</p>
-                            </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                            id='faq-heading-twentytwo'>
-                            <button
-                                class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                aria-controls='faq-collapse-twentytwo'>
-                                <h5 class="font-medium text-lg leading-8">
-                                    How many team members are allowed to use Pagedone Pro with a team license?
-                                </h5>
-                                <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                    width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'>
-                                    <path
-                                        d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                        stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                        stroke-linejoin='round'></path>
-                                </svg>
-
-                            </button>
-                            <div id='faq-collapse-twentytwo'
-                                class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                aria-labelledby='faq-heading-twentytwo'>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>If you purchase a team license you can distribute the license account to as many as 10 team members.</p>
-
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'> If you need access to more than 10 team members, you can either contact us for a special agreement or purchase multiple team licenses which will subsequently increase the number of team members allowed to use Flowbite Pro.</p>
-                            </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                            id='faq-heading-twentytwo'>
-                            <button
-                                class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                aria-controls='faq-collapse-twentytwo'>
-                                <h5 class="font-medium text-lg leading-8">
-                                    Can I get an invoice?
-                                </h5>
-                                <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                    width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'>
-                                    <path
-                                        d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                        stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                        stroke-linejoin='round'></path>
-                                </svg>
-
-                            </button>
-                            <div id='faq-collapse-twentytwo'
-                                class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                aria-labelledby='faq-heading-twentytwo'>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>After opening the checkout process, you will be able to add all of your personal or company information that you want to be available on the invoice. After the purchase, you will get an email with the invoice.</p>
-
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'> If you forgot to complete the information, or you didn't get the invoice by email, feel free to contact us and help you out with the invoice.</p>
-                            </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                            id='faq-heading-twentytwo'>
-                            <button
-                                class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                aria-controls='faq-collapse-twentytwo'>
-                                <h5 class="font-medium text-lg leading-8">
-                                    Where can I access my download files?
-                                </h5>
-                                <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                    width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'>
-                                    <path
-                                        d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                        stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                        stroke-linejoin='round'></path>
-                                </svg>
-
-                            </button>
-                            <div id='faq-collapse-twentytwo'
-                                class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                aria-labelledby='faq-heading-twentytwo'>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>After you purchased one of the plans, you will get two emails: one for the invoice, and another one with the download files.</p>
-
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'> Soon we will create a way that you will be able to access the download files from the Flowbite dashboard from this website.</p>
-                            </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                            id='faq-heading-twentytwo'>
-                            <button
-                                class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                aria-controls='faq-collapse-twentytwo'>
-                                <h5 class="font-medium text-lg leading-8">
-                                    Do I need to purchase a license for each project I work on?
-                                </h5>
-                                <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                    width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'>
-                                    <path
-                                        d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                        stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                        stroke-linejoin='round'></path>
-                                </svg>
-
-                            </button>
-                            <div id='faq-collapse-twentytwo'
-                                class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                aria-labelledby='faq-heading-twentytwo'>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Unlike most other templates/themes, you don't have to buy a new Pagedone UI license every time you want to use it on a new project.
-
-                                </p>
-
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'> As long as what you're building is allowed as per the license, you can build as many sites as you want without ever having to buy an additional license.
-                                    
-                                For more information and examples, read through our license.</p>
-                            </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                            id='faq-heading-twentytwo'>
-                            <button
-                                class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                aria-controls='faq-collapse-twentytwo'>
-                                <h5 class="font-medium text-lg leading-8">
-                                    Can I use Pagedone UI in open source projects?
-                                </h5>
-                                <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                    width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'>
-                                    <path
-                                        d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                        stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                        stroke-linejoin='round'></path>
-                                </svg>
-
-                            </button>
-                            <div id='faq-collapse-twentytwo'
-                                class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                aria-labelledby='faq-heading-twentytwo'>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Yep! As long as what you're building is some sort of actual website and not a derivative component library, theme builder, or other product where the primary purpose is clearly to repackage and redistribute our components, it's totally okay for that project to be open source.
-
-                                </p>
-
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'> 
-                                    For more information and examples of what is and isn't okay, read through our license.</p>
-                            </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                            id='faq-heading-twentytwo'>
-                            <button
-                                class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                aria-controls='faq-collapse-twentytwo'>
-                                <h5 class="font-medium text-lg leading-8">
-                                    Can I upgrade to a team license later?
-                                </h5>
-                                <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                    width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'>
-                                    <path
-                                        d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                        stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                        stroke-linejoin='round'></path>
-                                </svg>
-
-                            </button>
-                            <div id='faq-collapse-twentytwo'
-                                class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                aria-labelledby='faq-heading-twentytwo'>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>No, you cannot use Pagedone UI to create derivative products like themes, UI kits, page builders, or anything else where you would be repackaging and redistributing our components or templates for someone else to use to build their own sites.                                 
-                                </p>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'> 
-                                    For more information and examples of what is and isn't okay, read through our license.</p>
-                            </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                            id='faq-heading-twentytwo'>
-                            <button
-                                class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                aria-controls='faq-collapse-twentytwo'>
-                                <h5 class="font-medium text-lg leading-8">
-                                    Do you offer technical support?
-                                </h5>
-                                <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                    width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'>
-                                    <path
-                                        d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                        stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                        stroke-linejoin='round'></path>
-                                </svg>
-
-                            </button>
-                            <div id='faq-collapse-twentytwo'
-                                class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                aria-labelledby='faq-heading-twentytwo'>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Pagedone UI is a self-serve product, meaning that while we do offer customer support for things like account management and licensing related concerns, the expectation is that customers have the requisite knowledge of Tailwind CSS, HTML, React, and Vue to use the product successfully.</p>
-
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>Because every project is different and the way independently authored pieces of code interact can be complex and time-consuming to understand, we do not offer technical support or consulting.</p>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>   
-                                    Pagedone UI customers do get access to a private Discord community where you can ask questions and help others with their questions in return, but we don't offer first-party technical support or consulting here ourselves.
-                                </p>
-                            </div>
-                            </div>
-                            <div class='accordion py-8 px-8 border-b border-solid border-gray-200'
-                            id='faq-heading-twentytwo'>
-                            <button
-                                class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
-                                aria-controls='faq-collapse-twentytwo'>
-                                <h5 class="font-medium text-lg leading-8">
-                                    What is your refund policy? 
-                                </h5>
-                                <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
-                                    width='22' height='22' viewBox='0 0 22 22' fill='none'
-                                    xmlns='http://www.w3.org/2000/svg'>
-                                    <path
-                                        d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
-                                        stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
-                                        stroke-linejoin='round'></path>
-                                </svg>
-
-                            </button>
-                            <div id='faq-collapse-twentytwo'
-                                class='accordion-content w-full px-0 overflow-hidden pr-4 '
-                                aria-labelledby='faq-heading-twentytwo'>
-                                <p class='font-normal text-sm leading-6 text-gray-900 pt-4'>If you're unhappy with your purchase for any reason, email us at support@pagedone.io within 30 days and we'll refund you in full, no questions asked.</p>
-
-                            </div>
-                            </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-developer-heading-three'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-developer-collapse-three'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        What version of Tailwind CSS is used?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-developer-collapse-three' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-developer-heading-three'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Everything in Pagedone UI is designed and developed for the latest version of Tailwind CSS, which is currently Tailwind CSS v3.3.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 '
+                                id='faq-developer-heading-four'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-developer-collapse-four'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        What browsers are supported?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-developer-collapse-four' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-developer-heading-four'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        The components and templates in Pagedone UI are designed to work in the latest, stable releases of all major browsers, including Chrome, Firefox, Safari and Edge.
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>However, we don't encourage you to use Internet Explorer 11.                       
+                                    </p>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="mb-10">
+                                <h3 class="text-2xl font-semibold leading-7 text-slate-900 px-4 mb-6">Payment</h3>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-payment-heading-one'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-payment-collapse-one'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Is it a one-time payment?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-payment-collapse-one' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-payment-heading-one'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Just a one-time payment! No ongoing charges no hidden fees.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-payment-heading-two'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-payment-collapse-two'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Are payment secure?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-payment-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-payment-heading-two'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Yes. Payment are processed by lemonsqueezy.com and are 128-bit SSL encrypted.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-payment-heading-three'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-payment-collapse-three'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Can I get an invoice?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-payment-collapse-three' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-payment-heading-three'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Surely you will get the invoice with all the details you have mentioned either personally or company. Once the checkout is done successfully you will receive invoice email.
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>If you forgot to complete the information, or you did not get the invoice by email, feel free to contact us and we will help you get your invoice.</p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 '
+                                id='faq-payment-heading-four'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-payment-collapse-four'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Do I need to purchase a license for each project I work on?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-payment-collapse-four' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-payment-heading-four'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Unlike most other templates/themes, you don't have to buy a new Pagedone UI license every time you want to use it on a new project.
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        As long as what you're building is allowed as per the license, you can build countless websites without ever having to buy an additional license.</p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>    
+                                        So, the quick answer is you don't need to buy license for different project. For more information and examples please check our licence. 
+                                    </p>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="mb-10">
+                                <h3 class="text-2xl font-semibold leading-7 text-slate-900 px-4 mb-6">Support</h3>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-support-heading-one'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-support-collapse-one'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        How does support work?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-support-collapse-one' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-support-heading-one'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        We understand the importance of the support, that is why we decided that support will only be provided by in-house design team that actually worked on this project.
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>You can contact us on this page via email or discuss via the chatroom on the bottom right side of this page. For more queries you can either mail us on support@pagedone.io or create a support ticket.                        
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-support-heading-two'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-support-collapse-two'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Do you offer technical support?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-support-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-support-heading-two'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Pagedone UI works predominantly on DIY (do it yourself) model, while we do offer support for things like account management and licensing related concerns, the expectation is that customers have the requisite knowledge of Tailwind CSS, HTML, React, and Vue to use the product successfully. Honestly it is not for layman certain design level knowledge is essential.
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>Since every single project is different it becomes extremely challenging and time consuming to understand hence, we offer neither consulting nor technical support.                        
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>Pagedone UI customers do get access to a private Discord community where one can ask questions and help others with their questions in return, but we don't offer direct technical support or consulting at Pagedone.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 '
+                                id='faq-support-heading-three'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-support-collapse-three'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        What is your refund policy? 
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-support-collapse-three' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-support-heading-three'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        If you're not satisfied with your purchase for any reason, drop us an email at <span class="text-indigo-600">support@pagedone.io</span> within 30 days and we'll refund you in full, no questions asked. Now smile.
+                                    </p>
+                                  
+                                </div>
+                                </div>
+                            </section>
+                            <section class="mb-10">
+                                <h3 class="text-2xl font-semibold leading-7 text-slate-900 px-4 mb-6">Licence</h3>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-licence-heading-one'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-licence-collapse-one'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Can I use Pagedone for client projects?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-licence-collapse-one' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-licence-heading-one'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Yes. You can use Pagedone for any number of client projects, no strings attached.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 border-b border-solid border-gray-200'
+                                id='faq-licence-heading-two'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-licence-collapse-two'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Is Pagedone suitable for e-commerce design?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-licence-collapse-two' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-licence-heading-two'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Yes, Pagedone is adaptable for various design needs, including e-commerce, providing a consistent and user-friendly experience for online shoppers.
+                                    </p>
+                                </div>
+                                </div>
+                                <div class='accordion py-4 px-4 '
+                                id='faq-developer-heading-three'>
+                                <button
+                                    class='accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                                    aria-controls='faq-developer-collapse-three'>
+                                    <h5 class="font-medium md:text-lg text-md leading-8 text-left">
+                                        Can I use Pagedone UI in open source projects?
+                                    </h5>
+                                    <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                                        width='22' height='22' viewBox='0 0 22 22' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <path
+                                            d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                            stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                                            stroke-linejoin='round'></path>
+                                    </svg>
+                                </button>
+                                <div id='faq-developer-collapse-three' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                                    aria-labelledby='faq-developer-heading-three'>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>
+                                        Yes absolutely! The only conditions are building genuine website and not something imitative or clone of something, library, theme builder or any such offerings where the objective is to repackage and offer our components, it is totally okay for that project to be open source. Together, let's create a better world for us and generations to follow by making lives easier.
+                                    </p>
+                                    <p class='font-normal text-base leading-6 text-gray-900 pt-4'>For more information and examples of what is and isn't okay, read through our license.                                
+                                    </p>
+                                </div>
+                                </div>
+                             </section>   
                         </div>
                     </div>
                 </div>
+               
             </div>
         </div>
     </main>

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     tabs();
     const speeddial = document.querySelector('.speeddial-button');
-    const defaultAccordionGroup = document.querySelector('.accordion-group[data-accordion="default-accordion"]');
+    const defaultAccordionGroups = document.querySelectorAll('.accordion-group[data-accordion="default-accordion"]');
     const alwaysOpenAccordionGroup = document.querySelector('.accordion-group[data-accordion="always-open-accordion"]');
     const nestedAccordionGroup = document.querySelector('.accordion-group[data-accordion="nested-accordion"]');
     const openModalButtons = document.querySelectorAll('.modal-button');
@@ -22,21 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
     if (tooltipsButtons) {
         tooltips();
     }
-    if (openModalButtons) {
+    if (openModalButtons.length > 0) {
         modal();
     }
     if (speeddial) {
         speedDial();
     }
-    if (defaultAccordionGroup) {
-        defaultAccordion(defaultAccordionGroup);
+
+    if (defaultAccordionGroups) {
+        defaultAccordion(defaultAccordionGroups);
     }
     if (alwaysOpenAccordionGroup) {
         alwaysOpenAccordion(alwaysOpenAccordionGroup);
     }
     if (nestedAccordionGroup) {
-        nestedAccordion("faq-accordion", "faq-panel");
-        nestedAccordion("mobile-faq-menu", "mobile-faq-panel");
+        nestedAccordion("nested-sub-heading", "nested-sub-body");
+        nestedAccordion("nested-accordion-toggle", "nested-accordion-content");
     }
 
 });
@@ -83,35 +84,35 @@ document.addEventListener('DOMContentLoaded', () => {
 //     // });
 // }
 
-function defaultAccordion(defaultAccordionGroup) {
+function defaultAccordion(defaultAccordionGroups) {
+    defaultAccordionGroups.forEach(defaultAccordionGroup => {
+        const accordionButtons = defaultAccordionGroup.querySelectorAll('.accordion-toggle');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const accordion = button.parentElement;
+                const content = button.nextElementSibling;
+                const isOpen = content.style.maxHeight !== '';
 
-    const accordionButtons = defaultAccordionGroup.querySelectorAll('.accordion-toggle');
-
-    accordionButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const accordion = button.parentElement;
-            const content = button.nextElementSibling;
-            const isOpen = content.style.maxHeight !== '';
-
-            if (isOpen) {
-                close(button);
-                content.style.maxHeight = '';
-                accordion.classList.remove('active');
-            } else {
-                content.style.maxHeight = content.scrollHeight + 'px';
-                accordion.classList.add('active');
-                const otherButtons = defaultAccordionGroup.querySelectorAll('.accordion-toggle');
-                otherButtons.forEach(otherButton => {
-                    if (otherButton !== button) {
-                        const otherAccordion = otherButton.parentElement;
-                        otherAccordion.classList.remove('active');
-                        close(otherButton, accordion);
-                    }
-                });
-            }
+                if (isOpen) {
+                    close(button);
+                    content.style.maxHeight = '';
+                    accordion.classList.remove('active');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    accordion.classList.add('active');
+                    accordionButtons.forEach(otherButton => {
+                        if (otherButton !== button) {
+                            const otherAccordion = otherButton.parentElement;
+                            otherAccordion.classList.remove('active');
+                            close(otherButton);
+                        }
+                    });
+                }
+            });
         });
     });
 }
+
 
 function close(element, accordion) {
     const content = element.nextElementSibling;
@@ -146,7 +147,6 @@ function close(element, accordion) {
 //     });
 // }
 
-
 function alwaysOpenAccordion(alwaysOpenAccordionGroup) {
     const accordionButtons = alwaysOpenAccordionGroup.querySelectorAll('.accordion-toggle');
     console.log(accordionButtons.length);
@@ -155,7 +155,7 @@ function alwaysOpenAccordion(alwaysOpenAccordionGroup) {
 
     for (i = 0; i < accordionButtons.length; i++) {
         accordionButtons[i].addEventListener("click", function () {
-            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
             var acc_panel = this.nextElementSibling;
 
             if (acc_panel.style.maxHeight) {
@@ -389,6 +389,7 @@ function modal() {
         if (modal) {
             document.body.classList.add('overflow-hidden');
             modal.classList.remove('hidden');
+            // modal.style.display = "";
             setTimeout((function () {
                 modal.classList.add('open');
             }
@@ -398,11 +399,10 @@ function modal() {
     }
 
     function closeModal(modalId) {
-        console.log(modalId);
         const modal = document.getElementById(modalId);
         if (modal) {
             modal.classList.add('hidden');
-            modal.classList.remove('open')
+            modal.classList.remove('open');
             document.body.classList.remove('overflow-hidden');
         }
         backdrop.classList.add('hidden');
@@ -431,7 +431,9 @@ function modal() {
     window.onclick = function (event) {
         var modal = document.getElementById(currentModal);
         if (event.target == modal) {
-            modal.style.display = "none";
+            modal.classList.remove('open');
+            modal.classList.add('hidden');
+            // modal.style.display = "none";
             var backdrop = document.getElementById('backdrop');
             backdrop.classList.add('hidden');
             document.body.classList.remove('overflow-hidden');
@@ -457,6 +459,195 @@ function dropdown(params) {
                 targetDropdown.classList.add("hidden");
             }
 
+        })
+    })
+}
+
+// function drawer() {
+//     document.addEventListener("DOMContentLoaded", function () {
+//         const drawerButtons = document.querySelectorAll('.drawer-button');
+
+//         // var showDrawerButton = document.getElementsByClassName("");
+//         // var hideDrawerButton = document.querySelector("#drawer-example [data-drawer-hide]");
+//         // var getDrawerPosition = showDrawerButton.getAttribute("data-drawer-position")
+
+
+//         drawerButtons.forEach(drawerButton => {
+//             drawerButton.addEventListener('click', function (event) {
+//                 var getDrawerPosition = drawerButton.getAttribute("data-drawer-position")
+//                 if (getDrawerPosition == 'left') {
+//                     var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+//                     var drawer = document.getElementById(getDrawerId);
+//                     drawer.classList.add("-translate-x-full");
+//                     drawer.classList.remove("translate-x-full");
+
+//                     function openDrawer() {
+//                         var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+//                         var drawer = document.getElementById(getDrawerId);
+//                         drawer.classList.remove("-translate-x-full");
+//                         drawer.setAttribute("aria-hidden", "false");
+//                         drawer.focus();
+//                     }
+
+//                     function closeDrawer() {
+//                         var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+//                         var drawer = document.getElementById(getDrawerId);
+//                         drawer.classList.add("-translate-x-full");
+//                         drawer.setAttribute("aria-hidden", "true");
+//                     }
+//                 }
+//                 if (getDrawerPosition == 'right') {
+//                     // console.log(getDrawerPosition);
+//                     var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+//                     var drawer = document.getElementById(getDrawerId);
+//                     drawer.classList.remove("-translate-x-full");
+//                     drawer.classList.add("translate-x-full");
+
+//                     function openDrawer() {
+//                         drawer.classList.remove("translate-x-full");
+//                         drawer.setAttribute("aria-hidden", "false");
+//                         drawer.focus();
+//                     }
+
+//                     function closeDrawer() {
+//                         drawer.classList.add("translate-x-full");
+//                         drawer.setAttribute("aria-hidden", "true");
+//                     }
+//                 }
+//                 if (getDrawerPosition == 'top') {
+//                     var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+//                     var drawer = document.getElementById(getDrawerId);
+//                     drawer.classList.remove("-translate-x-full");
+//                     drawer.classList.add("-translate-y-full");
+
+//                     function openDrawer() {
+//                         drawer.classList.remove("-translate-y-full");
+//                         drawer.setAttribute("aria-hidden", "false");
+//                         drawer.focus();
+//                     }
+
+//                     function closeDrawer() {
+//                         drawer.classList.add("-translate-y-full");
+//                         drawer.setAttribute("aria-hidden", "true");
+//                     }
+//                 }
+//                 if (getDrawerPosition == 'bottom') {
+//                     var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+//                     var drawer = document.getElementById(getDrawerId);
+//                     drawer.classList.remove("translate-y-full");
+//                     drawer.classList.add("translate-none");
+
+//                     function openDrawer() {
+//                         drawer.classList.remove("translate-y-full");
+//                         drawer.setAttribute("aria-hidden", "false");
+//                         drawer.focus();
+//                     }
+
+//                     function closeDrawer() {
+//                         drawer.classList.add("translate-y-full");
+//                         drawer.setAttribute("aria-hidden", "true");
+//                     }
+//                 }
+
+//                 drawerButton.addEventListener("click", openDrawer);
+//                 console.log(getDrawerId);
+//                 document.querySelector("#" + getDrawerId + " [data-drawer-hide]").addEventListener("click", closeDrawer);
+//             })
+//         })
+//     });
+// }
+
+
+
+
+
+    // var showDrawerButton = document.getElementsByClassName("");
+    // var hideDrawerButton = document.querySelector("#drawer-example [data-drawer-hide]");
+    // var getDrawerPosition = showDrawerButton.getAttribute("data-drawer-position")
+
+function drawer() {
+    const drawerButtons = document.querySelectorAll('.drawer-button');
+    drawerButtons.forEach(drawerButton => {
+        drawerButton.addEventListener('click', function (event) {
+
+            var getDrawerPosition = drawerButton.getAttribute("data-drawer-position")
+            if (getDrawerPosition == 'left') {
+                var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                var drawer = document.getElementById(getDrawerId);
+                drawer.classList.add("-translate-x-full");
+                drawer.classList.remove("translate-x-full");
+
+                function openDrawer() {
+                    var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                    var drawer = document.getElementById(getDrawerId);
+                    drawer.classList.remove("-translate-x-full");
+                    drawer.setAttribute("aria-hidden", "false");
+                    drawer.focus();
+                }
+
+                function closeDrawer() {
+                    var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                    var drawer = document.getElementById(getDrawerId);
+                    drawer.classList.add("-translate-x-full");
+                    drawer.setAttribute("aria-hidden", "true");
+                }
+            }
+            if (getDrawerPosition == 'right') {
+                // console.log(getDrawerPosition);
+                var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                var drawer = document.getElementById(getDrawerId);
+                drawer.classList.remove("-translate-x-full");
+                drawer.classList.add("translate-x-full");
+
+                function openDrawer() {
+                    drawer.classList.remove("translate-x-full");
+                    drawer.setAttribute("aria-hidden", "false");
+                    drawer.focus();
+                }
+
+                function closeDrawer() {
+                    drawer.classList.add("translate-x-full");
+                    drawer.setAttribute("aria-hidden", "true");
+                }
+            }
+            if (getDrawerPosition == 'top') {
+                var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                var drawer = document.getElementById(getDrawerId);
+                drawer.classList.remove("-translate-x-full");
+                drawer.classList.add("-translate-y-full");
+
+                function openDrawer() {
+                    drawer.classList.remove("-translate-y-full");
+                    drawer.setAttribute("aria-hidden", "false");
+                    drawer.focus();
+                }
+
+                function closeDrawer() {
+                    drawer.classList.add("-translate-y-full");
+                    drawer.setAttribute("aria-hidden", "true");
+                }
+            }
+            if (getDrawerPosition == 'bottom') {
+                var getDrawerId = drawerButton.getAttribute("data-drawer-target")
+                var drawer = document.getElementById(getDrawerId);
+                drawer.classList.remove("translate-y-full");
+                drawer.classList.add("translate-none");
+
+                function openDrawer() {
+                    drawer.classList.remove("translate-y-full");
+                    drawer.setAttribute("aria-hidden", "false");
+                    drawer.focus();
+                }
+
+                function closeDrawer() {
+                    drawer.classList.add("translate-y-full");
+                    drawer.setAttribute("aria-hidden", "true");
+                }
+            }
+
+            drawerButton.addEventListener("click", openDrawer);
+            console.log(getDrawerId);
+            document.querySelector("#" + getDrawerId + " [data-drawer-hide]").addEventListener("click", closeDrawer);
         })
     })
 }

@@ -6,6 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
   <link href="../css/styles-output.css" rel="stylesheet">
+  <style>
+   
+       
+         .nested-accordion-toggle {
+            margin: auto;
+            padding: 20px;
+            border-bottom: solid #eeeeee 1px;
+        }
+
+        .nested-sub-heading {
+            background-color: #fff;
+            color: #444;
+            cursor: pointer;
+            padding: 18px 18px 0px;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            margin-bottom: 0px;
+            border-top: solid #f4f4f4 1px;
+            font-weight: 700;
+        }
+
+       
+
+
+        div.nested-sub-body {
+            padding: 5px 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            opacity: 0;
+            text-align: left;
+            padding-left: 18px;
+            max-width: 580px;
+            margin: 5px 0px;
+        }
+
+        div.nested-sub-body.show {
+            opacity: 1;
+            max-height: 750px;
+        }
+
+        div.nested-accordion-content {
+            padding: 5px 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            opacity: 0;
+            text-align: left;
+            padding-left: 18px;
+            max-width: 580px;
+            margin: 5px 0px;
+        }
+
+        div.nested-accordion-content.show {
+            opacity: 1;
+            max-height: 750px;
+        }
+  </style>
 </head>
 
 <body class="font-inter ">
@@ -725,38 +787,38 @@
                             </div>
                             <div class="code-main">
                                 <div class="code-wrapper">
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;accordion-group&quot;&gt;
-  &lt;div class=&quot;accordion pb-4 border-b border-solid border-gray-200&quot; id=&quot;basic-heading-one-default&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600&quot; aria-controls=&quot;basic-collapse-one-default&quot;&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&apos;accordion-group&apos; data-accordion=&quot;default-accordion&quot;&gt;
+  &lt;div class=&apos;accordion pb-4 border-b border-solid border-gray-200&apos; id=&apos;basic-heading-one-default&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600&apos; aria-controls=&apos;basic-collapse-one-default&apos;&gt;
       &lt;h5&gt; How to create an account? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&apos; width=&apos;22&apos; height=&apos;22&apos; viewBox=&apos;0 0 22 22&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-one-default&quot; class=&quot;accordion-content hidden w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-heading-one-default&quot;&gt;
-      &lt;p class=&quot;text-base text-gray-600 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-one-default&apos; class=&apos;accordion-content w-full px-0 overflow-hidden pr-4 &apos; aria-labelledby=&apos;basic-heading-one-default&apos;&gt;
+      &lt;p class=&apos;text-base text-gray-600 leading-6&apos;&gt;To create an account, find the &apos;Sign up&apos; or &apos;Create account&apos; button, fill out the registration form with your personal information, and click &apos;Create account&apos; or &apos;Sign up.&apos; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;accordion py-4 border-b border-solid border-gray-200&quot; id=&quot;basic-heading-two-default&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600&quot; aria-controls=&quot;basic-collapse-two-default&quot;&gt;
+  &lt;div class=&apos;accordion py-4 border-b border-solid border-gray-200&apos; id=&apos;basic-heading-two-default&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600&apos; aria-controls=&apos;basic-collapse-two-default&apos;&gt;
       &lt;h5&gt; Have any trust issue? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180&apos; width=&apos;22&apos; height=&apos;22&apos; viewBox=&apos;0 0 22 22&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-two-default&quot; class=&quot;accordion-content hidden w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-heading-two-default&quot;&gt;
-      &lt;p class=&quot;text-sm text-gray-500 leading-6&quot;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-two-default&apos; class=&apos;accordion-content  w-full px-0 overflow-hidden  pr-4 &apos; aria-labelledby=&apos;basic-heading-two-default&apos;&gt;
+      &lt;p class=&apos;text-sm text-gray-500 leading-6&apos;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;accordion py-4 border-b border-solid border-gray-200&quot; id=&quot;basic-heading-three-default&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600&quot; aria-controls=&quot;basic-collapse-three-default&quot;&gt;
+  &lt;div class=&apos;accordion py-4 border-b border-solid border-gray-200&apos; id=&apos;basic-heading-three-default&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600&apos; aria-controls=&apos;basic-collapse-three-default&apos;&gt;
       &lt;h5&gt; How can I reset my password? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180&apos; width=&apos;22&apos; height=&apos;22&apos; viewBox=&apos;0 0 22 22&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-three-default&quot; class=&quot;accordion-content hidden w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-heading-three-default&quot;&gt;
-      &lt;p class=&quot;text-sm text-gray-500 leading-6&quot;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-three-default&apos; class=&apos;accordion-content  w-full px-0 overflow-hidden  pr-4 &apos; aria-labelledby=&apos;basic-heading-three-default&apos;&gt;
+      &lt;p class=&apos;text-sm text-gray-500 leading-6&apos;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -775,8 +837,8 @@
                         <div id="accordion-always-open-example" class="code-preview">
                             <div class="w-full">
                               <div class='accordion-group' data-accordion="always-open-accordion">
-                                <div class='accordion pb-4 border-b border-solid border-gray-200' id='basic-heading-one-with-arrow-always-open'>
-                                    <button class='accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 always-open' aria-controls='basic-collapse-one-with-arrow-always-open'>
+                                <div class='accordion pb-4 border-b border-solid border-gray-200 active' id='basic-heading-one-with-arrow-always-open'>
+                                    <button class='accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 always-open ' aria-controls='basic-collapse-one-with-arrow-always-open'>
                                             <h5>
                                                 How to create an account?                                   
                                             </h5>
@@ -785,7 +847,7 @@
                                                 </svg>                                    
                                         
                                     </button>
-                                    <div id='basic-collapse-one-with-arrow-always-open' class='accordion-content w-full px-0 overflow-hidden pr-4 mt-3 active' aria-labelledby='basic-heading-one-with-arrow-always-open'>
+                                    <div id='basic-collapse-one-with-arrow-always-open' class='accordion-content w-full px-0 overflow-hidden pr-4  active' style="max-height: 72px;" aria-labelledby='basic-heading-one-with-arrow-always-open'>
                                         <p class='text-base text-gray-600 leading-6'>To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.</p>
                                     </div>
                                 </div>
@@ -799,7 +861,7 @@
                                             </svg>                                    
                                     
                                     </button>
-                                    <div id='basic-collapse-two-with-arrow-always-open' class='accordion-content  w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3' aria-labelledby='basic-heading-two-with-arrow-always-open'>
+                                    <div id='basic-collapse-two-with-arrow-always-open' class='accordion-content  w-full px-0 overflow-hidden   pr-4' aria-labelledby='basic-heading-two-with-arrow-always-open'>
                                         <p class='text-sm text-gray-500 leading-6'>Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.</p>
                                     </div>
                                 </div>
@@ -813,7 +875,7 @@
                                             </svg>                                    
                                     
                                     </button>
-                                    <div id='basic-collapse-three-with-arrow-always-open' class='accordion-content  w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3' aria-labelledby='basic-heading-three-with-arrow-always-open'>
+                                    <div id='basic-collapse-three-with-arrow-always-open' class='accordion-content  w-full px-0 overflow-hidden   pr-4' aria-labelledby='basic-heading-three-with-arrow-always-open'>
                                         <p class='text-sm text-gray-500 leading-6'>Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.</p>
                                     </div>
                                 </div>
@@ -840,38 +902,38 @@
                             </div>
                             <div class="code-main">
                                 <div class="code-wrapper">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;accordion-group&quot;&gt;
-  &lt;div class=&quot;accordion pb-4 border-b border-solid border-gray-200&quot; id=&quot;basic-heading-one-with-arrow-always-open&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600&quot; aria-controls=&quot;basic-collapse-one-with-arrow&quot;&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">  &lt;div class=&apos;accordion-group&apos; data-accordion=&quot;always-open-accordion&quot;&gt;
+  &lt;div class=&apos;accordion pb-4 border-b border-solid border-gray-200 active&apos; id=&apos;basic-heading-one-with-arrow-always-open&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 always-open &apos; aria-controls=&apos;basic-collapse-one-with-arrow-always-open&apos;&gt;
       &lt;h5&gt; How to create an account? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&apos; width=&apos;22&apos; height=&apos;22&apos; viewBox=&apos;0 0 22 22&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-one-with-arrow-always-open&quot; class=&quot;accordion-content w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-heading-one-with-arrow&quot;&gt;
-      &lt;p class=&quot;text-base text-gray-600 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-one-with-arrow-always-open&apos; class=&apos;accordion-content w-full px-0 overflow-hidden pr-4  active&apos; style=&quot;max-height: 72px;&quot; aria-labelledby=&apos;basic-heading-one-with-arrow-always-open&apos;&gt;
+      &lt;p class=&apos;text-base text-gray-600 leading-6&apos;&gt;To create an account, find the &apos;Sign up&apos; or &apos;Create account&apos; button, fill out the registration form with your personal information, and click &apos;Create account&apos; or &apos;Sign up.&apos; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;accordion py-4 border-b border-solid border-gray-200&quot; id=&quot;basic-heading-two-with-arrow-always-open&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600&quot; aria-controls=&quot;basic-collapse-two-with-arrow&quot;&gt;
+  &lt;div class=&apos;accordion py-4 border-b border-solid border-gray-200&apos; id=&apos;basic-heading-two-with-arrow-always-open&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600&apos; aria-controls=&apos;basic-collapse-two-with-arrow-always-open&apos;&gt;
       &lt;h5&gt; Have any trust issue? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180&apos; width=&apos;22&apos; height=&apos;22&apos; viewBox=&apos;0 0 22 22&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-two-with-arrow-always-open&quot; class=&quot;accordion-content hidden w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-heading-two-with-arrow&quot;&gt;
-      &lt;p class=&quot;text-sm text-gray-500 leading-6&quot;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-two-with-arrow-always-open&apos; class=&apos;accordion-content  w-full px-0 overflow-hidden   pr-4&apos; aria-labelledby=&apos;basic-heading-two-with-arrow-always-open&apos;&gt;
+      &lt;p class=&apos;text-sm text-gray-500 leading-6&apos;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;accordion py-4 border-b border-solid border-gray-200&quot; id=&quot;basic-heading-three-with-arrow-always-open&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600&quot; aria-controls=&quot;basic-collapse-three-with-arrow&quot;&gt;
+  &lt;div class=&apos;accordion py-4 border-b border-solid border-gray-200&apos; id=&apos;basic-heading-three-with-arrow-always-open&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600&apos; aria-controls=&apos;basic-collapse-three-with-arrow-always-open&apos;&gt;
       &lt;h5&gt; How can I reset my password? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180&apos; width=&apos;22&apos; height=&apos;22&apos; viewBox=&apos;0 0 22 22&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-three-with-arrow-always-open&quot; class=&quot;accordion-content hidden w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-heading-three-with-arrow&quot;&gt;
-      &lt;p class=&quot;text-sm text-gray-500 leading-6&quot;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-three-with-arrow-always-open&apos; class=&apos;accordion-content  w-full px-0 overflow-hidden   pr-4&apos; aria-labelledby=&apos;basic-heading-three-with-arrow-always-open&apos;&gt;
+      &lt;p class=&apos;text-sm text-gray-500 leading-6&apos;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -903,7 +965,7 @@
                                         </svg>
                             
                                     </button>
-                                    <div id='basic-collapse-one-with-icon' class='accordion-content w-full  overflow-hidden pr-4 mt-2' aria-labelledby='basic-heading-one'>
+                                    <div id='basic-collapse-one-with-icon' class='accordion-content w-full  overflow-hidden pr-4' aria-labelledby='basic-heading-one'>
                                         <p class='text-base text-gray-900 leading-6'>To create an account, find the 'Sign up' or 'Create
                                             account' button, fill out the registration form with your personal information, and click
                                             'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start
@@ -923,7 +985,7 @@
                                         </svg>
                             
                                     </button>
-                                    <div id='basic-collapse-two-with-icon' class='accordion-content w-full  overflow-hidden transition-[height] duration-300 pr-4 mt-2' aria-labelledby='basic-heading-two'>
+                                    <div id='basic-collapse-two-with-icon' class='accordion-content w-full  overflow-hidden   pr-4' aria-labelledby='basic-heading-two'>
                                         <p class='text-base text-gray-900 leading-6'>To create an account, find the 'Sign up' or 'Create
                                             account' button, fill out the registration form with your personal information, and click
                                             'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start
@@ -943,7 +1005,7 @@
                                         </svg>
                             
                                     </button>
-                                    <div id='basic-collapse-three-with-icon' class='accordion-content w-full  overflow-hidden transition-[height] duration-300 pr-4 mt-2' aria-labelledby='basic-heading-three'>
+                                    <div id='basic-collapse-three-with-icon' class='accordion-content w-full  overflow-hidden   pr-4 ' aria-labelledby='basic-heading-three'>
                                         <p class='text-base text-gray-900 leading-6'>To create an account, find the 'Sign up' or 'Create
                                             account' button, fill out the registration form with your personal information, and click
                                             'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start
@@ -973,47 +1035,47 @@
                             </div>
                             <div class="code-main">
                                 <div class="code-wrapper">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;accordion-group&quot;&gt;
-  &lt;div class=&quot;accordion border border-solid border-gray-300 p-4 rounded-xl transition duration-500 accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4&quot; id=&quot;basic-heading-one&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between text-left text-base leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 &quot; aria-controls=&quot;basic-collapse-one&quot;&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&apos;accordion-group&apos; data-accordion=&quot;default-accordion&quot;&gt;
+  &lt;div class=&apos;accordion border border-solid border-gray-300 p-4 rounded-xl transition duration-500 accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4&apos; id=&apos;basic-heading-one-with-icon&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between text-left text-base leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 &apos; aria-controls=&apos;basic-collapse-one-with-icon&apos;&gt;
       &lt;h5&gt; How can I reset my password? &lt;/h5&gt;
-      &lt;svg class=&quot;w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M6 12H18M12 18V6&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600&apos; viewBox=&apos;0 0 24 24&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M6 12H18M12 18V6&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
-      &lt;svg class=&quot;w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M6 12H18&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600&apos; viewBox=&apos;0 0 24 24&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M6 12H18&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-one&quot; class=&quot;accordion-content w-full hidden overflow-hidden transition-[height] duration-300 pr-4 mt-2&quot; aria-labelledby=&quot;basic-heading-one&quot;&gt;
-      &lt;p class=&quot;text-base text-gray-900 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-one-with-icon&apos; class=&apos;accordion-content w-full  overflow-hidden pr-4&apos; aria-labelledby=&apos;basic-heading-one&apos;&gt;
+      &lt;p class=&apos;text-base text-gray-900 leading-6&apos;&gt;To create an account, find the &apos;Sign up&apos; or &apos;Create account&apos; button, fill out the registration form with your personal information, and click &apos;Create account&apos; or &apos;Sign up.&apos; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;accordion border border-solid border-gray-300 p-4 rounded-xl transition duration-500 accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4&quot; id=&quot;basic-heading-two&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between text-left text-base leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 &quot; aria-controls=&quot;basic-collapse-two&quot;&gt;
+  &lt;div class=&apos;accordion border border-solid border-gray-300 p-4 rounded-xl  accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4&apos; id=&apos;basic-heading-two-with-icon&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between text-left text-base leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 &apos; aria-controls=&apos;basic-collapse-two-with-icon&apos;&gt;
       &lt;h5&gt; How do I update my billing information? &lt;/h5&gt;
-      &lt;svg class=&quot;w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M6 12H18M12 18V6&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600&apos; viewBox=&apos;0 0 24 24&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M6 12H18M12 18V6&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
-      &lt;svg class=&quot;w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M6 12H18&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600&apos; viewBox=&apos;0 0 24 24&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M6 12H18&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-two&quot; class=&quot;accordion-content w-full hidden overflow-hidden transition-[height] duration-300 pr-4 mt-2&quot; aria-labelledby=&quot;basic-heading-two&quot;&gt;
-      &lt;p class=&quot;text-base text-gray-900 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-two-with-icon&apos; class=&apos;accordion-content w-full  overflow-hidden   pr-4&apos; aria-labelledby=&apos;basic-heading-two&apos;&gt;
+      &lt;p class=&apos;text-base text-gray-900 leading-6&apos;&gt;To create an account, find the &apos;Sign up&apos; or &apos;Create account&apos; button, fill out the registration form with your personal information, and click &apos;Create account&apos; or &apos;Sign up.&apos; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;accordion border border-solid border-gray-300 p-4 rounded-xl transition duration-500 accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4&quot; id=&quot;basic-heading-three&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between text-left text-base leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 &quot; aria-controls=&quot;basic-collapse-three&quot;&gt;
+  &lt;div class=&apos;accordion border border-solid border-gray-300 p-4 rounded-xl accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 lg:p-4&apos; id=&apos;basic-heading-three-with-icon&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between text-left text-base leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 &apos; aria-controls=&apos;basic-collapse-three-with-icon&apos;&gt;
       &lt;h5&gt; How can I contact customer support? &lt;/h5&gt;
-      &lt;svg class=&quot;w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M6 12H18M12 18V6&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover:text-indigo-600&apos; viewBox=&apos;0 0 24 24&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M6 12H18M12 18V6&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
-      &lt;svg class=&quot;w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M6 12H18&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover:text-indigo-600&apos; viewBox=&apos;0 0 24 24&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M6 12H18&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-three&quot; class=&quot;accordion-content w-full hidden overflow-hidden transition-[height] duration-300 pr-4 mt-2&quot; aria-labelledby=&quot;basic-heading-three&quot;&gt;
-      &lt;p class=&quot;text-base text-gray-900 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-three-with-icon&apos; class=&apos;accordion-content w-full  overflow-hidden   pr-4 &apos; aria-labelledby=&apos;basic-heading-three&apos;&gt;
+      &lt;p class=&apos;text-base text-gray-900 leading-6&apos;&gt;To create an account, find the &apos;Sign up&apos; or &apos;Create account&apos; button, fill out the registration form with your personal information, and click &apos;Create account&apos; or &apos;Sign up.&apos; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1041,7 +1103,7 @@
                                                     <path d='M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
                                                     </svg>
                                     </button>
-                                    <div id='basic-collapse-one-with-arrow' class='accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300 mt-3' aria-labelledby='basic-heading-one-with-arrow'>
+                                    <div id='basic-collapse-one-with-arrow' class='accordion-content w-full px-0 overflow-hidden' aria-labelledby='basic-heading-one-with-arrow'>
                                         <p class=' text-gray-900 leading-6'>To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.</p>
                                     </div>
                                 </div>
@@ -1054,7 +1116,7 @@
                                                     <path d='M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
                                                     </svg>
                                     </button>
-                                    <div id='basic-collapse-two-with-arrow' class='accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300 mt-3' aria-labelledby='basic-heading-two-with-arrow'>
+                                    <div id='basic-collapse-two-with-arrow' class='accordion-content w-full px-0  overflow-hidden' aria-labelledby='basic-heading-two-with-arrow'>
                                         <p class=' text-gray-900 leading-6'>To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.</p>
                                     </div>
                                 </div>
@@ -1067,7 +1129,7 @@
                                                     <path d='M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
                                                     </svg>
                                     </button>
-                                    <div id='basic-collapse-three-with-arrow' class='accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300 mt-3' aria-labelledby='basic-heading-three-with-arrow'>
+                                    <div id='basic-collapse-three-with-arrow' class='accordion-content w-full px-0  overflow-hidden ' aria-labelledby='basic-heading-three-with-arrow'>
                                         <p class=' text-gray-900 leading-6'>To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.</p>
                                     </div>
                                 </div>
@@ -1094,38 +1156,38 @@
                             </div>
                             <div class="code-main">
                                 <div class="code-wrapper">
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;accordion-group &quot;&gt;
-  &lt;div class=&quot;group accordion mb-8 py-4 px-6 bg-gray-50 rounded-xl transition-all duration-500 hover:bg-indigo-50 accordion-active:bg-indigo-50&quot; id=&quot;basic-heading-one-with-arrow&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between text-left  leading-8 text-gray-900 w-full transition duration-500  group-hover:text-indigo-600 accordion-active:text-indigo-600 &quot; aria-controls=&quot;basic-collapse-one-with-arrow&quot;&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&apos;accordion-group &apos; data-accordion=&quot;default-accordion&quot;&gt;
+  &lt;div class=&apos;group accordion mb-8 py-4 px-6 bg-gray-50 rounded-xl transition-all duration-500 hover:bg-indigo-50 accordion-active:bg-indigo-50&apos; id=&apos;basic-heading-one-with-arrow&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between text-left  leading-8 text-gray-900 w-full transition duration-500  group-hover:text-indigo-600 accordion-active:text-indigo-600 &apos; aria-controls=&apos;basic-collapse-one-with-arrow&apos;&gt;
       &lt;h5&gt; How can I reset my password? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-400 transition duration-500 w-6 h-6 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-90&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-400 transition duration-500 w-6 h-6 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-90&apos; viewBox=&apos;0 0 24 24&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-one-with-arrow&quot; class=&quot;accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300 mt-3&quot; aria-labelledby=&quot;basic-heading-one-with-arrow&quot;&gt;
-      &lt;p class=&quot; text-gray-900 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-one-with-arrow&apos; class=&apos;accordion-content w-full px-0 overflow-hidden&apos; aria-labelledby=&apos;basic-heading-one-with-arrow&apos;&gt;
+      &lt;p class=&apos; text-gray-900 leading-6&apos;&gt;To create an account, find the &apos;Sign up&apos; or &apos;Create account&apos; button, fill out the registration form with your personal information, and click &apos;Create account&apos; or &apos;Sign up.&apos; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;group accordion mb-8 py-4 px-6 bg-gray-50 rounded-xl transition-all duration-500 hover:bg-indigo-50 accordion-active:bg-indigo-50&quot; id=&quot;basic-heading-two-with-arrow&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between text-left  leading-8 text-gray-900 w-full transition duration-500  group-hover:text-indigo-600 accordion-active:text-indigo-600 &quot; aria-controls=&quot;basic-collapse-two-with-arrow&quot;&gt;
+  &lt;div class=&apos;group accordion mb-8 py-4 px-6 bg-gray-50 rounded-xl transition-all duration-500 hover:bg-indigo-50 accordion-active:bg-indigo-50&apos; id=&apos;basic-heading-two-with-arrow&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between text-left  leading-8 text-gray-900 w-full transition duration-500  group-hover:text-indigo-600 accordion-active:text-indigo-600 &apos; aria-controls=&apos;basic-collapse-two-with-arrow&apos;&gt;
       &lt;h5&gt; How do I update my profile information? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-400 transition duration-500 w-6 h-6 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-90&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-400 transition duration-500 w-6 h-6 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-90&apos; viewBox=&apos;0 0 24 24&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-two-with-arrow&quot; class=&quot;accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300 mt-3&quot; aria-labelledby=&quot;basic-heading-two-with-arrow&quot;&gt;
-      &lt;p class=&quot; text-gray-900 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-two-with-arrow&apos; class=&apos;accordion-content w-full px-0  overflow-hidden&apos; aria-labelledby=&apos;basic-heading-two-with-arrow&apos;&gt;
+      &lt;p class=&apos; text-gray-900 leading-6&apos;&gt;To create an account, find the &apos;Sign up&apos; or &apos;Create account&apos; button, fill out the registration form with your personal information, and click &apos;Create account&apos; or &apos;Sign up.&apos; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;group accordion mb-8 py-4 px-6 bg-gray-50 rounded-xl transition-all duration-500 hover:bg-indigo-50 accordion-active:bg-indigo-50&quot; id=&quot;basic-heading-three-with-arrow&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between text-left  leading-8 text-gray-900 w-full transition duration-500  group-hover:text-indigo-600 accordion-active:text-indigo-600 &quot; aria-controls=&quot;basic-collapse-three-with-arrow&quot;&gt;
+  &lt;div class=&apos;group accordion mb-8 py-4 px-6 bg-gray-50 rounded-xl transition-all duration-500 hover:bg-indigo-50 accordion-active:bg-indigo-50&apos; id=&apos;basic-heading-three-with-arrow&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between text-left  leading-8 text-gray-900 w-full transition duration-500  group-hover:text-indigo-600 accordion-active:text-indigo-600 &apos; aria-controls=&apos;basic-collapse-three-with-arrow&apos;&gt;
       &lt;h5&gt; How do I update my billing information? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-400 transition duration-500 w-6 h-6 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-90&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-400 transition duration-500 w-6 h-6 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-90&apos; viewBox=&apos;0 0 24 24&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-three-with-arrow&quot; class=&quot;accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300 mt-3&quot; aria-labelledby=&quot;basic-heading-three-with-arrow&quot;&gt;
-      &lt;p class=&quot; text-gray-900 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-three-with-arrow&apos; class=&apos;accordion-content w-full px-0  overflow-hidden &apos; aria-labelledby=&apos;basic-heading-three-with-arrow&apos;&gt;
+      &lt;p class=&apos; text-gray-900 leading-6&apos;&gt;To create an account, find the &apos;Sign up&apos; or &apos;Create account&apos; button, fill out the registration form with your personal information, and click &apos;Create account&apos; or &apos;Sign up.&apos; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1135,7 +1197,7 @@
                         </div>
                     </div>
                   </div>
-                  <!--<div class="mt-8">
+                  <div class="mt-8">
                     <h2 class="doc-sub-heading relative group  scroll-mt-24" id="with-background">With Background</h2>
                     <p class="page-para">Use the data-accordion-icon data attribute to optionally set an element to rotate 180 degrees when the accordion element is expanded. If the data attribute is not set, then it will not rotate.</p>
                   </div>
@@ -1143,7 +1205,7 @@
                     <div class="code-preview-wrapper">
                         <div id="accordion-with-border-example" class="code-preview">
                             <div class="w-full">
-                              <div class='accordion-group '>
+                              <div class='accordion-group ' data-accordion="default-accordion">
                                 <div class='accordion py-4 px-6 mb-7 transition-all duration-500 bg-gray-50 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50' id='basic-heading-one-with-arrow'>
                                     <button class='accordion-toggle group  inline-flex items-center justify-between leading-8 text-gray-900  w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:text-indigo-600' aria-controls='basic-collapse-one-with-arrow'>
                                             <h5>
@@ -1154,7 +1216,7 @@
                                                 </svg>                                    
                                         
                                     </button>
-                                    <div id='basic-collapse-one-with-arrow' class='accordion-content  w-full hidden px-0 overflow-hidden transition-[height] duration-300  mt-3' aria-labelledby='basic-heading-one-with-arrow'>
+                                    <div id='basic-collapse-one-with-arrow' class='accordion-content  w-full px-0 overflow-hidden' aria-labelledby='basic-heading-one-with-arrow'>
                                         <p class='text-base text-gray-900 leading-6'>To contact customer support, look for a 'Contact us' or 'Help' button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.</p>
                                     </div>
                                 </div>
@@ -1168,7 +1230,7 @@
                                                 </svg>                                    
                                         
                                     </button>
-                                    <div id='basic-collapse-two-with-arrow' class='accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300  mt-3' aria-labelledby='basic-heading-two-with-arrow'>
+                                    <div id='basic-collapse-two-with-arrow' class='accordion-content w-full px-0 overflow-hidden' aria-labelledby='basic-heading-two-with-arrow'>
                                         <p class='text-base text-gray-900 leading-6'>To contact customer support, look for a 'Contact us' or 'Help' button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.</p>
                                     </div>
                                 </div>
@@ -1182,7 +1244,7 @@
                                                 </svg>                                    
                                         
                                     </button>
-                                    <div id='basic-collapse-three-with-arrow' class='accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300  mt-3' aria-labelledby='basic-heading-three-with-arrow'>
+                                    <div id='basic-collapse-three-with-arrow' class='accordion-content w-full px-0 overflow-hidden ' aria-labelledby='basic-heading-three-with-arrow'>
                                         <p class='text-base text-gray-900 leading-6'>To contact customer support, look for a 'Contact us' or 'Help' button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.</p>
                                     </div>
                                 </div>
@@ -1209,38 +1271,38 @@
                             </div>
                             <div class="code-main">
                                 <div class="code-wrapper">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;accordion-group &quot;&gt;
-  &lt;div class=&quot;accordion py-4 px-6 mb-7 transition-all duration-500 bg-gray-50 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50&quot; id=&quot;basic-heading-one-with-arrow&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between leading-8 text-gray-900  w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:text-indigo-600&quot; aria-controls=&quot;basic-collapse-one-with-arrow&quot;&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&apos;accordion-group &apos; data-accordion=&quot;default-accordion&quot;&gt;
+  &lt;div class=&apos;accordion py-4 px-6 mb-7 transition-all duration-500 bg-gray-50 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50&apos; id=&apos;basic-heading-one-with-arrow&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between leading-8 text-gray-900  w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:text-indigo-600&apos; aria-controls=&apos;basic-collapse-one-with-arrow&apos;&gt;
       &lt;h5&gt; How do I update my billing information? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-500 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-500 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&apos; width=&apos;22&apos; height=&apos;22&apos; viewBox=&apos;0 0 22 22&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-one-with-arrow&quot; class=&quot;accordion-content  w-full hidden px-0 overflow-hidden transition-[height] duration-300  mt-3&quot; aria-labelledby=&quot;basic-heading-one-with-arrow&quot;&gt;
-      &lt;p class=&quot;text-base text-gray-900 leading-6&quot;&gt;To contact customer support, look for a &quot;Contact us&quot; or &quot;Help&quot; button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-one-with-arrow&apos; class=&apos;accordion-content  w-full px-0 overflow-hidden&apos; aria-labelledby=&apos;basic-heading-one-with-arrow&apos;&gt;
+      &lt;p class=&apos;text-base text-gray-900 leading-6&apos;&gt;To contact customer support, look for a &apos;Contact us&apos; or &apos;Help&apos; button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;accordion py-4 px-6 mb-7 transition-all duration-500 bg-gray-50 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50&quot; id=&quot;basic-heading-two-with-arrow&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-900  w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:text-indigo-600&quot; aria-controls=&quot;basic-collapse-two-with-arrow&quot;&gt;
+  &lt;div class=&apos;accordion py-4 px-6 mb-7 transition-all duration-500 bg-gray-50 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50&apos; id=&apos;basic-heading-two-with-arrow&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-900  w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:text-indigo-600&apos; aria-controls=&apos;basic-collapse-two-with-arrow&apos;&gt;
       &lt;h5&gt; How can I contact customer support? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-500 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-500 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&apos; width=&apos;22&apos; height=&apos;22&apos; viewBox=&apos;0 0 22 22&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-two-with-arrow&quot; class=&quot;accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300  mt-3&quot; aria-labelledby=&quot;basic-heading-two-with-arrow&quot;&gt;
-      &lt;p class=&quot;text-base text-gray-900 leading-6&quot;&gt;To contact customer support, look for a &quot;Contact us&quot; or &quot;Help&quot; button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-two-with-arrow&apos; class=&apos;accordion-content w-full px-0 overflow-hidden&apos; aria-labelledby=&apos;basic-heading-two-with-arrow&apos;&gt;
+      &lt;p class=&apos;text-base text-gray-900 leading-6&apos;&gt;To contact customer support, look for a &apos;Contact us&apos; or &apos;Help&apos; button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;accordion py-4 px-6 mb-7 transition-all duration-500 bg-gray-50 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50&quot; id=&quot;basic-heading-three-with-arrow&quot;&gt;
-    &lt;button class=&quot;accordion-toggle group  inline-flex items-center justify-between leading-8 text-gray-900  w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:text-indigo-600&quot; aria-controls=&quot;basic-collapse-three-with-arrow&quot;&gt;
+  &lt;div class=&apos;accordion py-4 px-6 mb-7 transition-all duration-500 bg-gray-50 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50&apos; id=&apos;basic-heading-three-with-arrow&apos;&gt;
+    &lt;button class=&apos;accordion-toggle group  inline-flex items-center justify-between leading-8 text-gray-900  w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:text-indigo-600&apos; aria-controls=&apos;basic-collapse-three-with-arrow&apos;&gt;
       &lt;h5&gt; How do I update my profile information? &lt;/h5&gt;
-      &lt;svg class=&quot;text-gray-500 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
+      &lt;svg class=&apos;text-gray-500 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180&apos; width=&apos;22&apos; height=&apos;22&apos; viewBox=&apos;0 0 22 22&apos; fill=&apos;none&apos; xmlns=&apos;http://www.w3.org/2000/svg&apos;&gt;
+        &lt;path d=&apos;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&apos; stroke=&apos;currentColor&apos; stroke-width=&apos;1.6&apos; stroke-linecap=&apos;round&apos; stroke-linejoin=&apos;round&apos;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-collapse-three-with-arrow&quot; class=&quot;accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300  mt-3&quot; aria-labelledby=&quot;basic-heading-three-with-arrow&quot;&gt;
-      &lt;p class=&quot;text-base text-gray-900 leading-6&quot;&gt;To contact customer support, look for a &quot;Contact us&quot; or &quot;Help&quot; button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.&lt;/p&gt;
+    &lt;div id=&apos;basic-collapse-three-with-arrow&apos; class=&apos;accordion-content w-full px-0 overflow-hidden &apos; aria-labelledby=&apos;basic-heading-three-with-arrow&apos;&gt;
+      &lt;p class=&apos;text-base text-gray-900 leading-6&apos;&gt;To contact customer support, look for a &apos;Contact us&apos; or &apos;Help&apos; button or link on the website or platform. You may be able to email, call, or chat with customer support for assistance.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1258,9 +1320,181 @@
                     <div class="code-preview-wrapper">
                         <div id="accordion-with-border-example" class="code-preview">
                             <div class="w-full">
-                              <div class='accordion-group'>
-                                <div class='accordion pb-4 border-b border-solid border-gray-200' id='basic-nested-heading-one'>
-                                    <button class='accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600' aria-controls='basic-nested-collapse-one'>
+                              <!-- <div class="mobile-expertise-faq accordion-group" data-accordion="nested-accordion">
+                                <div>
+                                    <p class=" nested-accordion-toggle">Freight + Delivery</p>
+                                    <div class="mobile-faq-panel">
+                                        <div class="expertise-faq">
+                                            <h3 class="faq">FREIGHT + DELIVERY</h3>
+                                            <div style="border-bottom: solid #f4f4f4 1px;">
+                                                <p class=" nested-sub-heading" style="padding: 18px 18px 6px; margin: 12px 0">When will my order
+                                                    arrive?
+                                                </p>
+                                                <div class="faq-panel">
+                                                    <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">Delivery time on Bobux
+                                                        orders differs across locations. To make sure your order gets to you, ensure your
+                                                        address is
+                                                        complete and spelt correctly. <br><br> Orders placed within New Zealand should be
+                                                        delivered
+                                                        within 1-2 business days from the time the order is placed. For urban addresses, we
+                                                        offer
+                                                        next-day delivery on orders placed before 12pm. Please allow up to two additional days
+                                                        for
+                                                        delivery to rural addresses. During sale periods and public holidays, delivery times are
+                                                        subject to extend. A physical address is required for all orders, Bobux cannot ship to
+                                                        NZ PO
+                                                        boxes. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                    <div>
+                                        <p class=" nested-accordion-toggle">Shoe Care</p>
+                                        <div class="mobile-faq-panel">
+                        
+                                            <div class="expertise-faq">
+                                                <h3 class="faq">SHOE CARE</h3>
+                                                <div style="border-bottom: solid #f4f4f4 1px;">
+                                                    <p class=" nested-sub-heading" style="padding: 18px 18px 6px; margin: 12px 0">What's the best way
+                                                        to
+                                                        care for my suede shoes? Do they need waterproofing?</p>
+                                                    <div class="faq-panel">
+                                                        <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">Before the suede
+                                                            shoes
+                                                            have been worn, apply a suitable waterproofing spray. This will greatly reduce the
+                                                            risk
+                                                            of liquid stains. </p>
+                                                    </div>
+                                                    <p class=" nested-sub-heading" style="padding: 15px 18px; margin: 0">What's the best way to clean
+                                                        my
+                                                        pair of Bobux shoes?</p>
+                                                    <div class="faq-panel">
+                                                        <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">Because Bobux
+                                                            shoes
+                                                            are made from a variety of leathers and textiles, there’s no one-size-fits-all care
+                                                            method. Different shoes have different care needs, so to find out how your pair are
+                                                            best
+                                                            looked after, please see our <a href="shoe-care">Care Instructions guide</a>.</p>
+                                                    </div>
+                                                    <p class=" nested-sub-heading" style="padding: 15px 18px; margin: 0">My shoes are scuffed - what
+                                                        can I
+                                                        do? </p>
+                                                    <div class="faq-panel">
+                                                        <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">Leather shoes can
+                                                            be
+                                                            particularly prone to scuffing if they come into contact with an abrasive surface. A
+                                                            natural shoe polish such as beeswax can be used to keep leather soft and protected
+                                                            to
+                                                            prevent scuffing and can also be used to reduce the appearance of light scuff marks
+                                                            and
+                                                            rejuvenate the overall appearance of leather. A colour-matched polish can be used to
+                                                            mask more prominent scuff marks. If you find your child’s shoes are showing
+                                                            excessive
+                                                            scuffing, this could be because they’re in shoes that aren’t suitable to their stage
+                                                            of
+                                                            development or their shoes don’t fit them correctly. If your child’s shoes are too
+                                                            big
+                                                            for them, the shoes are more likely to drag on the ground and cause your child to
+                                                            trip
+                                                            up. Refer to FAQ sections Ranges and Sizing to find out how you can make sure your
+                                                            child
+                                                            is in the best shoes for their feet. To find out more about how to look after your
+                                                            Bobux
+                                                            shoes, please refer to our <a href="shoe-care">Care Instructions guide</a>. </p>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class=" nested-accordion-toggle">Returns + Faults</p>
+                                        <div class="mobile-faq-panel">
+                                            <div class="expertise-faq">
+                                                <h3 class="faq">RETURNS + FAULTS</h3>
+                                                <div style="border-bottom: solid #f4f4f4 1px;">
+                                                    <p class=" nested-sub-heading" style="padding: 18px 18px 6px; margin: 12px 0">Can I return my
+                                                        purchase?</p>
+                                                    <div class="faq-panel">
+                                                        <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">If you’re unhappy
+                                                            with
+                                                            the size, style or quality of your Bobux shoes, you can return the shoes to us in
+                                                            original, unused condition within 28 days from the date of purchase. We can offer an
+                                                            exchange or a full refund. If you purchased your Bobux shoes from a store and would
+                                                            like
+                                                            to return or exchange them, you must do so through the store directly. We are unable
+                                                            to
+                                                            offer exchanges or returns for shoes that have been purchased through resell sites
+                                                            such
+                                                            as Trade Me or eBay. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class=" nested-accordion-toggle">Range</p>
+                                        <div class="mobile-faq-panel">
+                                            <div class="expertise-faq">
+                                                <h3 class="faq">RANGE</h3>
+                                                <div style="border-bottom: solid #f4f4f4 1px;">
+                                                    <p class=" nested-sub-heading" style="padding: 18px 18px 6px; margin: 12px 0"> Which range is
+                                                        right
+                                                        for my child?</p>
+                                                    <div class="faq-panel">
+                                                        <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">At Bobux, we
+                                                            divide
+                                                            our ranges by stage of development, not age, as every child is different.
+                                                        <ul>
+                                                            <li><strong>&bull; Sitting / Crawling</strong>: The Bobux Soft Sole range is best
+                                                                suited
+                                                                to children who are yet to find their feet. They may be sitting, crawling and
+                                                                perhaps starting to cruise. As our Soft Soles feature a porous, flexible suede
+                                                                sole,
+                                                                they are suitable for indoor wear. You can find our range of <a href="baby">Soft
+                                                                    Soles here</a>.</li> <br>
+                                                            <li><strong>&bull; Cruising / Learning to walk</strong>: The Bobux Xplorer is
+                                                                perfect
+                                                                for this stage of development. Super flexible and lightweight with a
+                                                                scuff-resistant
+                                                                toecap, the Xplorer is great for kids who are sometimes crawling, sometimes
+                                                                walking.
+                                                                You can find our <a href="catalogsearch/result/?q=xplorer">Xplorer range
+                                                                    here</a>.
+                                                            </li> <br>
+                                                            <li><strong>&bull; New to walking</strong>: The Bobux Step Up range is designed for
+                                                                kids
+                                                                at this developmental stage. Flexible and lightweight with added durability for
+                                                                first-walkers, Step Up styles are perfect for kids who are walking most of the
+                                                                time,
+                                                                but still developing confidence on their feet. You can find our <a
+                                                                    href="walking">Step Up range here</a>.</li> <br>
+                                                            <li><strong>&bull; Confident walkers, runners and jumpers</strong>: The Bobux I-Walk
+                                                                and
+                                                                Kid+ ranges are designed for active toddlers, preschoolers and school-aged kids.
+                                                                These shoes are designed in line with foot health best-practice and provide the
+                                                                durability needed to withstand the extreme activities kids get up to. Styles in
+                                                                the
+                                                                Play range feature scuff-resistant toecaps, advanced textiles, and
+                                                                high-performance
+                                                                soles specifically for high-impact activities. You can find <a
+                                                                    href="/toddler-preschooler">the I-Walk range herer</a>, and <a
+                                                                    href="kids">the
+                                                                    Kid+ range here</a>.</li>
+                                                        </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                              <div class='accordion-group'  data-accordion="nested-accordion">
+                                <div class='accordion  pb-4 border-b border-solid border-gray-200' id='basic-nested-heading-one'>
+                                    <button class=' group nested-accordion-toggle inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600' aria-controls='basic-nested-collapse-one'>
                                             <h5>
                                                 How to create an account?                                   
                                             </h5>
@@ -1269,23 +1503,24 @@
                                                 </svg>                                    
                                         
                                     </button>
-                                    <div id='basic-nested-collapse-one' class='accordion-content w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3' aria-labelledby='basic-nested-heading-one'>
-                                        <p class='text-base text-gray-600 leading-6'>To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.</p>
+                                    <div id='basic-nested-collapse-one' class='nested-accordion-content w-full px-0 overflow-hidden   pr-4 mt-3' aria-labelledby='basic-nested-heading-one'>
+                                    
                                         <div class='accordion-group pl-6'>
-                                            <div class='accordion mt-5' id='basic-nested-sub-heading-one'>
-                                                <button class='accordion-toggle  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600' aria-controls='basic-nested-sub-collapse-one'><h5>Change Passowrd?</h5>
+                                            <div class='accordion mt-5  ' id='basic-nested-sub-heading-one'>
+                                                <button class='nested-sub-heading inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600' aria-controls='basic-nested-sub-collapse-one'><h5>Change Passowrd?</h5>
                                                     <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180' width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
                                                         <path d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'></path>
                                                         </svg> 
                                                 </button>
-                                                <div id='basic-nested-sub-collapse-one' class='accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300 pr-4 mt-3' aria-labelledby='basic-nested-sub-heading-one'>
+                                                <div id='basic-nested-sub-collapse-one' class='nested-sub-body w-full px-0  overflow-hidden   pr-4 mt-3 faq-panel' aria-labelledby='basic-nested-sub-heading-one'>
                                                     <p class='text-base text-gray-600 leading-6'>To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class='accordion py-4 border-b border-solid border-gray-200' id='basic-nested-heading-two'>
+                               
+                                <!-- <div class='accordion py-4 border-b border-solid border-gray-200' id='basic-nested-heading-two'>
                                     <button class='accordion-toggle group  inline-flex items-center justify-between  leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600' aria-controls='basic-nested-collapse-two'>
                                         <h5>
                                             Have any trust issue?                                  
@@ -1295,7 +1530,7 @@
                                             </svg>                                    
                                     
                                     </button>
-                                    <div id='basic-nested-collapse-two' class='accordion-content hidden w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3' aria-labelledby='basic-nested-heading-two'>
+                                    <div id='basic-nested-collapse-two' class='accordion-content hidden w-full px-0 overflow-hidden   pr-4 mt-3' aria-labelledby='basic-nested-heading-two'>
                                         <p class='text-sm text-gray-500 leading-6'>Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.</p>
                                     </div>
                                 </div>
@@ -1309,10 +1544,10 @@
                                             </svg>                                    
                                     
                                     </button>
-                                    <div id='basic-nested-collapse-three' class='accordion-content hidden w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3' aria-labelledby='basic-nested-heading-three'>
+                                    <div id='basic-nested-collapse-three' class='accordion-content hidden w-full px-0 overflow-hidden   pr-4 mt-3' aria-labelledby='basic-nested-heading-three'>
                                         <p class='text-sm text-gray-500 leading-6'>Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.</p>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             </div>
                         </div>
@@ -1344,7 +1579,7 @@
         &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-nested-collapse-one&quot; class=&quot;accordion-content w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-nested-heading-one&quot;&gt;
+    &lt;div id=&quot;basic-nested-collapse-one&quot; class=&quot;accordion-content w-full px-0 overflow-hidden   pr-4 mt-3&quot; aria-labelledby=&quot;basic-nested-heading-one&quot;&gt;
       &lt;p class=&quot;text-base text-gray-600 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
       &lt;div class=&quot;accordion-group pl-6&quot;&gt;
         &lt;div class=&quot;accordion mt-5&quot; id=&quot;basic-nested-sub-heading-one&quot;&gt;
@@ -1354,7 +1589,7 @@
               &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
             &lt;/svg&gt;
           &lt;/button&gt;
-          &lt;div id=&quot;basic-nested-sub-collapse-one&quot; class=&quot;accordion-content w-full px-0 hidden overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-nested-sub-heading-one&quot;&gt;
+          &lt;div id=&quot;basic-nested-sub-collapse-one&quot; class=&quot;accordion-content w-full px-0 hidden overflow-hidden   pr-4 mt-3&quot; aria-labelledby=&quot;basic-nested-sub-heading-one&quot;&gt;
             &lt;p class=&quot;text-base text-gray-600 leading-6&quot;&gt;To create an account, find the &quot;Sign up&quot; or &quot;Create account&quot; button, fill out the registration form with your personal information, and click &quot;Create account&quot; or &quot;Sign up.&quot; Verify your email address if needed, and then log in to start using the platform.&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1368,7 +1603,7 @@
         &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-nested-collapse-two&quot; class=&quot;accordion-content hidden w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-nested-heading-two&quot;&gt;
+    &lt;div id=&quot;basic-nested-collapse-two&quot; class=&quot;accordion-content hidden w-full px-0 overflow-hidden   pr-4 mt-3&quot; aria-labelledby=&quot;basic-nested-heading-two&quot;&gt;
       &lt;p class=&quot;text-sm text-gray-500 leading-6&quot;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -1379,7 +1614,7 @@
         &lt;path d=&quot;M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div id=&quot;basic-nested-collapse-three&quot; class=&quot;accordion-content hidden w-full px-0 overflow-hidden transition-[height] duration-300 pr-4 mt-3&quot; aria-labelledby=&quot;basic-nested-heading-three&quot;&gt;
+    &lt;div id=&quot;basic-nested-collapse-three&quot; class=&quot;accordion-content hidden w-full px-0 overflow-hidden   pr-4 mt-3&quot; aria-labelledby=&quot;basic-nested-heading-three&quot;&gt;
       &lt;p class=&quot;text-sm text-gray-500 leading-6&quot;&gt;Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -1389,7 +1624,7 @@
                             </div>
                         </div>
                     </div>
-                  </div>  -->
+                  </div>  
             </div>
               </div>
             <!----------Middlebar End---------->
