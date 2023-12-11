@@ -3,16 +3,16 @@
 @import 'tailwindcss/utilities';
 @layer components {
     input[type='checkbox']:checked{
-        background-image: url('https://beta.pagedone.io/asset/uploads/1689406942.svg');
+        background-image: url('https://pagedone.io/asset/uploads/1689406942.svg');
     }
     input[type='checkbox']:disabled:checked{
-        @apply bg-[url('https://beta.pagedone.io/asset/uploads/1689403247.png')];
+        @apply bg-[url('https://pagedone.io/asset/uploads/1689403247.png')];
     }
     input[type='checkbox']:indeterminate{
-        background-image: url('https://beta.pagedone.io/asset/uploads/1689407165.svg');
+        background-image: url('https://pagedone.io/asset/uploads/1689407165.svg');
     }
     input[type='checkbox']:indeterminate:disabled{
-        @apply bg-[url('https://beta.pagedone.io/asset/uploads/1689403311.png')];
+        @apply bg-[url('https://pagedone.io/asset/uploads/1689403311.png')];
     }
     
      input[type="radio"] + label span{
