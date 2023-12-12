@@ -687,16 +687,9 @@
                         Requires Pagedone JS
                       </h3>
                       <p class="alert-box-paragraph ">
-                        Note that this component requires the use of our <a href="#">Accordion plugin</a>, else you can skip this message if you are already using Pagedone UI as a package.
+                        This component requires the use of our <a class="text-indigo-600" href="https://pagedone.io/docs/installation">Pagedone UI</a> as a package, else you can skip this message if you are already using Pagedone UI as a package.
                       </p>
-                      <div class="mt-4">
-                        <a class="alert-box-link" href="#">
-                          Learn more
-                          <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-                          </svg>
-                        </a>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -705,17 +698,18 @@
             </div>
             <!--Header End-->
             <div id="mainContent">
-                <p class="page-para">The accordion component is a collection of vertically collapsing header and body elements that can be used to show and hide information based on the Tailwind CSS utility classes and JavaScript from Flowbite.</p>
-                <p class="page-para">A popular use case would be the “Frequently Asked Questions” section of a website or page when you can show questions and answers for each child element.</p>
+                <p class="page-para">The accordion component is a collection of vertically collapsing header and body elements that can be used to show and hide information based on the Tailwind CSS utility classes and JavaScript from Pagedone.</p>
+                <p class="page-para">Popularly it can be used in case of “Frequently Asked Questions” section of a website or page where you can show questions and answers for each child element.</p>
                 <p class="page-para">There are two main options to initialize the accordion component:</p>
                 <ul class="page-list">
-                  <li><code>data-accordion="collapse"</code> show only one active child element</li>
-                  <li><code>data-accordion="open"</code> keep multiple elements open</li>
+                  <li><code>data-accordion="default-accordion"</code> show only one active child element</li>
+                  <li><code>data-accordion="always-open-accordion"</code> keep multiple elements open</li>
                   </ul>
-                  <p class="page-para">Don’t forget to set the <code>data-accordion-target="{selector}"</code> data attribute to the header element where the value is the id or class of the accordion body element and the <code>aria-expanded="{true|false}"</code> attribute to mark the active or inactive state of the accordion.</p>
+                  <p class="page-para">Firstly you need to set the <code>data-accordion="{selector}"</code> data attribute to the group of accordion, you need to add <code>accordion-toggle</code> class to button element and <code>accordion-content</code> class to the accordion body.</p>
+                    <p  class="page-para"> Give id to accordion class where the value is the id of the accordion content class and the <code>active</code> class to mark the active or inactive state of the accordion.</p>
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-accordion">Default accordion</h2>
-                    <p class="page-para">Use the <code>data-accordion="collapse"</code> to collapse every other child element when expanding a single one.</p>
+                    <p class="page-para">Use the <code>data-accordion="default-accordion"</code> to collapse every other child element when expanding a single one.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -830,7 +824,7 @@
                   </div>
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="always-open">Always Open</h2>
-                    <p class="page-para">Use the <code>data-accordion="collapse"</code> to collapse every other child element when expanding a single one.</p>
+                    <p class="page-para">Use the <code>data-accordion="always-open-accordion"</code> to keep previously opened accordion elements unchanged.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">

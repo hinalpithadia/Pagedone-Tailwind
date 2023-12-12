@@ -497,7 +497,7 @@
         @apply fill-indigo-400;
     }
     svg, rect, circle, path{
-        transition: all .3s ease-in-out;
+        transition: all .1s ease-in-out;
     }
     .width-anim{
         width: 52px;
