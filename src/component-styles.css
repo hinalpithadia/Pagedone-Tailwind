@@ -661,7 +661,7 @@
     }
     .pricing-main{
         display: grid;
-    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-columns: 280px 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
     align-items: flex-start;
@@ -1164,54 +1164,160 @@
   .slick-slide.gt2 .item {
     opacity: 0.2;
   }
-  /* .center-slider .slick-slide,.center-slider .slick-slide[aria-hidden="true"] + .slick-cloned[aria-hidden="true"] {
-    opacity: 0.1;
-  } */
-  /* .center-slider:before{
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 42px;
-    background: linear-gradient(90deg, #f2f6fb 0%, rgba(248, 250, 252, 0.71) 64.89%, rgba(248, 250, 252, 0.87) 100%);
-    left:0;
-    top:0;
-    z-index: 1;
-    border-radius: 0 10px 10px 0;
-  } 
-  .center-slider:after{
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 42px;
-    background: linear-gradient(280deg, #f2f6fb 0%, rgba(248, 250, 252, 0.71) 64.89%, rgba(248, 250, 252, 0.87) 100%);
-    right:0;
-    top:0;
-    z-index: 1;
-    border-radius: 10px 0px 0px 10px;
-  }  */
-  /* .center-slider .slick-slide.slick-center + .slick-slide{
+  .main-cheat-sheet {
+    @apply border border-solid border-gray-300 rounded-xl mb-7 h-auto break-inside-avoid shadow-lg shadow-transparent transition-all duration-500 hover:shadow-gray-300 
+  }
 
-  } */
+  .main-cheat-sheet .cheat-title {
+    @apply py-3 px-2 text-lg text-white text-center font-manrope font-semibold bg-indigo-600 rounded-t-lg
+  }
 
+  .at-title.active {
+    @apply bg-indigo-600
+  }
+
+  .at-item {
+    @apply border-b border-solid border-gray-200
+  }
+
+  .at-tab {
+    @apply hidden py-4 px-2 bg-gray-50
+  }
+
+  .main-cheat-sheet .accordion .ac-heading {
+    @apply font-inter font-normal text-base py-2 px-2 text-gray-600 bg-transparent cursor-pointer transition-all duration-500 hover:bg-indigo-600 hover:text-white
+  }
+
+  .at-title.active>.ac-heading {
+    @apply text-white
+  }
+
+  .class-text {
+    @apply font-medium text-sm text-indigo-600 tracking-wide md:max-w-[8rem] xl:max-w-[12rem] max-w-full select-all w-1/3 ;
+  }
+
+  .class-semi-text {
+    @apply font-normal text-xs text-indigo-500 tracking-wide 
+  }
+
+  .class-txt-bl {
+    @apply font-normal pl-4 text-xs text-gray-800 tracking-wide
+  }
+
+  .accordion-2 {
+    position: relative;
+  }
+  .accordion-2:last-child > .head{
+    @apply rounded-b-xl
+  }
+  .accordion-2 .head { 
+    @apply bg-white text-gray-900 py-4 px-4 cursor-pointer flex justify-between items-center text-base border-b border-gray-200
+   
+  }
+
+  .accordion-2 .arrow {
+    transition: 0.25s ease;
+    transform: rotate(-90deg);
+  }
+
+  .accordion-2 .head:hover .arrow {
+    @apply opacity-100;
+  }
+
+  .accordion-2 .arrow-animate {
+    transform: rotate(-180deg);
+    opacity: 1;
+  }
+
+  .accordion-2 .content {
+    @apply bg-indigo-50 hidden py-4 pr-4 pl-4 text-indigo-600 relative
+  
+  }
+.accordion-2 .content .deta {
+  @apply flex items-center w-full gap-2
+}
+  .accordion-2 .content:nth-child(odd) {
+    @apply bg-indigo-100
+   
+  }
+  .accordion-2 .content:last-child {
+    @apply rounded-b-xl
+  }
+  
+
+  @keyframes vertical-fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+ 
+
+  @keyframes horizontal-fade-in {
+    from {
+      opacity: 0;
+      width: 0;
+    }
+
+    to {
+      opacity: 1;
+      width: 1rem;
+    }
+  }
+
+  .accordion-2 .head:hover {
+    @apply bg-indigo-50;
+  }
+  .accordion-2 .active {
+    @apply bg-indigo-50;
+   
+  }
+  .accordion-2 .active {
+    border-radius: 0 !important;
+  }
+ 
+    @media(max-width:1400px){
+        .component-card{
+         
+            margin: 0px 15px;
+        }
+    }
       @media(max-width:767px){
         .top-card-frame {
-            padding: 25px 25px 0 25px;
+            padding: 20px 20px 0 20px;
         }
         .bottom-card-frame{
-            padding: 0px 25px 25px 25px;
+            padding: 0px 20px 20px 20px;
         }
         .wrapper-card{
-            padding: 25px;
+            padding: 20px;
         }
         .wrapper-text {
-            font-size: 18px;
+            font-size: 16px;
         }
         .gradient-text{
             font-size: 20px;
         }
         .wrapper-card svg{
-            width: 50px;
+            width: 40px;
         }
-        
+        .gradient-text svg{
+            width: 15px;
+        }
+        .arrow-btn {
+            width: 48px;
+            height: 48px;
+        }
+        .library-wrapper{
+            max-height: fit-content;
+            overflow: visible;
+        }
+        .library-wrapper::before{
+            content: none;
+        }
       }
 }

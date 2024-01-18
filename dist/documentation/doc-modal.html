@@ -628,359 +628,747 @@
         <!----------Leftbar End---------->
         <div class="flex-auto w-full min-w-0 lg:ml-56 xl:ml-72 lg:static lg:max-h-full lg:overflow-visible">
           <div class="flex w-full ">
-            <!----------Middlebar Start---------->
-            <div
-              class="flex-auto max-w-full min-w-0 mt-16 2xl:px-40 xl:px-14 lg:px-8 px-4 py-14">
-               <!--Header-->  
-               <div class="pb-8 mb-8 border-b border-gray-200 ">
-                <span class="doc-small-heading mb-5">Component</span>
-                <h1 class="doc-heading ">Tailwind CSS modal</h1>
-                <p class="doc-paragraph-big">info</p>
+          <!----------Middlebar Start---------->
+          <div
+          class="flex-auto max-w-full min-w-0 mt-16 2xl:px-40 xl:px-14 lg:px-8 px-4 py-14">
+           <!--Header-->  
+           <div class="pb-8 mb-8 border-b border-gray-200 ">
+            <span class="doc-small-heading mb-5">Component</span>
+            <h1 class="doc-heading ">Tailwind CSS modal</h1>
+            <p class="doc-paragraph-big">Use the modal component, which comes in a variety of sizes, colours, and styles, to display interactive dialogues and notifications to visitors to your website.</p>
+            <div class="alert-box mt-8 block">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <svg class="h-4 w-4 text-indigo-600 mt-0.5" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                  </svg>
+                </div>
+                <div class="ml-3">
+                  <h3 class="alert-box-heading">
+                    Requires Pagedone JS
+                  </h3>
+                  <p class="alert-box-paragraph ">
+                    This component requires the use of our <a class="text-indigo-600" href="https://pagedone.io/docs/installation">Pagedone UI</a> as a package, else you can skip this message if you are already using Pagedone UI as a package.
+                  </p>
+                </div>
+              </div>
             </div>
-            <!--Header End-->
-            <div id="mainContent">
-                 <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-modal">Default modal</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal" data-modal-toggle="pd-basic-modal">
-                                Default modal
-                              </button>
-                                  <div id="pd-basic-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto ">
-                                    <div class=" opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:opacity-100 transition-all modal-open:duration-500">
-                                      <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
-                                        <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                          <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                          <button class="block cursor-pointer close-modal-button" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
-                                              </svg>
-                                              
-                                          </button>
-                                        </div>
-                                        <div class="overflow-y-auto py-4 min-h-[100px]">
-                                          <p class=" text-gray-600 text-sm">
-                                            This is the regular modal with supporting text below as additional content
-                                          </p>
-                                        </div>
-                                        <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                          <button type="button" class="pd-dropdown-toggle py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 ">Cancel</button>
-                                          <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
-                                        </div>
-                                    </div>
-                                   
-                                    </div>
-                                  </div>
-                                  <div id="backdrop" class="fixed hidden top-0 left-0 w-full h-full bg-black/50 z-[50]"></div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="slide-down-modal">Slide down animation modal</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                          <div class="w-full relative">
-                            <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#pd-slide-down-modal" data-modal-target="pd-slide-down-modal" data-modal-toggle="pd-slide-down-modal">
-                              Open modal   
-                            </button>
-                              <div id="pd-slide-down-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-                                <div class="transform -translate-y-3 opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500">
+        </div>
+        <!--Header End-->
+        <div id="mainContent">
+             <div class="mt-8">
+              <p class="page-para">Using form elements, you can use the modal component to collect information from your website's users and display notifications above the main content area.</p>
+              <p class="page-para">Start with creating designs in a variety of sizes, hues, and styles using the Tailwind CSS utility classes and components.</p>
+
+                <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-modal">Default modal</h2>
+                <p class="page-para">With Tailwind CSS, all you need to do to create a modal you can utilise the following data properties,
+                <ul class="page-list">
+                    <li>Firstly add<code>modal-button</code> class to button element</li>
+                    <li>Add <code>data-modal-target="modalId"</code> data attribute, where modalId is the ID of the modal you want to target.</li>
+                </ul>
+              </div>
+              <div class="mt-8 code-example">
+                <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                        <div class="w-full relative">
+                          <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal" data-modal-toggle="pd-basic-modal">
+                            Default modal
+                          </button>
+                              <div id="pd-basic-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto ">
+                                <div class="opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:opacity-100 transition-all modal-open:duration-500">
                                   <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
-                                      <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                        <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                        <button class="block cursor-pointer close-modal-button" data-pd-overlay="#pd-slide-down-modal" data-modal-target="pd-slide-down-modal">
-                                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
-                                            </svg>
-                                            
-                                        </button>
-                                      </div>
-                                      <div class="overflow-y-auto py-4 min-h-[100px]">
-                                        <p class=" text-gray-600 text-sm">
-                                          This is the regular modal with supporting text below as additional content
-                                        </p>
-                                      </div>
-                                      <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                        <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
-                                        <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
-                                      </div>
-                                  </div>
+                                    <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                      <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
+                                      <button class="block cursor-pointer close-modal-button" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                          </svg>
+                                          
+                                      </button>
+                                    </div>
+                                    <div class="overflow-y-auto py-4 min-h-[100px]">
+                                      <p class=" text-gray-600 text-sm">
+                                        This is the regular modal with supporting text below as additional content
+                                      </p>
+                                    </div>
+                                    <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
+                                      <button type="button" class="pd-dropdown-toggle py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 ">Cancel</button>
+                                      <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
+                                    </div>
+                                </div>
+                               
                                 </div>
                               </div>
-                        </div>
-                        </div>
+                              <div id="backdrop" class="fixed hidden top-0 left-0 w-full h-full bg-black/50 z-[50]"></div>
+                        </div> 
                     </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="slide-up-modal">Slide up animation modal</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                          <div class="w-full relative">
-                            <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#pd-slide-up-modal" data-modal-target="pd-slide-up-modal" data-modal-toggle="pd-slide-up-modal">
-                                Open modal   
+                </div>
+                <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="#">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                              <button class="group">
+                                <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
                               </button>
-                              <div id="pd-slide-up-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-                                <div class="transform translate-y-3 opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500">
-                                  <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
-                                      <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                        <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                        <button class="block cursor-pointer close-modal-button" data-pd-overlay="#pd-slide-up-modal" data-modal-target="pd-slide-up-modal">
-                                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
-                                            </svg>
-                                            
-                                        </button>
-                                      </div>
-                                      <div class="overflow-y-auto py-4 min-h-[100px]">
-                                        <p class=" text-gray-600 text-sm">
-                                          This is the regular modal with supporting text below as additional content
-                                        </p>
-                                      </div>
-                                      <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                        <button type="button" class="pd-dropdown-toggle py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 " >Cancel</button>
-                                        <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
-                                      </div>
-                                  </div>
-                                </div>
-                              </div>
+                          </div>
                         </div>
+                        <div class="code-main">
+                            <div data-code-wrapper="" class="code-wrapper ">
+      <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot; data-pd-overlay=&quot;#pd-basic-modal&quot; data-modal-target=&quot;pd-basic-modal&quot; data-modal-toggle=&quot;pd-basic-modal&quot;&gt; Default modal &lt;/button&gt;
+      &lt;div id=&quot;pd-basic-modal&quot; class=&quot;pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto &quot;&gt;
+        &lt;div class=&quot;opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:opacity-100 transition-all modal-open:duration-500&quot;&gt;
+          &lt;div class=&quot;flex flex-col bg-white rounded-2xl py-4 px-5&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center pb-4 border-b border-gray-200&quot;&gt;
+              &lt;h4 class=&quot;text-sm text-gray-900 font-medium&quot;&gt;Modal simple&lt;/h4&gt;
+              &lt;button class=&quot;block cursor-pointer close-modal-button&quot; data-pd-overlay=&quot;#pd-basic-modal&quot; data-modal-target=&quot;pd-basic-modal&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                  &lt;path d=&quot;M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427&quot; stroke=&quot;black&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;overflow-y-auto py-4 min-h-[100px]&quot;&gt;
+              &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; This is the regular modal with supporting text below as additional content &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex items-center justify-end pt-4 border-t border-gray-200 space-x-4&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;pd-dropdown-toggle py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 &quot;&gt;Cancel&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Okay, got it&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;backdrop&quot; class=&quot;fixed hidden top-0 left-0 w-full h-full bg-black/50 z-[50]&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+                            </div>
+                            <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                         </div>
                     </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="modal-size">modal size</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                                <!--small-->
-                                <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#small-modal" data-modal-target="small-modal" data-modal-toggle="small-modal">
-                                    Small
-                                  </button>
-                                  <div id="small-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto ">
-                                    <div class="opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500 sm:max-w-lg sm:w-full m-5 sm:mx-auto">
-                                      <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
-                                        <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                          <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                          <button class="block cursor-pointer close-modal-button" data-pd-overlay="#small-modal" data-modal-target="small-modal">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
-                                              </svg>
-                                              
-                                          </button>
-                                        </div>
-                                        <div class="overflow-y-auto py-4 min-h-[100px]">
-                                          <p class=" text-gray-600 text-sm">
-                                            This is the regular modal with supporting text below as additional content
-                                          </p>
-                                        </div>
-                                        <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                          <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
-                                          <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
-                                        </div>
-                                    </div>
-                                    </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="doc-sub-heading relative group scroll-mt-24" id="slide-down-modal">Slide down animation modal</h2>
+                <p class="page-para">Use this component to add slide down animation to modal element in which modal open from top to bottom</p>
+              </div>
+              <div class="mt-8 code-example">
+                <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                      <div class="w-full relative">
+                        <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#pd-slide-down-modal" data-modal-target="pd-slide-down-modal" data-modal-toggle="pd-slide-down-modal">
+                          Open modal   
+                        </button>
+                          <div id="pd-slide-down-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+                            <div class="transform -translate-y-3 opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500">
+                              <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
+                                  <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                    <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
+                                    <button class="block cursor-pointer close-modal-button" data-pd-overlay="#pd-slide-down-modal" data-modal-target="pd-slide-down-modal">
+                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                        </svg>
+                                        
+                                    </button>
                                   </div>
-                                   <!--medium-->
-                                   <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#medium-modal" data-modal-target="medium-modal" data-modal-toggle="medium-modal">
-                                    Medium
-                                  </button>
-                                  <div id="medium-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-                                    <div class="opacity-0  ease-out  modal-open:opacity-100 transition-all modal-open:duration-500 md:max-w-2xl md:w-full m-3 md:mx-auto">
-                                      <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
-                                        <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                          <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                          <button class="block cursor-pointer  close-modal-button" data-pd-overlay="#medium-modal" data-modal-target="medium-modal">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
-                                              </svg>
-                                              
-                                          </button>
-                                        </div>
-                                        <div class="overflow-y-auto py-4 min-h-[100px]">
-                                          <p class=" text-gray-600 text-sm">
-                                            This is the regular modal with supporting text below as additional content
-                                          </p>
-                                        </div>
-                                        <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                          <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
-                                          <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
-                                        </div>
-                                    </div>
-                                    </div>
+                                  <div class="overflow-y-auto py-4 min-h-[100px]">
+                                    <p class=" text-gray-600 text-sm">
+                                      This is the regular modal with supporting text below as additional content
+                                    </p>
                                   </div>
-                                  <!--large-->
-                                  <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#large-modal" data-modal-target="large-modal" data-modal-toggle="large-modal">
-                                    Large
-                                  </button>
-                                  <div id="large-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-                                    <div class=" opacity-0 ease-out modal-open:opacity-100 transition-all modal-open:duration-500 lg:max-w-4xl lg:w-full m-3 lg:mx-auto">
-                                      <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
-                                        <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                          <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                          <button class="block cursor-pointer close-modal-button" data-pd-overlay="#large-modal" data-modal-target="large-modal">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
-                                              </svg>
-                                              
-                                          </button>
-                                        </div>
-                                        <div class="overflow-y-auto py-4 min-h-[100px]">
-                                          <p class=" text-gray-600 text-sm">
-                                            This is the regular modal with supporting text below as additional content
-                                          </p>
-                                        </div>
-                                        <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                          <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
-                                          <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
-                                        </div>
-                                    </div>
-                                    </div>
+                                  <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
+                                    <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
+                                    <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
                                   </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
                               </div>
                             </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
-                            </div>
-                        </div>
+                          </div>
                     </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="static-backdrop">Static backdrop</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                          <div class="w-full relative">
-                            <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#static-backdrop-modal" data-modal-target="static-backdrop-modal" data-modal-toggle="static-backdrop-modal">
-                                Open modal
+                    </div>
+                </div>
+                <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="#">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                              <button class="group">
+                                <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
                               </button>
-                              <div id="static-backdrop-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[100] overflow-x-hidden overflow-y-auto">
+                          </div>
+                        </div>
+                        <div class="code-main">
+                            <div data-code-wrapper="" class="code-wrapper ">
+      <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot; data-pd-overlay=&quot;#pd-slide-down-modal&quot; data-modal-target=&quot;pd-slide-down-modal&quot; data-modal-toggle=&quot;pd-slide-down-modal&quot;&gt; Open modal &lt;/button&gt;
+      &lt;div id=&quot;pd-slide-down-modal&quot; class=&quot;pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto&quot;&gt;
+        &lt;div class=&quot;transform -translate-y-3 opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500&quot;&gt;
+          &lt;div class=&quot;flex flex-col bg-white rounded-2xl py-4 px-5&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center pb-4 border-b border-gray-200&quot;&gt;
+              &lt;h4 class=&quot;text-sm text-gray-900 font-medium&quot;&gt;Modal simple&lt;/h4&gt;
+              &lt;button class=&quot;block cursor-pointer close-modal-button&quot; data-pd-overlay=&quot;#pd-slide-down-modal&quot; data-modal-target=&quot;pd-slide-down-modal&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                  &lt;path d=&quot;M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427&quot; stroke=&quot;black&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;overflow-y-auto py-4 min-h-[100px]&quot;&gt;
+              &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; This is the regular modal with supporting text below as additional content &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex items-center justify-end pt-4 border-t border-gray-200 space-x-4&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100&quot;&gt;Cancel&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Okay, got it&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+                            </div>
+                            <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="doc-sub-heading relative group scroll-mt-24" id="slide-up-modal">Slide up animation modal</h2>
+                <p class="page-para">Use this component to add slide up animation to modal element in which modal open from bottom to top</p>
+              </div>
+              <div class="mt-8 code-example">
+                <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                      <div class="w-full relative">
+                        <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#pd-slide-up-modal" data-modal-target="pd-slide-up-modal" data-modal-toggle="pd-slide-up-modal">
+                            Open modal   
+                          </button>
+                          <div id="pd-slide-up-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+                            <div class="transform translate-y-3 opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500">
+                              <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
+                                  <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                    <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
+                                    <button class="block cursor-pointer close-modal-button" data-pd-overlay="#pd-slide-up-modal" data-modal-target="pd-slide-up-modal">
+                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                        </svg>
+                                        
+                                    </button>
+                                  </div>
+                                  <div class="overflow-y-auto py-4 min-h-[100px]">
+                                    <p class=" text-gray-600 text-sm">
+                                      This is the regular modal with supporting text below as additional content
+                                    </p>
+                                  </div>
+                                  <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
+                                    <button type="button" class="pd-dropdown-toggle py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 " >Cancel</button>
+                                    <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="#">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                              <button class="group">
+                                <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
+                              </button>
+                          </div>
+                        </div>
+                        <div class="code-main">
+                            <div data-code-wrapper="" class="code-wrapper ">
+      <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot; data-pd-overlay=&quot;#pd-slide-up-modal&quot; data-modal-target=&quot;pd-slide-up-modal&quot; data-modal-toggle=&quot;pd-slide-up-modal&quot;&gt; Open modal &lt;/button&gt;
+      &lt;div id=&quot;pd-slide-up-modal&quot; class=&quot;pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto&quot;&gt;
+        &lt;div class=&quot;transform translate-y-3 opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:translate-y-0 modal-open:opacity-100 transition-all modal-open:duration-500&quot;&gt;
+          &lt;div class=&quot;flex flex-col bg-white rounded-2xl py-4 px-5&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center pb-4 border-b border-gray-200&quot;&gt;
+              &lt;h4 class=&quot;text-sm text-gray-900 font-medium&quot;&gt;Modal simple&lt;/h4&gt;
+              &lt;button class=&quot;block cursor-pointer close-modal-button&quot; data-pd-overlay=&quot;#pd-slide-up-modal&quot; data-modal-target=&quot;pd-slide-up-modal&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                  &lt;path d=&quot;M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427&quot; stroke=&quot;black&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;overflow-y-auto py-4 min-h-[100px]&quot;&gt;
+              &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; This is the regular modal with supporting text below as additional content &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex items-center justify-end pt-4 border-t border-gray-200 space-x-4&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;pd-dropdown-toggle py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 &quot;&gt;Cancel&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Okay, got it&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+                            </div>
+                            <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="doc-sub-heading relative group scroll-mt-24" id="sizes">Sizes</h2>
+                <p class="page-para">The width of these modals will not change when seen on smaller devices, despite the fact that you have four distinct modal sizing options, ranging from small to extra big.</p>
+              </div>
+              <div class="mt-8 code-example">
+                <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                        <div class="w-full relative">
+                            <!--small-->
+                            <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#small-modal" data-modal-target="small-modal" data-modal-toggle="small-modal">
+                                Small
+                              </button>
+                              <div id="small-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto ">
                                 <div class="opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500 sm:max-w-lg sm:w-full m-5 sm:mx-auto">
                                   <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
+                                    <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                      <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
+                                      <button class="block cursor-pointer close-modal-button" data-pd-overlay="#small-modal" data-modal-target="small-modal">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                          </svg>
+                                          
+                                      </button>
+                                    </div>
+                                    <div class="overflow-y-auto py-4 min-h-[100px]">
+                                      <p class=" text-gray-600 text-sm">
+                                        This is the regular modal with supporting text below as additional content
+                                      </p>
+                                    </div>
+                                    <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
+                                      <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
+                                      <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                               <!--medium-->
+                               <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#medium-modal" data-modal-target="medium-modal" data-modal-toggle="medium-modal">
+                                Medium
+                              </button>
+                              <div id="medium-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+                                <div class="opacity-0  ease-out  modal-open:opacity-100 transition-all modal-open:duration-500 md:max-w-2xl md:w-full m-3 md:mx-auto">
+                                  <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
+                                    <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                      <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
+                                      <button class="block cursor-pointer  close-modal-button" data-pd-overlay="#medium-modal" data-modal-target="medium-modal">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                          </svg>
+                                          
+                                      </button>
+                                    </div>
+                                    <div class="overflow-y-auto py-4 min-h-[100px]">
+                                      <p class=" text-gray-600 text-sm">
+                                        This is the regular modal with supporting text below as additional content
+                                      </p>
+                                    </div>
+                                    <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
+                                      <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
+                                      <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                              <!--large-->
+                              <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#large-modal" data-modal-target="large-modal" data-modal-toggle="large-modal">
+                                Large
+                              </button>
+                              <div id="large-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+                                <div class=" opacity-0 ease-out modal-open:opacity-100 transition-all modal-open:duration-500 lg:max-w-4xl lg:w-full m-3 lg:mx-auto">
+                                  <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
+                                    <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                      <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
+                                      <button class="block cursor-pointer close-modal-button" data-pd-overlay="#large-modal" data-modal-target="large-modal">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                          </svg>
+                                          
+                                      </button>
+                                    </div>
+                                    <div class="overflow-y-auto py-4 min-h-[100px]">
+                                      <p class=" text-gray-600 text-sm">
+                                        This is the regular modal with supporting text below as additional content
+                                      </p>
+                                    </div>
+                                    <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
+                                      <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
+                                      <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="#">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                              <button class="group">
+                                <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
+                              </button>
+                          </div>
+                        </div>
+                        <div class="code-main">
+                            <div data-code-wrapper="" class="code-wrapper ">
+      <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative&quot;&gt;
+      &lt;!--small--&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot; data-pd-overlay=&quot;#small-modal&quot; data-modal-target=&quot;small-modal&quot; data-modal-toggle=&quot;small-modal&quot;&gt; Small &lt;/button&gt;
+      &lt;div id=&quot;small-modal&quot; class=&quot;pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto &quot;&gt;
+        &lt;div class=&quot;opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500 sm:max-w-lg sm:w-full m-5 sm:mx-auto&quot;&gt;
+          &lt;div class=&quot;flex flex-col bg-white rounded-2xl py-4 px-5&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center pb-4 border-b border-gray-200&quot;&gt;
+              &lt;h4 class=&quot;text-sm text-gray-900 font-medium&quot;&gt;Modal simple&lt;/h4&gt;
+              &lt;button class=&quot;block cursor-pointer close-modal-button&quot; data-pd-overlay=&quot;#small-modal&quot; data-modal-target=&quot;small-modal&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                  &lt;path d=&quot;M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427&quot; stroke=&quot;black&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;overflow-y-auto py-4 min-h-[100px]&quot;&gt;
+              &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; This is the regular modal with supporting text below as additional content &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex items-center justify-end pt-4 border-t border-gray-200 space-x-4&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100&quot;&gt;Cancel&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Okay, got it&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!--medium--&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot; data-pd-overlay=&quot;#medium-modal&quot; data-modal-target=&quot;medium-modal&quot; data-modal-toggle=&quot;medium-modal&quot;&gt; Medium &lt;/button&gt;
+      &lt;div id=&quot;medium-modal&quot; class=&quot;pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto&quot;&gt;
+        &lt;div class=&quot;opacity-0  ease-out  modal-open:opacity-100 transition-all modal-open:duration-500 md:max-w-2xl md:w-full m-3 md:mx-auto&quot;&gt;
+          &lt;div class=&quot;flex flex-col bg-white rounded-2xl py-4 px-5&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center pb-4 border-b border-gray-200&quot;&gt;
+              &lt;h4 class=&quot;text-sm text-gray-900 font-medium&quot;&gt;Modal simple&lt;/h4&gt;
+              &lt;button class=&quot;block cursor-pointer  close-modal-button&quot; data-pd-overlay=&quot;#medium-modal&quot; data-modal-target=&quot;medium-modal&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                  &lt;path d=&quot;M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427&quot; stroke=&quot;black&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;overflow-y-auto py-4 min-h-[100px]&quot;&gt;
+              &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; This is the regular modal with supporting text below as additional content &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex items-center justify-end pt-4 border-t border-gray-200 space-x-4&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100&quot;&gt;Cancel&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Okay, got it&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!--large--&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot; data-pd-overlay=&quot;#large-modal&quot; data-modal-target=&quot;large-modal&quot; data-modal-toggle=&quot;large-modal&quot;&gt; Large &lt;/button&gt;
+      &lt;div id=&quot;large-modal&quot; class=&quot;pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto&quot;&gt;
+        &lt;div class=&quot; opacity-0 ease-out modal-open:opacity-100 transition-all modal-open:duration-500 lg:max-w-4xl lg:w-full m-3 lg:mx-auto&quot;&gt;
+          &lt;div class=&quot;flex flex-col bg-white rounded-2xl py-4 px-5&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center pb-4 border-b border-gray-200&quot;&gt;
+              &lt;h4 class=&quot;text-sm text-gray-900 font-medium&quot;&gt;Modal simple&lt;/h4&gt;
+              &lt;button class=&quot;block cursor-pointer close-modal-button&quot; data-pd-overlay=&quot;#large-modal&quot; data-modal-target=&quot;large-modal&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                  &lt;path d=&quot;M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427&quot; stroke=&quot;black&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;overflow-y-auto py-4 min-h-[100px]&quot;&gt;
+              &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; This is the regular modal with supporting text below as additional content &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex items-center justify-end pt-4 border-t border-gray-200 space-x-4&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100&quot;&gt;Cancel&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Okay, got it&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+                            </div>
+                            <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="doc-sub-heading relative group scroll-mt-24" id="static-modal">Static modal
+                </h2>
+                <p class="page-para">When clicking outside of the modal, use the data-modal-backdrop="static" data attribute to keep the modal from closing. This can be applied in scenarios where you need to make the user select a choice, as when they are filling out a survey or receiving a cookie notice.</p>
+              </div>
+              <div class="mt-8 code-example">
+                <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                      <div class="w-full relative">
+                        <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#static-backdrop-modal" data-modal-target="static-backdrop-modal" data-modal-toggle="static-backdrop-modal">
+                            Open modal
+                          </button>
+                          <div id="static-backdrop-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[100] overflow-x-hidden overflow-y-auto">
+                            <div class="opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500 sm:max-w-lg sm:w-full m-5 sm:mx-auto">
+                              <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
+                                  <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                    <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
+                                    <button class="block cursor-pointer">
+                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                        </svg>
+                                        
+                                    </button>
+                                  </div>
+                                  <div class="overflow-y-auto py-4 min-h-[100px]">
+                                    <p class=" text-gray-600 text-sm">
+                                      This is the regular modal with supporting text below as additional content
+                                    </p>
+                                  </div>
+                                  <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
+                                    <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
+                                    <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="#">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                              <button class="group">
+                                <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
+                              </button>
+                          </div>
+                        </div>
+                        <div class="code-main">
+                            <div data-code-wrapper="" class="code-wrapper ">
+      <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot; data-pd-overlay=&quot;#static-backdrop-modal&quot; data-modal-target=&quot;static-backdrop-modal&quot; data-modal-toggle=&quot;static-backdrop-modal&quot;&gt; Open modal &lt;/button&gt;
+      &lt;div id=&quot;static-backdrop-modal&quot; class=&quot;pd-overlay hidden w-full h-full fixed top-0 left-0 z-[100] overflow-x-hidden overflow-y-auto&quot;&gt;
+        &lt;div class=&quot;opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500 sm:max-w-lg sm:w-full m-5 sm:mx-auto&quot;&gt;
+          &lt;div class=&quot;flex flex-col bg-white rounded-2xl py-4 px-5&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center pb-4 border-b border-gray-200&quot;&gt;
+              &lt;h4 class=&quot;text-sm text-gray-900 font-medium&quot;&gt;Modal simple&lt;/h4&gt;
+              &lt;button class=&quot;block cursor-pointer&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                  &lt;path d=&quot;M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427&quot; stroke=&quot;black&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;overflow-y-auto py-4 min-h-[100px]&quot;&gt;
+              &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; This is the regular modal with supporting text below as additional content &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex items-center justify-end pt-4 border-t border-gray-200 space-x-4&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100&quot;&gt;Cancel&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Okay, got it&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+                            </div>
+                            <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="doc-sub-heading relative group scroll-mt-24" id="scroll-behaviour">Scrolling behavior</h2>
+                <p class="page-para">Use this component to show more detailed information about your product where modal body have scrolling </p>
+              </div>
+              <div class="mt-8 code-example">
+                <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                        <div class="w-full relative">
+                           <!--scroll inside body-->
+                           <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#scroll-inside-body-modal" data-modal-target="scroll-inside-body-modal" data-modal-toggle="scroll-inside-body-modal">
+                            Scroll inside body
+                          </button>
+                          <div id="scroll-inside-body-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+                            <div class="opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500 sm:max-w-lg sm:w-full m-3 sm:mx-auto ">
+                              <div class="flex flex-col bg-white rounded-2xl py-4 px-5 h-[500px] overflow-y-auto">
+                                <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                                  <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
+                                  <button class="block cursor-pointer close-modal-button" data-pd-overlay="#scroll-inside-body-modal" data-modal-target="scroll-inside-body-modal">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                      </svg>
+                                      
+                                  </button>
+                                </div>
+                                <div class="overflow-y-auto py-4 min-h-[100px]">
+                                  <div class="block mb-4">
+                                    <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
+                                    <p class=" text-gray-600 text-sm">
+                                      Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. Without point pivot most social down. Elephant problem criticality forward chime goto. Pain go launch door boy baseline. Shower awareness discussions without cross-pollination developing.
+                                    </p>
+                                  </div>
+                                  <div class="block mb-4">
+                                    <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
+                                    <p class=" text-gray-600 text-sm">
+                                      Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. Without point pivot most social down. Elephant problem criticality forward chime goto. Pain go launch door boy baseline. Shower awareness discussions without cross-pollination developing.
+                                    </p>
+                                  </div>
+                                  <div class="block mb-4">
+                                    <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
+                                    <p class=" text-gray-600 text-sm">
+                                      Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards.
+                                    </p>
+                                  </div>
+                                  <div class="block mb-4">
+                                    <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
+                                    <p class=" text-gray-600 text-sm">
+                                      Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards.
+                                    </p>
+                                  </div>
+                                  <div class="block mb-4">
+                                    <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
+                                    <p class=" text-gray-600 text-sm">
+                                      Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
+                                  <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
+                                  <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="#">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                              <button class="group">
+                                <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
+                              </button>
+                          </div>
+                        </div>
+                        <div class="code-main">
+                            <div data-code-wrapper="" class="code-wrapper ">
+      <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative&quot;&gt;
+      &lt;!--scroll inside body--&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot; data-pd-overlay=&quot;#scroll-inside-body-modal&quot; data-modal-target=&quot;scroll-inside-body-modal&quot; data-modal-toggle=&quot;scroll-inside-body-modal&quot;&gt; Scroll inside body &lt;/button&gt;
+      &lt;div id=&quot;scroll-inside-body-modal&quot; class=&quot;pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto&quot;&gt;
+        &lt;div class=&quot;opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500 sm:max-w-lg sm:w-full m-3 sm:mx-auto &quot;&gt;
+          &lt;div class=&quot;flex flex-col bg-white rounded-2xl py-4 px-5 h-[500px] overflow-y-auto&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center pb-4 border-b border-gray-200&quot;&gt;
+              &lt;h4 class=&quot;text-sm text-gray-900 font-medium&quot;&gt;Modal simple&lt;/h4&gt;
+              &lt;button class=&quot;block cursor-pointer close-modal-button&quot; data-pd-overlay=&quot;#scroll-inside-body-modal&quot; data-modal-target=&quot;scroll-inside-body-modal&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                  &lt;path d=&quot;M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427&quot; stroke=&quot;black&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;overflow-y-auto py-4 min-h-[100px]&quot;&gt;
+              &lt;div class=&quot;block mb-4&quot;&gt;
+                &lt;h4 class=&quot;text-sm text-gray-900 font-medium mb-2&quot;&gt;Lorem ipsum&lt;/h4&gt;
+                &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. Without point pivot most social down. Elephant problem criticality forward chime goto. Pain go launch door boy baseline. Shower awareness discussions without cross-pollination developing. &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;block mb-4&quot;&gt;
+                &lt;h4 class=&quot;text-sm text-gray-900 font-medium mb-2&quot;&gt;Lorem ipsum&lt;/h4&gt;
+                &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. Without point pivot most social down. Elephant problem criticality forward chime goto. Pain go launch door boy baseline. Shower awareness discussions without cross-pollination developing. &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;block mb-4&quot;&gt;
+                &lt;h4 class=&quot;text-sm text-gray-900 font-medium mb-2&quot;&gt;Lorem ipsum&lt;/h4&gt;
+                &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;block mb-4&quot;&gt;
+                &lt;h4 class=&quot;text-sm text-gray-900 font-medium mb-2&quot;&gt;Lorem ipsum&lt;/h4&gt;
+                &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;block mb-4&quot;&gt;
+                &lt;h4 class=&quot;text-sm text-gray-900 font-medium mb-2&quot;&gt;Lorem ipsum&lt;/h4&gt;
+                &lt;p class=&quot; text-gray-600 text-sm&quot;&gt; Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex items-center justify-end pt-4 border-t border-gray-200 space-x-4&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100&quot;&gt;Cancel&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Okay, got it&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+                            </div>
+                            <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h2 class="doc-sub-heading relative group scroll-mt-24" id="Form-element">Form element</h2>
+                <p class="page-para">Take advantage of this modal example with form input element to collect data from your users. It has the benefit of keeping the user on the page that is presently active rather than requiring a link to another one. A registration or login form would be excellent examples.</p>
+              </div>
+              <div class="mt-8 code-example">
+                <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                        <div class="w-full relative">
+                            <button type="button" class="modal-button  py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#subscribe-form-modal" data-modal-target="subscribe-form-modal" data-modal-toggle="subscribe-form-modal">
+                                Subscribe modal
+                              </button>
+                              <div id="subscribe-form-modal" class="pd-overlay  hidden w-full h-full fixed top-0 left-0 z-[100] overflow-x-hidden overflow-y-auto">
+                                <div class=" opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:opacity-100 transition-all modal-open:duration-500">
+                                  <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
                                       <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                        <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                        <button class="block cursor-pointer">
+                                        <h4 class="text-sm text-gray-900 font-medium">Subscribe to newsletter</h4>
+                                        <button class="block cursor-pointer close-modal-button" data-pd-overlay="#subscribe-form-modal" data-modal-target="subscribe-form-modal">
                                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
+                                            <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                                             </svg>
-                                            
                                         </button>
                                       </div>
-                                      <div class="overflow-y-auto py-4 min-h-[100px]">
-                                        <p class=" text-gray-600 text-sm">
-                                          This is the regular modal with supporting text below as additional content
-                                        </p>
+                                      <div class="overflow-y-auto py-4 min-h-[130px]">
+                                        <div class="relative">
+                                          <label class="flex  items-center mb-2 text-gray-600 text-sm font-medium">Email
+                                              </label>
+                                          <input type="text" id="default-search" class="block w-full h-11 px-5 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none " placeholder="Enter your email" required="">
+                                      </div>
                                       </div>
                                       <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
                                         <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
@@ -990,274 +1378,100 @@ code
                                 </div>
                               </div>
                         </div>
-                        </div>
                     </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="scroll-behaviour">Scrolling behavior</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                               <!--scroll inside body-->
-                               <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#scroll-inside-body-modal" data-modal-target="scroll-inside-body-modal" data-modal-toggle="scroll-inside-body-modal">
-                                Scroll inside body
+                </div>
+                <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="#">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                              <button class="group">
+                                <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
                               </button>
-                              <div id="scroll-inside-body-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-                                <div class="opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500 sm:max-w-lg sm:w-full m-3 sm:mx-auto ">
-                                  <div class="flex flex-col bg-white rounded-2xl py-4 px-5 h-[500px] overflow-y-auto">
-                                    <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                      <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                      <button class="block cursor-pointer close-modal-button" data-pd-overlay="#scroll-inside-body-modal" data-modal-target="scroll-inside-body-modal">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
-                                          </svg>
-                                          
-                                      </button>
-                                    </div>
-                                    <div class="overflow-y-auto py-4 min-h-[100px]">
-                                      <div class="block mb-4">
-                                        <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
-                                        <p class=" text-gray-600 text-sm">
-                                          Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. Without point pivot most social down. Elephant problem criticality forward chime goto. Pain go launch door boy baseline. Shower awareness discussions without cross-pollination developing.
-                                        </p>
-                                      </div>
-                                      <div class="block mb-4">
-                                        <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
-                                        <p class=" text-gray-600 text-sm">
-                                          Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. Without point pivot most social down. Elephant problem criticality forward chime goto. Pain go launch door boy baseline. Shower awareness discussions without cross-pollination developing.
-                                        </p>
-                                      </div>
-                                      <div class="block mb-4">
-                                        <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
-                                        <p class=" text-gray-600 text-sm">
-                                          Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards.
-                                        </p>
-                                      </div>
-                                      <div class="block mb-4">
-                                        <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
-                                        <p class=" text-gray-600 text-sm">
-                                          Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards.
-                                        </p>
-                                      </div>
-                                      <div class="block mb-4">
-                                        <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
-                                        <p class=" text-gray-600 text-sm">
-                                          Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards.
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                      <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
-                                      <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
-                                    </div>
-                                </div>
-                                </div>
-                              </div>
-                              <!--scroll inside viewport-->
-                              <!-- <button type="button" class="modal-button py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#scroll-inside-viewport-modal" data-modal-target="scroll-inside-viewport-modal" data-modal-toggle="scroll-inside-viewport-modal">
-                                Scroll inside viewport
-                              </button>
-                              <div id="scroll-inside-viewport-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-                                <div class="opacity-0  ease-out modal-open:opacity-100 transition-all modal-open:duration-500  sm:max-w-lg sm:w-full m-3 sm:mx-auto">
-                                  <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
-                                    <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                      <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                      <button class="block cursor-pointer close-modal-button" data-pd-overlay="#scroll-inside-viewport-modal" data-modal-target="scroll-inside-viewport-modal">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
-                                          </svg>
-                                          
-                                      </button>
-                                    </div>
-                                    <div class="overflow-y-auto py-4 min-h-[100px]">
-                                      <div class="block mb-4">
-                                        <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
-                                        <p class=" text-gray-600 text-sm">
-                                          Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. Without point pivot most social down. Elephant problem criticality forward chime goto. Pain go launch door boy baseline. Shower awareness discussions without cross-pollination developing.
-                                        </p>
-                                      </div>
-                                      <div class="block mb-4">
-                                        <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
-                                        <p class=" text-gray-600 text-sm">
-                                          Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards. Without point pivot most social down. Elephant problem criticality forward chime goto. Pain go launch door boy baseline. Shower awareness discussions without cross-pollination developing.
-                                        </p>
-                                      </div>
-                                      <div class="block">
-                                        <h4 class="text-sm text-gray-900 font-medium mb-2">Lorem ipsum</h4>
-                                        <p class=" text-gray-600 text-sm">
-                                          Better feed post move 4-blocker your. Data downloaded way info one own practices crack. Reference us reach pulling go already want moving backwards.
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                      <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
-                                      <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
-                                    </div>
-                                </div>
-                                </div>
-                              </div> -->
+                          </div>
+                        </div>
+                        <div class="code-main">
+                            <div data-code-wrapper="" class="code-wrapper ">
+      <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modal-button  py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot; data-pd-overlay=&quot;#subscribe-form-modal&quot; data-modal-target=&quot;subscribe-form-modal&quot; data-modal-toggle=&quot;subscribe-form-modal&quot;&gt; Subscribe modal &lt;/button&gt;
+      &lt;div id=&quot;subscribe-form-modal&quot; class=&quot;pd-overlay  hidden w-full h-full fixed top-0 left-0 z-[100] overflow-x-hidden overflow-y-auto&quot;&gt;
+        &lt;div class=&quot; opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:opacity-100 transition-all modal-open:duration-500&quot;&gt;
+          &lt;div class=&quot;flex flex-col bg-white rounded-2xl py-4 px-5&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center pb-4 border-b border-gray-200&quot;&gt;
+              &lt;h4 class=&quot;text-sm text-gray-900 font-medium&quot;&gt;Subscribe to newsletter&lt;/h4&gt;
+              &lt;button class=&quot;block cursor-pointer close-modal-button&quot; data-pd-overlay=&quot;#subscribe-form-modal&quot; data-modal-target=&quot;subscribe-form-modal&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                  &lt;path d=&quot;M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427&quot; stroke=&quot;black&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;overflow-y-auto py-4 min-h-[130px]&quot;&gt;
+              &lt;div class=&quot;relative&quot;&gt;
+                &lt;label class=&quot;flex  items-center mb-2 text-gray-600 text-sm font-medium&quot;&gt;Email &lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;default-search&quot; class=&quot;block w-full h-11 px-5 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none &quot; placeholder=&quot;Enter your email&quot; required=&quot;&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex items-center justify-end pt-4 border-t border-gray-200 space-x-4&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100&quot;&gt;Cancel&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700&quot;&gt;Okay, got it&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
                             </div>
+                            <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                         </div>
                     </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="subscribe-modal">Subscribe modal</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                                <button type="button" class="modal-button  py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700" data-pd-overlay="#subscribe-form-modal" data-modal-target="subscribe-form-modal" data-modal-toggle="subscribe-form-modal">
-                                    Subscribe modal
-                                  </button>
-                                  <div id="subscribe-form-modal" class="pd-overlay  hidden w-full h-full fixed top-0 left-0 z-[100] overflow-x-hidden overflow-y-auto">
-                                    <div class=" opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:opacity-100 transition-all modal-open:duration-500">
-                                      <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
-                                          <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                            <h4 class="text-sm text-gray-900 font-medium">Subscribe to newsletter</h4>
-                                            <button class="block cursor-pointer close-modal-button" data-pd-overlay="#subscribe-form-modal" data-modal-target="subscribe-form-modal">
-                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
-                                                </svg>
-                                            </button>
-                                          </div>
-                                          <div class="overflow-y-auto py-4 min-h-[130px]">
-                                            <div class="relative">
-                                              <label class="flex  items-center mb-2 text-gray-600 text-sm font-medium">Email
-                                                  </label>
-                                              <input type="text" id="default-search" class="block w-full h-11 px-5 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none " placeholder="Enter your email" required="">
-                                          </div>
-                                          </div>
-                                          <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                            <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100">Cancel</button>
-                                            <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700">Okay, got it</button>
-                                          </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-code
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-            </div>
+                </div>
               </div>
-            <!----------Middlebar End---------->
-            <!----------Rightbar Start---------->
-            <div
-              class="flex-none hidden w-72 py-9 px-8 xl:text-sm  lg:sticky lg:top-[4.5rem] lg:overflow-y-visible xl:block border-l border-gray-200 xl:min-h-screen h-full">
-              <h4 class="uppercase text-sm text-gray-400 mb-5">ON THIS PAGE</h4>
-              <nav id="TableOfContents">  
-                <ul>
-                  <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Component</a>
-                    <ul class="space-y-4 ">
-                      <li>
-                        <a href="#default-modal">Default Modal</a>
-                      </li>
-                      <li>
-                        <a href="#slide-down-modal">Slide Down Animation Modal</a>
-                      </li>
-                      <li>
-                        <a href="#slide-up-modal">Slide Up Animation</a>
-                      </li>
-                      <li>
-                        <a href="#modal-size">Modal Size</a>
-                      </li>
-                      <li>
-                        <a href="#static-backdrop">Static Backdrop</a>
-                      </li>
-                      <li>
-                        <a href="#scroll-behaviour">Scrolling Behavior</a>
-                      </li>
-                      <li>
-                        <a href="#subscribe-modal">Subscribe Modal</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>  
-            </div>
-             <!----------Rightbar End---------->
-          </div>
         </div>
+          </div>
+        <!----------Middlebar End---------->
+        <!----------Rightbar Start---------->
+        <div
+          class="flex-none hidden w-72 py-9 px-8 xl:text-sm  lg:sticky lg:top-[4.5rem] lg:overflow-y-visible xl:block border-l border-gray-200 xl:min-h-screen h-full">
+          <h4 class="uppercase text-sm text-gray-400 mb-5">ON THIS PAGE</h4>
+          <nav id="TableOfContents">  
+            <ul>
+              <li>
+              <a href="#" class="mb-5 block active:text-indigo-600">Component</a>
+                <ul class="space-y-4 ">
+                  <li>
+                    <a href="#default-modal">Default Modal</a>
+                  </li>
+                  <li>
+                    <a href="#slide-down-modal">Slide Down Animation Modal</a>
+                  </li>
+                  <li>
+                    <a href="#slide-up-modal">Slide Up Animation</a>
+                  </li>
+                  <li>
+                    <a href="#sizes">Sizes</a>
+                  </li>
+                  <li>
+                    <a href="#static-modal">Static modal</a>
+                  </li>
+                  <li>
+                    <a href="#scroll-behaviour">Scrolling Behavior</a>
+                  </li>
+                  <li>
+                    <a href="#Form-element">Form element</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>  
+        </div>
+         <!----------Rightbar End---------->
+      </div>
+      </div>
       </div>
     </main>
   </div>

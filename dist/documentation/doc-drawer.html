@@ -636,13 +636,41 @@
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Component</span>
                 <h1 class="doc-heading ">Tailwind CSS Drawer</h1>
-                <p class="doc-paragraph-big">Use the powerful mobile-first flexbox grid to build layouts of all shapes and sizes use twelve column system and dozens of predefined classes.</p>
-            </div>
+                <p class="doc-paragraph-big">The Drawer component can display additional information in a variety of forms and locations and be utilised as a hidden off-canvas sidebar for navigation.</p>
+                <div class="alert-box mt-8 block">
+                  <div class="flex">
+                    <div class="flex-shrink-0">
+                      <svg class="h-4 w-4 text-indigo-600 mt-0.5" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                      </svg>
+                    </div>
+                    <div class="ml-3">
+                      <h3 class="alert-box-heading">
+                        Requires Pagedone JS
+                      </h3>
+                      <p class="alert-box-paragraph ">
+                        This component requires the use of our <a class="text-indigo-600" href="https://pagedone.io/docs/installation">Pagedone UI</a> as a package, else you can skip this message if you are already using Pagedone UI as a package.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
             <!--Header End-->
             <div id="mainContent">
                   <div class="mt-8">
+                    <p class="page-para">To display a fixed element in relation to the document page from either side for user actions, contact forms, navigation, or other reasons, utilise the Drawer component, sometimes known as "off-canvas."</p>
+                    <p class="page-para">Numerous settings are available, including location, body scrolling, backdrop display and hiding, and the ability to swipe the edge to reveal a portion of the drawer when it is not fully visible.</p>
+                    <p class="page-para mb-8">To use this component use need to</p>
+                    <ul class="page-list">
+                      <li>Add <code>drawer-button</code>class to button element</li>
+                      <li>Add <code>data-drawer-target="{id}"</code> data attribute must be assigned to some element such a button, with the value being the id of the drawer component itself, in order to start the drawer component.</li>
+                      <li>Add same <code>{id}</code> to drawer body which you have added in data-drawer-target.</li>
+                    </ul>
+                    <p class="page-para mb-8">The drawer component's id may then be used as the value for the following attributes, which you can use to show, conceal, or toggle the drawer visibility:</p>
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="Drawer-Placement">Drawer Placement</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <p class="page-para">You can also place drawer in different direction such as {top|bottom|left|right} for that you need to add <code>data-drawer-postion="{position}"</code></p>
+                  
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -650,7 +678,7 @@
                           <div class="text-center h-[800px]">
                             
                             <button
-                                class="drawer-button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                                class="drawer-button py-2.5 px-5 text-xs bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700"
                                 type="button" data-drawer-target="drawer-left-example" data-drawer-show="drawer-left-example"
                                 data-drawer-position="left" aria-controls="drawer-left-example">
                                 Show drawer Left
@@ -659,7 +687,7 @@
                         
                         <!-- drawer component -->
                         <div id="drawer-left-example"
-                            class="w-96 absolute left-0 top-0 z-40 pl-9 pr-3 pb-11 transition-transform bg-white -translate-x-full "
+                            class="w-96 absolute left-0 top-0 z-40 pl-9 pr-3 pb-11 transition-transform bg-white "
                             tabindex="-1" aria-labelledby="drawer-label" aria-hidden="true">
                             <h1 id="drawer-label"
                                 class="text-gray-900 text-lg font-semibold leading-7 pt-6">Notification
@@ -676,7 +704,7 @@
                           
                             <div class="py-6">
                                 <div class="flex gap-3 mb-4">
-                                  <img src="../images/drawer/drawer img1.png" alt="" class="w-12 h-12">
+                                  <img src="https://pagedone.io/asset/uploads/1696490413.png" alt="" class="w-12 h-12">
                                   <div>
                                     <h5 class="text-gray-900 text-sm font-medium leading-snug mb-1">Hailey Garza
                                       <span class="text-gray-500">added new tags to Ease Design System</span></h5>
@@ -684,7 +712,7 @@
                                   </div>
                                 </div>
                                 <div class="flex gap-3 mb-4">
-                                  <img src="../images/drawer/drawer img2.png" alt="" class="w-12 h-12">
+                                  <img src="https://pagedone.io/asset/uploads/1696490439.png" alt="" class="w-12 h-12">
                                   <div>
                                     <h5 class="text-gray-900 text-sm font-medium leading-snug mb-1">Brandon Newman
                                       <span class="text-gray-500">Liked your Pagedone 045-favourites-2h ago</span></h5>
@@ -692,7 +720,7 @@
                                   </div>
                                 </div>
                                 <div class="flex gap-3 mb-4">
-                                  <img src="../images/drawer/drawer img3.png" alt="" class="w-12 h-12">
+                                  <img src="https://pagedone.io/asset/uploads/1696490759.png" alt="" class="w-12 h-12">
                                   <div>
                                     <h5 class="text-gray-900 text-sm font-medium leading-snug mb-1">Justi Bolt
                                       <span class="text-gray-500">Started Following</span></h5>
@@ -700,7 +728,7 @@
                                   </div>
                                 </div>
                                 <div class="flex gap-3">
-                                  <img src="../images/drawer/drawer img4.png" alt="" class="w-12 h-12">
+                                  <img src="https://pagedone.io/asset/uploads/1696490742.png" alt="" class="w-12 h-12">
                                   <div>
                                     <h5 class="text-gray-900 text-sm font-medium leading-snug mb-1">Dave Wood
                                       <span class="text-gray-500">Started Following</span></h5>
@@ -710,7 +738,7 @@
                             </div>
                             <h2 class="text-gray-900 text-base font-semibold leading-relaxed mb-4">This Week</h2>
                             <div class="flex gap-3 mb-4">
-                              <img src="../images/drawer/drawer img5.png" alt="" class="w-12 h-12">
+                              <img src="https://pagedone.io/asset/uploads/1696490759.png" alt="" class="w-12 h-12">
                               <div>
                                 <h5 class="text-gray-900 text-sm font-medium leading-snug mb-1">Kate Young
                                   <span class="text-gray-500">Like your post</span></h5>
@@ -718,7 +746,7 @@
                               </div>
                             </div>
                             <div class="flex gap-3 mb-4">
-                              <img src="../images/drawer/drawer img6.png" alt="" class="w-12 h-12">
+                              <img src="https://pagedone.io/asset/uploads/1696490779.png" alt="" class="w-12 h-12">
                               <div>
                                 <h5 class="text-gray-900 text-sm font-medium leading-snug mb-1">Shanaya Kale
                                   <span class="text-gray-500">commented on your post</span></h5>
@@ -726,7 +754,7 @@
                               </div>
                             </div>
                             <div class="flex gap-3 mb-4">
-                              <img src="../images/drawer/drawer img7.png" alt="" class="w-12 h-12">
+                              <img src="https://pagedone.io/asset/uploads/1696490779.png" alt="" class="w-12 h-12">
                               <div>
                                 <h5 class="text-gray-900 text-sm font-medium leading-snug mb-1">Angelina
                                   <span class="text-gray-500">Messages you "Do you want to go see a movie tonight?"</span></h5>
@@ -734,7 +762,7 @@
                               </div>
                             </div>
                             <div class="flex gap-3">
-                              <img src="../images/drawer/drawer img8.png" alt="" class="w-12 h-12">
+                              <img src="https://pagedone.io/asset/uploads/1696490779.png" alt="" class="w-12 h-12">
                               <div class="">
                                 
                                 <div class="pb-3">
@@ -755,7 +783,7 @@
                                   </div>
                               </div>
                             </div>
-
+      
                         </div>
                         </div>
                       </div>
@@ -780,77 +808,77 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div id=&quot;drawer-left-example&quot; class=&quot;w-96 absolute left-0 top-0 h-auto z-40 pl-9 pr-3 pb-11 transition-transform bg-white -translate-x-full &quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;drawer-label&quot;&gt;
-  &lt;h1 id=&quot;drawer-label&quot; class=&quot;text-gray-900 text-lg font-semibold leading-7 pt-6&quot;&gt;Notification &lt;/h1&gt;
-  &lt;p class=&quot;text-black text-opacity-20 text-sm font-normal leading-snug&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/p&gt;
-  &lt;button type=&quot;button&quot; data-drawer-hide=&quot;drawer-left-example&quot; aria-controls=&quot;drawer-left-example&quot; data-drawer-position=&quot;left&quot; class=&quot;text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-6 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white&quot;&gt;
-    &lt;svg class=&quot;w-3 h-3&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 14 14&quot;&gt;
+      <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div id=&quot;drawer-left-example&quot; class=&quot;w-96 absolute left-0 top-0 h-auto z-40 pl-9 pr-3 pb-11 transition-transform bg-white -translate-x-full &quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;drawer-label&quot;&gt;
+      &lt;h1 id=&quot;drawer-label&quot; class=&quot;text-gray-900 text-lg font-semibold leading-7 pt-6&quot;&gt;Notification &lt;/h1&gt;
+      &lt;p class=&quot;text-black text-opacity-20 text-sm font-normal leading-snug&quot;&gt;Lorem Ipsum is simply dummy text.&lt;/p&gt;
+      &lt;button type=&quot;button&quot; data-drawer-hide=&quot;drawer-left-example&quot; aria-controls=&quot;drawer-left-example&quot; data-drawer-position=&quot;left&quot; class=&quot;text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-6 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white&quot;&gt;
+      &lt;svg class=&quot;w-3 h-3&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 14 14&quot;&gt;
       &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6&quot; /&gt;
-    &lt;/svg&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Close menu&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;div class=&quot;py-6&quot;&gt;
-    &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
+      &lt;/svg&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Close menu&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;py-6&quot;&gt;
+      &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
       &lt;img src=&quot;../images/drawer/drawer img1.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
       &lt;div&gt;
         &lt;h5 class=&quot;text-gray-900 text-sm font-medium leading-snug mb-1&quot;&gt;Hailey Garza &lt;span class=&quot;text-gray-500&quot;&gt;added new tags to Ease Design System&lt;/span&gt;
         &lt;/h5&gt;
         &lt;h6 class=&quot;text-gray-500 text-xs font-normal leading-[18px]&quot;&gt;Account | Friday, 10:03 AM&lt;/h6&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
       &lt;img src=&quot;../images/drawer/drawer img2.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
       &lt;div&gt;
         &lt;h5 class=&quot;text-gray-900 text-sm font-medium leading-snug mb-1&quot;&gt;Brandon Newman &lt;span class=&quot;text-gray-500&quot;&gt;Liked your Pagedone 045-favourites-2h ago&lt;/span&gt;
         &lt;/h5&gt;
         &lt;h6 class=&quot;text-gray-500 text-xs font-normal leading-[18px]&quot;&gt;Friday, 10:03 AM&lt;/h6&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
       &lt;img src=&quot;../images/drawer/drawer img3.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
       &lt;div&gt;
         &lt;h5 class=&quot;text-gray-900 text-sm font-medium leading-snug mb-1&quot;&gt;Justi Bolt &lt;span class=&quot;text-gray-500&quot;&gt;Started Following&lt;/span&gt;
         &lt;/h5&gt;
         &lt;h6 class=&quot;text-gray-500 text-xs font-normal leading-[18px]&quot;&gt;Friday, 10:03 AM&lt;/h6&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;flex gap-3&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex gap-3&quot;&gt;
       &lt;img src=&quot;../images/drawer/drawer img4.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
       &lt;div&gt;
         &lt;h5 class=&quot;text-gray-900 text-sm font-medium leading-snug mb-1&quot;&gt;Dave Wood &lt;span class=&quot;text-gray-500&quot;&gt;Started Following&lt;/span&gt;
         &lt;/h5&gt;
         &lt;h6 class=&quot;text-gray-500 text-xs font-normal leading-[18px]&quot;&gt;Friday, 10:03 AM&lt;/h6&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;h2 class=&quot;text-gray-900 text-base font-semibold leading-relaxed mb-4&quot;&gt;This Week&lt;/h2&gt;
-  &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
-    &lt;img src=&quot;../images/drawer/drawer img5.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
-    &lt;div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;h2 class=&quot;text-gray-900 text-base font-semibold leading-relaxed mb-4&quot;&gt;This Week&lt;/h2&gt;
+      &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
+      &lt;img src=&quot;../images/drawer/drawer img5.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
+      &lt;div&gt;
       &lt;h5 class=&quot;text-gray-900 text-sm font-medium leading-snug mb-1&quot;&gt;Kate Young &lt;span class=&quot;text-gray-500&quot;&gt;Like your post&lt;/span&gt;
       &lt;/h5&gt;
       &lt;h6 class=&quot;text-gray-500 text-xs font-normal leading-[18px]&quot;&gt;Account | Friday, 10:03 AM&lt;/h6&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
-    &lt;img src=&quot;../images/drawer/drawer img6.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
-    &lt;div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
+      &lt;img src=&quot;../images/drawer/drawer img6.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
+      &lt;div&gt;
       &lt;h5 class=&quot;text-gray-900 text-sm font-medium leading-snug mb-1&quot;&gt;Shanaya Kale &lt;span class=&quot;text-gray-500&quot;&gt;commented on your post&lt;/span&gt;
       &lt;/h5&gt;
       &lt;h6 class=&quot;text-gray-500 text-xs font-normal leading-[18px]&quot;&gt;Friday, 10:03 AM&lt;/h6&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
-    &lt;img src=&quot;../images/drawer/drawer img7.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
-    &lt;div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex gap-3 mb-4&quot;&gt;
+      &lt;img src=&quot;../images/drawer/drawer img7.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
+      &lt;div&gt;
       &lt;h5 class=&quot;text-gray-900 text-sm font-medium leading-snug mb-1&quot;&gt;Angelina &lt;span class=&quot;text-gray-500&quot;&gt;Messages you &quot;Do you want to go see a movie tonight?&quot;&lt;/span&gt;
       &lt;/h5&gt;
       &lt;h6 class=&quot;text-gray-500 text-xs font-normal leading-[18px]&quot;&gt;Friday, 10:03 AM&lt;/h6&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex gap-3&quot;&gt;
-    &lt;img src=&quot;../images/drawer/drawer img8.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
-    &lt;div class=&quot;&quot;&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex gap-3&quot;&gt;
+      &lt;img src=&quot;../images/drawer/drawer img8.png&quot; alt=&quot;&quot; class=&quot;w-12 h-12&quot;&gt;
+      &lt;div class=&quot;&quot;&gt;
       &lt;div class=&quot;pb-3&quot;&gt;
         &lt;h5 class=&quot;text-gray-900 text-sm font-medium leading-snug mb-1&quot;&gt;Natasha &lt;span class=&quot;text-gray-500&quot;&gt;Send you competitors analysis document&lt;/span&gt;
         &lt;/h5&gt;
@@ -867,9 +895,9 @@
           &lt;h6 class=&quot;text-gray-500 text-xs font-normal leading-4&quot;&gt;56 Mb&lt;/h6&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
                                 </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>

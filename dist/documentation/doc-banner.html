@@ -636,19 +636,40 @@
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Component</span>
                 <h1 class="doc-heading ">Tailwind CSS Banner</h1>
-                <p class="doc-paragraph-big">Use the banner component to show marketing messages and CTA buttons at the top or bottom side of your website based on the utility classes from Tailwind CSS</p>
+                <p class="doc-paragraph-big">Utilise Tailwind CSS's utility classes to display CTA buttons and marketing messaging at the top or bottom of your website using the banner component.</p>
             </div>
             <!--Header End-->
             <div id="mainContent">
+              <div class="alert-box mt-8 block">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-4 w-4 text-indigo-600 mt-0.5" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="alert-box-heading">
+                      Requires Pagedone JS
+                    </h3>
+                    <p class="alert-box-paragraph ">
+                      This component requires the use of our <a class="text-indigo-600" href="https://pagedone.io/docs/installation">Pagedone UI</a> as a package, else you can skip this message if you are already using Pagedone UI as a package.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-banner">Default banner </h2>
-                    <p class="page-para">lorem ispsum</p>
+                  <p class="page-para">Start displaying marketing, informational, and call-to-action messages to your website visitors by using the sticky banner component, which is designed with Tailwind CSS and Pagedone. It will remain stuck at the top or bottom of the page while the user scrolls down the primary content area.</p>
+                  <p class="page-para">Examine the ensuing instances using diverse designs, dimensions, and arrangements to optimise the sticky banner feature and enhance marketing conversions with a responsive element that accommodates dark mode.</p>
+                  <p class="page-para mb-8">Banner can be closed after reading. You need to add data-dismiss="alert" in button element.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Default-Banner">Default sticky banner</h2>
+                    <p class="page-para">Use this free example to display an announcement text message with a close button to dismiss the banner, an icon element, and a call to action.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview p-0">
                             <div class="w-full relative">
-                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 ">
+                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex md:flex-row flex-col md:gap-y-0 gap-y-4 justify-between w-full py-4 px-11  bg-gray-50 ">
                                     <div class="flex items-center ">
                                         <p class="flex items-center text-sm font-normal text-gray-600 ">
                                             <span class="inline-flex p-3 mr-5 bg-indigo-100 rounded-full items-center justify-center">
@@ -718,8 +739,8 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
-   &lt;div class=&quot;flex items-center &quot;&gt;
-     &lt;p class=&quot;flex items-center text-sm font-normal text-gray-600 &quot;&gt;
+      &lt;div class=&quot;flex items-center &quot;&gt;
+      &lt;p class=&quot;flex items-center text-sm font-normal text-gray-600 &quot;&gt;
        &lt;span class=&quot;inline-flex p-3 mr-5 bg-indigo-100 rounded-full items-center justify-center&quot;&gt;
          &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
            &lt;path d=&quot;M14.25 2.66683L3.75 14.5832M7.25 4.70192C7.25 6.05608 6.13071 7.15385 4.75 7.15385C3.36929 7.15385 2.25 6.05608 2.25 4.70192C2.25 3.34776 3.36929 2.25 4.75 2.25C6.13071 2.25 7.25 3.34776 7.25 4.70192ZM15.75 12.5481C15.75 13.9022 14.6307 15 13.25 15C11.8693 15 10.75 13.9022 10.75 12.5481C10.75 11.1939 11.8693 10.0962 13.25 10.0962C14.6307 10.0962 15.75 11.1939 15.75 12.5481Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
@@ -727,18 +748,18 @@
          &lt;span class=&quot;sr-only&quot;&gt;Discount&lt;/span&gt;
        &lt;/span&gt;
        &lt;span class=&quot;text-base text-gray-600&quot;&gt;Get 15% off on purchase of Pagedone team plan&lt;/span&gt;
-     &lt;/p&gt;
-   &lt;/div&gt;
-   &lt;div class=&quot;flex items-center&quot;&gt;
-     &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
-     &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
+      &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
+      &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
        &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
          &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
        &lt;/svg&gt;
        &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-     &lt;/button&gt;
-   &lt;/div&gt;
- &lt;/div&gt;                                  
+      &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;                                  
                                 </code></pre>
                                 </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
@@ -747,14 +768,14 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="banner-style">Banner style</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Banner-Style">Banner style</h2>
+                    <p class="page-para">Use this example for alternet design of banner which display an announcement text message with a close button to dismiss the banner, an icon element, and a call to action.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview p-0">
                             <div class="w-full relative">
-                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 ">
+                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex md:flex-row flex-col md:gap-y-0 gap-y-4 justify-between w-full py-4 px-11  bg-gray-50 ">
                                     <div class="flex items-center ">
                                         <p class="flex items-center text-sm font-normal text-gray-600 ">
                                             <span class="inline-flex mr-5 ">
@@ -824,8 +845,8 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
-   &lt;div class=&quot;flex items-center &quot;&gt;
-     &lt;p class=&quot;flex items-center text-sm font-normal text-gray-600 &quot;&gt;
+      &lt;div class=&quot;flex items-center &quot;&gt;
+      &lt;p class=&quot;flex items-center text-sm font-normal text-gray-600 &quot;&gt;
        &lt;span class=&quot;inline-flex mr-5&quot;&gt;
          &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
            &lt;path d=&quot;M14.25 2.66683L3.75 14.5832M7.25 4.70192C7.25 6.05608 6.13071 7.15385 4.75 7.15385C3.36929 7.15385 2.25 6.05608 2.25 4.70192C2.25 3.34776 3.36929 2.25 4.75 2.25C6.13071 2.25 7.25 3.34776 7.25 4.70192ZM15.75 12.5481C15.75 13.9022 14.6307 15 13.25 15C11.8693 15 10.75 13.9022 10.75 12.5481C10.75 11.1939 11.8693 10.0962 13.25 10.0962C14.6307 10.0962 15.75 11.1939 15.75 12.5481Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
@@ -833,18 +854,18 @@
          &lt;span class=&quot;sr-only&quot;&gt;Discount&lt;/span&gt;
        &lt;/span&gt;
        &lt;span class=&quot;text-base text-gray-600&quot;&gt;Get 15% off on purchase of Pagedone team plan&lt;/span&gt;
-     &lt;/p&gt;
-   &lt;/div&gt;
-   &lt;div class=&quot;flex items-center&quot;&gt;
-     &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
-     &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
+      &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
+      &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
        &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
          &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
        &lt;/svg&gt;
        &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-     &lt;/button&gt;
-   &lt;/div&gt;
- &lt;/div&gt;                                  
+      &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;                                  
                                 </code></pre>
                                 </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
@@ -853,8 +874,8 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="banner-link">Banner with link</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Bottom-banner-position">Bottom banner position</h2>
+                    <p class="page-para">You may use this example to move the sticky banner from the top side of the page to the bottom side.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -870,7 +891,7 @@
                                                 <span class="sr-only">Discount</span>
                                             </span>
                                             <span class="text-base text-gray-600">Get 15% off on purchase of Pagedone team plan</span>
-                                            <a href="#" class="flex items-center ml-8 text-indigo-600 font-semibold">Buy now <svg class="ml-2 " width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <a href="#" class="flex items-center lg:ml-8 ml-3 lg:mr-0 mr-4 text-indigo-600 font-semibold">Buy now <svg class="ml-2 " width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M2.5 10L15.8333 10M11.6667 15L16.0774 10.5893C16.3552 10.3115 16.4941 10.1726 16.4941 10C16.4941 9.82741 16.3552 9.68852 16.0774 9.41074L11.6667 5" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                                               </svg>
                                               </a>
@@ -933,9 +954,9 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
-  &lt;div class=&quot;flex items-center justify-center mx-auto&quot;&gt;
-    &lt;p class=&quot;flex items-center r text-sm font-normal text-gray-600 &quot;&gt;
+      <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
+      &lt;div class=&quot;flex items-center justify-center mx-auto&quot;&gt;
+      &lt;p class=&quot;flex items-center r text-sm font-normal text-gray-600 &quot;&gt;
       &lt;span class=&quot;inline-flex mr-5 &quot;&gt;
         &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M14.25 2.66683L3.75 14.5832M7.25 4.70192C7.25 6.05608 6.13071 7.15385 4.75 7.15385C3.36929 7.15385 2.25 6.05608 2.25 4.70192C2.25 3.34776 3.36929 2.25 4.75 2.25C6.13071 2.25 7.25 3.34776 7.25 4.70192ZM15.75 12.5481C15.75 13.9022 14.6307 15 13.25 15C11.8693 15 10.75 13.9022 10.75 12.5481C10.75 11.1939 11.8693 10.0962 13.25 10.0962C14.6307 10.0962 15.75 11.1939 15.75 12.5481Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
@@ -947,34 +968,34 @@
           &lt;path d=&quot;M2.5 10L15.8333 10M11.6667 15L16.0774 10.5893C16.3552 10.3115 16.4941 10.1726 16.4941 10C16.4941 9.82741 16.3552 9.68852 16.0774 9.41074L11.6667 5&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.8&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
       &lt;/a&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
+      &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+      &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
       &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
         &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
       &lt;/svg&gt;
       &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
+      &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="banner-with-logo">Banner with logo</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Marketing-CTA-banner">Marketing CTA banner</h2>
+                    <p class="page-para">Use this free example to display an announcement text message with a close button to dismiss the banner, an icon element, and a call to action. Use Tailwind CSS's max-w-{*} utility classes to set an alternative width.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview p-0">
                             <div class="w-full relative">
-                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 ">
+                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex md:flex-row flex-col md:gap-y-0 gap-y-4 justify-between w-full py-4 px-11  bg-gray-50 ">
                                     <div class="flex items-center">
-                                        <p class="flex items-center r text-sm font-normal text-gray-600 ">
-                                           <span class="border-r border-gray-300 mr-7 pr-7">
+                                        <p class="flex md:flex-row flex-col md:gap-y-0 gap-y-4 items-center text-sm font-normal text-gray-600 ">
+                                           <span class="md:border-r border-gray-300 mr-7 pr-7">
                                             <svg width="153" height="40" viewBox="0 0 153 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M44.5455 27.021V10.9091H51.2883C51.447 10.9091 51.6509 10.9165 51.9003 10.9315C52.1496 10.9389 52.38 10.9613 52.5915 10.9986C53.5359 11.1403 54.3141 11.4499 54.926 11.9273C55.5455 12.4047 56.0026 13.0089 56.2973 13.7399C56.5995 14.4634 56.7506 15.269 56.7506 16.1566C56.7506 17.0368 56.5995 17.8424 56.2973 18.5734C55.9951 19.297 55.5342 19.8974 54.9147 20.3748C54.3027 20.8522 53.5284 21.1618 52.5915 21.3035C52.38 21.3333 52.1458 21.3557 51.8889 21.3706C51.6396 21.3855 51.4394 21.393 51.2883 21.393H47.2766V27.021H44.5455ZM47.2766 18.8755H51.175C51.3261 18.8755 51.4961 18.8681 51.6849 18.8531C51.8738 18.8382 52.0476 18.8084 52.2062 18.7636C52.6595 18.6517 53.0146 18.4541 53.2715 18.1706C53.5359 17.8872 53.721 17.5664 53.8268 17.2084C53.9401 16.8503 53.9968 16.4998 53.9968 16.1566C53.9968 15.8135 53.9401 15.4629 53.8268 15.1049C53.721 14.7394 53.5359 14.4149 53.2715 14.1315C53.0146 13.848 52.6595 13.6503 52.2062 13.5385C52.0476 13.4937 51.8738 13.4676 51.6849 13.4601C51.4961 13.4452 51.3261 13.4378 51.175 13.4378H47.2766V18.8755Z" fill="#111827"/>
                                               <path d="M61.9068 27.3566C61.0229 27.3566 60.275 27.1925 59.663 26.8643C59.0511 26.5287 58.5864 26.0848 58.2691 25.5329C57.9594 24.9809 57.8045 24.373 57.8045 23.7091C57.8045 23.1273 57.9027 22.6051 58.0991 22.1427C58.2956 21.6727 58.5978 21.2699 59.0057 20.9343C59.4137 20.5911 59.9425 20.3114 60.5923 20.0951C61.0833 19.9385 61.6575 19.7967 62.3148 19.6699C62.9796 19.5431 63.6974 19.4275 64.468 19.3231C65.2461 19.2112 66.0583 19.0918 66.9045 18.965L65.9299 19.5133C65.9374 18.6779 65.7486 18.0625 65.3632 17.6671C64.9779 17.2718 64.3282 17.0741 63.4141 17.0741C62.8625 17.0741 62.3299 17.2009 61.8162 17.4545C61.3024 17.7082 60.9436 18.1445 60.7396 18.7636L58.2464 17.9916C58.5486 16.9697 59.1228 16.1492 59.969 15.5301C60.8227 14.911 61.9711 14.6014 63.4141 14.6014C64.502 14.6014 65.4577 14.7767 66.2812 15.1273C67.1122 15.4779 67.728 16.0522 68.1284 16.8503C68.3475 17.2755 68.4797 17.7119 68.525 18.1594C68.5703 18.5995 68.593 19.0807 68.593 19.6028V27.021H66.2019V24.4028L66.5985 24.828C66.047 25.7007 65.401 26.3422 64.6606 26.7524C63.9278 27.1552 63.0099 27.3566 61.9068 27.3566ZM62.4508 25.2084C63.0703 25.2084 63.5992 25.1002 64.0373 24.8839C64.4755 24.6676 64.8231 24.4028 65.0799 24.0895C65.3444 23.7762 65.5219 23.4816 65.6126 23.2056C65.7561 22.8625 65.8354 22.4709 65.8505 22.0308C65.8732 21.5832 65.8845 21.2214 65.8845 20.9455L66.7231 21.1916C65.8997 21.3184 65.1933 21.4303 64.604 21.5273C64.0147 21.6242 63.5085 21.7175 63.0854 21.807C62.6623 21.889 62.2884 21.9823 61.9635 22.0867C61.6462 22.1986 61.378 22.3291 61.1589 22.4783C60.9398 22.6275 60.7698 22.7991 60.6489 22.993C60.5356 23.1869 60.4789 23.4144 60.4789 23.6755C60.4789 23.9739 60.5545 24.2387 60.7056 24.4699C60.8567 24.6937 61.0758 24.8727 61.3629 25.007C61.6575 25.1413 62.0202 25.2084 62.4508 25.2084Z" fill="#111827"/>
@@ -1059,9 +1080,9 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;p class=&quot;flex items-center r text-sm font-normal text-gray-600 &quot;&gt;
+      <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+      &lt;p class=&quot;flex items-center r text-sm font-normal text-gray-600 &quot;&gt;
       &lt;span class=&quot;border-r border-gray-300 mr-7 pr-7&quot;&gt;
         &lt;svg width=&quot;153&quot; height=&quot;40&quot; viewBox=&quot;0 0 153 40&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M44.5455 27.021V10.9091H51.2883C51.447 10.9091 51.6509 10.9165 51.9003 10.9315C52.1496 10.9389 52.38 10.9613 52.5915 10.9986C53.5359 11.1403 54.3141 11.4499 54.926 11.9273C55.5455 12.4047 56.0026 13.0089 56.2973 13.7399C56.5995 14.4634 56.7506 15.269 56.7506 16.1566C56.7506 17.0368 56.5995 17.8424 56.2973 18.5734C55.9951 19.297 55.5342 19.8974 54.9147 20.3748C54.3027 20.8522 53.5284 21.1618 52.5915 21.3035C52.38 21.3333 52.1458 21.3557 51.8889 21.3706C51.6396 21.3855 51.4394 21.393 51.2883 21.393H47.2766V27.021H44.5455ZM47.2766 18.8755H51.175C51.3261 18.8755 51.4961 18.8681 51.6849 18.8531C51.8738 18.8382 52.0476 18.8084 52.2062 18.7636C52.6595 18.6517 53.0146 18.4541 53.2715 18.1706C53.5359 17.8872 53.721 17.5664 53.8268 17.2084C53.9401 16.8503 53.9968 16.4998 53.9968 16.1566C53.9968 15.8135 53.9401 15.4629 53.8268 15.1049C53.721 14.7394 53.5359 14.4149 53.2715 14.1315C53.0146 13.848 52.6595 13.6503 52.2062 13.5385C52.0476 13.4937 51.8738 13.4676 51.6849 13.4601C51.4961 13.4452 51.3261 13.4378 51.175 13.4378H47.2766V18.8755Z&quot; fill=&quot;#111827&quot; /&gt;
@@ -1087,32 +1108,34 @@
         &lt;/svg&gt;
       &lt;/span&gt;
       &lt;span class=&quot;text-base text-gray-600&quot;&gt;Get 15% off on purchase of Pagedone team plan&lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
+      &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
+      &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
       &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
         &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
       &lt;/svg&gt;
       &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
+      &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="banner-with-cta">Banner with CTA</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Newsletter-sign-up-banner">Newsletter signup banner</h2>
+                    <p class="page-para">By displaying an inline form inside the sticky banner on the top side of your page, you can use this example to entice visitors to your website to subscribe to your email newsletter.
+                     </p>
+                      <p class="page-para">This example shows two CTA buttons with links and a headline and paragraph inside the sticky banner, which you may use to share critical information with visitors to your website.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview p-0">
                             <div class="w-full relative">
-                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 ">
+                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex flex-col lg:flex-row lg:gap-y-0 gap-y-4 justify-between w-full py-4 px-11  bg-gray-50 ">
                                     <div class="flex items-center">
                                       <p class="flex items-center text-sm font-normal text-gray-600 ">
                                         <span class="inline-flex p-3 mr-5 bg-indigo-100 rounded-full items-center justify-center">
@@ -1124,15 +1147,17 @@
                                         <span class="text-base text-gray-600">Sign up to pagedone’s newsletter</span>
                                     </p>
                                     </div>
-                                    <div class="flex items-center">
+                                    <div class="flex flex-col md:flex-row md:gap-y-0 gap-y-4 md:items-center">
                                       <input type="text" placeholder="Enter your email" class="p-2.5 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0"/>
-                                      <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Subscribe</button>
-                                      <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
-                                        <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <div class="flex items-center">
+                                        <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Subscribe</button>
+                                        <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
+                                          <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                           </svg>                                          
-                                            <span class="sr-only">Close banner</span>
+                                          <span class="sr-only">Close banner</span>
                                         </button>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="max-w-lg mx-auto">
@@ -1182,9 +1207,9 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;p class=&quot;flex items-center text-sm font-normal text-gray-600 &quot;&gt;
+      <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+      &lt;p class=&quot;flex items-center text-sm font-normal text-gray-600 &quot;&gt;
       &lt;span class=&quot;inline-flex p-3 mr-5 bg-indigo-100 rounded-full items-center justify-center&quot;&gt;
         &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M4.5 9.75H10.5M4.5 12H7.5M10.2495 1.74994V4.99994C10.2495 5.82837 10.9211 6.49994 11.7495 6.49994H14.9995M9.62868 1.5H8.25C5.42157 1.5 4.00736 1.5 3.12868 2.37868C2.25 3.25736 2.25 4.67157 2.25 7.5V10.5C2.25 13.3284 2.25 14.7426 3.12868 15.6213C4.00736 16.5 5.42156 16.5 8.24995 16.5C8.58256 16.5 8.91712 16.5 9.2502 16.5C12.0785 16.5 13.4926 16.5 14.3713 15.6213C15.25 14.7426 15.25 13.3284 15.25 10.5V7.12132C15.25 6.7235 15.092 6.34197 14.8107 6.06066L10.6893 1.93934C10.408 1.65804 10.0265 1.5 9.62868 1.5Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
@@ -1192,33 +1217,33 @@
         &lt;span class=&quot;sr-only&quot;&gt;Discount&lt;/span&gt;
       &lt;/span&gt;
       &lt;span class=&quot;text-base text-gray-600&quot;&gt;Sign up to pagedone’s newsletter&lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Enter your email&quot; class=&quot;p-2.5 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0&quot; /&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Subscribe&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
+      &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+      &lt;input type=&quot;text&quot; placeholder=&quot;Enter your email&quot; class=&quot;p-2.5 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0&quot; /&gt;
+      &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Subscribe&lt;/button&gt;
+      &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
       &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
         &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
       &lt;/svg&gt;
       &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
+      &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="banner-with-button">Banner with buttons</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Informational-banner">Informational banner</h2>
+                    <p class="page-para">This example shows two CTA buttons with links and a headline and paragraph inside the sticky banner, which you may use to share critical information with visitors to your website.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview p-0">
                             <div class="w-full relative">
-                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex flex-col md:flex-row  justify-between w-full py-4 px-11  bg-gray-50 ">
+                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex flex-col md:flex-row md:gap-y-0 gap-y-4 justify-between w-full py-4 px-11  bg-gray-50 ">
                                     <div class="block text-sm">
                                      <h5 class=" text-indigo-600 mb-1">Purchase Pagedone pro</h5>
                                      <p class="text-gray-500">Get 15% off on purchase of pagedone team plan and get all the benefits</p>
@@ -1281,50 +1306,54 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">  &lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex flex-col md:flex-row  justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
-  &lt;div class=&quot;block text-sm&quot;&gt;
-    &lt;h5 class=&quot; text-indigo-600 mb-1&quot;&gt;Purchase Pagedone pro&lt;/h5&gt;
-    &lt;p class=&quot;text-gray-500&quot;&gt;Get 15% off on purchase of pagedone team plan and get all the benefits&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 mr-5&quot;&gt;Learn more&lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
+      <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">  &lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex flex-col md:flex-row  justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
+      &lt;div class=&quot;block text-sm&quot;&gt;
+      &lt;h5 class=&quot; text-indigo-600 mb-1&quot;&gt;Purchase Pagedone pro&lt;/h5&gt;
+      &lt;p class=&quot;text-gray-500&quot;&gt;Get 15% off on purchase of pagedone team plan and get all the benefits&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 mr-5&quot;&gt;Learn more&lt;/button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
+      &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
       &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
         &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
       &lt;/svg&gt;
       &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
+      &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="banner-with-detail">Banner with details</h2>
-                    <p class="page-para">lorem ispsum</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Newsletter-purchase-banner">Newsletter purchase banner</h2>
+                    <p class="page-para">You can use this example to entice visitors to your website to subscribe to your email newsletter.</p>
+                    <p class="page-para"> This example shows CTA button, a headline and paragraph inside the sticky banner, which you may use to share critical information with visitors to your website.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview p-0">
                             <div class="w-full relative">
-                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex flex-col md:flex-row  justify-between w-full py-4 px-11  bg-gray-50 ">
+                                <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex flex-col md:flex-row md:gap-y-0 gap-y-4 justify-between w-full py-4 px-11  bg-gray-50 ">
                                     <div class="block text-sm">
                                      <h5 class=" text-indigo-600 mb-1 font-semibold">Purchase Pagedone pro</h5>
                                      <p class="text-gray-500">Get 15% off on purchase of pagedone team plan and get all the benefits</p>
                                     </div>
-                                    <div class="flex items-center">
+                                    <div class="flex flex-col md:flex-row md:gap-y-0 gap-y-4 md:items-center">
                                       <input type="text" placeholder="Enter your email" class="p-2.5 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0">
-                                      <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Subscribe</button>
-                                      <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
-                                        <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <div class="flex items-center">
+                                        <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Subscribe</button>
+                                        <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
+                                          <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                           </svg>                                          
-                                            <span class="sr-only">Close banner</span>
+                                          <span class="sr-only">Close banner</span>
                                         </button>
+                                       </div>
                                     </div>
+      
                                 </div>
                                 <div class="max-w-lg mx-auto">
                                   <div role="status" class="my-7 animate-pulse">
@@ -1373,777 +1402,32 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex flex-col md:flex-row  justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
-  &lt;div class=&quot;block text-sm&quot;&gt;
-    &lt;h5 class=&quot; text-indigo-600 mb-1 font-semibold&quot;&gt;Purchase Pagedone pro&lt;/h5&gt;
-    &lt;p class=&quot;text-gray-500&quot;&gt;Get 15% off on purchase of pagedone team plan and get all the benefits&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Enter your email&quot; class=&quot;p-2.5 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Subscribe&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
+      <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex flex-col md:flex-row  justify-between w-full py-4 px-11  bg-gray-50 &quot;&gt;
+      &lt;div class=&quot;block text-sm&quot;&gt;
+      &lt;h5 class=&quot; text-indigo-600 mb-1 font-semibold&quot;&gt;Purchase Pagedone pro&lt;/h5&gt;
+      &lt;p class=&quot;text-gray-500&quot;&gt;Get 15% off on purchase of pagedone team plan and get all the benefits&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+      &lt;input type=&quot;text&quot; placeholder=&quot;Enter your email&quot; class=&quot;p-2.5 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Subscribe&lt;/button&gt;
+      &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
       &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
         &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
       &lt;/svg&gt;
       &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
+      &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="banner-with-background">Banner with background</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex items-center ">
-                                    <p class="flex items-center text-sm font-normal text-gray-600 ">
-                                        <span class="inline-flex p-3 mr-5 bg-indigo-100 rounded-full items-center justify-center">
-                                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14.25 2.66683L3.75 14.5832M7.25 4.70192C7.25 6.05608 6.13071 7.15385 4.75 7.15385C3.36929 7.15385 2.25 6.05608 2.25 4.70192C2.25 3.34776 3.36929 2.25 4.75 2.25C6.13071 2.25 7.25 3.34776 7.25 4.70192ZM15.75 12.5481C15.75 13.9022 14.6307 15 13.25 15C11.8693 15 10.75 13.9022 10.75 12.5481C10.75 11.1939 11.8693 10.0962 13.25 10.0962C14.6307 10.0962 15.75 11.1939 15.75 12.5481Z" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round"></path>
-                                            </svg>                                                
-                                            <span class="sr-only">Discount</span>
-                                        </span>
-                                        <span class="text-base text-gray-600">Get 15% off on purchase of Pagedone team plan</span>
-                                    </p>
-                                </div>
-                                <div class="flex items-center">
-                                  <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Buy now</button> 
-                                  <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
-                                    <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>                                          
-                                        <span class="sr-only">Close banner</span>
-                                    </button>
-                                </div>
-                            </div>
-                                <div class="max-w-lg mx-auto">
-                                  <div role="status" class="my-7 animate-pulse">
-                                    <div class="h-2.5 bg-gray-300 rounded-full w-48 mb-4"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm&quot;&gt;
-  &lt;div class=&quot;flex items-center &quot;&gt;
-    &lt;p class=&quot;flex items-center text-sm font-normal text-gray-600 &quot;&gt;
-      &lt;span class=&quot;inline-flex p-3 mr-5 bg-indigo-100 rounded-full items-center justify-center&quot;&gt;
-        &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M14.25 2.66683L3.75 14.5832M7.25 4.70192C7.25 6.05608 6.13071 7.15385 4.75 7.15385C3.36929 7.15385 2.25 6.05608 2.25 4.70192C2.25 3.34776 3.36929 2.25 4.75 2.25C6.13071 2.25 7.25 3.34776 7.25 4.70192ZM15.75 12.5481C15.75 13.9022 14.6307 15 13.25 15C11.8693 15 10.75 13.9022 10.75 12.5481C10.75 11.1939 11.8693 10.0962 13.25 10.0962C14.6307 10.0962 15.75 11.1939 15.75 12.5481Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Discount&lt;/span&gt;
-      &lt;/span&gt;
-      &lt;span class=&quot;text-base text-gray-600&quot;&gt;Get 15% off on purchase of Pagedone team plan&lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
-      &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Banner</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm">
-                                <div class="flex items-center ">
-                                    <p class="flex items-center text-sm font-normal text-gray-600 ">
-                                        <span class="inline-flex mr-5">
-                                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14.25 2.66683L3.75 14.5832M7.25 4.70192C7.25 6.05608 6.13071 7.15385 4.75 7.15385C3.36929 7.15385 2.25 6.05608 2.25 4.70192C2.25 3.34776 3.36929 2.25 4.75 2.25C6.13071 2.25 7.25 3.34776 7.25 4.70192ZM15.75 12.5481C15.75 13.9022 14.6307 15 13.25 15C11.8693 15 10.75 13.9022 10.75 12.5481C10.75 11.1939 11.8693 10.0962 13.25 10.0962C14.6307 10.0962 15.75 11.1939 15.75 12.5481Z" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round"></path>
-                                            </svg>                                                
-                                            <span class="sr-only">Discount</span>
-                                        </span>
-                                        <span class="text-base text-gray-600">Get 15% off on purchase of Pagedone team plan</span>
-                                    </p>
-                                </div>
-                                <div class="flex items-center">
-                                  <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Buy now</button> 
-                                  <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
-                                    <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>                                          
-                                        <span class="sr-only">Close banner</span>
-                                    </button>
-                                </div>
-                            </div>
-                                <div class="max-w-lg mx-auto">
-                                  <div role="status" class="my-7 animate-pulse">
-                                    <div class="h-2.5 bg-gray-300 rounded-full w-48 mb-4"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm&quot;&gt;
-  &lt;div class=&quot;flex items-center &quot;&gt;
-    &lt;p class=&quot;flex items-center text-sm font-normal text-gray-600 &quot;&gt;
-      &lt;span class=&quot;inline-flex mr-5&quot;&gt;
-        &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M14.25 2.66683L3.75 14.5832M7.25 4.70192C7.25 6.05608 6.13071 7.15385 4.75 7.15385C3.36929 7.15385 2.25 6.05608 2.25 4.70192C2.25 3.34776 3.36929 2.25 4.75 2.25C6.13071 2.25 7.25 3.34776 7.25 4.70192ZM15.75 12.5481C15.75 13.9022 14.6307 15 13.25 15C11.8693 15 10.75 13.9022 10.75 12.5481C10.75 11.1939 11.8693 10.0962 13.25 10.0962C14.6307 10.0962 15.75 11.1939 15.75 12.5481Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Discount&lt;/span&gt;
-      &lt;/span&gt;
-      &lt;span class=&quot;text-base text-gray-600&quot;&gt;Get 15% off on purchase of Pagedone team plan&lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
-      &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Banner</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm ">
-                                <div class="flex items-center justify-center mx-auto">
-                                  <p class="flex items-center r text-sm font-normal text-gray-600 ">
-                                      <span class="inline-flex mr-5 ">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M14.25 2.66683L3.75 14.5832M7.25 4.70192C7.25 6.05608 6.13071 7.15385 4.75 7.15385C3.36929 7.15385 2.25 6.05608 2.25 4.70192C2.25 3.34776 3.36929 2.25 4.75 2.25C6.13071 2.25 7.25 3.34776 7.25 4.70192ZM15.75 12.5481C15.75 13.9022 14.6307 15 13.25 15C11.8693 15 10.75 13.9022 10.75 12.5481C10.75 11.1939 11.8693 10.0962 13.25 10.0962C14.6307 10.0962 15.75 11.1939 15.75 12.5481Z" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round"></path>
-                                          </svg>                                                
-                                          <span class="sr-only">Discount</span>
-                                      </span>
-                                      <span class="text-base text-gray-600">Get 15% off on purchase of Pagedone team plan</span>
-                                      <a href="#" class="flex items-center ml-8 text-indigo-600 font-semibold">Buy now <svg class="ml-2 " width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.5 10L15.8333 10M11.6667 15L16.0774 10.5893C16.3552 10.3115 16.4941 10.1726 16.4941 10C16.4941 9.82741 16.3552 9.68852 16.0774 9.41074L11.6667 5" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                        </a>
-                                  </p>
-                              </div>
-                                <div class="flex items-center">
-                                
-                                  <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
-                                    <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>                                          
-                                        <span class="sr-only">Close banner</span>
-                                    </button>
-                                </div>
-                            </div>
-                                <div class="max-w-lg mx-auto">
-                                  <div role="status" class="my-7 animate-pulse">
-                                    <div class="h-2.5 bg-gray-300 rounded-full w-48 mb-4"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm &quot;&gt;
-  &lt;div class=&quot;flex items-center justify-center mx-auto&quot;&gt;
-    &lt;p class=&quot;flex items-center r text-sm font-normal text-gray-600 &quot;&gt;
-      &lt;span class=&quot;inline-flex mr-5 &quot;&gt;
-        &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M14.25 2.66683L3.75 14.5832M7.25 4.70192C7.25 6.05608 6.13071 7.15385 4.75 7.15385C3.36929 7.15385 2.25 6.05608 2.25 4.70192C2.25 3.34776 3.36929 2.25 4.75 2.25C6.13071 2.25 7.25 3.34776 7.25 4.70192ZM15.75 12.5481C15.75 13.9022 14.6307 15 13.25 15C11.8693 15 10.75 13.9022 10.75 12.5481C10.75 11.1939 11.8693 10.0962 13.25 10.0962C14.6307 10.0962 15.75 11.1939 15.75 12.5481Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Discount&lt;/span&gt;
-      &lt;/span&gt;
-      &lt;span class=&quot;text-base text-gray-600&quot;&gt;Get 15% off on purchase of Pagedone team plan&lt;/span&gt;
-      &lt;a href=&quot;#&quot; class=&quot;flex items-center ml-8 text-indigo-600 font-semibold&quot;&gt;Buy now &lt;svg class=&quot;ml-2 &quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M2.5 10L15.8333 10M11.6667 15L16.0774 10.5893C16.3552 10.3115 16.4941 10.1726 16.4941 10C16.4941 9.82741 16.3552 9.68852 16.0774 9.41074L11.6667 5&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.8&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-      &lt;/a&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
-      &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Banner</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm ">
-                                <div class="flex items-center">
-                                  <p class="flex items-center r text-sm font-normal text-gray-600 ">
-                                     <span class="border-r border-gray-300 mr-7 pr-7">
-                                      <svg width="153" height="40" viewBox="0 0 153 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M44.5455 27.021V10.9091H51.2883C51.447 10.9091 51.6509 10.9165 51.9003 10.9315C52.1496 10.9389 52.38 10.9613 52.5915 10.9986C53.5359 11.1403 54.3141 11.4499 54.926 11.9273C55.5455 12.4047 56.0026 13.0089 56.2973 13.7399C56.5995 14.4634 56.7506 15.269 56.7506 16.1566C56.7506 17.0368 56.5995 17.8424 56.2973 18.5734C55.9951 19.297 55.5342 19.8974 54.9147 20.3748C54.3027 20.8522 53.5284 21.1618 52.5915 21.3035C52.38 21.3333 52.1458 21.3557 51.8889 21.3706C51.6396 21.3855 51.4394 21.393 51.2883 21.393H47.2766V27.021H44.5455ZM47.2766 18.8755H51.175C51.3261 18.8755 51.4961 18.8681 51.6849 18.8531C51.8738 18.8382 52.0476 18.8084 52.2062 18.7636C52.6595 18.6517 53.0146 18.4541 53.2715 18.1706C53.5359 17.8872 53.721 17.5664 53.8268 17.2084C53.9401 16.8503 53.9968 16.4998 53.9968 16.1566C53.9968 15.8135 53.9401 15.4629 53.8268 15.1049C53.721 14.7394 53.5359 14.4149 53.2715 14.1315C53.0146 13.848 52.6595 13.6503 52.2062 13.5385C52.0476 13.4937 51.8738 13.4676 51.6849 13.4601C51.4961 13.4452 51.3261 13.4378 51.175 13.4378H47.2766V18.8755Z" fill="#111827"></path>
-                                        <path d="M61.9068 27.3566C61.0229 27.3566 60.275 27.1925 59.663 26.8643C59.0511 26.5287 58.5864 26.0848 58.2691 25.5329C57.9594 24.9809 57.8045 24.373 57.8045 23.7091C57.8045 23.1273 57.9027 22.6051 58.0991 22.1427C58.2956 21.6727 58.5978 21.2699 59.0057 20.9343C59.4137 20.5911 59.9425 20.3114 60.5923 20.0951C61.0833 19.9385 61.6575 19.7967 62.3148 19.6699C62.9796 19.5431 63.6974 19.4275 64.468 19.3231C65.2461 19.2112 66.0583 19.0918 66.9045 18.965L65.9299 19.5133C65.9374 18.6779 65.7486 18.0625 65.3632 17.6671C64.9779 17.2718 64.3282 17.0741 63.4141 17.0741C62.8625 17.0741 62.3299 17.2009 61.8162 17.4545C61.3024 17.7082 60.9436 18.1445 60.7396 18.7636L58.2464 17.9916C58.5486 16.9697 59.1228 16.1492 59.969 15.5301C60.8227 14.911 61.9711 14.6014 63.4141 14.6014C64.502 14.6014 65.4577 14.7767 66.2812 15.1273C67.1122 15.4779 67.728 16.0522 68.1284 16.8503C68.3475 17.2755 68.4797 17.7119 68.525 18.1594C68.5703 18.5995 68.593 19.0807 68.593 19.6028V27.021H66.2019V24.4028L66.5985 24.828C66.047 25.7007 65.401 26.3422 64.6606 26.7524C63.9278 27.1552 63.0099 27.3566 61.9068 27.3566ZM62.4508 25.2084C63.0703 25.2084 63.5992 25.1002 64.0373 24.8839C64.4755 24.6676 64.8231 24.4028 65.0799 24.0895C65.3444 23.7762 65.5219 23.4816 65.6126 23.2056C65.7561 22.8625 65.8354 22.4709 65.8505 22.0308C65.8732 21.5832 65.8845 21.2214 65.8845 20.9455L66.7231 21.1916C65.8997 21.3184 65.1933 21.4303 64.604 21.5273C64.0147 21.6242 63.5085 21.7175 63.0854 21.807C62.6623 21.889 62.2884 21.9823 61.9635 22.0867C61.6462 22.1986 61.378 22.3291 61.1589 22.4783C60.9398 22.6275 60.7698 22.7991 60.6489 22.993C60.5356 23.1869 60.4789 23.4144 60.4789 23.6755C60.4789 23.9739 60.5545 24.2387 60.7056 24.4699C60.8567 24.6937 61.0758 24.8727 61.3629 25.007C61.6575 25.1413 62.0202 25.2084 62.4508 25.2084Z" fill="#111827"></path>
-                                        <path d="M76.4616 32.7273C75.7817 32.7273 75.1282 32.6228 74.5011 32.414C73.8816 32.2051 73.3225 31.903 72.8239 31.5077C72.3253 31.1198 71.9173 30.6499 71.6 30.0979L74.1158 28.8671C74.35 29.3072 74.6787 29.6317 75.1017 29.8406C75.5324 30.0569 75.9895 30.165 76.473 30.165C77.0396 30.165 77.5458 30.0643 77.9915 29.8629C78.4373 29.669 78.781 29.3781 79.0228 28.9902C79.2721 28.6098 79.3892 28.1324 79.3741 27.558V24.1231H79.7141V14.9371H82.1052V27.6028C82.1052 27.9086 82.0901 28.1995 82.0599 28.4755C82.0372 28.759 81.9957 29.035 81.9352 29.3035C81.7539 30.0867 81.4064 30.7282 80.8926 31.228C80.3789 31.7352 79.7405 32.1119 78.9775 32.358C78.222 32.6042 77.3834 32.7273 76.4616 32.7273ZM76.2237 27.3566C75.098 27.3566 74.1158 27.0769 73.2772 26.5175C72.4386 25.958 71.7889 25.1972 71.328 24.235C70.8672 23.2727 70.6367 22.1874 70.6367 20.979C70.6367 19.7557 70.8672 18.6667 71.328 17.7119C71.7964 16.7496 72.4575 15.9925 73.3112 15.4406C74.1649 14.8811 75.1697 14.6014 76.3257 14.6014C77.4891 14.6014 78.4637 14.8811 79.2494 15.4406C80.0427 15.9925 80.6433 16.7496 81.0513 17.7119C81.4593 18.6741 81.6633 19.7632 81.6633 20.979C81.6633 22.18 81.4593 23.2653 81.0513 24.235C80.6433 25.1972 80.0352 25.958 79.2268 26.5175C78.4184 27.0769 77.4174 27.3566 76.2237 27.3566ZM76.643 24.9399C77.3758 24.9399 77.9651 24.7758 78.4108 24.4475C78.8641 24.1119 79.1928 23.6457 79.3968 23.0489C79.6083 22.4522 79.7141 21.7622 79.7141 20.979C79.7141 20.1883 79.6083 19.4984 79.3968 18.9091C79.1928 18.3124 78.8717 17.8499 78.4335 17.5217C77.9953 17.186 77.4287 17.0182 76.7336 17.0182C76.0008 17.0182 75.3964 17.1972 74.9204 17.5552C74.4445 17.9058 74.0932 18.3832 73.8665 18.9874C73.6399 19.5841 73.5265 20.248 73.5265 20.979C73.5265 21.7175 73.6361 22.3888 73.8552 22.993C74.0818 23.5897 74.4256 24.0634 74.8864 24.414C75.3473 24.7646 75.9328 24.9399 76.643 24.9399Z" fill="#111827"></path>
-                                        <path d="M90.6207 27.3566C89.3817 27.3566 88.2938 27.0918 87.3569 26.5622C86.4201 26.0326 85.6873 25.2979 85.1584 24.358C84.6371 23.4182 84.3765 22.3366 84.3765 21.1133C84.3765 19.793 84.6334 18.648 85.1471 17.6783C85.6609 16.7012 86.3748 15.9441 87.2889 15.407C88.2031 14.8699 89.2608 14.6014 90.462 14.6014C91.7313 14.6014 92.8079 14.896 93.6918 15.4853C94.5833 16.0671 95.2444 16.8914 95.675 17.958C96.1056 19.0247 96.2681 20.2816 96.1623 21.7287H93.4538V20.7441C93.4463 19.4312 93.2121 18.4727 92.7512 17.8685C92.2904 17.2643 91.5651 16.9622 90.5754 16.9622C89.4572 16.9622 88.6262 17.3054 88.0822 17.9916C87.5383 18.6704 87.2663 19.6662 87.2663 20.979C87.2663 22.2023 87.5383 23.1496 88.0822 23.821C88.6262 24.4923 89.4195 24.828 90.462 24.828C91.1344 24.828 91.7124 24.6825 92.1959 24.3916C92.687 24.0932 93.0647 23.6643 93.3292 23.1049L96.0263 23.9105C95.5579 24.9995 94.8326 25.8462 93.8505 26.4503C92.8759 27.0545 91.7993 27.3566 90.6207 27.3566ZM86.405 21.7287V19.6923H94.8251V21.7287H86.405Z" fill="#111827"></path>
-                                        <path d="M103.371 27.3566C102.245 27.3566 101.263 27.0769 100.425 26.5175C99.5861 25.958 98.9364 25.1972 98.4755 24.235C98.0147 23.2727 97.7842 22.1874 97.7842 20.979C97.7842 19.7557 98.0147 18.6667 98.4755 17.7119C98.9439 16.7496 99.605 15.9925 100.459 15.4406C101.312 14.8811 102.317 14.6014 103.473 14.6014C104.637 14.6014 105.611 14.8811 106.397 15.4406C107.19 15.9925 107.791 16.7496 108.199 17.7119C108.607 18.6741 108.811 19.7632 108.811 20.979C108.811 22.18 108.607 23.2653 108.199 24.235C107.791 25.1972 107.183 25.958 106.374 26.5175C105.566 27.0769 104.565 27.3566 103.371 27.3566ZM103.79 24.9399C104.523 24.9399 105.113 24.7758 105.558 24.4475C106.012 24.1119 106.34 23.6457 106.544 23.0489C106.756 22.4522 106.862 21.7622 106.862 20.979C106.862 20.1883 106.756 19.4984 106.544 18.9091C106.34 18.3124 106.019 17.8499 105.581 17.5217C105.143 17.186 104.576 17.0182 103.881 17.0182C103.148 17.0182 102.544 17.1972 102.068 17.5552C101.592 17.9058 101.241 18.3832 101.014 18.9874C100.787 19.5841 100.674 20.248 100.674 20.979C100.674 21.7175 100.784 22.3888 101.003 22.993C101.229 23.5897 101.573 24.0634 102.034 24.414C102.495 24.7646 103.08 24.9399 103.79 24.9399ZM106.862 27.021V18.5399H106.522V10.9091H109.275V27.021H106.862Z" fill="#111827"></path>
-                                        <path d="M117.632 27.3566C116.408 27.3566 115.339 27.0844 114.425 26.5399C113.51 25.9953 112.8 25.2457 112.294 24.2909C111.795 23.3287 111.546 22.2247 111.546 20.979C111.546 19.711 111.803 18.5995 112.317 17.6448C112.83 16.69 113.544 15.9441 114.459 15.407C115.373 14.8699 116.43 14.6014 117.632 14.6014C118.863 14.6014 119.936 14.8737 120.85 15.4182C121.764 15.9627 122.474 16.7161 122.981 17.6783C123.487 18.6331 123.74 19.7333 123.74 20.979C123.74 22.2322 123.483 23.3399 122.969 24.3021C122.463 25.2569 121.753 26.0065 120.839 26.551C119.925 27.0881 118.856 27.3566 117.632 27.3566ZM117.632 24.828C118.72 24.828 119.528 24.4699 120.057 23.7538C120.586 23.0378 120.85 22.1128 120.85 20.979C120.85 19.8079 120.582 18.8755 120.045 18.1818C119.509 17.4807 118.704 17.1301 117.632 17.1301C116.899 17.1301 116.294 17.2942 115.818 17.6224C115.35 17.9431 115.003 18.3944 114.776 18.9762C114.549 19.5506 114.436 20.2182 114.436 20.979C114.436 22.1501 114.704 23.0862 115.241 23.7874C115.784 24.4811 116.582 24.828 117.632 24.828Z" fill="#111827"></path>
-                                        <path d="M134.475 27.021V21.2028C134.475 20.8224 134.449 20.4009 134.396 19.9385C134.343 19.476 134.219 19.0322 134.022 18.607C133.833 18.1744 133.546 17.82 133.161 17.5441C132.783 17.2681 132.269 17.1301 131.62 17.1301C131.272 17.1301 130.928 17.186 130.588 17.2979C130.248 17.4098 129.939 17.6037 129.659 17.8797C129.387 18.1482 129.168 18.5212 129.002 18.9986C128.836 19.4685 128.753 20.0727 128.753 20.8112L127.132 20.1287C127.132 19.0993 127.332 18.1669 127.733 17.3315C128.141 16.496 128.737 15.8322 129.523 15.3399C130.309 14.8401 131.276 14.5902 132.424 14.5902C133.331 14.5902 134.079 14.7394 134.668 15.0378C135.257 15.3361 135.726 15.7165 136.073 16.179C136.421 16.6415 136.678 17.1338 136.844 17.6559C137.01 18.1781 137.116 18.6741 137.161 19.1441C137.214 19.6065 137.241 19.9832 137.241 20.2741V27.021H134.475ZM125.987 27.021V14.9371H128.424V18.6853H128.753V27.021H125.987Z" fill="#111827"></path>
-                                        <path d="M145.336 27.3566C144.097 27.3566 143.009 27.0918 142.072 26.5622C141.136 26.0326 140.403 25.2979 139.874 24.358C139.353 23.4182 139.092 22.3366 139.092 21.1133C139.092 19.793 139.349 18.648 139.863 17.6783C140.376 16.7012 141.09 15.9441 142.004 15.407C142.919 14.8699 143.976 14.6014 145.178 14.6014C146.447 14.6014 147.523 14.896 148.407 15.4853C149.299 16.0671 149.96 16.8914 150.391 17.958C150.821 19.0247 150.984 20.2816 150.878 21.7287H148.169V20.7441C148.162 19.4312 147.928 18.4727 147.467 17.8685C147.006 17.2643 146.281 16.9622 145.291 16.9622C144.173 16.9622 143.342 17.3054 142.798 17.9916C142.254 18.6704 141.982 19.6662 141.982 20.979C141.982 22.2023 142.254 23.1496 142.798 23.821C143.342 24.4923 144.135 24.828 145.178 24.828C145.85 24.828 146.428 24.6825 146.911 24.3916C147.403 24.0932 147.78 23.6643 148.045 23.1049L150.742 23.9105C150.273 24.9995 149.548 25.8462 148.566 26.4503C147.591 27.0545 146.515 27.3566 145.336 27.3566ZM141.121 21.7287V19.6923H149.541V21.7287H141.121Z" fill="#111827"></path>
-                                        <path d="M24.1339 15.3583C24.7187 15.9148 24.7335 16.8317 24.167 17.4062L18.8714 22.7764C18.3049 23.3509 17.3715 23.3654 16.7868 22.8089C16.202 22.2523 16.1871 21.3355 16.7537 20.761L22.0492 15.3908C22.6158 14.8163 23.5491 14.8017 24.1339 15.3583Z" fill="url(#paint0_linear_11058_60506)"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.81818 8.67884C1.81818 6.39603 3.70191 4.54544 6.02562 4.54544H21.3999V4.54657C28.1735 4.63622 33.6364 10.0584 33.6364 16.7341C33.6364 23.4657 28.0815 28.9228 21.2293 28.9228C18.7861 28.9228 16.5079 28.229 14.5876 27.0311L7.80741 33.5506C5.57664 35.6956 1.81818 34.143 1.81818 31.0764V8.67884ZM12.2904 25.1868C10.1428 22.9954 8.82228 20.0163 8.82228 16.7341C8.82228 15.9342 9.48233 15.2858 10.2965 15.2858C11.1107 15.2858 11.7708 15.9342 11.7708 16.7341C11.7708 21.866 16.0055 26.0262 21.2293 26.0262C26.4531 26.0262 30.6879 21.866 30.6879 16.7341C30.6879 11.6022 26.4531 7.44204 21.2293 7.44204H6.02562C5.33032 7.44204 4.76667 7.99577 4.76667 8.67884V31.0764C4.76667 31.5773 5.3806 31.8309 5.74498 31.4806L12.2904 25.1868Z" fill="url(#paint1_linear_11058_60506)"></path>
-                                        <defs>
-                                        <linearGradient id="paint0_linear_11058_60506" x1="33.6364" y1="6.26419" x2="2.82865" y2="34.9612" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#7C3AED"></stop>
-                                        <stop offset="0.993738" stop-color="#4F46E5"></stop>
-                                        </linearGradient>
-                                        <linearGradient id="paint1_linear_11058_60506" x1="33.6364" y1="6.26419" x2="2.82865" y2="34.9612" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#7C3AED"></stop>
-                                        <stop offset="0.993738" stop-color="#4F46E5"></stop>
-                                        </linearGradient>
-                                        </defs>
-                                        </svg>
-                                        
-                                     </span>
-                                      <span class="text-base text-gray-600">Get 15% off on purchase of Pagedone team plan</span>
-                                  </p>
-                              </div>
-                              <div class="flex items-center">
-                                <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Buy now</button>
-                                <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
-                                  <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>                                          
-                                      <span class="sr-only">Close banner</span>
-                                  </button>
-                              </div>
-                            </div>
-                                <div class="max-w-lg mx-auto">
-                                  <div role="status" class="my-7 animate-pulse">
-                                    <div class="h-2.5 bg-gray-300 rounded-full w-48 mb-4"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm &quot;&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;p class=&quot;flex items-center r text-sm font-normal text-gray-600 &quot;&gt;
-      &lt;span class=&quot;border-r border-gray-300 mr-7 pr-7&quot;&gt;
-        &lt;svg width=&quot;153&quot; height=&quot;40&quot; viewBox=&quot;0 0 153 40&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M44.5455 27.021V10.9091H51.2883C51.447 10.9091 51.6509 10.9165 51.9003 10.9315C52.1496 10.9389 52.38 10.9613 52.5915 10.9986C53.5359 11.1403 54.3141 11.4499 54.926 11.9273C55.5455 12.4047 56.0026 13.0089 56.2973 13.7399C56.5995 14.4634 56.7506 15.269 56.7506 16.1566C56.7506 17.0368 56.5995 17.8424 56.2973 18.5734C55.9951 19.297 55.5342 19.8974 54.9147 20.3748C54.3027 20.8522 53.5284 21.1618 52.5915 21.3035C52.38 21.3333 52.1458 21.3557 51.8889 21.3706C51.6396 21.3855 51.4394 21.393 51.2883 21.393H47.2766V27.021H44.5455ZM47.2766 18.8755H51.175C51.3261 18.8755 51.4961 18.8681 51.6849 18.8531C51.8738 18.8382 52.0476 18.8084 52.2062 18.7636C52.6595 18.6517 53.0146 18.4541 53.2715 18.1706C53.5359 17.8872 53.721 17.5664 53.8268 17.2084C53.9401 16.8503 53.9968 16.4998 53.9968 16.1566C53.9968 15.8135 53.9401 15.4629 53.8268 15.1049C53.721 14.7394 53.5359 14.4149 53.2715 14.1315C53.0146 13.848 52.6595 13.6503 52.2062 13.5385C52.0476 13.4937 51.8738 13.4676 51.6849 13.4601C51.4961 13.4452 51.3261 13.4378 51.175 13.4378H47.2766V18.8755Z&quot; fill=&quot;#111827&quot;&gt;&lt;/path&gt;
-          &lt;path d=&quot;M61.9068 27.3566C61.0229 27.3566 60.275 27.1925 59.663 26.8643C59.0511 26.5287 58.5864 26.0848 58.2691 25.5329C57.9594 24.9809 57.8045 24.373 57.8045 23.7091C57.8045 23.1273 57.9027 22.6051 58.0991 22.1427C58.2956 21.6727 58.5978 21.2699 59.0057 20.9343C59.4137 20.5911 59.9425 20.3114 60.5923 20.0951C61.0833 19.9385 61.6575 19.7967 62.3148 19.6699C62.9796 19.5431 63.6974 19.4275 64.468 19.3231C65.2461 19.2112 66.0583 19.0918 66.9045 18.965L65.9299 19.5133C65.9374 18.6779 65.7486 18.0625 65.3632 17.6671C64.9779 17.2718 64.3282 17.0741 63.4141 17.0741C62.8625 17.0741 62.3299 17.2009 61.8162 17.4545C61.3024 17.7082 60.9436 18.1445 60.7396 18.7636L58.2464 17.9916C58.5486 16.9697 59.1228 16.1492 59.969 15.5301C60.8227 14.911 61.9711 14.6014 63.4141 14.6014C64.502 14.6014 65.4577 14.7767 66.2812 15.1273C67.1122 15.4779 67.728 16.0522 68.1284 16.8503C68.3475 17.2755 68.4797 17.7119 68.525 18.1594C68.5703 18.5995 68.593 19.0807 68.593 19.6028V27.021H66.2019V24.4028L66.5985 24.828C66.047 25.7007 65.401 26.3422 64.6606 26.7524C63.9278 27.1552 63.0099 27.3566 61.9068 27.3566ZM62.4508 25.2084C63.0703 25.2084 63.5992 25.1002 64.0373 24.8839C64.4755 24.6676 64.8231 24.4028 65.0799 24.0895C65.3444 23.7762 65.5219 23.4816 65.6126 23.2056C65.7561 22.8625 65.8354 22.4709 65.8505 22.0308C65.8732 21.5832 65.8845 21.2214 65.8845 20.9455L66.7231 21.1916C65.8997 21.3184 65.1933 21.4303 64.604 21.5273C64.0147 21.6242 63.5085 21.7175 63.0854 21.807C62.6623 21.889 62.2884 21.9823 61.9635 22.0867C61.6462 22.1986 61.378 22.3291 61.1589 22.4783C60.9398 22.6275 60.7698 22.7991 60.6489 22.993C60.5356 23.1869 60.4789 23.4144 60.4789 23.6755C60.4789 23.9739 60.5545 24.2387 60.7056 24.4699C60.8567 24.6937 61.0758 24.8727 61.3629 25.007C61.6575 25.1413 62.0202 25.2084 62.4508 25.2084Z&quot; fill=&quot;#111827&quot;&gt;&lt;/path&gt;
-          &lt;path d=&quot;M76.4616 32.7273C75.7817 32.7273 75.1282 32.6228 74.5011 32.414C73.8816 32.2051 73.3225 31.903 72.8239 31.5077C72.3253 31.1198 71.9173 30.6499 71.6 30.0979L74.1158 28.8671C74.35 29.3072 74.6787 29.6317 75.1017 29.8406C75.5324 30.0569 75.9895 30.165 76.473 30.165C77.0396 30.165 77.5458 30.0643 77.9915 29.8629C78.4373 29.669 78.781 29.3781 79.0228 28.9902C79.2721 28.6098 79.3892 28.1324 79.3741 27.558V24.1231H79.7141V14.9371H82.1052V27.6028C82.1052 27.9086 82.0901 28.1995 82.0599 28.4755C82.0372 28.759 81.9957 29.035 81.9352 29.3035C81.7539 30.0867 81.4064 30.7282 80.8926 31.228C80.3789 31.7352 79.7405 32.1119 78.9775 32.358C78.222 32.6042 77.3834 32.7273 76.4616 32.7273ZM76.2237 27.3566C75.098 27.3566 74.1158 27.0769 73.2772 26.5175C72.4386 25.958 71.7889 25.1972 71.328 24.235C70.8672 23.2727 70.6367 22.1874 70.6367 20.979C70.6367 19.7557 70.8672 18.6667 71.328 17.7119C71.7964 16.7496 72.4575 15.9925 73.3112 15.4406C74.1649 14.8811 75.1697 14.6014 76.3257 14.6014C77.4891 14.6014 78.4637 14.8811 79.2494 15.4406C80.0427 15.9925 80.6433 16.7496 81.0513 17.7119C81.4593 18.6741 81.6633 19.7632 81.6633 20.979C81.6633 22.18 81.4593 23.2653 81.0513 24.235C80.6433 25.1972 80.0352 25.958 79.2268 26.5175C78.4184 27.0769 77.4174 27.3566 76.2237 27.3566ZM76.643 24.9399C77.3758 24.9399 77.9651 24.7758 78.4108 24.4475C78.8641 24.1119 79.1928 23.6457 79.3968 23.0489C79.6083 22.4522 79.7141 21.7622 79.7141 20.979C79.7141 20.1883 79.6083 19.4984 79.3968 18.9091C79.1928 18.3124 78.8717 17.8499 78.4335 17.5217C77.9953 17.186 77.4287 17.0182 76.7336 17.0182C76.0008 17.0182 75.3964 17.1972 74.9204 17.5552C74.4445 17.9058 74.0932 18.3832 73.8665 18.9874C73.6399 19.5841 73.5265 20.248 73.5265 20.979C73.5265 21.7175 73.6361 22.3888 73.8552 22.993C74.0818 23.5897 74.4256 24.0634 74.8864 24.414C75.3473 24.7646 75.9328 24.9399 76.643 24.9399Z&quot; fill=&quot;#111827&quot;&gt;&lt;/path&gt;
-          &lt;path d=&quot;M90.6207 27.3566C89.3817 27.3566 88.2938 27.0918 87.3569 26.5622C86.4201 26.0326 85.6873 25.2979 85.1584 24.358C84.6371 23.4182 84.3765 22.3366 84.3765 21.1133C84.3765 19.793 84.6334 18.648 85.1471 17.6783C85.6609 16.7012 86.3748 15.9441 87.2889 15.407C88.2031 14.8699 89.2608 14.6014 90.462 14.6014C91.7313 14.6014 92.8079 14.896 93.6918 15.4853C94.5833 16.0671 95.2444 16.8914 95.675 17.958C96.1056 19.0247 96.2681 20.2816 96.1623 21.7287H93.4538V20.7441C93.4463 19.4312 93.2121 18.4727 92.7512 17.8685C92.2904 17.2643 91.5651 16.9622 90.5754 16.9622C89.4572 16.9622 88.6262 17.3054 88.0822 17.9916C87.5383 18.6704 87.2663 19.6662 87.2663 20.979C87.2663 22.2023 87.5383 23.1496 88.0822 23.821C88.6262 24.4923 89.4195 24.828 90.462 24.828C91.1344 24.828 91.7124 24.6825 92.1959 24.3916C92.687 24.0932 93.0647 23.6643 93.3292 23.1049L96.0263 23.9105C95.5579 24.9995 94.8326 25.8462 93.8505 26.4503C92.8759 27.0545 91.7993 27.3566 90.6207 27.3566ZM86.405 21.7287V19.6923H94.8251V21.7287H86.405Z&quot; fill=&quot;#111827&quot;&gt;&lt;/path&gt;
-          &lt;path d=&quot;M103.371 27.3566C102.245 27.3566 101.263 27.0769 100.425 26.5175C99.5861 25.958 98.9364 25.1972 98.4755 24.235C98.0147 23.2727 97.7842 22.1874 97.7842 20.979C97.7842 19.7557 98.0147 18.6667 98.4755 17.7119C98.9439 16.7496 99.605 15.9925 100.459 15.4406C101.312 14.8811 102.317 14.6014 103.473 14.6014C104.637 14.6014 105.611 14.8811 106.397 15.4406C107.19 15.9925 107.791 16.7496 108.199 17.7119C108.607 18.6741 108.811 19.7632 108.811 20.979C108.811 22.18 108.607 23.2653 108.199 24.235C107.791 25.1972 107.183 25.958 106.374 26.5175C105.566 27.0769 104.565 27.3566 103.371 27.3566ZM103.79 24.9399C104.523 24.9399 105.113 24.7758 105.558 24.4475C106.012 24.1119 106.34 23.6457 106.544 23.0489C106.756 22.4522 106.862 21.7622 106.862 20.979C106.862 20.1883 106.756 19.4984 106.544 18.9091C106.34 18.3124 106.019 17.8499 105.581 17.5217C105.143 17.186 104.576 17.0182 103.881 17.0182C103.148 17.0182 102.544 17.1972 102.068 17.5552C101.592 17.9058 101.241 18.3832 101.014 18.9874C100.787 19.5841 100.674 20.248 100.674 20.979C100.674 21.7175 100.784 22.3888 101.003 22.993C101.229 23.5897 101.573 24.0634 102.034 24.414C102.495 24.7646 103.08 24.9399 103.79 24.9399ZM106.862 27.021V18.5399H106.522V10.9091H109.275V27.021H106.862Z&quot; fill=&quot;#111827&quot;&gt;&lt;/path&gt;
-          &lt;path d=&quot;M117.632 27.3566C116.408 27.3566 115.339 27.0844 114.425 26.5399C113.51 25.9953 112.8 25.2457 112.294 24.2909C111.795 23.3287 111.546 22.2247 111.546 20.979C111.546 19.711 111.803 18.5995 112.317 17.6448C112.83 16.69 113.544 15.9441 114.459 15.407C115.373 14.8699 116.43 14.6014 117.632 14.6014C118.863 14.6014 119.936 14.8737 120.85 15.4182C121.764 15.9627 122.474 16.7161 122.981 17.6783C123.487 18.6331 123.74 19.7333 123.74 20.979C123.74 22.2322 123.483 23.3399 122.969 24.3021C122.463 25.2569 121.753 26.0065 120.839 26.551C119.925 27.0881 118.856 27.3566 117.632 27.3566ZM117.632 24.828C118.72 24.828 119.528 24.4699 120.057 23.7538C120.586 23.0378 120.85 22.1128 120.85 20.979C120.85 19.8079 120.582 18.8755 120.045 18.1818C119.509 17.4807 118.704 17.1301 117.632 17.1301C116.899 17.1301 116.294 17.2942 115.818 17.6224C115.35 17.9431 115.003 18.3944 114.776 18.9762C114.549 19.5506 114.436 20.2182 114.436 20.979C114.436 22.1501 114.704 23.0862 115.241 23.7874C115.784 24.4811 116.582 24.828 117.632 24.828Z&quot; fill=&quot;#111827&quot;&gt;&lt;/path&gt;
-          &lt;path d=&quot;M134.475 27.021V21.2028C134.475 20.8224 134.449 20.4009 134.396 19.9385C134.343 19.476 134.219 19.0322 134.022 18.607C133.833 18.1744 133.546 17.82 133.161 17.5441C132.783 17.2681 132.269 17.1301 131.62 17.1301C131.272 17.1301 130.928 17.186 130.588 17.2979C130.248 17.4098 129.939 17.6037 129.659 17.8797C129.387 18.1482 129.168 18.5212 129.002 18.9986C128.836 19.4685 128.753 20.0727 128.753 20.8112L127.132 20.1287C127.132 19.0993 127.332 18.1669 127.733 17.3315C128.141 16.496 128.737 15.8322 129.523 15.3399C130.309 14.8401 131.276 14.5902 132.424 14.5902C133.331 14.5902 134.079 14.7394 134.668 15.0378C135.257 15.3361 135.726 15.7165 136.073 16.179C136.421 16.6415 136.678 17.1338 136.844 17.6559C137.01 18.1781 137.116 18.6741 137.161 19.1441C137.214 19.6065 137.241 19.9832 137.241 20.2741V27.021H134.475ZM125.987 27.021V14.9371H128.424V18.6853H128.753V27.021H125.987Z&quot; fill=&quot;#111827&quot;&gt;&lt;/path&gt;
-          &lt;path d=&quot;M145.336 27.3566C144.097 27.3566 143.009 27.0918 142.072 26.5622C141.136 26.0326 140.403 25.2979 139.874 24.358C139.353 23.4182 139.092 22.3366 139.092 21.1133C139.092 19.793 139.349 18.648 139.863 17.6783C140.376 16.7012 141.09 15.9441 142.004 15.407C142.919 14.8699 143.976 14.6014 145.178 14.6014C146.447 14.6014 147.523 14.896 148.407 15.4853C149.299 16.0671 149.96 16.8914 150.391 17.958C150.821 19.0247 150.984 20.2816 150.878 21.7287H148.169V20.7441C148.162 19.4312 147.928 18.4727 147.467 17.8685C147.006 17.2643 146.281 16.9622 145.291 16.9622C144.173 16.9622 143.342 17.3054 142.798 17.9916C142.254 18.6704 141.982 19.6662 141.982 20.979C141.982 22.2023 142.254 23.1496 142.798 23.821C143.342 24.4923 144.135 24.828 145.178 24.828C145.85 24.828 146.428 24.6825 146.911 24.3916C147.403 24.0932 147.78 23.6643 148.045 23.1049L150.742 23.9105C150.273 24.9995 149.548 25.8462 148.566 26.4503C147.591 27.0545 146.515 27.3566 145.336 27.3566ZM141.121 21.7287V19.6923H149.541V21.7287H141.121Z&quot; fill=&quot;#111827&quot;&gt;&lt;/path&gt;
-          &lt;path d=&quot;M24.1339 15.3583C24.7187 15.9148 24.7335 16.8317 24.167 17.4062L18.8714 22.7764C18.3049 23.3509 17.3715 23.3654 16.7868 22.8089C16.202 22.2523 16.1871 21.3355 16.7537 20.761L22.0492 15.3908C22.6158 14.8163 23.5491 14.8017 24.1339 15.3583Z&quot; fill=&quot;url(#paint0_linear_11058_60506)&quot;&gt;&lt;/path&gt;
-          &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M1.81818 8.67884C1.81818 6.39603 3.70191 4.54544 6.02562 4.54544H21.3999V4.54657C28.1735 4.63622 33.6364 10.0584 33.6364 16.7341C33.6364 23.4657 28.0815 28.9228 21.2293 28.9228C18.7861 28.9228 16.5079 28.229 14.5876 27.0311L7.80741 33.5506C5.57664 35.6956 1.81818 34.143 1.81818 31.0764V8.67884ZM12.2904 25.1868C10.1428 22.9954 8.82228 20.0163 8.82228 16.7341C8.82228 15.9342 9.48233 15.2858 10.2965 15.2858C11.1107 15.2858 11.7708 15.9342 11.7708 16.7341C11.7708 21.866 16.0055 26.0262 21.2293 26.0262C26.4531 26.0262 30.6879 21.866 30.6879 16.7341C30.6879 11.6022 26.4531 7.44204 21.2293 7.44204H6.02562C5.33032 7.44204 4.76667 7.99577 4.76667 8.67884V31.0764C4.76667 31.5773 5.3806 31.8309 5.74498 31.4806L12.2904 25.1868Z&quot; fill=&quot;url(#paint1_linear_11058_60506)&quot;&gt;&lt;/path&gt;
-          &lt;defs&gt;
-            &lt;linearGradient id=&quot;paint0_linear_11058_60506&quot; x1=&quot;33.6364&quot; y1=&quot;6.26419&quot; x2=&quot;2.82865&quot; y2=&quot;34.9612&quot; gradientUnits=&quot;userSpaceOnUse&quot;&gt;
-              &lt;stop stop-color=&quot;#7C3AED&quot;&gt;&lt;/stop&gt;
-              &lt;stop offset=&quot;0.993738&quot; stop-color=&quot;#4F46E5&quot;&gt;&lt;/stop&gt;
-            &lt;/linearGradient&gt;
-            &lt;linearGradient id=&quot;paint1_linear_11058_60506&quot; x1=&quot;33.6364&quot; y1=&quot;6.26419&quot; x2=&quot;2.82865&quot; y2=&quot;34.9612&quot; gradientUnits=&quot;userSpaceOnUse&quot;&gt;
-              &lt;stop stop-color=&quot;#7C3AED&quot;&gt;&lt;/stop&gt;
-              &lt;stop offset=&quot;0.993738&quot; stop-color=&quot;#4F46E5&quot;&gt;&lt;/stop&gt;
-            &lt;/linearGradient&gt;
-          &lt;/defs&gt;
-        &lt;/svg&gt;
-      &lt;/span&gt;
-      &lt;span class=&quot;text-base text-gray-600&quot;&gt;Get 15% off on purchase of Pagedone team plan&lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
-      &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Banner</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm ">
-                                <div class="flex items-center">
-                                  <p class="flex items-center text-sm font-normal text-gray-600 ">
-                                    <span class="inline-flex p-3 mr-5 bg-indigo-100 rounded-full items-center justify-center">
-                                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.5 9.75H10.5M4.5 12H7.5M10.2495 1.74994V4.99994C10.2495 5.82837 10.9211 6.49994 11.7495 6.49994H14.9995M9.62868 1.5H8.25C5.42157 1.5 4.00736 1.5 3.12868 2.37868C2.25 3.25736 2.25 4.67157 2.25 7.5V10.5C2.25 13.3284 2.25 14.7426 3.12868 15.6213C4.00736 16.5 5.42156 16.5 8.24995 16.5C8.58256 16.5 8.91712 16.5 9.2502 16.5C12.0785 16.5 13.4926 16.5 14.3713 15.6213C15.25 14.7426 15.25 13.3284 15.25 10.5V7.12132C15.25 6.7235 15.092 6.34197 14.8107 6.06066L10.6893 1.93934C10.408 1.65804 10.0265 1.5 9.62868 1.5Z" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round"></path>
-                                        </svg>                                                            
-                                        <span class="sr-only">Discount</span>
-                                    </span>
-                                    <span class="text-base text-gray-600">Sign up to pagedone’s newsletter</span>
-                                </p>
-                                </div>
-                                <div class="flex items-center">
-                                  <input type="text" placeholder="Enter your email" class="py-2 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0">
-                                  <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Subscribe</button>
-                                  <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
-                                    <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>                                          
-                                        <span class="sr-only">Close banner</span>
-                                    </button>
-                                </div>
-                            </div>
-                                <div class="max-w-lg mx-auto">
-                                  <div role="status" class="my-7 animate-pulse">
-                                    <div class="h-2.5 bg-gray-300 rounded-full w-48 mb-4"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm &quot;&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;p class=&quot;flex items-center text-sm font-normal text-gray-600 &quot;&gt;
-      &lt;span class=&quot;inline-flex p-3 mr-5 bg-indigo-100 rounded-full items-center justify-center&quot;&gt;
-        &lt;svg width=&quot;18&quot; height=&quot;18&quot; viewBox=&quot;0 0 18 18&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-          &lt;path d=&quot;M4.5 9.75H10.5M4.5 12H7.5M10.2495 1.74994V4.99994C10.2495 5.82837 10.9211 6.49994 11.7495 6.49994H14.9995M9.62868 1.5H8.25C5.42157 1.5 4.00736 1.5 3.12868 2.37868C2.25 3.25736 2.25 4.67157 2.25 7.5V10.5C2.25 13.3284 2.25 14.7426 3.12868 15.6213C4.00736 16.5 5.42156 16.5 8.24995 16.5C8.58256 16.5 8.91712 16.5 9.2502 16.5C12.0785 16.5 13.4926 16.5 14.3713 15.6213C15.25 14.7426 15.25 13.3284 15.25 10.5V7.12132C15.25 6.7235 15.092 6.34197 14.8107 6.06066L10.6893 1.93934C10.408 1.65804 10.0265 1.5 9.62868 1.5Z&quot; stroke=&quot;#4F46E5&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/path&gt;
-        &lt;/svg&gt;
-        &lt;span class=&quot;sr-only&quot;&gt;Discount&lt;/span&gt;
-      &lt;/span&gt;
-      &lt;span class=&quot;text-base text-gray-600&quot;&gt;Sign up to pagedone’s newsletter&lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Enter your email&quot; class=&quot;py-2 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Subscribe&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
-      &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Banner</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm ">
-                                <div class="block text-sm">
-                                  <h5 class=" text-indigo-600 mb-1 font-semibold">Purchase Pagedone pro</h5>
-                                  <p class="text-gray-500">Get 15% off on purchase of pagedone team plan and get all the benefits</p>
-                                 </div>
-                                 <div class="flex items-center">
-                                  <button type="button" class="py-2.5 px-5 text-xs bg-indigo-50 text-indigo-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 mr-5">Learn more</button>
-                                  <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Buy now</button>
-                                  <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
-                                    <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>                                          
-                                        <span class="sr-only">Close banner</span>
-                                    </button>
-                                </div>
-                            </div>
-                                <div class="max-w-lg mx-auto">
-                                  <div role="status" class="my-7 animate-pulse">
-                                    <div class="h-2.5 bg-gray-300 rounded-full w-48 mb-4"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm &quot;&gt;
-  &lt;div class=&quot;block text-sm&quot;&gt;
-    &lt;h5 class=&quot; text-indigo-600 mb-1 font-semibold&quot;&gt;Purchase Pagedone pro&lt;/h5&gt;
-    &lt;p class=&quot;text-gray-500&quot;&gt;Get 15% off on purchase of pagedone team plan and get all the benefits&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-50 text-indigo-600 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 mr-5&quot;&gt;Learn more&lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Buy now&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
-      &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Banner</h2>
-                    <p class="page-para">lorem ispsum</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative">
-                              <div role="alert" tabindex="-1" class="absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm ">
-                                <div class="block text-sm">
-                                  <h5 class=" text-indigo-600 mb-1 font-semibold">Purchase Pagedone pro</h5>
-                                  <p class="text-gray-500">Get 15% off on purchase of pagedone team plan and get all the benefits</p>
-                                 </div>
-                                 <div class="flex items-center">
-                                  <input type="text" placeholder="Enter your email" class="py-2 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0">
-                                  <button type="button" class="py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8">Subscribe</button>
-                                  <button data-dismiss="alert" type="button" class="flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 ">
-                                    <svg class="text-gray-300 hover:text-gray-600 transition-all duration-75" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>                                          
-                                        <span class="sr-only">Close banner</span>
-                                    </button>
-                                </div>
-                            </div>
-                                <div class="max-w-lg mx-auto">
-                                  <div role="status" class="my-7 animate-pulse">
-                                    <div class="h-2.5 bg-gray-300 rounded-full w-48 mb-4"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[380px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px]"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div role="status" class="my-6 animate-pulse">
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[460px] mb-2.5"></div>
-                                    <div class="h-2 bg-gray-200 rounded-full max-w-[450px] mb-2.5"></div>
-                                    <span class="sr-only">Loading...</span>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div role=&quot;alert&quot; tabindex=&quot;-1&quot; class=&quot;absolute bottom-0 left-0 z-50 flex justify-between w-full py-4 px-11  bg-white rounded-lg border border-gray-200 shadow-sm &quot;&gt;
-  &lt;div class=&quot;block text-sm&quot;&gt;
-    &lt;h5 class=&quot; text-indigo-600 mb-1 font-semibold&quot;&gt;Purchase Pagedone pro&lt;/h5&gt;
-    &lt;p class=&quot;text-gray-500&quot;&gt;Get 15% off on purchase of pagedone team plan and get all the benefits&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;flex items-center&quot;&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Enter your email&quot; class=&quot;py-2 px-4 border border-gray-300 rounded-full shadow-sm text-base text-gray-400 bg-transparent mr-5 focus:outline-0&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;py-2.5 px-5 text-xs bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mr-8&quot;&gt;Subscribe&lt;/button&gt;
-    &lt;button data-dismiss=&quot;alert&quot; type=&quot;button&quot; class=&quot;flex-shrink-0 inline-flex justify-center items-center text-gray-300  rounded-lg text-sm p-1 &quot;&gt;
-      &lt;svg class=&quot;text-gray-300 hover:text-gray-600 transition-all duration-75&quot; width=&quot;26&quot; height=&quot;26&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path d=&quot;M7.58325 18.4167L18.4166 7.58333M18.4166 18.4167L7.58325 7.58333&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Close banner&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
+                  
+                
+               
+                
+                  
             </div>
               </div>
             <!----------Middlebar End---------->
@@ -2157,33 +1441,25 @@
                   <a href="#" class="mb-5 block active:text-indigo-600">Layout</a>
                     <ul class="space-y-4 ">
                       <li>
-                        <a href="#grid-template-columns">Grid Template Columns</a>
-                        <a href="#specifying-the-columns-in-a-grid" class="mt-4 ml-4">
-                          Specifying The Columns In A Grid</a>
+                        <a href="#Default-Banner">Default sticky banner</a>
                       </li>
                       <li>
-                        <a href="#grid-column">Grid Column Start / End</a>
-                        <a href="#spanning-columns" class="mt-4 ml-4">Spanning columns</a>
-                        <a href="#starting-and-ending-lines" class="mt-4 ml-4">Starting and ending lines</a>
+                        <a href="#Banner-Style">Banner Style</a>
                       </li>
                       <li>
-                        <a href="#grid-template-rows">Grid Template Rows</a>
-                        <a href="#specifying-the-rows-in-a-grid" class="mt-4 ml-4">Specifying the rows in a grid</a>
+                        <a href="#Bottom-banner-position">Bottom banner position</a>
                       </li>
                       <li>
-                        <a href="#grid-row">Grid Row Start / End</a>
-                        <a href="#spanning-rows" class="mt-4 ml-4">Spanning rows</a>
-                        <a href="#starting-and-ending-lines-row" class="mt-4 ml-4">Starting and ending lines</a>
+                        <a href="#Marketing-CTA-banner">Marketing CTA banner</a>
                       </li>
                       <li>
-                        <a href="#grid-auto-flow">Grid Auto Flow</a>
-                        <a href="#controlling-grid-element-placement" class="mt-4 ml-4">Controlling grid element placement</a>
-                        
+                        <a href="#Newsletter-sign-up-banner">Newsletter signup banner</a>
                       </li>
                       <li>
-                        <a href="#gap">Gap</a>
-                        <a href="#setting-the-gap-between-elements" class="mt-4 ml-4">Setting the gap between elements</a>
-                        <a href="#changing-row-and-column-gaps-independently" class="mt-4 ml-4"> Changing row and column gaps independently</a>
+                        <a href="#Informational-banner">Informational banner</a>
+                      </li>
+                      <li>
+                        <a href="#Newsletter-purchase-banner">Newsletter purchase banner</a>
                       </li>
                     </ul>
                   </li>

@@ -650,16 +650,9 @@
                             Requires Pagedone JS
                           </h3>
                           <p class="alert-box-paragraph ">
-                            Note that this component requires the use of our <a href="#">Speed dial plugin</a>, else you can skip this message if you are already using Pagedone UI as a package.
+                            This component requires the use of our <a class="text-indigo-600" href="https://pagedone.io/docs/installation">Pagedone UI</a> as a package, else you can skip this message if you are already using Pagedone UI as a package.
                           </p>
-                          <div class="mt-4">
-                            <a class="alert-box-link" href="#">
-                              Learn more
-                              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-                              </svg>
-                            </a>
-                          </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -667,15 +660,16 @@
             </div>
             <!--Header End-->
             <div id="mainContent">
-              <p class="doc-para">By using various utility classes of tailwind css, speed dial can easily be
+              <p class="page-para">By using various utility classes of tailwind css, speed dial can easily be
                 customized by changing colors, position, style, size, text and icon.</p>
                  <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-speed-dial">Default speed dial </h2>
-                    <p class="page-para">data-dial-init data attribute must be used on an element that contains both
+                    <p class="page-para">To creat speed dial, add <code>speeddial-button</code> class to an element that contains both
                       the trigger element and the list of items in order to initialize a speed dial
                       component.</p>
                   <p class="page-para">
-                    Additionally, it is important to check that the trigger element has ID of the target.</p>
+                    Additionally, add <code>speed-dial-menu</code> class to the list of items in order to initialize a speed dial
+                    component.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -719,7 +713,7 @@
                             <div class="code-syntax-head">
                               <ul class="code-head-list ">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:;" >HTML</a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -733,38 +727,38 @@
                             </div>
                             <div class="code-main">
                               <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
-    &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mb-4 space-y-2&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
+        &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mb-4 space-y-2&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H9.25C6.42157 2.1665 5.00736 2.1665 4.12868 3.04518C3.25 3.92386 3.25 5.33808 3.25 8.1665V17.8332C3.25 20.6616 3.25 22.0758 4.12868 22.9545C5.00736 23.8332 6.42079 23.8332 9.24766 23.8332C11.4087 23.8332 13.8504 23.8332 16.0282 23.8332C18.8563 23.8332 20.2704 23.8332 21.1491 22.9545C22.0278 22.0758 22.0278 20.6616 22.0278 17.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M10.2917 11.917L11.9167 13.542L16.25 9.20866M15.0143 20.8557L16.4024 21.5845C19.2396 23.074 20.6582 23.8188 21.7041 23.1866C22.75 22.5545 22.75 20.9522 22.75 17.7478V10.8337C22.75 6.74815 22.75 4.7054 21.4808 3.4362C20.2116 2.16699 18.1688 2.16699 14.0833 2.16699H11.9167C7.83116 2.16699 5.78841 2.16699 4.5192 3.4362C3.25 4.7054 3.25 6.74815 3.25 10.8337V17.7478C3.25 20.9522 3.25 22.5545 4.29588 23.1866C5.34177 23.8188 6.76038 23.074 9.59762 21.5845L10.9857 20.8557C11.9725 20.3377 12.4658 20.0787 13 20.0787C13.5342 20.0787 14.0275 20.3377 15.0143 20.8557Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M9.75033 9.69045C9.75033 5.43695 16.2503 5.43695 16.2503 9.69045C16.2503 12.729 13.2968 12.1226 13.2968 15.7675M13.2957 19.5003L13.3068 19.4866M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M2.16699 9.74967H23.8337M17.2199 15.708H17.2297M17.2198 18.958H17.2295M13.2123 15.708H13.222M13.2123 18.958H13.222M9.20271 15.708H9.21244M9.20271 18.958H9.21244M7.58366 5.41634V1.08301M18.417 5.41634V1.08301M10.8337 24.9163H15.167C19.2525 24.9163 21.2953 24.9163 22.5645 23.6471C23.8337 22.3779 23.8337 20.3352 23.8337 16.2497V11.9163C23.8337 7.83083 23.8337 5.78808 22.5645 4.51888C21.2953 3.24967 19.2525 3.24967 15.167 3.24967H10.8337C6.74815 3.24967 4.7054 3.24967 3.4362 4.51888C2.16699 5.78808 2.16699 7.83084 2.16699 11.9163V16.2497C2.16699 20.3352 2.16699 22.3779 3.4362 23.6471C4.7054 24.9163 6.74815 24.9163 10.8337 24.9163Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-    &lt;/div&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                               </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
@@ -830,7 +824,7 @@
                             <div class="code-syntax-head">
                               <ul class="code-head-list ">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:;" >HTML</a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -844,50 +838,50 @@
                             </div>
                             <div class="code-main">
                               <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
-    &lt;div id=&quot;speed-dial-menu-with-text&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mb-4 space-y-2&quot;&gt;
-      &lt;div class=&quot;flex items-center gap-5 relative&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
+        &lt;div id=&quot;speed-dial-menu-with-text&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mb-4 space-y-2&quot;&gt;
+        &lt;div class=&quot;flex items-center gap-5 relative&quot;&gt;
         &lt;span class=&quot;text-sm text-gray-600 absolute -left-1 -translate-x-16&quot;&gt;Articles&lt;/span&gt;
         &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
           &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
             &lt;path d=&quot;M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H9.25C6.42157 2.1665 5.00736 2.1665 4.12868 3.04518C3.25 3.92386 3.25 5.33808 3.25 8.1665V17.8332C3.25 20.6616 3.25 22.0758 4.12868 22.9545C5.00736 23.8332 6.42079 23.8332 9.24766 23.8332C11.4087 23.8332 13.8504 23.8332 16.0282 23.8332C18.8563 23.8332 20.2704 23.8332 21.1491 22.9545C22.0278 22.0758 22.0278 20.6616 22.0278 17.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
           &lt;/svg&gt;
         &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;flex items-center gap-5 relative&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;flex items-center gap-5 relative&quot;&gt;
         &lt;span class=&quot;text-sm text-gray-600 absolute -left-1 -translate-x-16&quot;&gt;Favorite&lt;/span&gt;
         &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
           &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
             &lt;path d=&quot;M10.2917 11.917L11.9167 13.542L16.25 9.20866M15.0143 20.8557L16.4024 21.5845C19.2396 23.074 20.6582 23.8188 21.7041 23.1866C22.75 22.5545 22.75 20.9522 22.75 17.7478V10.8337C22.75 6.74815 22.75 4.7054 21.4808 3.4362C20.2116 2.16699 18.1688 2.16699 14.0833 2.16699H11.9167C7.83116 2.16699 5.78841 2.16699 4.5192 3.4362C3.25 4.7054 3.25 6.74815 3.25 10.8337V17.7478C3.25 20.9522 3.25 22.5545 4.29588 23.1866C5.34177 23.8188 6.76038 23.074 9.59762 21.5845L10.9857 20.8557C11.9725 20.3377 12.4658 20.0787 13 20.0787C13.5342 20.0787 14.0275 20.3377 15.0143 20.8557Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
           &lt;/svg&gt;
         &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;flex items-center gap-5 relative&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;flex items-center gap-5 relative&quot;&gt;
         &lt;span class=&quot;text-sm text-gray-600 absolute -left-1 -translate-x-16&quot;&gt;Support&lt;/span&gt;
         &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
           &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
             &lt;path d=&quot;M9.75033 9.69045C9.75033 5.43695 16.2503 5.43695 16.2503 9.69045C16.2503 12.729 13.2968 12.1226 13.2968 15.7675M13.2957 19.5003L13.3068 19.4866M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
           &lt;/svg&gt;
         &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;flex items-center gap-5 relative&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;flex items-center gap-5 relative&quot;&gt;
         &lt;span class=&quot;text-sm text-gray-600 absolute -left-1 -translate-x-16&quot;&gt;Support&lt;/span&gt;
         &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
           &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
             &lt;path d=&quot;M2.16699 9.74967H23.8337M17.2199 15.708H17.2297M17.2198 18.958H17.2295M13.2123 15.708H13.222M13.2123 18.958H13.222M9.20271 15.708H9.21244M9.20271 18.958H9.21244M7.58366 5.41634V1.08301M18.417 5.41634V1.08301M10.8337 24.9163H15.167C19.2525 24.9163 21.2953 24.9163 22.5645 23.6471C23.8337 22.3779 23.8337 20.3352 23.8337 16.2497V11.9163C23.8337 7.83083 23.8337 5.78808 22.5645 4.51888C21.2953 3.24967 19.2525 3.24967 15.167 3.24967H10.8337C6.74815 3.24967 4.7054 3.24967 3.4362 4.51888C2.16699 5.78808 2.16699 7.83084 2.16699 11.9163V16.2497C2.16699 20.3352 2.16699 22.3779 3.4362 23.6471C4.7054 24.9163 6.74815 24.9163 10.8337 24.9163Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
           &lt;/svg&gt;
         &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                               </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
@@ -907,7 +901,7 @@
                                 <div id="speed-dial-menu-dropdown" class="speed-dial-menu flex flex-col hidden items-center mb-4 space-y-2 bg-white shadow-[0px_15px_60px_-4px_rgba(16,24,40,0.10)] rounded-xl border border-gray-200">
                                   <ul class="text-sm text-gray-600 p-5">
                                     <li>
-                                        <a href="#" class="flex items-center mb-5 hover:text-gray-900">
+                                        <a href="javascript:;"  class="flex items-center mb-5 hover:text-gray-900">
                                             <svg class="w-6 h-6 mr-2 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M6 13H14M6 16H10M13.666 2.33325V6.66658C13.666 7.77115 14.5614 8.66659 15.666 8.66659H19.9993M12.8382 2H9C6.17157 2 4.75736 2 3.87868 2.87868C3 3.75736 3 5.17157 3 8V16C3 18.8284 3 20.2426 3.87868 21.1213C4.75736 22 6.17082 22 8.99774 22C10.7205 22 12.602 22 14.3355 22C17.1625 22 18.576 22 19.4547 21.1213C20.3333 20.2426 20.3333 18.8284 20.3333 16V9.49509C20.3333 8.96466 20.1226 8.45595 19.7475 8.08088L14.2525 2.58579C13.8774 2.21071 13.3687 2 12.8382 2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
                                               </svg>
@@ -916,7 +910,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center mb-5  hover:text-gray-900 dark:hover:text-white">
+                                        <a href="javascript:;"  class="flex items-center mb-5  hover:text-gray-900 dark:hover:text-white">
                                             <svg class="w-6 h-6 mr-2 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M9.5 11L11 12.5L15 8.5M13.8593 19.2512L15.1407 19.9238C17.7596 21.2988 19.0691 21.9863 20.0346 21.4028C21 20.8192 21 19.3402 21 16.3823V10C21 6.22876 21 4.34315 19.8284 3.17157C18.6569 2 16.7712 2 13 2H11C7.22876 2 5.34315 2 4.17157 3.17157C3 4.34315 3 6.22876 3 10V16.3823C3 19.3402 3 20.8192 3.96543 21.4028C4.93086 21.9863 6.24035 21.2988 8.85934 19.9238L10.1407 19.2512C11.0515 18.773 11.5069 18.5339 12 18.5339C12.4931 18.5339 12.9485 18.773 13.8593 19.2512Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                               </svg>
@@ -925,7 +919,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center mb-5 hover:text-gray-900 dark:hover:text-white">
+                                        <a href="javascript:;"  class="flex items-center mb-5 hover:text-gray-900 dark:hover:text-white">
                                             <svg class="w-6 h-6 mr-2 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M9 8.94473C9 5.01842 15 5.01842 15 8.94473C15 11.7495 12.2737 11.1898 12.2737 14.5543M12.2726 18L12.2829 17.9873M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                               </svg>
@@ -934,7 +928,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center  hover:text-gray-900 dark:hover:text-white">
+                                        <a href="javascript:;"  class="flex items-center  hover:text-gray-900 dark:hover:text-white">
                                            
                                             <svg class="w-6 h-6 mr-2 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M2 9H22M15.895 14.5H15.904M15.8949 17.5H15.9039M12.1957 14.5H12.2047M12.1957 17.5H12.2047M8.49451 14.5H8.50349M8.49451 17.5H8.50349M7 5V1M17 5V1M10 23H14C17.7712 23 19.6569 23 20.8284 21.8284C22 20.6569 22 18.7712 22 15V11C22 7.22876 22 5.34315 20.8284 4.17157C19.6569 3 17.7712 3 14 3H10C6.22876 3 4.34315 3 3.17157 4.17157C2 5.34315 2 7.22876 2 11V15C2 18.7712 2 20.6569 3.17157 21.8284C4.34315 23 6.22876 23 10 23Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -959,7 +953,7 @@
                             <div class="code-syntax-head">
                               <ul class="code-head-list ">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:;" >HTML</a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -973,10 +967,10 @@
                             </div>
                             <div class="code-main">
                               <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
-    &lt;div id=&quot;speed-dial-menu-dropdown&quot; class=&quot;speed-dial-menu flex flex-col hidden items-center mb-4 space-y-2 bg-white shadow-[0px_15px_60px_-4px_rgba(16,24,40,0.10)] rounded-xl border border-gray-200&quot;&gt;
-      &lt;ul class=&quot;text-sm text-gray-600 p-5&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
+        &lt;div id=&quot;speed-dial-menu-dropdown&quot; class=&quot;speed-dial-menu flex flex-col hidden items-center mb-4 space-y-2 bg-white shadow-[0px_15px_60px_-4px_rgba(16,24,40,0.10)] rounded-xl border border-gray-200&quot;&gt;
+        &lt;ul class=&quot;text-sm text-gray-600 p-5&quot;&gt;
         &lt;li&gt;
           &lt;a href=&quot;#&quot; class=&quot;flex items-center mb-5 hover:text-gray-900&quot;&gt;
             &lt;svg class=&quot;w-6 h-6 mr-2 text-gray-900&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
@@ -1009,16 +1003,16 @@
             &lt;span class=&quot;text-sm font-medium&quot;&gt;Calendar&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:outline-none ml-auto&quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:outline-none ml-auto&quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                               </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
@@ -1028,7 +1022,7 @@
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="speed-dial-style">Alternative style </h2>
                     <p class="page-para">This is an alternative style of showing a list of the menu items in the speed
-dial.</p>
+        dial.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -1038,7 +1032,7 @@ dial.</p>
                                 <div id="speed-dial-menu-dropdown" class="speed-dial-menu flex flex-col hidden items-center mb-4 space-y-2 bg-white shadow-[0px_15px_60px_-4px_rgba(16,24,40,0.10)] rounded-xl border border-gray-200">
                                   <ul class="text-sm text-gray-600 py-5">
                                     <li>
-                                        <a href="#" class="flex items-center pb-4 px-7 border-b border-gray-200 hover:text-gray-900">
+                                        <a href="javascript:;"  class="flex items-center pb-4 px-7 border-b border-gray-200 hover:text-gray-900">
                                             <svg class="w-6 h-6 mr-3 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M6 13H14M6 16H10M13.666 2.33325V6.66658C13.666 7.77115 14.5614 8.66659 15.666 8.66659H19.9993M12.8382 2H9C6.17157 2 4.75736 2 3.87868 2.87868C3 3.75736 3 5.17157 3 8V16C3 18.8284 3 20.2426 3.87868 21.1213C4.75736 22 6.17082 22 8.99774 22C10.7205 22 12.602 22 14.3355 22C17.1625 22 18.576 22 19.4547 21.1213C20.3333 20.2426 20.3333 18.8284 20.3333 16V9.49509C20.3333 8.96466 20.1226 8.45595 19.7475 8.08088L14.2525 2.58579C13.8774 2.21071 13.3687 2 12.8382 2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
                                               </svg>
@@ -1046,7 +1040,7 @@ dial.</p>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center py-4 px-7 border-b border-gray-200 hover:text-gray-900 ">
+                                        <a href="javascript:;"  class="flex items-center py-4 px-7 border-b border-gray-200 hover:text-gray-900 ">
                                             <svg class="w-6 h-6 mr-3 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M9.5 11L11 12.5L15 8.5M13.8593 19.2512L15.1407 19.9238C17.7596 21.2988 19.0691 21.9863 20.0346 21.4028C21 20.8192 21 19.3402 21 16.3823V10C21 6.22876 21 4.34315 19.8284 3.17157C18.6569 2 16.7712 2 13 2H11C7.22876 2 5.34315 2 4.17157 3.17157C3 4.34315 3 6.22876 3 10V16.3823C3 19.3402 3 20.8192 3.96543 21.4028C4.93086 21.9863 6.24035 21.2988 8.85934 19.9238L10.1407 19.2512C11.0515 18.773 11.5069 18.5339 12 18.5339C12.4931 18.5339 12.9485 18.773 13.8593 19.2512Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                               </svg>
@@ -1055,7 +1049,7 @@ dial.</p>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center mb-5 py-4 px-7 border-b border-gray-200 hover:text-gray-900 ">
+                                        <a href="javascript:;"  class="flex items-center mb-5 py-4 px-7 border-b border-gray-200 hover:text-gray-900 ">
                                             <svg class="w-6 h-6 mr-3 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M9 8.94473C9 5.01842 15 5.01842 15 8.94473C15 11.7495 12.2737 11.1898 12.2737 14.5543M12.2726 18L12.2829 17.9873M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                               </svg>
@@ -1064,7 +1058,7 @@ dial.</p>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center px-7 hover:text-gray-900 ">
+                                        <a href="javascript:;"  class="flex items-center px-7 hover:text-gray-900 ">
                                            
                                             <svg class="w-6 h-6 mr-3 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M2 9H22M15.895 14.5H15.904M15.8949 17.5H15.9039M12.1957 14.5H12.2047M12.1957 17.5H12.2047M8.49451 14.5H8.50349M8.49451 17.5H8.50349M7 5V1M17 5V1M10 23H14C17.7712 23 19.6569 23 20.8284 21.8284C22 20.6569 22 18.7712 22 15V11C22 7.22876 22 5.34315 20.8284 4.17157C19.6569 3 17.7712 3 14 3H10C6.22876 3 4.34315 3 3.17157 4.17157C2 5.34315 2 7.22876 2 11V15C2 18.7712 2 20.6569 3.17157 21.8284C4.34315 23 6.22876 23 10 23Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1089,7 +1083,7 @@ dial.</p>
                             <div class="code-syntax-head">
                               <ul class="code-head-list ">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:;" >HTML</a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -1103,10 +1097,10 @@ dial.</p>
                             </div>
                             <div class="code-main">
                               <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
-    &lt;div id=&quot;speed-dial-menu-dropdown&quot; class=&quot;speed-dial-menu flex flex-col hidden items-center mb-4 space-y-2 bg-white shadow-[0px_15px_60px_-4px_rgba(16,24,40,0.10)] rounded-xl border border-gray-200&quot;&gt;
-      &lt;ul class=&quot;text-sm text-gray-600 py-5&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
+        &lt;div id=&quot;speed-dial-menu-dropdown&quot; class=&quot;speed-dial-menu flex flex-col hidden items-center mb-4 space-y-2 bg-white shadow-[0px_15px_60px_-4px_rgba(16,24,40,0.10)] rounded-xl border border-gray-200&quot;&gt;
+        &lt;ul class=&quot;text-sm text-gray-600 py-5&quot;&gt;
         &lt;li&gt;
           &lt;a href=&quot;#&quot; class=&quot;flex items-center pb-4 px-7 border-b border-gray-200 hover:text-gray-900&quot;&gt;
             &lt;svg class=&quot;w-6 h-6 mr-3 text-gray-900&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
@@ -1139,16 +1133,16 @@ dial.</p>
             &lt;span class=&quot;text-sm font-medium&quot;&gt;Calendar&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:outline-none ml-auto&quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:outline-none ml-auto&quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                               </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
@@ -1168,7 +1162,7 @@ dial.</p>
                                 <div id="speed-dial-menu-dropdown" class="speed-dial-menu flex flex-col hidden items-center mb-4 space-y-2 bg-white shadow-[0px_15px_60px_-4px_rgba(16,24,40,0.10)] rounded-xl border border-gray-200">
                                   <ul class="text-sm text-gray-600 p-5">
                                     <li>
-                                        <a href="#" class="flex items-center pb-4 border-b border-gray-200 hover:text-gray-900">
+                                        <a href="javascript:;"  class="flex items-center pb-4 border-b border-gray-200 hover:text-gray-900">
                                             <svg class="w-6 h-6 mr-3 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M6 13H14M6 16H10M13.666 2.33325V6.66658C13.666 7.77115 14.5614 8.66659 15.666 8.66659H19.9993M12.8382 2H9C6.17157 2 4.75736 2 3.87868 2.87868C3 3.75736 3 5.17157 3 8V16C3 18.8284 3 20.2426 3.87868 21.1213C4.75736 22 6.17082 22 8.99774 22C10.7205 22 12.602 22 14.3355 22C17.1625 22 18.576 22 19.4547 21.1213C20.3333 20.2426 20.3333 18.8284 20.3333 16V9.49509C20.3333 8.96466 20.1226 8.45595 19.7475 8.08088L14.2525 2.58579C13.8774 2.21071 13.3687 2 12.8382 2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
                                               </svg>
@@ -1176,7 +1170,7 @@ dial.</p>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center py-4 border-b border-gray-200 hover:text-gray-900 ">
+                                        <a href="javascript:;"  class="flex items-center py-4 border-b border-gray-200 hover:text-gray-900 ">
                                             <svg class="w-6 h-6 mr-3 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M9.5 11L11 12.5L15 8.5M13.8593 19.2512L15.1407 19.9238C17.7596 21.2988 19.0691 21.9863 20.0346 21.4028C21 20.8192 21 19.3402 21 16.3823V10C21 6.22876 21 4.34315 19.8284 3.17157C18.6569 2 16.7712 2 13 2H11C7.22876 2 5.34315 2 4.17157 3.17157C3 4.34315 3 6.22876 3 10V16.3823C3 19.3402 3 20.8192 3.96543 21.4028C4.93086 21.9863 6.24035 21.2988 8.85934 19.9238L10.1407 19.2512C11.0515 18.773 11.5069 18.5339 12 18.5339C12.4931 18.5339 12.9485 18.773 13.8593 19.2512Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                               </svg>
@@ -1185,7 +1179,7 @@ dial.</p>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center py-4 border-b border-gray-200 hover:text-gray-900 ">
+                                        <a href="javascript:;"  class="flex items-center py-4 border-b border-gray-200 hover:text-gray-900 ">
                                             <svg class="w-6 h-6 mr-3 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M9 8.94473C9 5.01842 15 5.01842 15 8.94473C15 11.7495 12.2737 11.1898 12.2737 14.5543M12.2726 18L12.2829 17.9873M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                               </svg>
@@ -1194,7 +1188,7 @@ dial.</p>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center pt-4 hover:text-gray-900 ">
+                                        <a href="javascript:;"  class="flex items-center pt-4 hover:text-gray-900 ">
                                            
                                             <svg class="w-6 h-6 mr-3 text-gray-900" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                               <path d="M2 9H22M15.895 14.5H15.904M15.8949 17.5H15.9039M12.1957 14.5H12.2047M12.1957 17.5H12.2047M8.49451 14.5H8.50349M8.49451 17.5H8.50349M7 5V1M17 5V1M10 23H14C17.7712 23 19.6569 23 20.8284 21.8284C22 20.6569 22 18.7712 22 15V11C22 7.22876 22 5.34315 20.8284 4.17157C19.6569 3 17.7712 3 14 3H10C6.22876 3 4.34315 3 3.17157 4.17157C2 5.34315 2 7.22876 2 11V15C2 18.7712 2 20.6569 3.17157 21.8284C4.34315 23 6.22876 23 10 23Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1219,7 +1213,7 @@ dial.</p>
                             <div class="code-syntax-head">
                               <ul class="code-head-list ">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:;" >HTML</a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -1233,10 +1227,10 @@ dial.</p>
                             </div>
                             <div class="code-main">
                               <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
-    &lt;div id=&quot;speed-dial-menu-dropdown&quot; class=&quot;speed-dial-menu flex flex-col hidden items-center mb-4 space-y-2 bg-white shadow-[0px_15px_60px_-4px_rgba(16,24,40,0.10)] rounded-xl border border-gray-200&quot;&gt;
-      &lt;ul class=&quot;text-sm text-gray-600 p-5&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
+        &lt;div id=&quot;speed-dial-menu-dropdown&quot; class=&quot;speed-dial-menu flex flex-col hidden items-center mb-4 space-y-2 bg-white shadow-[0px_15px_60px_-4px_rgba(16,24,40,0.10)] rounded-xl border border-gray-200&quot;&gt;
+        &lt;ul class=&quot;text-sm text-gray-600 p-5&quot;&gt;
         &lt;li&gt;
           &lt;a href=&quot;#&quot; class=&quot;flex items-center pb-4 border-b border-gray-200 hover:text-gray-900&quot;&gt;
             &lt;svg class=&quot;w-6 h-6 mr-3 text-gray-900&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
@@ -1269,16 +1263,16 @@ dial.</p>
             &lt;span class=&quot;text-sm font-medium&quot;&gt;Calendar&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:outline-none ml-auto&quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:outline-none ml-auto&quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                               </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
@@ -1337,7 +1331,7 @@ dial.</p>
                             <div class="code-syntax-head">
                               <ul class="code-head-list ">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:;" >HTML</a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -1351,38 +1345,38 @@ dial.</p>
                             </div>
                             <div class="code-main">
                               <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute top-6 right-6 group z-50 speeddial-button&quot;&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute top-6 right-6 group z-50 speeddial-button&quot;&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mt-4 space-y-2&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mt-4 space-y-2&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H9.25C6.42157 2.1665 5.00736 2.1665 4.12868 3.04518C3.25 3.92386 3.25 5.33808 3.25 8.1665V17.8332C3.25 20.6616 3.25 22.0758 4.12868 22.9545C5.00736 23.8332 6.42079 23.8332 9.24766 23.8332C11.4087 23.8332 13.8504 23.8332 16.0282 23.8332C18.8563 23.8332 20.2704 23.8332 21.1491 22.9545C22.0278 22.0758 22.0278 20.6616 22.0278 17.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M10.2917 11.917L11.9167 13.542L16.25 9.20866M15.0143 20.8557L16.4024 21.5845C19.2396 23.074 20.6582 23.8188 21.7041 23.1866C22.75 22.5545 22.75 20.9522 22.75 17.7478V10.8337C22.75 6.74815 22.75 4.7054 21.4808 3.4362C20.2116 2.16699 18.1688 2.16699 14.0833 2.16699H11.9167C7.83116 2.16699 5.78841 2.16699 4.5192 3.4362C3.25 4.7054 3.25 6.74815 3.25 10.8337V17.7478C3.25 20.9522 3.25 22.5545 4.29588 23.1866C5.34177 23.8188 6.76038 23.074 9.59762 21.5845L10.9857 20.8557C11.9725 20.3377 12.4658 20.0787 13 20.0787C13.5342 20.0787 14.0275 20.3377 15.0143 20.8557Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M9.75033 9.69045C9.75033 5.43695 16.2503 5.43695 16.2503 9.69045C16.2503 12.729 13.2968 12.1226 13.2968 15.7675M13.2957 19.5003L13.3068 19.4866M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M2.16699 9.74967H23.8337M17.2199 15.708H17.2297M17.2198 18.958H17.2295M13.2123 15.708H13.222M13.2123 18.958H13.222M9.20271 15.708H9.21244M9.20271 18.958H9.21244M7.58366 5.41634V1.08301M18.417 5.41634V1.08301M10.8337 24.9163H15.167C19.2525 24.9163 21.2953 24.9163 22.5645 23.6471C23.8337 22.3779 23.8337 20.3352 23.8337 16.2497V11.9163C23.8337 7.83083 23.8337 5.78808 22.5645 4.51888C21.2953 3.24967 19.2525 3.24967 15.167 3.24967H10.8337C6.74815 3.24967 4.7054 3.24967 3.4362 4.51888C2.16699 5.78808 2.16699 7.83084 2.16699 11.9163V16.2497C2.16699 20.3352 2.16699 22.3779 3.4362 23.6471C4.7054 24.9163 6.74815 24.9163 10.8337 24.9163Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                               </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
@@ -1393,7 +1387,7 @@ dial.</p>
                       <h2 class="doc-sub-heading relative group scroll-mt-24" id="">Bottom right  </h2>
                   <p class="page-para">
                     Use <code>bottom{*}</code> and  <code>right{*}</code> utility classes to set the bottom right position of
-the speed dial component on the document page.</p>
+        the speed dial component on the document page.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -1438,7 +1432,7 @@ the speed dial component on the document page.</p>
                             <div class="code-syntax-head">
                               <ul class="code-head-list ">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:;" >HTML</a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -1452,38 +1446,38 @@ the speed dial component on the document page.</p>
                             </div>
                             <div class="code-main">
                               <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">  &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
-    &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mb-4 space-y-2&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html">  &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute right-6 bottom-6 group z-50 speeddial-button&quot;&gt;
+        &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mb-4 space-y-2&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H9.25C6.42157 2.1665 5.00736 2.1665 4.12868 3.04518C3.25 3.92386 3.25 5.33808 3.25 8.1665V17.8332C3.25 20.6616 3.25 22.0758 4.12868 22.9545C5.00736 23.8332 6.42079 23.8332 9.24766 23.8332C11.4087 23.8332 13.8504 23.8332 16.0282 23.8332C18.8563 23.8332 20.2704 23.8332 21.1491 22.9545C22.0278 22.0758 22.0278 20.6616 22.0278 17.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M10.2917 11.917L11.9167 13.542L16.25 9.20866M15.0143 20.8557L16.4024 21.5845C19.2396 23.074 20.6582 23.8188 21.7041 23.1866C22.75 22.5545 22.75 20.9522 22.75 17.7478V10.8337C22.75 6.74815 22.75 4.7054 21.4808 3.4362C20.2116 2.16699 18.1688 2.16699 14.0833 2.16699H11.9167C7.83116 2.16699 5.78841 2.16699 4.5192 3.4362C3.25 4.7054 3.25 6.74815 3.25 10.8337V17.7478C3.25 20.9522 3.25 22.5545 4.29588 23.1866C5.34177 23.8188 6.76038 23.074 9.59762 21.5845L10.9857 20.8557C11.9725 20.3377 12.4658 20.0787 13 20.0787C13.5342 20.0787 14.0275 20.3377 15.0143 20.8557Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M9.75033 9.69045C9.75033 5.43695 16.2503 5.43695 16.2503 9.69045C16.2503 12.729 13.2968 12.1226 13.2968 15.7675M13.2957 19.5003L13.3068 19.4866M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M2.16699 9.74967H23.8337M17.2199 15.708H17.2297M17.2198 18.958H17.2295M13.2123 15.708H13.222M13.2123 18.958H13.222M9.20271 15.708H9.21244M9.20271 18.958H9.21244M7.58366 5.41634V1.08301M18.417 5.41634V1.08301M10.8337 24.9163H15.167C19.2525 24.9163 21.2953 24.9163 22.5645 23.6471C23.8337 22.3779 23.8337 20.3352 23.8337 16.2497V11.9163C23.8337 7.83083 23.8337 5.78808 22.5645 4.51888C21.2953 3.24967 19.2525 3.24967 15.167 3.24967H10.8337C6.74815 3.24967 4.7054 3.24967 3.4362 4.51888C2.16699 5.78808 2.16699 7.83084 2.16699 11.9163V16.2497C2.16699 20.3352 2.16699 22.3779 3.4362 23.6471C4.7054 24.9163 6.74815 24.9163 10.8337 24.9163Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-    &lt;/div&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                               </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
@@ -1539,7 +1533,7 @@ the speed dial component on the document page.</p>
                           <div class="code-syntax-head">
                             <ul class="code-head-list ">
                               <li>
-                                <a href="#">HTML</a>
+                                <a href="javascript:;" >HTML</a>
                               </li>
                             </ul>
                             <div class="code-copy-button">
@@ -1553,38 +1547,38 @@ the speed dial component on the document page.</p>
                           </div>
                           <div class="code-main">
                             <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute left-6 bottom-6 group z-50 speeddial-button&quot;&gt;
-    &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mb-4 space-y-2&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute left-6 bottom-6 group z-50 speeddial-button&quot;&gt;
+        &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mb-4 space-y-2&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H9.25C6.42157 2.1665 5.00736 2.1665 4.12868 3.04518C3.25 3.92386 3.25 5.33808 3.25 8.1665V17.8332C3.25 20.6616 3.25 22.0758 4.12868 22.9545C5.00736 23.8332 6.42079 23.8332 9.24766 23.8332C11.4087 23.8332 13.8504 23.8332 16.0282 23.8332C18.8563 23.8332 20.2704 23.8332 21.1491 22.9545C22.0278 22.0758 22.0278 20.6616 22.0278 17.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M10.2917 11.917L11.9167 13.542L16.25 9.20866M15.0143 20.8557L16.4024 21.5845C19.2396 23.074 20.6582 23.8188 21.7041 23.1866C22.75 22.5545 22.75 20.9522 22.75 17.7478V10.8337C22.75 6.74815 22.75 4.7054 21.4808 3.4362C20.2116 2.16699 18.1688 2.16699 14.0833 2.16699H11.9167C7.83116 2.16699 5.78841 2.16699 4.5192 3.4362C3.25 4.7054 3.25 6.74815 3.25 10.8337V17.7478C3.25 20.9522 3.25 22.5545 4.29588 23.1866C5.34177 23.8188 6.76038 23.074 9.59762 21.5845L10.9857 20.8557C11.9725 20.3377 12.4658 20.0787 13 20.0787C13.5342 20.0787 14.0275 20.3377 15.0143 20.8557Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M9.75033 9.69045C9.75033 5.43695 16.2503 5.43695 16.2503 9.69045C16.2503 12.729 13.2968 12.1226 13.2968 15.7675M13.2957 19.5003L13.3068 19.4866M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M2.16699 9.74967H23.8337M17.2199 15.708H17.2297M17.2198 18.958H17.2295M13.2123 15.708H13.222M13.2123 18.958H13.222M9.20271 15.708H9.21244M9.20271 18.958H9.21244M7.58366 5.41634V1.08301M18.417 5.41634V1.08301M10.8337 24.9163H15.167C19.2525 24.9163 21.2953 24.9163 22.5645 23.6471C23.8337 22.3779 23.8337 20.3352 23.8337 16.2497V11.9163C23.8337 7.83083 23.8337 5.78808 22.5645 4.51888C21.2953 3.24967 19.2525 3.24967 15.167 3.24967H10.8337C6.74815 3.24967 4.7054 3.24967 3.4362 4.51888C2.16699 5.78808 2.16699 7.83084 2.16699 11.9163V16.2497C2.16699 20.3352 2.16699 22.3779 3.4362 23.6471C4.7054 24.9163 6.74815 24.9163 10.8337 24.9163Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-    &lt;/div&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                             </div>
                               <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                           </div>
@@ -1640,7 +1634,7 @@ the speed dial component on the document page.</p>
                         <div class="code-syntax-head">
                           <ul class="code-head-list ">
                             <li>
-                              <a href="#">HTML</a>
+                              <a href="javascript:;" >HTML</a>
                             </li>
                           </ul>
                           <div class="code-copy-button">
@@ -1654,38 +1648,38 @@ the speed dial component on the document page.</p>
                         </div>
                         <div class="code-main">
                           <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">   &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute left-6 top-6 group z-50 speeddial-button&quot;&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html">   &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute left-6 top-6 group z-50 speeddial-button&quot;&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mt-4 space-y-2&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex flex-col items-center hidden mt-4 space-y-2&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H9.25C6.42157 2.1665 5.00736 2.1665 4.12868 3.04518C3.25 3.92386 3.25 5.33808 3.25 8.1665V17.8332C3.25 20.6616 3.25 22.0758 4.12868 22.9545C5.00736 23.8332 6.42079 23.8332 9.24766 23.8332C11.4087 23.8332 13.8504 23.8332 16.0282 23.8332C18.8563 23.8332 20.2704 23.8332 21.1491 22.9545C22.0278 22.0758 22.0278 20.6616 22.0278 17.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M10.2917 11.917L11.9167 13.542L16.25 9.20866M15.0143 20.8557L16.4024 21.5845C19.2396 23.074 20.6582 23.8188 21.7041 23.1866C22.75 22.5545 22.75 20.9522 22.75 17.7478V10.8337C22.75 6.74815 22.75 4.7054 21.4808 3.4362C20.2116 2.16699 18.1688 2.16699 14.0833 2.16699H11.9167C7.83116 2.16699 5.78841 2.16699 4.5192 3.4362C3.25 4.7054 3.25 6.74815 3.25 10.8337V17.7478C3.25 20.9522 3.25 22.5545 4.29588 23.1866C5.34177 23.8188 6.76038 23.074 9.59762 21.5845L10.9857 20.8557C11.9725 20.3377 12.4658 20.0787 13 20.0787C13.5342 20.0787 14.0275 20.3377 15.0143 20.8557Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M9.75033 9.69045C9.75033 5.43695 16.2503 5.43695 16.2503 9.69045C16.2503 12.729 13.2968 12.1226 13.2968 15.7675M13.2957 19.5003L13.3068 19.4866M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M2.16699 9.74967H23.8337M17.2199 15.708H17.2297M17.2198 18.958H17.2295M13.2123 15.708H13.222M13.2123 18.958H13.222M9.20271 15.708H9.21244M9.20271 18.958H9.21244M7.58366 5.41634V1.08301M18.417 5.41634V1.08301M10.8337 24.9163H15.167C19.2525 24.9163 21.2953 24.9163 22.5645 23.6471C23.8337 22.3779 23.8337 20.3352 23.8337 16.2497V11.9163C23.8337 7.83083 23.8337 5.78808 22.5645 4.51888C21.2953 3.24967 19.2525 3.24967 15.167 3.24967H10.8337C6.74815 3.24967 4.7054 3.24967 3.4362 4.51888C2.16699 5.78808 2.16699 7.83084 2.16699 11.9163V16.2497C2.16699 20.3352 2.16699 22.3779 3.4362 23.6471C4.7054 24.9163 6.74815 24.9163 10.8337 24.9163Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                           </div>
                             <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                         </div>
@@ -1745,7 +1739,7 @@ the speed dial component on the document page.</p>
                       <div class="code-syntax-head">
                         <ul class="code-head-list ">
                           <li>
-                            <a href="#">HTML</a>
+                            <a href="javascript:;" >HTML</a>
                           </li>
                         </ul>
                         <div class="code-copy-button">
@@ -1759,38 +1753,38 @@ the speed dial component on the document page.</p>
                       </div>
                       <div class="code-main">
                         <div data-code-wrapper class="code-wrapper " >
-<pre class="language-markup"><code class="language-markup" data-lang="html">  &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
-  &lt;div class=&quot;absolute right-6 bottom-6 group z-50  flex speeddial-button&quot;&gt;
-    &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex  items-center hidden mr-4 space-x-2&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        <pre class="language-markup"><code class="language-markup" data-lang="html">  &lt;div class=&quot;w-full relative min-h-[380px]&quot;&gt;
+        &lt;div class=&quot;absolute right-6 bottom-6 group z-50  flex speeddial-button&quot;&gt;
+        &lt;div id=&quot;speed-dial-menu-default&quot; class=&quot;speed-dial-menu flex  items-center hidden mr-4 space-x-2&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H9.25C6.42157 2.1665 5.00736 2.1665 4.12868 3.04518C3.25 3.92386 3.25 5.33808 3.25 8.1665V17.8332C3.25 20.6616 3.25 22.0758 4.12868 22.9545C5.00736 23.8332 6.42079 23.8332 9.24766 23.8332C11.4087 23.8332 13.8504 23.8332 16.0282 23.8332C18.8563 23.8332 20.2704 23.8332 21.1491 22.9545C22.0278 22.0758 22.0278 20.6616 22.0278 17.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M10.2917 11.917L11.9167 13.542L16.25 9.20866M15.0143 20.8557L16.4024 21.5845C19.2396 23.074 20.6582 23.8188 21.7041 23.1866C22.75 22.5545 22.75 20.9522 22.75 17.7478V10.8337C22.75 6.74815 22.75 4.7054 21.4808 3.4362C20.2116 2.16699 18.1688 2.16699 14.0833 2.16699H11.9167C7.83116 2.16699 5.78841 2.16699 4.5192 3.4362C3.25 4.7054 3.25 6.74815 3.25 10.8337V17.7478C3.25 20.9522 3.25 22.5545 4.29588 23.1866C5.34177 23.8188 6.76038 23.074 9.59762 21.5845L10.9857 20.8557C11.9725 20.3377 12.4658 20.0787 13 20.0787C13.5342 20.0787 14.0275 20.3377 15.0143 20.8557Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M9.75033 9.69045C9.75033 5.43695 16.2503 5.43695 16.2503 9.69045C16.2503 12.729 13.2968 12.1226 13.2968 15.7675M13.2957 19.5003L13.3068 19.4866M13.0003 23.8337C7.01724 23.8337 2.16699 18.9834 2.16699 13.0003C2.16699 7.01724 7.01724 2.16699 13.0003 2.16699C18.9834 2.16699 23.8337 7.01724 23.8337 13.0003C23.8337 18.9834 18.9834 23.8337 13.0003 23.8337Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;flex justify-center items-center w-16 h-16 text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative&quot;&gt;
         &lt;svg class=&quot;w-6 h-6&quot; viewBox=&quot;0 0 26 26&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
           &lt;path d=&quot;M2.16699 9.74967H23.8337M17.2199 15.708H17.2297M17.2198 18.958H17.2295M13.2123 15.708H13.222M13.2123 18.958H13.222M9.20271 15.708H9.21244M9.20271 18.958H9.21244M7.58366 5.41634V1.08301M18.417 5.41634V1.08301M10.8337 24.9163H15.167C19.2525 24.9163 21.2953 24.9163 22.5645 23.6471C23.8337 22.3779 23.8337 20.3352 23.8337 16.2497V11.9163C23.8337 7.83083 23.8337 5.78808 22.5645 4.51888C21.2953 3.24967 19.2525 3.24967 15.167 3.24967H10.8337C6.74815 3.24967 4.7054 3.24967 3.4362 4.51888C2.16699 5.78808 2.16699 7.83084 2.16699 11.9163V16.2497C2.16699 20.3352 2.16699 22.3779 3.4362 23.6471C4.7054 24.9163 6.74815 24.9163 10.8337 24.9163Z&quot; stroke=&quot;#111827&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
         &lt;/svg&gt;
-      &lt;/button&gt;
-    &lt;/div&gt;
-    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
-      &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot; class=&quot;flex items-center justify-center text-white bg-indigo-600 rounded-full w-16 h-16 hover:bg-indigo-700 focus:ring-4 focus:outline-none &quot;&gt;
+        &lt;svg class=&quot;w-5 h-5 transition-transform group-hover:rotate-45&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;none&quot; viewBox=&quot;0 0 18 18&quot;&gt;
         &lt;path stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9 1v16M1 9h16&quot; /&gt;
-      &lt;/svg&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+        &lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Open actions menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;</code></pre>
                         </div>
                           <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                       </div>
@@ -1807,7 +1801,7 @@ the speed dial component on the document page.</p>
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Layout</a>
+                  <a href="javascript:;"  class="mb-5 block active:text-indigo-600">Layout</a>
                     <ul class="space-y-4 ">
                       <li>
                         <a href="#default-speed-dial">Default Speed Dial</a>

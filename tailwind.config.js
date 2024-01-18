@@ -12,6 +12,9 @@ module.exports = {
         manrope: ['Manrope', 'sans-serif'],
         inter: ['Inter', 'serif'],
       },
+      screens: {
+        '3xl': '1740px',
+      },
     },
   },
   plugins: [
