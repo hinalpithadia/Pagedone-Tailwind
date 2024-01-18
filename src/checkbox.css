@@ -11,7 +11,7 @@
     input[type='checkbox']:indeterminate:disabled{
         @apply bg-[url('https://pagedone.io/asset/uploads/1689403311.png')];
     }
-    .checkbox-white[type='checkbox']:checked{
+    .checkbox-white:checked{
         background-image: url('https://pagedone.io/asset/uploads/1705561433.png');
     }
      input[type="radio"] + label span{
