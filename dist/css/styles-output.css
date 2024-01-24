@@ -19359,6 +19359,11 @@ input[type="radio"]:checked:disabled + label span{
   color: rgb(24 24 27 / var(--tw-text-opacity));
 }
 
+.text-indigo-950{
+  --tw-text-opacity: 1;
+  color: rgb(30 27 75 / var(--tw-text-opacity));
+}
+
 .text-opacity-0{
   --tw-text-opacity: 0;
 }
@@ -24492,12 +24497,20 @@ input[type="radio"]:checked:disabled + label span{
     grid-column: span 3 / span 3;
   }
 
+  .lg\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
   .lg\:col-span-5{
     grid-column: span 5 / span 5;
   }
 
   .lg\:col-span-7{
     grid-column: span 7 / span 7;
+  }
+
+  .lg\:col-span-8{
+    grid-column: span 8 / span 8;
   }
 
   .lg\:m-0{
@@ -24844,8 +24857,22 @@ input[type="radio"]:checked:disabled + label span{
     padding-bottom: 1.25rem;
   }
 
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:py-36{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
   .lg\:pb-14{
     padding-bottom: 3.5rem;
+  }
+
+  .lg\:pb-36{
+    padding-bottom: 9rem;
   }
 
   .lg\:pl-0{

@@ -631,7 +631,7 @@
           <div class="flex w-full ">
             <!----------Middlebar Start---------->
             <div
-              class="flex-auto max-w-full min-w-0 mt-16 2xl:px-40 xl:px-14 lg:px-8 px-4 py-14">
+              class="flex-auto max-w-full min-w-0 mt-16 2xl:px-40 xl:px-28 lg:px-10 px-4 py-14">
                <!--Header-->  
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Component</span>
@@ -639,6 +639,24 @@
                 <p class="doc-paragraph-big">Tabs can also be called secondary navigational tools and using which
                   one can also toggle information inside the container. Tabs offer dozens
                   of predefined classes.</p>
+            <div class="alert-box mt-8 ">
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <svg class="h-4 w-4 text-indigo-600 mt-0.5" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                </svg>
+              </div>
+              <div class="ml-3">
+                <h3 class="alert-box-heading">
+                  Requires Pagedone JS
+                </h3>
+                <p class="alert-box-paragraph ">
+                  This component requires the use of our <a class="text-indigo-600" href="https://pagedone.io/docs/installation">Pagedone UI</a> as a package, else you can skip this message if you are already using Pagedone UI as a package.
+                </p>
+                
+              </div>
+            </div>
+          </div>
             </div>
             <!--Header End-->
             <div id="mainContent">
@@ -646,6 +664,13 @@
                 After placing the main navbar through tabs in tailwind css one can
                 easily segregate information flow using tabs.
               </p>
+              <p class="page-para">
+                  To create tabs like separate content into different panes where each pane is viewable one at a time.
+              </p>
+              <ul class="page-list">
+                  <li>Add <code>tablink</code> class to an anchor tag (ie. &#60;a&#62;)</li>
+                  <li>Add <code>tabcontent</code> class into different panes where each pane is viewable one at a time </li>
+              </ul>
                  <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-underline">Tabs with underline</h2>
                     <p class="page-para">When multiple tabs are available and active tab needs to be
@@ -657,19 +682,19 @@
                             <div class="w-full">
                               <div class="tabs">
                                 <div class="block">
-                                    <ul class="flex flex-wrap border-b border-gray-200 space-x-3 transition-all duration-300 -mb-px" >
+                                    <ul class="flex border-b border-gray-200 space-x-3 transition-all duration-300 -mb-px" >
                                       <li>
-                                        <a href="#" class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink"  data-tab="tabs-with-underline-1"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap"  data-tab="tabs-with-underline-1"  role="tab">
                                         Tab 1
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink"  data-tab="tabs-with-underline-2"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap"  data-tab="tabs-with-underline-2"  role="tab">
                                         Tab 2
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink"  data-tab="tabs-with-underline-3"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap"  data-tab="tabs-with-underline-3"  role="tab">
                                         Tab 3
                                         </a>
                                       </li>
@@ -714,34 +739,32 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-     &lt;div class=&quot;tabs&quot;&gt;
-       &lt;div class=&quot;block&quot;&gt;
-         &lt;ul class=&quot;flex flex-wrap border-b border-gray-200 space-x-3 transition-all duration-300 -mb-px&quot;&gt;
-           &lt;li&gt;
-             &lt;a href=&quot;#&quot; class=&quot;inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink&quot; data-tab=&quot;tabs-with-underline-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
-           &lt;/li&gt;
-           &lt;li&gt;
-             &lt;a href=&quot;#&quot; class=&quot;inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-underline-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
-           &lt;/li&gt;
-           &lt;li&gt;
-             &lt;a href=&quot;#&quot; class=&quot;inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-underline-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
-           &lt;/li&gt;
-         &lt;/ul&gt;
-       &lt;/div&gt;
-       &lt;div class=&quot;mt-3&quot;&gt;
-         &lt;div id=&quot;tabs-with-underline-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-underline-item-1&quot; class=&quot;tabcontent&quot;&gt;
-           &lt;p class=&quot;text-gray-500 dark:text-gray-400&quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 dark:text-gray-200&quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-         &lt;/div&gt;
-         &lt;div id=&quot;tabs-with-underline-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-underline-item-2&quot;&gt;
-           &lt;p class=&quot;text-gray-500 dark:text-gray-400&quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 dark:text-gray-200&quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-         &lt;/div&gt;
-         &lt;div id=&quot;tabs-with-underline-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-underline-item-3&quot;&gt;
-           &lt;p class=&quot;text-gray-500 dark:text-gray-400&quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 dark:text-gray-200&quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-         &lt;/div&gt;
-       &lt;/div&gt;
+                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;tabs&quot;&gt;
+   &lt;div class=&quot;block&quot;&gt;
+     &lt;ul class=&quot;flex border-b border-gray-200 space-x-3 transition-all duration-300 -mb-px&quot;&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-underline-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-underline-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-underline-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;mt-3&quot;&gt;
+     &lt;div id=&quot;tabs-with-underline-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-underline-item-1&quot; class=&quot;tabcontent&quot;&gt;
+       &lt;p class=&quot;text-gray-500 dark:text-gray-400&quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 dark:text-gray-200&quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
      &lt;/div&gt;
-   &lt;/div&gt;</code></pre>
+     &lt;div id=&quot;tabs-with-underline-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-underline-item-2&quot;&gt;
+       &lt;p class=&quot;text-gray-500 dark:text-gray-400&quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 dark:text-gray-200&quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-underline-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-underline-item-3&quot;&gt;
+       &lt;p class=&quot;text-gray-500 dark:text-gray-400&quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 dark:text-gray-200&quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;</code></pre>
                                 </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
@@ -759,19 +782,19 @@
                             <div class="w-full">
                               <div class="tabs">
                                 <div class="flex ">
-                                    <ul class="flex flex-wrap border border-gray-200 rounded-xl transition-all duration-300 -mb-px overflow-hidden" >
+                                    <ul class="flex border border-gray-200 rounded-xl transition-all duration-300 -mb-px overflow-hidden" >
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 active tablink"  data-tab="tabs-with-box-1"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 active tablink whitespace-nowrap"  data-tab="tabs-with-box-1"  role="tab">
                                         Tab 1
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink"  data-tab="tabs-with-box-2"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink whitespace-nowrap"  data-tab="tabs-with-box-2"  role="tab">
                                         Tab 2
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink"  data-tab="tabs-with-box-3"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink whitespace-nowrap"  data-tab="tabs-with-box-3"  role="tab">
                                         Tab 3
                                         </a>
                                       </li>
@@ -816,36 +839,33 @@
                               </div>
                             </div>
                             <div class="code-main">
-                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-   &lt;div class=&quot;tabs&quot;&gt;
-     &lt;div class=&quot;flex &quot;&gt;
-       &lt;ul class=&quot;flex flex-wrap border border-gray-200 rounded-xl transition-all duration-300 -mb-px overflow-hidden&quot;&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 active tablink&quot; data-tab=&quot;tabs-with-box-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-box-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-box-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
-         &lt;/li&gt;
-       &lt;/ul&gt;
-     &lt;/div&gt;
-     &lt;div class=&quot;mt-3&quot;&gt;
-       &lt;div id=&quot;tabs-with-box-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-box-item-1&quot; class=&quot;tabcontent&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div id=&quot;tabs-with-box-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-box-item-2&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div id=&quot;tabs-with-box-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-box-item-3&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
-     &lt;/div&gt;
-   &lt;/div&gt;
- &lt;/div&gt;
-                              </code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;flex &quot;&gt;
+      &lt;ul class=&quot;flex border border-gray-200 rounded-xl transition-all duration-300 -mb-px overflow-hidden&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 active tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-box-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium border-r border-gray-200 tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-box-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-box-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mt-3&quot;&gt;
+      &lt;div id=&quot;tabs-with-box-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-box-item-1&quot; class=&quot;tabcontent&quot;&gt;
+        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;tabs-with-box-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-box-item-2&quot;&gt;
+        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;tabs-with-box-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-box-item-3&quot;&gt;
+        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre></div>
+                              <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
@@ -861,19 +881,19 @@
                             <div class="w-full">
                               <div class="tabs">
                                 <div class="flex ">
-                                    <ul class="flex flex-wrap bg-gray-100 rounded-2xl transition-all duration-300 p-2 overflow-hidden" >
+                                    <ul class="flex bg-gray-100 rounded-2xl transition-all duration-300 p-2 overflow-hidden" >
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 active tablink"  data-tab="tabs-with-background-1"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 active tablink whitespace-nowrap" data-tab="tabs-with-background-1"  role="tab">
                                         Tab 1
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink"  data-tab="tabs-with-background-2"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink whitespace-nowrap" data-tab="tabs-with-background-2"  role="tab">
                                         Tab 2
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink"  data-tab="tabs-with-background-3"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink whitespace-nowrap" data-tab="tabs-with-background-3"  role="tab">
                                         Tab 3
                                         </a>
                                       </li>
@@ -918,36 +938,33 @@
                               </div>
                             </div>
                             <div class="code-main">
-                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-  &lt;div class=&quot;tabs&quot;&gt;
-    &lt;div class=&quot;flex &quot;&gt;
-      &lt;ul class=&quot;flex flex-wrap bg-gray-100 rounded-2xl transition-all duration-300 p-2 overflow-hidden&quot;&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 active tablink&quot; data-tab=&quot;tabs-with-background-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-background-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink&quot; data-tab=&quot;tabs-with-background-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;tabs&quot;&gt;
+  &lt;div class=&quot;flex &quot;&gt;
+    &lt;ul class=&quot;flex bg-gray-100 rounded-2xl transition-all duration-300 p-2 overflow-hidden&quot;&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 active tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-background-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-background-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-background-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mt-3&quot;&gt;
+    &lt;div id=&quot;tabs-with-background-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-1&quot; class=&quot;tabcontent&quot;&gt;
+      &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;mt-3&quot;&gt;
-      &lt;div id=&quot;tabs-with-background-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-1&quot; class=&quot;tabcontent&quot;&gt;
-        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div id=&quot;tabs-with-background-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-2&quot;&gt;
-        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div id=&quot;tabs-with-background-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-3&quot;&gt;
-        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-      &lt;/div&gt;
+    &lt;div id=&quot;tabs-with-background-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-2&quot;&gt;
+      &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;tabs-with-background-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-3&quot;&gt;
+      &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-                              </code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+&lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
@@ -961,20 +978,20 @@
                         <div class="code-preview">
                             <div class="w-full">
                               <div class="tabs">
-                                <div class="flex ">
+                                <div class="flex">
                                     <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full active tablink"  data-tab="tabs-with-pill-1"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full active tablink"  data-tab="tabs-with-pill-1"  role="tab">
                                         Tab 1
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink"  data-tab="tabs-with-pill-2"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink"  data-tab="tabs-with-pill-2"  role="tab">
                                         Tab 2
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink"  data-tab="tabs-with-pill-3"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink"  data-tab="tabs-with-pill-3"  role="tab">
                                         Tab 3
                                         </a>
                                       </li>
@@ -1019,35 +1036,32 @@
                               </div>
                             </div>
                             <div class="code-main">
-                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-   &lt;div class=&quot;tabs&quot;&gt;
-     &lt;div class=&quot;flex &quot;&gt;
-       &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full active tablink&quot; data-tab=&quot;tabs-with-pill-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
-         &lt;/li&gt;
-       &lt;/ul&gt;
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;tabs&quot;&gt;
+   &lt;div class=&quot;flex&quot;&gt;
+     &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full active tablink&quot; data-tab=&quot;tabs-with-pill-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;mt-3&quot;&gt;
+     &lt;div id=&quot;tabs-with-pill-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-item-1&quot; class=&quot;tabcontent&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
      &lt;/div&gt;
-     &lt;div class=&quot;mt-3&quot;&gt;
-       &lt;div id=&quot;tabs-with-pill-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-item-1&quot; class=&quot;tabcontent&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div id=&quot;tabs-with-pill-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-item-2&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div id=&quot;tabs-with-pill-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-item-3&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-pill-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-item-2&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-pill-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-item-3&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
      &lt;/div&gt;
    &lt;/div&gt;
- &lt;/div&gt;
-                              </code></pre></div>
+ &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1065,17 +1079,17 @@
                                 <div class="flex ">
                                     <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl active tablink"  data-tab="tabs-with-rounded-1"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl active tablink"  data-tab="tabs-with-rounded-1"  role="tab">
                                         Tab 1
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-2"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-2"  role="tab">
                                         Tab 2
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-3"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-3"  role="tab">
                                         Tab 3
                                         </a>
                                       </li>
@@ -1120,35 +1134,32 @@
                               </div>
                             </div>
                             <div class="code-main">
-                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-   &lt;div class=&quot;tabs&quot;&gt;
-     &lt;div class=&quot;flex &quot;&gt;
-       &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl active tablink&quot; data-tab=&quot;tabs-with-rounded-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
-         &lt;/li&gt;
-       &lt;/ul&gt;
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;tabs&quot;&gt;
+   &lt;div class=&quot;flex &quot;&gt;
+     &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl active tablink&quot; data-tab=&quot;tabs-with-rounded-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;mt-3&quot;&gt;
+     &lt;div id=&quot;tabs-with-rounded-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-item-1&quot; class=&quot;tabcontent&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
      &lt;/div&gt;
-     &lt;div class=&quot;mt-3&quot;&gt;
-       &lt;div id=&quot;tabs-with-rounded-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-item-1&quot; class=&quot;tabcontent&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div id=&quot;tabs-with-rounded-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-item-2&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div id=&quot;tabs-with-rounded-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-item-3&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-rounded-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-item-2&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-rounded-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-item-3&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
      &lt;/div&gt;
    &lt;/div&gt;
- &lt;/div&gt;
-                              </code></pre></div>
+ &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
@@ -1168,17 +1179,17 @@
                                 <div class="flex ">
                                     <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl active tablink"  data-tab="tabs-with-card-1"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl active tablink"  data-tab="tabs-with-card-1"  role="tab">
                                         Tab 1
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink"  data-tab="tabs-with-card-2"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink"  data-tab="tabs-with-card-2"  role="tab">
                                         Tab 2
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink"  data-tab="tabs-with-card-3"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink"  data-tab="tabs-with-card-3"  role="tab">
                                         Tab 3
                                         </a>
                                       </li>
@@ -1223,35 +1234,32 @@
                               </div>
                             </div>
                             <div class="code-main">
-                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-    &lt;div class=&quot;tabs&quot;&gt;
-      &lt;div class=&quot;flex &quot;&gt;
-        &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl active tablink&quot; data-tab=&quot;tabs-with-card-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink&quot; data-tab=&quot;tabs-with-card-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink&quot; data-tab=&quot;tabs-with-card-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;mt-3&quot;&gt;
-        &lt;div id=&quot;tabs-with-card-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-card-item-1&quot; class=&quot;tabcontent&quot;&gt;
-          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div id=&quot;tabs-with-card-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-card-item-2&quot;&gt;
-          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div id=&quot;tabs-with-card-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-card-item-3&quot;&gt;
-          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-                              </code></pre></div>
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;tabs&quot;&gt;
+   &lt;div class=&quot;flex &quot;&gt;
+     &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl active tablink&quot; data-tab=&quot;tabs-with-card-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink&quot; data-tab=&quot;tabs-with-card-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-t-2xl tablink&quot; data-tab=&quot;tabs-with-card-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;mt-3&quot;&gt;
+     &lt;div id=&quot;tabs-with-card-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-card-item-1&quot; class=&quot;tabcontent&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-card-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-card-item-2&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-card-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-card-item-3&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1270,17 +1278,17 @@
                                 <div class="flex ">
                                     <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full active tablink"  data-tab="tabs-with-pill-light-1"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full active tablink"  data-tab="tabs-with-pill-light-1"  role="tab">
                                         Tab 1
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink"  data-tab="tabs-with-pill-light-2"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink"  data-tab="tabs-with-pill-light-2"  role="tab">
                                         Tab 2
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink"  data-tab="tabs-with-pill-light-3"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink"  data-tab="tabs-with-pill-light-3"  role="tab">
                                         Tab 3
                                         </a>
                                       </li>
@@ -1325,35 +1333,32 @@
                               </div>
                             </div>
                             <div class="code-main">
-                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-     &lt;div class=&quot;tabs&quot;&gt;
-       &lt;div class=&quot;flex &quot;&gt;
-         &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
-           &lt;li&gt;
-             &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full active tablink&quot; data-tab=&quot;tabs-with-pill-light-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
-           &lt;/li&gt;
-           &lt;li&gt;
-             &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-light-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
-           &lt;/li&gt;
-           &lt;li&gt;
-             &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-light-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
-           &lt;/li&gt;
-         &lt;/ul&gt;
-       &lt;/div&gt;
-       &lt;div class=&quot;mt-3&quot;&gt;
-         &lt;div id=&quot;tabs-with-pill-light-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-light-item-1&quot; class=&quot;tabcontent&quot;&gt;
-           &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-         &lt;/div&gt;
-         &lt;div id=&quot;tabs-with-pill-light-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-light-item-2&quot;&gt;
-           &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-         &lt;/div&gt;
-         &lt;div id=&quot;tabs-with-pill-light-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-light-item-3&quot;&gt;
-           &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-         &lt;/div&gt;
-       &lt;/div&gt;
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;tabs&quot;&gt;
+   &lt;div class=&quot;flex &quot;&gt;
+     &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full active tablink&quot; data-tab=&quot;tabs-with-pill-light-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-light-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-full tablink&quot; data-tab=&quot;tabs-with-pill-light-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;mt-3&quot;&gt;
+     &lt;div id=&quot;tabs-with-pill-light-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-light-item-1&quot; class=&quot;tabcontent&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-pill-light-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-light-item-2&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-pill-light-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-pill-light-item-3&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
      &lt;/div&gt;
    &lt;/div&gt;
-                              </code></pre></div>
+ &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
@@ -1372,17 +1377,17 @@
                                 <div class="flex ">
                                     <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink"  data-tab="tabs-with-rounded-light-1"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink"  data-tab="tabs-with-rounded-light-1"  role="tab">
                                         Tab 1
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-light-2"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-light-2"  role="tab">
                                         Tab 2
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-light-3"  role="tab">
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-rounded-light-3"  role="tab">
                                         Tab 3
                                         </a>
                                       </li>
@@ -1427,36 +1432,33 @@
                               </div>
                             </div>
                             <div class="code-main">
-                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-  &lt;div class=&quot;tabs&quot;&gt;
-    &lt;div class=&quot;flex &quot;&gt;
-      &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink&quot; data-tab=&quot;tabs-with-rounded-light-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-light-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-light-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;mt-3&quot;&gt;
-      &lt;div id=&quot;tabs-with-rounded-light-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-light-item-1&quot; class=&quot;tabcontent&quot;&gt;
-        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div id=&quot;tabs-with-rounded-light-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-light-item-2&quot;&gt;
-        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div id=&quot;tabs-with-rounded-light-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-light-item-3&quot;&gt;
-        &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                              </code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;tabs&quot;&gt;
+   &lt;div class=&quot;flex &quot;&gt;
+     &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink&quot; data-tab=&quot;tabs-with-rounded-light-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-light-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-rounded-light-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;mt-3&quot;&gt;
+     &lt;div id=&quot;tabs-with-rounded-light-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-light-item-1&quot; class=&quot;tabcontent&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-rounded-light-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-light-item-2&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-rounded-light-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-rounded-light-item-3&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
@@ -1471,9 +1473,9 @@
                             <div class="w-full">
                               <div class="tabs">
                                 <div class="flex ">
-                                    <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
+                                    <ul class="flex min-w-max overflow-x-auto transition-all duration-300 overflow-hidden" >
                                       <li>
-                                        <a href="#" class="group flex items-center gap-2 py-3 px-6 text-gray-500 border-b border-transparent hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink"  data-tab="tabs-with-icon-1"  role="tab">
+                                        <a href="javascript:void(0)" class="group flex items-center gap-2 py-3 px-6 text-gray-500 border-b border-transparent hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink whitespace-nowrap"  data-tab="tabs-with-icon-1"  role="tab">
                                           <svg class="stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_11860_5401)">
                                             <path d="M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z" stroke="strokeCurrent" stroke-width="1.6"/>
@@ -1491,7 +1493,7 @@
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-icon-2"  role="tab">
+                                        <a href="javascript:void(0)" class="group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink whitespace-nowrap"  data-tab="tabs-with-icon-2"  role="tab">
                                           <svg class="stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_11860_5401)">
                                             <path d="M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z" stroke="strokeCurrent" stroke-width="1.6"/>
@@ -1509,7 +1511,7 @@
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class="group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink"  data-tab="tabs-with-icon-3"  role="tab">
+                                        <a href="javascript:void(0)" class="group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink whitespace-nowrap"  data-tab="tabs-with-icon-3"  role="tab">
                                           <svg class="stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_11860_5401)">
                                             <path d="M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z" stroke="strokeCurrent" stroke-width="1.6"/>
@@ -1567,74 +1569,71 @@
                               </div>
                             </div>
                             <div class="code-main">
-                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-    &lt;div class=&quot;tabs&quot;&gt;
-      &lt;div class=&quot;flex &quot;&gt;
-        &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot; class=&quot;group flex items-center gap-2 py-3 px-6 text-gray-500 border-b border-transparent hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink&quot; data-tab=&quot;tabs-with-icon-1&quot; role=&quot;tab&quot;&gt;
-              &lt;svg class=&quot;stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-                &lt;g clip-path=&quot;url(#clip0_11860_5401)&quot;&gt;
-                  &lt;path d=&quot;M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                  &lt;path d=&quot;M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                  &lt;path d=&quot;M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                  &lt;path d=&quot;M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                &lt;/g&gt;
-                &lt;defs&gt;
-                  &lt;clipPath id=&quot;clip0_11860_5401&quot;&gt;
-                    &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot; /&gt;
-                  &lt;/clipPath&gt;
-                &lt;/defs&gt;
-              &lt;/svg&gt; Tab 1 &lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot; class=&quot;group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-icon-2&quot; role=&quot;tab&quot;&gt;
-              &lt;svg class=&quot;stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-                &lt;g clip-path=&quot;url(#clip0_11860_5401)&quot;&gt;
-                  &lt;path d=&quot;M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                  &lt;path d=&quot;M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                  &lt;path d=&quot;M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                  &lt;path d=&quot;M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                &lt;/g&gt;
-                &lt;defs&gt;
-                  &lt;clipPath id=&quot;clip0_11860_5401&quot;&gt;
-                    &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot; /&gt;
-                  &lt;/clipPath&gt;
-                &lt;/defs&gt;
-              &lt;/svg&gt; Tab 2 &lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot; class=&quot;group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink&quot; data-tab=&quot;tabs-with-icon-3&quot; role=&quot;tab&quot;&gt;
-              &lt;svg class=&quot;stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-                &lt;g clip-path=&quot;url(#clip0_11860_5401)&quot;&gt;
-                  &lt;path d=&quot;M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                  &lt;path d=&quot;M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                  &lt;path d=&quot;M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                  &lt;path d=&quot;M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
-                &lt;/g&gt;
-                &lt;defs&gt;
-                  &lt;clipPath id=&quot;clip0_11860_5401&quot;&gt;
-                    &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot; /&gt;
-                  &lt;/clipPath&gt;
-                &lt;/defs&gt;
-              &lt;/svg&gt; Tab 3 &lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;mt-3&quot;&gt;
-        &lt;div id=&quot;tabs-with-icon-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-icon-item-1&quot; class=&quot;tabcontent&quot;&gt;
-          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div id=&quot;tabs-with-icon-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-icon-item-2&quot;&gt;
-          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div id=&quot;tabs-with-icon-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-icon-item-3&quot;&gt;
-          &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-                              </code></pre></div>
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;tabs&quot;&gt;
+   &lt;div class=&quot;flex &quot;&gt;
+     &lt;ul class=&quot;flex min-w-max overflow-x-auto transition-all duration-300 overflow-hidden&quot;&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;group flex items-center gap-2 py-3 px-6 text-gray-500 border-b border-transparent hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl active tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-icon-1&quot; role=&quot;tab&quot;&gt;
+           &lt;svg class=&quot;stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+             &lt;g clip-path=&quot;url(#clip0_11860_5401)&quot;&gt;
+               &lt;path d=&quot;M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+               &lt;path d=&quot;M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+               &lt;path d=&quot;M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+               &lt;path d=&quot;M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+             &lt;/g&gt;
+             &lt;defs&gt;
+               &lt;clipPath id=&quot;clip0_11860_5401&quot;&gt;
+                 &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot; /&gt;
+               &lt;/clipPath&gt;
+             &lt;/defs&gt;
+           &lt;/svg&gt; Tab 1 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-icon-2&quot; role=&quot;tab&quot;&gt;
+           &lt;svg class=&quot;stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+             &lt;g clip-path=&quot;url(#clip0_11860_5401)&quot;&gt;
+               &lt;path d=&quot;M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+               &lt;path d=&quot;M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+               &lt;path d=&quot;M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+               &lt;path d=&quot;M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+             &lt;/g&gt;
+             &lt;defs&gt;
+               &lt;clipPath id=&quot;clip0_11860_5401&quot;&gt;
+                 &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot; /&gt;
+               &lt;/clipPath&gt;
+             &lt;/defs&gt;
+           &lt;/svg&gt; Tab 2 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;group flex items-center gap-2 py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-indigo-50 tab-active:text-indigo-600 tab-active:rounded-xl tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-icon-3&quot; role=&quot;tab&quot;&gt;
+           &lt;svg class=&quot;stroke-gray-500 tab-active:stroke-indigo-600 group-hover:stroke-gray-900 transition-none&quot; width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+             &lt;g clip-path=&quot;url(#clip0_11860_5401)&quot;&gt;
+               &lt;path d=&quot;M1.66699 4.99984C1.66699 3.15889 3.15938 1.6665 5.00033 1.6665C6.84127 1.6665 8.33366 3.15889 8.33366 4.99984C8.33366 6.84079 6.84127 8.33317 5.00033 8.33317C3.15938 8.33317 1.66699 6.84079 1.66699 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+               &lt;path d=&quot;M1.66699 14.9998C1.66699 13.4285 1.66699 12.6428 2.15515 12.1547C2.6433 11.6665 3.42898 11.6665 5.00033 11.6665C6.57167 11.6665 7.35735 11.6665 7.8455 12.1547C8.33366 12.6428 8.33366 13.4285 8.33366 14.9998C8.33366 16.5712 8.33366 17.3569 7.8455 17.845C7.35735 18.3332 6.57167 18.3332 5.00033 18.3332C3.42898 18.3332 2.6433 18.3332 2.15515 17.845C1.66699 17.3569 1.66699 16.5712 1.66699 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+               &lt;path d=&quot;M11.667 4.99984C11.667 3.42849 11.667 2.64281 12.1551 2.15466C12.6433 1.6665 13.429 1.6665 15.0003 1.6665C16.5717 1.6665 17.3573 1.6665 17.8455 2.15466C18.3337 2.64281 18.3337 3.42849 18.3337 4.99984C18.3337 6.57119 18.3337 7.35686 17.8455 7.84502C17.3573 8.33317 16.5717 8.33317 15.0003 8.33317C13.429 8.33317 12.6433 8.33317 12.1551 7.84502C11.667 7.35686 11.667 6.57119 11.667 4.99984Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+               &lt;path d=&quot;M11.667 14.9998C11.667 13.1589 13.1594 11.6665 15.0003 11.6665C16.8413 11.6665 18.3337 13.1589 18.3337 14.9998C18.3337 16.8408 16.8413 18.3332 15.0003 18.3332C13.1594 18.3332 11.667 16.8408 11.667 14.9998Z&quot; stroke=&quot;strokeCurrent&quot; stroke-width=&quot;1.6&quot; /&gt;
+             &lt;/g&gt;
+             &lt;defs&gt;
+               &lt;clipPath id=&quot;clip0_11860_5401&quot;&gt;
+                 &lt;rect width=&quot;20&quot; height=&quot;20&quot; fill=&quot;white&quot; /&gt;
+               &lt;/clipPath&gt;
+             &lt;/defs&gt;
+           &lt;/svg&gt; Tab 3 &lt;/a&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;mt-3&quot;&gt;
+     &lt;div id=&quot;tabs-with-icon-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-icon-item-1&quot; class=&quot;tabcontent&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-icon-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-icon-item-2&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-icon-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-icon-item-3&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1650,20 +1649,20 @@
                             <div class="w-full">
                               <div class="tabs">
                                 <div class="flex ">
-                                    <ul class="flex flex-wrap transition-all duration-300 overflow-hidden" >
+                                    <ul class="flex min-w-max overflow-x-auto transition-all duration-300 overflow-hidden" >
                                       <li>
-                                        <a href="#" class="flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 active tablink"  data-tab="tabs-with-badge-1"  role="tab">
+                                        <a href="javascript:void(0)" class="flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 active tablink whitespace-nowrap"  data-tab="tabs-with-badge-1"  role="tab">
                                             Tab 1 <span class="bg-indigo-50 py-1 px-2 rounded-full ml-2 text-xs">New</span>
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class=" flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink"  data-tab="tabs-with-badge-2"  role="tab">
+                                        <a href="javascript:void(0)" class=" flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink whitespace-nowrap"  data-tab="tabs-with-badge-2"  role="tab">
                                         
                                           Tab 2
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="#" class=" flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink"  data-tab="tabs-with-badge-3"  role="tab">
+                                        <a href="javascript:void(0)" class=" flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink whitespace-nowrap"  data-tab="tabs-with-badge-3"  role="tab">
                                          
                                           Tab 3
                                         </a>
@@ -1709,36 +1708,33 @@
                               </div>
                             </div>
                             <div class="code-main">
-                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full&quot;&gt;
-   &lt;div class=&quot;tabs&quot;&gt;
-     &lt;div class=&quot;flex &quot;&gt;
-       &lt;ul class=&quot;flex flex-wrap transition-all duration-300 overflow-hidden&quot;&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot;flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 active tablink&quot; data-tab=&quot;tabs-with-badge-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;span class=&quot;bg-indigo-50 py-1 px-2 rounded-full ml-2 text-xs&quot;&gt;New&lt;/span&gt;
-           &lt;/a&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot; flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink&quot; data-tab=&quot;tabs-with-badge-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-           &lt;a href=&quot;#&quot; class=&quot; flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink&quot; data-tab=&quot;tabs-with-badge-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
-         &lt;/li&gt;
-       &lt;/ul&gt;
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;tabs&quot;&gt;
+   &lt;div class=&quot;flex &quot;&gt;
+     &lt;ul class=&quot;flex min-w-max overflow-x-auto transition-all duration-300 overflow-hidden&quot;&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 active tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-badge-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;span class=&quot;bg-indigo-50 py-1 px-2 rounded-full ml-2 text-xs&quot;&gt;New&lt;/span&gt;
+         &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot; flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-badge-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot; flex items-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-badge-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;mt-3&quot;&gt;
+     &lt;div id=&quot;tabs-with-badge-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-badge-item-1&quot; class=&quot;tabcontent&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
      &lt;/div&gt;
-     &lt;div class=&quot;mt-3&quot;&gt;
-       &lt;div id=&quot;tabs-with-badge-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-badge-item-1&quot; class=&quot;tabcontent&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div id=&quot;tabs-with-badge-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-badge-item-2&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div id=&quot;tabs-with-badge-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-badge-item-3&quot;&gt;
-         &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
-       &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-badge-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-badge-item-2&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-badge-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-badge-item-3&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
      &lt;/div&gt;
    &lt;/div&gt;
- &lt;/div&gt;
-                              </code></pre></div>
+ &lt;/div&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1778,7 +1774,7 @@
                         <a href="#tab-with-pill-light">Tabs With Pill Light Style</a>
                       </li>
                       <li>
-                        <a href="#testimonial-card">Tabs With Rounded Light Style</a>
+                        <a href="#tab-with-rounded-light">Tabs With Rounded Light Style</a>
                       </li>
                       <li>
                         <a href="#tab-with-icon">Tabs With Icons</a>
