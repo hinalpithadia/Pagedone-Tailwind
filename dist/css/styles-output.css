@@ -1319,9 +1319,6 @@ pre[class*="language-"]::selection,
   transition-duration: 300ms;
 }
 
-
-
-
 #TableOfContents>ul>li>ul>li>a.active{
   --tw-border-opacity: 1;
   border-color: rgb(79 70 229 / var(--tw-border-opacity));
@@ -18989,6 +18986,11 @@ input[type="radio"]:checked:disabled + label span{
   color: rgb(49 46 129 / var(--tw-text-opacity));
 }
 
+.text-indigo-950{
+  --tw-text-opacity: 1;
+  color: rgb(30 27 75 / var(--tw-text-opacity));
+}
+
 .text-lime-50{
   --tw-text-opacity: 1;
   color: rgb(247 254 231 / var(--tw-text-opacity));
@@ -19360,11 +19362,6 @@ input[type="radio"]:checked:disabled + label span{
 .text-zinc-900{
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
-}
-
-.text-indigo-950{
-  --tw-text-opacity: 1;
-  color: rgb(30 27 75 / var(--tw-text-opacity));
 }
 
 .text-opacity-0{
@@ -24359,6 +24356,10 @@ input[type="radio"]:checked:disabled + label span{
     padding: 1.25rem;
   }
 
+  .md\:p-8{
+    padding: 2rem;
+  }
+
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -24805,6 +24806,11 @@ input[type="radio"]:checked:disabled + label span{
     padding: 2rem;
   }
 
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -24850,6 +24856,11 @@ input[type="radio"]:checked:disabled + label span{
     padding-bottom: 3.5rem;
   }
 
+  .lg\:py-36{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
   .lg\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -24858,16 +24869,6 @@ input[type="radio"]:checked:disabled + label span{
   .lg\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .lg\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .lg\:py-36{
-    padding-top: 9rem;
-    padding-bottom: 9rem;
   }
 
   .lg\:pb-14{
