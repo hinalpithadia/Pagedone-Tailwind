@@ -13918,6 +13918,11 @@ input[type="radio"]:checked:disabled + label span{
   border-style: none;
 }
 
+.border-\[\#E0E7F2\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(224 231 242 / var(--tw-border-opacity));
+}
+
 .border-amber-200{
   --tw-border-opacity: 1;
   border-color: rgb(253 230 138 / var(--tw-border-opacity));
@@ -14486,11 +14491,6 @@ input[type="radio"]:checked:disabled + label span{
   background-color: rgb(254 243 199 / var(--tw-bg-opacity));
 }
 
-.bg-amber-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
-}
-
 .bg-amber-400{
   --tw-bg-opacity: 1;
   background-color: rgb(251 191 36 / var(--tw-bg-opacity));
@@ -14499,11 +14499,6 @@ input[type="radio"]:checked:disabled + label span{
 .bg-amber-50{
   --tw-bg-opacity: 1;
   background-color: rgb(255 251 235 / var(--tw-bg-opacity));
-}
-
-.bg-amber-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
 .bg-amber-600{
@@ -14592,11 +14587,6 @@ input[type="radio"]:checked:disabled + label span{
 .bg-emerald-100{
   --tw-bg-opacity: 1;
   background-color: rgb(209 250 229 / var(--tw-bg-opacity));
-}
-
-.bg-emerald-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(167 243 208 / var(--tw-bg-opacity));
 }
 
 .bg-emerald-50{
@@ -14776,6 +14766,11 @@ input[type="radio"]:checked:disabled + label span{
 .bg-lime-50{
   --tw-bg-opacity: 1;
   background-color: rgb(247 254 231 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
 }
 
 .bg-orange-50{
@@ -14990,10 +14985,6 @@ input[type="radio"]:checked:disabled + label span{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-white\/20{
-  background-color: rgb(255 255 255 / 0.2);
 }
 
 .bg-white\/30{
@@ -18679,6 +18670,11 @@ input[type="radio"]:checked:disabled + label span{
   letter-spacing: 0.1em;
 }
 
+.text-\[\#111827\]{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .text-\[\#181C40\]{
   --tw-text-opacity: 1;
   color: rgb(24 28 64 / var(--tw-text-opacity));
@@ -18687,6 +18683,11 @@ input[type="radio"]:checked:disabled + label span{
 .text-\[\#334155\]{
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.text-\[\#9CA3AF\]{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-\[\#9DA9BC\]{
@@ -18800,11 +18801,6 @@ input[type="radio"]:checked:disabled + label span{
 .text-emerald-50{
   --tw-text-opacity: 1;
   color: rgb(236 253 245 / var(--tw-text-opacity));
-}
-
-.text-emerald-500{
-  --tw-text-opacity: 1;
-  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
 .text-emerald-600{
@@ -19288,10 +19284,6 @@ input[type="radio"]:checked:disabled + label span{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-white\/80{
-  color: rgb(255 255 255 / 0.8);
 }
 
 .text-yellow-100{
@@ -23130,16 +23122,6 @@ input[type="radio"]:checked:disabled + label span{
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
 
-.hover\:text-amber-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(245 158 11 / var(--tw-text-opacity));
-}
-
-.hover\:text-emerald-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(16 185 129 / var(--tw-text-opacity));
-}
-
 .hover\:text-gray-100:hover{
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
@@ -23972,6 +23954,10 @@ input[type="radio"]:checked:disabled + label span{
 
   .sm\:ml-64{
     margin-left: 16rem;
+  }
+
+  .sm\:mr-0{
+    margin-right: 0px;
   }
 
   .sm\:mt-0{
@@ -25115,6 +25101,10 @@ input[type="radio"]:checked:disabled + label span{
 }
 
 @media (min-width: 1536px){
+  .\32xl\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .\32xl\:mb-10{
     margin-bottom: 2.5rem;
   }
@@ -25140,8 +25130,20 @@ input[type="radio"]:checked:disabled + label span{
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
 
+  .\32xl\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .\32xl\:flex-col{
+    flex-direction: column;
+  }
+
   .\32xl\:flex-nowrap{
     flex-wrap: nowrap;
+  }
+
+  .\32xl\:items-start{
+    align-items: flex-start;
   }
 
   .\32xl\:gap-12{

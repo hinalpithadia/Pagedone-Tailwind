@@ -6,7 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
   <link href="../css/styles-output.css" rel="stylesheet">
+  <style>
+  .shadow-inner { box-shadow: 0px -4px 9px 0px #0000001A inset; }
+  .shadow-outer {box-shadow: 0px 4px 0px 0px #00000014;}
+  .shadow-custom{
+    box-shadow: inset 0px -4px 0px 0px #0000000F,  0px 0px 0px 2px #0000000D;
+}
+ 
+  </style>
 </head>
+
 
 <body class="font-inter ">
   <div class="page-container">
@@ -652,8 +661,8 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                               <div class="flex items-center gap-x-1 flex-wrap">
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Shift</kbd>
+                               <div class="flex items-center gap-x-3 flex-wrap">
+                                    <!-- <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Shift</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Ctrl</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Tab</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Caps Lock</kbd>
@@ -661,7 +670,14 @@
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Alt</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Spacebar</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Enter</kbd>
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Back Space</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Back Space</kbd> -->
+
+
+
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Back Space</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer">Back Space</kbd>
+                                   <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Back Space</kbd>
+                                   <div class="bg-gray-300 px-1.5 pt-2 pb-4 rounded-xl "><kbd class="px-2 py-2 text-sm font-semibold text-gray-900 bg-gray-100 rounded-lg">Back Space</kbd></div>
                                </div>
                             </div>
                         </div>
