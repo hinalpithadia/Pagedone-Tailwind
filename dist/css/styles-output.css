@@ -2620,6 +2620,18 @@ svg, rect, circle, path{
   border-radius: 0 !important;
 }
 
+@keyframes slide-left {
+  0%{
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  100%{
+    --tw-translate-x: -100%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
 @media(max-width:1400px){
   .component-card{
     margin: 0px 15px;
@@ -24521,6 +24533,14 @@ input[type="radio"]:checked:disabled + label span{
     margin-bottom: 0px;
   }
 
+  .lg\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:mb-14{
+    margin-bottom: 3.5rem;
+  }
+
   .lg\:mb-2{
     margin-bottom: 0.5rem;
   }
@@ -24629,6 +24649,10 @@ input[type="radio"]:checked:disabled + label span{
     width: 2rem;
   }
 
+  .lg\:w-96{
+    width: 24rem;
+  }
+
   .lg\:w-full{
     width: 100%;
   }
@@ -24704,10 +24728,6 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-6{
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -24883,6 +24903,11 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:text-left{
     text-align: left;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-6xl{
