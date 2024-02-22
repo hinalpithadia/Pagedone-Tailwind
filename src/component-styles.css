@@ -615,6 +615,19 @@
         margin-left: 10px;
         letter-spacing: 1.32px;
     } 
+    .price-cutout{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        text-decoration: line-through;
+        color: #ff4242;
+    }
+    .price {
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
     .btn-light{
         border-radius: 100px;
         background: #E2E0FF;

@@ -1660,6 +1660,21 @@ svg, rect, circle, path{
   letter-spacing: 1.32px;
 }
 
+.price-cutout{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration: line-through;
+  color: #ff4242;
+}
+
+.price {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .btn-light{
   border-radius: 100px;
   background: #E2E0FF;
@@ -8779,6 +8794,10 @@ input[type="radio"]:checked:disabled + label span{
   height: 136px;
 }
 
+.h-\[150px\]{
+  height: 150px;
+}
+
 .h-\[17px\]{
   height: 17px;
 }
@@ -8787,8 +8806,16 @@ input[type="radio"]:checked:disabled + label span{
   height: 1rem;
 }
 
+.h-\[200px\]{
+  height: 200px;
+}
+
 .h-\[22px\]{
   height: 22px;
+}
+
+.h-\[400px\]{
+  height: 400px;
 }
 
 .h-\[450px\]{
@@ -20452,6 +20479,10 @@ input[type="radio"]:checked:disabled + label span{
   opacity: 0.2;
 }
 
+.opacity-25{
+  opacity: 0.25;
+}
+
 .opacity-30{
   opacity: 0.3;
 }
@@ -20476,12 +20507,20 @@ input[type="radio"]:checked:disabled + label span{
   opacity: 0.7;
 }
 
+.opacity-75{
+  opacity: 0.75;
+}
+
 .opacity-80{
   opacity: 0.8;
 }
 
 .opacity-90{
   opacity: 0.9;
+}
+
+.opacity-95{
+  opacity: 0.95;
 }
 
 .bg-blend-normal{
@@ -22371,6 +22410,13 @@ input[type="radio"]:checked:disabled + label span{
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hover\:slide-left:hover {
+  animation-name: slide-left;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-iteration-count: 1;
 }
 
 @media (min-width: 640px){
