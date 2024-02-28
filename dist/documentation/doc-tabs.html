@@ -1740,6 +1740,104 @@
                         </div>
                     </div>
                   </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="tab-with-badge">Tailwind Vertical Tabs</h2>
+                    <p class="page-para">Tailwind CSS vertical tabs provide a smooth and space-efficient way to organize and navigate content within a web application or website. Vertical tabs are oriented vertically along the side of the screen.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                        <div class="code-preview">
+                            <div class="w-full">
+                              <div class="tabs flex">
+                                <div class="flex ">
+                                    <ul class="flex flex-col bg-gray-100 rounded-2xl transition-all duration-300 p-2 overflow-hidden" >
+                                      <li>
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 active tablink whitespace-nowrap" data-tab="tabs-with-background-1"  role="tab">
+                                        Tab 1
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink whitespace-nowrap" data-tab="tabs-with-background-2"  role="tab">
+                                        Tab 2
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="javascript:void(0)" class="inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink whitespace-nowrap" data-tab="tabs-with-background-3"  role="tab">
+                                        Tab 3
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="mt-3 px-4">
+                                    <div id="tabs-with-background-1" role="tabpanel" aria-labelledby="tabs-with-background-item-1" class="tabcontent">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">first</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-background-2" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-background-item-2" >
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">second</em> item's tab body.
+                                      </p>
+                                    </div>
+                                    <div id="tabs-with-background-3" class="hidden tabcontent" role="tabpanel" aria-labelledby="tabs-with-background-item-3">
+                                      <p class="text-gray-500 ">
+                                        This is the <em class="font-semibold text-gray-800 ">third</em> item's tab body.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                        <div class="code-syntax">
+                            <div class="code-syntax-head">
+                              <ul class="code-head-list ">
+                                <li>
+                                  <a href="#">HTML</a>
+                                </li>
+                              </ul>
+                              <div class="code-copy-button">
+                                  <button class="group">
+                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                  </button>
+                              </div>
+                            </div>
+                            <div class="code-main">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;tabs flex&quot;&gt;
+   &lt;div class=&quot;flex &quot;&gt;
+     &lt;ul class=&quot;flex flex-col bg-gray-100 rounded-2xl transition-all duration-300 p-2 overflow-hidden&quot;&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 active tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-background-1&quot; role=&quot;tab&quot;&gt; Tab 1 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-background-2&quot; role=&quot;tab&quot;&gt; Tab 2 &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;a href=&quot;javascript:void(0)&quot; class=&quot;inline-block py-3 px-6 text-gray-500 hover:text-gray-800 font-medium  tab-active:bg-white tab-active:rounded-xl tab-active:text-indigo-600 tablink whitespace-nowrap&quot; data-tab=&quot;tabs-with-background-3&quot; role=&quot;tab&quot;&gt; Tab 3 &lt;/a&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;mt-3 px-4&quot;&gt;
+     &lt;div id=&quot;tabs-with-background-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-1&quot; class=&quot;tabcontent&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;first&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-background-2&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-2&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;second&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+     &lt;div id=&quot;tabs-with-background-3&quot; class=&quot;hidden tabcontent&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tabs-with-background-item-3&quot;&gt;
+       &lt;p class=&quot;text-gray-500 &quot;&gt; This is the &lt;em class=&quot;font-semibold text-gray-800 &quot;&gt;third&lt;/em&gt; item&apos;s tab body. &lt;/p&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
             </div>
               </div>
             <!----------Middlebar End---------->
