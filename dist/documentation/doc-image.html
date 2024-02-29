@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
-  <!-- <link rel="stylesheet" href="assets/css/base.css"> -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link href="../css/styles-output.css" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.css " />
 </head>
@@ -698,32 +699,27 @@
         </aside>
         <!----------Leftbar End---------->
         <div class="flex-auto w-full min-w-0 lg:ml-56 xl:ml-72 lg:static lg:max-h-full lg:overflow-visible">
-          <div class="flex w-full">
+          <div class="flex w-full ">
             <!----------Middlebar Start---------->
             <div class="flex-auto w-full max-w-5xl mx-auto min-w-0 mt-16 px-5 py-14">
               <!--Header-->
               <div class="pb-8 mb-8 border-b border-gray-200">
-                <span class="doc-small-heading mb-5">Hover effects</span>
-                <h1 class="doc-heading ">Tailwind CSS Hover Effects</h1>
-                <p class="doc-paragraph-big">Tailwind CSS hover effects appears when
-                  the user positions the computer cursor over an element without activating it.These effects can enhance the user experience by providing visual feedback and making your website or application more engaging.</p>
+                <span class="doc-small-heading mb-5">LEARN</span>
+                <h1 class="doc-heading ">Tailwind CSS Images</h1>
+                <p class="doc-paragraph-big">Responsive images built with Tailwind CSS. Use classes for images to make your pictures responsive and more beautiful.</p>
               </div>
               <!--Header End-->
               <div id="mainContent">
                 <div class="mt-8">
-                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="basic-ex">Basic example</h2>
-                  <p class="page-para">Hover effect appears when a user positions computer cursor over an element
-                    without activating it.
+                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="responsive-img">Responsive images</h2>
+                  <p class="page-para">Use <span class="text-indigo-700 font-semibold">.max-w-full</span> and <span class="text-indigo-700 font-semibold">.h-auto</span> classes to make a image responsive.
                   </p>
                 </div>
                 <div class="mt-8 code-example">
                   <div class="code-preview-wrapper">
                     <div class="code-preview">
-                      <div class="w-full relative max-w-sm mx-auto h-auto ">
-                        <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt=""
-                          class="w-full max-w-sm mx-auto h-auto relative z-0">
-                        <a href="#"
-                          class=" absolute w-full h-full top-0 left-0 bg-white opacity-0 z-10 transition-opacity duration-300 hover:opacity-20 "></a>
+                      <div class="w-full relative h-auto">
+                      <img src="https://pagedone.io/asset/uploads/1707713972.png" alt="" class="w-full max-w-full h-auto">
                       </div>
                     </div>
                   </div>
@@ -753,72 +749,24 @@
                       </div>
                       <div class="code-main">
                         <div data-code-wrapper="" class="code-wrapper ">
-                          <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative max-w-sm mx-auto h-auto &quot;&gt;
-  &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full max-w-sm mx-auto h-auto relative z-0&quot;&gt;
-  &lt;a href=&quot;#&quot; class=&quot; absolute w-full h-full top-0 left-0 bg-white opacity-0 z-10 transition-opacity duration-300 hover:opacity-20 &quot;&gt;&lt;/a&gt;
-&lt;/div&gt;</code></div>
+                          <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative h-auto&quot;&gt;
+   &lt;img src=&quot;https://pagedone.io/asset/uploads/1707713972.png&quot; alt=&quot;&quot; class=&quot;w-full max-w-full h-auto&quot;&gt;
+ &lt;/div&gt;</code></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>
                         </div>
-                        
                     </div>
-                </div>
-                <div class="mt-8">
-                  <h2 class="doc-sub-heading relative group mt-10" id="opacity-hover">Opacity hover effect</h2>
-                  <p class="page-para">Below are some tailwind hover effects where opacity layer can be used as a hover effect.
-                    
-                  </p>
-                  <ul class="flex flex-col list-inside list-disc gap-3 text-gray-600 mb-10">
-                    <li>Tailwind hover <span class="text-indigo-700 font-semibold">transition:</span> used to animate the chaged properties on hover,</li>
-                    <li><span class="text-indigo-700 font-semibold"> duration-x: </span> used to define the duration of the animation where x is the time in milliseconds; e.g. duration-300..</li>
-                    <li>Then, you should be able to add any type of animation by changing the property on hover by using the class:  <span class="text-indigo-700 font-semibold">[hover:tw-class-name]</span>
-                      e.g. <span class="text-indigo-700 font-semibold">hover:opacity-20.</span></li>
-                  </ul>
-                      <h2 class="doc-sub-heading relative group scroll-mt-24" id="card-with-link">Color</h2>
-                      <p class="page-para">Change the color and opacity by manipulating color and <span class="text-indigo-700 font-semibold">.hover:opacity-* </span>classes.</p>
-                </div>
-                <div class="mt-8 code-example">
+                  </div>
+                  <div class="mt-8">
+                      <h2 class="doc-sub-heading relative group scroll-mt-24" id="thumbnail-img">Thumbnails</h2>
+                      <p class="page-para">Use <span class="text-indigo-700 font-semibold">.border</span>  class to give an image a rounded 1px border appearance.</p>
+                  </div>
+                  <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="w-full relative max-w-sm mx-auto h-auto ">
-                              <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt=""
-                                class="w-full max-w-sm mx-auto h-auto relative z-0">
-                              <a href="#"
-                                class=" absolute w-full h-full top-0 left-0 bg-indigo-600 opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 "></a>
-                            </div>
-                            <div class="w-full relative max-w-sm mx-auto h-auto ">
-                              <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt=""
-                                class="w-full max-w-sm mx-auto h-auto relative z-0">
-                              <a href="#"
-                                class=" absolute w-full h-full top-0 left-0 bg-emerald-600 opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 "></a>
-                            </div>
-                            <div class="w-full relative max-w-sm mx-auto h-auto ">
-                              <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt=""
-                                class="w-full max-w-sm mx-auto h-auto relative z-0">
-                              <a href="#"
-                                class=" absolute w-full h-full top-0 left-0 bg-amber-600 opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 "></a>
-                            </div>
-                            <div class="w-full relative max-w-sm mx-auto h-auto ">
-                              <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt=""
-                                class="w-full max-w-sm mx-auto h-auto relative z-0">
-                              <a href="#"
-                                class=" absolute w-full h-full top-0 left-0 bg-red-600 opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 "></a>
-                            </div>
-                            <div class="w-full relative max-w-sm mx-auto h-auto ">
-                              <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt=""
-                                class="w-full max-w-sm mx-auto h-auto relative z-0">
-                              <a href="#"
-                                class=" absolute w-full h-full top-0 left-0 bg-white opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 "></a>
-                            </div>
-                            <div class="w-full relative max-w-sm mx-auto h-auto ">
-                              <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt=""
-                                class="w-full max-w-sm mx-auto h-auto relative z-0">
-                              <a href="#"
-                                class=" absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 "></a>
-                            </div>
+                          <div class="w-full relative h-auto p-1 border border-gray-200 rounded-md max-w-sm mx-auto">
+                            <img src="https://pagedone.io/asset/uploads/1707713972.png" alt="" class="rounded-md max-w-full h-auto">
                           </div>
-                          
                         </div>
                     </div>
                     <div class="code-syntax-wrapper">
@@ -840,58 +788,25 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&quot;&gt;
-  &lt;div class=&quot;w-full relative max-w-sm mx-auto h-auto &quot;&gt;
-    &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full max-w-sm mx-auto h-auto relative z-0&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot; absolute w-full h-full top-0 left-0 bg-indigo-600 opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 &quot;&gt;&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;w-full relative max-w-sm mx-auto h-auto &quot;&gt;
-    &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full max-w-sm mx-auto h-auto relative z-0&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot; absolute w-full h-full top-0 left-0 bg-emerald-600 opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 &quot;&gt;&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;w-full relative max-w-sm mx-auto h-auto &quot;&gt;
-    &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full max-w-sm mx-auto h-auto relative z-0&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot; absolute w-full h-full top-0 left-0 bg-amber-600 opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 &quot;&gt;&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;w-full relative max-w-sm mx-auto h-auto &quot;&gt;
-    &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full max-w-sm mx-auto h-auto relative z-0&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot; absolute w-full h-full top-0 left-0 bg-red-600 opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 &quot;&gt;&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;w-full relative max-w-sm mx-auto h-auto &quot;&gt;
-    &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full max-w-sm mx-auto h-auto relative z-0&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot; absolute w-full h-full top-0 left-0 bg-white opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 &quot;&gt;&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;w-full relative max-w-sm mx-auto h-auto &quot;&gt;
-    &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full max-w-sm mx-auto h-auto relative z-0&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot; absolute w-full h-full top-0 left-0 bg-black opacity-0 z-10 transition-opacity duration-300 hover:opacity-40 &quot;&gt;&lt;/a&gt;
-  &lt;/div&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative h-auto p-1 border border-gray-200 rounded-md max-w-sm mx-auto&quot;&gt;
+  &lt;img src=&quot;https://pagedone.io/asset/uploads/1707713972.png&quot; alt=&quot;&quot; class=&quot;rounded-md max-w-full h-auto&quot;&gt;
 &lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
+                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="zoom-effect">Zoom in/out</h2>
-                    <p class="page-para">Use <span class="text-indigo-600 font-medium"> .hover:scale-*</span> class to any element to apply zoom, Use following tailwind hover example.</p>
-                </div>
-                <div class="mt-8 code-example">
+                  </div>
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="shadow-img">Image with Shadow</h2>
+                    <p class="page-para">Use shadow classes to add a shadow to the image.</p>
+                  </div>
+                  <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
                             <div class="w-full relative">
-                              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                <div class="w-full relative mx-auto h-auto overflow-hidden rounded-lg ">
-                                  <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt=""
-                                    class="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110">
-                                  
+                              <div class="w-full relative h-auto rounded-md max-w-sm mx-auto">
+                                <img src="https://pagedone.io/asset/uploads/1707713972.png" alt="" class="rounded-md max-w-full h-auto shadow-lg shadow-gray-300">
                                 </div>
-                                <div class="w-full relative mx-auto h-auto overflow-hidden rounded-lg ">
-                                  <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt=""
-                                    class="w-full h-auto relative z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100">
-                                  
-                                </div>
-                              </div>
                             </div>
                         </div>
                     </div>
@@ -914,73 +829,24 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative&quot;&gt;
-  &lt;div class=&quot;grid grid-cols-1 lg:grid-cols-2 gap-8&quot;&gt;
-    &lt;div class=&quot;w-full relative mx-auto h-auto overflow-hidden rounded-lg &quot;&gt;
-      &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;w-full relative mx-auto h-auto overflow-hidden rounded-lg &quot;&gt;
-      &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full h-auto relative z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative h-auto rounded-md max-w-sm mx-auto&quot;&gt;
+  &lt;img src=&quot;https://pagedone.io/asset/uploads/1707713972.png&quot; alt=&quot;&quot; class=&quot;rounded-md max-w-full h-auto shadow-lg shadow-gray-300&quot;&gt;
 &lt;/div&gt;</code></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>
                         </div>
                     </div>
-                </div>
+                  </div>
+
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="shadow-hover">Shadow on hover in tailwind</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="shadow-on-hover">Shadow on hover</h2>
                     <p class="page-para">Use <span class="text-indigo-700 font-semibold">.transition-shadow</span> class to the element to apply a shadow hover effect.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative">
                               <div class="w-full relative h-80 flex items-center justify-center p-2">
-                                <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt="" class="rounded-md max-w-sm mx-auto h-auto shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="javascript:;">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative&quot;&gt;
-  &lt;div class=&quot;w-full relative h-80 flex items-center justify-center p-2&quot;&gt;
-    &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;rounded-md max-w-sm mx-auto h-auto shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="card-zoom">Card Zoom Effect</h2>
-                    <p class="page-para">Use below card hover tailwind example where card can be zoom out on hover. </p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                              <div class="w-full relative h-80 flex items-center justify-center p-2">
-                                <div class="transform h-64 bg-indigo-400 w-80 hover:bg-indigo-600 transition duration-500 hover:scale-125 flex justify-center items-center"><p class="text-lg text-white">Hover over me!</p></div>
+                                <img src="https://pagedone.io/asset/uploads/1707713972.png" alt="" class="rounded-md max-w-sm mx-auto h-auto shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400">
                                 </div>
                         </div>
                     </div>
@@ -1004,26 +870,33 @@
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
 <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative h-80 flex items-center justify-center p-2&quot;&gt;
-  &lt;div class=&quot;transform h-64 bg-indigo-400 w-80 hover:bg-indigo-600 transition duration-500 hover:scale-125 flex justify-center items-center&quot;&gt;
-    &lt;p class=&quot;text-lg text-white&quot;&gt;Hover over me!&lt;/p&gt;
-  &lt;/div&gt;
+  &lt;img src=&quot;https://pagedone.io/asset/uploads/1707713972.png&quot; alt=&quot;&quot; class=&quot;rounded-md max-w-sm mx-auto h-auto shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400&quot;&gt;
 &lt;/div&gt;</code></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
+                  
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="gradient-effect">Gradient Effect</h2>
-                    <p class="page-para">You can add gradient effect on hover over card using tailwind utility classes.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="img-shape">Shapes</h2>
+                    <p class="page-para">Change the shape of the image.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative ">
-                              <div class="mx-auto w-72 h-60 bg-indigo-300 cursor-pointer hover:bg-gradient-to-t from-indigo-300 via-indigo-400 to-indigo-500 transition-all duration-300 ease-in-out flex justify-center items-center">
-                                  <h2 class="text-black">Hover over me</h2>
-                            </div>
+                            <div class="w-full relative">
+                              <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                                <div class="flex items-center justify-center w-full">
+                                <img src="https://pagedone.io/asset/uploads/1707713972.png" alt="" class=" h-auto rounded-lg">
+                                </div>
+                                <div class="flex items-center justify-center w-full">
+                                <img src="https://pagedone.io/asset/uploads/1707713972.png" alt="" class="aspect-square h-auto rounded-[50%]">
+                                </div>
+                                <div class="flex items-center justify-center w-full">
+                                <img src="https://pagedone.io/asset/uploads/1707713972.png" alt="" class=" h-auto rounded-full">
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -1046,28 +919,80 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative &quot;&gt;
-  &lt;div class=&quot;mx-auto w-72 h-60 bg-indigo-300 cursor-pointer hover:bg-gradient-to-t from-indigo-300 via-indigo-400 to-indigo-500 transition-all duration-300 ease-in-out flex justify-center items-center&quot;&gt;
-    &lt;h2 class=&quot;text-black&quot;&gt;Hover over me&lt;/h2&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative&quot;&gt;
+  &lt;div class=&quot;grid grid-cols-1 lg:grid-cols-3 gap-8&quot;&gt;
+    &lt;div class=&quot;flex items-center justify-center w-full&quot;&gt;
+      &lt;img src=&quot;https://pagedone.io/asset/uploads/1707713972.png&quot; alt=&quot;&quot; class=&quot; h-auto rounded-lg&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;flex items-center justify-center w-full&quot;&gt;
+      &lt;img src=&quot;https://pagedone.io/asset/uploads/1707713972.png&quot; alt=&quot;&quot; class=&quot;aspect-square h-auto rounded-[50%]&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;flex items-center justify-center w-full&quot;&gt;
+      &lt;img src=&quot;https://pagedone.io/asset/uploads/1707713972.png&quot; alt=&quot;&quot; class=&quot; h-auto rounded-full&quot;&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="cross-img">Cross Image hover Effect</h2>
-                    <p class="page-para">You can add hover effects to your image using tailwind transform properties eg: <span class="text-indigo-700 font-semibold">hover:rotate-6</span> , <span class="text-indigo-700 font-semibold">hover:scale-110</span></p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="object-fit-img">Tailwind CSS Object Fit</h2>
+                    <p class="page-para">To fix images in our carousel we need to use CSS property called object-fit. Tailwind has utility classes for this property, so let's have a look at how exactly it works.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" >How it works:</h2>
+                  <p class="page-para mb-7">The <span class="text-indigo-700 font-semibold">object-fit</span> property in Tailwind CSS is used to specify how an image or video should be resized to fit its container. It accepts the following values:
+                  <ul class="flex flex-col list-inside list-disc gap-3">
+                    <li><span class="text-indigo-700 font-semibold">contain :</span> Resize the content to stay contained within its container.</li>
+                    <li><span class="text-indigo-700 font-semibold">cover :</span> Resize the content to cover its container.</li>
+                    <li><span class="text-indigo-700 font-semibold">fill :</span> Stretch the content to fit its container.</li>
+                    <li><span class="text-indigo-700 font-semibold">none :</span> Display the content at its original size ignoring the container size.</li>
+                    <li><span class="text-indigo-700 font-semibold">scale-down :</span> Display the content at its original size but scale it down to fit its container if necessary.</li>
+                  </ul>
+                  </p>
+                  
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview">
-                            <div class="w-full relative ">
-                             <div class=" group h-72 w-80 mx-auto flex justify-center text-center relative overflow-hidden rounded-md cursor-pointer">
-                              <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt="" class="w-full h-auto relative z-0 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
-                              <div class="absolute h-full w-full bg-black/50 top-0 left-0"></div>
-                             </div>
+                            <div class="w-full relative">
+                              <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                                <div class="w-full h-auto flex items-center flex-col gap-3">
+                                  <div class="flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg">
+                                    <img src="https://pagedone.io/asset/uploads/1709188793.jpg" alt="" class=" object-contain  h-48 w-full">
+                                  </div>
+                                  <p class="text-center text-lg font-semibold text-gray-900">object-contain</p>
+                                </div>
+                                
+                                <div class="w-full h-auto flex items-center flex-col gap-3">
+                                  <div class="flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg">
+                                    <img src="https://pagedone.io/asset/uploads/1709188793.jpg" alt="" class=" object-cover h-48 w-full">
+                                  </div>
+                                  <p class="text-center text-lg font-semibold text-gray-900">object-cover</p>
+                                </div>
+                                
+                                <div class="w-full h-auto flex items-center flex-col gap-3">
+                                  <div class="flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg">
+                                    <img src="https://pagedone.io/asset/uploads/1709188793.jpg" alt="" class=" object-fill h-48 w-full">
+                                    </div>
+                                  <p class="text-center text-lg font-semibold text-gray-900">object-fill</p>
+                                </div>
+                               
+                                <div class="w-full h-auto flex items-center flex-col gap-3">
+                                  <div class="flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg">
+                                    <img src="https://pagedone.io/asset/uploads/1709188793.jpg" alt="" class=" object-none h-48 w-full">
+                                    </div>
+                                  <p class="text-center text-lg font-semibold text-gray-900">object-none</p>
+                                </div>
+                                
+                                  <div class="w-full h-auto flex items-center flex-col gap-3">
+                                    <div class="flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg">
+                                      <img src="https://pagedone.io/asset/uploads/1709188793.jpg" alt="" class="object-scale-down h-48 w-full">
+                                      </div>
+                                    <p class="text-center text-lg font-semibold text-gray-900">object-scale-down</p>
+                                  </div>
+                                  
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -1090,141 +1015,43 @@
                             </div>
                             <div class="code-main">
                                 <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative &quot;&gt;
-  &lt;div class=&quot; group h-72 w-80 mx-auto flex justify-center text-center relative overflow-hidden rounded-md cursor-pointer&quot;&gt;
-    &lt;img src=&quot;https://pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;&quot; class=&quot;w-full h-auto relative z-0 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:rotate-6&quot;&gt;
-    &lt;div class=&quot;absolute h-full w-full bg-black/50 top-0 left-0&quot;&gt;&lt;/div&gt;
+<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;grid grid-cols-1 lg:grid-cols-3 gap-8&quot;&gt;
+  &lt;div class=&quot;w-full h-auto flex items-center flex-col gap-3&quot;&gt;
+    &lt;div class=&quot;flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg&quot;&gt;
+      &lt;img src=&quot;https://pagedone.io/asset/uploads/1709188793.jpg&quot; alt=&quot;&quot; class=&quot; object-contain  h-48 w-full&quot;&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-center text-lg font-semibold text-gray-900&quot;&gt;object-contain&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;w-full h-auto flex items-center flex-col gap-3&quot;&gt;
+    &lt;div class=&quot;flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg&quot;&gt;
+      &lt;img src=&quot;https://pagedone.io/asset/uploads/1709188793.jpg&quot; alt=&quot;&quot; class=&quot; object-cover h-48 w-full&quot;&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-center text-lg font-semibold text-gray-900&quot;&gt;object-cover&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;w-full h-auto flex items-center flex-col gap-3&quot;&gt;
+    &lt;div class=&quot;flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg&quot;&gt;
+      &lt;img src=&quot;https://pagedone.io/asset/uploads/1709188793.jpg&quot; alt=&quot;&quot; class=&quot; object-fill h-48 w-full&quot;&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-center text-lg font-semibold text-gray-900&quot;&gt;object-fill&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;w-full h-auto flex items-center flex-col gap-3&quot;&gt;
+    &lt;div class=&quot;flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg&quot;&gt;
+      &lt;img src=&quot;https://pagedone.io/asset/uploads/1709188793.jpg&quot; alt=&quot;&quot; class=&quot; object-none h-48 w-full&quot;&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-center text-lg font-semibold text-gray-900&quot;&gt;object-none&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;w-full h-auto flex items-center flex-col gap-3&quot;&gt;
+    &lt;div class=&quot;flex items-center justify-center w-full aspect-square border border-gray-200 rounded-lg&quot;&gt;
+      &lt;img src=&quot;https://pagedone.io/asset/uploads/1709188793.jpg&quot; alt=&quot;&quot; class=&quot;object-scale-down h-48 w-full&quot;&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-center text-lg font-semibold text-gray-900&quot;&gt;object-scale-down&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="text-hover">Text and Link hover Effects</h2>
-                    <p class="page-para">Use below example 
-                      hover effects in tailwind css of links using tailwind transition properties and animation classes.</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative flex justify-between flex-wrap gap-3">
-                              <p class="text-lg m-6 group relative w-max">
-                                <span>Hover over me</span>
-                                <span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
-                              </p>
-                              <p class="text-lg m-6 group relative w-max">
-                                <span>Hover over me</span>
-                                <span class="absolute -bottom-1 right-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full"></span>
-                              </p>
-                              <p class="text-lg m-6 group relative w-max">
-                                <span>Hover over me</span>
-                                <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-3/6"></span>
-                                <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-3/6"></span>
-                              </p>
-                              <p class="text-lg m-6 group relative w-max">
-                                <span class="px-1 relative z-10 group-hover:text-white">Hover over me</span>
-                                <span class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-indigo-600 z-0 group-hover:h-full "></span>
-                              </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="javascript:;">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative flex justify-between flex-wrap gap-3&quot;&gt;
-  &lt;p class=&quot;text-lg m-6 group relative w-max&quot;&gt;
-    &lt;span&gt;Hover over me&lt;/span&gt;
-    &lt;span class=&quot;absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full&quot;&gt;&lt;/span&gt;
-  &lt;/p&gt;
-  &lt;p class=&quot;text-lg m-6 group relative w-max&quot;&gt;
-    &lt;span&gt;Hover over me&lt;/span&gt;
-    &lt;span class=&quot;absolute -bottom-1 right-0 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-full&quot;&gt;&lt;/span&gt;
-  &lt;/p&gt;
-  &lt;p class=&quot;text-lg m-6 group relative w-max&quot;&gt;
-    &lt;span&gt;Hover over me&lt;/span&gt;
-    &lt;span class=&quot;absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-3/6&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-3/6&quot;&gt;&lt;/span&gt;
-  &lt;/p&gt;
-  &lt;p class=&quot;text-lg m-6 group relative w-max&quot;&gt;
-    &lt;span class=&quot;px-1 relative z-10 group-hover:text-white&quot;&gt;Hover over me&lt;/span&gt;
-    &lt;span class=&quot;absolute left-0 bottom-0 w-full h-0.5 transition-all bg-indigo-600 z-0 group-hover:h-full &quot;&gt;&lt;/span&gt;
-  &lt;/p&gt;
-&lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="button-hover">Button hover Effects</h2>
-                    <p class="page-para">Following example shows button hover using tailwind css.</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full relative flex justify-center flex-wrap gap-5">
-                              <button class="relative border border-indigo-600 group  py-1.5 px-2.5 text-indigo-600"><span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all"></span>Button Hover</button>
-                              <button class="relative inline-block font-medium group py-1.5 px-2.5 "><span class="absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-indigo-600 group-hover:-translate-x-0 group-hover:-translate-y-0"></span><span class="absolute inset-0 w-full h-full bg-white border border-indigo-600 group-hover:bg-indigo-50"></span><span class="relative text-indigo-600 ">Button Hover</span></button>
-                              <button class="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-white group py-1.5 px-2.5"><span class="w-56 h-48 rounded bg-indigo-600 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span><span class="relative w-full text-left text-indigo-600 transition-colors duration-300 ease-in-out group-hover:text-white">Button Hover</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="javascript:;">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative flex justify-center flex-wrap gap-5&quot;&gt;
-  &lt;button class=&quot;relative border border-indigo-600 group  py-1.5 px-2.5 text-indigo-600&quot;&gt;
-    &lt;span class=&quot;absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full group-hover:transition-all&quot;&gt;&lt;/span&gt;Button Hover &lt;/button&gt;
-  &lt;button class=&quot;relative inline-block font-medium group py-1.5 px-2.5 &quot;&gt;
-    &lt;span class=&quot;absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-indigo-600 group-hover:-translate-x-0 group-hover:-translate-y-0&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;absolute inset-0 w-full h-full bg-white border border-indigo-600 group-hover:bg-indigo-50&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;relative text-indigo-600 &quot;&gt;Button Hover&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;button class=&quot;btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-white group py-1.5 px-2.5&quot;&gt;
-    &lt;span class=&quot;w-56 h-48 rounded bg-indigo-600 absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;relative w-full text-left text-indigo-600 transition-colors duration-300 ease-in-out group-hover:text-white&quot;&gt;Button Hover&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-               
             </div>
               </div>
             <!----------Middlebar End---------->
@@ -1235,36 +1062,27 @@
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="javascript:;" class="mb-5 block active:text-indigo-600">Component</a>
+                  <a href="javascript:;" class="mb-5 block active:text-indigo-600">Learn</a>
                     <ul class="space-y-4 ">
                       <li>
-                        <a href="#basic-ex">Basic Example</a>
+                        <a href="#responsive-img">Responsive Images</a>
                       </li>
                       <li>
-                        <a href="#opacity-hover">Opacity on hover</a>
+                        <a href="#thumbnail-img">Thumbnail</a>
                       </li>
                       <li>
-                        <a href="#zoom-effect">Zoom In/Out on hover</a>
+                        <a href="#shadow-img">Image with Shadow</a>
                       </li>
                       <li>
-                        <a href="#shadow-hover">Shadow On Hover </a>
+                        <a href="#shadow-on-hover">Shadow on hover</a>
                       </li>
                       <li>
-                        <a href="#card-zoom">Card Zoom on hover</a>                        
+                        <a href="#img-shape">Shapes</a>                        
                       </li>
                       <li>
-                        <a href="#gradient-effect">Gradient on hover</a>
+                        <a href="#object-fit-img">Object Fit</a>
                       </li>
-                      <li>
-                        <a href="#cross-img">Cross image on hover</a>
-                      </li>
-                      <li>
-                        <a href="#text-hover">Text hover</a>
-                      </li>
-                      <li>
-                        <a href="#button-hover">Button hover</a>
-                      </li>
-                     
+                    
                     </ul>
                   </li>
                 </ul>  
