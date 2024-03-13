@@ -1,0 +1,216 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@layer components {
+    .accordion.active > .accordion-toggle.accordion-active\:text-indigo-600 {
+        @apply text-indigo-600;
+    }
+    .accordion.active > .accordion-toggle .accordion-active\:text-indigo-600{
+        @apply text-indigo-600;
+    }
+    .accordion.active > .accordion-toggle.accordion-active\:text-gray-900{
+        @apply text-gray-900;
+    }
+    .accordion.active > .accordion-toggle .accordion-active\:rotate-180{
+        @apply rotate-180;
+    }
+    .accordion.active.accordion-active\:bg-indigo-50 {
+        @apply bg-indigo-50;
+    }
+    .accordion.active.accordion-active\:border-b-0 {
+        @apply border-b-0;
+    }
+    .accordion.active > .accordion-toggle.accordion-active\:font-semibold{
+        @apply font-semibold
+    }
+    .accordion.active.accordion-active\:bg-gray-50 {
+        @apply bg-gray-50;
+    }
+    .accordion.active.accordion-active\:rounded-xl{
+        @apply rounded-xl;
+    }
+    .accordion.active.accordion-active\:border-indigo-600 {
+        @apply border-indigo-600;
+    }
+    .accordion-toggle.active ~ .accordion-content{
+        margin-top: 10px;
+      }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    input[type='checkbox']:checked{
+        background-image: url('https://beta.pagedone.io/asset/uploads/1689406942.svg');
+    }
+    input[type='checkbox']:disabled:checked{
+        @apply bg-[url('https://beta.pagedone.io/asset/uploads/1689403247.png')];
+    }
+    input[type='checkbox']:indeterminate{
+        background-image: url('https://beta.pagedone.io/asset/uploads/1689407165.svg');
+    }
+    input[type='checkbox']:indeterminate:disabled{
+        @apply bg-[url('https://beta.pagedone.io/asset/uploads/1689403311.png')];
+    }
+    
+     input[type="radio"] + label span{
+        transition: background .2s,
+          transform .2s;
+    }
+    
+    input[type="radio"]:disabled + label{
+        @apply text-gray-600 text-sm font-normal;
+    }
+    input[type="radio"] + label span:hover,
+    input[type="radio"] + label:hover span{
+         @apply scale-100;
+    } 
+    
+    input[type="radio"]:checked + label span {
+        @apply border-indigo-500 bg-indigo-500 shadow-[inset_0_0px_0px_3.5px_#E7E7FF];
+    }
+    
+    input[type="radio"]:checked:disabled + label span {
+        @apply cursor-not-allowed border border-indigo-200  bg-gray-300 shadow-[inset_0_0px_0px_3.5px_#F2F4F7];
+    }
+    [data-tab].active.tab-active\:border-b-indigo-600{ 
+        @apply border-b-indigo-600 ;
+    }
+    [data-tab].active.tab-active\:text-indigo-600{ 
+        @apply  text-indigo-600;
+    }
+    [data-tab].active.tab-active\:text-white{ 
+        @apply  text-white;
+    }
+    [data-tab].active.tab-active\:bg-indigo-50{ 
+        @apply  bg-indigo-50;
+    }
+    [data-tab].active.tab-active\:bg-indigo-600{ 
+        @apply  bg-indigo-600;
+    }
+    [data-tab].active.tab-active\:bg-white{ 
+        @apply  bg-white;
+    }
+    [data-tab].active.tab-active\:rounded-xl{ 
+        @apply  rounded-xl;
+    }
+    [data-tab].active.tab-active\:rounded-full{ 
+        @apply  rounded-full;
+    }
+    [data-tab].active.tab-active\:rounded-t-2xl{
+        @apply rounded-t-2xl;
+    }
+    [data-tab].active .tab-active\:stroke-indigo-600{
+        @apply stroke-indigo-600;
+    }
+    .tooltip-placement-top{
+        @apply top-0;
+    }
+    .tooltip-placement-right{
+        @apply right-0;   
+    }
+    .tooltip-placement-bottom{
+        @apply bottom-0;
+    }
+    .tooltip-placement-left{
+        @apply left-0;
+    }
+    .tooltip[data-tooltip-placement^=top]
+    .tooltip[data-tooltip-placement^=top]>.tooltip-arrow {
+        top: -4px;
+    }
+    .tooltip[data-tooltip-placement^=right]>.tooltip-arrow {
+        right: -4px;
+    }
+    .tooltip[data-tooltip-placement^=bottom]>.tooltip-arrow {
+        bottom: -4px;
+    }
+    .tooltip[data-tooltip-placement^=left]>.tooltip-arrow {
+        left: -4px;
+    }
+    select{
+        text-indent: 1px;
+        text-overflow: '';
+        width: 50px;
+        height: 50px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent url("https://beta.pagedone.io/asset/uploads/1695813759.png") no-repeat 95% center;
+    }
+    .open .modal-open\:visible{
+        @apply visible;
+     }
+     .open .modal-open\:opacity-100{
+         @apply opacity-100;
+     } 
+     .open .modal-open\:duration-500{
+         @apply duration-500;
+     }
+     .open .modal-open\:translate-y-0{
+        @apply translate-y-0;
+    }
+    .swiper-wrapper {
+        width: 100% ;
+        height: max-content !important;
+        padding-bottom: 64px !important;
+    }
+    .swiper-pagination {
+        bottom: 0px !important;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        content: "" !important;
+    }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        content: "" !important;
+    }
+    .swiper-pagination-bullet-active {
+        background: #4F46E5 !important;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: '' !important;
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        content: '' !important;
+    }
+
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+   .swiper-pagination-current{
+        color:#111827!important
+   }
+   .swiper-pagination-total{
+        color:#9CA3AF ;
+   }
+   .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: #4F46E5!important;
+   }
+   
+    .swiper-slide.swiper-slide-active {
+        --tw-border-opacity: 1 !important;
+        border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
+    }
+
+    .swiper-slide.swiper-slide-active>.swiper-slide-active\:text-indigo-600 {
+        --tw-text-opacity: 1;
+        color: rgb(79 70 229 / var(--tw-text-opacity));
+    }
+
+    .swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
+        --tw-text-opacity: 1;
+        color: rgb(79 70 229 / var(--tw-text-opacity));
+    }
+    .shadow-inner { box-shadow: 0px -4px 9px 0px #0000001A inset; }
+    .shadow-outer {box-shadow: 0px 4px 0px 0px #00000014;}
+    .shadow-custom{
+        box-shadow: inset 0px -4px 0px 0px #0000000F,  0px 0px 0px 2px #0000000D;
+    }
+}

@@ -16,6 +16,7 @@
     "tailwindcss": "^3.2.4"
   },
   "dependencies": {
+    "tailwindcss-animate": "^1.0.7",
     "taos": "^1.0.3",
     "textify.js": "^2.4.3"
   }
