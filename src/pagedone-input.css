@@ -301,7 +301,7 @@
         .swiper-rtl .swiper-button-prev:after {
           content: "" !important;
         }
-    
+      
         .swiper-button-next svg,
         .swiper-button-prev svg {
           width: 24px !important;
