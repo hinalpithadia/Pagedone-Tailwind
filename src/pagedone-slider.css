@@ -60,8 +60,19 @@
         --tw-text-opacity: 1;
         color: rgb(79 70 229 / var(--tw-text-opacity));
     }
-  
-  
+  .swiper-button-next, .swiper-button-prev{
+    width: inherit!important;
+    height: inherit!important;
+  }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: inherit!important;
+  }
+  .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: inherit!important;
+  }
+  .swiper-pagination-progressbar{
+    background: inherit!important;
+  }
       /* 
   
      
