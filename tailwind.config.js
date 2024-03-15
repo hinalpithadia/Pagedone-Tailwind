@@ -11,6 +11,8 @@ module.exports = {
       fontFamily: {
         manrope: ['Manrope', 'sans-serif'],
         inter: ['Inter', 'serif'],
+        cormorant : ['Cormorant','sans-serif'],
+        merriweather : ['Merriweather','sans-serif'],
       },
       screens: {
         '3xl': '1740px',
@@ -1031,6 +1033,9 @@ module.exports = {
         },
       },
       animation: {
+        BounceDelayOne: 'bounce 1s 0.2s infinite',
+        BounceDelayTwo: 'bounce 1s 0.4s infinite',
+        BounceDelayThree: 'bounce 1s 0.6s infinite',
         zoomIn: 'zoom-in 1s ease-out 0.25s 1',
         zoomOut: 'zoom-out 1s ease-out 0.25s 1',
         zoomOutLeft: 'zoom-out-left 1s ease-out 0.25s 1',

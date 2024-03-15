@@ -1256,8 +1256,18 @@
   .accordion-2 .content:last-child {
     @apply rounded-b-xl
   }
-  
-
+ 
+  .input-range input[type=range]::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;   
+      appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #FFF;
+    box-shadow: -405px 0 0 400px #2633E4;
+    border-radius: 50%;
+}
+ 
   @keyframes vertical-fade-in {
     from {
       opacity: 0;

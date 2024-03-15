@@ -29,4 +29,5 @@
     [data-tab].active .tab-active\:stroke-indigo-600{
         @apply stroke-indigo-600;
     }
+    
 } 

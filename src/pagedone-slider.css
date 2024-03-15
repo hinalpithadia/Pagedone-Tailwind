@@ -1,0 +1,148 @@
+
+    .swiper-wrapper {
+        width: 100% ;
+        height: max-content !important;
+        padding-bottom: 64px !important;
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+        position: relative;
+    }
+    .swiper-pagination {
+        bottom: 0px !important;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        content: "" !important;
+    }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        content: "" !important;
+    }
+    .swiper-pagination-bullet-active {
+        background: #4F46E5!important; 
+    }
+
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: '' !important;
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        content: '' !important;
+    }
+
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+   .swiper-pagination-current{
+        color:#111827!important
+   }
+   .swiper-pagination-total{
+        color:#9CA3AF ;
+   }
+   .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: #4F46E5!important;
+   }
+   
+    .swiper-slide.swiper-slide-active {
+        --tw-border-opacity: 1 !important;
+        border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
+    }
+
+    .swiper-slide.swiper-slide-active>.swiper-slide-active\:text-indigo-600 {
+        --tw-text-opacity: 1;
+        color: rgb(79 70 229 / var(--tw-text-opacity));
+    }
+
+    .swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
+        --tw-text-opacity: 1;
+        color: rgb(79 70 229 / var(--tw-text-opacity));
+    }
+  
+  
+      /* 
+  
+     
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+          width: 16px;
+          height: 4px;
+          border-radius: 4px;
+        }
+        .swiper-pagination-bullet-active {
+          background: #111827 ;
+        }
+        .swiper-wrapper {
+          height: max-content;
+          padding-bottom: 66px;
+        }
+    
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+          width: 16px;
+          height: 4px;
+          border-radius: 4px;
+        }
+    
+        .swiper-slide.swiper-slide-active>.slide\:bg-blue-600 {
+          --tw-bg-opacity: 1;
+          background-color: rgb(6 95 70 / var(--tw-bg-opacity));
+    
+        }
+    
+        .swiper-slide.swiper-slide-active>.rounded-full .slide\:text-white {
+          --tw-text-opacity: 1;
+          color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+    
+        .swiper-slide.swiper-slide-active>.rounded-full .slide\:text-gray-200 {
+          --tw-text-opacity: 1;
+          color: rgb(229 231 235 / var(--tw-text-opacity));
+        }
+        .swiper-container {
+          width: 100%;
+          max-width: 940px;
+          height: 640px;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+        .swiper-container {
+          width: 100%;
+          max-width: 940px;
+          height: 640px;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+    
+        .swiper-button-prev,
+        .swiper-button-next {
+          position: relative !important;
+          top: auto !important;
+          width: 48px !important;
+          height: 48px !important;
+          margin-top: 0px !important;
+          z-index: 10;
+          color: #000 !important;
+        }
+    
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+          color: #FFF !important;
+        }
+    
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+          content: "" !important;
+        }
+    
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+          content: "" !important;
+        }
+      
+        .swiper-button-next svg,
+        .swiper-button-prev svg {
+          width: 24px !important;
+          height: 24px !important;
+        } */

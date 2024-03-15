@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -2667,6 +2671,17 @@ svg, rect, circle, path{
   border-bottom-left-radius: 0.75rem;
 }
 
+.input-range input[type=range]::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  cursor: ew-resize;
+  background: #FFF;
+  box-shadow: -405px 0 0 400px #2633E4;
+  border-radius: 50%;
+}
+
 @keyframes vertical-fade-in {
   from {
     opacity: 0;
@@ -3123,22 +3138,6 @@ code.language-javascript {
   background-image: linear-gradient(135deg,#5551FF 10%,#0000 0,#0000 50%,#5551FF 0,#5551FF 60%,#0000 0,#0000);
   background-size: 7.07px 7.07px;
 }
-
-/* .code-preview ul{
-        @apply !pl-0 !list-none;
-    } */
-
-/* .code-preview ul>li{
-        @apply !mb-0 !leading-none !text-inherit;
-    }
-    .code-preview ul>li{
-       font-size: inherit!important;
-    }
-    .code-preview p{
-        margin-bottom: 0!important;
-        font-size: inherit!important;
-        color: inherit!important;
-    } */
 
 .range {
   position: relative;
@@ -3606,6 +3605,8 @@ input[type="radio"]:checked:disabled + label span{
   height: -moz-max-content !important;
   height: max-content !important;
   padding-bottom: 64px !important;
+  transition-timing-function: linear !important;
+  position: relative;
 }
 
 .swiper-pagination {
@@ -3650,6 +3651,91 @@ input[type="radio"]:checked:disabled + label span{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
+
+/* 
+  
+     
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+          width: 16px;
+          height: 4px;
+          border-radius: 4px;
+        }
+        .swiper-pagination-bullet-active {
+          background: #111827 ;
+        }
+        .swiper-wrapper {
+          height: max-content;
+          padding-bottom: 66px;
+        }
+    
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+          width: 16px;
+          height: 4px;
+          border-radius: 4px;
+        }
+    
+        .swiper-slide.swiper-slide-active>.slide\:bg-blue-600 {
+          --tw-bg-opacity: 1;
+          background-color: rgb(6 95 70 / var(--tw-bg-opacity));
+    
+        }
+    
+        .swiper-slide.swiper-slide-active>.rounded-full .slide\:text-white {
+          --tw-text-opacity: 1;
+          color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+    
+        .swiper-slide.swiper-slide-active>.rounded-full .slide\:text-gray-200 {
+          --tw-text-opacity: 1;
+          color: rgb(229 231 235 / var(--tw-text-opacity));
+        }
+        .swiper-container {
+          width: 100%;
+          max-width: 940px;
+          height: 640px;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+        .swiper-container {
+          width: 100%;
+          max-width: 940px;
+          height: 640px;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+    
+        .swiper-button-prev,
+        .swiper-button-next {
+          position: relative !important;
+          top: auto !important;
+          width: 48px !important;
+          height: 48px !important;
+          margin-top: 0px !important;
+          z-index: 10;
+          color: #000 !important;
+        }
+    
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+          color: #FFF !important;
+        }
+    
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+          content: "" !important;
+        }
+    
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+          content: "" !important;
+        }
+      
+        .swiper-button-next svg,
+        .swiper-button-prev svg {
+          width: 24px !important;
+          height: 24px !important;
+        } */
 
 .sr-only{
   position: absolute;
@@ -20544,6 +20630,10 @@ input[type="radio"]:checked:disabled + label span{
   letter-spacing: 0.1em;
 }
 
+.tracking-\[15\.36px\]{
+  letter-spacing: 15.36px;
+}
+
 .text-\[\#111827\]{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -24467,6 +24557,53 @@ input[type="radio"]:checked:disabled + label span{
 .placeholder\:text-slate-400::placeholder{
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:left-1\/2::before{
+  content: var(--tw-content);
+  left: 50%;
+}
+
+.before\:top-0::before{
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:z-10::before{
+  content: var(--tw-content);
+  z-index: 10;
+}
+
+.before\:h-full::before{
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.before\:w-0::before{
+  content: var(--tw-content);
+  width: 0px;
+}
+
+.before\:w-0\.5::before{
+  content: var(--tw-content);
+  width: 0.125rem;
+}
+
+.before\:-translate-x-1\/2::before{
+  content: var(--tw-content);
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:bg-white::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .after\:absolute::after{
@@ -28976,4 +29113,5 @@ input[type="radio"]:checked:disabled + label span{
   --tw-bg-opacity: 1;
   background-color: rgb(168 85 247 / var(--tw-bg-opacity));
 }
+
 
