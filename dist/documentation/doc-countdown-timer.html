@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
-  <link rel="stylesheet" href="assets/css/base.css">
   <link href="../css/styles-output.css" rel="stylesheet">
   <!-- <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.css " /> -->
 </head>
@@ -703,32 +702,167 @@
             <div class="flex-auto w-full max-w-5xl mx-auto min-w-0 mt-16 px-5 py-14">
               <!--Header-->
               <div class="pb-8 mb-8 border-b border-gray-200">
-                <span class="doc-small-heading mb-5">Time Pickers</span>
-                <h1 class="doc-heading ">Tailwind CSS Time Pickers</h1>
-                <p class="doc-paragraph-big">Discover seamless Time picking with Tailwind CSS Time Pickers. Effortlessly
-                  integrate sleek and customizable date selection components into your web projects, enhancing user
-                  experience and streamlining interaction. Explore a range of stylish designs and intuitive features for
-                  efficient Time input, all powered by the flexibility and simplicity of Tailwind CSS.</p>
+                <span class="doc-small-heading mb-5">Countdown Timer</span>
+                <h1 class="doc-heading "id="description">Tailwind CSS Countdown Timer</h1>
+                <p class="doc-paragraph-big mb-4">A countdown timer in Tailwind CSS is a UI component used to display a
+                  dynamically decreasing time interval. It can be used to create a sense of urgency or to indicate the
+                  time remaining until a specific event or deadline. Countdown timer display area, where the remaining
+                  time is shown. This display area may include digits representing hours, minutes, seconds, and
+                  milliseconds in the countdown.</p>
+                <p class="doc-paragraph-big mb-4">
+                  You can customize the design and its appearance to match the design and branding of your application.
+                  To change the time of the countdown, you can customize the date and time according to your
+                  requirements.
+                </p>
+                <p class="doc-paragraph-big">
+                  The countdown timer requires a start time, indicating when the countdown should begin, and,
+                  optionally, an end time, indicating when the countdown should end.
+                </p>
               </div>
               <!--Header End-->
               <div id="mainContent">
-                <div class="mt-8">
-                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-card">Default Time Picker</h2>
-                  <p class="page-para">description
 
-                  </p>
+                <p class="page-para">Add tailwind coutdown into your website with pagedone customizable
+                  classes. You have to follow few steps to add classes in your <code
+                    class="text-indigo-600">'javascript file'</code> file where you define your
+                  project's customized scripts.</p>
+                <ul class="flex flex-col list-inside list-disc gap-3 text-gray-600">
+                  <li>Add below script in<span class="text-indigo-700 "> 'javascript'</span>
+                    file in your project.
+                  </li>
+                  <li>Use customized Countdown Timer classes shown below.</li>
+                </ul>
+                <div class="mt-8 code-example">
+                  <div class="code-main">
+                    <div class="code-wrapper max-h-[500px] overflow-y-auto">
+                      <pre class="language-javascript"><code class="language-javascript" data-lang="js">&lt;script&gt;
+  &#47;&#47; count-down timer
+  let dest &#61; new Date&#40;&quot;apr 25, 2024 10:00:00&quot;&#41;.getTime&#40;&#41;;
+  let x &#61; setInterval&#40;function &#40;&#41; &#123;
+    let now &#61; new Date&#40;&#41;.getTime&#40;&#41;;
+    let diff &#61; dest - now;
+    
+    &#47;&#47; Check if the countdown has reached zero or negative
+    if &#40;diff &lt;&#61; 0&#41; &#123;
+        clearInterval&#40;x&#41;; &#47;&#47; Stop the countdown
+        return; &#47;&#47; Exit the function
+    &#125;
+
+    let days &#61; Math.floor&#40;diff / &#40;1000 * 60 * 60 * 24&#41;&#41;;
+    let hours &#61; Math.floor&#40;&#40;diff % &#40;1000 * 60 * 60 * 24&#41;&#41; / &#40;1000 * 60 * 60&#41;&#41;;
+    let minutes &#61; Math.floor&#40;&#40;diff % &#40;1000 * 60 * 60&#41;&#41; / &#40;1000 * 60&#41;&#41;;
+    let seconds &#61; Math.floor&#40;&#40;diff % &#40;1000 * 60&#41;&#41; / 1000&#41;;
+
+    if &#40;days &lt; 10&#41; &#123;
+      days &#61; &#96;0$&#123;days&#125;&#96;;
+    &#125;
+    if &#40;hours &lt; 10&#41; &#123;
+      hours &#61; &#96;0$&#123;hours&#125;&#96;;
+    &#125;
+    if &#40;minutes &lt; 10&#41; &#123;
+      minutes &#61; &#96;0$&#123;minutes&#125;&#96;;
+    &#125;
+    if &#40;seconds &lt; 10&#41; &#123;
+      seconds &#61; &#96;0$&#123;seconds&#125;&#96;;
+    &#125;
+
+    &#47;&#47; Get elements by class name
+    let countdownElements &#61; document.getElementsByClassName&#40;&quot;countdown-element&quot;&#41;;
+
+    &#47;&#47; Loop through the elements and update their content
+    for &#40;let i &#61; 0; i &lt; countdownElements.length; i++&#41; &#123;
+      let className &#61; countdownElements&#91;i&#93;.classList&#91;1&#93;; &#47;&#47; Get the second class name
+      switch &#40;className&#41; &#123;
+        case &quot;days&quot;:
+          countdownElements&#91;i&#93;.innerHTML &#61; days;
+          break;
+        case &quot;hours&quot;:
+          countdownElements&#91;i&#93;.innerHTML &#61; hours;
+          break;
+        case &quot;minutes&quot;:
+          countdownElements&#91;i&#93;.innerHTML &#61; minutes;
+          break;
+        case &quot;seconds&quot;:
+          countdownElements&#91;i&#93;.innerHTML &#61; seconds;
+          break;
+        default:
+          break;
+      &#125;
+    &#125;
+  &#125;, 1000&#41;;
+&lt;/script&gt;
+                          </code></pre>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-8">
+                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="custom-anim">
+                    Custom Tailwind Countdown Timer</h2>
+                  <p class="page-para">Below are list of customized Countdown Timer with their class
+                    names.</p>
+                </div>
+                <div class="scroll-mt-24 bg-gray-50 border rounded-lg p-4 mt-10 ">
+                  <div class="overflow-auto scrollbar-y max-h-96 h-full tb-overflow">
+                      <table class="w-full text-left">
+                          <thead class="align-baseline">
+                              <tr>
+                                  <th class="sticky z-10 -top-0.5 w-1/2 text-sm font-semibold text-gray-800 ">
+                                      <div class="pb-3 pr-2 bg-gray-50 border-b border-gray-200 ">
+                                          Counter Name</div>
+                                  </th>
+                                  <th class="sticky z-10 -top-0.5 w-1/2 text-sm font-semibold text-gray-800 ">
+                                      <div class="pb-3 pr-2 bg-gray-50 border-b border-gray-200 ">
+                                          Class Name</div>
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody class="align-baseline">
+                              <tr class="pb-6">
+                                  <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600 whitespace-nowrap">
+                                      Days</td>
+                                  <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-nowrap text-left">
+                                    countdown-element days</td>
+                              </tr>
+                              <tr class="pb-6">
+                                  <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600 whitespace-nowrap">
+                                      Hours</td>
+                                  <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-nowrap">
+                                    countdown-element hours</td>
+                              </tr>
+                              <tr class="pb-6">
+                                  <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600 whitespace-nowrap">
+                                      Minutes</td>
+                                  <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-nowrap">
+                                    countdown-element minutes</td>
+                              </tr>
+                              <tr>
+                                  <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600 whitespace-nowrap">
+                                      Seconds</td>
+                                  <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-nowrap">
+                                    countdown-element seconds</td>
+                              </tr>
+                              
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+
+
+                <div class="mt-8">
+                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="Default-Timer">Default countdown timer</h2>
+                  <p class="page-para">Use this default tailwind countdown, which shows the remaining time for a
+                    specific event in a box-style layout. Here, you can customize the date and time according to your
+                    needs.</p>
                 </div>
                 <div class="mt-8 code-example">
                   <div class="code-preview-wrapper">
                     <div class="code-preview">
-
                       <div class="flex items-center justify-center w-full gap-6 count-down-main">
                         <div class="timer">
                           <div
                             class="pr-1.5 pl-2 relative bg-indigo-50 w-max before:contents-[''] before:absolute before:h-full before:w-0.5 before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-white before:z-10 ">
                             <h3
-                              class="font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-11 text-center relative z-20"
-                              id="days">
+                              class="countdown-element days font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20">
                             </h3>
 
                           </div>
@@ -738,8 +872,7 @@
                           <div
                             class="pr-1.5 pl-2 relative bg-indigo-50 w-max before:contents-[''] before:absolute before:h-full before:w-0.5 before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-white before:z-10 ">
                             <h3
-                              class="font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-11 text-center relative z-20"
-                              id="hou">
+                              class="countdown-element hours font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20">
                             </h3>
 
                           </div>
@@ -749,8 +882,7 @@
                           <div
                             class="pr-1.5 pl-2 relative bg-indigo-50 w-max before:contents-[''] before:absolute before:h-full before:w-0.5 before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-white before:z-10 ">
                             <h3
-                              class="font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-11 text-center relative z-20"
-                              id="minut">
+                              class="countdown-element minutes font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20">
                             </h3>
 
                           </div>
@@ -760,16 +892,13 @@
                           <div
                             class="pr-1.5 pl-2 relative bg-indigo-50 w-max before:contents-[''] before:absolute before:h-full before:w-0.5 before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-white before:z-10 ">
                             <h3
-                              class="font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-11 text-center relative z-20"
-                              id="sec">
+                              class="countdown-element seconds font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20">
                             </h3>
 
                           </div>
                           <p class="text-sm font-normal text-gray-900 mt-1 text-center w-full">seconds</p>
                         </div>
                       </div>
-
-
                     </div>
                     <div class="code-syntax-wrapper">
                       <div class="code-syntax">
@@ -792,13 +921,56 @@
                                   stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
                                   stroke-linejoin="round"></path>
                               </svg>
-                            </button> 
+                            </button>
                           </div>
                         </div>
                         <div class="code-main">
                           <div data-code-wrapper="" class="code-wrapper ">
-                            <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative bg-no-repeat bg-cover h-[500px] rounded-xl overflow-hidden&quot;
-style&quot;background-image: url(...);&quot;&gt;       
+                            <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex items-center justify-center w-full gap-6 count-down-main&quot;&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;pr-1.5 pl-2 relative bg-indigo-50 w-max before:contents-[&apos;&apos;] before:absolute before:h-full before:w-0.5 before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-white before:z-10 &quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element days font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20&quot;
+      &gt;
+      &lt;/h3&gt;
+                              
+    &lt;/div&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;days&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;pr-1.5 pl-2 relative bg-indigo-50 w-max before:contents-[&apos;&apos;] before:absolute before:h-full before:w-0.5 before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-white before:z-10 &quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element hours font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20&quot;
+        &gt;
+      &lt;/h3&gt;
+                              
+    &lt;/div&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;hours&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;pr-1.5 pl-2 relative bg-indigo-50 w-max before:contents-[&apos;&apos;] before:absolute before:h-full before:w-0.5 before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-white before:z-10 &quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element minutes font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20&quot;
+        &gt;
+      &lt;/h3&gt;
+                              
+    &lt;/div&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;minutes&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;pr-1.5 pl-2 relative bg-indigo-50 w-max before:contents-[&apos;&apos;] before:absolute before:h-full before:w-0.5 before:top-0 before:left-1/2 before:-translate-x-1/2 before:bg-white before:z-10 &quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element seconds font-manrope font-semibold text-2xl text-indigo-600 tracking-[15.36px] max-w-[44px] text-center relative z-20&quot;
+        &gt;
+      &lt;/h3&gt;
+                              
+    &lt;/div&gt;
+    &lt;p class=&quot;text-sm font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;seconds&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
                           </code></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
@@ -806,11 +978,11 @@ style&quot;background-image: url(...);&quot;&gt;
                         </div>
                     </div>
                 </div>
+                </div>
 
                 <div class="mt-8">
-                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-card">semi-rounded Date Picker</h2>
-                  <p class="page-para">description
-
+                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="seprator-timer">Countdown with seprator</h2>
+                  <p class="page-para">The following example of a countdown in tailwind shows days, hours, minutes, and seconds separated from each other by a specific sign.
                   </p>
                 </div>
                 <div class="mt-8 code-example">
@@ -822,10 +994,9 @@ style&quot;background-image: url(...);&quot;&gt;
                           <div
                             class="">
                             <h3
-                              class="font-manrope font-semibold text-2xl text-indigo-600 text-center"
-                              id="day">
+                              class="countdown-element days font-manrope font-semibold text-2xl text-indigo-600 text-center"
+                              >
                             </h3>
-
                           </div>
                           <p class="text-sm font-normal text-gray-900 mt-1 text-center w-full">days</p>
                         </div>
@@ -834,10 +1005,9 @@ style&quot;background-image: url(...);&quot;&gt;
                           <div
                             class="">
                             <h3
-                              class="font-manrope font-semibold text-2xl text-indigo-600 text-center"
-                              id="hour">
+                              class="countdown-element hours font-manrope font-semibold text-2xl text-indigo-600 text-center"
+                              >
                             </h3>
-
                           </div>
                           <p class="text-sm font-normal text-gray-900 mt-1 text-center w-full">hours</p>
                         </div>
@@ -846,10 +1016,9 @@ style&quot;background-image: url(...);&quot;&gt;
                           <div
                             class="">
                             <h3
-                              class="font-manrope font-semibold text-2xl text-indigo-600 text-center"
-                              id="minute">
+                              class="countdown-element minutes font-manrope font-semibold text-2xl text-indigo-600 text-center"
+                             >
                             </h3>
-
                           </div>
                           <p class="text-sm font-normal text-gray-900 mt-1 text-center w-full">minutes</p>
                         </div>
@@ -858,10 +1027,9 @@ style&quot;background-image: url(...);&quot;&gt;
                           <div
                             class="">
                             <h3
-                              class="font-manrope font-semibold text-2xl text-indigo-600 text-center"
-                              id="seco">
+                              class="countdown-element seconds font-manrope font-semibold text-2xl text-indigo-600 text-center"
+                              >
                             </h3>
-
                           </div>
                           <p class="text-sm font-normal text-gray-900 mt-1 text-center w-full">seconds</p>
                         </div>
@@ -894,8 +1062,177 @@ style&quot;background-image: url(...);&quot;&gt;
                       </div>
                       <div class="code-main">
                         <div data-code-wrapper="" class="code-wrapper ">
-                          <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative bg-no-repeat bg-cover h-[500px] rounded-xl overflow-hidden&quot;
-style&quot;background-image: url(...);&quot;&gt;       
+                          <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex items-start justify-center w-full gap-4 count-down-main&quot;&gt;
+  &lt;div class=&quot;timer w-16&quot;&gt;
+    &lt;div
+      class=&quot;&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element days font-manrope font-semibold text-2xl text-indigo-600 text-center&quot;
+        &gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;p&gt; class=&quot;text-sm font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;days&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;h3&gt; class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer w-16&quot;&gt;
+    &lt;div
+      class=&quot;&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element hours font-manrope font-semibold text-2xl text-indigo-600 text-center&quot;
+        &gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;p&gt; class=&quot;text-sm font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;hours&lt;/p&gt;
+  &lt;/div&gt;
+    &lt;h3&gt; class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer w-16&quot;&gt;
+    &lt;div
+      class=&quot;&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element minutes font-manrope font-semibold text-2xl text-indigo-600 text-center&quot;
+        &gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;p&gt; class=&quot;text-sm font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;minutes&lt;/p&gt;
+  &lt;/div&gt;
+    &lt;h3 class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer w-16&quot;&gt;
+    &lt;div
+      class=&quot;&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element seconds font-manrope font-semibold text-2xl text-indigo-600 text-center&quot;
+        &gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;p&gt; class=&quot;text-sm font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;seconds&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                          </code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                  
+
+                <div class="mt-8">
+                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="Timer-With-Animation">Tailwind countdown timer with animation</h2>
+                  <p class="page-para">The below example shows days, hours, minutes, and seconds in an animated way. You can change the background color according to your needs.
+                  </p>
+                </div>
+                <div class="mt-8 code-example">
+                  <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                      
+                      <div class="flex items-center justify-center w-full gap-4 count-down-main">
+                        <div class="timer w-16">
+                          <div
+                            class=" bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden">
+                            <h3
+                              class="countdown-element days font-Cormorant font-semibold text-2xl text-white text-center">
+                            </h3>
+                          </div>
+                          <p class="text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full">days</p>
+                        </div>
+                        
+                        <div class="timer w-16">
+                          <div
+                            class=" bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden">
+                            <h3
+                              class="countdown-element hours font-Cormorant font-semibold text-2xl text-white text-center">
+                            </h3>
+                          </div>
+                          <p class="text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full">hours</p>
+                        </div>
+                         
+                        <div class="timer w-16">
+                          <div
+                            class=" bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden">
+                            <h3
+                              class="countdown-element minutes font-Cormorant font-semibold text-2xl text-white text-center">
+                            </h3>
+                          </div>
+                          <p class="text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full">minutes</p>
+                        </div>
+                        
+                        <div class="timer w-16">
+                          <div
+                            class=" bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden ">
+                            <h3
+                              class="countdown-element seconds font-Cormorant font-semibold text-2xl text-white text-center animate-countinsecond">
+                            </h3>
+                          </div>
+                          <p class="text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full">seconds</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                      <div class="code-syntax-head">
+                        <ul class="code-head-list ">
+                          <li> 
+                            <a href="javascript:;">HTML</a>
+                          </li>
+                        </ul>
+                        <div class="code-copy-button">
+                          <button class="group">
+                            <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                              <path
+                                d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="code-main">
+                        <div data-code-wrapper="" class="code-wrapper ">
+                          <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex items-start justify-center w-full gap-4 count-down-main&quot;&gt;
+  &lt;div class=&quot;timer w-16&quot;&gt;
+    &lt;div
+      class=&quot; bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element days font-Cormorant font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-lg font-Cormorant font-medium text-gray-900 mt-1 text-center w-full&quot;&gt;days&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;h3 class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer w-16&quot;&gt;
+    &lt;div
+      class=&quot; bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element hours font-Cormorant font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;hours&lt;/p&gt;
+  &lt;/div&gt;
+    &lt;h3 class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer w-16&quot;&gt;
+    &lt;div
+      class=&quot; bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element minutes font-Cormorant font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;minutes&lt;/p&gt;
+  &lt;/div&gt;
+    &lt;h3 class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer w-16&quot;&gt;
+    &lt;div
+      class=&quot; bg-indigo-600 py-4 px-2 rounded-lg overflow-hidden &quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element seconds font-Cormorant font-semibold text-2xl text-white text-center animate-countinsecond&quot;&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-lg font-Cormorant font-normal text-gray-900 mt-1 text-center w-full&quot;&gt;seconds&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
                           </code></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
@@ -903,10 +1240,522 @@ style&quot;background-image: url(...);&quot;&gt;
                         </div>
                     </div>
                 </div>
-                  
+
+                <div class="mt-8">
+                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="timer-with-a-gradient-background">Countdown timer with a gradient background</h2>
+                  <p class="page-para">This customizable countdown timer in Tailwind shows days, hours, minutes, and seconds inside a gradient background. You can also change gradient colors.
+                  </p>
                 </div>
-            </div>
+                <div class="mt-8 code-example">
+                  <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                      
+                      <div class="flex items-center justify-center w-full gap-1.5 count-down-main">
+                        <div class="timer">
+                          <div
+                            class="rounded-xl bg-gradient-to-b from-indigo-600 to-purple-600 py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3">
+                            <h3
+                              class="countdown-element days font-manrope font-semibold text-2xl text-white text-center">
+                            </h3>
+                          <p class="text-lg font-manrope font-normal text-white mt-1 text-center w-full">days</p>
+                          </div>
+                        </div>
+                        <h3 class="font-manrope font-semibold text-2xl text-gray-900">:</h3>
+                        <div class="timer">
+                          <div
+                            class="rounded-xl bg-gradient-to-b from-indigo-600 to-purple-600 py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3">
+                            <h3
+                              class="countdown-element hours font-manrope font-semibold text-2xl text-white text-center">
+                            </h3>
+                          <p class="text-lg font-manrope font-normal text-white mt-1 text-center w-full">Hour</p>
+                          </div>
+                        </div>
+                         <h3 class="font-manrope font-semibold text-2xl text-gray-900">:</h3>
+                        <div class="timer">
+                          <div
+                            class="rounded-xl bg-gradient-to-b from-indigo-600 to-purple-600 py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3">
+                            <h3
+                              class="countdown-element minutes font-manrope font-semibold text-2xl text-white text-center">
+                            </h3>
+                          <p class="text-lg font-manrope font-normal text-white mt-1 text-center w-full">Minutes</p>
+                          </div>
+                        </div>
+                         <h3 class="font-manrope font-semibold text-2xl text-gray-900">:</h3>
+                        <div class="timer">
+                          <div
+                            class="rounded-xl bg-gradient-to-b from-indigo-600 to-purple-600 py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3">
+                            <h3
+                              class="countdown-element seconds font-manrope font-semibold text-2xl text-white text-center">
+                            </h3>
+                          <p class="text-lg font-manrope font-normal text-white mt-1 text-center w-full">Seconds</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                      <div class="code-syntax-head">
+                        <ul class="code-head-list ">
+                          <li> 
+                            <a href="javascript:;">HTML</a>
+                          </li>
+                        </ul>
+                        <div class="code-copy-button">
+                          <button class="group">
+                            <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                              <path
+                                d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="code-main">
+                        <div data-code-wrapper="" class="code-wrapper ">
+                          <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex items-center justify-center w-full gap-1.5 count-down-main&quot;&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl bg-gradient-to-b from-indigo-600 to-purple-600 py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element days font-manrope font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p&gt; class=&quot;text-lg font-manrope font-normal text-white mt-1 text-center w-full&quot;&gt;days&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;h3&gt; class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl bg-gradient-to-b from-indigo-600 to-purple-600 py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element hours font-manrope font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p&gt; class=&quot;text-lg font-manrope font-normal text-white mt-1 text-center w-full&quot;&gt;Hour&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;h3&gt; class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl bg-gradient-to-b from-indigo-600 to-purple-600 py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element minutes font-manrope font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p&gt; class=&quot;text-lg font-manrope font-normal text-white mt-1 text-center w-full&quot;&gt;Minutes&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;h3 class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl bg-gradient-to-b from-indigo-600 to-purple-600 py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element seconds font-manrope font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p&gt; class=&quot;text-lg font-manrope font-normal text-white mt-1 text-center w-full&quot;&gt;Seconds&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                          </code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="Blur-Effect">Countdown with a blur effect</h2>
+                  <p class="page-para">Use this tailwind CSS countdown to add a blur effect to the background inside the countdown timer. You can use it by adding the following class to your code:.
+                  </p>
+                </div>
+                <div class="mt-8 code-example">
+                  <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                      <div class="w-full h-96 rounded-2xl flex gap-9 flex-col items-center justify-center bg-cover bg-center" style="background-image: url(https://pagedone.io/asset/uploads/1710565658.jpg);">
+                        <div class="flex items-start justify-center w-full gap-1.5 count-down-main">
+                        
+                          <div class="timer">
+                          <div
+                            class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                            <h3
+                              class="countdown-element days font-manrope font-semibold text-2xl text-white text-center">
+                            </h3>
+                          <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">days</p>
+                          </div>
+                        </div>
+                      
+                        <div class="timer">
+                          <div
+                            class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                            <h3
+                              class="countdown-element hours font-manrope font-semibold text-2xl text-white text-center">
+                            </h3>
+                          <p class="text-lg uppercase font-normal text-white mt-1 text-center w-full">Hour</p>
+                          </div>
+                        </div>
+                         
+                        <div class="timer">
+                          <div
+                            class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                            <h3
+                              class="countdown-element minutes font-manrope font-semibold text-2xl text-white text-center">
+                            </h3>
+                          <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">Minutes</p>
+                          </div>
+                        </div>
+                         
+                        <div class="timer">
+                          <div
+                            class="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">
+                            <h3
+                              class="countdown-element seconds font-manrope font-semibold text-2xl text-white text-center">
+                            </h3>
+                          <p class="text-lg fo uppercasent-normal text-white mt-1 text-center w-full">Seconds</p>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                      <div class="code-syntax-head">
+                        <ul class="code-head-list ">
+                          <li> 
+                            <a href="javascript:;">HTML</a>
+                          </li>
+                        </ul>
+                        <div class="code-copy-button">
+                          <button class="group">
+                            <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                              <path
+                                d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="code-main">
+                        <div data-code-wrapper="" class="code-wrapper ">
+                          <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full h-96 rounded-2xl flex gap-9 flex-col items-center justify-center bg-cover bg-center&quot; style=&quot;background-image: url(https://pagedone.io/asset/uploads/1710565658.jpg);&quot;&gt;
+  &lt;div class=&quot;flex items-start justify-center w-full gap-1.5 count-down-main&quot;&gt;
+                            
+    &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element days font-manrope font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p class=&quot;text-lg uppercase font-normal text-white mt-1 text-center w-full&quot;&gt;days&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                          
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element hours font-manrope font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p class=&quot;text-lg uppercase font-normal text-white mt-1 text-center w-full&quot;&gt;Hour&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                             
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element minutes font-manrope font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p class=&quot;text-lg fo uppercasent-normal text-white mt-1 text-center w-full&quot;&gt;Minutes&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                             
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element seconds font-manrope font-semibold text-2xl text-white text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p class=&quot;text-lg fo uppercasent-normal text-white mt-1 text-center w-full&quot;&gt;Seconds&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                          </code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-8">
+                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="With-Background">Countdown with background</h2>
+                  <p class="page-para">Use this simple example of a countdown with a background color. You can also change the background according to your brand designs.
+                  </p>
+                </div>
+                <div class="mt-8 code-example">
+                  <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                      
+                      <div class="flex rounded-xl items-center justify-center w-max mx-auto p-3 gap-1.5 count-down-main bg-indigo-50">
+                        <div class="timer">
+                          <div
+                            class="rounded-xl py-2 flex items-center justify-center flex-col aspect-square px-1 w-20">
+                            <h3
+                              class="countdown-element days font-manrope font-semibold text-xl text-indigo-600 text-center">
+                            </h3>
+                          <p class="text-lg font-Cormorant font-normal text-indigo-600 text-center w-full">days</p>
+                          </div>
+                        </div>
+                        <h3 class="font-manrope font-semibold text-2xl text-indigo-600">:</h3>
+                        <div class="timer">
+                          <div
+                            class="rounded-xl py-2 flex items-center justify-center flex-col aspect-square px-1 w-20">
+                            <h3
+                              class="countdown-element hours font-manrope font-semibold text-xl text-indigo-600 text-center">
+                            </h3>
+                          <p class="text-lg font-Cormorant font-normal text-indigo-600 text-center w-full">Hour</p>
+                          </div>
+                        </div>
+                         <h3 class="font-manrope font-semibold text-2xl text-indigo-600">:</h3>
+                        <div class="timer">
+                          <div
+                            class="rounded-xl py-2 flex items-center justify-center flex-col aspect-square px-1 w-20">
+                            <h3
+                              class="countdown-element minutes font-manrope font-semibold text-xl text-indigo-600 text-center">
+                            </h3>
+                          <p class="text-lg font-Cormorant font-normal text-indigo-600 text-center w-full">Minutes</p>
+                          </div>
+                        </div>
+                         <h3 class="font-manrope font-semibold text-2xl text-indigo-600">:</h3>
+                        <div class="timer">
+                          <div
+                            class="rounded-xl py-2 flex items-center justify-center flex-col aspect-square px-1 w-20">
+                            <h3
+                              class="countdown-element seconds font-manrope font-semibold text-xl text-indigo-600 text-center">
+                            </h3>
+                          <p class="text-lg font-Cormorant font-normal text-indigo-600 text-center w-full">Seconds</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                      <div class="code-syntax-head">
+                        <ul class="code-head-list ">
+                          <li> 
+                            <a href="javascript:;">HTML</a>
+                          </li>
+                        </ul>
+                        <div class="code-copy-button">
+                          <button class="group">
+                            <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                              <path
+                                d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="code-main">
+                        <div data-code-wrapper="" class="code-wrapper ">
+                          <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex rounded-xl items-center justify-center w-max mx-auto p-3 gap-1.5 count-down-main bg-indigo-50&quot;&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl py-2 flex items-center justify-center flex-col aspect-square px-1 w-20&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element days font-manrope font-semibold text-xl text-indigo-600 text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p&gt; class=&quot;text-lg font-Cormorant font-normal text-indigo-600 text-center w-full&quot;&gt;days&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;h3&gt; class=&quot;font-manrope font-semibold text-2xl text-indigo-600&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl py-2 flex items-center justify-center flex-col aspect-square px-1 w-20&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element hours font-manrope font-semibold text-xl text-indigo-600 text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p&gt; class=&quot;text-lg font-Cormorant font-normal text-indigo-600 text-center w-full&quot;&gt;Hour&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;h3&gt; class=&quot;font-manrope font-semibold text-2xl text-indigo-600&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl py-2 flex items-center justify-center flex-col aspect-square px-1 w-20&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element minutes font-manrope font-semibold text-xl text-indigo-600 text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p&gt; class=&quot;text-lg font-Cormorant font-normal text-indigo-600 text-center w-full&quot;&gt;Minutes&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;h3&gt; class=&quot;font-manrope font-semibold text-2xl text-indigo-600&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl py-2 flex items-center justify-center flex-col aspect-square px-1 w-20&quot;&gt;
+      &lt;h3&gt;
+        class=&quot;countdown-element seconds font-manrope font-semibold text-xl text-indigo-600 text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p&gt; class=&quot;text-lg font-Cormorant font-normal text-indigo-600 text-center w-full&quot;&gt;Seconds&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                          </code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-8">
+                  <h2 class="doc-sub-heading relative group scroll-mt-24" id="Timer-With-Borders">Countdown timer with borders</h2>
+                  <p class="page-para">Use this example to add a border to timing boxes and give them a simple look.
+                  </p>
+                </div>
+                <div class="mt-8 code-example">
+                  <div class="code-preview-wrapper">
+                    <div class="code-preview">
+                      
+                      <div class="flex items-center justify-center w-full gap-1.5 count-down-main">
+                        <div class="timer">
+                          <div
+                            class="rounded-xl border border-indigo-600 py-1.5 min-w-[80px] flex items-center justify-center flex-col gap-0 aspect-square px-1.5">
+                            <h3
+                              class="countdown-element days font-manrope font-semibold text-2xl text-indigo-600 text-center">
+                            </h3> 
+                          <p class="text-sm font-inter capitalize font-normal text-indigo-600 text-center w-full">days</p>
+                          </div>
+                        </div>
+                        <h3 class="font-manrope font-semibold text-2xl text-gray-900">:</h3>
+                        <div class="timer">
+                          <div
+                            class="rounded-xl border border-indigo-600 py-1.5 min-w-[80px] flex items-center justify-center flex-col gap-0 aspect-square px-1.5">
+                            <h3
+                              class="countdown-element hours font-manrope font-semibold text-2xl text-indigo-600 text-center">
+                            </h3>
+                          <p class="text-sm font-inter capitalize font-normal text-indigo-600 text-center w-full">Hour</p>
+                          </div>
+                        </div>
+                         <h3 class="font-manrope font-semibold text-2xl text-gray-900">:</h3>
+                        <div class="timer">
+                          <div
+                            class="rounded-xl border border-indigo-600 py-1.5 min-w-[80px] flex items-center justify-center flex-col gap-0 aspect-square px-1.5">
+                            <h3
+                              class="countdown-element minutes font-manrope font-semibold text-2xl text-indigo-600 text-center">
+                            </h3>
+                          <p class="text-sm font-inter capitalize font-normal text-indigo-600 text-center w-full">Minutes</p>
+                          </div>
+                        </div>
+                         <h3 class="font-manrope font-semibold text-2xl text-gray-900">:</h3>
+                        <div class="timer">
+                          <div
+                            class="rounded-xl border border-indigo-600 py-1.5 min-w-[80px] flex items-center justify-center flex-col gap-0 aspect-square px-1.5">
+                            <h3
+                              class="countdown-element seconds sec font-manrope font-semibold text-2xl text-indigo-600 text-center">
+                            </h3>
+                          <p class="text-sm font-inter capitalize font-normal text-indigo-600 text-center w-full">Seconds</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="code-syntax-wrapper">
+                    <div class="code-syntax">
+                      <div class="code-syntax-head">
+                        <ul class="code-head-list ">
+                          <li> 
+                            <a href="javascript:;">HTML</a>
+                          </li>
+                        </ul>
+                        <div class="code-copy-button">
+                          <button class="group">
+                            <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                              <path
+                                d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="code-main">
+                        <div data-code-wrapper="" class="code-wrapper ">
+                          <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex items-center justify-center w-full gap-1.5 count-down-main&quot;&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl border border-indigo-600 py-1.5 min-w-[80px] flex items-center justify-center flex-col gap-0 aspect-square px-1.5&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element days font-manrope font-semibold text-2xl text-indigo-600 text-center&quot;&gt;
+      &lt;/h3&gt; 
+    &lt;p class=&quot;text-sm font-inter capitalize font-normal text-indigo-600 text-center w-full&quot;&gt;days&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;h3 class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl border border-indigo-600 py-1.5 min-w-[80px] flex items-center justify-center flex-col gap-0 aspect-square px-1.5&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element hours font-manrope font-semibold text-2xl text-indigo-600 text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p class=&quot;text-sm font-inter capitalize font-normal text-indigo-600 text-center w-full&quot;&gt;Hour&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;h3 class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl border border-indigo-600 py-1.5 min-w-[80px] flex items-center justify-center flex-col gap-0 aspect-square px-1.5&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element minutes font-manrope font-semibold text-2xl text-indigo-600 text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p class=&quot;text-sm font-inter capitalize font-normal text-indigo-600 text-center w-full&quot;&gt;Minutes&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;h3 class=&quot;font-manrope font-semibold text-2xl text-gray-900&quot;&gt;:&lt;/h3&gt;
+  &lt;div class=&quot;timer&quot;&gt;
+    &lt;div
+      class=&quot;rounded-xl border border-indigo-600 py-1.5 min-w-[80px] flex items-center justify-center flex-col gap-0 aspect-square px-1.5&quot;&gt;
+      &lt;h3
+        class=&quot;countdown-element seconds sec font-manrope font-semibold text-2xl text-indigo-600 text-center&quot;&gt;
+      &lt;/h3&gt;
+    &lt;p class=&quot;text-sm font-inter capitalize font-normal text-indigo-600 text-center w-full&quot;&gt;Seconds&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                          </code></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
+            </div>
+          
             <!----------Middlebar End---------->
             <!----------Rightbar Start---------->
             <div
@@ -915,32 +1764,30 @@ style&quot;background-image: url(...);&quot;&gt;
               <nav id="TableOfContents">  
                 <ul>
                   <li>
-                  <a href="javascript:;" class="mb-5 block active:text-indigo-600">Component</a>
+                  <a href="javascript:;" class="mb-5 block active:text-indigo-600 font-manrope">Component</a>
                     <ul class="space-y-4 ">
                       <li>
-                        <a href="#default-card">Defult Card</a>
+                        <a href="#Default-Timer">Default Timer</a>
                       </li>
                       <li>
-                        <a href="#card-with-link">Card With Link</a>
+                        <a href="#seprator-timer">timer With Seprator</a>
                       </li>
                       <li>
-                        <a href="#card-with-button">Card With Button</a>
+                        <a href="#Timer-With-Animation">Timer With Animation</a>
                       </li>
                       <li>
-                        <a href="#card-with-image">Card With Image</a>
+                        <a href="#timer-with-a-gradient-background">Timer with a gradient background</a>
                       </li>
                       <li>
-                        <a href="#horizontal-card">Horizontal Card</a>                        
+                        <a href="#Blur-Effect">Timer With Blur Effect</a>                        
                       </li>
                       <li>
-                        <a href="#call-to-action-card">Call To Action Card</a>
+                        <a href="#With-Background">Timer With Background</a>
                       </li>
                       <li>
-                        <a href="#pricing-card">Pricing Card</a>
+                        <a href="#Timer-With-Borders">Timer With Borders</a>
                       </li>
-                      <li>
-                        <a href="#testimonial-card">Testimonial Card</a>
-                      </li>
+                     
                     </ul>
                   </li>
                 </ul>  
@@ -948,78 +1795,82 @@ style&quot;background-image: url(...);&quot;&gt;
              <!----------Rightbar End---------->
           </div>
         </div>
+        <script></script>
       </div>
     </main>
   </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
-  <script  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" ></script>
-  <script src="/js/lib/KitKatClock.js" ></script>
-  <script  src="/js/datetimepicker.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
-  <script src="assets/js/time-picker.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
   <script>
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
   </script>
- 
-</body>
-</html>
-<script>
+ <script>
   // count-down timer
-
-  let dest = new Date("apr 25, 2024 10:00:00").getTime();
-
+  let dest = new Date("mar 31, 2024 23:59:59").getTime();
   let x = setInterval(function () {
-
-
     let now = new Date().getTime();
     let diff = dest - now;
-    // console.log(diff);
+    // Check if the countdown has reached zero or negative
+    if (diff <= 0) {
+      // Set the destination date to the same day next month
+      let nextMonthDate = new Date();
+      nextMonthDate.setMonth(nextMonthDate.getMonth() + 1);
+
+      // If the current month is December, set the destination date to the same day next year
+      if (nextMonthDate.getMonth() === 0) {
+          nextMonthDate.setFullYear(nextMonthDate.getFullYear() + 1);
+      }
+
+      dest = nextMonthDate.getTime();
+      return; // Exit the function
+  }
 
     let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    // console.log(days);
-    let hou = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    // console.log(hours);
-    let minut = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    // console.log(minutes);
-    let sec = Math.floor((diff % (1000 * 60)) / 1000);
-    // console.log(second);
+    let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
     if (days < 10) {
       days = `0${days}`;
     }
-    if (hou < 10) {
-      hou = `0${hou}`;
-    }
-    if (minut < 10) {
-      minut = `0${minut}`;
-    }
-    if (sec < 10) {
-      sec = `0${sec}`;
-    }
-    if (day < 10) {
-      day = `0${day}`;
-    }
-    if (hour < 10) {
-      hour = `0${hour}`;
-    }
-    if (minute < 10) {
-      minute = `0${minute}`;
-    }
-    if (seco < 10) {
-      seco = `0${seco}`;
-    }
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hou").innerHTML = hou;
-    document.getElementById("minut").innerHTML = minut;
-    document.getElementById("sec").innerHTML = sec;
 
-    document.getElementById("day").innerHTML = days;
-    document.getElementById("hour").innerHTML = hou;
-    document.getElementById("minute").innerHTML = minut;
-    document.getElementById("seco").innerHTML = sec;
+    if (hours < 10) {
+      hours = `0${hours}`;
+    }
+    if (minutes < 10) {
+      minutes = `0${minutes}`;
+    }
+    if (seconds < 10) {
+      seconds = `0${seconds}`;
+    }
+
+    // Get elements by class name
+    let countdownElements = document.getElementsByClassName("countdown-element");
+
+    // Loop through the elements and update their content
+    for (let i = 0; i < countdownElements.length; i++) {
+      let className = countdownElements[i].classList[1]; // Get the second class name
+      switch (className) {
+        case "days":
+          countdownElements[i].innerHTML = days;
+          break;
+        case "hours":
+          countdownElements[i].innerHTML = hours;
+          break;
+        case "minutes":
+          countdownElements[i].innerHTML = minutes;
+          break;
+        case "seconds":
+          countdownElements[i].innerHTML = seconds;
+          break;
+        default:
+          break;
+      }
+    }
   }, 1000);
-
 </script>
+</body>
+</html>

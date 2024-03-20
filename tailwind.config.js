@@ -18,6 +18,20 @@ module.exports = {
         '3xl': '1740px',
       },
       keyframes: {
+        "count-in": {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(0, -80%, 0)",
+          },
+          "50%": {
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+        }, 
         "fade-in": {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
@@ -1033,6 +1047,7 @@ module.exports = {
         },
       },
       animation: {
+        countinsecond: 'count-in 1s ease-in 0s infinite',
         BounceDelayOne: 'bounce 1s 0.2s infinite',
         BounceDelayTwo: 'bounce 1s 0.4s infinite',
         BounceDelayThree: 'bounce 1s 0.6s infinite',

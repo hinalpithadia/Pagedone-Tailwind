@@ -372,6 +372,12 @@
         border-radius: 20px;
         transition: all .6s ease-in-out;
     }
+    .shadow-inner-custom{ box-shadow: 0px -4px 9px 0px #0000001A inset; }
+    .shadow-outer {box-shadow: 0px 4px 0px 0px #00000014;}
+    .shadow-custom{
+      box-shadow:inset 0px -4px 0px 0px #0000000F,  0px 0px 0px 2px #0000000D;
+  }
+   
     @media(max-width:768px){
         .account-list li>a{
             padding: 0px 10px;

@@ -6,17 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
   <link href="../css/styles-output.css" rel="stylesheet">
-  <style>
-  .shadow-inner { box-shadow: 0px -4px 9px 0px #0000001A inset; }
-  .shadow-outer {box-shadow: 0px 4px 0px 0px #00000014;}
-  .shadow-custom{
-    box-shadow: inset 0px -4px 0px 0px #0000000F,  0px 0px 0px 2px #0000000D;
-}
- 
-  </style>
 </head>
-
-
 <body class="font-inter ">
   <div class="page-container">
      <!----------Navbar Start---------->
@@ -640,7 +630,7 @@
           <div class="flex w-full ">
             <!----------Middlebar Start---------->
             <div
-              class="flex-auto max-w-full min-w-0 mt-16 2xl:px-40 xl:px-14 lg:px-8 px-4 py-14">
+              class="flex-auto w-full max-w-5xl mx-auto min-w-0 mt-16 px-5 py-14">
                <!--Header-->  
                <div class="pb-8 mb-8 border-b border-gray-200">
                 <span class="doc-small-heading mb-5">Component</span>
@@ -649,6 +639,24 @@
                   keyboard or any other input device.
                   In other elements like text, tables, cards, and more, the KBD component
                   can be used to show text input from the keyboard.</p>
+                  <div class="alert-box mt-8 block">
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <svg class="h-4 w-4 text-indigo-600 mt-0.5" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                        </svg>
+                      </div>
+                      <div class="ml-3">
+                        <h3 class="alert-box-heading">
+                          Requires Pagedone CSS
+                        </h3>
+                        <p class="alert-box-paragraph ">
+                          This component requires the use of our <a class="text-indigo-600" href="https://pagedone.io/docs/installation">Pagedone UI</a> as a package, else you can skip this message if you are already using Pagedone UI as a package.
+                        </p>
+                       
+                      </div>
+                    </div>
+                  </div>
             </div>
             <!--Header End-->
             <div id="mainContent">
@@ -661,7 +669,7 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                               <div class="flex items-center gap-x-3 flex-wrap">
+                               <div class="flex items-center gap-2.5 flex-wrap">
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Shift</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Ctrl</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Tab</kbd>
@@ -671,7 +679,6 @@
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Spacebar</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Enter</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Back Space</kbd>
-
                                </div>
                             </div>
                         </div>
@@ -694,42 +701,39 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Shift&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Ctrl&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Tab&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Caps Lock&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Esc&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Alt&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Spacebar&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Enter&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Back Space&lt;/kbd&gt;</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+  <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Shift&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Ctrl&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Tab&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Caps Lock&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Esc&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Alt&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Spacebar&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Enter&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Back Space&lt;/kbd&gt;</code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-kbd">KBD style</h2>
-                    <p class="page-para">Following is the list of KBD components which can be used inside any
-                      other element.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="kbd-inshadow">KBD with inner shadow</h2>
+                    <p class="page-para">Use following KBD Tailwind Example which shows shadow on inner side of the buttons.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
                                <div class="flex items-center gap-x-3 flex-wrap">
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Shift</kbd>
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Ctrl</kbd>
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Tab</kbd>
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Caps Lock</kbd>
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Esc</kbd>
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Alt</kbd>
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Spacebar</kbd>
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Enter</kbd>
-                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner">Back Space</kbd>
-                                    <!-- <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer">Back Space</kbd>
-                                   <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Back Space</kbd>
-                                   <div class="bg-gray-300 px-1.5 pt-2 pb-4 rounded-xl "><kbd class="px-2 py-2 text-sm font-semibold text-gray-900 bg-gray-100 rounded-lg">Back Space</kbd></div> -->
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom">Shift</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom">Ctrl</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom">Tab</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom">Caps Lock</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom">Esc</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom">Alt</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom">Spacebar</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom">Enter</kbd>
+                                    <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom">Back Space</kbd>
+                                   
                                </div>
                             </div>
                         </div>
@@ -752,24 +756,23 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner&quot;&gt;Shift&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner&quot;&gt;Ctrl&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner&quot;&gt;Tab&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner&quot;&gt;Caps Lock&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner&quot;&gt;Esc&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner&quot;&gt;Alt&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner&quot;&gt;Spacebar&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner&quot;&gt;Enter&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner&quot;&gt;Back Space&lt;/kbd&gt;</code></pre></div>
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom&quot;&gt;Shift&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom&quot;&gt;Ctrl&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom&quot;&gt;Tab&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom&quot;&gt;Caps Lock&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom&quot;&gt;Esc&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom&quot;&gt;Alt&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom&quot;&gt;Spacebar&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom&quot;&gt;Enter&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-inner-custom&quot;&gt;Back Space&lt;/kbd&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-kbd">KBD style</h2>
-                    <p class="page-para">Following is the list of KBD components which can be used inside any
-                      other element.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="kbd-outshadow">KBD with Outer shadow</h2>
+                    <p class="page-para">Use following KBD Example designed in Tailwind CSS which shows shadow on outer side of the buttons.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -824,9 +827,8 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-kbd">KBD style</h2>
-                    <p class="page-para">Following is the list of KBD components which can be used inside any
-                      other element.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="kbd-styles">KBD Style</h2>
+                    <p class="page-para">Use this different style of KBD Component, Which shows shadow inside out in buttons.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
@@ -838,8 +840,10 @@
                                    <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Tab</kbd>
                                    <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Caps Lock</kbd>
                                    <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Esc</kbd>
-                                   <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Esc</kbd>
-                                   <!--<div class="bg-gray-300 px-1.5 pt-2 pb-4 rounded-xl "><kbd class="px-2 py-2 text-sm font-semibold text-gray-900 bg-gray-100 rounded-lg">Back Space</kbd></div> -->
+                                   <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Alt</kbd>
+                                   <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Spacebar</kbd>
+                                   <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Enter</kbd>
+                                   <kbd class="px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom">Back Space</kbd>
                                </div>
                             </div>
                         </div>
@@ -862,15 +866,15 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer&quot;&gt;Shift&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer&quot;&gt;Ctrl&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer&quot;&gt;Tab&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer&quot;&gt;Caps Lock&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer&quot;&gt;Esc&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer&quot;&gt;Alt&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer&quot;&gt;Spacebar&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer&quot;&gt;Enter&lt;/kbd&gt;
-  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg shadow-outer&quot;&gt;Back Space&lt;/kbd&gt;</code></pre></div>
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;kbd class=&quot;px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom&quot;&gt;Shift&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom&quot;&gt;Ctrl&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom&quot;&gt;Tab&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom&quot;&gt;Caps Lock&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom&quot;&gt;Esc&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom&quot;&gt;Alt&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom&quot;&gt;Spacebar&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom&quot;&gt;Enter&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2.5 text-sm font-semibold text-gray-900 bg-gray-100 border border-white rounded-lg shadow-custom&quot;&gt;Back Space&lt;/kbd&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
                             </div>
                         </div>
@@ -884,7 +888,7 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                               <div class="flex items-center gap-x-1 flex-wrap">
+                               <div class="flex items-center gap-2.5 flex-wrap">
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Cmd</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Win</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Option</kbd>
@@ -910,11 +914,11 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Cmd&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Win&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Option&lt;/kbd&gt;
-</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+  <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Cmd&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Win&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Option&lt;/kbd&gt;
+  </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
@@ -927,10 +931,10 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                                <p class="text-gray-600 text-base mb-5">
+                                <p class="text-gray-600 max-sm:leading-8 text-base mb-5">
                                     Please press <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Ctrl</kbd> + <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Shift</kbd> + <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Esc</kbd> to open task manager.
                                 </p>
-                                <p class="text-gray-600 text-base">
+                                <p class="text-gray-600 max-sm:leading-8 text-base">
                                     Save the document by pressing <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Ctrl</kbd> + <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">S</kbd>
                                 </p>
                             </div>
@@ -954,22 +958,22 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;p class=&quot;text-gray-600 text-base&quot;&gt; Please press &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Ctrl&lt;/kbd&gt; + &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Shift&lt;/kbd&gt; + &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Esc&lt;/kbd&gt; to open task manager. &lt;/p&gt;
-&lt;p class=&quot;text-gray-600 text-base&quot;&gt; Save the document by pressing &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Ctrl&lt;/kbd&gt; + &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;S&lt;/kbd&gt;&lt;/p&gt;
-</code></pre></div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button hidden">Show more code</button>
+  <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;p class=&quot;text-gray-600 text-base&quot;&gt; Please press &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Ctrl&lt;/kbd&gt; + &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Shift&lt;/kbd&gt; + &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Esc&lt;/kbd&gt; to open task manager. &lt;/p&gt;
+  &lt;p class=&quot;text-gray-600 text-base&quot;&gt; Save the document by pressing &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;Ctrl&lt;/kbd&gt; + &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;S&lt;/kbd&gt;&lt;/p&gt;
+  </code></pre></div>
+                                <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="arrow-key">Arrow keys </h2>
-                    <p class="page-para">Arrow keys can be used as shown in the following example.</p>
+                    <p class="page-para">Arrow keys can be used as shown in the following tailwind keyboard example.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
-                            <div class="w-full relative">
+                            <div class="w-full relative flex gap-2.5">
                                 <kbd class="inline-flex items-center px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg ">
                                     <svg class="w-3.5 h-3.5" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.70143 2.25C6.27878 1.25 7.72216 1.25 8.29951 2.25L12.6296 9.75C13.207 10.75 12.4853 12 11.3306 12H2.67034C1.51564 12 0.793953 10.75 1.3713 9.75L5.70143 2.25Z" fill="#111827"/>
@@ -1015,30 +1019,30 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg &quot;&gt;
+  <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg &quot;&gt;
     &lt;svg class=&quot;w-3.5 h-3.5&quot; viewBox=&quot;0 0 14 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
       &lt;path d=&quot;M5.70143 2.25C6.27878 1.25 7.72216 1.25 8.29951 2.25L12.6296 9.75C13.207 10.75 12.4853 12 11.3306 12H2.67034C1.51564 12 0.793953 10.75 1.3713 9.75L5.70143 2.25Z&quot; fill=&quot;#111827&quot; /&gt;
     &lt;/svg&gt;
     &lt;span class=&quot;sr-only&quot;&gt;Arrow key up&lt;/span&gt;
-&lt;/kbd&gt;
-&lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg &quot;&gt;
+  &lt;/kbd&gt;
+  &lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg &quot;&gt;
     &lt;svg class=&quot;w-3.5 h-3.5&quot; viewBox=&quot;0 0 14 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
       &lt;path d=&quot;M5.70143 11.2656C6.27878 12.2656 7.72216 12.2656 8.29951 11.2656L12.6296 3.76562C13.207 2.76562 12.4853 1.51562 11.3306 1.51562H2.67034C1.51564 1.51562 0.793953 2.76562 1.3713 3.76562L5.70143 11.2656Z&quot; fill=&quot;#111827&quot; /&gt;
     &lt;/svg&gt;
     &lt;span class=&quot;sr-only&quot;&gt;Arrow key down&lt;/span&gt;
-&lt;/kbd&gt;
-&lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg &quot;&gt;
+  &lt;/kbd&gt;
+  &lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg &quot;&gt;
     &lt;svg class=&quot;w-3.5 h-3.5&quot; viewBox=&quot;0 0 14 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
       &lt;path d=&quot;M2.55371 5.70094C1.55371 6.27829 1.55371 7.72167 2.55371 8.29902L10.0537 12.6291C11.0537 13.2065 12.3037 12.4848 12.3037 11.3301L12.3037 2.66985C12.3037 1.51515 11.0537 0.793465 10.0537 1.37081L2.55371 5.70094Z&quot; fill=&quot;#111827&quot; /&gt;
     &lt;/svg&gt;
     &lt;span class=&quot;sr-only&quot;&gt;Arrow key left&lt;/span&gt;
-&lt;/kbd&gt;
-&lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg &quot;&gt;
+  &lt;/kbd&gt;
+  &lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg &quot;&gt;
     &lt;svg class=&quot;w-3.5 h-3.5&quot; viewBox=&quot;0 0 14 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
       &lt;path d=&quot;M11.4463 5.70094C12.4463 6.27829 12.4463 7.72167 11.4463 8.29902L3.94629 12.6291C2.94629 13.2065 1.69629 12.4848 1.69629 11.3301L1.69629 2.66985C1.69629 1.51515 2.94629 0.793465 3.94629 1.37081L11.4463 5.70094Z&quot; fill=&quot;#111827&quot; /&gt;
     &lt;/svg&gt;
     &lt;span class=&quot;sr-only&quot;&gt;Arrow key right&lt;/span&gt;
-&lt;/kbd&gt;</code></pre></div>
+  &lt;/kbd&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1046,14 +1050,14 @@
                   </div>
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="special-key">Special Keys</h2>
-                    <p class="page-para">Special keys also can be shown as keyboard styled elements. Check
+                    <p class="page-para">Special keys also can be shown as tailwind keyboard styled elements. Check
                       this example.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                                <div class="flex items-center gap-x-1 flex-wrap">
+                                <div class="flex items-center gap-2.5 flex-wrap">
                                     <kbd class="inline-flex items-center px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg"><svg class="w-3.5 h-3.5" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.90689 5.87349V8.12651H3.94741C2.8742 8.12651 2 8.96517 2 10.0455C2 11.1258 2.8742 12 3.94741 12C5.02061 12 5.89481 11.1258 5.89481 10.0455V9.09311H8.10519V10.0455C8.10519 11.1258 8.97939 12 10.0526 12C11.1258 12 12 11.1258 12 10.0455C12 8.96517 11.1258 8.12651 10.0526 8.12651H9.086V5.87349H10.0526C11.1258 5.87349 12 5.03483 12 3.95451C12 2.8742 11.1258 2 10.0526 2C8.97939 2 8.10519 2.8742 8.10519 3.95451V4.914H5.89481V3.95451C5.89481 2.8742 5.02061 2 3.94741 2C2.8742 2 2 2.8742 2 3.95451C2 5.03483 2.8742 5.87349 3.94741 5.87349H4.90689ZM3.95451 4.92111C3.42146 4.92111 2.98792 4.48756 2.98792 3.95451C2.98792 3.42146 3.42146 2.98792 3.94741 2.98792C4.47335 2.98792 4.90689 3.42146 4.90689 3.96162V4.92111H3.95451ZM10.0455 4.92111H9.086V3.96162C9.086 3.42146 9.52665 2.98792 10.0526 2.98792C10.5785 2.98792 11.0121 3.42146 11.0121 3.95451C11.0121 4.48756 10.5785 4.92111 10.0455 4.92111ZM5.89481 8.13362V5.86638H8.10519V8.13362H5.89481ZM3.95451 9.07178H4.90689V10.0384C4.90689 10.5714 4.47335 11.005 3.94741 11.005C3.42146 11.005 2.98792 10.5714 2.98792 10.0384C2.98792 9.50533 3.42146 9.07178 3.95451 9.07178ZM10.0455 9.07178C10.5785 9.07178 11.0121 9.50533 11.0121 10.0384C11.0121 10.5714 10.5785 11.005 10.0526 11.005C9.52665 11.005 9.086 10.5714 9.086 10.0384V9.07178H10.0455Z" fill="#111827"/>
                                         </svg>
@@ -1096,7 +1100,7 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;
+  <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;kbd class=&quot;inline-flex items-center px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;
     &lt;svg class=&quot;w-3.5 h-3.5&quot; viewBox=&quot;0 0 14 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
       &lt;path d=&quot;M4.90689 5.87349V8.12651H3.94741C2.8742 8.12651 2 8.96517 2 10.0455C2 11.1258 2.8742 12 3.94741 12C5.02061 12 5.89481 11.1258 5.89481 10.0455V9.09311H8.10519V10.0455C8.10519 11.1258 8.97939 12 10.0526 12C11.1258 12 12 11.1258 12 10.0455C12 8.96517 11.1258 8.12651 10.0526 8.12651H9.086V5.87349H10.0526C11.1258 5.87349 12 5.03483 12 3.95451C12 2.8742 11.1258 2 10.0526 2C8.97939 2 8.10519 2.8742 8.10519 3.95451V4.914H5.89481V3.95451C5.89481 2.8742 5.02061 2 3.94741 2C2.8742 2 2 2.8742 2 3.95451C2 5.03483 2.8742 5.87349 3.94741 5.87349H4.90689ZM3.95451 4.92111C3.42146 4.92111 2.98792 4.48756 2.98792 3.95451C2.98792 3.42146 3.42146 2.98792 3.94741 2.98792C4.47335 2.98792 4.90689 3.42146 4.90689 3.96162V4.92111H3.95451ZM10.0455 4.92111H9.086V3.96162C9.086 3.42146 9.52665 2.98792 10.0526 2.98792C10.5785 2.98792 11.0121 3.42146 11.0121 3.95451C11.0121 4.48756 10.5785 4.92111 10.0455 4.92111ZM5.89481 8.13362V5.86638H8.10519V8.13362H5.89481ZM3.95451 9.07178H4.90689V10.0384C4.90689 10.5714 4.47335 11.005 3.94741 11.005C3.42146 11.005 2.98792 10.5714 2.98792 10.0384C2.98792 9.50533 3.42146 9.07178 3.95451 9.07178ZM10.0455 9.07178C10.5785 9.07178 11.0121 9.50533 11.0121 10.0384C11.0121 10.5714 10.5785 11.005 10.0526 11.005C9.52665 11.005 9.086 10.5714 9.086 10.0384V9.07178H10.0455Z&quot; fill=&quot;#111827&quot; /&gt;
     &lt;/svg&gt;
@@ -1134,7 +1138,7 @@
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                               <div class="flex items-center gap-x-1 flex-wrap">
+                               <div class="flex items-center gap-2.5 flex-wrap">
                                 <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">0</kbd>
                                 <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">1</kbd>
                                 <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">2</kbd>
@@ -1167,16 +1171,16 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;0&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;1&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;2&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;3&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;4&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;5&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;6&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;7&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;8&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;9&lt;/kbd&gt;</code></pre></div>
+  <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;0&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;1&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;2&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;3&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;4&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;5&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;6&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;7&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;8&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg&quot;&gt;9&lt;/kbd&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1184,14 +1188,14 @@
                   </div>
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="letter-key">Letter keys </h2>
-                    <p class="page-para">Whenever letters need to be displayed the following example can be
+                    <p class="page-para">Whenever letters need to be displayed the following example of tailwind css kbd can be
                       used.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                                <div class="flex items-center gap-x-1 flex-wrap ">
+                                <div class="flex items-center gap-2.5 flex-wrap ">
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200 rounded-lg">Q</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">W</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg ">E</kbd>
@@ -1239,31 +1243,31 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;Q&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;W&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;E&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;R&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;T&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;Y&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;U&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;I&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;O&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;P&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;A&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;S&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;D&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;F&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;G&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;H&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;J&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;K&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;L&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;Z&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;X&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;C&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;B&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;N&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;M&lt;/kbd&gt;</code></pre></div>
+  <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;Q&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;W&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;E&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;R&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;T&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;Y&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;U&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;I&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;O&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;P&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;A&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;S&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;D&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;F&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;G&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;H&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;J&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;K&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;L&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;Z&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;X&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;C&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;B&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;N&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg &quot;&gt;M&lt;/kbd&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1271,14 +1275,14 @@
                   </div>
                   <div class="mt-8">
                     <h2 class="doc-sub-heading relative group scroll-mt-24" id="function-key">Function keys </h2>
-                    <p class="page-para">In case you need to show function keys inside the KBD component;
+                    <p class="page-para">In case you need to show function keys inside the KBD tailwind component;
                       following example can be used.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
                         <div class="code-preview ">
                             <div class="w-full relative">
-                                <div class="block">
+                                <div class="flex items-center gap-2.5 flex-wrap">
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F1</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F2</kbd>
                                     <kbd class="px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg">F3</kbd>
@@ -1313,18 +1317,18 @@
                               </div>
                             </div>
                             <div class="code-main">
-<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F1&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F2&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F3&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F4&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F5&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F6&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F7&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F8&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F9&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F10&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F11&lt;/kbd&gt;
-&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F12&lt;/kbd&gt;</code></pre></div>
+  <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F1&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F2&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F3&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F4&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F5&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F6&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F7&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F8&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F9&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F10&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F11&lt;/kbd&gt;
+  &lt;kbd class=&quot;px-3 py-2 text-sm font-semibold text-gray-900 bg-white border border-gray-200  rounded-lg&quot;&gt;F12&lt;/kbd&gt;</code></pre></div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
@@ -1344,6 +1348,15 @@
                     <ul class="space-y-4 ">
                       <li>
                         <a href="#default-kbd">Default KBD</a>
+                      </li>
+                      <li>
+                        <a href="#kbd-inshadow">KBD with Inner Shadow</a>
+                      </li>
+                      <li>
+                        <a href="#kbd-outshadow">KBD with Outer Shadow</a>
+                      </li>
+                      <li>
+                        <a href="#kbd-styles">KBD Styles</a>
                       </li>
                       <li>
                         <a href="#kbd-mac">KBD For Mac</a>
