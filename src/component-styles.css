@@ -237,6 +237,9 @@
     }
     .block-code .token.atrule, .block-code .token.attr-value, .block-code .token.keyword {
         color: #60D3EC;
+    }  
+    .block-code .language-css .token.string, .block-code .style .token.string, .block-code .token.entity, .block-code .token.operator, .block-code .token.url{
+        background: transparent!important;
     }
     .token.number,
     .token.boolean,

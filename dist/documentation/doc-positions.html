@@ -11,7 +11,7 @@
 <body class="font-inter ">
   <div class="page-container">
      <!----------Navbar Start---------->
-     <nav class="navbar ">
+     <nav class="navbar">
         <div class="xl:px-12 lg:px-8 px-5">
           <div class="w-full flex  flex-col lg:flex-row">
             <div class=" flex justify-between items-center lg:flex-row">
@@ -628,334 +628,581 @@
         </aside>
         <!----------Leftbar End---------->
         <div class="flex-auto w-full min-w-0 lg:ml-56 xl:ml-72 lg:static lg:max-h-full lg:overflow-visible">
-          <div class="flex w-full ">
-            <!----------Middlebar Start---------->
-            <div
-              class="flex-auto max-w-full min-w-0 mt-16 2xl:px-40 xl:px-14 lg:px-8 px-4 py-14">
-               <!--Header-->  
-            <div class="mb-12 bg-indigo-50 border border-indigo-200 p-5 rounded-2xl">
-              <div class="flex lg:justify-between items-center flex-wrap justify-center">
-                <div class="max-w-2xl">
-                  <span class="doc-small-heading mb-5">Layout</span>
-                  <h1 class="doc-heading ">Tailwind CSS Columns</h1>
-                  <p class="doc-paragraph-big">One can easily control the number of columns to be kept within the
-                    element by using utility class columns.</p>
-              </div>
-              <div class="block"><img src="https://pagedone.io/asset/uploads/1713247269.png" alt="image"></div>
-              </div>   
-          </div>
-            <!--Header End-->
-            <div id="mainContent">
-                <div class="scroll-mt-24 bg-gray-50 border rounded-lg p-4 mt-10 ">
-                    <div class="overflow-auto scrollbar-y max-h-96 h-full tb-overflow">
-                        <table class="w-full text-left">
-                            <thead>
-                                <tr>
-                                    <th class="sticky z-10 -top-0.5 text-sm font-semibold text-gray-800 ">
-                                        <div class="pb-3 pr-2 bg-gray-50 border-b border-gray-200 ">Class</div>
-                                    </th>
-                                    <th class="sticky z-10 -top-0.5 text-sm font-semibold text-gray-800 ">
-                                        <div class="pb-3 pr-2 bg-gray-50 border-b border-gray-200 ">Properties</div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody class="align-baseline">
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-1</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 1;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-2</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 2;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-3</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 3;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-4</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 4;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-5</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 5;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-6</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 6;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-7</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 7;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-8</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 8;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-9</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 9;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-10</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 10;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-11</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 11;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-12</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 12;</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-auto</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: auto</td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-3xs</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 16rem; <span class="text-pink-400">/* 256px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-2xs</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 18rem; <span class="text-pink-400">/* 288px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-xs</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 20rem; <span class="text-pink-400">/* 320px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-sm</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 24rem; <span class="text-pink-400">/* 384px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-md</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 28rem; <span class="text-pink-400">/* 448px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-lg</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 32rem; <span class="text-pink-400">/* 512px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-xl</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 36rem; <span class="text-pink-400">/* 576px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-2xl</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 42rem; <span class="text-pink-400">/* 672px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-3xl</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 48rem; <span class="text-pink-400">/* 768px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-4xl</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 56rem; <span class="text-pink-400">/* 896px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-5xl</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 64rem; <span class="text-pink-400">/* 1024px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-6xl</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 72rem; <span class="text-pink-400">/* 1152px */</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="pt-3 pb-2 px-2 text-sm font-semibold text-indigo-600">columns-7xl</td>
-                                    <td class="pt-3 pb-2 pl-2 font-mono text-sm text-pink-600 whitespace-pre">columns: 80rem; <span class="text-pink-400">/* 1280px */</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="flex w-full ">
+              <!----------Middlebar Start---------->
+              <div class="flex-auto w-full max-w-5xl mx-auto min-w-0 mt-16 px-5 py-14">
+                <!--Header-->
+                <div class="pb-8 mb-8 border-b border-gray-200">
+                  <span class="doc-small-heading mb-5">Position</span>
+                  <h1 class="doc-heading ">Tailwind CSS Positions</h1>
+                  <p class="doc-paragraph-big">The position utility class in Tailwind CSS allows you to control the
+                    positioning behavior of an element within its containing parent or the entire viewport. With
+                    Tailwind's position class, you can easily manipulate the placement of elements on your web page.
+                    Tailwind CSS allows you to apply position classes responsively at different breakpoints. To use
+                    responsive position classes, you can append the breakpoint prefix to the utility class.</p>
+                  <p class="doc-paragraph-big mt-5">To apply a specific position to an element, you can use the
+                    position-{value} utility class, where {value} represents the desired position. Some of the positions
+                    are static, absolute, fixed, etc.</p>
                 </div>
-                 <div class="mt-8">
-                    <h2 class="scroll-mt-24" id="basic-usage">
-                        <a class="group relative text-sm text-indigo-600 font-semibold" href="#basic-usage">
-                            Basic usage
-                          </a>
-                    </h2>
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="column-count">Adding based on column count</h2>
-                    <p class="page-para"><code>'columns-{count}'</code> utility helps you define the number of columns you wish to
-                      keep within an element. Column width will be automatically adjusted to
-                      adjust the particular count of the column.</p>
-                  </div>
-                  <div class="mt-8 code-example">
-                    <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full">
-                                <div class="columns-1 md:columns-2 xl:columns-3 gap-7 ">
-                                    <div class=" break-inside-avoid mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="	https://beta.pagedone.io/asset/uploads/1688031162.jpg" alt="image">
-                                    </div>
-                                    <div class=" break-inside-avoid  mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="https://beta.pagedone.io/asset/uploads/1688031232.jpg" alt="image">
-                                    </div>
-                                    <div class=" break-inside-avoid  mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="	https://beta.pagedone.io/asset/uploads/1688031357.jpg" alt="image">
-                                    </div>
-                                    <div class=" break-inside-avoid  mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="https://beta.pagedone.io/asset/uploads/1688031375.jpg" alt="image">
-                                    </div>
-                                    <div class=" break-inside-avoid  mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="https://beta.pagedone.io/asset/uploads/1688031396.jpg" alt="image">
-                                    </div>
-                                    <div class=" break-inside-avoid  mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="https://beta.pagedone.io/asset/uploads/1688031414.png" alt="image">
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class=" language-markup"><code class=" language-markup" data-lang="html">&lt;div class=&quot;columns-1 md:columns-2 xl:columns-3 gap-7 &quot;&gt;
-    &lt;div class=&quot; break-inside-avoid mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031232.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031357.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031375.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031396.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031414.png&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
+                <!--Header End-->
+                <div id="mainContent">
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="column-width">Adding based on column width and setting the column gap</h2>
-                    <p class="page-para">To set the ideal column width for content within an element, use
-                      <code>'columns-{width}'</code>, with the number of columns (the count) automatically
-                      adjusting to the ideal width. <code>'gap-x'</code> can be used to adjust spacing
-                      between the columns.</p>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Static">Static</h2>
+                    <p class="page-para">The default position value follows the normal flow of the document, and it
+                      doesn't require any additional classes. Elements with position-static properties are positioned
+                      according to the normal flow of the document.</p>
                   </div>
                   <div class="mt-8 code-example">
                     <div class="code-preview-wrapper">
-                        <div class="code-preview">
-                            <div class="w-full">
-                                <div class="md:columns-xs 2xl:columns-md gap-8 space-y-8 ">
-                                    <div class=" break-inside-avoid mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="	https://beta.pagedone.io/asset/uploads/1688031162.jpg" alt="image">
-                                    </div>
-                                    <div class=" break-inside-avoid  mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="https://beta.pagedone.io/asset/uploads/1688031232.jpg" alt="image">
-                                    </div>
-                                    
-                                    <div class=" break-inside-avoid  mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="https://beta.pagedone.io/asset/uploads/1688031375.jpg" alt="image">
-                                    </div>
-                                    <div class=" break-inside-avoid  mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="https://beta.pagedone.io/asset/uploads/1688031396.jpg" alt="image">
-                                    </div>
-                                    <div class=" break-inside-avoid  mb-8">
-                                      <img class="h-auto max-w-full rounded-lg" src="https://beta.pagedone.io/asset/uploads/1688031414.png" alt="image">
-                                    </div>
-                                    <div class=" break-inside-avoid  mb-8">
-                                        <img class="h-auto max-w-full rounded-lg" src="	https://beta.pagedone.io/asset/uploads/1688031357.jpg" alt="image">
-                                      </div>
-                                 </div>
-                            </div>
+                      <div class="code-preview">
+                        <div class="w-full relative h-44 bg-indigo-50 p-8 rounded-xl">
+                          <div class="static w-full h-full">
+                            <div
+                              class=" bg-indigo-200 p-3 rounded-lg font-medium font-manrope text-lg text-indigo-600 w-full h-full">
+                              Static parent</div>
+                            <div
+                              class="absolute bottom-0 left-0 rounded-xl w-40 h-14 flex items-center justify-center bg-indigo-600 text-white text-base font-medium">
+                              Absolute child</div>
+                          </div>
                         </div>
+                      </div>
                     </div>
                     <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
-                            <div class="code-syntax-head">
-                              <ul class="code-head-list ">
-                                <li>
-                                  <a href="#">HTML</a>
-                                </li>
-                              </ul>
-                              <div class="code-copy-button">
-                                  <button class="group">
-                                    <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      <path d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9" stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                  </button>
-                              </div>
-                            </div>
-                            <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper ">
-<pre class=" language-markup"><code class=" language-markup" data-lang="html">&lt;div class=&quot;columns-1 md:columns-2 xl:columns-3 gap-7 &quot;&gt;
-    &lt;div class=&quot; break-inside-avoid mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031162.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031232.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031357.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031375.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031396.jpg&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot; break-inside-avoid  mb-8&quot;&gt;
-      &lt;img class=&quot;h-auto max-w-full rounded-lg&quot; src=&quot;https://beta.pagedone.io/asset/uploads/1688031414.png&quot; alt=&quot;image&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;</code></pre>
-                                </div>
-                                <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
-                            </div>
+                      <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="javascript:;">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                            <button class="group">
+                              <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                                <path
+                                  d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                              </svg>
+                            </button>
+                          </div>
                         </div>
-                    </div>
+                        <div class="code-main">
+                          <div data-code-wrapper="" class="code-wrapper ">
+                            <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative h-44 bg-indigo-50 p-8 rounded-xl&quot;&gt;
+    &lt;div class=&quot;static w-full h-full&quot;&gt;
+      &lt;div
+        class=&quot; bg-indigo-200 p-3 rounded-lg font-medium font-manrope text-lg text-indigo-600 w-full h-full&quot;&gt;
+        Static parent&lt;/div&gt;
+      &lt;div
+        class=&quot;absolute bottom-0 left-0 rounded-xl w-40 h-14 flex items-center justify-center bg-indigo-600 text-white text-base font-medium&quot;&gt;
+        Absolute child&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                            </code></div>
+                                  <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-            </div>
+  
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Relative">Relative</h2>
+                    <p class="page-para">Adding a relative position to an element means it's positioned relative to its normal position in the document flow. You can adjust its position using top, right, bottom, and left utility classes. Use the below tailwind CSS position relative example as a reference for your project.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                      <div class="code-preview">
+                        <div class="w-full relative h-44 bg-indigo-50 p-8 rounded-xl">
+                          <div class="relative w-full h-full">
+                            <div
+                              class=" bg-indigo-200 p-3 rounded-lg font-medium font-manrope text-lg text-indigo-600 w-full h-full">
+                              relative parent</div>
+                            <div
+                              class="absolute bottom-0 left-0 rounded-xl w-40 h-14 flex items-center justify-center bg-indigo-600 text-white text-base font-medium">
+                              Absolute child</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                      <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="javascript:;">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                            <button class="group">
+                              <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                                <path
+                                  d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="code-main">
+                          <div data-code-wrapper="" class="code-wrapper ">
+                            <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;w-full relative h-44 bg-indigo-50 p-8 rounded-xl&quot;&gt;
+    &lt;div class=&quot;relative w-full h-full&quot;&gt;
+      &lt;div
+        class=&quot; bg-indigo-200 p-3 rounded-lg font-medium font-manrope text-lg text-indigo-600 w-full h-full&quot;&gt;
+        relative parent&lt;/div&gt;
+      &lt;div
+        class=&quot;absolute bottom-0 left-0 rounded-xl w-40 h-14 flex items-center justify-center bg-indigo-600 text-white text-base font-medium&quot;&gt;
+        Absolute child&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                            </code></div>
+                                  <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Absolute">Absolute</h2>
+                    <p class="page-para">Tailwind CSS Postion absolute positions the element relative to its nearest positioned parent. If no parent is positioned, it is positioned relative to the initial containing block (usually the viewport).</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                      <div class="code-preview">
+                        <div class="flex flex-col gap-10 w-full">
+                        <div class="w-full relative h-auto bg-indigo-200 p-5 pt-2 rounded-xl">
+                          <p class="text-base font-semibold text-indigo-600 pb-3">Relative Parent</p>
+                          <div class="static w-full p-3 rounded-lg h-auto bg-indigo-50">
+                            <p class="font-medium font-manrope text-lg text-indigo-600 mb-3">Static parent</p>
+                            <div class="flex items-center gap-5">
+                              <div class="rounded-lg px-5 py-3.5 bg-indigo-600 text-white text-base font-medium ">Static child</div>
+                              <div class="rounded-lg px-5 py-3 border-2 border-indigo-600 text-indigo-600 text-base font-medium ">Static sibling</div>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="w-full relative h-auto bg-indigo-200 p-5 pt-2 rounded-xl">
+                          <p class="text-base font-semibold text-indigo-600 pb-3">Relative Parent</p>
+                          <div class="static w-full p-3 rounded-lg h-auto bg-indigo-50">
+                            <p class="font-medium font-manrope text-lg text-indigo-600 mb-3">Static parent</p>
+                            <div class="flex items-center gap-5">
+                              <div class="absolute top-0 right-0 rounded-lg px-5 py-3.5 bg-indigo-600 text-white text-base font-medium ">absolute child</div>
+                              <div class="rounded-lg px-5 py-3 border-2 border-indigo-600 text-indigo-600 text-base font-medium ">Static sibling</div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                      <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="javascript:;">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                            <button class="group">
+                              <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                                <path
+                                  d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="code-main">
+                          <div data-code-wrapper="" class="code-wrapper ">
+                            <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;flex flex-col gap-10 w-full&quot;&gt;
+    &lt;div class=&quot;w-full relative h-auto bg-indigo-200 p-5 pt-2 rounded-xl&quot;&gt;
+      &lt;p class=&quot;text-base font-semibold text-indigo-600 pb-3&quot;&gt;Relative Parent&lt;/p&gt;
+      &lt;div class=&quot;static w-full p-3 rounded-lg h-auto bg-indigo-50&quot;&gt;
+        &lt;p class=&quot;font-medium font-manrope text-lg text-indigo-600 mb-3&quot;&gt;Static parent&lt;/p&gt;
+        &lt;div class=&quot;flex items-center gap-5&quot;&gt;
+          &lt;div class=&quot;rounded-lg px-5 py-3.5 bg-indigo-600 text-white text-base font-medium &quot;&gt;Static child&lt;/div&gt;
+          &lt;div class=&quot;rounded-lg px-5 py-3 border-2 border-indigo-600 text-indigo-600 text-base font-medium &quot;&gt;Static sibling&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;w-full relative h-auto bg-indigo-200 p-5 pt-2 rounded-xl&quot;&gt;
+      &lt;p class=&quot;text-base font-semibold text-indigo-600 pb-3&quot;&gt;Relative Parent&lt;/p&gt;
+      &lt;div class=&quot;static w-full p-3 rounded-lg h-auto bg-indigo-50&quot;&gt;
+        &lt;p class=&quot;font-medium font-manrope text-lg text-indigo-600 mb-3&quot;&gt;Static parent&lt;/p&gt;
+        &lt;div class=&quot;flex items-center gap-5&quot;&gt;
+          &lt;div class=&quot;absolute top-0 right-0 rounded-lg px-5 py-3.5 bg-indigo-600 text-white text-base font-medium &quot;&gt;absolute child&lt;/div&gt;
+          &lt;div class=&quot;rounded-lg px-5 py-3 border-2 border-indigo-600 text-indigo-600 text-base font-medium &quot;&gt;Static sibling&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                            </code></div>
+                                  <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Centering">Centering</h2>
+                    <p class="page-para">You can add inset-0 to the elements to center an absolutely positioned element horizontally and vertically within its containing element.
+                      Use top-0, right-0, bottom-0, or left-0 to center an absolutely positioned element to the top, right, bottom, or left of its containing element.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                      <div class="code-preview">
+                        <div class="w-full relative">
+                          <div class="relative w-full h-44 bg-indigo-50 p-8 rounded-xl">
+                            <div
+                              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl w-40 h-14 flex items-center justify-center bg-indigo-600 text-white text-base font-medium">
+                              Absolute child</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                      <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="javascript:;">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                            <button class="group">
+                              <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                                <path
+                                  d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="code-main">
+                          <div data-code-wrapper="" class="code-wrapper ">
+                            <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;relative w-full h-44 bg-indigo-50 p-8 rounded-xl&quot;&gt;
+    &lt;div class=&quot;absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl w-40 h-14 flex items-center justify-center bg-indigo-600 text-white text-base font-medium&quot;&gt;
+        Absolute child&lt;/div&gt;
+  &lt;/div&gt;
+                            </code></div>
+                                  <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                    
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Fixed">Fixed</h2>
+                    <p class="page-para">Positions the element relative to the viewport. It remains fixed even when the page is scrolled. You can use the below example of a tailwind CSS position fixed using utility classes.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                      <div class="code-preview">
+                        <div class="relative w-full h-auto max-w-xs mx-auto rounded-lg shadow-sm shadow-gray-400  overflow-auto">
+                          <div class="absolute z-20 top-0 right-0 left-0 py-2.5 px-3 text-lg font-manrope font-semibold text-white bg-indigo-600/75 backdrop-blur-sm text-center">Flowers</div>
+                          <div class="flex flex-col gap-5 pt-14 px-6 overflow-auto h-80">
+                            <p class="text-base font-normal text-gray-900">
+                              Flowers, the delicate jewels of nature, captivate with their kaleidoscope of colors, intricate patterns, and alluring fragrances. Each bloom tells a story of life, from the tender bud emerging from the earth to the full blossom basking in the sun's warmth. They symbolize love, beauty, and renewal, enchanting us with their ephemeral existence. From the regal elegance of roses to the cheerful vibrancy of sunflowers, flowers hold a universal allure, evoking emotions and memories with their mere presence. Whether adorning a bridal bouquet, brightening a room, or gracing a meadow with their splendor, flowers whisper secrets of the natural world, inviting us to pause, breathe, and appreciate the fleeting beauty that surrounds us.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                      <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="javascript:;">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                            <button class="group">
+                              <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                                <path
+                                  d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="code-main">
+                          <div data-code-wrapper="" class="code-wrapper ">
+                            <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;relative w-full h-auto max-w-xs mx-auto rounded-lg shadow-sm shadow-gray-400  overflow-auto&quot;&gt;
+    &lt;div
+        class=&quot;absolute z-20 top-0 right-0 left-0 py-2.5 px-3 text-lg font-manrope font-semibold text-white bg-indigo-600/75 backdrop-blur-sm text-center&quot;&gt;
+        Flowers&lt;/div&gt;
+    &lt;div class=&quot;flex flex-col gap-5 pt-14 px-6 overflow-auto h-80&quot;&gt;
+         &lt;p class=&quot;text-base font-normal text-gray-900&quot;&gt;
+              Flowers, the delicate jewels of nature, captivate with their kaleidoscope of colors, intricate patterns, and
+              alluring fragrances. Each bloom tells a story of life, from the tender bud emerging from the earth to the
+              full blossom basking in the sun's warmth. They symbolize love, beauty, and renewal, enchanting us with their
+              ephemeral existence. From the regal elegance of roses to the cheerful vibrancy of sunflowers, flowers hold a
+              universal allure, evoking emotions and memories with their mere presence. Whether adorning a bridal bouquet,
+              brightening a room, or gracing a meadow with their splendor, flowers whisper secrets of the natural world,
+              inviting us to pause, breathe, and appreciate the fleeting beauty that surrounds us.
+          &lt;/p&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+                            </code></div>
+                                  <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="mt-8">
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="Sticky">Sticky</h2>
+                    <p class="page-para">It allows an element to behave like position relative within its parent until a given offset threshold is met in the viewport, in which case it "sticks" to the top or bottom of the viewport accordingly.</p>
+                  </div>
+                  <div class="mt-8 code-example">
+                    <div class="code-preview-wrapper">
+                      <div class="code-preview">
+                        <div class="relative w-full h-96 max-w-md mx-auto rounded-lg shadow-sm shadow-gray-400 overflow-auto">
+                          
+                          <div class="sticky z-10 top-0 right-0 left-0 py-2.5 px-3 text-lg font-manrope font-semibold text-white bg-indigo-600/75 backdrop-blur-sm text-center">Flowers</div>
+                          <div class="flex flex-col gap-5 p-5 ">
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Rose</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Tulip</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Lily</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Orchid</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Hydrangea</p>
+                            </div>
+                          </div>
+                          
+                          <div class="sticky z-10 top-0 right-0 left-0 py-2.5 px-3 text-lg font-manrope font-semibold text-white bg-indigo-600/75 backdrop-blur-sm text-center">Fruits</div>
+                          <div class="flex flex-col gap-5 p-5 ">                        
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Apple</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Banana</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Orange</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Strawberry</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Grape</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Mango</p>
+                            </div>
+                          </div>
+  
+                          <div class="sticky z-10 top-0 right-0 left-0 py-2.5 px-3 text-lg font-manrope font-semibold text-white bg-indigo-600/75 backdrop-blur-sm text-center">Vegetables</div>
+                          <div class="flex flex-col gap-5 p-5 ">                        
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Carrot</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Tomato</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Potato</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Onion</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Lettuce</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Cucumber</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Bell pepper</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Broccoli</p>
+                            </div>
+                            <div class="flex">
+                              <p class="text-base font-medium text-gray-900">Spinach</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="code-syntax-wrapper">
+                      <div class="code-syntax">
+                        <div class="code-syntax-head">
+                          <ul class="code-head-list ">
+                            <li>
+                              <a href="javascript:;">HTML</a>
+                            </li>
+                          </ul>
+                          <div class="code-copy-button">
+                            <button class="group">
+                              <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M19.4 20H9.6C9.44087 20 9.28826 19.9368 9.17574 19.8243C9.06321 19.7117 9 19.5591 9 19.4V9.6C9 9.44087 9.06321 9.28826 9.17574 9.17574C9.28826 9.06321 9.44087 9 9.6 9H19.4C19.5591 9 19.7117 9.06321 19.8243 9.17574C19.9368 9.28826 20 9.44087 20 9.6V19.4C20 19.5591 19.9368 19.7117 19.8243 19.8243C19.7117 19.9368 19.5591 20 19.4 20Z"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                                <path
+                                  d="M15 9V4.6C15 4.44087 14.9368 4.28826 14.8243 4.17574C14.7117 4.06321 14.5591 4 14.4 4H4.6C4.44087 4 4.28826 4.06321 4.17574 4.17574C4.06321 4.28826 4 4.44087 4 4.6V14.4C4 14.5591 4.06321 14.7117 4.17574 14.8243C4.28826 14.9368 4.44087 15 4.6 15H9"
+                                  stroke="strokeCurrent" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="code-main">
+                          <div data-code-wrapper="" class="code-wrapper ">
+                            <pre class="language-markup"><code class="language-markup" data-lang="html">&lt;div class=&quot;relative w-full h-96 max-w-md mx-auto rounded-lg shadow-sm shadow-gray-400 overflow-auto&quot;&gt;
+    &lt;div class=&quot;sticky z-10 top-0 right-0 left-0 py-2.5 px-3 text-lg font-manrope font-semibold text-white bg-indigo-600/75 backdrop-blur-sm text-center&quot;&gt;Flowers&lt;/div&gt;
+    &lt;div class=&quot;flex flex-col gap-5 p-5 &quot;&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Rose&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Tulip&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Lily&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Orchid&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Hydrangea&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;sticky z-10 top-0 right-0 left-0 py-2.5 px-3 text-lg font-manrope font-semibold text-white bg-indigo-600/75 backdrop-blur-sm text-center&quot;&gt;Fruits&lt;/div&gt;
+    &lt;div class=&quot;flex flex-col gap-5 p-5 &quot;&gt;                        
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Apple&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Banana&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Orange&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Strawberry&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Grape&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Mango&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;sticky z-10 top-0 right-0 left-0 py-2.5 px-3 text-lg font-manrope font-semibold text-white bg-indigo-600/75 backdrop-blur-sm text-center&quot;&gt;Vegetables&lt;/div&gt;
+    &lt;div class=&quot;flex flex-col gap-5 p-5 &quot;&gt;                        
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Carrot&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Tomato&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Potato&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Onion&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Lettuce&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Cucumber&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Bell pepper&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Broccoli&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex&quot;&gt;
+        &lt;p class=&quot;text-base font-medium text-gray-900&quot;&gt;Spinach&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                            </code></div>
+                                  <button data-expand-code="" type="button" class="code-exapnd-button">Show more code</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            <!----------Middlebar End---------->
-            <!----------Rightbar Start---------->
-            <div
-              class="flex-none hidden w-72 py-9 px-8 xl:text-sm  lg:sticky lg:top-[4.5rem] lg:overflow-y-visible xl:block border-l border-gray-200 xl:min-h-screen h-full">
-              <h4 class="uppercase text-sm text-gray-400 mb-5">ON THIS PAGE</h4>
-              <nav id="TableOfContents">  
-                <ul>
-                  <li>
-                  <a href="#" class="mb-5 block active:text-indigo-600">Layout</a>
-                    <ul class="space-y-4 ">
-                      <li>
-                        <a href="#basic-usage">basic-usage</a>
-                        <a href="#column-count" class="mt-4 ml-4">Adding Based On Column Count</a>
-                        <a href="#column-width" class="mt-4 ml-4">Adding Based On Column Width</a>
-                        <a href="#column-width" class="mt-4 ml-4">Setting the Column Gap</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>  
+              </div>
+              <!----------Middlebar End---------->
+              <!----------Rightbar Start---------->
+              <div
+                class="flex-none hidden w-72 py-9 px-8 xl:text-sm  lg:sticky lg:top-[4.5rem] lg:overflow-y-visible xl:block border-l border-gray-200 xl:min-h-screen h-full">
+                <h4 class="uppercase text-sm text-gray-400 mb-5">ON THIS PAGE</h4>
+                <nav id="TableOfContents">  
+                  <ul>
+                    <li>
+                    <a href="javascript:;" class="mb-5 block active:text-indigo-600">Tailwind CSS Positions</a>
+                      <ul class="space-y-4 ">
+                        <li>
+                          <a href="#Static">Static</a>
+                        </li>
+                        <li>
+                          <a href="#Relative">Relative</a>
+                        </li>
+                        <li>
+                          <a href="#Absolute">Absolute</a>
+                        </li>
+                        <li>
+                          <a href="#Centering">Centering</a>
+                        </li>
+                        <li>
+                          <a href="#Fixed">Fixed</a>                        
+                        </li>
+                        <li>
+                          <a href="#Sticky">Sticky</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>  
+              </div>
+               <!----------Rightbar End---------->
             </div>
-             <!----------Rightbar End---------->
           </div>
-        </div>
       </div>
     </main>
   </div>
@@ -964,6 +1211,234 @@
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
+    const closeIcons = document.querySelectorAll('.close-icon');
+
+document.addEventListener('DOMContentLoaded', () => {
+defaultAccordion();
+tooltips();
+alert();
+speedDial();
+sidebar();
+const alwaysOpenAccordionGroup = document.querySelector('.accordion-group[data-accordion="always-open"]');
+const nestedAccordionGroup = document.querySelector('.accordion-group[data-accordion="nested-accordion"]');
+if (alwaysOpenAccordionGroup) {
+    alwaysOpenAccordion(alwaysOpenAccordionGroup);
+}
+
+if (nestedAccordionGroup) {
+    nestedAccordion(nestedAccordionGroup);
+}
+
+});
+
+function defaultAccordion() {
+const accordionGroups = document.querySelectorAll('.accordion-group');
+
+accordionGroups.forEach(group => {
+    const accordionButtons = group.querySelectorAll('.accordion-toggle');
+
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const accordion = button.parentElement;
+            const content = button.nextElementSibling;
+            const isOpen = content.style.maxHeight !== '';
+
+            if (isOpen) {
+                close(button);
+                content.style.maxHeight = '';
+                accordion.classList.remove('open');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                accordion.classList.add('open');
+                const otherButtons = group.querySelectorAll('.accordion-toggle');
+                otherButtons.forEach(otherButton => {
+                    if (otherButton !== button) {
+                        close(otherButton);
+                        const otherContent = otherButton.nextElementSibling;
+                        otherContent.style.maxHeight = '';
+                    }
+                });
+            }
+        });
+
+        function close(element) {
+            const content = element.nextElementSibling;
+            content.style.maxHeight = '';
+        }
+    });
+});
+}
+
+function alwaysOpenAccordion(alwaysOpenAccordionGroup) {
+// Get all accordion headers
+// console.log(alwaysOpenAccordionGroup);
+const accordionHeaders = alwaysOpenAccordionGroup.querySelectorAll('.accordion-toggle');
+const accordion = accordionHeaders.parentElement;
+// Add click event listeners to each accordion header
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        // Toggle the visibility of the clicked accordion content
+        const accordionContent = header.nextElementSibling;
+        accordionContent.classList.toggle('active');
+
+        if (accordionContent.classList.contains('active')) {
+            // Calculate the computed height of the accordion content
+            const contentHeight = accordionContent.scrollHeight + 'px';
+
+            // Set the initial height of the accordion content to 0
+            accordionContent.style.height = '0';
+
+            // Wait for the next frame to apply the new height and trigger the transition
+            requestAnimationFrame(() => {
+                accordionContent.style.height = contentHeight;
+            });
+        } else {
+            // Set the height to 0 to trigger the closing transition
+            accordionContent.style.height = '0';
+        }
+    });
+});
+}
+
+function nestedAccordion(nestedAccordionGroup) {
+const accordionHeaders = nestedAccordionGroup.querySelectorAll('.accordion-toggle');
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+
+        header.classList.toggle('active');
+
+        const accordionContent = header.parentNode.querySelector('.accordion-content');
+
+        if (accordionContent.style.maxHeight) {
+            // Close the accordion
+            accordionContent.style.maxHeight = null;
+        } else {
+            // Open the accordion
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        }
+    });
+});
+}
+
+function tooltips() {
+
+// Get all tooltip-toggle elements
+const tooltipToggles = document.querySelectorAll('.tooltip-toggle');
+
+// Add scroll event listener to update popover positions
+window.addEventListener('scroll', () => {
+    tooltipToggles.forEach((toggle) => {
+        // Find the corresponding tooltip-content element
+        const tooltipContent = toggle.querySelector('.tooltip-content');
+
+        // Calculate the translate value based on the scroll position
+        const scrollPosition = window.scrollY;
+        const translateValue = `translate(413px, ${scrollPosition}px)`; // Adjust the horizontal position as needed
+
+        // Apply the updated translate value to the tooltip-content
+        tooltipContent.style.transform = translateValue;
+    });
+});
+
+// Add click event listener to each tooltip-toggle element
+tooltipToggles.forEach((toggle) => {
+    toggle.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Find the corresponding tooltip-content element
+        const tooltipContent = toggle.querySelector('.tooltip-content');
+
+        // Toggle the visibility of tooltip-content
+        tooltipContent.classList.toggle('hidden');
+        tooltipContent.classList.toggle('visible');
+
+        // Toggle the opacity of tooltip-content
+        tooltipContent.classList.toggle('opacity-0');
+        tooltipContent.classList.toggle('opacity-100');
+    });
+});
+}
+
+function alert() {
+// Get all the close icons
+const closeIcons = document.querySelectorAll('[data-dismiss="alert"]');
+// Attach event listener to each close icon
+closeIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        // Get the parent alert element
+        const alert = icon.closest('[role="alert"]');
+
+        // Hide the alert by adding a 'hidden' class
+        alert.classList.add('hidden');
+    });
+});
+}
+
+function speedDial() {
+
+}
+
+function tabs() {
+// Get all tab buttons
+const tabButtons = document.querySelectorAll('[data-tab]');
+
+// Add click event listener to each tab button
+tabButtons.forEach(tabButton => {
+    tabButton.addEventListener('click', () => {
+        // Get the target tab content ID from data attribute
+        const targetTab = tabButton.getAttribute('data-tab');
+
+        // Remove 'hidden' class from target tab content
+        document.querySelector(targetTab).classList.remove('hidden');
+
+        // Hide all other tab contents
+        const otherTabs = document.querySelectorAll('[role="tabpanel"]:not(' + targetTab + ')');
+        otherTabs.forEach(tab => {
+            tab.classList.add('hidden');
+        });
+
+        // Mark the clicked tab button as active
+        tabButtons.forEach(button => {
+            button.classList.remove('active');
+        });
+        tabButton.classList.add('active');
+    });
+});
+}
+
+function sidebar() {
+const sidebarToggle = document.querySelector('[data-pd-overlay="#docs-sidebar"]');
+
+// Get the sidebar element
+const sidebar = document.getElementById('docs-sidebar');
+// Add event listener to the document
+document.addEventListener('click', function (event) {
+    // Check if the clicked element is the sidebar or a descendant of the sidebar
+    if (!sidebar.contains(event.target) && !sidebarToggle.contains(event.target)) {
+        closeSidebar();
+    }
+});
+
+// Add click event listener to the toggle button
+sidebarToggle.addEventListener('click', () => {
+    // Toggle the visibility of the sidebar
+    sidebar.classList.toggle('hidden');
+    sidebar.classList.toggle('translate-x-0');
+});
+
+// Add event listener to the document
+// document.addEventListener('click', function (event) {
+//     // Check if the clicked element is the sidebar or a descendant of the sidebar
+//         closeSidebar();
+// });
+
+// Function to close the sidebar
+function closeSidebar() {
+    sidebar.classList.add('hidden');
+}
+}
+
   </script>
 </body>
 </html>

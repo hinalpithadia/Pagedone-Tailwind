@@ -633,37 +633,43 @@
             <div
               class="flex-auto max-w-full min-w-0 mt-16 2xl:px-40 xl:px-14 lg:px-8 px-4 py-14">
                <!--Header-->  
-               <div class="pb-8 mb-8 border-b border-gray-200">
-                <span class="doc-small-heading mb-5">Component</span>
-                <h1 class="doc-heading ">Tailwind CSS Dropdown</h1>
-                <p class="doc-paragraph-big">Tailwind CSS dropdown menu is essentially a user interface element which is
-                  used when a certain trigger element viz. button or a link is clicked or hovered over; displays a list of choices and further action. Dropdown menus are
-                  generally used in online applications and webpages for a variety of purposes
-                  viz. including navigation, option selection or executing certain actions.</p>
-                  <div class="alert-box mt-8 block">
-                    <div class="flex">
-                      <div class="flex-shrink-0">
-                        <svg class="h-4 w-4 text-indigo-600 mt-0.5" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
-                        </svg>
-                      </div>
-                      <div class="ml-3">
-                        <h3 class="alert-box-heading">
-                          Requires Pagedone JS
-                        </h3>
-                        <p class="alert-box-paragraph ">
-                          This component requires the use of our <a class="text-indigo-600" href="https://pagedone.io/docs/installation">Pagedone UI</a> as a package, else you can skip this message if you are already using Pagedone UI as a package.
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-
+               <div class="mb-8 bg-indigo-50 border border-indigo-200 p-5 rounded-2xl">
+                <div class="flex lg:justify-between items-center flex-wrap justify-center">
+                  <div class="max-w-2xl">
+                    <span class="doc-small-heading mb-5">Components</span>
+                    <h1 class="doc-heading ">Tailwind CSS Dropdown</h1>
+                    <p class="doc-paragraph-big">Tailwind CSS dropdown menu is essentially a user interface element which is
+                      used when a certain trigger element viz. button or a link is clicked or hovered over; displays a list of choices and further action. </p>
+                </div>
+                <div class="block"><img src="https://pagedone.io/asset/uploads/1713432080.png" alt="image"></div>
+                </div>   
+            </div> 
+            
+            <div class="alert-box mt-8 block">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <svg class="h-4 w-4 text-indigo-600 mt-0.5" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                  </svg>
+                </div>
+                <div class="ml-3">
+                  <h3 class="alert-box-heading">
+                    Requires Pagedone JS
+                  </h3>
+                  <p class="alert-box-paragraph ">
+                    This component requires the use of our <a class="text-indigo-600" href="https://pagedone.io/docs/installation">Pagedone UI</a> as a package, else you can skip this message if you are already using Pagedone UI as a package.
+                  </p>
+                 
+                </div>
+              </div>
             </div>
             <!--Header End-->
             <div id="mainContent">
                  <div class="mt-8">
-                    <p class="mb-8">To use this component use need to do follwing steps:</p>
+                  <p class="doc-paragraph-big"> Dropdown menus are
+                    generally used in online applications and webpages for a variety of purposes
+                    viz. including navigation, option selection or executing certain actions.</p>
+                    <p class="mb-8 page-para">To use this component use need to do follwing steps:</p>
                     <ul class="page-list mb-8">
                       <li>Add <code>dropdown-toggle</code> class to button element</li>
                       <li>Add <code>data-target="{id}"</code> data attribute must be assigned to some element such a button, with the value being the id of the dropdown body, in order to open the dropdown component.</li>

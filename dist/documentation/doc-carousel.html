@@ -9,7 +9,20 @@
   <link href="../css/styles-output.css" rel="stylesheet">
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link href="../../src/pagedone-slider.css" rel="stylesheet">
-
+<style>
+ .nav-for-slider .swiper-slide {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    border:1px solid #ccc!important;
+}
+/* .nav-for-slider .swiper-slide.swiper-slide-active{
+  border:1px solid #ccc!important;
+} */
+.nav-for-slider .swiper-slide-thumb-active{
+  border:1px solid red!important;
+}
+</style>
 
 </head>
 <body class="font-inter ">
@@ -644,7 +657,7 @@
             </div>
             <!--Header End-->
             <div id="mainContent">
-              <p class="page-para">Here, We have integrate <a href="#" class="text-indigo-600 font-medium">Swiper Carousel</a> with Tailwind CSS to built different styles of carousel.Firstly You need to add <span class="text-indigo-600 font-medium">Swiper Carousel CDN</span> to work slider perfectly.</p>
+              <p class="page-para ">Here, We have integrate <a href="https://swiperjs.com/" target="_blank" class="text-indigo-600 font-medium">Swiper Carousel</a> with Tailwind CSS to built different styles of carousel.Firstly You need to add <a class="text-indigo-600 font-medium" href="https://swiperjs.com/get-started" target="_blank">Swiper Carousel CDN</a> to work slider perfectly.</p>
               <div class="relative">
                   <h4 class="text-base mb-5 text-gray-500">1. Add Following Swiper Carousel CDN</h4>
               </div>
@@ -657,24 +670,18 @@
                 </div>
             </div>
             <div class="relative">
-              <h4 class="text-base mb-5 text-gray-500">2. Add Following Pagedone stylesheet inside the <head> tag for Custom Carousel CSS.</h4>
+              <h4 class="text-base mb-6 text-gray-500">2. Add HTML Code of Carousel</h4>
           </div>
-          <div class="code-syntax-wrapper">
-            <div class="code-syntax border-t rounded-t-2xl mt-6 mb-6">
-                <div class="code-main rounded-t-2xl">
-<div data-code-wrapper="" class="code-wrapper "><pre class="chroma !m-0 rounded-t-2xl  language-html" tabindex="0"><code class=" language-html" data-lang="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone-slider.css<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span></code></pre></div>
-                </div>
-            </div>
-        </div>
+         
             <div class="relative">
-              <h4 class="text-base mb-6 text-gray-500">3. Add HTML Code of Carousel</h4>
+              <h4 class="text-base mb-6 text-gray-500">3. Add Custom CSS Code of Carousel</h4>
           </div>
           <div class="relative">
             <h4 class="text-base mb-6 text-gray-500">4. Add JS code for Carousel functionality.</h4>
           </div>
-          <p class="page-para">You can customize <span class="text-indigo-600">JAVASCRIPT</span> given below html code, according to your requirement and settings of swiper sliders.</p>
+          <p class="page-para">You can customize JAVASCRIPT given below html code, according to your requirement and settings of swiper sliders.</p>
                  <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Default Tailwind Carousel  Slider </h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="default-carousel">Default Tailwind Carousel  Slider </h2>
                     <p class="page-para">Use below example if you want single slide to show with navigation controls and pagination.</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -734,11 +741,17 @@
                         </div>
                     </div>
                     <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
+                        <div class="code-syntax tabs">
                             <div class="code-syntax-head">
-                              <ul class="code-head-list ">
+                              <ul class=" flex border-b border-gray-200 space-x-1 transition-all duration-300 -mb-px">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap" data-tab="default-tabs-with-html" role="tab"> HTML </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="default-tabs-with-css" role="tab"> CSS </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="default-tabs-with-js" role="tab"> JS </a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -751,7 +764,9 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;div class=&quot;w-full relative&quot;&gt;
+                              <div id="default-tabs-with-html" role="tabpanel" aria-labelledby="default-tabs-with-html" class="tabcontent">
+                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;!--HTML CODE--&gt;
+ &lt;div class=&quot;w-full relative&quot;&gt;
    &lt;div class=&quot;swiper default-carousel swiper-container&quot;&gt;
      &lt;div class=&quot;swiper-wrapper&quot;&gt;
        &lt;div class=&quot;swiper-slide&quot;&gt;
@@ -776,7 +791,7 @@
            &lt;path d=&quot;M10.0002 11.9999L6 7.99971L10.0025 3.99719&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
          &lt;/svg&gt;
        &lt;/button&gt;
-       &lt;button id=&quot;slider-button-right&quot; class=&quot;swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 hover:bg-indigo-600&quot; data-carousel-next&gt;
+       &lt;button id=&quot;slider-button-right&quot; class=&quot;swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8  !right-5 hover:bg-indigo-600&quot; data-carousel-next&gt;
          &lt;svg class=&quot;h-5 w-5 text-indigo-600 group-hover:text-white&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 16 16&quot; fill=&quot;none&quot;&gt;
            &lt;path d=&quot;M5.99984 4.00012L10 8.00029L5.99748 12.0028&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
          &lt;/svg&gt;
@@ -785,7 +800,26 @@
      &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
    &lt;/div&gt;
  &lt;/div&gt;
-&lt;!--JAVASCRIPT CODE--&gt;
+</code></pre>
+</div>
+                              </div>
+                              <div id="default-tabs-with-css" class="hidden tabcontent" role="tabpanel" aria-labelledby="default-tabs-with-css">
+                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-css"><code class="language-css" data-lang="html">/* CSS Code */
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}</code></pre>
+</div>
+                              </div>
+                              <div id="default-tabs-with-js" class="hidden tabcontent" role="tabpanel" aria-labelledby="default-tabs-with-js">
+                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;!--JAVASCRIPT CODE--&gt;
 &lt;script&gt;
   var swiper = new Swiper(&quot;.default-carousel&quot;, {
     loop: true,
@@ -799,14 +833,15 @@
     },
   });
 &lt;/script&gt;</code></pre>
-                                </div>
+</div>
+                              </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
-                  </div>
+                  </div>                
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >With Multiple Slides</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="with-multiple-slides">With Multiple Slides</h2>
                     <p class="page-para">Use following example to show tailwind carousel multiple items in a card format.</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -872,11 +907,17 @@
                         </div>
                     </div>
                     <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
+                        <div class="code-syntax tabs">
                             <div class="code-syntax-head">
-                              <ul class="code-head-list ">
+                              <ul class=" flex border-b border-gray-200 space-x-1 transition-all duration-300 -mb-px">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap" data-tab="multiple-tabs-with-html" role="tab"> HTML </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="multiple-tabs-with-css" role="tab"> CSS </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="multiple-tabs-with-js" role="tab"> JS </a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -889,7 +930,8 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">   &lt;!--HTML CODE--&gt;
+                              <div id="multiple-tabs-with-html" role="tabpanel" aria-labelledby="multiple-tabs-with-html" class="tabcontent">
+ <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">   &lt;!--HTML CODE--&gt;
    &lt;div class=&quot;w-full relative&quot;&gt;
      &lt;div class=&quot;swiper multiple-slide-carousel swiper-container relative&quot;&gt;
        &lt;div class=&quot;swiper-wrapper mb-16&quot;&gt;
@@ -927,7 +969,26 @@
          &lt;/button&gt;
        &lt;/div&gt;
      &lt;/div&gt;
-     &lt;!--JAVASCRIPT CODE--&gt;
+    </code></pre>
+                                </div>
+                              </div>
+                              <div id="multiple-tabs-with-css" class="hidden tabcontent" role="tabpanel" aria-labelledby="multiple-tabs-with-css">
+                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-css"><code class="language-css" data-lang="html">/* CSS Code */
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}</code></pre>
+</div>
+                              </div>
+                              <div id="multiple-tabs-with-js" class="hidden tabcontent" role="tabpanel" aria-labelledby="multiple-tabs-with-js">
+                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;!--JAVASCRIPT CODE--&gt;
      &lt;script&gt;
        var swiper = new Swiper(&quot;.multiple-slide-carousel&quot;, {
          loop: true,
@@ -952,16 +1013,18 @@
           }
         }
        });
-     &lt;/script&gt;
-   &lt;/div&gt;</code></pre>
-                                </div>
+     &lt;/script&gt;</code></pre>
+                                  </div>
+ 
+   
+                              </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Tailwind Carousel with pagination fraction</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="with-pagination-fraction">Tailwind Carousel with pagination fraction</h2>
                     <p class="page-para">Following Carousel in Tailwind CSS is used to show fraction counts of total slides and current slide.</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -1022,13 +1085,20 @@
                         </div>
                     </div>
                     <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
+                        <div class="code-syntax tabs">
                             <div class="code-syntax-head">
-                              <ul class="code-head-list ">
+                              <ul class=" flex border-b border-gray-200 space-x-1 transition-all duration-300 -mb-px">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap" data-tab="fraction-tabs-with-html" role="tab"> HTML </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="fraction-tabs-with-css" role="tab"> CSS </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="fraction-tabs-with-js" role="tab"> JS </a>
                                 </li>
                               </ul>
+                              
                               <div class="code-copy-button">
                                   <button class="group">
                                     <svg class="stroke-gray-400 group-hover:stroke-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1039,6 +1109,7 @@
                               </div>
                             </div>
                             <div class="code-main">
+                              <div id="fraction-tabs-with-html" role="tabpanel" aria-labelledby="fraction-tabs-with-html" class="tabcontent">
                                 <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;!--HTML CODE--&gt;
 &lt;div class=&quot;w-full relative&quot;&gt;
   &lt;div class=&quot;swiper fraction-slide-carousel swiper-container relative&quot;&gt;
@@ -1073,7 +1144,29 @@
     &lt;/div&gt;
     &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
-  &lt;!--JAVASCRIPT CODE--&gt;
+  &lt;
+&lt;/div&gt;</code></pre></div>
+                            </div>
+                            <div id="fraction-tabs-with-css" class="hidden tabcontent" role="tabpanel" aria-labelledby="fraction-tabs-with-css">
+                               <div data-code-wrapper="" class="code-wrapper "><pre class="language-css"><code class="language-css" data-lang="html">/* CSS Code */
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-current {
+  color: #111827 !important;
+}
+.swiper-pagination-total {
+  color: #9CA3AF;
+}</code></pre>
+</div>
+                            </div>
+                            <div id="fraction-tabs-with-js" class="hidden tabcontent" role="tabpanel" aria-labelledby="fraction-tabs-with-js">
+                              <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;!--JAVASCRIPT CODE--&gt;
   &lt;script&gt;
     var swiper = new Swiper(&quot;.fraction-slide-carousel&quot;, {
       loop: true,
@@ -1090,16 +1183,17 @@
         }
       },
     });
-  &lt;/script&gt;
-&lt;/div&gt;</code></pre>
-                                </div>
+  &lt;/script&gt;</code></pre></div>
+                            </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
+                     
+
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Auto Slide With Progress Bar</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="with-progressbar">Auto Slide With Progress Bar</h2>
                     <p class="page-para">Use following Tailwind Carousel Example, which shows progress bar below slides and have auto slide effect.  </p>
                   </div>
                   <div class="mt-8 code-example">
@@ -1138,11 +1232,17 @@
                         </div>
                     </div>
                     <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
+                        <div class="code-syntax tabs">
                             <div class="code-syntax-head">
-                              <ul class="code-head-list ">
+                              <ul class=" flex border-b border-gray-200 space-x-1 transition-all duration-300 -mb-px">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap" data-tab="progress-tabs-with-html" role="tab"> HTML </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="progress-tabs-with-css" role="tab"> CSS </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="progress-tabs-with-js" role="tab"> JS </a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -1155,7 +1255,8 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;!--HTML CODE--&gt;
+                              <div id="progress-tabs-with-html" role="tabpanel" aria-labelledby="progress-tabs-with-html" class="tabcontent">
+ <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">&lt;!--HTML CODE--&gt;
 &lt;div class=&quot;w-full relative&quot;&gt;
   &lt;div class=&quot;swiper progress-slide-carousel swiper-container relative&quot;&gt;
     &lt;div class=&quot;swiper-wrapper&quot;&gt;
@@ -1177,7 +1278,26 @@
     &lt;/div&gt;
     &lt;div class=&quot;swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
-  &lt;!--JAVASCRIPT CODE--&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                              </div>
+                              <div id="progress-tabs-with-css" class="hidden tabcontent" role="tabpanel" aria-labelledby="progress-tabs-with-css">
+                               <div data-code-wrapper="" class="code-wrapper "><pre class="language-css"><code class="language-css" data-lang="html">/* CSS Code */
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #4F46E5 !important;
+}</code></pre>
+</div>
+                              </div>
+                              <div id="progress-tabs-with-js" class="hidden tabcontent" role="tabpanel" aria-labelledby="progress-tabs-with-js">
+                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;!--JAVASCRIPT CODE--&gt;
   &lt;script&gt;
     var swiper = new Swiper(&quot;.progress-slide-carousel&quot;, {
       loop: true,
@@ -1191,16 +1311,16 @@
         type: &quot;progressbar&quot;,
       },
     });
-  &lt;/script&gt;
-&lt;/div&gt;</code></pre>
-                                </div>
+  &lt;/script&gt;</code></pre></div>
+                              </div>
+                               
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Vertical Tailwind Slider</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="vertical-slider">Vertical Tailwind Slider</h2>
                     <p class="page-para">This Example can be used for vertical carousel with controls.  </p>
                   </div>
                   <div class="mt-8 code-example">
@@ -1239,11 +1359,17 @@
                         </div>
                     </div>
                     <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
+                        <div class="code-syntax tabs">
                             <div class="code-syntax-head">
-                              <ul class="code-head-list ">
+                              <ul class="flex border-b border-gray-200 space-x-1 transition-all duration-300 -mb-px">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap" data-tab="vertical-tabs-with-html" role="tab"> HTML </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="vertical-tabs-with-css" role="tab"> CSS </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="vertical-tabs-with-js" role="tab"> JS </a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -1256,7 +1382,8 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;!--HTML CODE--&gt;
+                                <div id="vertical-tabs-with-html" role="tabpanel" aria-labelledby="vertical-tabs-with-html" class="tabcontent">
+                                   <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;!--HTML CODE--&gt;
  &lt;div class=&quot;w-full relative&quot;&gt;
    &lt;div class=&quot;swiper vertical-slide-carousel swiper-container relative h-96&quot;&gt;
      &lt;div class=&quot;swiper-wrapper&quot;&gt;
@@ -1278,7 +1405,30 @@
      &lt;/div&gt;
      &lt;div class=&quot;swiper-pagination !right-10 !left-full !top-1/3 !translate-y-8&quot;&gt;&lt;/div&gt;
    &lt;/div&gt;
-   &lt;!--JAVASCRIPT CODE--&gt;
+ &lt;/div&gt;</code></pre>
+                                </div>
+                                </div>
+                                <div id="vertical-tabs-with-css" class="hidden tabcontent" role="tabpanel" aria-labelledby="vertical-tabs-with-css">
+                                   <div data-code-wrapper="" class="code-wrapper "><pre class="language-css"><code class="language-css" data-lang="html">/* CSS Code */
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #4F46E5;
+}
+.swiper-pagination-bullet-active {
+  background: #4F46E5 !important;
+}</code></pre>
+</div>
+                                </div>
+                                <div id="vertical-tabs-with-js" class="hidden tabcontent" role="tabpanel" aria-labelledby="vertical-tabs-with-js">
+                                   <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">
+ &lt;!--JAVASCRIPT CODE--&gt;
    &lt;script&gt;
      var swiper = new Swiper(&quot;.vertical-slide-carousel&quot;, {
        loop: true,
@@ -1294,8 +1444,7 @@
          clickable: true,
        },
      });
-   &lt;/script&gt;
- &lt;/div&gt;</code></pre>
+   &lt;/script&gt;</code></pre></div>
                                 </div>
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
@@ -1303,7 +1452,7 @@
                     </div>
                   </div>
                   <div class="mt-8">
-                    <h2 class="doc-sub-heading relative group scroll-mt-24" >Centered Tailwind Carousel</h2>
+                    <h2 class="doc-sub-heading relative group scroll-mt-24" id="centered-slider">Centered Tailwind Carousel</h2>
                     <p class="page-para">Use following Tailwind Carousel Cards can used to aligned one slide always on center position.</p>
                   </div>
                   <div class="mt-8 code-example">
@@ -1358,44 +1507,22 @@
                               </div>
                                 <div class="swiper-pagination "></div>
                               </div>
-                              <!--JAVASCRIPT CODE-->    
-                             <script>
-                              var swiper = new Swiper(".centered-slide-carousel", {
-    centeredSlides: true,
-    paginationClickable: true,
-    loop: true,
-    spaceBetween: 30,
-    slideToClickedSlide: true,
-      pagination: {
-        el: ".centered-slide-carousel .swiper-pagination",
-        clickable: true,
-    },
-   
-    breakpoints: {
-        1920: {
-            slidesPerView: 4,
-            spaceBetween: 30
-        },
-        1028: {
-            slidesPerView: 2,
-            spaceBetween: 10
-        },
-        990: {
-            slidesPerView: 1,
-            spaceBetween: 0
-        }
-    }
-});
-                             </script>
+                         
                             </div>
                         </div>
                     </div>
                     <div class="code-syntax-wrapper">
-                        <div class="code-syntax">
+                        <div class="code-syntax tabs">
                             <div class="code-syntax-head">
-                              <ul class="code-head-list ">
+                              <ul class="flex border-b border-gray-200 space-x-1 transition-all duration-300 -mb-px">
                                 <li>
-                                  <a href="#">HTML</a>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap" data-tab="centered-tabs-with-html" role="tab"> HTML </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="centered-tabs-with-css" role="tab"> CSS </a>
+                                </li>
+                                <li>
+                                  <a href="javascript:void(0)" class="inline-block py-3 px-3 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600  tablink whitespace-nowrap" data-tab="centered-tabs-with-js" role="tab"> JS </a>
                                 </li>
                               </ul>
                               <div class="code-copy-button">
@@ -1408,7 +1535,8 @@
                               </div>
                             </div>
                             <div class="code-main">
-                                <div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;!--HTML CODE--&gt;
+                              <div id="centered-tabs-with-html" role="tabpanel" aria-labelledby="centered-tabs-with-html" class="tabcontent">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html"> &lt;!--HTML CODE--&gt;
  &lt;div class=&quot;w-full relative&quot;&gt;
    &lt;div class=&quot;swiper centered-slide-carousel swiper-container relative &quot;&gt;
      &lt;div class=&quot;swiper-wrapper&quot;&gt;
@@ -1445,7 +1573,30 @@
      &lt;/div&gt;
      &lt;div class=&quot;swiper-pagination &quot;&gt;&lt;/div&gt;
    &lt;/div&gt;
-   &lt;!--JAVASCRIPT CODE--&gt;
+ &lt;/div&gt;</code></pre>
+                                </div>
+                              </div>
+                              <div id="centered-tabs-with-css" class="hidden tabcontent" role="tabpanel" aria-labelledby="centered-tabs-with-css">
+ <div data-code-wrapper="" class="code-wrapper "><pre class="language-css"><code class="language-css" data-lang="html">/* CSS Code */
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #4F46E5;
+}
+.swiper-pagination-bullet-active {
+  background: #4F46E5 !important;
+}</code></pre>
+</div>
+                              </div>
+                              <div id="centered-tabs-with-js" class="hidden tabcontent" role="tabpanel" aria-labelledby="centered-tabs-with-js">
+<div data-code-wrapper="" class="code-wrapper "><pre class="language-markup"><code class="language-markup" data-lang="html">
+  &lt;!--JAVASCRIPT CODE--&gt;
    &lt;script&gt;
      var swiper = new Swiper(&quot;.centered-slide-carousel&quot;, {
        centeredSlides: true,
@@ -1472,17 +1623,55 @@
          }
        }
      });
-   &lt;/script&gt;
- &lt;/div&gt;</code></pre>
-                                </div>
+   &lt;/script&gt;</code></pre></div>
+                              </div>
+                                
                                 <button data-expand-code="" type="button" class="code-exapnd-button ">Show more code</button>
                             </div>
                         </div>
                     </div>
                   </div>
+                  <div class="w-full relative">
+                    
+                    <div class="swiper main-slide-carousel swiper-container relative h-96">
+                      <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                          <div
+                              class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                              <span class="text-3xl font-semibold text-indigo-600">Slide 1
+                              </span>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div
+                              class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                              <span class="text-3xl font-semibold text-indigo-600">Slide 2
+                              </span>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div
+                              class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                              <span class="text-3xl font-semibold text-indigo-600">Slide 3
+                              </span>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="nav-for-slider ">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide p-myswiper-thumbs__slide">slide1</div>
+                        <div class="swiper-slide p-myswiper-thumbs__slide">slide2</div>
+                        <div class="swiper-slide p-myswiper-thumbs__slide">slide3</div>
+                    </div>
+                    </div>
+                   
+                  </div>
             </div>
               </div>
             <!----------Middlebar End---------->
+          
             <!----------Rightbar Start---------->
             <div
               class="flex-none hidden w-72 py-9 px-8 xl:text-sm  lg:sticky lg:top-[4.5rem] lg:overflow-y-visible xl:block border-l border-gray-200 xl:min-h-screen h-full">
@@ -1525,13 +1714,39 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
   <script src="../js/pagedone-slider.js"></script>
   <script>
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
   </script>
-  
+  <script>
+  //   var swiper_thumbs = new Swiper(".thumnail-slider", {
+  //   slidesPerView: 3,
+  // spaceBetween: 8,
+  // watchSlidesProgress: true,
+  // });
+  // var swiper = new Swiper(".nav-slide-carousel", {
+  //   slidesPerView: 1,
+
+  //   thumbs: {
+  //     swiper: swiper_thumbs,
+  //   },
+  //   speed: 1000,
+
+  // });
+  var swiper_thumbs = new Swiper(".nav-for-slider", {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 3,
+});
+var swiper = new Swiper(".main-slide-carousel", {
+  slidesPerView: 1,
+  thumbs: {
+      swiper: swiper_thumbs,
+   },
+});
+  </script>
 </body>
 </html>

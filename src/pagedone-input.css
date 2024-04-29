@@ -52,7 +52,10 @@
     input[type='checkbox']:indeterminate:disabled{
         @apply bg-[url('https://beta.pagedone.io/asset/uploads/1689403311.png')];
     }
-    
+    .black input[type='checkbox']:checked {
+        background-image: url('https://pagedone.io/asset/uploads/1711776327.png');
+        background-size: contain ;
+      }
      input[type="radio"] + label span{
         transition: background .2s,
           transform .2s;
@@ -157,6 +160,7 @@
         box-shadow: inset 0px -4px 0px 0px #0000000F,  0px 0px 0px 2px #0000000D;
     }
     .input-range::-webkit-slider-thumb {
+        
         width: 10px;
         -webkit-appearance: none;   
           appearance: none;

@@ -9,7 +9,7 @@
         @apply text-2xl text-gray-900 font-semibold capitalize mb-2;
     }
     .doc-paragraph-big{
-        @apply text-lg text-gray-600 leading-8;
+        @apply text-base text-gray-600 leading-8;
     }
     
     .alert-box{

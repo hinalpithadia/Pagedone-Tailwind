@@ -107,3 +107,4 @@ var swiper = new Swiper(".centered-slide-carousel", {
         }
     }
 });
+
