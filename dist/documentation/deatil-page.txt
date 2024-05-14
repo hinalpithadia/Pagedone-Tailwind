@@ -1,0 +1,36 @@
+gallery blocks
+shopping cart
+team and blog na new add krya e
+hero section ma new add krya e
+newly added testimonial
+newly added footer
+newly added pricing section
+
+
+custom scroll
+
+
+theme ->doc page
+flex
+loading spinner
+
+Default Datepicker
+Use the following example of to create a impressive tailwind datepicker style. 
+
+Inline datepicker #
+Use the inline-datepicker and data-date data attributes to initialize and set the default date for an inline datepicker inside a block element such as a div.
+
+Date range picker #
+Use the date-rangepicker data attribute and the following markup to initialize two datepickers as a range.
+
+Options #
+Learn more about the options that you can use with the Tailwind datepicker to enable features such as autohide, action buttons, date format, orientation, and more based on the vanilla JavaScript from Flowbite.
+
+Autohide #
+Use the datepicker-autohide data attribute to make the datepicker disappear right after selecting a date.
+
+
+
+
+
+                 
