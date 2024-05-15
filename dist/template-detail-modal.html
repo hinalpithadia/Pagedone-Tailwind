@@ -29,25 +29,51 @@
                             Default modal
                           </button>
                               <div id="pd-basic-modal" class="pd-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto ">
-                                <div class="opacity-0  ease-out  sm:max-w-lg sm:w-full m-5 sm:mx-auto modal-open:opacity-100 transition-all modal-open:duration-500">
-                                  <div class="flex flex-col bg-white rounded-2xl py-4 px-5">
-                                    <div class="flex justify-between items-center pb-4 border-b border-gray-200">
-                                      <h4 class="text-sm text-gray-900 font-medium">Modal simple</h4>
-                                      <button class="block cursor-pointer close-modal-button" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal">
+                                <div class="opacity-0   ease-out max-w-xl sm:max-w-2xl lg:max-w-5xl  xl:max-w-6xl sm:w-full m-5 sm:mx-auto modal-open:opacity-100 transition-all modal-open:duration-500">
+                                  <div class="p-7 sm:py-8 sm:px-10 flex flex-col template-modal relative bg-[url('https://pagedone.io/asset/uploads/1715751710.jpg');] bg-cover bg-no-repeat before:content-[' '] before:bg-gradient-to-r before:from-indigo-600 before:via-purple-500 before:to-indigo-600 before:h-1 before:w-full before:absolute before:left-0 before:top-0 overflow-hidden">
+                                    <div class="block mb-12">
+                                      <h4 class="lg:text-xl text-lg text-indigo-600 font-medium text-center">WHY SETTLE FOR LESS?</h4>
+                                      <button class="cursor-pointer close-modal-button absolute right-5 top-5 border border-gray-200 w-11 h-11 rounded-full flex justify-center items-center transition-all duration-500 hover:bg-gray-100" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M7.75732 7.75739L16.2426 16.2427M16.2426 7.75739L7.75732 16.2427" stroke="black" stroke-width="1.6" stroke-linecap="round"></path>
                                           </svg>
                                           
                                       </button>
                                     </div>
-                                    <div class="overflow-y-auto py-4 min-h-[100px]">
-                                      <p class=" text-gray-600 text-sm">
-                                        This is the regular modal with supporting text below as additional content
-                                      </p>
+                                    <div class="flex gap-10 lg:flex-row flex-col lg:gap-0 justify-between items-end">
+                                      <div class="block lg:w-1/2 w-full text-center lg:border-r lg:border-b-0 border-b border-gray-200 lg:pr-10 lg:mr-10  pb-10 lg:pb-0">
+                                          <div class="w-max mx-auto relative font-extrabold text-white flex justify-center items-center tracking-wider text-center">
+                                          <span class="font-manrope text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-500 to-indigo-600 ml-3">Developer
+                                            </span>
+                                            <svg class="absolute -top-1 -right-3.5" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M9.28125 2.67188V16.1099" stroke="#4F46E5" stroke-width="4.03139" stroke-linecap="round" stroke-linejoin="round"/>
+                                              <path d="M2.5625 9.39062H16.0004" stroke="#4F46E5" stroke-width="4.03139" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg>
+                                          </div>
+                                          <div class="text-3xl text-gray-900 font-bold font-manrope py-6 leading-10"><span class="flex items-center justify-center">Get  <span class="ml-2 before:content[' '] before:w-40 before:h-10  before:absolute before:right-5 before:bg-[linear-gradient(270deg,rgba(85,81,255,0.19)_1.34%,_rgba(85,81,255,0.00)_100%);]  before:-z-10 relative flex items-center">Everything 
+                                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.2685 4.37941L23.966 2.38178C22.838 1.40315 21.162 1.40315 20.034 2.38178L17.7315 4.37941C17.4995 4.5807 17.1879 4.6642 16.8863 4.60588L13.8935 4.02713C12.4273 3.7436 10.9758 4.58161 10.4883 5.99312L9.49309 8.87437C9.39282 9.16468 9.16468 9.39282 8.87437 9.49309L5.99312 10.4883C4.58161 10.9758 3.7436 12.4273 4.02713 13.8935L4.60588 16.8863C4.6642 17.1879 4.5807 17.4995 4.37941 17.7315L2.38178 20.034C1.40315 21.162 1.40315 22.838 2.38178 23.966L4.37941 26.2685C4.5807 26.5005 4.6642 26.8121 4.60588 27.1137L4.02713 30.1065C3.7436 31.5727 4.58161 33.0242 5.99312 33.5117L8.87437 34.5069C9.16468 34.6072 9.39282 34.8353 9.49309 35.1256L10.4883 38.0069C10.9758 39.4184 12.4273 40.2564 13.8935 39.9729L16.8863 39.3941C17.1879 39.3358 17.4995 39.4193 17.7315 39.6206L20.034 41.6182C21.162 42.5969 22.838 42.5968 23.966 41.6182L26.2685 39.6206C26.5005 39.4193 26.8121 39.3358 27.1137 39.3941L30.1065 39.9729C31.5727 40.2564 33.0242 39.4184 33.5117 38.0069L34.5069 35.1256C34.6072 34.8353 34.8353 34.6072 35.1256 34.5069L38.0069 33.5117C39.4184 33.0242 40.2564 31.5727 39.9729 30.1065L39.3941 27.1137C39.3358 26.8121 39.4193 26.5005 39.6206 26.2685L41.6182 23.966C42.5969 22.838 42.5968 21.162 41.6182 20.034L39.6206 17.7315C39.4193 17.4995 39.3358 17.1879 39.3941 16.8863L39.9729 13.8935C40.2564 12.4273 39.4184 10.9758 38.0069 10.4883L35.1256 9.49309C34.8353 9.39282 34.6072 9.16468 34.5069 8.87437L33.5117 5.99312C33.0242 4.58161 31.5727 3.7436 30.1065 4.02713L27.1137 4.60588C26.8121 4.6642 26.5005 4.5807 26.2685 4.37941Z" fill="#4F46E5" stroke="white" stroke-width="2"/>
+                                            <path d="M15.332 21.5363L18.7849 24.9892C19.3404 25.5447 19.6182 25.8225 19.9634 25.8225C20.3085 25.8225 20.5863 25.5447 21.1419 24.9892L28.6662 17.4648" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                            </svg>
+                                          </span>
+                                             </span> 
+                                           <span> You Need Now & for Eternity</span></div>
+                                           <p class="text-gray-600 text-base leading-7 pb-6">Full package of 1000+ UI components, sections, blocks & pages and <span class="text-indigo-600">Templates</span> designed in Figma and built on Tailwind CSS.</p>
+                                           <div class="flex items-center justify-between">
+                                            <span class="text-3xl text-indigo-600 font-semibold font-manrope">$119.00</span>
+                                            <button type='button' class='py-3 px-7 text-sm bg-indigo-600 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700'>Purchase Now</button>
+                                           </div>
+                                      </div>
+                                      <div class="block lg:w-1/2 w-full text-center ">
+                                       <div class="block bg-indigo-50 px-3 py-2 rounded-3xl w-max text-sm text-indigo-600 font-medium mx-auto">Website Template</div>
+                                        <h3 class="font-manrope text-3xl text-gray-900 leading-10 font-semibold py-5">Novex - Figma & Tailwind
+                                          CSS Template</h3>
+                                         <p class="text-gray-600 text-base leading-7 pb-6">Full package of 1000+ UI components, sections, blocks & pages designed in Figma and built on Tailwind CSS.</p>
+                                         <div class="flex items-center justify-between">
+                                          <span class="text-3xl text-gray-900 font-semibold font-manrope">$25.00</span>
+                                          <button type='button' class='py-3 px-7 text-sm bg-gray-900 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:shadow-lg'>Purchase Now</button>
+                                         </div>
                                     </div>
-                                    <div class="flex items-center justify-end pt-4 border-t border-gray-200 space-x-4">
-                                      <button type="button" class="pd-dropdown-toggle py-2.5 px-5 text-xs bg-indigo-50 text-indigo-500 rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-100 close-modal-button" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal">Cancel</button>
-                                      <button type="button" class="py-2.5 px-5 text-xs  bg-indigo-500 text-white rounded-full cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 close-modal-button" data-pd-overlay="#pd-basic-modal" data-modal-target="pd-basic-modal">Okay, got it</button>
                                     </div>
                                 </div>
                                

@@ -14,23 +14,9 @@ theme ->doc page
 flex
 loading spinner
 
-Default Datepicker
-Use the following example of to create a impressive tailwind datepicker style. 
-
-Inline datepicker #
-Use the inline-datepicker and data-date data attributes to initialize and set the default date for an inline datepicker inside a block element such as a div.
-
-Date range picker #
-Use the date-rangepicker data attribute and the following markup to initialize two datepickers as a range.
-
-Options #
-Learn more about the options that you can use with the Tailwind datepicker to enable features such as autohide, action buttons, date format, orientation, and more based on the vanilla JavaScript from Flowbite.
-
-Autohide #
-Use the datepicker-autohide data attribute to make the datepicker disappear right after selecting a date.
-
-
-
-
-
+datepicker
+52
                  
+    Tailwind CSS Datepicker | Pagedone
+
+Use Datepicker in Tailwind CSS to integrates a date input field with a calendar popover, whcih allows users to input or select specific date and time values.
