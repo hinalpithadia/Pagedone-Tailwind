@@ -1,0 +1,702 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Pagedone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
+  <link href="css/styles-output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css" />
+
+</head>
+
+<body class="font-inter ">
+  <div class="page-container">
+    <!----------titlebar Start---------->
+   
+    <div
+      class="fixed top-0 z-30 left-0 w-full border-y border-gray-200 bg-white px-3 py-2.5 sm:pl-8 sm:pr-12 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <button
+          class="p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200 rounded-xl font-manrope text-sm font-bold whitespace-nowrap text-indigo-600">
+          <div
+            class="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-l from-indigo-500 to-indigo-700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+              <path d="M0 1.68C0 0.752164 0.752162 0 1.68 0H10.08V10.08H0V1.68Z" fill="url(#paint0_linear_597_13444)" />
+              <path d="M0 10.92H10.08V21H1.68C0.752164 21 0 20.2478 0 19.32V10.92Z"
+                fill="url(#paint1_linear_597_13444)" />
+              <path d="M10.9219 0H19.3219C20.2497 0 21.0019 0.752162 21.0019 1.68V10.08H10.9219V0Z"
+                fill="url(#paint2_linear_597_13444)" />
+              <rect x="10.9219" y="10.9199" width="10.08" height="10.08" fill="url(#paint3_linear_597_13444)" />
+              <defs>
+                <linearGradient id="paint0_linear_597_13444" x1="0" y1="0" x2="10.08" y2="10.08"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0.5" stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.1" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_597_13444" x1="0" y1="21" x2="10.08" y2="10.92"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0.5" stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.1" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_597_13444" x1="21.0019" y1="0" x2="10.9219" y2="10.08"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0.5" stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.1" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_597_13444" x1="10.9219" y1="10.9199" x2="21.0019" y2="20.9999"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.1" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.5" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          Table Generator
+        </button>
+        <p class="text-base font-normal text-gray-700 hidden lg:block">Table Generator helps to generate Table using Layout properties,
+          which can be exported in multiple options.</p>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-5">
+        <button
+          class="p-2 min-[470px]:pr-4 rounded-full border border-gray-300 flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M12.8307 5.08529C12.8307 6.09781 12.0099 6.91862 10.9974 6.91862C9.98485 6.91862 9.16406 6.09781 9.16406 5.08529C9.16406 4.07276 9.98485 3.25195 10.9974 3.25195C12.0099 3.25195 12.8307 4.07276 12.8307 5.08529Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M6.41667 16.0853C6.41667 17.0978 5.59586 17.9186 4.58333 17.9186C3.57081 17.9186 2.75 17.0978 2.75 16.0853C2.75 15.0727 3.57081 14.252 4.58333 14.252C5.59586 14.252 6.41667 15.0727 6.41667 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M19.2448 16.0853C19.2448 17.0978 18.424 17.9186 17.4115 17.9186C16.3989 17.9186 15.5781 17.0978 15.5781 16.0853C15.5781 15.0727 16.3989 14.252 17.4115 14.252C18.424 14.252 19.2448 15.0727 19.2448 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M3.66406 12.3842C3.66406 9.65697 5.13879 7.27589 7.33073 6.00195M14.6641 6.00195C16.856 7.27589 18.3307 9.65697 18.3307 12.3842M7.33073 18.7663C8.40936 19.3932 9.66172 19.752 10.9974 19.752C12.3331 19.752 13.5854 19.3932 14.6641 18.7663"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+          <span class="hidden min-[470px]:block">Share</span>
+        </button>
+        <button
+          class="p-2 min-[470px]:pl-4 rounded-full border border-gray-300 whitespace-nowrap flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <span class="hidden min-[470px]:block">Explore Tools</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M19.25 11.502C19.25 16.0583 15.5564 19.752 11 19.752C6.44365 19.752 2.75 16.0583 2.75 11.502C2.75 6.94561 6.44365 3.25195 11 3.25195C15.5564 3.25195 19.25 6.94561 19.25 11.502Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M9.70973 9.96544L12.5824 12.838M8.65374 11.2186L8.47778 11.7401C7.96634 13.2561 7.71063 14.0141 8.10977 14.4161C8.50892 14.8182 9.26872 14.5679 10.7884 14.0675L11.3111 13.8954C12.1657 13.614 12.5929 13.4732 12.9001 13.1684C13.2072 12.8635 13.351 12.4372 13.6386 11.5848L13.8146 11.0632C14.326 9.54726 14.5817 8.78927 14.1825 8.38722C13.7834 7.98517 13.0236 8.23539 11.5039 8.73582L10.9811 8.908C10.1266 9.18939 9.69937 9.33009 9.39229 9.63501C9.08512 9.93996 8.94132 10.3661 8.65374 11.2186Z"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!----------titlebar End---------->
+    <main>
+      <div class="w-full bg-white flex flex-col-reverse lg:flex-row max-lg:gap-8">
+        <!----------Leftbar Start---------->
+        <aside id="left-bar"
+          class="relative lg:fixed lg:top-20 overflow-y-auto lg:z-20 flex-none  border-r border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-72 h-auto lg:h-[calc(100vh-76px)]"
+          >
+          <!--List-->
+          <ul class="pb-6 px-5 border-b border-gray-300">
+            <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Table Layout & Size</h3>
+
+            <li class="mb-4 table-range">
+              <label for="column" class="flex items-center justify-between mb-2.5">
+                <p class="text-sm font-normal text-gray-700">Column Count</p>
+                <span
+                  class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">6</span>
+              </label>
+              <input class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" id="column"
+                min="1" max="10" step="1" value="6">
+            </li>
+
+            <li class="mb-4 table-range">
+              <label for="row" class="flex items-center justify-between mb-2.5">
+                <p class="text-sm font-normal text-gray-700">Row Count</p>
+                <span
+                  class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">6</span>
+              </label>
+              <input id="row" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range"
+                min="1" max="10" step="1" value="6">
+            </li>
+
+            <li class="mb-4 table-range">
+              <label for="line" class="flex items-center justify-between mb-2.5">
+                <p class="text-sm font-normal text-gray-700">Line Height</p>
+                <span
+                  class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">18</span>
+              </label>
+              <input id="line" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range"
+                min="1" max="40" step="1" value="18">
+            </li>
+
+            <li class="mb-4 table-range">
+              <label for="line-header" class="flex items-center justify-between mb-2.5">
+                <p class="text-sm font-normal text-gray-700">Line Height Header</p>
+                <span
+                  class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">24</span>
+              </label>
+              <input id="line-header" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full"
+                type="range" min="1" max="40" step="1" value="24">
+            </li>
+
+            <li class="mb-0 table-range">
+              <label for="Width" class="flex items-center justify-between mb-2.5">
+                <p class="text-sm font-normal text-gray-700">Table Width</p>
+                <span
+                  class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">3</span>
+              </label>
+              <input id="Width" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range"
+                min="1" max="2" step="1" value="1">
+            </li>
+          </ul>
+          <!--End List-->
+          <ul class="p-5 border-b border-gray-300">
+            <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Table properties</h3>
+            <li class="mb-5">
+              <label class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked="">
+                <div
+                  class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                </div>
+                <span class="ml-3 text-sm font-normal text-gray-700 ">Horizontal Borders</span>
+              </label>
+            </li>
+            <li class="mb-5">
+              <label class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked="">
+                <div
+                  class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                </div>
+                <span class="ml-3 text-sm font-normal text-gray-700 ">Vertical Borders</span>
+              </label>
+            </li>
+            <li class="mb-5">
+              <label class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked="">
+                <div
+                  class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                </div>
+                <span class="ml-3 text-sm font-normal text-gray-700 ">Rounded Corners</span>
+              </label>
+            </li>
+            <li class="mb-5">
+              <label class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                  class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                </div>
+                <span class="ml-3 text-sm font-normal text-gray-700 ">Striped Rows</span>
+              </label>
+            </li>
+            <li class="mb-5">
+              <label class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                  class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                </div>
+                <span class="ml-3 text-sm font-normal text-gray-700 ">Hoverable Rows</span>
+              </label>
+            </li>
+          </ul>
+
+          <ul class="p-5 border-b border-gray-300">
+            <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Header properties</h3>
+            <li class="mb-5">
+              <div class="flex">
+                <input id="Uppercase-Header" type="checkbox"
+                  class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-600">
+                <label for="Uppercase-Header" class="text-sm font-normal cursor-pointer text-gray-600">Uppercase
+                  Header</label>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="flex">
+                <input id="Center-Text" type="checkbox"
+                  class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
+                  checked="">
+                <label for="Center-Text" class="text-sm font-normal cursor-pointer text-gray-600">Center Text</label>
+              </div>
+            </li>
+            <li class="">
+              <div class="flex">
+                <input id="Bold-Header" type="checkbox"
+                  class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                <label for="Bold-Header" class="text-sm font-normal cursor-pointer text-gray-600">Bold Header</label>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="p-5 border-b border-gray-300">
+            <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">body properties</h3>
+            <li class="mb-5">
+              <div class="flex">
+                <input id="Center-Text" type="checkbox"
+                  class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
+                  checked="">
+                <label for="Center-Text" class="text-sm font-normal cursor-pointer text-gray-600">Center Text</label>
+              </div>
+            </li>
+            <li class="">
+              <div class="flex">
+                <input id="Bold-Text" type="checkbox"
+                  class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                <label for="Bold-Text" class="text-sm font-normal cursor-pointer text-gray-600">Bold Text</label>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="p-5 border-b border-gray-300">
+            <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Header Colors</h3>
+            <li class="mb-5 flex items-center justify-between">
+              <span class="text-sm font-normal text-gray-700">Background</span>
+              <div class="flex flex-row-reverse">
+                <input type="color" id="bg-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                  value="#4F46E5" class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#4F46E5" id="bg-hex"
+                  class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+              </div>
+            </li>
+            <li class=" flex items-center justify-between">
+              <span class="text-sm font-normal text-gray-700">Text</span>
+              <div class="flex flex-row-reverse">
+                <input type="color" id="text-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                  value="#C7D2FE" class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#C7D2FE" id="text-hex"
+                  class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="p-5 border-b border-gray-300">
+            <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">body Colors</h3>
+            <li class="mb-5 flex items-center justify-between">
+              <span class="text-sm font-normal text-gray-700">Background</span>
+              <div class="flex flex-row-reverse">
+                <input type="color" id="bg-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                  value="#FFFFFF" class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#FFFFFF" id="bg-hex"
+                  class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+              </div>
+            </li>
+            <li class=" flex items-center justify-between">
+              <span class="text-sm font-normal text-gray-700">Text</span>
+              <div class="flex flex-row-reverse">
+                <input type="color" id="text-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                  value="#9CA3AF" class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#9CA3AF" id="text-hex"
+                  class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="p-5 border-b border-gray-300">
+            <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">more options</h3>
+            <li class="mb-5">
+              <label class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked="">
+                <div
+                  class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                </div>
+                <span class="ml-3 text-sm font-normal text-gray-700 ">Search</span>
+              </label>
+            </li>
+            <li class="mb-5">
+              <label class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" >
+                <div
+                  class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                </div>
+                <span class="ml-3 text-sm font-normal text-gray-700 ">Filter</span>
+              </label>
+            </li>
+            <li class="mb-5">
+              <label class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" >
+                <div
+                  class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                </div>
+                <span class="ml-3 text-sm font-normal text-gray-700 ">Sortable</span>
+              </label>
+            </li>
+            <li class="pb-5">
+              
+            </li>
+            <li class="mb-5">
+              <label class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                  class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                </div>
+                <span class="ml-3 text-sm font-normal text-gray-700 ">Pagination</span>
+              </label>
+            </li>
+          </ul>
+          <div class="p-5">
+            <button class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                <path d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Reset
+            </button>
+          </div>
+        </aside>
+        <!----------Leftbar End---------->
+        <!-- main table component start  -->
+        <div
+          class="flex-auto relative w-full min-w-0 bg-gray-50 h-auto pt-20 px-4 lg:p-10 xl:p-24 lg:pb-10 lg:mt-20 lg:ml-56 xl:ml-72 lg:static lg:max-h-full lg:overflow-visible">
+
+          <div class="p-5 rounded-xl bg-white flex flex-col gap-5">
+            <div class="flex items-center justify-between gap-5">
+              <div class="relative  text-gray-500 focus-within:text-gray-900 ">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M17.5 17.5L15.4167 15.4167M15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333C11.0005 15.8333 12.6614 15.0929 13.8667 13.8947C15.0814 12.6872 15.8333 11.0147 15.8333 9.16667Z"
+                      stroke="#111827" stroke-width="1.6" stroke-linecap="round" />
+                  </svg>
+
+                </div>
+                <input type="search" id="default-search"
+                  class="block w-full max-w-[150px] sm:max-w-xs pr-4 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none leading-relaxed"
+                  placeholder="Search...">
+              </div>
+              <button
+                class="rounded-lg py-2.5 pl-5 pr-4 border border-gray-300 flex items-center gap-2 text-base font-normal text-gray-400 transition-all duration-300 hover:bg-gray-100">
+               <span class="py-px"> Select Category</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M12.0001 5.99975L7.99996 9.99991L3.99744 5.99739" stroke="#111827" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="rounded-xl overflow-x-auto md:overflow-hidden border border-gray-300">
+              <table class=" min-w-full  rounded-xl">
+                <thead>
+                  <tr class="bg-gray-50">
+                    <th scope="col" class="p-5 text-left ">
+                      <div class="text-base font-medium text-gray-900 capitalize flex items-center gap-2.5">
+                        ID
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
+                          <path d="M1 4.9976L4.99765 1L8.99758 5" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9 9.0024L5.00235 13L1.00242 9" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </th>
+                    <th scope="col" class="p-5 text-left ">
+                      <div class="text-base font-medium text-gray-900 capitalize flex items-center gap-2.5">
+                        Product
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
+                          <path d="M1 4.9976L4.99765 1L8.99758 5" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9 9.0024L5.00235 13L1.00242 9" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </th>
+                    <th scope="col" class="p-5 text-left ">
+                      <div class="text-base font-medium text-gray-900 capitalize flex items-center gap-2.5">
+                        Category
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
+                          <path d="M1 4.9976L4.99765 1L8.99758 5" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9 9.0024L5.00235 13L1.00242 9" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </th>
+                    <th scope="col" class="p-5 text-left ">
+                      <div class="text-base font-medium text-gray-900 capitalize flex items-center gap-2.5">
+                        Stock
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
+                          <path d="M1 4.9976L4.99765 1L8.99758 5" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9 9.0024L5.00235 13L1.00242 9" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </th>
+                    <th scope="col" class="p-5 text-left ">
+                      <div class="text-base font-medium text-gray-900 capitalize flex items-center gap-2.5">
+                        Status
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
+                          <path d="M1 4.9976L4.99765 1L8.99758 5" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9 9.0024L5.00235 13L1.00242 9" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </th>
+                    <th scope="col" class="p-5 text-left ">
+                      <div class="text-base font-medium text-gray-900 capitalize flex items-center gap-2.5">
+                        Price
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
+                          <path d="M1 4.9976L4.99765 1L8.99758 5" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9 9.0024L5.00235 13L1.00242 9" stroke="#6B7280" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-300 ">
+                  <tr>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600 ">
+                      01</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Handbag
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Bags</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      30</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      In Stock</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      $199.99</td>
+                  </tr>
+                  <tr>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600 ">
+                      02</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Handbag
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Bags</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      30</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      In Stock</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      $199.99</td>
+                  </tr>
+                  <tr>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600 ">
+                      03</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Handbag
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Bags</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      30</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      In Stock</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      $199.99</td>
+                  </tr>
+                  <tr>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600 ">
+                      04</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Handbag
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Bags</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      30</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      In Stock</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      $199.99</td>
+                  </tr>
+                  <tr>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600 ">
+                      05</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Handbag
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Bags</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      30</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      In Stock</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      $199.99</td>
+                  </tr>
+                  <tr>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600 ">
+                      06</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Handbag
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      Bags</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      30</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      In Stock</td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                      $199.99</td>
+                  </tr>
+                  <tr>
+                    <td class="p-5 h-16 whitespace-nowrap text-base font-normal text-gray-600 ">
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                    </td>
+                    <td class="p-5 whitespace-nowrap text-base font-normal text-gray-600">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="flex flex-col lg:flex-row max-lg:gap-4 items-center justify-between">
+              <p class="text-base font-semibold text-gray-600">Showing <span class="text-gray-900">1-10</span> of <span
+                  class="text-gray-900">10</span></p>
+              <ul class="flex flex-col sm:flex-row items-center text-sm h-auto gap-5 xl:gap-12">
+                <li class="max-sm:flex items-center gap-8">
+                  <a href="javascript:;"
+                    class="flex items-center justify-center gap-2 px-3 h-8 ml-0 text-gray-900 bg-white font-medium text-base  hover:text-gray-700 ">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.0002 14.9999L8 9.99967L13.0032 4.99652" stroke="currentcolor" stroke-width="1.6"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    Back
+                  </a>
+                  <a href="javascript:;"
+                  class="flex sm:hidden items-center justify-center gap-2 px-3 h-8 ml-0 text-gray-900 bg-white font-medium text-base leading-7  hover:text-gray-700 ">
+                  next
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00295 4.99646L13.0032 9.99666L8 14.9998" stroke="currentcolor" stroke-width="1.6"
+                      stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+
+                </a>
+                </li>
+                <li>
+                  <ul class="flex items-center justify-center gap-1 min-[470px]:gap-4">
+                    <li>
+                      <a href="javascript:;"
+                        class="font-normal text-base leading-7 border border-gray-200 text-gray-500 w-11 h-11 flex items-center justify-center rounded-full bg-white transition-all duration-500 hover:border-indigo-600 hover:text-gray-900">1</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        class="font-normal text-base leading-7 border w-11 h-11 flex items-center justify-center rounded-full transition-all duration-500 hover:border-indigo-600 hover:text-gray-900 border-indigo-600 bg-indigo-600 text-white">2</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        class="font-normal text-base leading-7 border border-gray-200 text-gray-500 w-11 h-11 flex items-center justify-center rounded-full bg-white transition-all duration-500 hover:border-indigo-600 hover:text-gray-900">3</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        class="font-normal text-base leading-7 border border-gray-200 text-gray-500 w-11 h-11 flex items-center justify-center rounded-full bg-white transition-all duration-500 hover:border-indigo-600 hover:text-gray-900">4</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        class="font-normal text-base leading-7 border border-gray-200 text-gray-500 w-11 h-11 flex items-center justify-center rounded-full bg-white transition-all duration-500 hover:border-indigo-600 hover:text-gray-900">5</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        class="font-normal flex items-center justify-center w-11 h-11 border border-gray-200 text-base leading-7 text-gray-500 rounded-full ">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.52754 10.001H5.47754M10.5412 10.001H10.4912M15.5549 10.001H15.5049" stroke="black"
+                            stroke-width="2.5" stroke-linecap="round"></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        class="font-normal text-base leading-7 border border-gray-200 text-gray-500 w-11 h-11 flex items-center justify-center rounded-full bg-white transition-all duration-500 hover:border-indigo-600 hover:text-gray-900">10</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;"
+                    class="hidden sm:flex items-center justify-center gap-2 px-3 h-8 ml-0 text-gray-900 bg-white font-medium text-base leading-7  hover:text-gray-700 ">
+                    next
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.00295 4.99646L13.0032 9.99666L8 14.9998" stroke="currentcolor" stroke-width="1.6"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="dropdown absolute inline-flex -bottom-20 right-20">
+            <button type="button" data-target="dropdown-default" class="dropdown-toggle inline-flex justify-center items-center gap-2 py-3 px-6 text-lg font-semibold bg-indigo-600 text-white rounded-full cursor-pointer text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 ">
+              Export
+              <svg class="dropdown-open:rotate-180 rotate-180 w-2.5 h-2.5 text-white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div id="dropdown-default" class="dropdown-menu rounded-xl shadow-lg bg-white absolute -left-14 -top-96 w-max mt-2 open hidden" aria-labelledby="dropdown-default">
+              <ul class="py-2 px-4 divide-y divide-gray-200">
+                <li class="mb-3">
+                  <a class="block p-3 rounded-md text-base  hover:bg-gray-100 text-gray-600 uppercase font-medium" href="javascript:;">
+                    Export
+                  </a>
+                </li>
+                <li>
+                  <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white" href="javascript:;">
+                    Export HTML + Tailwind
+                  </a>
+                </li>
+                <li>
+                  <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white" href="javascript:;">
+                    Export JPEG
+                  </a>
+                </li>
+                <li>
+                  <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white" href="javascript:;">
+                    Export PNG
+                  </a>
+                </li>
+                <li>
+                  <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white" href="javascript:;">
+                    Export SVG
+                  </a>
+                </li>
+                <li>
+                  <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white" href="javascript:;">
+                    Export CSV
+                  </a>
+                </li>
+                <li>
+                  <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white" href="javascript:;">
+                    Export Markdown
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- main table component end  -->
+      </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+  <script>
+    $('#bg-color').on('input', function () {
+      $('#bg-hex').val(this.value);
+    });
+    $('#bg-hex').on('input', function () {
+      $('#bg-color').val(this.value);
+    });
+    $('#text-color').on('input', function () {
+      $('#text-hex').val(this.value);
+    });
+    $('#text-hex').on('input', function () {
+      $('#text-color').val(this.value);
+    });
+  </script>
+</body>
+
+</html>

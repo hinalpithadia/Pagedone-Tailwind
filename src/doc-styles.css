@@ -377,7 +377,7 @@
     .shadow-custom{
       box-shadow:inset 0px -4px 0px 0px #0000000F,  0px 0px 0px 2px #0000000D;
   }
-   
+  
     @media(max-width:768px){
         .account-list li>a{
             padding: 0px 10px;

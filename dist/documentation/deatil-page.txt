@@ -20,3 +20,101 @@ datepicker
     Tailwind CSS Datepicker | Pagedone
 
 Use Datepicker in Tailwind CSS to integrates a date input field with a calendar popover, whcih allows users to input or select specific date and time values.
+
+
+Tailwind CSS Hero Sections
+
+
+Pagedone offers a range of beautifully designed, modern Tailwind hero sections that immediately make a strong first impression on visitors. Each hero section is expertly crafted to enhance the user experience, ensuring a bold impact from the start.
+
+Tailwind CSS Hero Sections | Pagedone
+===========================================
+tailwind forms
+
+tailwind css forms
+
+tailwind forms plugin
+
+tailwind forms examples
+
+tailwind ui forms
+
+forms tailwind
+
+tailwind css forms plugin
+
+forms tailwind css
+===================================================================
+Tailwind CSS Forms
+
+Hexee Mobile App Figma and Tailwind CSS Template
+
+Hexee Mobile App Tailwind CSS template is a multipurpose responsive template for Mobile App. The template has modern and professional design that can fit to any purpose of landing page like mobile app landing page, mobile app showcase, game mobile and many more.
+
+Hexee Mobile App Tailwind CSS template includes more homepage styles, unlimited color schemes and more features available. Our mobile app template empowers you to create impactful applications that resonate with your audience. Elevate your projects to new heights and leave a lasting impression with our premium template.
+
+Our Mobile App Tailwind CSS template is a set of pre-designed user interface elements that can be used to create any type of mobile application. Hexee Mobile App include ready-made screens for different sections of the app, Suitable for anyone who is looking for app, app landing, app landing page, app landing template, App Showcase, app store, app template, app website, clean app landing, creative app landing page, landing page, mobile app landing page, modern app Landing, parallax, Simple App Landing , travel app, restaurant app, medical app, startup, e-commerce app, social media app, Saas app, education app, learning app, multipurpose app etc website and also suitable for flight booking, hotel booking, Tour guide finding, destination search, payment option, message chatting, audio call, video call, and more features. These app screens are designed with the latest modern design trends with user experience principles in mind.
+
+It’s unique, modern and clean design for Mobile App Landing Page best suitable to promote apps or any web services for mobile apps. Also included figma source files along with this HTML template. Hexee is fully responsive and helps to build your own website for your mobile apps as you want.
+
+slug:hexee
+
+
+
+
+Tailwind CSS Comments Sections
+Tailwind CSS Comments Sections | Pagedone
+
+
+A Tailwind CSS Comment Section is a feature in Tailwind CSS that allows customers to write descriptive comments directly in their own words. This is a collection of comment blocks coded using Tailwind CSS to show a list of comments for blog and news which includes replys, likes, reactions and input field to write comments.
+
+comment - ecomerce
+order tracking
+confirmation
+
+integration - marketing
+
+1)
+Comments with Replies
+Use this minimal Tailwind Comment Section to show all comments of user or customer with reactions and replies. 
+
+2)
+Basic comments list with like and CTA Button
+Use following comment section example to show list of comments with like button and CTA button to edit or delete comment.
+
+3)
+Comments section with form
+This example of Tailwind CSS Comments shows form field to post comments and also display a list of all older comments with like, share and delete buttons.
+
+4)
+Nested comment section
+Use following example of comment block to show a list of multi level comments and form field to post a comment and display filter to show recent comments.
+
+5)
+Simple Comment block
+Use this simple comment block to show a list of comments with like and share buttons.
+
+6)
+Tailwind CSS Comment list with Form
+Use following example of comment block with form field to post comment with reactions and show list of comments below it.
+
+7)
+    Comment block with text editor
+This example of Tailwind Comment block shows list of comments with gradient CTA Buttons and additionally it display text editor where cusotmer post a comment and change styles of text.
+
+8)
+Comment section with reply field
+Use following example of Tailwind CSS Comment Box to show a input field inside comment perticular comment area to post reply on older comments.
+
+9)
+Tailwind comment list with user images
+Use following example of comment block to show a list of comments with user images and like, share and reply buttons.
+
+10)
+comment list with text editor
+This exmaple of Tailwind Comment Section show a comment list and text editor to change style of comment text.
+
+11)
+Comment Form tailwind
+Use following example of Tailwind Comment Box to show comment form with all required field and CTA button below comment list. 
+
