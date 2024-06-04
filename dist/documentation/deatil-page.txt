@@ -49,7 +49,7 @@ Tailwind CSS Forms
 
 Hexee Mobile App Figma and Tailwind CSS Template
 
-Hexee Mobile App Tailwind CSS template is a multipurpose responsive template for Mobile App. The template has modern and professional design that can fit to any purpose of landing page like mobile app landing page, mobile app showcase, game mobile and many more.
+    Hexee Mobile App Tailwind CSS template is a multipurpose responsive template for Mobile App. The template has modern and professional design that can fit to any purpose of landing page like mobile app landing page, mobile app showcase, game mobile and many more.
 
 Hexee Mobile App Tailwind CSS template includes more homepage styles, unlimited color schemes and more features available. Our mobile app template empowers you to create impactful applications that resonate with your audience. Elevate your projects to new heights and leave a lasting impression with our premium template.
 
