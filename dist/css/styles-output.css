@@ -6088,6 +6088,14 @@ input[type="radio"]:checked:disabled + label span{
   top: 100%;
 }
 
+.top-\[70px\]{
+  top: 70px;
+}
+
+.top-\[69px\]{
+  top: 69px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -24793,16 +24801,6 @@ input[type="radio"]:checked:disabled + label span{
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.placeholder\:text-gray-600::-moz-placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.placeholder\:text-gray-600::placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
 .placeholder\:text-slate-400::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
@@ -25319,10 +25317,6 @@ input[type="radio"]:checked:disabled + label span{
 .focus-within\:text-gray-900:focus-within{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-.focus-within\:outline-0:focus-within{
-  outline-width: 0px;
 }
 
 .hover\:flex-grow:hover{
@@ -28400,12 +28394,6 @@ input[type="radio"]:checked:disabled + label span{
   }
 }
 
-@media not all and (min-width: 1280px){
-  .max-xl\:gap-4{
-    gap: 1rem;
-  }
-}
-
 @media not all and (min-width: 1024px){
   .max-lg\:mx-auto{
     margin-left: auto;
@@ -29097,6 +29085,10 @@ input[type="radio"]:checked:disabled + label span{
     top: 4.5rem;
   }
 
+  .lg\:top-36{
+    top: 9rem;
+  }
+
   .lg\:z-20{
     z-index: 20;
   }
@@ -29142,6 +29134,11 @@ input[type="radio"]:checked:disabled + label span{
   .lg\:my-0{
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .lg\:mx-16{
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   .lg\:mb-0{
@@ -29216,6 +29213,10 @@ input[type="radio"]:checked:disabled + label span{
     margin-top: 5rem;
   }
 
+  .lg\:mb-48{
+    margin-bottom: 12rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -29252,10 +29253,6 @@ input[type="radio"]:checked:disabled + label span{
     height: calc(100vh - 76px);
   }
 
-  .lg\:h-11{
-    height: 2.75rem;
-  }
-
   .lg\:max-h-full{
     max-height: 100%;
   }
@@ -29266,6 +29263,10 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:min-h-\[780px\]{
     min-height: 780px;
+  }
+
+  .lg\:min-h-screen{
+    min-height: 100vh;
   }
 
   .lg\:w-1\/2{
@@ -29314,10 +29315,6 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:w-11{
-    width: 2.75rem;
   }
 
   .lg\:min-w-\[280px\]{
@@ -29590,6 +29587,11 @@ input[type="radio"]:checked:disabled + label span{
     padding-bottom: 1.25rem;
   }
 
+  .lg\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .lg\:pb-0{
     padding-bottom: 0px;
   }
@@ -29628,6 +29630,10 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:pt-4{
     padding-top: 1rem;
+  }
+
+  .lg\:pt-36{
+    padding-top: 9rem;
   }
 
   .lg\:text-left{
@@ -29734,10 +29740,6 @@ input[type="radio"]:checked:disabled + label span{
     height: 780px;
   }
 
-  .xl\:h-11{
-    height: 2.75rem;
-  }
-
   .xl\:min-h-screen{
     min-height: 100vh;
   }
@@ -29752,10 +29754,6 @@ input[type="radio"]:checked:disabled + label span{
 
   .xl\:w-96{
     width: 24rem;
-  }
-
-  .xl\:w-11{
-    width: 2.75rem;
   }
 
   .xl\:min-w-\[950px\]{
@@ -30044,11 +30042,6 @@ input[type="radio"]:checked:disabled + label span{
 
   .\32xl\:text-center{
     text-align: center;
-  }
-
-  .\32xl\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 

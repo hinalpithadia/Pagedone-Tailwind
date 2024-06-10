@@ -60,7 +60,25 @@ It’s unique, modern and clean design for Mobile App Landing Page best suitable
 slug:hexee
 
 
+forms
+app integration
+comment section
+calendar
+order confirmation
+coming soon
 
+==============================================================
+
+Brightbox Digital Agency Figma and Tailwind CSS Template
+
+Brightbox Tailwind CSS Template for Digital Agency HTML Template with predefined web elements which helps you to build your own site. Brightbox provide you to build the best business, consulting, corporate, creative agency, digital agency, digital marketing, marketing, one page, portfolio, seo agency, startup, web design, web development template.
+
+Brightbox Template has a fully responsive layout. It fits perfectly on various displays and resolutions from regular desktop screens to tablets, iPads, iPhones and small mobile devices. Make a statement with your site! Get Brightbox and your digital agency website is sure to stand out in a positive light! 
+
+Brightbox Template is a multipurpose solution for any sort of business website. As a perfect fit for any digital agency, company or corporation, this template covers everything for a professional online presentation. BrightBox is packed with 9 contemporary Pages that can be further customized as per your needs. Moreover, the theme includes Home , About, Services, Contact and Portfolio Pages ideal for showcasing projects and technology works. With many portfolio styles to choose from, you can be sure your website shines in every aspect. If you need a business template that comes with all the essential shortcodes for your digital agency, digital marketing agency, web design agency or creative agency, search no more. Brightbox is the only website solution you may need. 
+
+It’s unique, modern and clean design for Digital Agency best suitable to make business website or portfolio. Also included figma source files along with this HTML template.
+https://pagedone.io/asset/uploads/1717572745.jpg
 
 Tailwind CSS Comments Sections
 Tailwind CSS Comments Sections | Pagedone
@@ -72,49 +90,12 @@ comment - ecomerce
 order tracking
 confirmation
 
-integration - marketing
+==============novex====================
 
-1)
-Comments with Replies
-Use this minimal Tailwind Comment Section to show all comments of user or customer with reactions and replies. 
+Novex Crypto ICO  Template is a premium, trendy and modern Tailwind CSS Template with a unique style and clean design. You can use it for multipurpose like ICO Presentation, Blockchain and new Crypto coins, bitcoin mining websites, cryptocurrency exchange and trading, digital currencies, finances, and business consulting, outstanding features, full responsive and mobile-friendly. And also has comments on each section included in the template so you can easily adapt your templates to suit your needs.
 
-2)
-Basic comments list with like and CTA Button
-Use following comment section example to show list of comments with like button and CTA button to edit or delete comment.
+Novex is developer-friendly, fast, lightweight and clean code. The template is easily customizable and expandable with detailed documentation. Our fast and friendly support team will gladly assist with the template. Novex has been designed and developed with a modern responsive design, awesome typography and a focus on readability to provide your visitors with a quality user experience.
 
-3)
-Comments section with form
-This example of Tailwind CSS Comments shows form field to post comments and also display a list of all older comments with like, share and delete buttons.
+Novex has a single page that can be further customized as per your needs. Moreover, the theme includes SVG animations, creative hover effects and many more.
 
-4)
-Nested comment section
-Use following example of comment block to show a list of multi level comments and form field to post a comment and display filter to show recent comments.
-
-5)
-Simple Comment block
-Use this simple comment block to show a list of comments with like and share buttons.
-
-6)
-Tailwind CSS Comment list with Form
-Use following example of comment block with form field to post comment with reactions and show list of comments below it.
-
-7)
-    Comment block with text editor
-This example of Tailwind Comment block shows list of comments with gradient CTA Buttons and additionally it display text editor where cusotmer post a comment and change styles of text.
-
-8)
-Comment section with reply field
-Use following example of Tailwind CSS Comment Box to show a input field inside comment perticular comment area to post reply on older comments.
-
-9)
-Tailwind comment list with user images
-Use following example of comment block to show a list of comments with user images and like, share and reply buttons.
-
-10)
-comment list with text editor
-This exmaple of Tailwind Comment Section show a comment list and text editor to change style of comment text.
-
-11)
-Comment Form tailwind
-Use following example of Tailwind Comment Box to show comment form with all required field and CTA button below comment list. 
-
+Novex makes it easy to create a dynamic website that people will actually read and use. For you, this means higher engagement, a better conversion rate, more revenue from advertisements, and a site that people can’t stop talking about.
