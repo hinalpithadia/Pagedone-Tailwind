@@ -91,11 +91,71 @@ order tracking
 confirmation
 
 ==============novex====================
+Novex - Crypto ICO Figma and Tailwind CSS Template
 
-Novex Crypto ICO  Template is a premium, trendy and modern Tailwind CSS Template with a unique style and clean design. You can use it for multipurpose like ICO Presentation, Blockchain and new Crypto coins, bitcoin mining websites, cryptocurrency exchange and trading, digital currencies, finances, and business consulting, outstanding features, full responsive and mobile-friendly. And also has comments on each section included in the template so you can easily adapt your templates to suit your needs.
+Novex Crypto ICO Template is a premium, trendy and modern Tailwind CSS Template with a unique style and clean design.   
 
 Novex is developer-friendly, fast, lightweight and clean code. The template is easily customizable and expandable with detailed documentation. Our fast and friendly support team will gladly assist with the template. Novex has been designed and developed with a modern responsive design, awesome typography and a focus on readability to provide your visitors with a quality user experience.
 
-Novex has a single page that can be further customized as per your needs. Moreover, the theme includes SVG animations, creative hover effects and many more.
+Novex has a single page that can be further customized as per your needs. Moreover, the theme includes SVG animations, creative hover effects and many more. And also has comments on each section included in the template so you can easily adapt your templates to suit your needs.
 
 Novex makes it easy to create a dynamic website that people will actually read and use. For you, this means higher engagement, a better conversion rate, more revenue from advertisements, and a site that people can’t stop talking about.
+
+https://pagedone.io/asset/uploads/1718012623.jpg
+
+======================Beast==============================
+Beast - Gym Fitness Figma and Tailwind CSS Template
+
+Beast is a two pages responsive Tailwind CSS Template designed specially for gym and fitness websites. This Template is a clean, modern, and fully responsive. It is designed for Sport, Gym, Fitness, Aerobic, Yoga, Boxing, Trainer, Coach, businesses or any type of person or business who wants to showcase their work, services and professional way.
+
+Beast has a two responsive pages layout that looks great on mobile and tablet devices. This is an easy to edit template. You can edit each and every part of this template according to your needs.It offers awesome design, powerful display and built on HTML5 and Tailwind CSS and much more.
+
+As they say in fitness industry “If it doesn’t challenge you it doesn’t change you”, The Fitness First Multi-Purpose Tailwind CSS Template is developed for the fitness industry and it can become a key machinery for strengthening your Fitness Business. The new customers, fitness enthusiast and athletes will be intrigued by the aesthetic design of this Gym Fitness Tailwind Template.
+
+If you would like to create a page that has a strong first impression and intrigues everyone, Beast Gym Fitness template is the tool you need. Let it impress you with the live preview page. It’s Super easy to customize so it’ll suit your needs. Share your fitness and good-health expertise with the built-in Home Page provided with this Template. Introduce your fitness skills and prices of your various fitness classes to the new clients with Chart Details page of this HTML Template. The Smooth Hover Effects boosts the Template’s aesthetic design elements.
+
+
+====================================================
+	https://pagedone.io/asset/uploads/1718089827.jpg
+Novex - Crypto ICO Figma and Tailwind CSS Template
+https://www.figma.com/design/tck42yxadxBygyFrUTVIk0/Beast-Template?node-id=0-1&t=pxnnKvsuBI9tG6FP-1
+
+
+
+===========================================================
+Tailwind CSS Maintenance Page
+ 
+
+This Tailwind CSS Maintenance Pages to show your users that you are working on an important updates and the website is not accessible. 
+
+8
+Tailwind CSS Maintenance Page | Pagedone
+
+
+1)
+Default maintenance page
+Use this example to let your users know that your site is currently under maintenance using heading, countdown, illustration and notification form. 
+
+2)
+Maintenance page with logo
+Use this example to show your logo alongside the maintenance notice heading, paragraph and illustration.
+
+3)
+Maintenance page with countdown
+This tailwind css maintenance example can be used to show countdown, heading, paragraph and email input togather.
+
+4)
+Maintenance page with social links
+Below example can be used to show under maintenance heading, paragraph and social media links.
+
+5)
+tailwind maintenance page with illustration
+Use this example to show creative illustration on under maintenance page alongside heading and paragraph.
+
+6)
+splitted under maintenance page
+Use this example to also show a visually impactful illustration when notifying your users that your website is being updated with social links.
+
+
+
+
