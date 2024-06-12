@@ -121,41 +121,94 @@ Novex - Crypto ICO Figma and Tailwind CSS Template
 https://www.figma.com/design/tck42yxadxBygyFrUTVIk0/Beast-Template?node-id=0-1&t=pxnnKvsuBI9tG6FP-1
 
 
+tailwind about us section
+about us tailwind component 
+tailwind about us
+about us component tailwind
+about us section tailwind
+about us tailwind template
+
 
 ===========================================================
-Tailwind CSS Maintenance Page
- 
+Tailwind About Us Section
 
-This Tailwind CSS Maintenance Pages to show your users that you are working on an important updates and the website is not accessible. 
-
-8
-Tailwind CSS Maintenance Page | Pagedone
+Pagedone offers a range of beautifully designed, modern Tailwind about us sections built with Tailwind CSS to showcase your organization's journey and company history based on multiple layouts. Each about section is expertly crafted to enhance the user experience, ensuring a bold impact from the start.
 
 
 1)
-Default maintenance page
-Use this example to let your users know that your site is currently under maintenance using heading, countdown, illustration and notification form. 
+About us section with number counter
+Use this example to show information about your company's history and journey of your organization ny showcasing images, number counters, paragraph and CTA.
 
 2)
-Maintenance page with logo
-Use this example to show your logo alongside the maintenance notice heading, paragraph and illustration.
+Side by side about us tailwind
+This example can be used to showcase about us with heading, paragraph, stats, CTA on one side and display images on other side.
 
 3)
-Maintenance page with countdown
-This tailwind css maintenance example can be used to show countdown, heading, paragraph and email input togather.
+Basic about us section tailwind
+Use following example to show simple yet modern design of about us section which includes heading, paragraph and picture.
 
 4)
-Maintenance page with social links
-Below example can be used to show under maintenance heading, paragraph and social media links.
+Full heighted about us tailwind component 
+This example can be used to also show a heading, paragraph and CTA next to a full heighted image based on a responsive grid layout.
 
 5)
-tailwind maintenance page with illustration
-Use this example to show creative illustration on under maintenance page alongside heading and paragraph.
+Splitted about us tailwind template
+Use this example to show a images alongside organization details with CTA Button.
 
 6)
-splitted under maintenance page
-Use this example to also show a visually impactful illustration when notifying your users that your website is being updated with social links.
+Tailwind About us section with video layout
+Use following example to show video layout inside about section along with heading, paragraph and stat counts.
 
+7)
+About us component tailwind with stats
+This example shows a short description alongside image and stat counts.
+
+8)
+Vertical about us tailwind
+Use below example to show short description about your company and key statistics such as sucessful project, years of experience, trusted employess, reviews etc.
+
+9)
+About us tailwind with feature list
+This example can be used to show your company details, heading and list of key feature about organization journey alongside grid of images.
+
+10)
+About us with Alternate image
+Use this example if you want to alternate an image and description next to each other and improve the visual attractiveness of the page.
+
+11)
+Image with feature list
+This example can be used if you also want to show a visual image and a feature list item side by side.
+
+12)
+About us with descriptive card
+Use below example to show heading and key statistics along with images and description card.
+
+13)
+Creative About us with key feature list
+Use following example for a modern about section which shows images alongside key feature list and heading.
+
+14)
+About us tailwind with Vertical image
+Use below example of About us component tailwind to show images in a vertical layout beside short description.
+
+15)
+Tailwind about us with image grid
+Use following example to show short description above grid of images.
+
+
+
+
+
+
+Welcome to [Company Name], where our journey began with a simple yet powerful vision: to [briefly state the purpose or goal of the company]. Established [year of establishment], we've since evolved into [mention any growth or changes], always driven by our commitment to [core values or principles].
+
+At [Company Name], we take pride in our [mention any unique qualities or strengths], distinguishing ourselves as [mention any accolades or achievements]. Our dedicated team of professionals brings together a diverse range of expertise, ensuring that we deliver nothing short of excellence in every endeavor.
+
+But it's not just about what we do—it's about why we do it. Our mission is to [briefly state the company's mission or purpose], striving to [mention any impact or difference the company aims to make]. With every project, client, and partnership, we're driven by our passion for [mention the passion or driving force behind the company].
+
+We believe in transparency, integrity, and collaboration, fostering a culture that empowers our team and delights our customers. As we continue to grow and innovate, we remain dedicated to [mention any future goals or aspirations].
+
+Thank you for joining us on this journey. Together, let's [mention any call to action or invitation].
 
 
 

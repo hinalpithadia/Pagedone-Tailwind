@@ -21111,6 +21111,11 @@ input[type="radio"]:checked:disabled + label span{
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 
+.text-orange-400{
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
 .text-orange-50{
   --tw-text-opacity: 1;
   color: rgb(255 247 237 / var(--tw-text-opacity));
@@ -28427,6 +28432,10 @@ input[type="radio"]:checked:disabled + label span{
     margin-bottom: 1.25rem;
   }
 
+  .max-lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .max-lg\:max-w-2xl{
     max-width: 42rem;
   }
@@ -29549,6 +29558,14 @@ input[type="radio"]:checked:disabled + label span{
     padding: 2rem;
   }
 
+  .lg\:p-1{
+    padding: 0.25rem;
+  }
+
+  .lg\:p-1\.5{
+    padding: 0.375rem;
+  }
+
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -29658,6 +29675,10 @@ input[type="radio"]:checked:disabled + label span{
     padding-top: 1rem;
   }
 
+  .lg\:pr-5{
+    padding-right: 1.25rem;
+  }
+
   .lg\:text-left{
     text-align: left;
   }
@@ -29684,6 +29705,11 @@ input[type="radio"]:checked:disabled + label span{
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:shadow-\[0px_15px_30px_0px_rgba\(16\2c 24\2c 40\2c 0\.1\)\]{
