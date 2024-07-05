@@ -28432,10 +28432,6 @@ input[type="radio"]:checked:disabled + label span{
     margin-bottom: 1.25rem;
   }
 
-  .max-lg\:mt-5{
-    margin-top: 1.25rem;
-  }
-
   .max-lg\:max-w-2xl{
     max-width: 42rem;
   }
@@ -29802,10 +29798,6 @@ input[type="radio"]:checked:disabled + label span{
 
   .xl\:w-96{
     width: 24rem;
-  }
-
-  .xl\:w-\[calc\(100vw-288px\)\]{
-    width: calc(100vw - 288px);
   }
 
   .xl\:w-\[calc\(100vw-308px\)\]{

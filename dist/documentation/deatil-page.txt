@@ -243,3 +243,366 @@ This example of Tailwind CSS Refund Form exmaple can be used to built refund for
 
 
 
+===================
+
+Razzle Beauty Salon Figma and Tailwind CSS Template
+
+    Razzle Beauty Salon Tailwind CSS template is a multipurpose responsive template for beauty and salons. The template has modern and professional design.
+
+Razzle Beauty Salon is Beauty, Hair, Nail, Spa Salon & Cosmetic Shop template for Tailwind CSS. The Razzle Tailwind CSS Template is perfectly suitable for any kind of beauty salon & Massage Parlours, Wellness spa, Hair care Products, Nail Salons, Hairdresser, Barbershop, Luxury Spa.
+
+Each professional with something to do with beauty services should do everything to become popular. With razzle beauty salon website templates, you can be sure of your capacity to build a huge customer base and impress their imagination with an eye-catching online presentation of your services.
+
+This template is very easy to customize any section. Here you get 3 pages home, blog, blog details and you can easily change your text, color and images and build your website. Every code has been commented that’s why it will be very easy for your customization. The templates main feature is there has a home page with fixed height slider, full screen slider, video section and portfolio section.
+
+	https://pagedone.io/asset/uploads/1718703868.jpg
+
+
+==============================================
+Coming Soon Pages
+
+9
+
+coming-soon-page
+
+Coming Soon Pages Tailwind CSS | Pagedone
+
+The Coming Soon Tailwind template is carefully designed with attention to detail. It contains lots of features while keeping its stylish, minimal look. The Coming Soon site template is designed to catch attention and inform visitors of what you are up to. This allows visitors to subscribe to your mailing list so that you can notify them about the launch.
+
+1)
+Basic Coming Soon page
+This example of the Tailwind Coming Soon page can be used in dark mode. It shows a countdown timer and a call-to-action form where users could enter an email to sign up for the waitlist. 
+
+2)
+Splitted coming soon page
+Use the following example, where you can show the description, CTA form, social icons, and countdown timer side by side.
+
+3)
+Circular countdown coming soon page
+The following example of tailwind CSS coming soon page shows nicely crafted content in a circular progressbar style with a gradient background.
+
+4)
+Tailwind is coming soon with a gradient background.
+This example shows a heading, countdown timer, and CTA form with social icons on a gradient background.
+
+5)
+Dark tailwinds are coming soon.
+Use the following example to show a basic description with social icons and a call-to-action form. This example is specially designed for the dark mode theme.
+
+6)
+Tailwind is coming soon.
+This example can be used to show only a countdown timer with a notification form and social icons on a beautiful background image.
+
+
+===========dashboard=============
+This Template is a modern HR Managment Dashboard Template that is based on Tailwind CSS, and This template is mainly used for human resource management, which simplifies the manual process of management, employee management, and office management.
+
+This is a project management and HR automation template that can be used for the HRMS system. This template is built and integrated with Tailwind CSS and Alpine JS. All businesses connected with HR can be monitored and managed on a single dashboard using this template.
+
+It has different reusable and professional responsive components with multiple variations. It also contains a mega-collection of features that can help use this template for small to large projects.
+
+We have provided more than 15 pages, which includes attendance, calendar, company profile, employess, leaves, notifications, payroll etc. Following Dashboard Template is fully responsive from Desktop screen to mobile screen. This template has some additional features such as calendar, form elements, charts, icons, login, register, profile and many more.
+
+https://pagedone.io/asset/uploads/1718878940.jpg
+
+HR Managment Dashboard Figma and Tailwind CSS Template
+
+hr-managment-dashboard
+
+=======================refund overview========================
+The Tailwind CSS Refunds Overview provides users with a list of all pending and completed refunds for your e-commerce website and manage them from a dashboard. It shows all the process where users can track, manage, and analyze all refund transactions effortlessly.
+
+Default refunds list
+Refunds list with table
+Refunds list with sidebar
+Refunds list with drawer
+Refunds list with modal
+
+
+Default refund overview list
+This is the default refunds overview list where you can see list of all the products that is refunded with their product details, dates of refund, resons and status. 
+
+Refund with Table
+Following refunds overview list with table where you can see list of all the products which is refunded with there product id, dates, reasons, status and many more details.
+
+Refund list with filter
+This examples shows list of products with product details, filter options, search input, CTA buttons. You can also download report of your refunds.
+
+Refund with CTA
+Following tailwind refund overview shows a list of refunded items with pickup details, reason for return, CTA buttons for re-order, view details and download report.
+
+Refund list with personal details
+This example shows a list of refunded items with customer personal details, order details, reason for return and CTA buttons of cancel order, view details and add refund request.
+
+=================refund status=================
+Tailwind CSS Refund Status shows the current state of the refund process for a purchased item. It is essential for both customers and sellers to track and understand where a refund request stands.
+
+1)
+Default refund status section
+Use this example to show a timeline of the requested refund process with all product details and essential CTA buttons.
+
+2)
+side-by-side refund status with timeline
+The below example of Tailwind CSS refund status shows a split layout of the refund process to track by showing refund details, personal details, and product details on the left side and the whole timeline of the refund process on the right side.
+
+3)
+Refund status with order summary
+This example shows refund status with an order summary, product details, reason for return, and CTA buttons. It shows the whole order refund process, where you can track your refund request.
+
+4)
+Refund status with progress steps
+The following tailwind refund status example shows all progress steps of the refund process, such as sending the refund request, request acceptance, pickup details, product verification, and refund amount.
+
+5) Refund track with detailed steps
+This example shows refund status with detailed steps of the refund process, such as refund request, product pickup, product verification, and refund amount.
+
+==================order tracking==================
+Tailwind CSS Order Tracking is collection of components  designed to facilitate tracking and management of orders within a web application or e-commerce website. users can monitor their orders in real-time and check the status of an e-commerce order starting from the payment confirmation until the final delivery of the product.  
+
+Tailwind CSS Order Tracking
+
+Tailwind CSS Refund Status | Pagedone
+
+Default order tracking
+Order tracking with timeline
+Order tracking with cards
+Order tracking with drawer
+Order tracking with modal
+
+1)
+Default order tracking
+Following this example to show a timeline of the status of a product ordered from an e-commerce website after the purchase has been completed by the customer.
+
+2)
+Order tracking with horizontal steps
+This Tailwind Order tracking example shows order tracking with horizontal steps, where you can track your order status with detailed steps like order confirmed, shipping and delivery estimates.
+
+3)
+Order tracking with CTA
+This example shows order tracking process with CTA buttons, where you can download invoice of orders. It also shows order details with images of purchased items.
+
+4)
+Side by side order tracking 
+Following example shows order details next to order tracking steps where it shows order received, order pickup, estimate delivery time etc.
+
+5)
+Order tracking with map indication
+Use below example to show a list of tracking events along with purchased items list in a tabular format with map indication for precise order tracking
+
+6)
+Order tracking with vertical timeline
+Use this tailwind order tracking component to show a vertical timeline of the shipping order status and an overview of the purchased items along with list of orders and order summary.
+
+7)
+Order tracking with progress indication
+Use below example tailwind css order tracking example to show all purchased items list with there details and order tracking progress steps with different indications which indicates shipping order status.
+
+8)
+Order tracking with location indication
+This example shows order tracking with location indication using google map, where you can monitor the progess and location of purchased items.
+
+9)
+Vertical order tracking timeline
+Following example shows list of purchased items alongside progess step of order status and google map indication.
+
+10)
+Order tracking with cards
+This component can be used to show a tracking events and a set of cards where you can show the order information.
+
+==================how it works==================
+    The Tailwind CSS How It Works section is a collection of responsive website sections built with Tailwind CSS to showcase the working flow of a product or system.
+
+1) 
+Default how it works
+This example shows a default how it works section with a set of columns where you can show the steps of the process.
+
+2)
+How it works with icons
+Following how it works, the tailwind section shows some steps behind a particular process with icons to separate each step.
+
+3)
+How it works with illustration
+Use the following tailwind how it works example to show process steps with creative illustration and numeric step indication.
+
+4)
+How it works with cards
+This example shows a how-it-works section with cards, where you can show the steps of the process with cards.
+
+5)
+Side by side How it works: blocks
+Use this example to show a vertical process step card on one side and some headings and descriptions on the other..
+
+6)
+How it works with the grid layout
+This example shows a how-it-works section with grid layout where you can show the steps of the process with help and description inside cards.
+
+7)
+How it works with horizontal progression
+Use the following  example to showcase the horizontal progress of a particular process with icons and separators.
+
+8)
+How it works: cards with images
+This example showcases how the process works inside the card with its images and detailed description.
+
+9)
+How it works: cards with illustrations
+Use the below example to show a process steps card alongside creative illustrations.
+
+10)
+Vertical how it works cards
+Showcase how you process STEPs inside cards with their description in a vertical format.
+
+11)
+horizontal how it works steps
+This example shows process steps with separators in a horizontal way.
+
+12)
+How it works with the CTA
+This example shows a how it works section with a CTA button, heading, and paragraph above the process steps.
+
+13)
+splitted how it works blocks
+Use this example to show process steps in a split way, with a heading and description on one side and process steps on the other..
+
+14)
+How it works with creative illustration
+This tailwind CSS how it works example can be used for vertical process steps alongside creative illustration that provides a modern look.
+
+15)
+How it works in dark mode
+Use this example if you want to show process steps in a grid-like manner, especially for the dark version of the website.
+
+
+1) how it works
+3) coming soon
+4) under maintenance
+5) about us
+6) refund form
+7) order tracking
+8) refund status
+9) refund overview
+10) refund form
+
+===============hero section==============
+tailwind hero section
+tailwind css hero section
+hero section tailwind css
+hero section tailwind
+Tailwind Hero Examples
+Tailwind Hero template 
+
+25) Tailwind hero section with card layout
+Use this example with heading, CTA buttons, and other section cards to showcase what your website.
+
+26) Hero section with carousel slider
+This example shows a hero section with a carousel slider with images together with a main heading, description, CTA button and a list of company logos.
+
+27) Cover image with blog description
+This example can be used if you want to highlight a large image, two badges with heading and show blog information in small card format which often used for blog websites.
+
+28) App screenshot with CTAs
+Use this example to show a screenshot of your dashboard application and CTA buttons to provide a visual demo.
+
+29) Visual image with banner
+This example can be used if you want to show a visual image with a banner and a heading. This example is best suitable for fashion website.
+
+30) Background image with CTA
+In this block example it shows background image over that you can display main heading, description and CTA Button.
+
+31) Splitted hero section with image
+This example shows a hero section with a splitted layout with image on one side and heading, description and two seperate CTA Buttons.
+
+32) Hero Section with content card
+Use this tailwind hero example shows difference content box related to your website theme. this is perfectly suitable for fitness website where you can show heading, description and CTA buttons along with images.
+
+33)
+Hero section with vertical carousel
+This example shows a hero section with a vertical carousel with images together with a main heading, description and separate CTA Buttons.
+
+34) 
+Vertical hero with cover image
+This example shows a vertical hero section with a cover image, heading, description, badge and CTA button.
+
+35)
+hero section with seperate card layout
+Use following example to show card layout in a hero section where you can display cover image on one side and heading, description, CTA Button on other side.
+
+36)
+hero section with phone mockup 
+This example shows a phone mockup image alongside heading, description and two separate CTA buttons.
+
+37)
+tailwind hero with stat counts
+Use following example to show cover image next to heading, description, CTA button and stat counts.
+
+40)
+Creative Hero section with search
+This is a creative hero section example splitted between two parts, left side shows heading, description, search input and stat counts and right side shows cover image.
+
+41)
+Mobile application hero section
+This is an simple example of mobile app hero section which shows mobile application screenshot on one side and heading, description, CTA button on other side.
+
+42)
+hero section with background and cards
+This is a hero section example which shows heading, description and cards with images.
+
+43)
+hero section with content blocks
+Use following example to show heading, description, CTA button and content blocks with icons covered with background image.
+
+44)
+Vertical hero section with images
+This is a vertical hero section example which shows heading, description, CTA button and images with product related description.
+
+45)
+hero with grid column images
+Use below example to shows images in a grid column way alongside heading, description, CTA Button and stat counts.
+
+46)
+hero section with statistics carousel
+This example shows full width statistics carousel below heading, description and CTA Button.
+
+47)
+Accommodation hero section with social icons
+Use following main heading, social media icons and check-in checkout details covered with background image.
+
+48)
+background illustration with dark mode
+This is a hero section example which shows heading, description, two separate CTA button and background illustration that can be used for dark theme website.
+
+49)
+side by side hero section with image
+This example shows heading, description and CTA button next to cover imnage.
+
+50)
+hero section with vertical content block
+This is a hero section example which shows vertical content block alongside main heading and badge.
+
+51)
+Dark theme App screenshot with CTAs
+This example is specifically designed for dark theme website where you can show application screenshot image alongside main heading, description and CTA button.
+
+52)
+creative hero section with background image
+This is a modern and creative hero section example which shows main heading, description, CTA button covered with layered background image.
+
+53)
+Tailwind hero with dark theme
+This example is specially designed for dark theme website. It shows four grid content blocks with description and icons along with main heading and CTA button.
+
+54)
+three column hero section 
+This is a three grid column hero section example where you can show vertical content block, image, main heading, description, CTA button and stat counts all togather.
+
+55)
+hero section with thumbnail carousel
+This example is a modern hero section which improve the visual impact of the website's first visit. It shows thumbnail carousel with description.
+
+56)
+Cover image with CTA
+This example is a vertical hero section which shows main heading, description and CTA button above creative image with content blocks.
+
+57)
+
+
