@@ -29189,6 +29189,11 @@ input[type="radio"]:checked:disabled + label span{
     margin-bottom: 0px;
   }
 
+  .lg\:mx-8{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .lg\:mb-0{
     margin-bottom: 0px;
   }
@@ -29263,6 +29268,10 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:mt-20{
     margin-top: 5rem;
+  }
+
+  .lg\:mt-16{
+    margin-top: 4rem;
   }
 
   .lg\:block{
