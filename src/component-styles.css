@@ -1,5 +1,17 @@
 @layer components {
+   /* Firefox */
+    @media (prefers-color-scheme: dark) {
+        :root {
+            color-scheme: light;
+        }
+    }
 
+    /* Chrome */
+    @media (forced-colors: active) {
+        :root {
+            color-scheme: light;
+        }
+    }
     /*=============Navbar CSS=================*/
     .navbar {
         @apply fixed top-0 border-solid border-gray-200 w-full border-b py-3 bg-white z-50;

@@ -564,6 +564,22 @@ video {
   }
 }
 
+/* Firefox */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+/* Chrome */
+
+@media (forced-colors: active) {
+  :root {
+    color-scheme: light;
+  }
+}
+
 /*=============Navbar CSS=================*/
 
 .navbar{

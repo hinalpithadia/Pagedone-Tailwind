@@ -575,7 +575,7 @@ This is a hero section example which shows heading, description, two separate CT
 side by side hero section with image
 This example shows heading, description and CTA button next to cover imnage.
 
-50)
+49)
 hero section with vertical content block
 This is a hero section example which shows vertical content block alongside main heading and badge.
 
@@ -604,5 +604,642 @@ Cover image with CTA
 This example is a vertical hero section which shows main heading, description and CTA button above creative image with content blocks.
 
 57)
+hero section with customer logos
+This example shows cover image, content blocks with CTA button and customer logos.
 
 
+
+
+58)
+Visual image with partner logos
+Use following vertical hero section example where you can show heading and description side by side above visual image and partner's logo.
+
+60)
+modern hero section with carousel
+This is a modern hero section example which shows main heading, description with carousel covered by background image.
+
+61)
+simple hero section with creative image
+This example is a simple hero section which shows main heading, description and CTA button next to bunch of creative images.
+
+62)
+product hero section with carousel
+Use following example to show product slider alongwith carousel navigation arrow, numerics and description.
+
+63)
+Travel hero section with dark background
+This example is a modern and unique hero section which have dark background image with information badge, main heading, paragraph and CTA Button.
+
+64)
+Flight Booking hero section with information stats
+Use following example of tailwind hero section to show cover image next to heading, paragraph, CTA Buttons and information stats.
+
+Gallery section with testimonial 
+This example shows gallery in na testimonial manner with images and CTA button to scroll testimonial.
+
+
+Hero section with thumbnail carousel
+
+=============modal=====================
+Tailwind CSS Modal
+Pagedone offers a range of beautifully designed, modern tailwind modals, which comes in a variety of sizes, colours, and styles, to display interactive dialogues and notifications to visitors to your website. You can use the modal component to collect information from your website's users and display notifications above the main content area.
+
+Tailwind CSS Modal | Pagedone
+
+Pagedone offers a range of beautifully designed, modern tailwind modals, which comes in a variety of sizes, colours, and styles, to display interactive dialogues and notifications to visitors to your website. 
+
+
+tailwind modal 1
+tailwind css modal 1
+modal tailwind 1
+tailwind ui modal 1
+tailwind modal example 1
+modal in tailwind css 1
+tailwind popup 1
+tailwind css popup 1
+tailwind modal popup 1
+popup tailwind 1
+
+  ==modal 4==
+	https://pagedone.io/asset/uploads/1720776749.png
+  https://pagedone.io/asset/uploads/1720776764.png
+  https://pagedone.io/asset/uploads/1720776780.png
+
+  ===modal 9==
+  https://pagedone.io/asset/uploads/1720777156.png
+  https://pagedone.io/asset/uploads/1720777168.png
+
+  ===modal 15==
+  https://pagedone.io/asset/uploads/1720776938.png
+
+  ==modal 17==
+  https://pagedone.io/asset/uploads/1720776864.png
+  https://pagedone.io/asset/uploads/1720776874.png
+  https://pagedone.io/asset/uploads/1720776884.png
+  https://pagedone.io/asset/uploads/1720776893.png
+  https://pagedone.io/asset/uploads/1720776904.png
+
+  ===modal 19==
+  https://pagedone.io/asset/uploads/1720776807.png
+  https://pagedone.io/asset/uploads/1720776818.png
+  https://pagedone.io/asset/uploads/1720776828.png
+  https://pagedone.io/asset/uploads/1720776842.png
+  https://pagedone.io/asset/uploads/1720776852.png
+
+
+
+input[type='checkbox']:checked {
+  background-image: url(https://pagedone.io/asset/uploads/1720777129.png);
+}
+
+input[type='checkbox']:checked+label {
+  background-color: #fff;
+}
+
+.orange-check input[type='checkbox']:checked {
+  background-image: url(https://pagedone.io/asset/uploads/1720777144.png);
+}
+
+.white-check input[type='checkbox']:checked {
+  background-image: url(https://pagedone.io/asset/uploads/1720777180.png);
+}
+
+.green-check input[type='checkbox']:checked {
+  background-image: url(https://pagedone.io/asset/uploads/1720776792.png);
+}
+
+input[type="radio"]:checked+label span {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 102 241 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+  --tw-shadow: inset 0 0px 0px 3.5px #E7E7FF;
+  --tw-shadow-colored: inset 0 0px 0px 3.5px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+
+
+
+
+1. Simple Modal with Icon
+desc:- Use this modal to highlight important information or notifications with icon
+
+2. Modal with Link Sharing
+desc:- Utilize this modal to quickly share URLs or documents, facilitating seamless information exchange among team members or collaborators.
+
+3. Feedback Modal
+desc:- Deploy this modal to get users questions effectively, enhancing engagement and refining user experience.
+
+4. Manage Team Modal
+desc:- Utilize this modal to manage team members, assign responsibilities, and streamline collaboration within your organization or project.
+
+5. File Upload Modal
+desc:- Use this modal to upload documents, images, or other files easily, Enables seamless uploading of files with a user-friendly interface.
+
+6. Modal with Single Action
+desc:- Deploy this modal for straightforward tasks such as confirmation prompts or simple alerts.
+
+7. Modal with carousel
+desc:- Utilize this modal with a carousel to display and navigate through multiple images or items, 
+
+8. Modal with Input and Toggle Buttons
+desc:- Utilize this modal to collect user inputs and enable toggling between options or settings, providing a flexible and intuitive interface for user customization or selection.
+
+9. Notification Modal
+desc:- Use this modal to notify users about important updates, alerts, or messages, ensuring timely communication and enhancing user awareness.
+
+10 Create Profile Modal with File Upload
+desc:- Use this modal to enable users to create profiles with uploading necessary documents or images.
+
+11 Feature Modal with carousel
+desc:- Deploy this modal to showcase multiple features or product details using a carousel, allowing users to navigate through content easily and engage with key aspects of your offering.
+
+12 Relogin Modal with Password Input
+desc:- Utilize this modal to prompt users for secure reauthentication by entering their password, ensuring a safe and streamlined login experience.
+
+13 Currency Exchange Modal with Dropdown
+desc:- Use this modal to facilitate quick and accurate currency conversions, allowing users to select currencies and view exchange rates effortlessly.
+
+14 Subscribe Modal with Input
+desc:- Utilize this modal to allow users to subscribe easily by entering their email address, ensuring seamless registration for updates and newsletters.
+
+15 Team Management Modal
+desc:- Utilize this modal to manage team roles, assignments, and communication within projects, ensuring streamlined coordination and productivity.
+
+16 Messaging Modal with File Upload
+desc:- Use this modal to facilitate seamless messaging while allowing users to share files, fostering effective collaboration and information exchange.
+
+17 multiple account handle with checkbox
+desc:- Utilize this modal to allow users to manage multiple accounts efficiently by selecting options with checkboxes, streamlining account handling and user experience.
+
+18 Event Modal
+desc:- Use this modal to schedule and organize events, allowing users to set dates, times, and details easily, ensuring smooth event planning and management.
+
+19 Create Meeting Modal
+desc:- Utilize this modal to efficiently plan and organize meetings, enabling users to set dates, times, and participant details for seamless collaboration and scheduling.
+
+20 Create Project Modal with Team Selection
+desc:- Use this modal to initiate projects and select team members, ensuring efficient team allocation and streamlined project management.
+
+21 Payment Modal with Input Fields
+desc:- Utilize this modal to facilitate secure payments, allowing users to input transaction information such as card details and billing address, ensuring smooth and reliable transaction processing.
+
+22 Sign In Modal with Wide Button
+desc:- Utilize this modal for a straightforward sign-in experience with wide buttons
+
+23 Share with input search modal 
+desc:- Utilize this modal to facilitate content sharing by allowing users to search contacts by name or email.
+
+24 Simple Modal with Number Input 
+desc:- Use this modal to gather phone number from user to authenticate the user.
+
+25 Share Modal with Input and Checkbox
+desc:- Utilize this modal to facilitate content sharing where users can input details and select options via checkboxes, ensuring personalized and efficient sharing experiences.
+
+26 modal with verification code input
+desc:- Use this modal to prompt users to input verification codes received via email or SMS, ensuring secure and seamless verification processes.
+
+27 Invite Modal with File Input
+desc:- Use this modal to invite users while allowing file uploads, enabling seamless collaboration and sharing of necessary documents or resources.
+
+28 Success Modal with Two Buttons
+desc:- Deploy this modal to confirm successful operations and offer users choices for subsequent actions, enhancing interaction and user control.
+
+29 Modal with Form Element
+desc:- Utilize this modal to collect detailed information or preferences from users, ensuring organized data capture and enhancing user interaction.
+
+30 Currency Converter Modal
+desc:- Use this modal to facilitate quick and accurate currency conversions, allowing users to select currencies and view exchange rates effortlessly.
+
+31 Modal with Search
+desc:- Utilize this modal to enable users to search and locate specific information or items within a focused interface, enhancing usability and navigation.
+
+32 Modal with Footer
+desc:- Use this modal to navigation links, or action buttons at the bottom, ensuring comprehensive user interaction and functionality.
+
+33 Radio Input Modal
+desc:- Utilize this modal to enable users to make single-choice selections from a list of options using radio buttons, ensuring clear and straightforward input.
+
+34 Modal with Social Media Buttons
+desc:- Use this modal to allow users to connect with their social media accounts directly.
+
+35 Card Modal with Share Link Option
+desc:- Utilize this modal to display content or information in a card format, with the added functionality of sharing links.
+
+36 Pricing Plan Modal with Radio Buttons
+desc:- Utilize this modal to present various pricing options or subscription plans, allowing users to easily compare and select preferred choices using radio buttons for straightforward decision-making.
+
+37 Modal with Search and Checkbox
+desc:- Utilize this modal to Combines search functionality and checkboxes within the modal for flexible data filtering.
+
+38 Modal with Separator
+desc:- Utilize this modal to visually separate content within a structured interface, improving clarity for users.
+
+39 Date Input and Toggle Button Modal
+desc:- Use this modal to allow users to input dates and toggle between options.
+
+40 share modal with customizing options
+desc:- Utilize this modal to allow users to customize sharing options, such as link accenss or download option.
+
+41 Simple Delete Modal
+desc:- Utilize this modal to confirm the deletion of items or content with a clear and simple interface, ensuring user clarity and control over actions.
+
+42 Delete Modal with Checkbox
+desc:- Use this modal to confirm deletion actions, requiring users to check a box as an extra step to ensure intentional deletions, enhancing user control and preventing accidental data loss.
+
+43 Modal with Full Width Buttons
+desc:- Use this modal to confirm and execute deletion actions with prominently displayed full-width buttons, ensuring straightforward user interaction and minimizing accidental deletions.
+
+https://www.figma.com/design/ZCaKttl7vBY8qfTqGV1KiB/Pagedone-Designer-Plus-Preview-Variable?node-id=29235-1197&t=msg0xlHsv6b33Q1f-0
+
+=====================framer=======================
+==========template 1==========
+SAP is a landing page template designed to showcase SaaS and app information effectively, featuring a clean and modern look.
+
+SAP is a meticulously crafted landing page template, purpose-built to effectively showcase SaaS and app information with a clean, modern aesthetic. This versatile template combines sleek design elements with intuitive functionality, ensuring a seamless user experience for visitors exploring your software or application offerings.
+
+With SAP, you can effortlessly communicate key features, benefits, and unique selling points of your SaaS product or app. The layout is thoughtfully designed to highlight essential information, such as pricing plans, features comparison, and customer testimonials, all while maintaining a visually appealing and clutter-free interface.
+
+========template 2=========
+Whether you're launching a new product, promoting updates, or attracting potential users, SAP provides the ideal platform to present your software solutions in a professional and engaging manner. Its customizable features allow you to tailor the content and design to align perfectly with your brand identity, helping you leave a lasting impression and drive conversions effectively.
+
+Meet Paradox, a fully-featured landing page kit, including design files, beautiful 3D illustrations (alpha background) in Figma, and a production-ready React codebase and Framer template.
+
+Production-ready landing page template for SaaS and startups
+This package includes a responsive and fully customized landing page template with 50+ clean and modern premade screens. We've intentionally added a lot of different content to maximize the number of layout options. Drag, drop, and mix different parts to quickly build your landing page in a matter of minutes.
+
+========template 3===========
+Welcome to Vigo, a colorful, expressive template perfect for your SaaS product or your startup, including landing pages for features, integrations and pricing.
+
+Welcome to Vigo, where vibrant colors and expressive design converge in a template crafted for your SaaS product or startup venture. This dynamic platform includes meticulously designed landing pages tailored for showcasing features, integrations, and pricing options. Vigo's engaging interface captivates visitors from the moment they arrive, seamlessly guiding them through key aspects of your offering. Whether highlighting innovative features, demonstrating seamless integrations, or presenting transparent pricing structures, Vigo ensures a compelling user experience that drives conversions. Embrace Vigo to amplify your brand's presence with a modern, visually striking presentation that resonates with potential customers and accelerates your business growth.
+
+
+====================Feature section=====================
+https://www.figma.com/design/ZCaKttl7vBY8qfTqGV1KiB/Pagedone-Designer-Plus-Preview-Variable?node-id=1251-12271&t=fs4YfL3l2ml6MJrF-0
+
+25)
+Feature section with card layout
+Description: Use this section to showcase the features and benefits of your product or service in a visually appealing manner with a grid card layout.
+
+26)
+Features with a ticker slider
+Description: Use the following section to highlight features of your product or service with a ticker slider, which include brand logos, the main heading, and a paragraph.
+
+27)
+Feature blocks with partial slides
+Description: This example can be used to show features in a partial visible slide with icons, headings, and descriptions.
+
+28)
+Feature list with rounded cards
+Description: Use the following example to show rounded feature cards in a grid layout with creative icons, CTA links, and descriptions.
+
+29)
+Feature list with dashboard image
+Description: This example can be used to display a dashboard or app mockup along with a feature list and CTA button.
+
+30)
+Multicolor Feature Cards
+Description: Use this example to show different color card backgrounds with icons, headings, and paragraphs.
+
+31)
+Feature tab blocks
+Description: The following example can be used to show features of a product or service in rounded tabs that display images, descriptions, and content blocks.
+
+32)
+Feature cards with background icons
+Description: Use the below example to showcase feature cards in a grid where you can set icons in the background of the cards.
+
+33)
+Application Feature Cards
+Description: Use this example to show application mockup images inside cards where cards are placed in a grid format.
+
+34)
+A feature list with colorful icons
+Description: Use the below example to showcase a feature list with colorful icons, headings, and descriptions.
+
+35)
+Feature tab cards with banners
+Description: This example can be used to show horizontal feature tab cards with banner content and a CTA button.
+
+36)
+A feature list with a partial background
+Description: Use this example to show horizontal feature list cards with a partial background from the top side.
+
+37)
+Center-mode feature card slider
+Description: Use this example to show feature cards in a slider with center mode, icons and heading.
+
+38)
+Vertical feature list with cover image
+Description: Use this example to show a vertical feature list with a cover image, CTA button, and description.
+
+39)
+Features with auto-height cards
+Description: This example can be used to show feature cards that have an auto-height where you can put an image, a heading, and a description.
+
+40)
+Grid layout feature cards
+Description: The following example can be used to showcase feature list cards with headers to display icons and headings separately.
+
+41)
+Vertical Accordion Feature List
+The following example can be used to display a feature list inside an accordion next to the cover image below the main heading, CTA button, and descriptions.
+
+42)
+Features with graphs and the cover image
+Description: Use this example to show feature cards with graphs and a cover image of the dashboard or app, along with a CTA button and description.
+
+43)
+Alternate image with a dark feature list
+desc:-  The following section is specially designed for the dark version of your website. If you want to alternate an image and feature list next to each other and improve the visual attractiveness of the page, use this example.
+
+44)
+Partial feature slider with the dark version
+Description: This example shows feature cards with an image, description, and CTA link inside the slider.
+
+45)
+Rounded feature list tabs with cover images
+Description: This example shows a feature list with rounded tabs that includes a cover image, heading, and description.
+
+46)
+Three-column grid feature list
+Description: This example shows a feature list grid in three columns with multicolor icons, headings, and paragraphs.
+
+47)
+Two-column feature grid
+Description: Use the following example to display a feature list card in two grid columns with icons, headings, and descriptions.
+
+48) 
+Vertical feature list with icons
+Description: This example can be used to show a vertical list of features with icons, headings, and descriptions, along with a cover image.
+
+49)
+Feature cards with graph images
+Description: Use the below section to display a feature list card with graphs, headings, paragraphs, and a CTA button.
+
+50)
+Features with illustrations
+Description: The following example can be used to show creative illustration inside feature cards along with icons, headings, and descriptions.
+
+51)
+Features grid with translated icons
+Description: This example can be used to show feature cards with translated icons, headings, descriptions, and CTA buttons.
+
+52)
+Splitted feature blocks with image
+Description: Use this example to display the cover image and feature list side by side.
+
+53)
+Features with illustration image
+Description: Use the following example to show creative illustration images along with headings, paragraphs, and CTA links.
+
+54)
+Feature block cards with graph images
+Description: This example is specifically designed to show graphs inside cards along with a heading and description.
+
+55)
+Features with the app mockup
+Description: Use the below example to show feature list blocks alongside an application mockup image.
+
+56)
+Feature cards with overlay images
+Description: The following example can be used to show feature cards with an overlay on a background image with a heading and description.
+
+57)
+Modern structured images with feature lists
+Description: This example can be used to show expertly designed image structure alongside feature icons and descriptions.
+
+58)
+Horizontal feature tabs with images
+Use following example to add tab content to show feature cards which includes images, main title and CTA link.
+
+59)
+Feature grid with gradient icons
+Description: Use the following example to show a feature list card in a grid format with gradient icons, headings, and descriptions.
+
+60)
+Horizontal feature listing
+Description: This example can be used to show a horizontal feature listing with an image, heading, description, and CTA button.
+
+61)
+Multicolor feature cards
+Description: Use the following example to show feature cards with a multicolor background along with a heading, description, and CTA button.
+
+
+Features with a ticker slider ==continue loop
+Feature cards with background icons==hover effect
+Center-mode feature card slider==undhu fare che
+
+==keyword==
+tailwind features section
+tailwind css features component
+tailwind Features
+tailwind css feature section
+features section tailwind
+tailwind features components
+feature tailwind css
+box-shadow: .25rem .25rem 0rem rgb(var(--color));
+================404 page===========
+Tailwind CSS 404 Pages
+
+Choose from various 404 "not found" landing pages created with Tailwind CSS to show visitors when a page isn't available on your site.
+
+404-page
+
+Tailwind CSS 404 Pages | Pagedone
+
+
+1) Default 404 page
+Following tailwind 404 page can be used to show errors page on website when a user visits a page that doesn't exist with a description.
+
+2) 404 error page with illustration
+Use following tailwind css 404 page to show creative illustration at the center with search input and some description.
+
+3) SVG illustration with search bar
+This 404 page is used to show beautiful illustration with search bar and some important detail when page in not available.
+
+4) 404 page with CTA button
+Use this 404 page tailwind to display CTA button, description and illustration on the center of page when a page is unavailable or doesn't exist.
+
+5) side by side 404 tailwind page
+This tailwind 404 error page is used to show two side by side illustrations with description and CTA button.
+
+
+========image rounded issue=======
+
+testimonial 27
+testimonial 30
+testimonial 40
+testimonial 43 shadow cut
+testimonial 44 slider cut
+testimonial 46 replace img add border and rounded
+testimonial 48 slider responsive
+
+tailwind testimonial component
+testimonial tailwind
+tailwind tesimonial slider
+tailwind tesimonial card
+tailwind testimonial
+testimonial carousel tailwind
+testimonial slider tailwind
+tailwind css testimonial
+tailwind testimonial carousel
+tailwind css slider
+
+26)
+Vertical testimonial slider
+Use following tailwind testimonial component to add slider as a testimonial with user images and their description.
+
+27)
+Tailwind testimonial with active user
+This example can be used to add all user's experience in a testimonial way where you can show user's image, name and description.
+
+28)
+Testimonial multicolor cards
+Use this example to add tailwind tesimonial card with different colors and user's experience with there images, names and ratings.
+
+29)
+Testimonial card with translated images
+Use following tailwind css testimonial example to show testimonial cards with names, description and images translated on the top.
+
+30)
+Side by side testimonial cards
+Use this example to show testimonial cards with user's name, description and images on the side by side cards.
+
+31)
+Tailwind testimonial carousel with top thumbnail images
+This example can be used to show small thumbnail images as a part of carousel to navigate between slides.
+
+32) 
+Video cover testimonials
+Use this example to show video experience as a testimonial with user's name and description.
+
+33)
+User experience testimonial with image
+This example can be used to show user's unique experience inside dark card and cover image as a background.
+
+34)
+Client testimonial partial slider
+Use this tailwind tesimonial slider example to show client's testimonial cards with their name, description and social icons.
+
+35)
+Customer review with product image
+This tailwind testimonial example can be used to show customer review with product image and description.
+
+36)
+Tailwind testimonial card with gradient border
+Use following example to show main testimonial card with heading, description and social icons with gradient color border.
+
+37)
+Alternate tailwind tesimonial cards
+This example can be used if you want to alternate an testimonial cards next to each other and improve the visual attractiveness of the page.
+
+38)
+Center mode slider with dark version
+Use following tailwind css slider to show custom review inside dark cards with their star reviews, names and description.
+
+39)
+Vertical testimonial cards
+This tailwind testimonial example can be used to show vertical testimonial cards next to main heading and description.
+
+40)
+Testimonial slider as a tab
+Use this example to show testimonial slider as a tab content with user's name, description and images.
+
+41)
+Tailwind css customer review slider
+This example can be used to show customer review slider with user's name, review details and images.
+
+42)
+Testimonial Grid cards
+Use following example to show two column tesimonial cards with customer's image, name, review details and social icons.
+
+43)
+Basic testimonial cards 
+This example can be used to show basic testimonial cards with user's name, images and review details.
+
+44)
+Testimonial dark card with review
+Use following example to show testimonial dark card with user's review details, images and star reviews.
+
+45)
+Two vertical testimonial sliders
+This example can be used to show two modern vertical slider crosses each other with dark version.
+
+46)
+Two column testimonial card
+Following testimonial section can be used to show testimonial cards with review details in a two grid column cards.
+
+47)
+highlighted testimonial card slider
+This tailwind tesimonial section can be used to highlight active testimonial card to grab attention inside slider.
+
+48)
+Simple testimonial cards
+Use this Tailwind testimonial cards which shows image on top and review description, star reviews, user names on bottom of the card.
+
+49)
+Single Testimonial slider
+Following example shows single customer review with their image at a time and you can navigate between slider by clicking on user images.
+
+50)
+Vertical card slider 
+This tailwind testimonial slider example shows vertical card as a navigation of slider next to main customer review.
+
+51)
+Client review two column card
+This example can be used to show client review two column card with user's name, images, review details and star review.
+
+
+
+Related to the box model, which of the following are true? Select all that apply.
+ans:last 2
+
+What is the primary element we used to organize content on the Calendar App site?
+
+
+Why is it important to add alt text to all images that have meaningful content? Select all that apply.
+ans:all 3
+
+In order to set the base styling on all H3 tags on your site you need to:
+ans: select all h3
+
+What is the purpose of the Webflow Designer? Select all that apply.
+ans:all 3 
+
+
+
+What is the simplest way to add default alt text to any instance of an image that doesn’t already have alt text associated with it?
+ans: add specific asset in asset panel
+
+
+
+background: linear-gradient(90deg, #EC4899 0%, #E879F9 100%);
+
+
+ <button class="p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200  font-manrope text-sm font-bold whitespace-nowrap text-indigo-600">
+                <div class="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-l from-pink-500  to-pink-700">
+               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.63955 0C2.0772 0 0 2.0772 0 4.63955V16.3605C0 18.9229 2.0772 21.0001 4.63955 21.0001C7.2019 21.0001 9.27909 18.9229 9.27909 16.3605V4.63955C9.27909 2.0772 7.2019 0 4.63955 0ZM4.63955 14.6512C3.69552 14.6512 2.93024 15.4165 2.93024 16.3605C2.93024 17.3045 3.69552 18.0698 4.63955 18.0698C5.58357 18.0698 6.34885 17.3045 6.34885 16.3605C6.34885 15.4165 5.58357 14.6512 4.63955 14.6512Z" fill="url(#paint0_linear_6508_6942)"/>
+<path d="M10.7247 16.8357C10.7367 16.679 10.7429 16.5207 10.7429 16.3609V4.6399C10.7429 4.34045 10.7213 4.04603 10.6797 3.75812L11.076 3.36182C12.8878 1.54997 15.8254 1.54997 17.6372 3.36182C19.4491 5.17368 19.4491 8.11128 17.6372 9.92313L10.7247 16.8357Z" fill="url(#paint1_linear_6508_6942)"/>
+<path d="M8.60156 21C8.74124 20.8831 8.87691 20.7592 9.00818 20.628L17.7152 11.9209C19.6182 12.4996 21.0029 14.2683 21.0029 16.3604C21.0029 18.9228 18.9257 21 16.3634 21H8.60156Z" fill="url(#paint2_linear_6508_6942)"/>
+<defs>
+<linearGradient id="paint0_linear_6508_6942" x1="4.63955" y1="0" x2="4.63955" y2="21.0001" gradientUnits="userSpaceOnUse">
+<stop offset="0.25" stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.5"/>
+</linearGradient>
+<linearGradient id="paint1_linear_6508_6942" x1="11" y1="2" x2="11" y2="17" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.75"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_6508_6942" x1="21" y1="12" x2="9" y2="21" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.75"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
+
+                </div>
+               Color Generator
+            </button>
