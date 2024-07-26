@@ -310,9 +310,14 @@
    
     <div
       class="fixed top-[68px] z-30 left-0 w-full border-y border-gray-200 bg-white px-3 py-2.5 sm:pl-8 sm:pr-12 flex items-center justify-between">
-      <div class="flex items-center gap-5">
-        <button
-          class="p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200 rounded-xl font-manrope text-sm font-bold whitespace-nowrap text-indigo-600">
+      <!-- <div class="flex items-center gap-5">border: 1.5px solid;
+
+        border-image-source: linear-gradient(270deg, rgba(234, 237, 245, 0) 2.5%, #EAEDF5 84.64%);
+         -->
+        
+        <div class="bg-[linear-gradient(270deg,rgba(234,237,245,0)_2.5%,_#EAEDF5_84.64%)] w-fit h-full p-0.5  rounded-xl">
+          <button
+          class="p-1.5 pr-5 flex items-center gap-2.5  rounded-xl font-manrope text-sm font-bold whitespace-nowrap text-indigo-600 bg-white relative ">
           <div
             class="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-l from-indigo-500 to-indigo-700">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
@@ -348,6 +353,7 @@
           </div>
           Table Generator
         </button>
+      </div>
         <p class="xl:text-base text-sm font-normal text-gray-700 hidden lg:block">Table Generator helps to generate Table using Layout properties,
           which can be exported in multiple options.</p>
       </div>
@@ -387,7 +393,7 @@
  
     <!----------titlebar End---------->
     <main>
-      <div class="w-full bg-gray-50 flex flex-col-reverse lg:flex-row max-lg:gap-8">
+      <div class="w-full bg-gray-50 flex flex-col-reverse lg:flex-row max-lg:gap-8 lg:pt-28">
       <!----------Leftbar Start---------->
       <aside id="left-bar"
       class="relative lg:fixed lg:top-36 overflow-y-auto lg:z-20 flex-none bg-white  lg:border-r border-gray-200  pt-5  lg:block lg:w-64 xl:w-72 h-auto lg:h-[calc(100vh-150px)] lg:mx-0 mx-8 lg:rounded-none rounded-xl lg:mb-0 mb-10"
@@ -397,7 +403,7 @@
 
         <li class="mb-4 table-range">
           <label for="column" class="flex items-center justify-between mb-2.5">
-            <p class="text-sm font-normal text-gray-700">Column Count</p>
+            <p class="text-sm font-normal p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200 rounded-xl font-manrope text-sm font-bold whitespace-nowrap text-indigo-600 text-gray-700">Column Count</p>
             <span
               class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">6</span>
           </label>

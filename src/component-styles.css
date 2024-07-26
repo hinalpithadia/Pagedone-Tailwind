@@ -15,11 +15,11 @@
     /*=============Navbar CSS=================*/
     .navbar {
         @apply fixed top-0 border-solid border-gray-200 w-full border-b py-3 bg-white z-50;
-    }
+    }  
 
     .nav-link {
-        @apply text-gray-900 text-sm font-medium transition-all duration-500 mx-0 mb-2 block lg:mx-6 md:mx-3 md:mb-0 ;
-    }
+        @apply text-gray-900 text-sm font-medium transition-all duration-500 mx-0 mb-2 block lg:mx-5 md:mx-2 md:mb-0 ;
+    } 
 
     .nav-link:hover {
         @apply text-indigo-700

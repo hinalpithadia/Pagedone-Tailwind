@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Gradient Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
+  <link href="assets/css/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css" />
+
+</head>
+
+<body class="font-inter ">
+  <div class="page-container">
+    <!----------titlebar Start---------->
+
+    <div
+      class="fixed top-0 z-30 left-0 w-full border-y border-gray-200 bg-white px-3 py-2.5 sm:pl-8 sm:pr-12 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <button
+          class="p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200 rounded-xl font-manrope text-lg font-bold whitespace-nowrap text-yellow-400">
+          <div
+            class="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-l from-yellow-500 to-yellow-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+              <path
+                d="M5.53704 21H0.615165C0.388061 21 0.179578 20.875 0.0726093 20.675C-0.0343595 20.4749 -0.0223009 20.2321 0.103248 20.0435L2.56419 16.3521C2.79248 16.0096 3.35969 16.0096 3.58798 16.3521L6.04892 20.0435C6.17451 20.2321 6.18649 20.4749 6.07956 20.675C5.97263 20.875 5.76415 21 5.53704 21Z"
+                fill="url(#paint0_linear_701_4852)" />
+              <path d="M5.57813 6.19336H9.88478V14.8066H5.57813V6.19336Z" fill="url(#paint1_linear_701_4852)" />
+              <path d="M11.1152 6.19336H15.4219V14.8066H11.1152V6.19336Z" fill="url(#paint2_linear_701_4852)" />
+              <path
+                d="M4.34766 6.19336H0.615235C0.275174 6.19336 0 6.46853 0 6.80859V14.1914C0 14.5315 0.275174 14.8066 0.615235 14.8066H4.34766V6.19336Z"
+                fill="url(#paint3_linear_701_4852)" />
+              <path
+                d="M20.3848 6.19336H16.6524V14.8066H20.3848C20.7248 14.8066 21 14.5315 21 14.1914V6.80859C21 6.46853 20.7248 6.19336 20.3848 6.19336Z"
+                fill="url(#paint4_linear_701_4852)" />
+              <path
+                d="M17.9237 4.92188C17.7182 4.92188 17.526 4.81914 17.4118 4.6479L14.9509 0.956485C14.8253 0.767813 14.8133 0.525083 14.9203 0.325008C15.0272 0.124934 15.2357 0 15.4628 0H20.3847C20.6118 0 20.8202 0.124975 20.9272 0.325049C21.0342 0.525124 21.0221 0.767854 20.8966 0.956526L18.4356 4.64794C18.3214 4.81914 18.1292 4.92188 17.9237 4.92188Z"
+                fill="url(#paint5_linear_701_4852)" />
+              <defs>
+                <linearGradient id="paint0_linear_701_4852" x1="3.07608" y1="16.0952" x2="3.07608" y2="21"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.5" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_701_4852" x1="21" y1="10.5" x2="0" y2="10.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.25" />
+                  <stop offset="0.5" stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.25" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_701_4852" x1="21" y1="10.5" x2="0" y2="10.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.25" />
+                  <stop offset="0.5" stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.25" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_701_4852" x1="21" y1="10.5" x2="0" y2="10.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.25" />
+                  <stop offset="0.5" stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.25" />
+                </linearGradient>
+                <linearGradient id="paint4_linear_701_4852" x1="21" y1="10.5" x2="0" y2="10.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.25" />
+                  <stop offset="0.5" stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.25" />
+                </linearGradient>
+                <linearGradient id="paint5_linear_701_4852" x1="17.9237" y1="0" x2="17.9237" y2="4.92188"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0.5" stop-color="white" stop-opacity="0.25" />
+                  <stop offset="1" stop-color="white" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          Gradient Generator
+        </button>
+        <p class="text-base font-normal text-gray-700 hidden lg:block">Gradient Generator helps to create Gradient from
+          the Tailwind CSS Palette. Simply select the colors and set the direction of the gradient.</p>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-5">
+        <button
+          class="p-2 min-[470px]:pr-4 rounded-full border border-gray-300 flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M12.8307 5.08529C12.8307 6.09781 12.0099 6.91862 10.9974 6.91862C9.98485 6.91862 9.16406 6.09781 9.16406 5.08529C9.16406 4.07276 9.98485 3.25195 10.9974 3.25195C12.0099 3.25195 12.8307 4.07276 12.8307 5.08529Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M6.41667 16.0853C6.41667 17.0978 5.59586 17.9186 4.58333 17.9186C3.57081 17.9186 2.75 17.0978 2.75 16.0853C2.75 15.0727 3.57081 14.252 4.58333 14.252C5.59586 14.252 6.41667 15.0727 6.41667 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M19.2448 16.0853C19.2448 17.0978 18.424 17.9186 17.4115 17.9186C16.3989 17.9186 15.5781 17.0978 15.5781 16.0853C15.5781 15.0727 16.3989 14.252 17.4115 14.252C18.424 14.252 19.2448 15.0727 19.2448 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M3.66406 12.3842C3.66406 9.65697 5.13879 7.27589 7.33073 6.00195M14.6641 6.00195C16.856 7.27589 18.3307 9.65697 18.3307 12.3842M7.33073 18.7663C8.40936 19.3932 9.66172 19.752 10.9974 19.752C12.3331 19.752 13.5854 19.3932 14.6641 18.7663"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+          <span class="hidden min-[470px]:block">Share</span>
+        </button>
+        <button
+          class="p-2 min-[470px]:pl-4 rounded-full border border-gray-300 whitespace-nowrap flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <span class="hidden min-[470px]:block">Explore Tools</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M19.25 11.502C19.25 16.0583 15.5564 19.752 11 19.752C6.44365 19.752 2.75 16.0583 2.75 11.502C2.75 6.94561 6.44365 3.25195 11 3.25195C15.5564 3.25195 19.25 6.94561 19.25 11.502Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M9.70973 9.96544L12.5824 12.838M8.65374 11.2186L8.47778 11.7401C7.96634 13.2561 7.71063 14.0141 8.10977 14.4161C8.50892 14.8182 9.26872 14.5679 10.7884 14.0675L11.3111 13.8954C12.1657 13.614 12.5929 13.4732 12.9001 13.1684C13.2072 12.8635 13.351 12.4372 13.6386 11.5848L13.8146 11.0632C14.326 9.54726 14.5817 8.78927 14.1825 8.38722C13.7834 7.98517 13.0236 8.23539 11.5039 8.73582L10.9811 8.908C10.1266 9.18939 9.69937 9.33009 9.39229 9.63501C9.08512 9.93996 8.94132 10.3661 8.65374 11.2186Z"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!----------titlebar End---------->
+    <main>
+      <div class="w-full bg-white flex flex-col-reverse lg:flex-row max-lg:gap-8">
+        <!----------Leftbar Start---------->
+        <aside id="left-bar"
+          class="relative lg:fixed lg:top-20 overflow-y-auto lg:z-20 flex-none  border-r border-gray-200  max-lg:pt-5 scrollbar-y lg:block lg:w-64 xl:w-72 h-auto lg:h-[calc(100vh-76px)]">
+          <div class="tabs relative h-full">
+            <div class="block sticky top-0 left-0 bg-white z-20">
+              <ul class="flex w-full border-b border-gray-200 space-x-3 transition-all duration-300 ">
+                <li class="w-full">
+                  <a href="javascript:void(0)"
+                    class="inline-block py-4 px-6 text-center w-full text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap active"
+                    data-tab="tabs-with-underline-1" role="tab">
+                    Layout
+                  </a>
+                </li>
+                <li class="w-full">
+                  <a href="javascript:void(0)"
+                    class="inline-block py-4 px-6 text-center w-full text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap "
+                    data-tab="tabs-with-underline-2" role="tab">
+                    Colors
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="mt-3 h-[calc(100%-81px)]">
+              <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1"
+                class="tabcontent h-full " style="display: block;">
+                <div class="h-full flex justify-between flex-col">
+                  <div class="h-full">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">VIA</h3>
+
+                      <li class="mb-0">
+                        <label
+                          class="relative flex items-center flex-row-reverse w-full justify-between mb-0 cursor-pointer">
+                          <input type="checkbox" value="" class="sr-only peer" checked="">
+                          <div
+                            class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                          </div>
+                          <span class="text-sm font-normal text-gray-700 ">Third Color</span>
+                        </label>
+                      </li>
+                    </ul>
+                    <!--End List-->
+
+                    <div class="p-5 ">
+                      <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Direction</h3>
+                      <div class="flex gap-5 flex-col">
+                        <div class="flex items-center">
+                          <input id="Top" type="radio" name="radio-group"
+                            class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                          <label for="Top"
+                            class="flex items-center cursor-pointer text-gray-600 text-sm font-normal whitespace-nowrap w-full">
+                            <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                            <div class="flex items-center justify-between w-full text-gray-700 check:text-indigo-600">
+                              To Top
+                              <svg class="text-gray-400 " xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 22 22" fill="none">
+                                <path d="M16.4961 2.75043H5.49609" stroke="#9CA3AF" stroke-width="1.46667"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                  d="M10.9963 6.41752L6.13497 11.2789M10.9963 6.41752L15.8577 11.2789M10.9963 6.41752L10.9974 19.2509"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="Top-Right" type="radio" name="radio-group"
+                            class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
+                            checked="">
+                          <label for="Top-Right"
+                            class="flex items-center cursor-pointer text-gray-600 text-sm font-normal whitespace-nowrap w-full">
+                            <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                            <div class="flex items-center justify-between w-full text-gray-700 check:text-indigo-600">
+                              To Top Right
+                              <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 22 22" fill="none">
+                                <path
+                                  d="M8.25 2.75H15.5833C17.3118 2.75 18.1761 2.75 18.713 3.28697C19.25 3.82394 19.25 4.68818 19.25 6.41667V13.75"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                                <path d="M11.9167 10.0833H5.04167M11.9167 10.0833V16.9583M11.9167 10.0833L2.75 19.25"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="Right" type="radio" name="radio-group"
+                            class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                          <label for="Right"
+                            class="flex items-center cursor-pointer text-gray-600 text-sm font-normal whitespace-nowrap w-full">
+                            <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                            <div class="flex items-center justify-between w-full text-gray-700 check:text-indigo-600">
+                              To Right
+                              <svg class="text-gray-400 " xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 22 22" fill="none">
+                                <path d="M19.25 16.5003L19.25 5.50031" stroke="currentColor" stroke-width="1.46667"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                  d="M15.5842 10.9999L10.7229 6.13854M15.5842 10.9999L10.7229 15.8613M15.5842 10.9999L2.75088 11.001"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="Bottom-Right" type="radio" name="radio-group"
+                            class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                          <label for="Bottom-Right"
+                            class="flex items-center cursor-pointer text-gray-600 text-sm font-normal whitespace-nowrap w-full">
+                            <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                            <div class="flex items-center justify-between w-full text-gray-700 check:text-indigo-600">
+                              To Bottom Right
+                              <svg class="text-gray-400 " xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 22 22" fill="none">
+                                <path
+                                  d="M8.25 19.25H15.5833C17.3118 19.25 18.1761 19.25 18.713 18.713C19.25 18.1761 19.25 17.3118 19.25 15.5833V8.25"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                                <path d="M11.9167 11.9167H5.04167M11.9167 11.9167V5.04166M11.9167 11.9167L2.75 2.74999"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="Bottom" type="radio" name="radio-group"
+                            class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                          <label for="Bottom"
+                            class="flex items-center cursor-pointer text-gray-600 text-sm font-normal whitespace-nowrap w-full">
+                            <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                            <div class="flex items-center justify-between w-full text-gray-700 check:text-indigo-600">
+                              To Bottom
+                              <svg class="text-gray-400 " xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 22 22" fill="none">
+                                <path d="M16.4961 19.2496H5.49609" stroke="currentColor" stroke-width="1.46667"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                  d="M10.9963 15.5825L6.13497 10.7211M10.9963 15.5825L15.8577 10.7211M10.9963 15.5825L10.9974 2.74914"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="Bottom-Left" type="radio" name="radio-group"
+                            class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                          <label for="Bottom-Left"
+                            class="flex items-center cursor-pointer text-gray-600 text-sm font-normal whitespace-nowrap w-full">
+                            <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                            <div class="flex items-center justify-between w-full text-gray-700 check:text-indigo-600">
+                              To Bottom Left
+                              <svg class="text-gray-400 " xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 22 22" fill="none">
+                                <path
+                                  d="M13.75 19.25H6.41667C4.68818 19.25 3.82394 19.25 3.28697 18.713C2.75 18.1761 2.75 17.3118 2.75 15.5833V8.25"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                                <path d="M10.0833 11.9167H16.9583M10.0833 11.9167V5.04166M10.0833 11.9167L19.25 2.74999"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="Left" type="radio" name="radio-group"
+                            class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                          <label for="Left"
+                            class="flex items-center cursor-pointer text-gray-600 text-sm font-normal whitespace-nowrap w-full">
+                            <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                            <div class="flex items-center justify-between w-full text-gray-700 check:text-indigo-600">
+                              To Left
+                              <svg class="text-gray-400 " xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 22 22" fill="none">
+                                <path d="M2.75 16.4994L2.75 5.49939" stroke="currentColor" stroke-width="1.46667"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                  d="M6.41578 10.999L11.2771 6.13759M6.41578 10.999L11.2771 15.8603M6.41578 10.999L19.2491 11.0001"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </label>
+                        </div>
+
+                        <div class="flex items-center">
+                          <input id="Top-Left" type="radio" name="radio-group"
+                            class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                          <label for="Top-Left"
+                            class="flex items-center cursor-pointer text-gray-600 text-sm font-normal whitespace-nowrap w-full">
+                            <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 "></span>
+                            <div class="flex items-center justify-between w-full text-gray-700 check:text-indigo-600">
+                              To Top Left
+                              <svg class="text-gray-400 " xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 22 22" fill="none">
+                                <path
+                                  d="M13.75 2.75H6.41667C4.68818 2.75 3.82394 2.75 3.28697 3.28697C2.75 3.82394 2.75 4.68818 2.75 6.41667V13.75"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                                <path d="M10.0833 10.0833H16.9583M10.0833 10.0833V16.9583M10.0833 10.0833L19.25 19.25"
+                                  stroke="currentColor" stroke-width="1.46667" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="p-5 border-t border-gray-300">
+                    <button
+                      class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436"
+                          stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div id="tabs-with-underline-2" class="hidden tabcontent" role="tabpanel"
+                aria-labelledby="tabs-with-underline-item-2" style="display: none     ;">
+
+                <div class="tabs">
+                  <div class="flex w-full">
+                    <ul
+                      class="flex w-full items-center justify-between overflow-x-auto transition-all duration-300 overflow-hidden border-b border-gray-200">
+                      <li class="w-full flex items-center justify-center">
+                        <a href="javascript:void(0)"
+                          class="flex items-center justify-center w-full text-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink whitespace-nowrap active"
+                          data-tab="nasted-tabs-1" role="tab">
+                          From</a>
+                      </li>
+                      <li class="w-full flex items-center justify-center">
+                        <a href="javascript:void(0)"
+                          class="flex items-center justify-center w-full text-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink whitespace-nowrap"
+                          data-tab="nasted-tabs-2" role="tab">
+                          Via</a>
+                      </li>
+                      <li class="w-full flex items-center justify-center">
+                        <a href="javascript:void(0)"
+                          class="flex items-center justify-center w-full text-center py-3 px-6 text-gray-500 border-b-2 border-transparent hover:text-gray-800 font-medium tab-active:text-indigo-600 tab-active:border-b-indigo-600 tablink whitespace-nowrap"
+                          data-tab="nasted-tabs-3" role="tab">
+                          To</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mt-5 px-5">
+                    <div id="nasted-tabs-1" role="tabpanel" aria-labelledby="nasted-tabs-item-1"
+                      class="tabcontent block" style="display: block;">
+                      <p class="text-gray-600 text-xs font-medium uppercase mb-5 ">FROM color</p>
+                    </div>
+                    <div id="nasted-tabs-2" class="hidden tabcontent" role="tabpanel"
+                      aria-labelledby="nasted-tabs-item-2" style="display: none;">
+                      <p class="text-gray-600 text-xs font-medium uppercase mb-5 ">Via color</p>
+                    </div>
+                    <div id="nasted-tabs-3" class="hidden tabcontent" role="tabpanel"
+                      aria-labelledby="nasted-tabs-item-3" style="display: none;">
+                      <p class="text-gray-600 text-xs font-medium uppercase mb-5 ">To color</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!----------Leftbar End---------->
+        <!-- main table component start  -->
+        <div
+          class="flex-auto relative w-full lg:w-[clac(100vw-256px)] xl:w-[calc(100vw-288px)] min-w-0 bg-gray-50 lg:h-[calc(100vh-76px)] overflow-y-auto pt-20 px-4 lg:p-10 xl:p-24 lg:pb-10 lg:mt-20 lg:ml-56 xl:ml-72 lg:static lg:max-h-full lg:overflow-visible">
+
+          <div class="flex items-center justify-center w-full h-full">
+
+          </div>
+
+          <div class=" flex items-center gap-6 max-lg:mt-5 lg:fixed z-[10000] bottom-12 right-12 p-3 pl-6 rounded-full bg-white border border-gray-200 shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)]">
+           <p class="text-lg font-normal text-gray-900 leading-8">bg-gradient-to-tr from-red-500 via-orange-600 to-blue-600</p>
+           <button class="flex items-center gap-2 py-3 pr-7 pl-5 rounded-full bg-indigo-600 text-white text-base font-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M9.16667 2.5H10.8333C13.976 2.5 15.5474 2.5 16.5237 3.47631C17.5 4.45262 17.5 6.02397 17.5 9.16667V10.8333M8.33333 17.5C5.99256 17.5 4.82218 17.5 3.98143 16.9382C3.61747 16.695 3.30496 16.3825 3.06177 16.0186C2.5 15.1778 2.5 14.0074 2.5 11.6667C2.5 9.3259 2.5 8.15551 3.06177 7.31477C3.30496 6.9508 3.61747 6.6383 3.98143 6.3951C4.82218 5.83333 5.99256 5.83333 8.33333 5.83333C10.6741 5.83333 11.8445 5.83333 12.6852 6.3951C13.0492 6.6383 13.3617 6.9508 13.6049 7.31477C14.1667 8.15551 14.1667 9.3259 14.1667 11.6667C14.1667 14.0074 14.1667 15.1778 13.6049 16.0186C13.3617 16.3825 13.0492 16.695 12.6852 16.9382C11.8445 17.5 10.6741 17.5 8.33333 17.5Z" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            Copy CSS
+           </button>
+          </div>
+        </div>
+        <!-- main table component end  -->
+      </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+  <script src="assets/js/main.js"></script>
+ 
+</body>
+
+</html>
