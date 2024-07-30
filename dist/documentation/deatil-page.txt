@@ -1219,7 +1219,6 @@ pricing page
 
 pricing 27 === vertical tab content
 pricing 28 === gradient
-pricing 29 === font issue
 pricing 31 === image ma side ma green color dekhai che, add hover effect
 pricing 32 === button hover effect
 pricing 33 === responsive full width image
@@ -1333,3 +1332,130 @@ Use this tailwind pricing section to show pricing card with dark background and 
 
 50) Pricing with radio component
 Following example is splitted between vertical radio component where you can show one pricing plan by clicking on radio button and feature list cards.
+
+
+=====blog====
+
+tailwind blog
+tailwind blog template
+tailwind css blog template
+tailwind css blog
+tailwind ui blog
+tailwind blog component
+tailwind css blog example
+tailwind blog example
+tailwind css blog layout
+
+26) Single blog post as carousel
+Use this tailwind blog example to show single blog post as carousel with all details such as image, heading, description and CTA link. This example have a circular buttons as a carousel navigation.
+
+27) Tailwind blog three column grid 
+Following example can be use to show blog cards in a three column grid layout where main heading, description and CTA button is also a part of grid and blog card includes blog image, title and small description.
+
+28) Side by side blog post layout
+Use this example to show blog post where you can show one vertical card next to two horizontal blog cards which includes blog image, category, heading, description, small profile picture and main CTA button.
+
+29) Detailed blog post card
+This example shows two different types of cards where one includes image and blog heading and another includes blog category, date, blog title and description in a grid layout.
+
+30) Modern structured blog posts
+Following tailwind ui blog is an example of hybrid structure where some blogs have vertical cards another have horizontal cards to display blog post image, publication date, title, description and CTA link.
+
+31) Different scale blog cards
+Use below example to show small scale and large scale blog post cards in a single grid layout where card includes blog post images, publication date, blog post tile and description.
+
+32) Vertical blog post list
+Following tailwind css blog shows card on left with main heading and CTA button, on right it shows blog post list to display horizontal cards.
+
+33) Partial blog cads slider
+This example of tailwind blog component specifically designed for dark version of website to showcase blog post card with publication date, author detail, title, description and CTA link.
+
+34) Tailwind css blog carousel
+This is an example of tailwind blog carousel to show blog post cards with heading, blog category and author details.
+
+35) Highlighted top blog
+Following is an example of blog posts where top blog is highlighted with blog image, detailed description and CTA Button.
+
+36) Blog post with overlay text
+This example is a tailwind blog template with blog post images where each images has overlay. heading and description can showcase over image overlay.
+
+37) Simple blog card with badge
+Following tailwind blog example has simple three column grid layout of blog post where you can show blog images, title, description, CTA link and publication date in a badge format.
+
+38) Blog post cards with bottom image
+This example of tailwind blog template shows blog post cards with bottom image where you can show blog post description on top of the card.
+
+39) Alternate image horizontal blogs
+Use this example to create a blog post layout with a horizontal orientation. Place the image on one side and the description on the other, or switch them as needed.
+
+40) Blog card with footer
+This Tailwind UI blog example features a background where the heading and description are displayed at the top, while the author details and publication date are included in the footer of the cards.
+
+41) Two column blog with image
+This is an example of a straightforward blog layout using a two-column grid. It allows you to display images, descriptions, publication dates, and call-to-action links.
+
+42) Blog list with on large blog
+This Tailwind blog template example features a list of blog posts, with a prominent, large blog post displayed on the left side.
+
+43) Blog card with category tags
+Following Tailwind blog component is a straightforward example featuring a category tag overlaying an image, along with the blog title and description.
+
+44) Blog card with image as a background
+Use this example to display different types of cards: one card features an image as the background with the title and description overlaid on it, while another card has a simpler design with an image at the top and the description on bottom.
+
+45) Vertical feature blog list
+This Tailwind CSS blog layout example highlights one featured blog on the left side, including author details, blog category, image, and description, while displaying a list of additional blogs on the right side.
+
+46) Top large blog post 
+Use this Tailwind CSS blog template example to display a large blog post with an image background and an overlayed description.
+
+47) Large horizontal blog post
+Showcase a large blog post in a horizontal layout featuring an image, blog title, description, and CTA button at the top, with a smaller blog list displayed at the bottom.
+
+48) One large blog with theree smaller blog
+The following example displays a large blog post in a horizontal layout at the top of the page, with three smaller cards arranged in a column layout at the bottom.
+
+49) Filter image blog post slider
+Utilize this Tailwind UI blog template to present a slider of blog cards featuring overlayed images and descriptions. The slider includes arrows for easy navigation.
+
+50) Latest blog with dark version
+This Tailwind CSS blog example is tailored for dark-themed websites and features a layout that combines both horizontal and vertical two-column blog formats.
+
+51) Informative blog with colorful cards
+This Tailwind CSS blog features colorful blog cards with a mix of publication date, blog category, blog title, description and CTA button.
+
+52) blog listing with highlighted blog
+Use this example to display a blog post listing on the left side with brief summaries, and highlight a single blog post with a detailed description on the right side.
+
+53) Detailed Article blog 
+This blog example features a modern design showcasing a detailed article of the latest blog post, complete with a visual image, blog title, and CTA button. At the bottom, a list of additional blog posts is provided.
+
+54) Trendy latets blog post 
+This example of a trendy blog post layout features a two column blog with visual images and description, followed by a list og latest blogs.
+
+55) Tailwind blog component with background images
+This example of a Tailwind blog component features a background image with a blog title and description overlayed on images with CTA links.
+
+56) Three column blog list 
+This three-column blog list example displays blog posts with background images and descriptions, while featuring a list of the latest blogs on the right side.
+
+57) Newest article blog
+Use this example to highlight filtered images as backgrounds. You can overlay the category tag, title, and description of a specific blog on top of these images.
+
+58) Centered blog card slider
+This example of a centered blog card slider features a slider with a centered layout, displaying a list of latest blog cards with overlayed images and description over it.
+
+59) Full height blog post
+Here is a Tailwind blog example featuring a full-height blog card with a filtered background image and a description overlay.
+
+60) simple three column blog component
+This Tailwind blog component displays three cards in a row, with one card featuring a full-height image and an overlay for the description.
+
+
+===========blog issue-------
+blog 26 == responsive nthi
+blog 30 == responsive ma 990 screen ma max width and mx-auto remove krvano alignment issue ave che
+blog 31 == give object cover to all the images
+blog 33 == slider slow kro, remove card hover effect
+blog 34 == center slide remove kro small screen ma
+blog 35 == responsive ma full width image

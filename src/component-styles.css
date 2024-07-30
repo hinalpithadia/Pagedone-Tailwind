@@ -18,7 +18,7 @@
     }  
 
     .nav-link {
-        @apply text-gray-900 text-sm font-medium transition-all duration-500 mx-0 mb-2 block lg:mx-5 md:mx-2 md:mb-0 ;
+        @apply text-gray-900 text-sm font-medium transition-all duration-500 mx-0 mb-2 block 2xl:mx-5 xl:mx-4 lg:mx-2 md:mx-2 md:mb-0 ;
     } 
 
     .nav-link:hover {
