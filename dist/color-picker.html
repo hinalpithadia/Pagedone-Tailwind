@@ -1,0 +1,1011 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Color Picker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
+  <link href="assets/css/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-inter ">
+  <div class="page-container">
+    <!----------titlebar Start---------->
+
+    <div
+      class="fixed top-0 z-30 left-0 w-full border-y border-gray-200 bg-white px-3 py-2.5 sm:pl-8 sm:pr-12 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <button
+          class="p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200 rounded-xl font-manrope text-lg font-bold whitespace-nowrap text-green-400">
+          <div
+            class="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-l from-green-500 to-green-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+              <path
+                d="M8.05 9.45C7.7 9.1 7.175 9.1 6.825 9.45L2.275 14C1.925 14.35 1.75 14.7875 1.75 15.225V18.025L0.2625 19.5125C-0.0875 19.8625 -0.0875 20.3875 0.2625 20.7375C0.6125 21.0875 1.1375 21.0875 1.4875 20.7375L2.975 19.25H5.775C6.2125 19.25 6.65 19.075 7 18.725L11.55 14.175C11.9 13.825 11.9 13.3 11.55 12.95L8.05 9.45Z"
+                fill="url(#paint0_linear_701_5865)" />
+              <path
+                d="M21 3.9375C21 1.75 19.25 0 17.0625 0C16.0125 0 14.9625 0.4375 14.2625 1.1375L9.625 5.775L9.3625 5.5125C9.0125 5.1625 8.4875 5.1625 8.1375 5.5125C7.7875 5.8625 7.7875 6.3875 8.1375 6.7375L9.0125 7.6125L13.3875 11.9875L14.2625 12.8625C14.4375 13.0375 14.7 13.125 14.875 13.125C15.6625 13.125 16.0125 12.1625 15.4875 11.6375L15.225 11.375L19.8625 6.7375C20.5625 6.0375 21 4.9875 21 3.9375Z"
+                fill="url(#paint1_linear_701_5865)" />
+              <defs>
+                <linearGradient id="paint0_linear_701_5865" x1="3.57628e-07" y1="21" x2="6" y2="15"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.5" />
+                  <stop offset="1" stop-color="white" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_701_5865" x1="11.5" y1="9.5" x2="20" y2="1"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" />
+                  <stop offset="0.5" stop-color="white" stop-opacity="0.6" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.3" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          Color Picker
+        </button>
+        <p class="text-base font-normal text-gray-700 hidden lg:block">Color Picker helps to Pick colors from an image,
+          sampler, or spectrum. And Convert HEX, RGB, HSL, HSV, CMYK, HTML/CSS colors.</p>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-5">
+        <button
+          class="p-2 min-[470px]:pr-4 rounded-full border border-gray-300 flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M12.8307 5.08529C12.8307 6.09781 12.0099 6.91862 10.9974 6.91862C9.98485 6.91862 9.16406 6.09781 9.16406 5.08529C9.16406 4.07276 9.98485 3.25195 10.9974 3.25195C12.0099 3.25195 12.8307 4.07276 12.8307 5.08529Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M6.41667 16.0853C6.41667 17.0978 5.59586 17.9186 4.58333 17.9186C3.57081 17.9186 2.75 17.0978 2.75 16.0853C2.75 15.0727 3.57081 14.252 4.58333 14.252C5.59586 14.252 6.41667 15.0727 6.41667 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M19.2448 16.0853C19.2448 17.0978 18.424 17.9186 17.4115 17.9186C16.3989 17.9186 15.5781 17.0978 15.5781 16.0853C15.5781 15.0727 16.3989 14.252 17.4115 14.252C18.424 14.252 19.2448 15.0727 19.2448 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M3.66406 12.3842C3.66406 9.65697 5.13879 7.27589 7.33073 6.00195M14.6641 6.00195C16.856 7.27589 18.3307 9.65697 18.3307 12.3842M7.33073 18.7663C8.40936 19.3932 9.66172 19.752 10.9974 19.752C12.3331 19.752 13.5854 19.3932 14.6641 18.7663"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+          <span class="hidden min-[470px]:block">Share</span>
+        </button>
+        <button
+          class="p-2 min-[470px]:pl-4 rounded-full border border-gray-300 whitespace-nowrap flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <span class="hidden min-[470px]:block">Explore Tools</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M19.25 11.502C19.25 16.0583 15.5564 19.752 11 19.752C6.44365 19.752 2.75 16.0583 2.75 11.502C2.75 6.94561 6.44365 3.25195 11 3.25195C15.5564 3.25195 19.25 6.94561 19.25 11.502Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M9.70973 9.96544L12.5824 12.838M8.65374 11.2186L8.47778 11.7401C7.96634 13.2561 7.71063 14.0141 8.10977 14.4161C8.50892 14.8182 9.26872 14.5679 10.7884 14.0675L11.3111 13.8954C12.1657 13.614 12.5929 13.4732 12.9001 13.1684C13.2072 12.8635 13.351 12.4372 13.6386 11.5848L13.8146 11.0632C14.326 9.54726 14.5817 8.78927 14.1825 8.38722C13.7834 7.98517 13.0236 8.23539 11.5039 8.73582L10.9811 8.908C10.1266 9.18939 9.69937 9.33009 9.39229 9.63501C9.08512 9.93996 8.94132 10.3661 8.65374 11.2186Z"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!----------titlebar End---------->
+    <main>
+      <div class="w-full bg-gray-50 flex flex-col-reverse lg:flex-row max-lg:gap-8">
+        <div class="tabs mt-20 w-full h-[calc(100vh-100px)]">
+          <div class="block w-full">
+            <ul
+              class="flex border-b border-gray-200 space-x-3 bg-white transition-all duration-300 -mb-px w-full items-center justify-center">
+              <li>
+                <a href="javascript:void(0)"
+                  class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap"
+                  data-tab="tabs-with-underline-1" role="tab">
+                  Sampler
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap"
+                  data-tab="tabs-with-underline-2" role="tab">
+                  Spectrum
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap"
+                  data-tab="tabs-with-underline-3" role="tab">
+                  Image
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-3 ">
+            <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1"
+              class="tabcontent">
+              <!----------Leftbar start---------->
+              <aside id="left-bar"
+                class="relative lg:fixed lg:top-20 overflow-y-auto lg:z-50 bg-white flex-none  border-r border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-72 h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col h-full">
+                  <div class="h-full">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Pixel Color</h3>
+
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Color</span>
+                        <div class="flex flex-row-reverse">
+                          <input type="color" id="bg-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                            value="#4F46E5"
+                            class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#4F46E5" id="bg-hex"
+                            class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Coordinates</h3>
+                      <li class="mb-5 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel X</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel Y</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                    </ul>
+
+                    <!-- this place for color box  -->
+                    <div class="w-full p-5 flex flex-col gap-2.5">
+                      
+                      
+                      
+                      <!-- add your color pelet dynamic  -->
+                      
+                      <!-- and replace this color box -->
+                      
+                      <!-- <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-white rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-neutral-100 rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#eeeeee] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#e0e0e0] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#bdbdbd] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#bdbdbd] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#757575] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#616161] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#424242] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-black rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#ffebee] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#feced3] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#ed9c9c] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#e37676] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#ed5855] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f14a3f] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f14a3f] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#d13636] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#c42f2f] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#b52524] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fce4ec] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f8bbd0] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f38fb2] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#ef6293] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#eb427c] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#e72466] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#d72063] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#c11b5d] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#ac1559] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#880b50] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#F3E4F5] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#E2BCE7] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#D08FD7] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#BC60C7] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#AE3ABB] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#9F02AF] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#9100A9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#7F00A1] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#6E0099] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#50008B] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#F3E4F5] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#D3C2E8] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#B699DA] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#996DCC] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#844BC1] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#6E25B5] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#651EAF] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#5911A7] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#4E059F] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#3C0091] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#E9E9F6] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#C7C8E8] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#A3A4D9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#7F80CA] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#6463BF] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#4B45B3] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#453DA9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#3C329E] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#342792] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#27117D] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#E4F1FD] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#BEDCFA] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#96C6F8] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#6FAFF4] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#559EF3] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#418DF1] rounded-sm border border-gray-900"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#3D7FE3] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#376DD0] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#315BBE] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#273C9F] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#E2F4FE] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#B6E3FB] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#88D1F9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#5DBEF5] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#43B0F4] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#36A2F2] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#3294E3] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#2E81CF] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#2970BB] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#20509A] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#E1F6FA] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#B4EAF1] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#85DCE9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#56CEE0] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#38C3D9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#27B9D2] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#22AAC0] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#1C95A6] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#16818E] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#0B5F63] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#e0f2f1] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#b3dfdb] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#82cbc3] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#50b6ab] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#2ca699] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#0e9687] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#0b897a] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#07796a] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#05695c] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#024d40] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#e8f5e9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#c7e7c9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#a3d8a7] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#7ec985] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#62be6b] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#47b251] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#3ea348] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#33903d] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#297f33] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#176021] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f0f9e9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#dbefc9] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#c3e4a6] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#abd883] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#98d068] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#86c74e] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#78b645] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#64a23b] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#518e31] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#306b20] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f8fce7] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#eef6c4] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#e3f29e] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#d8eb79] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#cfe65d] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#c8e142] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#bbcf3c] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#abb833] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#9aa12c] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#7f7a1e] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fefee8] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fdfcc5] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbf9a0] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbf67b] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#faf460] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#faf147] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f8de42] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f7c63b] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f5ae34] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f2852a] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fef9e2] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fcefb5] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbe486] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbda57] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbd038] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbc727] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbb924] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fba623] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fb9522] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fc7621] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fef4e1] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fde3b4] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fcd084] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbbc55] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbad35] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fb9e23] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f89222] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f28220] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#ec721e] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#e3581c] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fbe9e7] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fdcebd] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fdae94] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fc8e6a] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fc764b] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#fc5e31] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#f1582d] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#e35128] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#d64a24] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#bd3c1b] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#efebe9] rounded-sm border border-gray-200"></a>
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#d7ccc8] rounded-sm border border-gray-200"></a>
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#bbaba4] rounded-sm border border-gray-200"></a>
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#a08980] rounded-sm border border-gray-200"></a>
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#8c6f64] rounded-sm border border-gray-200"></a>
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#785649] rounded-sm border border-gray-200"></a>
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#6c4d42] rounded-sm border border-gray-200"></a>
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#5c4138] rounded-sm border border-gray-200"></a>
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#4d352f] rounded-sm border border-gray-200"></a>
+                      <a href="" class="flex lg:w-4 w-full h-4 bg-[#3d2824] rounded-sm border border-gray-200"></a>
+                      </ul>
+                      <ul class="w-full flex gap-2">
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#eceff1] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#cfd8dc] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#b1bdc5] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#91a3ae] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#798f9b] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#627c8a] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#566d79] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#465964] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#38464f] rounded-sm border border-gray-200"></a>
+                        <a href="" class="flex lg:w-4 w-full h-4 bg-[#273138] rounded-sm border border-gray-200"></a>
+                    </ul> -->
+                    </div>
+                  </div>
+                  <div class="p-5 border-t border-gray-300">
+                    <button
+                      class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436"
+                          stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </aside>
+              <!----------Leftbar End---------->
+              <!----------Main Table Component Start---------->
+              <div class="w-full h-full flex flex-col gap-5 items-center justify-center">
+                <div class="bg-white p-2.5 rounded-[20px] shadow-[0px_15px_60px_-4px_rgba(16,_24,_40,_0.08)] flex items-center justify-center mt-20 relative">
+       
+       
+                  <!-- replace this image with dynamic color picker  -->
+       
+                  <img class="2xl:w-[708px] xl:w-[650px] lg:w-[480px] w-full h-full rounded-[10px]" src="assets/images/color picker.png" />
+                  <svg class="absolute top-12 right-[70px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g filter="url(#filter0_b_1154_5502)">
+                      <circle cx="10" cy="10" r="10" fill="white" fill-opacity="0.2"/>
+                      <circle cx="10" cy="10" r="9.5" stroke="url(#paint0_linear_1154_5502)"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_1154_5502" x="-10" y="-10" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1154_5502"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1154_5502" result="shape"/>
+                      </filter>
+                      <linearGradient id="paint0_linear_1154_5502" x1="10" y1="0" x2="10" y2="20" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0"/>
+                        <stop offset="1" stop-color="white"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="2xl:w-[728px] w-[650px] flex xl:flex-row lg:flex-col md:flex-row flex-col gap-4">
+                  <button class="xl:w-full w-[232px] mx-auto group xl:justify-start justify-center items-center inline-flex">
+                      <div class="w-full px-6 py-3 bg-indigo-100 shadow-none rounded-xl justify-between items-center flex">
+                          <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736Z" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed">Magnifier</h5>
+                          </div>
+                      </div>
+                  </button>
+                  <button class="xl:w-full w-[232px] mx-auto group justify-start items-center inline-flex">
+                      <div class="w-full px-6 py-3 group-hover:bg-indigo-100 bg-white group-hover:shadow-none rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] border border-gray-300 group-hover:border-transparent justify-between items-center flex">
+                          <svg class="text-gray-300 group-hover:text-indigo-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736ZM14 11H8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-gray-300 group-hover:text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed">Zoom Out</h5>
+                          </div>
+                      </div>
+                  </button>
+                  <button class="xl:w-full w-[232px] mx-auto group justify-start items-start inline-flex">
+                      <div class="w-full px-6 py-3 group-hover:bg-indigo-100 bg-white group-hover:shadow-none rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] border border-gray-300 group-hover:border-transparent justify-between items-center flex">
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-gray-300 group-hover:text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed">Zoom In</h5>
+                          </div>
+                          <svg class="text-gray-300 group-hover:text-indigo-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736ZM14 11H8M11 8L11 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                      </div>
+                  </button>
+              </div>
+              </div>
+              <!----------Main Table Component End---------->
+              <!----------rightbar start-->
+              <aside id="right-bar"
+                class="relative lg:fixed lg:top-20 lg:right-0 bg-white overflow-y-auto lg:z-20 flex-none  border-l border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-[300px] h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col">
+                  <div class="">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Color Format</h3>
+
+                      <li class="mb-0 p-4 pl-5 rounded-lg border border-gray-300 ">
+                        <select id="color" class=" text-gray-600 text-base  block w-full focus:outline-none">
+                          <option selected="RGB">RGB – Red, Green, Blue</option>
+                          <option value="HSL">HSL – Hue, Saturation, Lightness</option>
+                          <option value="HSV">HSV – Hue, Saturation, Value</option>
+                          <option value="CMYK">CMYK – Cyan, Magenta, Yellow, Black</option>
+
+                        </select>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">HEX & HTML</h3>
+                      <li class="mb-5">
+                        <div class="w-full h-24 rounded bg-blue-900"></div>
+                      </li>
+
+                      <li class="mb-5 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HEX</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          #4F46E5</div>
+                      </li>
+
+                      <li class="mb-0 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HTML / CSS</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          rgb(21, 101, 192)</div>
+                      </li>
+                    </ul>
+
+                    <ul class="p-5">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Color Components</h3>
+                      <li class="mb-4">
+                        <label for="Horizontal-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Red</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">21</span>
+                        </label>
+                        <input id="Horizontal-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="21">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Green</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">101</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="101">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Blue</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">192</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="192">
+                      </li>
+
+                      <li class="mb-0">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Opacity</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">100%</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="100" step="1" value="100">
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </aside>
+              <!----------rightbar end-->
+            </div>
+            <div id="tabs-with-underline-2" class="hidden tabcontent" role="tabpanel"
+              aria-labelledby="tabs-with-underline-item-2">
+              <!----------Leftbar start---------->
+              <aside id="left-bar"
+                class="relative lg:fixed lg:top-20 overflow-y-auto lg:z-50 bg-white flex-none  border-r border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-72 h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col h-full">
+                  <div class="h-full">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Pixel Color</h3>
+
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Color</span>
+                        <div class="flex flex-row-reverse">
+                          <input type="color" id="bg-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                            value="#4F46E5"
+                            class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#4F46E5" id="bg-hex"
+                            class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Coordinates</h3>
+                      <li class="mb-5 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel X</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel Y</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                    </ul>
+
+                    <!-- this place for color box  -->
+
+                  </div>
+                  <div class="p-5 border-t border-gray-300">
+                    <button
+                      class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436"
+                          stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </aside>
+              <!----------Leftbar End---------->
+              <!----------Main Table Component Start---------->
+              <div class="w-full h-full flex flex-col gap-5 items-center justify-center">
+                <div class="p-2.5 bg-white rounded-[20px] shadow-[0px_15px_60px_-4px_rgba(16,_24,_40,_0.08)] mt-24 relative">
+
+                  <!-- remove this color picker and add dynamic color picker  -->
+
+                  <img class="2xl:w-[708px] xl:w-[650px] lg:w-[480px] w-full h-full rounded-[10px]" src="assets/images/spectrum image.png" />
+                  <svg class="absolute cursor-pointer top-[126px] left-[160px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g filter="url(#filter0_b_1154_5681)">
+                      <circle cx="10" cy="10" r="10" fill="white" fill-opacity="0.2"/>
+                      <circle cx="10" cy="10" r="9.5" stroke="url(#paint0_linear_1154_5681)"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_b_1154_5681" x="-10" y="-10" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1154_5681"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1154_5681" result="shape"/>
+                      </filter>
+                      <linearGradient id="paint0_linear_1154_5681" x1="10" y1="0" x2="10" y2="20" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" stop-opacity="0"/>
+                        <stop offset="1" stop-color="white"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="2xl:w-[728px] w-[650px] flex xl:flex-row lg:flex-col md:flex-row flex-col gap-4">
+                  <button class="xl:w-full w-[232px] mx-auto group xl:justify-start justify-center items-center inline-flex">
+                      <div class="w-full px-6 py-3 bg-indigo-100 shadow-none rounded-xl justify-between items-center flex">
+                          <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736Z" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed">Magnifier</h5>
+                          </div>
+                      </div>
+                  </button>
+                  <button class="xl:w-full w-[232px] mx-auto group justify-start items-center inline-flex">
+                      <div class="w-full px-6 py-3 group-hover:bg-indigo-100 bg-white group-hover:shadow-none rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] border border-gray-300 group-hover:border-transparent justify-between items-center flex">
+                          <svg class="text-gray-300 group-hover:text-indigo-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736ZM14 11H8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-gray-300 group-hover:text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed">Zoom Out</h5>
+                          </div>
+                      </div>
+                  </button>
+                  <button class="xl:w-full w-[232px] mx-auto group justify-start items-start inline-flex">
+                      <div class="w-full px-6 py-3 group-hover:bg-indigo-100 bg-white group-hover:shadow-none rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] border border-gray-300 group-hover:border-transparent justify-between items-center flex">
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-gray-300 group-hover:text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed">Zoom In</h5>
+                          </div>
+                          <svg class="text-gray-300 group-hover:text-indigo-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736ZM14 11H8M11 8L11 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                      </div>
+                  </button>
+              </div>
+              </div>
+              <!----------Main Table Component End---------->
+              <!----------rightbar start-->
+              <aside id="right-bar"
+                class="relative lg:fixed lg:top-20 lg:right-0 bg-white overflow-y-auto lg:z-20 flex-none  border-l border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-[300px] h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col">
+                  <div class="">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Color Format</h3>
+
+                      <li class="mb-0 p-4 pl-5 rounded-lg border border-gray-300 ">
+                        <select id="color" class=" text-gray-600 text-base  block w-full focus:outline-none">
+                          <option selected="RGB">RGB – Red, Green, Blue</option>
+                          <option value="HSL">HSL – Hue, Saturation, Lightness</option>
+                          <option value="HSV">HSV – Hue, Saturation, Value</option>
+                          <option value="CMYK">CMYK – Cyan, Magenta, Yellow, Black</option>
+
+                        </select>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">HEX & HTML</h3>
+                      <li class="mb-5">
+                        <div class="w-full h-24 rounded bg-blue-900"></div>
+                      </li>
+
+                      <li class="mb-5 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HEX</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          #4F46E5</div>
+                      </li>
+
+                      <li class="mb-0 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HTML / CSS</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          rgb(21, 101, 192)</div>
+                      </li>
+                    </ul>
+
+                    <ul class="p-5">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Color Components</h3>
+                      <li class="mb-4">
+                        <label for="Horizontal-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Red</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">21</span>
+                        </label>
+                        <input id="Horizontal-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="21">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Green</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">101</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="101">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Blue</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">192</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="192">
+                      </li>
+
+                      <li class="mb-0">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Opacity</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">100%</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="100" step="1" value="100">
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </aside>
+              <!----------rightbar end-->
+            </div>
+            <div id="tabs-with-underline-3" class="hidden tabcontent" role="tabpanel"
+              aria-labelledby="tabs-with-underline-item-3">
+
+              <!----------Leftbar start---------->
+              <aside id="left-bar"
+                class="relative lg:fixed lg:top-20 overflow-y-auto lg:z-50 bg-white flex-none  border-r border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-72 h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col h-full">
+                  <div class="h-full">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Pixel Color</h3>
+
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Color</span>
+                        <div class="flex flex-row-reverse">
+                          <input type="color" id="bg-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                            value="#4F46E5"
+                            class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#4F46E5" id="bg-hex"
+                            class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Coordinates</h3>
+                      <li class="mb-5 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel X</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel Y</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                    </ul>
+                    <ul class="p-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">image</h3>
+                      <li>
+                        <label class="group">
+                          <input type="file" hidden="">
+                          <div
+                            class="flex items-center justify-center py-2.5 px-4 w-full gap-2  border border-dashed border-gray-300 rounded-lg text-gray-400 text-base font-normal leading-4 
+                                  cursor-pointer focus:outline-none transition-all duration-300 group-hover:text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18"
+                              fill="none">
+                              <path
+                                d="M8.53408 1.5002L9.09976 0.934514C8.94973 0.784485 8.74625 0.7002 8.53408 0.7002C8.3219 0.7002 8.11842 0.784485 7.96839 0.934514L8.53408 1.5002ZM11.3358 5.4333C11.6482 5.74572 12.1548 5.74572 12.4672 5.4333C12.7796 5.12088 12.7796 4.61435 12.4672 4.30193L11.3358 5.4333ZM16.8 11.5C16.8 11.0582 16.4418 10.7 16 10.7C15.5582 10.7 15.2 11.0582 15.2 11.5H16.8ZM1.8 11.5C1.8 11.0582 1.44183 10.7 1 10.7C0.558172 10.7 0.2 11.0582 0.2 11.5H1.8ZM5.73235 5.4333L9.09976 2.06589L7.96839 0.934514L4.60098 4.30193L5.73235 5.4333ZM7.96839 2.06589L11.3358 5.4333L12.4672 4.30193L9.09976 0.934514L7.96839 2.06589ZM9.33255 12.3333V1.5H7.73255V12.3333H9.33255ZM15.2 11.5V13.1667H16.8V11.5H15.2ZM12.6667 15.7H4.33333V17.3H12.6667V15.7ZM1.8 13.1667V11.5H0.2V13.1667H1.8ZM4.33333 15.7C3.52504 15.7 2.9993 15.6983 2.61115 15.6461C2.246 15.597 2.1245 15.5168 2.05384 15.4462L0.92247 16.5775C1.33996 16.995 1.85538 17.1589 2.39795 17.2318C2.9175 17.3017 3.57027 17.3 4.33333 17.3V15.7ZM0.2 13.1667C0.2 13.9297 0.198301 14.5825 0.268153 15.1021C0.341099 15.6446 0.504977 16.16 0.92247 16.5775L2.05384 15.4462C1.98318 15.3755 1.90298 15.254 1.85389 14.8889C1.8017 14.5007 1.8 13.975 1.8 13.1667H0.2ZM15.2 13.1667C15.2 13.975 15.1983 14.5007 15.1461 14.8889C15.097 15.254 15.0168 15.3755 14.9462 15.4462L16.0775 16.5775C16.495 16.16 16.6589 15.6446 16.7318 15.1021C16.8017 14.5825 16.8 13.9297 16.8 13.1667H15.2ZM12.6667 17.3C13.4297 17.3 14.0825 17.3017 14.6021 17.2318C15.1446 17.1589 15.66 16.995 16.0775 16.5775L14.9462 15.4462C14.8755 15.5168 14.754 15.597 14.3889 15.6461C14.0007 15.6983 13.475 15.7 12.6667 15.7V17.3Z"
+                                fill="#111827" />
+                            </svg>
+                            Choose File
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+
+
+                  </div>
+                  <div class="p-5 border-t border-gray-300">
+                    <button
+                      class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436"
+                          stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </aside>
+              <!----------Leftbar End---------->
+               <!----------Main Table Component Start---------->
+               <div class="w-full h-full flex flex-col gap-5 items-center justify-center">
+                <div class="p-2.5 bg-white rounded-[20px] shadow-[0px_15px_60px_-4px_rgba(16,_24,_40,_0.08)] mt-24 relative">
+                  <div class="2xl:w-[708px] xl:w-[650px] lg:w-[480px] w-full lg:h-[526px] h-full lg:p-0 p-5 bg-gray-50 rounded-[10px]">
+                    
+                    <!-- replace thais and fetch image  -->
+                    
+                    <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-full cursor-pointer">
+                      <div class="mb-5 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="148" height="148" viewBox="0 0 148 148" fill="none">
+                          <path d="M21.5833 114.083L43.8841 100.703C46.5373 99.1109 47.864 98.3149 49.2578 97.8768C51.3582 97.2164 53.5972 97.1304 55.7422 97.6277C57.1654 97.9577 58.5492 98.6496 61.3168 100.033C64.2905 101.52 65.7774 102.264 67.2991 102.592C69.5929 103.087 71.9802 102.917 74.1809 102.103C75.6409 101.563 77.0077 100.616 79.7413 98.724L98.9916 85.3968C104.846 81.344 107.773 79.3176 111.142 79.0781C114.511 78.8387 117.695 80.4308 124.063 83.615L129.5 86.3333M129.5 86.3333V55.5M129.5 86.3333C129.5 103.655 129.5 112.316 125.343 118.537C123.543 121.231 121.231 123.543 118.537 125.343C112.316 129.5 103.655 129.5 86.3333 129.5H67.8333C44.5774 129.5 32.9494 129.5 25.7247 122.275C18.5 115.051 18.5 103.423 18.5 80.1667V67.8333C18.5 44.5774 18.5 32.9494 25.7247 25.7247C32.9494 18.5 44.5774 18.5 67.8333 18.5H92.5" stroke="#E5E7EB" stroke-width="6" stroke-linecap="round"/>
+                          <path d="M67.8346 55.5013C67.8346 62.3128 62.3128 67.8346 55.5013 67.8346C48.6898 67.8346 43.168 62.3128 43.168 55.5013C43.168 48.6898 48.6898 43.168 55.5013 43.168C62.3128 43.168 67.8346 48.6898 67.8346 55.5013Z" stroke="#9CA3AF" stroke-width="6"/>
+                          <path d="M117.165 18.5V43.1667M129.499 30.8333H104.832" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+                        </svg>
+                      </div>
+                      <p class="text-center text-gray-400 text-sm font-normal leading-7">Upload the image from which you want to pick the colors.<br> Or Drag-and-drop the image file.<br> Or Paste the image from the clipboard.</p>
+                      <input id="dropzone-file" type="file" class="hidden" />
+                  </div>
+                </div>
+                <div class="2xl:w-[728px] w-[650px] flex xl:flex-row lg:flex-col md:flex-row flex-col gap-4">
+                  <button class="xl:w-full w-[232px] mx-auto group xl:justify-start justify-center items-center inline-flex">
+                      <div class="w-full px-6 py-3 bg-indigo-100 shadow-none rounded-xl justify-between items-center flex">
+                          <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736Z" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed">Magnifier</h5>
+                          </div>
+                      </div>
+                  </button>
+                  <button class="xl:w-full w-[232px] mx-auto group justify-start items-center inline-flex">
+                      <div class="w-full px-6 py-3 group-hover:bg-indigo-100 bg-white group-hover:shadow-none rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] border border-gray-300 group-hover:border-transparent justify-between items-center flex">
+                          <svg class="text-gray-300 group-hover:text-indigo-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736ZM14 11H8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-gray-300 group-hover:text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed">Zoom Out</h5>
+                          </div>
+                      </div>
+                  </button>
+                  <button class="xl:w-full w-[232px] mx-auto group justify-start items-start inline-flex">
+                      <div class="w-full px-6 py-3 group-hover:bg-indigo-100 bg-white group-hover:shadow-none rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] border border-gray-300 group-hover:border-transparent justify-between items-center flex">
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-gray-300 group-hover:text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed">Zoom In</h5>
+                          </div>
+                          <svg class="text-gray-300 group-hover:text-indigo-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736ZM14 11H8M11 8L11 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                      </div>
+                  </button>
+              </div>
+              </div>
+              <!----------Main Table Component End---------->
+              <!----------rightbar start-->
+              <aside id="right-bar"
+                class="relative lg:fixed lg:top-20 lg:right-0 bg-white overflow-y-auto lg:z-20 flex-none  border-l border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-[300px] h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col">
+                  <div class="">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Color Format</h3>
+
+                      <li class="mb-0 p-4 pl-5 rounded-lg border border-gray-300 ">
+                        <select id="color" class=" text-gray-600 text-base  block w-full focus:outline-none">
+                          <option selected="RGB">RGB – Red, Green, Blue</option>
+                          <option value="HSL">HSL – Hue, Saturation, Lightness</option>
+                          <option value="HSV">HSV – Hue, Saturation, Value</option>
+                          <option value="CMYK">CMYK – Cyan, Magenta, Yellow, Black</option>
+
+                        </select>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">HEX & HTML</h3>
+                      <li class="mb-5">
+                        <div class="w-full h-24 rounded bg-blue-900"></div>
+                      </li>
+
+                      <li class="mb-5 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HEX</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          #4F46E5</div>
+                      </li>
+
+                      <li class="mb-0 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HTML / CSS</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          rgb(21, 101, 192)</div>
+                      </li>
+                    </ul>
+
+                    <ul class="p-5">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Color Components</h3>
+                      <li class="mb-4">
+                        <label for="Horizontal-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Red</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">21</span>
+                        </label>
+                        <input id="Horizontal-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="21">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Green</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">101</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="101">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Blue</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">192</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="192">
+                      </li>
+
+                      <li class="mb-0">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Opacity</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">100%</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="100" step="1" value="100">
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </aside>
+              <!----------rightbar end-->
+            </div>
+          </div>
+        </div>
+        <!----------Leftbar Start---------->
+
+        <!-- main table component start  -->
+
+        <!-- main table component end  -->
+      </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $('#bg-color').on('input', function () {
+      $('#bg-hex').val(this.value);
+    });
+    $('#bg-hex').on('input', function () {
+      $('#bg-color').val(this.value);
+    });
+    $('#text-color').on('input', function () {
+      $('#text-hex').val(this.value);
+    });
+    $('#text-hex').on('input', function () {
+      $('#text-color').val(this.value);
+    });
+  </script>
+</body>
+
+</html>

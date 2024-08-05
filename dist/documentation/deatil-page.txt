@@ -1459,3 +1459,20 @@ blog 31 == give object cover to all the images
 blog 33 == slider slow kro, remove card hover effect
 blog 34 == center slide remove kro small screen ma
 blog 35 == responsive ma full width image
+blog 38 == responsive check
+blog 39 == responsive check
+blog 42 == responsive full width check
+blog 44 == responsive full width image
+blog 45 == responsive heading issue
+
+
+blog 46 === responsive ma full width cardss
+blog 47 === responsive ma full width cardss
+blog 48 === responsive ma text left
+blog 49 === arrow ma space rakhi srkhu krvu, slider ma center mode kahi nakhvu, responsive srkhu kro
+blog 50 === responsive ma last 2 card vertical
+blog 52 === designer ne puchi jovo ama tab content che
+blog 53 === images ma object cover
+blog 54 === image height auto responsive ma and obejct cover
+blog 56 === responsive ma image height auto and object cover
+bloog 58 == slider undhu fare che and speed slow kro
