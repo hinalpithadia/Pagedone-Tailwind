@@ -30192,6 +30192,10 @@ input[type="radio"]:checked:disabled + label span{
     top: 4.5rem;
   }
 
+  .lg\:right-20{
+    right: 5rem;
+  }
+
   .lg\:z-20{
     z-index: 20;
   }

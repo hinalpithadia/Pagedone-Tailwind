@@ -1346,6 +1346,8 @@ tailwind css blog example
 tailwind blog example
 tailwind css blog layout
 
+https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FZCaKttl7vBY8qfTqGV1KiB%2FPagedone-Designer-Plus-Preview-Variable%3Fm%3Dauto%26node-id%3D665-1107
+
 26) Single blog post as carousel
 Use this tailwind blog example to show single blog post as carousel with all details such as image, heading, description and CTA link. This example have a circular buttons as a carousel navigation.
 
@@ -1476,3 +1478,120 @@ blog 53 === images ma object cover
 blog 54 === image height auto responsive ma and obejct cover
 blog 56 === responsive ma image height auto and object cover
 bloog 58 == slider undhu fare che and speed slow kro
+
+========team========
+tailwind team
+tailwind team section
+tailwind css team section
+tailwind team component
+
+
+26)
+Four-column team cards
+This Tailwind CSS team component displays four team members in a grid layout, with each member's image, name, designation, and social icons.
+
+27)
+Side-by-side headings and team cards
+The following team section shows a heading and two team members grouped side by side, with each member's square image, name, and social icons.
+
+28)
+Centered team slider
+Use this example to display team members in a center-mode carousel with a hover effect and members's images.
+
+29)
+Team list with hover description
+This Tailwind CSS team component displays a list of team members with a hover effect that reveals a brief detail of team members.
+
+30)
+Small tailwind team cards
+This is a small team card component that displays a team member's image, name, and social icons with a bordered hover effect over the card.
+
+31)
+Three-column team with side information card
+Use this example to show information about your team members, such as their name, occupation, and social media accounts, inside a separate card beside their image.
+
+32)
+Modern team cards with borders
+This is a modern team card component that displays a team member's image, name, and designation. The image has a gradient border and is slightly translated from the top..
+
+33)
+Simple four-team cards with a hover effect
+Following is a simple four-team card to show team members images and overlay as a hover effect to display team members personal information.
+
+34)
+Horizontal team cards
+Use this example to show a list of your team members with horizontal cards where team members images stay on the left side and personal information such as name, occupation, description, CTA link, and social media accounts is on the right side.
+
+35)
+Vertical team carousel
+Following tailwind, the CSS team carousel shows team members images, names, and social media accounts inside a two-column vertical carousel.
+
+36)
+Basic team member section
+This example is a basic team section to show your team members in a four-column grid layout with social media accounts, names, and occupations.
+
+37)
+Connected team images with a hover effect
+This is a connected team images component that displays team members images without gaps and has an overlay as a hover effect to show team members social media accounts.
+
+38)
+Horizontal team carousel
+This is a horizontal team carousel component that displays team members images and overlays to show their names and social media accounts.
+
+39)
+Center card highlighted carousel
+This is a center card active carousel component that displays team members images, names, and occupations where the center is highlighted.
+
+40)
+Overlayed team card
+The following example of a tailwind team section shows basic four-team cards with overlays on team images and displays team member information over images.
+
+41)
+Translated image with social icons
+Use this example to show team cards with a translated image on top and team member information such as name, description, and social media accounts on the bottom.
+
+42)
+Team card with footer
+The following tailwind CSS team section shows three team cards with an image on top and other information about team members inside the card footer.
+
+43)
+Tailwind team section with hover overlay
+This example can be used to show a team card with a hover overlay effect on the image to display team members names, designations, and social icons.
+
+44)
+A small horizontal card with an avatar
+Use this tailwind team example to show small team cards with a circular avatar, name, and occupation.
+
+45)
+Rounded image team cards
+Following is a rounded image team card example to show team members images with rounded corners, name, description, occupation, and social icons.
+
+46)
+Tailwind team carousel
+Use this example to add a carousel with a navigation arrow inside the team card section with a toggle button to open the social icons list. 
+
+47)
+Carousel with a vertical social list
+This example shows a vertical social icons list on top of team members images, display names, and other information at the bottom. Showcase all team cards inside the carousel.
+
+48)
+Informative team cards
+Use this example to show a large description of team members with their name, images, occupation, and social icons inside horizontal cards.
+
+49) 
+Creative team component
+This example can be used to show a creative card layout placed in a ladder format that showcases team members images, names, social icons, and other details.
+
+50) Three-column team card component
+Use this example to showcase simple three-column cards with team members image, name, and occupation.
+
+
+
+
+team 28 == overlay ma opacity no color dark kro text dekhata nthi
+team 34 == images ma object fit cover apavnu che
+team 35 == slider ni height vadhari ne 800 kri nakho
+team 38 == slider ma default 3 slide avse height rakho image ma width kadhi ne set kro
+team 39 == slider ma middle card hji vadhare motu kro
+team 46 == plus na button upr click krva thi toggle thavu joi bdha cards ma
+team 47 == mobile ma heading center ma
