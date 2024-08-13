@@ -209,7 +209,7 @@
 
                     <ul class="p-5">
                       <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Color Components</h3>
-                      <li class="mb-4">
+                      <li class="mb-4 table-range">
                         <label for="Horizontal-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Red</p>
                           <span
@@ -220,7 +220,7 @@
                           max="255" step="1" value="21">
                       </li>
 
-                      <li class="mb-5">
+                      <li class="mb-5 table-range">
                         <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Green</p>
                           <span
@@ -231,7 +231,7 @@
                           max="255" step="1" value="101">
                       </li>
 
-                      <li class="mb-5">
+                      <li class="mb-5 table-range">
                         <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Blue</p>
                           <span
@@ -242,7 +242,7 @@
                           max="255" step="1" value="192">
                       </li>
 
-                      <li class="mb-0">
+                      <li class="mb-0 table-range">
                         <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Opacity</p>
                           <span
@@ -356,7 +356,7 @@
 
                     <ul class="p-5">
                       <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Color Components</h3>
-                      <li class="mb-4">
+                      <li class="mb-4 table-range">
                         <label for="Horizontal-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Red</p>
                           <span
@@ -367,7 +367,7 @@
                           max="255" step="1" value="21">
                       </li>
 
-                      <li class="mb-5">
+                      <li class="mb-5 table-range">
                         <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Green</p>
                           <span
@@ -378,7 +378,7 @@
                           max="255" step="1" value="101">
                       </li>
 
-                      <li class="mb-5">
+                      <li class="mb-5 table-range">
                         <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Blue</p>
                           <span
@@ -389,7 +389,7 @@
                           max="255" step="1" value="192">
                       </li>
 
-                      <li class="mb-0">
+                      <li class="mb-0 table-range">
                         <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Opacity</p>
                           <span
@@ -477,7 +477,45 @@
                 </div>
               </aside>
               <!----------Leftbar End---------->
-
+              
+              <!-- main table component start  -->
+              <div
+              class="flex-auto relative w-full min-w-0 bg-gray-50 lg:h-[calc(100vh-76px)] overflow-y-auto px-4 lg:p-10 xl:p-24 lg:static lg:max-h-full lg:overflow-visible flex justify-end items-end">
+                <div class="2xl:w-[728px] sm:w-[650px] w-fit mx-auto flex xl:flex-row lg:flex-col md:flex-row flex-col gap-4 items-center justify-center">
+                  <button class="xl:w-full w-[232px] mx-auto group xl:justify-start justify-center items-center inline-flex">
+                      <div class="w-full px-6 py-3 bg-indigo-100 shadow-none rounded-xl justify-between items-center flex">
+                          <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736Z" stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed whitespace-nowrap">Magnifier</h5>
+                          </div>
+                      </div>
+                  </button>
+                  <button class="xl:w-full w-[232px] mx-auto group justify-start items-center inline-flex">
+                      <div class="w-full px-6 py-3 group-hover:bg-indigo-100 bg-white group-hover:shadow-none rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] border border-gray-300 group-hover:border-transparent justify-between items-center flex">
+                          <svg class="text-gray-300 group-hover:text-indigo-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736ZM14 11H8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-gray-300 group-hover:text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed whitespace-nowrap">Zoom Out</h5>
+                          </div>
+                      </div>
+                  </button>
+                  <button class="xl:w-full w-[232px] mx-auto group justify-start items-start inline-flex">
+                      <div class="w-full px-6 py-3 group-hover:bg-indigo-100 bg-white group-hover:shadow-none rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] border border-gray-300 group-hover:border-transparent justify-between items-center flex">
+                          <div class="px-2 py-px justify-center items-center flex">
+                              <h5 class="text-gray-900 group-hover:text-indigo-600 transition-all duration-700 ease-in-out text-lg font-semibold leading-relaxed whitespace-nowrap">Zoom In</h5>
+                          </div>
+                          <svg class="text-gray-900 group-hover:text-indigo-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.6401 16.6736M16.6401 16.6736C18.0976 15.2246 19 13.2177 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2006 19 15.1937 18.1115 16.6401 16.6736ZM14 11H8M11 8L11 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                          </svg>
+                      </div>
+                  </button>
+                </div>
+              </div>
+              <!-- main table component end  -->
+              
               <!----------rightbar start-->
               <aside id="right-bar"
                 class="relative lg:fixed lg:top-20 lg:right-0 bg-white overflow-y-auto lg:z-20 flex-none  border-l border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-[300px] h-auto lg:h-[calc(100vh-76px)]">
@@ -521,7 +559,7 @@
 
                     <ul class="p-5">
                       <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Color Components</h3>
-                      <li class="mb-4">
+                      <li class="mb-4 table-range">
                         <label for="Horizontal-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Red</p>
                           <span
@@ -532,7 +570,7 @@
                           max="255" step="1" value="21">
                       </li>
 
-                      <li class="mb-5">
+                      <li class="mb-5 table-range">
                         <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Green</p>
                           <span
@@ -543,7 +581,7 @@
                           max="255" step="1" value="101">
                       </li>
 
-                      <li class="mb-5">
+                      <li class="mb-5 table-range">
                         <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Blue</p>
                           <span
@@ -554,7 +592,7 @@
                           max="255" step="1" value="192">
                       </li>
 
-                      <li class="mb-0">
+                      <li class="mb-0 table-range">
                         <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
                           <p class="text-sm font-normal text-gray-700">Opacity</p>
                           <span

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
   <link href="css/styles-output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css" />
 
 </head>
@@ -189,7 +190,7 @@
                   <ul class="p-5 border-b border-gray-300">
                     <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">ICON</h3>
 
-                    <li class="mb-5">
+                    <li class="mb-5 table-range">
                       <label for="Border-Width" class="flex items-center justify-between mb-2.5">
                         <p class="text-sm font-normal text-gray-700">Icon Size</p>
                         <span
@@ -227,7 +228,7 @@
                   <ul class="p-5 border-b border-gray-300">
                     <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">image</h3>
 
-                    <li class="mb-5">
+                    <li class="mb-5 table-range">
                       <label for="Border-Width" class="flex items-center justify-between mb-2.5">
                         <p class="text-sm font-normal text-gray-700">Image Size</p>
                         <span
@@ -277,7 +278,7 @@
                 <div class="">
                   <ul class="p-5 border-b border-gray-300">
                     <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">title</h3>
-                    <li class="mb-5">
+                    <li class="mb-5 table-range">
                       <label for="Font-Size" class="flex items-center justify-between mb-2.5">
                         <p class="text-sm font-normal text-gray-700">Font Size</p>
                         <span
@@ -286,7 +287,7 @@
                       <input id="Font-Size" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full"
                         type="range" min="1" max="10" step="1" value="5">
                     </li>
-                    <li class="mb-5">
+                    <li class="mb-5 table-range">
                       <label for="Font-Size" class="flex items-center justify-between mb-2.5">
                         <p class="text-sm font-normal text-gray-700">Horizontal Padding</p>
                         <span
@@ -318,7 +319,7 @@
                   </ul>
                   <ul class="p-5 border-b border-gray-300">
                     <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Description</h3>
-                    <li class="mb-5">
+                    <li class="mb-5 table-range">
                       <label for="Font-Size" class="flex items-center justify-between mb-2.5">
                         <p class="text-sm font-normal text-gray-700">Font Size</p>
                         <span
@@ -327,7 +328,7 @@
                       <input id="Font-Size" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full"
                         type="range" min="1" max="10" step="1" value="4">
                     </li>
-                    <li class="mb-5">
+                    <li class="mb-5 table-range">
                       <label for="Font-Size" class="flex items-center justify-between mb-2.5">
                         <p class="text-sm font-normal text-gray-700">Horizontal Padding</p>
                         <span
@@ -387,9 +388,24 @@
       <!-- main table component start  -->
       <div
         class="flex-auto relative w-full lg:w-[clac(100vw-256px)] xl:w-[calc(100vw-288px)] min-w-0 bg-gray-50 lg:h-[calc(100vh-76px)] overflow-y-auto pt-20 px-4 lg:p-10 xl:p-24 lg:pb-10 lg:mt-20 lg:ml-56 xl:ml-72 lg:static lg:max-h-full lg:overflow-visible">
-
-        <div class="flex items-center justify-center w-full h-full">
-         
+        <div class="flex flex-col items-center justify-center w-full h-auto pt-14 px-5 bg-violet-900 rounded-2xl shadow-[0px_1237.636px_5775.634px_-330.036px_rgba(16,_24,_40,_0.10)]">
+          <h2 class="text-center text-white text-5xl font-bold font-manrope leading-tight pb-5">Open Graph Image Generator</h2>
+          <h4 class="text-center text-white text-xl font-normal leading-8 pb-6">OG Image Generator helps to create and customize open graph images for website.</h4>
+          <a href="" class="pb-14 flex gap-4 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <rect width="38" height="38" rx="8" fill="url(#paint0_linear_1190_5768)"/>
+                  <path d="M22.923 16.7668C23.2354 17.0637 23.2433 17.5527 22.9406 17.8591L20.1113 20.7232C19.8086 21.0296 19.3099 21.0373 18.9975 20.7405C18.6851 20.4437 18.6771 19.9547 18.9798 19.6483L21.8092 16.7842C22.1118 16.4778 22.6105 16.47 22.923 16.7668Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11 13.2045C11 11.987 12.0065 11 13.248 11H21.4622V11.0006C25.0813 11.0484 28 13.9403 28 17.5006C28 21.0908 25.0321 24.0013 21.3711 24.0013C20.0657 24.0013 18.8485 23.6312 17.8225 22.9923L14.2 26.4694C13.0081 27.6134 11 26.7853 11 25.1498V13.2045ZM16.5951 22.0087C15.4477 20.84 14.7422 19.2511 14.7422 17.5006C14.7422 17.074 15.0948 16.7282 15.5299 16.7282C15.9649 16.7282 16.3175 17.074 16.3175 17.5006C16.3175 20.2376 18.5801 22.4564 21.3711 22.4564C24.1621 22.4564 26.4247 20.2376 26.4247 17.5006C26.4247 14.7636 24.1621 12.5449 21.3711 12.5449H13.248C12.8765 12.5449 12.5753 12.8402 12.5753 13.2045V25.1498C12.5753 25.417 12.9033 25.5523 13.098 25.3654L16.5951 22.0087Z" fill="white"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_1190_5768" x1="38" y1="2.17708" x2="-0.794095" y2="36.2484" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#7C3AED"/>
+                      <stop offset="0.993738" stop-color="#4F46E5"/>
+                    </linearGradient>
+                  </defs>
+              </svg>
+              <h5 class="text-white text-lg font-medium leading-8">www.pagedone.io</h5>
+          </a>
+          <img class="shadow-[0px_5600.301px_26134.746px_-1493.414px_rgba(16,_24,_40,_0.10)]" src="https://pagedone.io/asset/uploads/1723534005.png" alt="OG generator image" />
         </div>
 
         <div class="dropdown max-lg:mt-5 lg:fixed inline-flex bottom-12 right-12">
