@@ -2,13 +2,46 @@
 <html>
 
 <head>
-  <title>Gradient Generator</title>
+  <title>Text Gradient Generator</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
-  <link href="assets/css/output.css" rel="stylesheet">
+  <link href="css/styles-output.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css" />
-
+<style>
+  .textGradient {
+        background: linear-gradient(225deg, #4F46E5 0%, #E75F22 50%, #ED4A4A 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 142px;
+        line-height: 224px; /* 157.746% */
+    }
+    @media(max-width:1490px){
+        .textGradient{
+            font-size: 124px;
+            line-height: 190px; /* 157.746% */
+        }
+    }
+    @media(max-width:1380px){
+        .textGradient{
+            font-size: 100px;
+            line-height: 170px; /* 157.746% */
+        }
+    }
+    @media(max-width:790px){
+        .textGradient{
+            font-size: 80px;
+            line-height: 90px; /* 157.746% */
+        }
+    }
+    @media(max-width:650px){
+        .textGradient{
+            font-size: 60px;
+            line-height: 80px; /* 157.746% */
+        }
+    }
+</style>
 </head>
 
 <body class="font-inter ">
@@ -19,66 +52,35 @@
       class="fixed top-0 z-30 left-0 w-full border-y border-gray-200 bg-white px-3 py-2.5 sm:pl-8 sm:pr-12 flex items-center justify-between">
       <div class="flex items-center gap-5">
         <button
-          class="p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200 rounded-xl font-manrope text-lg font-bold whitespace-nowrap text-yellow-400">
+          class="p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200 rounded-xl font-manrope text-lg font-bold whitespace-nowrap text-violet-500">
           <div
-            class="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-l from-yellow-500 to-yellow-300">
+            class="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-l from-violet-500 to-violet-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
               <path
-                d="M5.53704 21H0.615165C0.388061 21 0.179578 20.875 0.0726093 20.675C-0.0343595 20.4749 -0.0223009 20.2321 0.103248 20.0435L2.56419 16.3521C2.79248 16.0096 3.35969 16.0096 3.58798 16.3521L6.04892 20.0435C6.17451 20.2321 6.18649 20.4749 6.07956 20.675C5.97263 20.875 5.76415 21 5.53704 21Z"
-                fill="url(#paint0_linear_701_4852)" />
-              <path d="M5.57813 6.19336H9.88478V14.8066H5.57813V6.19336Z" fill="url(#paint1_linear_701_4852)" />
-              <path d="M11.1152 6.19336H15.4219V14.8066H11.1152V6.19336Z" fill="url(#paint2_linear_701_4852)" />
+                d="M7.875 2.7143H10.5V4.07143H13.125V0H0V4.07143H2.62501V2.7143H5.25003V18.2857H2.62501V21H10.4987V18.2857H7.875V2.7143Z"
+                fill="url(#paint0_linear_701_5485)" />
               <path
-                d="M4.34766 6.19336H0.615235C0.275174 6.19336 0 6.46853 0 6.80859V14.1914C0 14.5315 0.275174 14.8066 0.615235 14.8066H4.34766V6.19336Z"
-                fill="url(#paint3_linear_701_4852)" />
-              <path
-                d="M20.3848 6.19336H16.6524V14.8066H20.3848C20.7248 14.8066 21 14.5315 21 14.1914V6.80859C21 6.46853 20.7248 6.19336 20.3848 6.19336Z"
-                fill="url(#paint4_linear_701_4852)" />
-              <path
-                d="M17.9237 4.92188C17.7182 4.92188 17.526 4.81914 17.4118 4.6479L14.9509 0.956485C14.8253 0.767813 14.8133 0.525083 14.9203 0.325008C15.0272 0.124934 15.2357 0 15.4628 0H20.3847C20.6118 0 20.8202 0.124975 20.9272 0.325049C21.0342 0.525124 21.0221 0.767854 20.8966 0.956526L18.4356 4.64794C18.3214 4.81914 18.1292 4.92188 17.9237 4.92188Z"
-                fill="url(#paint5_linear_701_4852)" />
+                d="M10.5 8.78618V12.8576H13.125V11.5005H14.4375V18.2862H13.125V21.0005H18.375V18.2862H17.0625V11.5004H18.375V12.8576H21V8.78613L10.5 8.78618Z"
+                fill="url(#paint1_linear_701_5485)" />
               <defs>
-                <linearGradient id="paint0_linear_701_4852" x1="3.07608" y1="16.0952" x2="3.07608" y2="21"
+                <linearGradient id="paint0_linear_701_5485" x1="6.56251" y1="21" x2="6.56251" y2="0"
                   gradientUnits="userSpaceOnUse">
-                  <stop stop-color="white" />
+                  <stop stop-color="white" stop-opacity="0.05" />
+                  <stop offset="0.5" stop-color="white" />
                   <stop offset="1" stop-color="white" stop-opacity="0.5" />
                 </linearGradient>
-                <linearGradient id="paint1_linear_701_4852" x1="21" y1="10.5" x2="0" y2="10.5"
+                <linearGradient id="paint1_linear_701_5485" x1="15.75" y1="21.0005" x2="15.75" y2="8.78613"
                   gradientUnits="userSpaceOnUse">
-                  <stop stop-color="white" stop-opacity="0.25" />
-                  <stop offset="0.5" stop-color="white" />
-                  <stop offset="1" stop-color="white" stop-opacity="0.25" />
-                </linearGradient>
-                <linearGradient id="paint2_linear_701_4852" x1="21" y1="10.5" x2="0" y2="10.5"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="white" stop-opacity="0.25" />
-                  <stop offset="0.5" stop-color="white" />
-                  <stop offset="1" stop-color="white" stop-opacity="0.25" />
-                </linearGradient>
-                <linearGradient id="paint3_linear_701_4852" x1="21" y1="10.5" x2="0" y2="10.5"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="white" stop-opacity="0.25" />
-                  <stop offset="0.5" stop-color="white" />
-                  <stop offset="1" stop-color="white" stop-opacity="0.25" />
-                </linearGradient>
-                <linearGradient id="paint4_linear_701_4852" x1="21" y1="10.5" x2="0" y2="10.5"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="white" stop-opacity="0.25" />
-                  <stop offset="0.5" stop-color="white" />
-                  <stop offset="1" stop-color="white" stop-opacity="0.25" />
-                </linearGradient>
-                <linearGradient id="paint5_linear_701_4852" x1="17.9237" y1="0" x2="17.9237" y2="4.92188"
-                  gradientUnits="userSpaceOnUse">
-                  <stop offset="0.5" stop-color="white" stop-opacity="0.25" />
+                  <stop stop-color="white" stop-opacity="0.1" />
                   <stop offset="1" stop-color="white" />
                 </linearGradient>
               </defs>
             </svg>
           </div>
-          Gradient Generator
+          Text Gradient Generator
         </button>
-        <p class="text-base font-normal text-gray-700 hidden lg:block">Gradient Generator helps to create Gradient from
-          the Tailwind CSS Palette. Simply select the colors and set the direction of the gradient.</p>
+        <p class="text-base font-normal text-gray-700 hidden lg:block">Text Gradient Generator helps to create Text
+          Gradient from the Tailwind CSS Palette. Simply select the colors and Copy CSS.</p>
       </div>
       <div class="flex items-center gap-2 sm:gap-5">
         <button
@@ -160,6 +162,16 @@
                       </li>
                     </ul>
                     <!--End List-->
+
+                    <ul class="py-6 px-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Text</h3>
+                      <li>
+                        <input type="text"
+                          class="py-2.5 px-4 w-full rounded-lg border border-gray-300 text-base font-normal text-gray-900 transition-all duration-300 hover:bg-gray-100 placeholder:text-gray-900 focus-within:outline-0 focus-within:bg-gray-100"
+                          placeholder="Text Gradient"></input>
+                      </li>
+                    </ul>
+
 
                     <div class="p-5 ">
                       <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Direction</h3>
@@ -407,20 +419,19 @@
         <!-- main table component start  -->
         <div
           class="flex-auto relative w-full lg:w-[clac(100vw-256px)] xl:w-[calc(100vw-288px)] min-w-0 bg-gray-50 lg:h-[calc(100vh-76px)] overflow-y-auto pt-20 px-4 lg:p-10 xl:p-24 lg:pb-10 lg:mt-20 lg:ml-56 xl:ml-72 lg:static lg:max-h-full lg:overflow-visible">
-
-          <div class="flex items-center justify-center w-full h-full">
-
+          <div class="flex items-center justify-center w-full h-auto py-24 px-5 bg-white rounded-2xl shadow-[0px_15px_40px_-4px_rgba(16,_24,_40,_0.04)]">
+            <h2 class="textGradient font-bold font-manrope">Text Gradient</h2>
           </div>
 
           <div class=" flex items-center gap-6 max-lg:mt-5 lg:fixed z-[10000] bottom-12 right-12 p-3 pl-6 rounded-full bg-white border border-gray-200 shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)]">
-           <p class="text-lg font-normal text-gray-900 leading-8">bg-gradient-to-tr from-red-500 via-orange-600 to-blue-600</p>
-           <button class="flex items-center gap-2 py-3 pr-7 pl-5 rounded-full bg-indigo-600 text-white text-base font-semibold">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M9.16667 2.5H10.8333C13.976 2.5 15.5474 2.5 16.5237 3.47631C17.5 4.45262 17.5 6.02397 17.5 9.16667V10.8333M8.33333 17.5C5.99256 17.5 4.82218 17.5 3.98143 16.9382C3.61747 16.695 3.30496 16.3825 3.06177 16.0186C2.5 15.1778 2.5 14.0074 2.5 11.6667C2.5 9.3259 2.5 8.15551 3.06177 7.31477C3.30496 6.9508 3.61747 6.6383 3.98143 6.3951C4.82218 5.83333 5.99256 5.83333 8.33333 5.83333C10.6741 5.83333 11.8445 5.83333 12.6852 6.3951C13.0492 6.6383 13.3617 6.9508 13.6049 7.31477C14.1667 8.15551 14.1667 9.3259 14.1667 11.6667C14.1667 14.0074 14.1667 15.1778 13.6049 16.0186C13.3617 16.3825 13.0492 16.695 12.6852 16.9382C11.8445 17.5 10.6741 17.5 8.33333 17.5Z" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-            Copy CSS
-           </button>
-          </div>
+            <p class="text-lg font-normal text-gray-900 leading-8">bg-gradient-to-tr from-red-500 via-orange-600 to-blue-600 bg-clip-text text-transparent</p>
+            <button class="flex items-center gap-2 py-3 pr-7 pl-5 rounded-full bg-indigo-600 text-white text-base font-semibold">
+             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+               <path d="M9.16667 2.5H10.8333C13.976 2.5 15.5474 2.5 16.5237 3.47631C17.5 4.45262 17.5 6.02397 17.5 9.16667V10.8333M8.33333 17.5C5.99256 17.5 4.82218 17.5 3.98143 16.9382C3.61747 16.695 3.30496 16.3825 3.06177 16.0186C2.5 15.1778 2.5 14.0074 2.5 11.6667C2.5 9.3259 2.5 8.15551 3.06177 7.31477C3.30496 6.9508 3.61747 6.6383 3.98143 6.3951C4.82218 5.83333 5.99256 5.83333 8.33333 5.83333C10.6741 5.83333 11.8445 5.83333 12.6852 6.3951C13.0492 6.6383 13.3617 6.9508 13.6049 7.31477C14.1667 8.15551 14.1667 9.3259 14.1667 11.6667C14.1667 14.0074 14.1667 15.1778 13.6049 16.0186C13.3617 16.3825 13.0492 16.695 12.6852 16.9382C11.8445 17.5 10.6741 17.5 8.33333 17.5Z" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+             </svg>
+             Copy CSS
+            </button>
+           </div>
         </div>
         <!-- main table component end  -->
       </div>
@@ -430,7 +441,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
   <script src="assets/js/main.js"></script>
- 
+
 </body>
 
 </html>

@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>OG-image Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
+  <link href="css/styles-output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css" />
+
+</head>
+
+<body class="font-inter ">
+  <div class="page-container">
+    <!----------titlebar Start---------->
+
+    <div
+      class="fixed top-0 z-30 left-0 w-full border-y border-gray-200 bg-white px-3 py-2.5 sm:pl-8 sm:pr-12 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <button
+          class="p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200 rounded-xl font-manrope text-lg font-bold whitespace-nowrap text-blue-400">
+          <div class="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-l from-blue-500 to-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+              <path
+                d="M0 2C0 0.89543 0.895431 0 2 0H19C20.1046 0 21 0.895431 21 2V19C21 20.1046 20.1046 21 19 21H2C0.89543 21 0 20.1046 0 19V2Z"
+                fill="url(#paint0_linear_701_4308)" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.63943 15.9323C4.75183 15.976 4.87409 16 5.00195 16H16.002C16.1296 16 16.2517 15.9761 16.364 15.9325L10.5016 10.8696L4.63943 15.9323ZM16.8127 15.5855C16.9318 15.4209 17.002 15.2186 17.002 15V5.99999C17.002 5.78259 16.9326 5.5814 16.8148 5.41733L10.9268 10.5023L16.8127 15.5855ZM16.3676 5.06895C16.2544 5.02444 16.131 4.99999 16.002 4.99999H5.00195C4.8727 4.99999 4.74917 5.02451 4.63577 5.06916L10.5016 10.135L16.3676 5.06895ZM4.18885 5.41774C4.07121 5.58173 4.00195 5.78277 4.00195 5.99999V15C4.00195 15.2185 4.07201 15.4206 4.19089 15.5851L10.0763 10.5023L4.18885 5.41774Z"
+                fill="url(#paint1_linear_701_4308)" />
+              <path d="M2 8C2 7.44771 2.44772 7 3 7H5V14H3C2.44772 14 2 13.5523 2 13V8Z"
+                fill="url(#paint2_linear_701_4308)" />
+              <path d="M16 7H18C18.5523 7 19 7.44771 19 8V13C19 13.5523 18.5523 14 18 14H16V7Z"
+                fill="url(#paint3_linear_701_4308)" />
+              <defs>
+                <linearGradient id="paint0_linear_701_4308" x1="10.5" y1="0" x2="10.5" y2="21"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.75" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_701_4308" x1="10.502" y1="4.49999" x2="10.502" y2="14.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0.25" stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.5" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_701_4308" x1="5" y1="10.5" x2="2" y2="10.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="white" stop-opacity="0.75" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_701_4308" x1="19" y1="10.5" x2="16" y2="10.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.75" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          OG Image Generator
+        </button>
+        <p class="text-base font-normal text-gray-700 hidden lg:block">OG Image Generator helps to create and customize
+          open graph images for website using basic properties and export in PNG format.</p>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-5">
+        <button
+          class="p-2 min-[470px]:pr-4 rounded-full border border-gray-300 flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M12.8307 5.08529C12.8307 6.09781 12.0099 6.91862 10.9974 6.91862C9.98485 6.91862 9.16406 6.09781 9.16406 5.08529C9.16406 4.07276 9.98485 3.25195 10.9974 3.25195C12.0099 3.25195 12.8307 4.07276 12.8307 5.08529Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M6.41667 16.0853C6.41667 17.0978 5.59586 17.9186 4.58333 17.9186C3.57081 17.9186 2.75 17.0978 2.75 16.0853C2.75 15.0727 3.57081 14.252 4.58333 14.252C5.59586 14.252 6.41667 15.0727 6.41667 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M19.2448 16.0853C19.2448 17.0978 18.424 17.9186 17.4115 17.9186C16.3989 17.9186 15.5781 17.0978 15.5781 16.0853C15.5781 15.0727 16.3989 14.252 17.4115 14.252C18.424 14.252 19.2448 15.0727 19.2448 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M3.66406 12.3842C3.66406 9.65697 5.13879 7.27589 7.33073 6.00195M14.6641 6.00195C16.856 7.27589 18.3307 9.65697 18.3307 12.3842M7.33073 18.7663C8.40936 19.3932 9.66172 19.752 10.9974 19.752C12.3331 19.752 13.5854 19.3932 14.6641 18.7663"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+          <span class="hidden min-[470px]:block">Share</span>
+        </button>
+        <button
+          class="p-2 min-[470px]:pl-4 rounded-full border border-gray-300 whitespace-nowrap flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <span class="hidden min-[470px]:block">Explore Tools</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M19.25 11.502C19.25 16.0583 15.5564 19.752 11 19.752C6.44365 19.752 2.75 16.0583 2.75 11.502C2.75 6.94561 6.44365 3.25195 11 3.25195C15.5564 3.25195 19.25 6.94561 19.25 11.502Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M9.70973 9.96544L12.5824 12.838M8.65374 11.2186L8.47778 11.7401C7.96634 13.2561 7.71063 14.0141 8.10977 14.4161C8.50892 14.8182 9.26872 14.5679 10.7884 14.0675L11.3111 13.8954C12.1657 13.614 12.5929 13.4732 12.9001 13.1684C13.2072 12.8635 13.351 12.4372 13.6386 11.5848L13.8146 11.0632C14.326 9.54726 14.5817 8.78927 14.1825 8.38722C13.7834 7.98517 13.0236 8.23539 11.5039 8.73582L10.9811 8.908C10.1266 9.18939 9.69937 9.33009 9.39229 9.63501C9.08512 9.93996 8.94132 10.3661 8.65374 11.2186Z"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!----------titlebar End---------->
+    <main>
+      <div class="w-full bg-white flex flex-col-reverse lg:flex-row max-lg:gap-8">
+        <!----------Leftbar Start---------->
+        <aside id="left-bar"
+          class="relative lg:fixed lg:top-20 overflow-y-auto lg:z-20 flex-none  border-r border-gray-200  max-lg:pt-5 scrollbar-y lg:block lg:w-64 xl:w-72 h-auto lg:h-[calc(100vh-76px)]">
+          <div class="tabs relative">
+            <div class="block sticky top-0 left-0 bg-white z-20">
+              <ul class="flex w-full border-b border-gray-200 space-x-3 transition-all duration-300 ">
+                <li class="w-full">
+                  <a href="javascript:void(0)"
+                    class="inline-block py-4 px-6 text-center w-full text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap active"
+                    data-tab="tabs-with-underline-1" role="tab">
+                    Layout
+                  </a>
+                </li>
+                <li class="w-full">
+                  <a href="javascript:void(0)"
+                    class="inline-block py-4 px-6 text-center w-full text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap "
+                    data-tab="tabs-with-underline-2" role="tab">
+                    Content
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="mt-3">
+              <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1"
+                class="tabcontent h-full" style="display: block;">
+                <div class="h-full">
+                  <!--List-->
+                  <ul class="pb-6 px-5 border-b border-gray-300">
+                    <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Image Layout</h3>
+
+                    <li class="mb-5">
+                      <label
+                        class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" checked="">
+                        <div
+                          class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                        </div>
+                        <span class="text-sm font-normal text-gray-700 ">Site & Icon</span>
+                      </label>
+                    </li>
+                    <li class="mb-5">
+                      <label
+                        class="relative flex items-center flex-row-reverse w-full justify-between mb-5 cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" checked="">
+                        <div
+                          class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                        </div>
+                        <span class=" text-sm font-normal text-gray-700 ">Description</span>
+                      </label>
+                    </li>
+                    <li class="mb-0">
+                      <label
+                        class="relative flex items-center flex-row-reverse w-full justify-between mb-0 cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" checked="">
+                        <div
+                          class="w-9 h-5 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0  rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:right-[18px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600 hover:peer-checked:bg-indigo-700 ">
+                        </div>
+                        <span class=" text-sm font-normal text-gray-700 ">Image</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <!--End List-->
+
+                  <ul class="p-5 border-b border-gray-300">
+                    <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">colors</h3>
+                    <li class="mb-5 flex items-center justify-between">
+                      <span class="text-sm font-normal text-gray-700">Background Color</span>
+                      <div class="flex flex-row-reverse">
+                        <input type="color" id="bg-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                          value="#4C1D95"
+                          class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#4C1D95" id="bg-hex"
+                          class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+                      </div>
+                    </li>
+                    <li class="mb-0 flex items-center justify-between">
+                      <span class="text-sm font-normal text-gray-700">Title Color</span>
+                      <div class="flex flex-row-reverse">
+                        <input type="color" id="text-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                          value="#FFFFFF"
+                          class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#FFFFFF" id="text-hex"
+                          class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                  <ul class="p-5 border-b border-gray-300">
+                    <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">ICON</h3>
+
+                    <li class="mb-5">
+                      <label for="Border-Width" class="flex items-center justify-between mb-2.5">
+                        <p class="text-sm font-normal text-gray-700">Icon Size</p>
+                        <span
+                          class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">40px</span>
+                      </label>
+                      <input id="Border-Width" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full"
+                        type="range" min="1" max="5" step="1" value="2">
+                    </li>
+                    <li class="mb-5">
+                      <div class="flex">
+                        <input id="Bold" type="checkbox"
+                          class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                        <label for="Bold" class="text-sm font-normal cursor-pointer text-gray-600">Display Icon At
+                          Top</label>
+                      </div>
+                    </li>
+                    <li>
+                      <label class="group">
+                        <input type="file" hidden="">
+                        <div
+                          class="flex items-center justify-center py-2.5 px-4 w-full gap-2 border border-dashed border-gray-300 rounded-lg text-gray-400 text-base font-normal leading-4 
+                                    cursor-pointer focus:outline-none transition-all duration-300 group-hover:text-gray-900">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18"
+                            fill="none">
+                            <path
+                              d="M8.53408 1.5002L9.09976 0.934514C8.94973 0.784485 8.74625 0.7002 8.53408 0.7002C8.3219 0.7002 8.11842 0.784485 7.96839 0.934514L8.53408 1.5002ZM11.3358 5.4333C11.6482 5.74572 12.1548 5.74572 12.4672 5.4333C12.7796 5.12088 12.7796 4.61435 12.4672 4.30193L11.3358 5.4333ZM16.8 11.5C16.8 11.0582 16.4418 10.7 16 10.7C15.5582 10.7 15.2 11.0582 15.2 11.5H16.8ZM1.8 11.5C1.8 11.0582 1.44183 10.7 1 10.7C0.558172 10.7 0.2 11.0582 0.2 11.5H1.8ZM5.73235 5.4333L9.09976 2.06589L7.96839 0.934514L4.60098 4.30193L5.73235 5.4333ZM7.96839 2.06589L11.3358 5.4333L12.4672 4.30193L9.09976 0.934514L7.96839 2.06589ZM9.33255 12.3333V1.5H7.73255V12.3333H9.33255ZM15.2 11.5V13.1667H16.8V11.5H15.2ZM12.6667 15.7H4.33333V17.3H12.6667V15.7ZM1.8 13.1667V11.5H0.2V13.1667H1.8ZM4.33333 15.7C3.52504 15.7 2.9993 15.6983 2.61115 15.6461C2.246 15.597 2.1245 15.5168 2.05384 15.4462L0.92247 16.5775C1.33996 16.995 1.85538 17.1589 2.39795 17.2318C2.9175 17.3017 3.57027 17.3 4.33333 17.3V15.7ZM0.2 13.1667C0.2 13.9297 0.198301 14.5825 0.268153 15.1021C0.341099 15.6446 0.504977 16.16 0.92247 16.5775L2.05384 15.4462C1.98318 15.3755 1.90298 15.254 1.85389 14.8889C1.8017 14.5007 1.8 13.975 1.8 13.1667H0.2ZM15.2 13.1667C15.2 13.975 15.1983 14.5007 15.1461 14.8889C15.097 15.254 15.0168 15.3755 14.9462 15.4462L16.0775 16.5775C16.495 16.16 16.6589 15.6446 16.7318 15.1021C16.8017 14.5825 16.8 13.9297 16.8 13.1667H15.2ZM12.6667 17.3C13.4297 17.3 14.0825 17.3017 14.6021 17.2318C15.1446 17.1589 15.66 16.995 16.0775 16.5775L14.9462 15.4462C14.8755 15.5168 14.754 15.597 14.3889 15.6461C14.0007 15.6983 13.475 15.7 12.6667 15.7V17.3Z"
+                              fill="#111827" />
+                          </svg>
+                          Choose File
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+
+                  <ul class="p-5 border-b border-gray-300">
+                    <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">image</h3>
+
+                    <li class="mb-5">
+                      <label for="Border-Width" class="flex items-center justify-between mb-2.5">
+                        <p class="text-sm font-normal text-gray-700">Image Size</p>
+                        <span
+                          class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">50%</span>
+                      </label>
+                      <input id="Border-Width" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full"
+                        type="range" min="1" max="100" step="1" value="50">
+                    </li>
+                    <li class="mb-5">
+                      <div class="flex">
+                        <input id="Bold" type="checkbox"
+                          class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                        <label for="Bold" class="text-sm font-normal cursor-pointer text-gray-600">Shadow</label>
+                      </div>
+                    </li>
+                    <li>
+                      <label class="group">
+                        <input type="file" hidden="">
+                        <div
+                          class="flex items-center justify-center py-2.5 px-4 w-full gap-2 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 text-base font-normal leading-4 
+                                    cursor-pointer focus:outline-none transition-all duration-300 group-hover:bg-gray-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                      <path d="M3.41667 15.4167L6.43028 13.6085C6.78883 13.3934 6.9681 13.2858 7.15645 13.2266C7.4403 13.1374 7.74287 13.1257 8.03273 13.1929C8.22506 13.2375 8.41206 13.331 8.78605 13.518C9.18791 13.719 9.38884 13.8194 9.59448 13.8638C9.90444 13.9307 10.2271 13.9078 10.5244 13.7977C10.7217 13.7247 10.9064 13.5968 11.2758 13.3411L13.8772 11.5401C14.6683 10.9924 15.0639 10.7186 15.5192 10.6862C15.9744 10.6539 16.4047 10.869 17.2653 11.2993L18 11.6667M18 11.6667V9.16667C18 6.02397 18 4.45262 17.0237 3.47631C16.0474 2.5 14.476 2.5 11.3333 2.5H9.66667C6.52397 2.5 4.95262 2.5 3.97631 3.47631C3 4.45262 3 6.02397 3 9.16667V10.8333C3 13.976 3 15.5474 3.97631 16.5237C4.95262 17.5 6.52397 17.5 9.66667 17.5H12.1667C14.5074 17.5 15.6778 17.5 16.5186 16.9382C16.8825 16.695 17.195 16.3825 17.4382 16.0186C18 15.1778 18 14.0074 18 11.6667ZM9.66667 7.5C9.66667 8.42047 8.92047 9.16667 8 9.16667C7.07953 9.16667 6.33333 8.42047 6.33333 7.5C6.33333 6.57953 7.07953 5.83333 8 5.83333C8.92047 5.83333 9.66667 6.57953 9.66667 7.5Z" stroke="#4F46E5" stroke-width="1.6"/>
+                                    </svg>
+                                    Image Test.png
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+
+                  <div class="p-5">
+                    <button
+                      class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436"
+                          stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div id="tabs-with-underline-2" class="hidden tabcontent" role="tabpanel"
+                aria-labelledby="tabs-with-underline-item-2" style="display: none     ;">
+                <div class="">
+                  <ul class="p-5 border-b border-gray-300">
+                    <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">title</h3>
+                    <li class="mb-5">
+                      <label for="Font-Size" class="flex items-center justify-between mb-2.5">
+                        <p class="text-sm font-normal text-gray-700">Font Size</p>
+                        <span
+                          class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">5</span>
+                      </label>
+                      <input id="Font-Size" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full"
+                        type="range" min="1" max="10" step="1" value="5">
+                    </li>
+                    <li class="mb-5">
+                      <label for="Font-Size" class="flex items-center justify-between mb-2.5">
+                        <p class="text-sm font-normal text-gray-700">Horizontal Padding</p>
+                        <span
+                          class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">4</span>
+                      </label>
+                      <input id="Font-Size" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full"
+                        type="range" min="1" max="10" step="1" value="4">
+                    </li>
+                    <li class="mb-5">
+                      <div class="flex">
+                        <input id="Bold" type="checkbox"
+                          class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
+                          checked="">
+                        <label for="Bold" class="text-sm font-normal cursor-pointer text-gray-600">Bold</label>
+                      </div>
+                    </li>
+                    <li class="mb-5">
+                      <div class="flex">
+                        <input id="Uppercase" type="checkbox"
+                          class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                        <label for="Uppercase"
+                          class="text-sm font-normal cursor-pointer text-gray-600">Uppercase</label>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="text"
+                        class="py-2.5 px-4 w-full rounded-lg border border-gray-300 text-base font-normal text-gray-900 transition-all duration-300 hover:bg-gray-100 placeholder:text-gray-900 focus-within:outline-0 focus-within:bg-gray-100" placeholder="Open Graph Image Generator"></input>
+                    </li>
+                  </ul>
+                  <ul class="p-5 border-b border-gray-300">
+                    <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Description</h3>
+                    <li class="mb-5">
+                      <label for="Font-Size" class="flex items-center justify-between mb-2.5">
+                        <p class="text-sm font-normal text-gray-700">Font Size</p>
+                        <span
+                          class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">4</span>
+                      </label>
+                      <input id="Font-Size" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full"
+                        type="range" min="1" max="10" step="1" value="4">
+                    </li>
+                    <li class="mb-5">
+                      <label for="Font-Size" class="flex items-center justify-between mb-2.5">
+                        <p class="text-sm font-normal text-gray-700">Horizontal Padding</p>
+                        <span
+                          class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">6</span>
+                      </label>
+                      <input id="Font-Size" class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full"
+                        type="range" min="1" max="10" step="1" value="6">
+                    </li>
+                    <li class="mb-5">
+                      <div class="flex">
+                        <input id="Bold-1" type="checkbox"
+                          class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                        <label for="Bold-1" class="text-sm font-normal cursor-pointer text-gray-600">Bold</label>
+                      </div>
+                    </li>
+                    <li class="mb-5">
+                      <div class="flex">
+                        <input id="Uppercase-1" type="checkbox"
+                          class="w-5 h-5 cursor-pointer appearance-none border border-gray-300  rounded-md mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
+                        <label for="Uppercase-1"
+                          class="text-sm font-normal cursor-pointer text-gray-600">Uppercase</label>
+                      </div>
+                    </li>
+                    <li>
+                      <button
+                        class="py-2.5 px-4 rounded-lg border border-gray-300 text-left text-base font-normal text-gray-900 transition-all duration-300 hover:bg-gray-100">
+                        OG Image Generator helps to create and customize open graph images for website.
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="p-5 border-b border-gray-300">
+                    <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Site</h3>
+                    <li>
+                      <input type="text"
+                        class="py-2.5 px-4 w-full rounded-lg border border-gray-300 text-base font-normal text-gray-900 transition-all duration-300 hover:bg-gray-100 placeholder:text-gray-900 focus-within:outline-0 focus-within:bg-gray-100" placeholder="www.pagedone.io"></input>
+                    </li>
+                  </ul>
+                  
+                  <div class="p-5">
+                    <button
+                      class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436"
+                          stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </aside>
+      <!----------Leftbar End---------->
+      <!-- main table component start  -->
+      <div
+        class="flex-auto relative w-full lg:w-[clac(100vw-256px)] xl:w-[calc(100vw-288px)] min-w-0 bg-gray-50 lg:h-[calc(100vh-76px)] overflow-y-auto pt-20 px-4 lg:p-10 xl:p-24 lg:pb-10 lg:mt-20 lg:ml-56 xl:ml-72 lg:static lg:max-h-full lg:overflow-visible">
+
+        <div class="flex items-center justify-center w-full h-full">
+         
+        </div>
+
+        <div class="dropdown max-lg:mt-5 lg:fixed inline-flex bottom-12 right-12">
+          <button type="button" data-target="dropdown-default"
+            class="dropdown-toggle inline-flex justify-center items-center gap-2 py-3 px-6 text-lg font-semibold bg-indigo-600 text-white rounded-full cursor-pointer text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 ">
+            Export
+            <svg class="dropdown-open:rotate-180 rotate-180 w-2.5 h-2.5 text-white" width="16" height="16"
+              viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </button>
+          <div id="dropdown-default"
+            class="dropdown-menu rounded-xl shadow-lg bg-white absolute -left-20 -top-96 w-max mt-2 open hidden"
+            aria-labelledby="dropdown-default">
+            <ul class="py-2 px-4 divide-y divide-gray-200">
+              <li class="mb-3">
+                <a class="block p-3 rounded-md text-base  hover:bg-gray-100 text-gray-600 uppercase font-medium"
+                  href="javascript:;">
+                  Export
+                </a>
+              </li>
+              <li>
+                <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white"
+                  href="javascript:;">
+                  Export HTML + Tailwind
+                </a>
+              </li>
+              <li>
+                <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white"
+                  href="javascript:;">
+                  Export JPEG
+                </a>
+              </li>
+              <li>
+                <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white"
+                  href="javascript:;">
+                  Export PNG
+                </a>
+              </li>
+              <li>
+                <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white"
+                  href="javascript:;">
+                  Export SVG
+                </a>
+              </li>
+              <li>
+                <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white"
+                  href="javascript:;">
+                  Export CSV
+                </a>
+              </li>
+              <li>
+                <a class="block p-3 rounded-md text-gray-900 font-medium transition-all duration-300 hover:bg-indigo-600 hover:text-white"
+                  href="javascript:;">
+                  Export Markdown
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- main table component end  -->
+  </div>
+  </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+  <script>
+    $('#bg-color').on('input', function () {
+      $('#bg-hex').val(this.value);
+    });
+    $('#bg-hex').on('input', function () {
+      $('#bg-color').val(this.value);
+    });
+    $('#text-color').on('input', function () {
+      $('#text-hex').val(this.value);
+    });
+    $('#text-hex').on('input', function () {
+      $('#text-color').val(this.value);
+    });
+  </script>
+</body>
+
+</html>

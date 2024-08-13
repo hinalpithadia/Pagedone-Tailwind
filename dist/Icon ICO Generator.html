@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Icon ICO Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
+  <link href="css/styles-output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css" />
+
+</head>
+
+<body class="font-inter ">
+  <div class="page-container">
+    <!----------titlebar Start---------->
+
+    <div
+      class="fixed top-0 z-30 left-0 w-full border-y border-gray-200 bg-white px-3 py-2.5 sm:pl-8 sm:pr-12 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <button
+          class="p-1.5 pr-5 flex items-center gap-2.5 border border-gray-200 rounded-xl font-manrope text-lg font-bold whitespace-nowrap text-orange-400">
+          <div
+            class="flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-l from-orange-500 to-orange-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+              <path d="M15 1C15 0.447715 15.4477 0 16 0H20C20.5523 0 21 0.447715 21 1V5C21 5.55228 20.5523 6 20 6H15V1Z"
+                fill="url(#paint0_linear_701_6810)" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2 4C0.895431 4 0 4.89543 0 6V17C0 18.1046 0.895431 19 2 19H17C18.1046 19 19 18.1046 19 17V6C19 4.89543 18.1046 4 17 4H2ZM9.98689 10.7711H8.93051C8.91121 10.6365 8.87182 10.5169 8.81233 10.4124C8.75283 10.3062 8.67646 10.216 8.5832 10.1415C8.48994 10.0671 8.38222 10.0101 8.26002 9.97045C8.13943 9.93085 8.00838 9.91105 7.86689 9.91105C7.61123 9.91105 7.38854 9.97362 7.19881 10.0988C7.00908 10.2223 6.86196 10.4029 6.75744 10.6405C6.65293 10.8765 6.60068 11.1632 6.60068 11.5005C6.60068 11.8474 6.65293 12.1389 6.75744 12.3749C6.86357 12.6109 7.01149 12.7891 7.20122 12.9095C7.39095 13.0298 7.61043 13.09 7.85965 13.09C7.99954 13.09 8.12897 13.0718 8.24796 13.0354C8.36855 12.9989 8.47547 12.9459 8.56873 12.8762C8.66199 12.8049 8.73917 12.7186 8.80027 12.6172C8.86298 12.5158 8.90639 12.4002 8.93051 12.2703L9.98689 12.2751C9.95955 12.4984 9.89122 12.7138 9.78188 12.9213C9.67416 13.1272 9.52864 13.3118 9.34534 13.4749C9.16365 13.6365 8.94659 13.7648 8.69415 13.8598C8.44332 13.9533 8.15952 14 7.84277 14C7.40221 14 7.00828 13.9018 6.66097 13.7054C6.31528 13.509 6.04193 13.2247 5.84095 12.8524C5.64157 12.4802 5.54188 12.0296 5.54188 11.5005C5.54188 10.9699 5.64318 10.5185 5.84577 10.1463C6.04837 9.77404 6.32331 9.49052 6.67062 9.29569C7.01792 9.09928 7.40864 9.00108 7.84277 9.00108C8.12897 9.00108 8.39427 9.04068 8.63867 9.11988C8.88468 9.19907 9.10255 9.3147 9.29228 9.46676C9.48201 9.61723 9.63637 9.80176 9.75535 10.0203C9.87595 10.2389 9.95312 10.4892 9.98689 10.7711ZM4.09032 9.06761V13.9335H3.046V9.06761H4.09032ZM15.6477 12.8548C15.8519 12.4826 15.954 12.0312 15.954 11.5005C15.954 10.9699 15.8519 10.5185 15.6477 10.1463C15.4451 9.77404 15.1686 9.49052 14.818 9.29569C14.4691 9.09928 14.0768 9.00108 13.6411 9.00108C13.2021 9.00108 12.8082 9.09928 12.4593 9.29569C12.1103 9.49052 11.8346 9.77404 11.632 10.1463C11.4294 10.5185 11.3281 10.9699 11.3281 11.5005C11.3281 12.0296 11.4294 12.4802 11.632 12.8524C11.8346 13.2247 12.1103 13.509 12.4593 13.7054C12.8082 13.9018 13.2021 14 13.6411 14C14.0768 14 14.4691 13.9026 14.818 13.7078C15.1686 13.5114 15.4451 13.227 15.6477 12.8548ZM14.7384 10.631C14.843 10.867 14.8952 11.1568 14.8952 11.5005C14.8952 11.8443 14.843 12.1341 14.7384 12.3701C14.6355 12.6061 14.49 12.7851 14.3019 12.9071C14.1138 13.029 13.8935 13.09 13.6411 13.09C13.3886 13.09 13.1683 13.029 12.9802 12.9071C12.7921 12.7851 12.6458 12.6061 12.5413 12.3701C12.4384 12.1341 12.3869 11.8443 12.3869 11.5005C12.3869 11.1568 12.4384 10.867 12.5413 10.631C12.6458 10.3949 12.7921 10.216 12.9802 10.094C13.1683 9.97204 13.3886 9.91105 13.6411 9.91105C13.8935 9.91105 14.1138 9.97204 14.3019 10.094C14.49 10.216 14.6355 10.3949 14.7384 10.631Z"
+                fill="url(#paint1_linear_701_6810)" />
+              <defs>
+                <linearGradient id="paint0_linear_701_6810" x1="20.0929" y1="1.63865e-07" x2="15.9071" y2="6"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" />
+                  <stop offset="0.7" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_701_6810" x1="18.5" y1="11.5" x2="0" y2="11.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.05" />
+                  <stop offset="0.5" stop-color="white" stop-opacity="0.75" />
+                  <stop offset="1" stop-color="white" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          Icon ICO Generator
+        </button>
+        <p class="text-base font-normal text-gray-700 hidden lg:block">Icon ICO Generator helps to create a compatible
+          ICO file from an image of any format with customization of icon background.</p>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-5">
+        <button
+          class="p-2 min-[470px]:pr-4 rounded-full border border-gray-300 flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M12.8307 5.08529C12.8307 6.09781 12.0099 6.91862 10.9974 6.91862C9.98485 6.91862 9.16406 6.09781 9.16406 5.08529C9.16406 4.07276 9.98485 3.25195 10.9974 3.25195C12.0099 3.25195 12.8307 4.07276 12.8307 5.08529Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M6.41667 16.0853C6.41667 17.0978 5.59586 17.9186 4.58333 17.9186C3.57081 17.9186 2.75 17.0978 2.75 16.0853C2.75 15.0727 3.57081 14.252 4.58333 14.252C5.59586 14.252 6.41667 15.0727 6.41667 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M19.2448 16.0853C19.2448 17.0978 18.424 17.9186 17.4115 17.9186C16.3989 17.9186 15.5781 17.0978 15.5781 16.0853C15.5781 15.0727 16.3989 14.252 17.4115 14.252C18.424 14.252 19.2448 15.0727 19.2448 16.0853Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M3.66406 12.3842C3.66406 9.65697 5.13879 7.27589 7.33073 6.00195M14.6641 6.00195C16.856 7.27589 18.3307 9.65697 18.3307 12.3842M7.33073 18.7663C8.40936 19.3932 9.66172 19.752 10.9974 19.752C12.3331 19.752 13.5854 19.3932 14.6641 18.7663"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+          <span class="hidden min-[470px]:block">Share</span>
+        </button>
+        <button
+          class="p-2 min-[470px]:pl-4 rounded-full border border-gray-300 whitespace-nowrap flex items-center gap-2 text-sm font-semibold text-gray-900 transition-all duration-300 hover:bg-gray-100">
+          <span class="hidden min-[470px]:block">Explore Tools</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+            <path
+              d="M19.25 11.502C19.25 16.0583 15.5564 19.752 11 19.752C6.44365 19.752 2.75 16.0583 2.75 11.502C2.75 6.94561 6.44365 3.25195 11 3.25195C15.5564 3.25195 19.25 6.94561 19.25 11.502Z"
+              stroke="#6B7280" stroke-width="1.2" />
+            <path
+              d="M9.70973 9.96544L12.5824 12.838M8.65374 11.2186L8.47778 11.7401C7.96634 13.2561 7.71063 14.0141 8.10977 14.4161C8.50892 14.8182 9.26872 14.5679 10.7884 14.0675L11.3111 13.8954C12.1657 13.614 12.5929 13.4732 12.9001 13.1684C13.2072 12.8635 13.351 12.4372 13.6386 11.5848L13.8146 11.0632C14.326 9.54726 14.5817 8.78927 14.1825 8.38722C13.7834 7.98517 13.0236 8.23539 11.5039 8.73582L10.9811 8.908C10.1266 9.18939 9.69937 9.33009 9.39229 9.63501C9.08512 9.93996 8.94132 10.3661 8.65374 11.2186Z"
+              stroke="#6B7280" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!----------titlebar End---------->
+    <main>
+      <div class="w-full bg-gray-50 flex flex-col-reverse lg:flex-row max-lg:gap-8">
+        <div class="tabs mt-20 w-full h-[calc(100vh-100px)]">
+          <div class="block w-full">
+            <ul
+              class="flex border-b border-gray-200 space-x-3 bg-white transition-all duration-300 -mb-px w-full items-center justify-center">
+              <li>
+                <a href="javascript:void(0)"
+                  class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 active tablink whitespace-nowrap"
+                  data-tab="tabs-with-underline-1" role="tab">
+                  Sampler
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap"
+                  data-tab="tabs-with-underline-2" role="tab">
+                  Spectrum
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  class="inline-block py-4 px-6 text-gray-500 hover:text-gray-800 font-medium border-b-2 border-transparent tab-active:border-b-indigo-600 tab-active:text-indigo-600 tablink whitespace-nowrap"
+                  data-tab="tabs-with-underline-3" role="tab">
+                  Image
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-3 ">
+            <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1"
+              class="tabcontent">
+              <div class="w-full max-w-2xl rounded-xl 2xl:max-w-6xl mx-auto bg-indigo-50 min-h-[400px] mt-12"></div>
+              <!----------Leftbar start---------->
+              <aside id="left-bar"
+                class="relative lg:fixed lg:top-20 overflow-y-auto lg:z-50 bg-white flex-none  border-r border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-[300px] h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col h-full">
+                  <div class="h-full">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Pixel Color</h3>
+
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Color</span>
+                        <div class="flex flex-row-reverse">
+                          <input type="color" id="bg-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                            value="#4F46E5"
+                            class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#4F46E5" id="bg-hex"
+                            class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Coordinates</h3>
+                      <li class="mb-5 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel X</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel Y</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                    </ul>
+
+                    <!-- this place for color box  -->
+
+                  </div>
+                  <div class="p-5 border-t border-gray-300">
+                    <button
+                      class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436"
+                          stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </aside>
+              <!----------Leftbar End---------->
+
+              <!----------rightbar start-->
+              <aside id="right-bar"
+                class="relative lg:fixed lg:top-20 lg:right-0 bg-white overflow-y-auto lg:z-20 flex-none  border-l border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-[300px] h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col">
+                  <div class="">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Color Format</h3>
+
+                      <li class="mb-0 p-4 pl-5 rounded-lg border border-gray-300 ">
+                        <select id="color" class=" text-gray-600 text-base  block w-full focus:outline-none">
+                          <option selected="RGB">RGB – Red, Green, Blue</option>
+                          <option value="HSL">HSL – Hue, Saturation, Lightness</option>
+                          <option value="HSV">HSV – Hue, Saturation, Value</option>
+                          <option value="CMYK">CMYK – Cyan, Magenta, Yellow, Black</option>
+
+                        </select>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">HEX & HTML</h3>
+                      <li class="mb-5">
+                        <div class="w-full h-24 rounded bg-blue-900"></div>
+                      </li>
+
+                      <li class="mb-5 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HEX</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          #4F46E5</div>
+                      </li>
+
+                      <li class="mb-0 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HTML / CSS</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          rgb(21, 101, 192)</div>
+                      </li>
+                    </ul>
+
+                    <ul class="p-5">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Color Components</h3>
+                      <li class="mb-4">
+                        <label for="Horizontal-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Red</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">21</span>
+                        </label>
+                        <input id="Horizontal-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="21">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Green</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">101</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="101">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Blue</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">192</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="192">
+                      </li>
+
+                      <li class="mb-0">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Opacity</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">100%</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="100" step="1" value="100">
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </aside>
+              <!----------rightbar end-->
+             
+            </div>
+            <div id="tabs-with-underline-2" class="hidden tabcontent" role="tabpanel"
+              aria-labelledby="tabs-with-underline-item-2">
+              <!----------Leftbar start---------->
+              <aside id="left-bar"
+                class="relative lg:fixed lg:top-20 overflow-y-auto lg:z-50 bg-white flex-none  border-r border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-72 h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col h-full">
+                  <div class="h-full">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Pixel Color</h3>
+
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Color</span>
+                        <div class="flex flex-row-reverse">
+                          <input type="color" id="bg-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                            value="#4F46E5"
+                            class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#4F46E5" id="bg-hex"
+                            class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Coordinates</h3>
+                      <li class="mb-5 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel X</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel Y</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                    </ul>
+
+                    <!-- this place for color box  -->
+
+                  </div>
+                  <div class="p-5 border-t border-gray-300">
+                    <button
+                      class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436"
+                          stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </aside>
+              <!----------Leftbar End---------->
+
+              <!----------rightbar start-->
+              <aside id="right-bar"
+                class="relative lg:fixed lg:top-20 lg:right-0 bg-white overflow-y-auto lg:z-20 flex-none  border-l border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-[300px] h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col">
+                  <div class="">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Color Format</h3>
+
+                      <li class="mb-0 p-4 pl-5 rounded-lg border border-gray-300 ">
+                        <select id="color" class=" text-gray-600 text-base  block w-full focus:outline-none">
+                          <option selected="RGB">RGB – Red, Green, Blue</option>
+                          <option value="HSL">HSL – Hue, Saturation, Lightness</option>
+                          <option value="HSV">HSV – Hue, Saturation, Value</option>
+                          <option value="CMYK">CMYK – Cyan, Magenta, Yellow, Black</option>
+
+                        </select>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">HEX & HTML</h3>
+                      <li class="mb-5">
+                        <div class="w-full h-24 rounded bg-blue-900"></div>
+                      </li>
+
+                      <li class="mb-5 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HEX</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          #4F46E5</div>
+                      </li>
+
+                      <li class="mb-0 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HTML / CSS</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          rgb(21, 101, 192)</div>
+                      </li>
+                    </ul>
+
+                    <ul class="p-5">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Color Components</h3>
+                      <li class="mb-4">
+                        <label for="Horizontal-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Red</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">21</span>
+                        </label>
+                        <input id="Horizontal-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="21">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Green</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">101</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="101">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Blue</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">192</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="192">
+                      </li>
+
+                      <li class="mb-0">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Opacity</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">100%</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="100" step="1" value="100">
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </aside>
+              <!----------rightbar end-->
+            </div>
+            <div id="tabs-with-underline-3" class="hidden tabcontent" role="tabpanel"
+              aria-labelledby="tabs-with-underline-item-3">
+
+              <!----------Leftbar start---------->
+              <aside id="left-bar"
+                class="relative lg:fixed lg:top-20 overflow-y-auto lg:z-50 bg-white flex-none  border-r border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-72 h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col h-full">
+                  <div class="h-full">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Pixel Color</h3>
+
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Color</span>
+                        <div class="flex flex-row-reverse">
+                          <input type="color" id="bg-color" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+                            value="#4F46E5"
+                            class="w-5 h-6 cursor-pointer appearance-none border border-gray-300  rounded ">
+                          <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#4F46E5" id="bg-hex"
+                            class="w-20 h-auto mr-2 text-sm font-medium text-gray-900"></input>
+                        </div>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Coordinates</h3>
+                      <li class="mb-5 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel X</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                      <li class="mb-0 flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">Pixel Y</span>
+                        <span class="text-sm leading-5 text-gray-900 rounded-md py-0.5 px-1 bg-gray-100">360</span>
+                      </li>
+                    </ul>
+                    <ul class="p-5 border-b border-gray-300">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">image</h3>
+                      <li>
+                        <label class="group">
+                          <input type="file" hidden="">
+                          <div
+                            class="flex items-center justify-center py-2.5 px-4 w-full gap-2  border border-dashed border-gray-300 rounded-lg text-gray-400 text-base font-normal leading-4 
+                                  cursor-pointer focus:outline-none transition-all duration-300 group-hover:text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18"
+                              fill="none">
+                              <path
+                                d="M8.53408 1.5002L9.09976 0.934514C8.94973 0.784485 8.74625 0.7002 8.53408 0.7002C8.3219 0.7002 8.11842 0.784485 7.96839 0.934514L8.53408 1.5002ZM11.3358 5.4333C11.6482 5.74572 12.1548 5.74572 12.4672 5.4333C12.7796 5.12088 12.7796 4.61435 12.4672 4.30193L11.3358 5.4333ZM16.8 11.5C16.8 11.0582 16.4418 10.7 16 10.7C15.5582 10.7 15.2 11.0582 15.2 11.5H16.8ZM1.8 11.5C1.8 11.0582 1.44183 10.7 1 10.7C0.558172 10.7 0.2 11.0582 0.2 11.5H1.8ZM5.73235 5.4333L9.09976 2.06589L7.96839 0.934514L4.60098 4.30193L5.73235 5.4333ZM7.96839 2.06589L11.3358 5.4333L12.4672 4.30193L9.09976 0.934514L7.96839 2.06589ZM9.33255 12.3333V1.5H7.73255V12.3333H9.33255ZM15.2 11.5V13.1667H16.8V11.5H15.2ZM12.6667 15.7H4.33333V17.3H12.6667V15.7ZM1.8 13.1667V11.5H0.2V13.1667H1.8ZM4.33333 15.7C3.52504 15.7 2.9993 15.6983 2.61115 15.6461C2.246 15.597 2.1245 15.5168 2.05384 15.4462L0.92247 16.5775C1.33996 16.995 1.85538 17.1589 2.39795 17.2318C2.9175 17.3017 3.57027 17.3 4.33333 17.3V15.7ZM0.2 13.1667C0.2 13.9297 0.198301 14.5825 0.268153 15.1021C0.341099 15.6446 0.504977 16.16 0.92247 16.5775L2.05384 15.4462C1.98318 15.3755 1.90298 15.254 1.85389 14.8889C1.8017 14.5007 1.8 13.975 1.8 13.1667H0.2ZM15.2 13.1667C15.2 13.975 15.1983 14.5007 15.1461 14.8889C15.097 15.254 15.0168 15.3755 14.9462 15.4462L16.0775 16.5775C16.495 16.16 16.6589 15.6446 16.7318 15.1021C16.8017 14.5825 16.8 13.9297 16.8 13.1667H15.2ZM12.6667 17.3C13.4297 17.3 14.0825 17.3017 14.6021 17.2318C15.1446 17.1589 15.66 16.995 16.0775 16.5775L14.9462 15.4462C14.8755 15.5168 14.754 15.597 14.3889 15.6461C14.0007 15.6983 13.475 15.7 12.6667 15.7V17.3Z"
+                                fill="#111827" />
+                            </svg>
+                            Choose File
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+
+
+                  </div>
+                  <div class="p-5 border-t border-gray-300">
+                    <button
+                      class="w-full text-center rounded-lg py-2.5 px-3.5 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-gray-900 transition-all duration-500 hover:bg-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M1.11914 1.628L1.11914 4.628M1.11914 4.628H4.11914M1.11914 4.628L1.62807 4.04341L2.137 3.45883C3.78277 1.65247 6.35525 0.805589 8.87844 1.48168C12.4793 2.44653 14.6163 6.14781 13.6514 9.7487C12.6866 13.3496 8.98528 15.4865 5.38438 14.5217C4.08599 14.1738 2.97794 13.4701 2.137 12.5436"
+                          stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </aside>
+              <!----------Leftbar End---------->
+
+              <!----------rightbar start-->
+              <aside id="right-bar"
+                class="relative lg:fixed lg:top-20 lg:right-0 bg-white overflow-y-auto lg:z-20 flex-none  border-l border-gray-200  pt-5 scrollbar-y lg:block lg:w-64 xl:w-[300px] h-auto lg:h-[calc(100vh-76px)]">
+                <div class="flex justify-between flex-col">
+                  <div class="">
+                    <!--List-->
+                    <ul class="pb-6 px-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-5 uppercase opacity-50">Color Format</h3>
+
+                      <li class="mb-0 p-4 pl-5 rounded-lg border border-gray-300 ">
+                        <select id="color" class=" text-gray-600 text-base  block w-full focus:outline-none">
+                          <option selected="RGB">RGB – Red, Green, Blue</option>
+                          <option value="HSL">HSL – Hue, Saturation, Lightness</option>
+                          <option value="HSV">HSV – Hue, Saturation, Value</option>
+                          <option value="CMYK">CMYK – Cyan, Magenta, Yellow, Black</option>
+
+                        </select>
+                      </li>
+                    </ul>
+                    <!--End List-->
+                    <ul class="p-5 border-b border-gray-200">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">HEX & HTML</h3>
+                      <li class="mb-5">
+                        <div class="w-full h-24 rounded bg-blue-900"></div>
+                      </li>
+
+                      <li class="mb-5 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HEX</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          #4F46E5</div>
+                      </li>
+
+                      <li class="mb-0 w-full flex items-center justify-between">
+                        <span class="text-sm font-normal text-gray-700">HTML / CSS</span>
+                        <div
+                          class="py-2.5 px-4 rounded-lg border border-gray-300 bg-gray-50 text-sm font-normal text-gray-900 text-right min-w-[160px]">
+                          rgb(21, 101, 192)</div>
+                      </li>
+                    </ul>
+
+                    <ul class="p-5">
+                      <h3 class="text-xs font-medium text-gray-600 mb-8 uppercase opacity-50">Color Components</h3>
+                      <li class="mb-4">
+                        <label for="Horizontal-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Red</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">21</span>
+                        </label>
+                        <input id="Horizontal-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="21">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Green</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">101</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="101">
+                      </li>
+
+                      <li class="mb-5">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Blue</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">192</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="255" step="1" value="192">
+                      </li>
+
+                      <li class="mb-0">
+                        <label for="Vertical-Padding" class="flex items-center justify-between mb-2.5">
+                          <p class="text-sm font-normal text-gray-700">Opacity</p>
+                          <span
+                            class="w-6 h-6 flex items-center justify-center rounded-md bg-gray-100 text-sm font-semibold text-gray-900">100%</span>
+                        </label>
+                        <input id="Vertical-Padding"
+                          class="rounded-lg overflow-hidden appearance-none bg-gray-300 h-2 w-full" type="range" min="1"
+                          max="100" step="1" value="100">
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </aside>
+              <!----------rightbar end-->
+            </div>
+          </div>
+        </div>
+        <!----------Leftbar Start---------->
+
+        <!-- main table component start  -->
+
+        <!-- main table component end  -->
+      </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+  <script>
+    $('#bg-color').on('input', function () {
+      $('#bg-hex').val(this.value);
+    });
+    $('#bg-hex').on('input', function () {
+      $('#bg-color').val(this.value);
+    });
+    $('#text-color').on('input', function () {
+      $('#text-hex').val(this.value);
+    });
+    $('#text-hex').on('input', function () {
+      $('#text-color').val(this.value);
+    });
+  </script>
+</body>
+
+</html>
