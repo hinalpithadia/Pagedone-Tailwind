@@ -1595,3 +1595,70 @@ team 38 == slider ma default 3 slide avse height rakho image ma width kadhi ne s
 team 39 == slider ma middle card hji vadhare motu kro
 team 46 == plus na button upr click krva thi toggle thavu joi bdha cards ma
 team 47 == mobile ma heading center ma
+
+=========faq============
+tailwind faq
+tailwind faq component
+faq tailwind
+tailwind faq section
+tailwind css faq
+tailwind faq template
+tailwind css faq section
+tailwind css faq component
+faq tailwind css
+
+16) 
+Tailwind FAQ component with banner image
+Use this example to show a banner image at the top of the FAQ sectio and faq accordions at the bottom with the heading beside.
+
+17)
+Creative image with tailwind faq
+Use this example to show a creative image beside a list of faq inside accordions.
+
+18)
+FAQ with CTA info
+This example shows a list of questions and answer inside accordions with a call-to-action button if you have different query instead.
+
+19)
+Masonary structured faq
+Use this tailwind faq example to show a masonry structured boxes of questions and answer.
+
+20)
+Faq with category
+This example shows a different list of question and answer according to their categories inside accordions.
+
+21)
+Tailwind Faq card 
+Use this example to show a card layout of faq in a two column grid layout and heading details side by side.
+
+22)
+Faq with CTA form
+This example shows a list of questions and answer inside accordions beside a call-to-action form with CTA button.
+
+23)
+Question form with faq list
+This example shows a form to ask question and a list of faq inside accordions beside it.
+
+24)
+Faq list with creative image
+Use this tailwind css faq component to show creative image alongside list of all questions and answer with button element.
+
+25)
+Side by side Faq and image
+Below example can be used to show list of faqs and desktop app mockup image side by side.
+
+26)
+Three column tailwind faq section
+Use this example to show a three column grid layout of faq inside accordions with heading and CTA button at the top.
+
+27)
+Tailwind faq with illustration
+This example can be used to show faq accordion list alongside creative illustration and CTA form to ask questions.
+
+28)
+
+
+
+
+
+
