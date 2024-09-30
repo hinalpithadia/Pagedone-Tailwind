@@ -1656,9 +1656,282 @@ Tailwind faq with illustration
 This example can be used to show faq accordion list alongside creative illustration and CTA form to ask questions.
 
 28)
+Faq with CTA Section
+This example shows a list of questions and answer inside accordions with a call-to-action section at the bottom.
+
+29)
+  Tailwind css faq with CTA form
+Below example shows frequently asked questions list alongwith seperate CTA form to ask question if any.
+
+30)
+Nested FAQ with category
+This example shows a nested list of questions and answer according to their categories inside accordions.
+
+31)
+Faq with CTA form and illustration
+This example shows a list of questions and answer inside accordions with a call-to-action form and beautiful illustration beside.
+
+32)
+Horizontal FAQ
+This example shows a horizontal layout of faq list with accordions and CTA button at the top.
+
+33)
+Three column FAQ cards
+Use this example if you want to show up to three FAQ items for every row with card background and unique hover effect.
+
+34)
+Vertical faq list with heading
+This example shows a vertical list of faq inside accordions with a heading at the top.
+
+35)
+Centered two column faq
+This example shows a two column layout of faq list with centered layout.
+
+36)
+Horizontal aligned faq
+This example shows a horizontal layout of frequently asked question and answer list.
+
+37)
+Faq with numeric list
+This example shows a list of questions and answer inside accordions with a numeric identification.
+
+38)
+Faq with gradient background
+Use following example of tailwind faq section to show list of questions and answer in a two column list with gradient background.
+
+39)
+Faq cards with background
+This example shows a list of questions and answer with a card background.
+
+40)
+Faq with active gradient background
+This example shows a list of questions and answer with gradient background on active accordion heading.
+
+41)
+Faq inside tabs
+This example is a vertical tabs to show a list of questions and answer inside accordions.
+
+42)
+Three column faq with icons
+This example shows a three column layout of faq list with SVG icons, questions and answers.
+
+43)
+Faq with heading
+Use following example to show faq list in form of accordions and have a seperate category headings on top of accordion list.
+
+44)
+Faq illustration with questions
+This example shows a list of questions and answer inside accordions besides faq SVG illustration.
+
+45)
+Two column with icon background
+This example is a two column layout to show svg icon with background, one liner question and descriptive answers.
+
+46)
+Two column faq with headings
+Use following example to display two column faq with background and seperate category heading according to the questions.
+
+47)
+Faq inside horizontal tabs
+This example shows a horizontal tabs to show a list of questions and answer inside accordions.
+
+48)
+Border card faq 
+This example shows a list of questions and answer with a card border and suitable hover effects in a two column grid layout.
+
+49)
+Faq with background
+This example shows a list of questions and answer with a background color and plus, minus icon to open and close accordion.
+
+50)
+Vertical Tailwind Faq section
+Use this simple example of a FAQ section to show a list of questions and answers based on vertical card and a question mark icon.
+
+
+FAQ with horizontal tab
+FAQs as tabs block
+FAQ with vertical tab
+
+=================about us=================
+Tailwind css about us
+tailwind about us section
+about us tailwind css
+tailwind about us
+tailwind about us template
+about us component tailwind
+about us section tailwind
+about us tailwind template
+tailwind about us page
+
+16)
+About us tailwind with mission and vision
+This example shows a simple about us section with mission and vision cards in a two-column layout.
+
+17)
+About us with stat counts
+This example of the About Us section shows a numeric stats row with a CTA button and preview image side by side.
+
+18)
+Creative about us section
+This example shows a creative about us section with a background image and a text overlay with a CTA button.
+
+19)
+Tailwind about us template with image
+The following example of about us shows a visual image on one side and a heading, description, and stat counts on the other side.
+
+20)
+Background image with text overlay
+This example shows a large visual image with overlayed stat counts and a description below the header text.
+
+21)
+About us component tailwind
+This example shows information about your company or product with their images, headings, description, stat counts, and CTA button.
+
+22)
+Tailwind CSS about us with tab
+Use the following example of the about us section inside horizontal tabs to show the image, description, and CTA button. 
+
+
+23)
+About Us Section tailwind
+Use the below example of an about section with a preview image on the left side and about information cards on the right side below the heading and stat counts.
+
+24)
+Side by side image about us template
+This example shows a side-by-side image and about us information with stat counts cards.
+
+25)
+Image with mission and vision
+Use the following example of the about us component tailwind to show a side-by-side image with our goals and our vision cards overlapped.
+
+26)
+About us with feature lists and graphs
+This example of the About Us section Tailwind shows a feature list, CTA button, and visual graphs of growth.
+
+27)
+Creative visual image with about info
+Use the below example of us. Section Tailwind shows visually creative images on the left side and some information with some counts to show company progress.
+
+28)
+About description cards with visual image
+This about us tailwind CSS example shows about description cards on one side and visual image on the other side.
+
+29)
+About us image gallery
+This example of about us Section Tailwind shows a visual image gallery with some information about the company, such as our story, history, customers, projects, and many more.
+
+30)
+Tailwind about us section with image
+Use the following example to show the image below the main heading, description, our mission, and our vision content with respective icons.
+
+31)
+Three columns about section
+This tailwind about us example shows features of the company with icons and a visual image in between two columns.
+
+32)
+Vertical about slider
+This example of about us shows a two-column vertical slider with images and company descriptions such as years of experience, projects, and employees with a CTA button.
+
+33)
+Dark theme about us section
+Following about us, the Tailwind template is specially designed for the dark version, where you can show a visual image, company information, and a CTA button.
+
+34)
+Tailwind about us cards
+This example of about us Section Tailwind shows about images in a single row with company counts of experiences, team members, projects, and clients.
+
+35)
+About us component tailwind
+Use the following example of an about us template to show the company's important information, like expert consultants, clients, projects, and orders, in separate cards with counts.
+
+36)
+Background image with overlay description
+This about us tailwind CSS example shows a large background with overlayed company's important information.
+
+37)
+Content and image side by side 
+Use the below example to show different images related to the company's  description with a CTA button.
+
+38)
+Simple about us section
+This example of about us Section Tailwind shows a simple about us section with the company's image on top and the company's history and other descriptions at the bottom.
+
+39)
+Tailwind about us page
+This example of about us Section Tailwind shows an about us page with the company's image, description, and company's stats such as customers, experiences, awards, etc.
+
+40)
+About us as blog cards
+This example of an about us section in Tailwind shows an about us section as three-column blog cards with images, a company description, and CTA links.
+
+41)
+About us informative tailwind section
+Use the below example to show more detailed information about the company, like our mission, our team, and our vision cards with stat counts of the company.
+
+42)
+About us, two column cards
+This example of the about us section tailwind shows the about us section with two columns about cards with headings and icons.
+
+43)
+Side-by-side image with content
+Use the following Tailwind About Us template to show some visual images of the company with the description above the stat counts.
+
+44)
+Images with heading and description
+This example of about us section tailwind shows an about us section with images, headings, descriptions, and a and a CTA button above stat cards with icons and counts.
+
+45)
+Tailwind about us page with dark theme
+Use the following example to show a large visual image in the center of the company description and company mission and vision cards.
+
+46)
+Vertical stat counts cards
+This example shows vertical cards of company information with stat counts and a visual image and description on the other side.
+
+47)
+About list with image
+This example of about us has two cards: one shows company information and a list of company features; the other card shows a visual image and overlayed content.
+
+48)
+Splitted content and image
+Use the following example to show the image of the company or organization on one side and the company's mission and vision on the other side.
+
+49)
+Alternate image with feature list
+This example of the about us section in Tailwind shows an about us section with an alternate image and feature list of a company.
+
+50)
+Visual image with stats
+Use the following example of the About Us template to show large along with the company's important information and stats counts.
+
+51)
+About cards with images
+This example of the about us section tailwind shows an about us section with a description and icons of company information and a bunch of images alongside.
+
+52)
+Tailwind about us page
+The following example shows different color combinations with the company's important information with respective images.
+
+53)
+About us template
+This example of the about us section in Tailwind shows an about us section with a description and images of the company with a CTA button.
 
 
 
+about us
+18 === hover effect srkhi krvi
+19 == text center mobile ma
+20 == numbers hide thai jai che mobile ni image ma min-height set kri Dyo
+27 == responsive ma images baju maj rakhvani che
+33 == mobile ma text center
+35 == mobile ma text center
+47== niche na card ma text full width ma
+48 == our vision niche space muko, center align kro bdhu
+51 == mobile ma bdhu center align
+53 == mobile ma bdhu center align
 
 
+Tailwind CSS about us with tab === tabs work nthi krta
+Three columns about section == mobile view ma bdha text upr image niche flex column reverse kri nakho
 
+Single blog post as carousel

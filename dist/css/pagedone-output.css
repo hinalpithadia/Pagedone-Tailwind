@@ -613,22 +613,26 @@ video {
   transition: max-height 0.3s ease;
 }
 
+
 input[type='checkbox']:checked{
-  background-image: url('https://beta.pagedone.io/asset/uploads/1689406942.svg');
+  background-image: url('https://pagedone.io/asset/uploads/1689406942.svg');
 }
 
-input[type='checkbox']:disabled:checked {
-  background-image: url('https://beta.pagedone.io/asset/uploads/1689403247.png');
+input[type='checkbox']:disabled:checked{
+  background-image: url('https://pagedone.io/asset/uploads/1689403247.png');
 }
 
 input[type='checkbox']:indeterminate{
-  background-image: url('https://beta.pagedone.io/asset/uploads/1689407165.svg');
+  background-image: url('https://pagedone.io/asset/uploads/1689407165.svg');
 }
 
-input[type='checkbox']:indeterminate:disabled {
-  background-image: url('https://beta.pagedone.io/asset/uploads/1689403311.png');
+input[type='checkbox']:indeterminate:disabled{
+  background-image: url('https://pagedone.io/asset/uploads/1689403311.png');
 }
 
+.checkbox-white:checked{
+  background-image: url('https://pagedone.io/asset/uploads/1705561433.png');
+}
 .black input[type='checkbox']:checked {
   background-image: url('https://pagedone.io/asset/uploads/1711776327.png');
   background-size: contain ;

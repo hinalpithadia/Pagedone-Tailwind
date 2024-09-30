@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .pricing-number {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+            height: 60px;
+            overflow: hidden;
+        }
+        .number-wrapper {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Ease for circular animation */
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .tab.active {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab active" data-target="tab1">Plan 1</div>
+        <div class="tab" data-target="tab2">Plan 2</div>
+        <div class="tab" data-target="tab3">Plan 3</div>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+        <div class="pricing-number" data-price="199">
+            <div class="number-wrapper">0</div>
+        </div>
+    </div>
+    <div id="tab2" class="tab-content">
+        <div class="pricing-number" data-price="299">
+            <div class="number-wrapper">0</div>
+        </div>
+    </div>
+    <div id="tab3" class="tab-content">
+        <div class="pricing-number" data-price="399">
+            <div class="number-wrapper">0</div>
+        </div>
+    </div>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        let animationFrame;
+
+        // Function to animate the number
+        function animateNumber(element, targetNumber) {
+            let currentNumber = parseInt(element.textContent, 10); // Get current number
+            let numberWrapper = element.parentElement;
+
+            if (currentNumber < targetNumber) {
+                let nextNumber = currentNumber + 1;
+
+                // Create a new div for the next number
+                let newNumberElement = document.createElement('div');
+                newNumberElement.classList.add('number-wrapper');
+                newNumberElement.textContent = nextNumber;
+                newNumberElement.style.transform = 'translateY(100%)'; // Start below
+
+                numberWrapper.appendChild(newNumberElement);
+
+                // Animate current and next number
+                requestAnimationFrame(() => {
+                    element.style.transform = 'translateY(-100%)'; // Move current number up
+                    newNumberElement.style.transform = 'translateY(0)'; // Move next number into view
+
+                    // Remove the old number after transition
+                    setTimeout(() => {
+                        element.remove();
+                        animateNumber(newNumberElement, targetNumber); // Continue animation recursively
+                    }, 600); // Timing matches the CSS transition (0.6s)
+                });
+            }
+        }
+
+        // Function to handle tab switching and animation
+        function switchTab(targetTabId) {
+            // Remove active class from all tabs and tab contents
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            // Activate the clicked tab and its associated content
+            document.querySelector(`[data-target="${targetTabId}"]`).classList.add('active');
+            document.getElementById(targetTabId).classList.add('active');
+
+            // Get the pricing number element and its target price
+            const pricingElement = document.getElementById(targetTabId).querySelector('.pricing-number .number-wrapper');
+            const targetPrice = parseInt(pricingElement.parentElement.getAttribute('data-price'), 10);
+
+            // Animate the number
+            animateNumber(pricingElement, targetPrice);
+        }
+
+        // Event listener for tab clicks
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetTabId = tab.getAttribute('data-target');
+                switchTab(targetTabId);
+            });
+        });
+
+        // Initial load: animate the number for the first active tab
+        window.addEventListener('load', () => {
+            const activeTab = document.querySelector('.tab-content.active');
+            const pricingElement = activeTab.querySelector('.pricing-number .number-wrapper');
+            const targetPrice = parseInt(pricingElement.parentElement.getAttribute('data-price'), 10);
+            animateNumber(pricingElement, targetPrice);
+        });
+    </script>
+</body>
+</html>
