@@ -9126,6 +9126,14 @@ input[type="radio"]:checked:disabled + label span{
   height: 100vh;
 }
 
+.h-\[445px\]{
+  height: 445px;
+}
+
+.h-\[455px\]{
+  height: 455px;
+}
+
 .max-h-0{
   max-height: 0px;
 }
