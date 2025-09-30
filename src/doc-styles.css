@@ -383,7 +383,78 @@
     .shadow-custom{
       box-shadow:inset 0px -4px 0px 0px #0000000F,  0px 0px 0px 2px #0000000D;
   }
-  
+   .compo-card-title {
+        @apply font-semibold text-lg leading-5 text-primary-black mb-2
+    }
+
+    .only-icon-btn {
+        @apply bg-white whitespace-nowrap cursor-pointer text-primary-black rounded-lg p-2.5 font-medium font-inter text-sm transition-all duration-500 hover:shadow-sm
+    }
+
+    .copy-component-btn {
+        @apply w-full flex items-center justify-between border border-theme-border bg-white text-primary-black rounded-lg py-3 px-[15px] text-sm leading-5 font-medium shadow-[0_1px_5px_0_rgba(16,24,40,0.05)] transition-all duration-500 hover:border-[#c9c9c9]
+    }
+
+    .compo-card-text {
+        @apply text-sm leading-[17px] text-semi-black truncate
+    }
+
+    .dropdown {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .drop-top {
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 6px 0 6px 6px;
+        color:#7C8586;
+        transition: all .6s ease-in-out;
+    }
+
+
+    .drop-top.active {
+        background: #EEF2FF !important;
+        color: #4F46E5 !important;
+    }
+
+    .dropbtn .arrow-svg {
+        transition: all 0.6s ease-out;
+    }
+
+    .dropdown-content-rel {
+        display: none;
+        position: relative;
+        background: transparent;
+
+    }
+
+    .dropdown-content-rel a {
+        padding: 10px 0px 10px 32px;
+    }
+
+    .dropbtn.active .arrow-svg {
+        transform: rotate(90deg);
+    }
+
+    .card .relative img {
+        @apply border-[0.5px] border-[#e5e7eb] rounded-[14px];
+    }
+
+    .pro-detail-pera {
+        @apply text-sm leading-[20px] text-semi-black
+    }
+
+    .input-field {
+        @apply mt-1.5 w-full py-2.5 text-base leading-[26px] font-normal text-primary-black placeholder:text-semi-black px-4 border border-theme-border rounded-lg focus:outline-none transition-all duration-300 hover:border-[#c9c9c9] focus:border-[#0CF279]
+    }
+
+    .input-lable {
+        @apply text-sm leading-[22px] font-medium text-primary-black pb-1.5
+    }
+   .menu-item.active>.drop-top .side-link {
+        color: #002225 !important;
+    }
     @media(max-width:768px){
         .account-list li>a{
             padding: 0px 10px;
