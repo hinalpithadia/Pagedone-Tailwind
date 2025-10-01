@@ -346,7 +346,105 @@
         appearance: none;
         background: transparent url("https://pagedone.io/asset/uploads/1695813759.png") no-repeat 98% center;
     }
-  
+  .select-hidden {
+	display: none;
+	visibility: hidden;
+	padding-right: 10px;
+}
+
+.select {
+	position: relative;
+	display: inline-block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-bottom: 0px!important;
+	width: 100%;
+	
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.select-styled {
+	position: relative;
+	display: flex;
+	align-items: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-bottom: 0px!important;
+	width: 100%;
+	font-size: 14px;
+	background: transparent;
+	border: 1px solid #fff;
+    background: #fff;
+	color: #111827;
+	padding: 6px 30px 6px 12px;
+	border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.10);
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.select-styled:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 12px;                /* give it width */
+  height: 12px;               /* give it height */
+  background: url('https://pagedone.io/asset/uploads/1759311720.png') no-repeat center;
+  background-size: contain;   /* scale properly */
+  pointer-events: none;       /* optional: don’t block clicks */
+}
+
+.select-options {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #fff;
+	-webkit-box-shadow: 0 11px 5px rgba(0, 0, 0, .09);
+	box-shadow: 0 11px 5px rgba(0, 0, 0, .09);
+	background: #fff;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.select-options li {
+	position: relative;
+	display: block;
+	padding: 8px 12px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #171717;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.select-options li:hover {
+	background: #F7F9FF;
+    color:#4f46e5;
+}
+
+.select-options li[rel="hide"] {
+	display: none;
+}
     .account-list li>a{
         color: #6B7280;
         font-size: 16px;
@@ -455,6 +553,34 @@
    .menu-item.active>.drop-top .side-link {
         color: #002225 !important;
     }
+    /*==modal===*/
+    .modalTrigger.modal-show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+  .modalTrigger.modal-hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+ 
+  .modal-bg{
+    background: linear-gradient(180deg, rgba(79, 70, 229, 0.20) 0%, rgba(79, 70, 229, 0.10) 12.5%, rgba(124, 58, 237, 0.05) 25%, rgba(124, 58, 237, 0.00) 50%), #FFF;
+  }
+  .modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1001;
+    overflow: auto;
+    max-width: max-content;
+  }
     @media(max-width:768px){
         .account-list li>a{
             padding: 0px 10px;
