@@ -3655,7 +3655,9 @@ select{
 .menu-item.active>.drop-top .side-link {
   color: #002225 !important;
 }
-
+ .menu-item.active {
+  color: #002225 !important;
+}   
 /*==modal===*/
 
 .modalTrigger.modal-show {
