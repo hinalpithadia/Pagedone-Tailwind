@@ -581,6 +581,11 @@
     overflow: auto;
     max-width: max-content;
   }
+  .section-tab-btn.active {
+    background: #FFF;
+    color: #4F46E5;
+}
+
     @media(max-width:768px){
         .account-list li>a{
             padding: 0px 10px;

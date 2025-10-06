@@ -1,0 +1,829 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Pagedone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" />
+    <link rel="stylesheet" href="images/css/base.css">
+      <link rel="stylesheet" href="css/styles-output.css">
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.css " />
+    <style>
+        .left-bar-list-item.active {
+            background: #EEF2FF;
+            color: #4F46E5;
+        }
+
+        .left-bar-list-item.active span {
+            transition: all 0.3s;
+            color: #4F46E5;
+        }
+
+        .section-tab-btn.active {
+            background: #FFF;
+            color: #4F46E5;
+        }
+    </style>
+</head>
+
+<body class="font-inter ">
+    <div class="page-container">
+        <!----------Navbar Start---------->
+        <nav class="w-full h-auto bg-white border-b border-theme-border fixed top-0 left-0 z-50">
+            <div class="w-full flex items-center justify-between">
+                <div class="w-full lg:w-max px-5 py-[15px]  flex items-center justify-between">
+                    <a href="#" class="">
+                        <svg width="154" height="34" viewBox="0 0 154 34" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M44.9141 24.5563V8.27026H51.7131C51.8731 8.27026 52.0787 8.2778 52.3301 8.29288C52.5815 8.30042 52.8139 8.32304 53.0272 8.36074C53.9794 8.504 54.7641 8.8169 55.3811 9.29945C56.0058 9.782 56.4667 10.3927 56.7638 11.1316C57.0685 11.863 57.2209 12.6773 57.2209 13.5745C57.2209 14.4642 57.0685 15.2786 56.7638 16.0175C56.4591 16.7488 55.9944 17.3558 55.3697 17.8383C54.7526 18.3209 53.9718 18.6338 53.0272 18.777C52.8139 18.8072 52.5777 18.8298 52.3187 18.8449C52.0673 18.86 51.8654 18.8675 51.7131 18.8675H47.668V24.5563H44.9141ZM47.668 16.3228H51.5988C51.7512 16.3228 51.9226 16.3153 52.113 16.3002C52.3035 16.2851 52.4787 16.255 52.6387 16.2097C53.0957 16.0966 53.4538 15.8968 53.7128 15.6103C53.9794 15.3238 54.1661 14.9996 54.2727 14.6377C54.387 14.2758 54.4441 13.9214 54.4441 13.5745C54.4441 13.2277 54.387 12.8733 54.2727 12.5114C54.1661 12.142 53.9794 11.814 53.7128 11.5275C53.4538 11.241 53.0957 11.0412 52.6387 10.9281C52.4787 10.8828 52.3035 10.8564 52.113 10.8489C51.9226 10.8338 51.7512 10.8263 51.5988 10.8263H47.668V16.3228Z"
+                                fill="#101828" />
+                            <path
+                                d="M62.4201 24.8956C61.5288 24.8956 60.7746 24.7298 60.1576 24.398C59.5405 24.0587 59.072 23.6101 58.7521 23.0521C58.4397 22.4942 58.2836 21.8797 58.2836 21.2086C58.2836 20.6205 58.3826 20.0927 58.5807 19.6253C58.7787 19.1503 59.0834 18.7431 59.4948 18.4038C59.9062 18.057 60.4394 17.7742 61.0946 17.5556C61.5898 17.3972 62.1687 17.254 62.8315 17.1258C63.5019 16.9976 64.2256 16.8808 65.0026 16.7752C65.7872 16.6621 66.6062 16.5415 67.4594 16.4133L66.4767 16.9675C66.4843 16.123 66.2938 15.501 65.9053 15.1014C65.5168 14.7018 64.8617 14.5019 63.9399 14.5019C63.3838 14.5019 62.8467 14.6301 62.3287 14.8865C61.8107 15.1428 61.4488 15.5839 61.2431 16.2097L58.7292 15.4293C59.0339 14.3964 59.6129 13.567 60.4661 12.9412C61.3269 12.3154 62.4849 12.0025 63.9399 12.0025C65.0369 12.0025 66.0005 12.1797 66.8309 12.534C67.6689 12.8884 68.2897 13.469 68.6935 14.2758C68.9144 14.7055 69.0477 15.1466 69.0934 15.599C69.1391 16.0438 69.162 16.5302 69.162 17.058V24.5563H66.7509V21.9098L67.1509 22.3396C66.5947 23.2218 65.9434 23.8702 65.1968 24.2849C64.4579 24.6921 63.5323 24.8956 62.4201 24.8956ZM62.9686 22.7242C63.5933 22.7242 64.1265 22.6148 64.5684 22.3962C65.0102 22.1775 65.3606 21.9098 65.6196 21.5932C65.8863 21.2765 66.0653 20.9787 66.1567 20.6997C66.3015 20.3529 66.3814 19.957 66.3967 19.5122C66.4195 19.0598 66.431 18.6941 66.431 18.4151L67.2766 18.6639C66.4462 18.7921 65.7339 18.9052 65.1397 19.0032C64.5455 19.1013 64.0351 19.1955 63.6085 19.286C63.1819 19.3689 62.8048 19.4632 62.4772 19.5687C62.1573 19.6818 61.8869 19.8138 61.6659 19.9646C61.445 20.1154 61.2736 20.2888 61.1517 20.4848C61.0375 20.6809 60.9803 20.9108 60.9803 21.1747C60.9803 21.4763 61.0565 21.744 61.2089 21.9777C61.3612 22.2039 61.5821 22.3849 61.8716 22.5206C62.1687 22.6563 62.5344 22.7242 62.9686 22.7242Z"
+                                fill="#101828" />
+                            <path
+                                d="M77.0962 30.3243C76.4106 30.3243 75.7516 30.2188 75.1193 30.0076C74.4947 29.7965 73.9309 29.4912 73.4282 29.0916C72.9254 28.6995 72.514 28.2245 72.1941 27.6665L74.7308 26.4224C74.967 26.8673 75.2984 27.1953 75.725 27.4064C76.1592 27.6251 76.6201 27.7344 77.1076 27.7344C77.679 27.7344 78.1894 27.6326 78.6388 27.429C79.0883 27.233 79.4349 26.9389 79.6787 26.5469C79.9301 26.1623 80.0482 25.6798 80.0329 25.0992V21.6271H80.3757V12.3418H82.7868V25.1444C82.7868 25.4536 82.7716 25.7476 82.7411 26.0266C82.7183 26.3131 82.6764 26.5921 82.6154 26.8635C82.4326 27.6552 82.0822 28.3036 81.5641 28.8088C81.0461 29.3215 80.4024 29.7023 79.633 29.9511C78.8712 30.1999 78.0256 30.3243 77.0962 30.3243ZM76.8562 24.8956C75.7212 24.8956 74.7308 24.6129 73.8852 24.0474C73.0396 23.4819 72.3845 22.7128 71.9198 21.7402C71.4551 20.7676 71.2228 19.6705 71.2228 18.4491C71.2228 17.2125 71.4551 16.1117 71.9198 15.1466C72.3921 14.174 73.0587 13.4087 73.9195 12.8507C74.7803 12.2852 75.7935 12.0025 76.9591 12.0025C78.1322 12.0025 79.115 12.2852 79.9072 12.8507C80.7071 13.4087 81.3127 14.174 81.7241 15.1466C82.1355 16.1192 82.3412 17.2201 82.3412 18.4491C82.3412 19.663 82.1355 20.76 81.7241 21.7402C81.3127 22.7128 80.6995 23.4819 79.8844 24.0474C79.0693 24.6129 78.0599 24.8956 76.8562 24.8956ZM77.279 22.4527C78.018 22.4527 78.6122 22.2868 79.0616 21.9551C79.5187 21.6158 79.8501 21.1446 80.0558 20.5414C80.2691 19.9382 80.3757 19.2407 80.3757 18.4491C80.3757 17.6498 80.2691 16.9524 80.0558 16.3568C79.8501 15.7536 79.5263 15.2861 79.0845 14.9543C78.6426 14.615 78.0713 14.4454 77.3704 14.4454C76.6315 14.4454 76.0221 14.6264 75.5421 14.9883C75.0622 15.3426 74.708 15.8252 74.4794 16.4359C74.2509 17.0391 74.1366 17.7102 74.1366 18.4491C74.1366 19.1955 74.2471 19.8741 74.468 20.4848C74.6965 21.088 75.0432 21.5668 75.5079 21.9212C75.9726 22.2755 76.5629 22.4527 77.279 22.4527Z"
+                                fill="#101828" />
+                            <path
+                                d="M91.3732 24.8956C90.1239 24.8956 89.0269 24.628 88.0823 24.0926C87.1377 23.5573 86.3987 22.8146 85.8655 21.8646C85.3398 20.9146 85.077 19.8213 85.077 18.5848C85.077 17.2502 85.336 16.0929 85.854 15.1127C86.3721 14.125 87.092 13.3597 88.0137 12.8168C88.9355 12.2739 90.002 12.0025 91.2133 12.0025C92.4931 12.0025 93.5786 12.3003 94.4699 12.896C95.3689 13.4841 96.0354 14.3172 96.4697 15.3954C96.9039 16.4736 97.0677 17.7441 96.961 19.2068H94.23V18.2116C94.2224 16.8845 93.9862 15.9157 93.5215 15.3049C93.0568 14.6942 92.3255 14.3889 91.3275 14.3889C90.2001 14.3889 89.3621 14.7357 88.8136 15.4293C88.2651 16.1155 87.9909 17.122 87.9909 18.4491C87.9909 19.6856 88.2651 20.6432 88.8136 21.3217C89.3621 22.0003 90.162 22.3396 91.2133 22.3396C91.8913 22.3396 92.474 22.1926 92.9616 21.8985C93.4568 21.5969 93.8377 21.1634 94.1043 20.5979L96.8239 21.4122C96.3516 22.513 95.6203 23.3688 94.6299 23.9795C93.6472 24.5903 92.5616 24.8956 91.3732 24.8956ZM87.1224 19.2068V17.1484H95.6126V19.2068H87.1224Z"
+                                fill="#101828" />
+                            <path
+                                d="M104.23 24.8956C103.095 24.8956 102.105 24.6129 101.259 24.0474C100.413 23.4819 99.7582 22.7128 99.2935 21.7402C98.8288 20.7676 98.5965 19.6705 98.5965 18.4491C98.5965 17.2125 98.8288 16.1117 99.2935 15.1466C99.7658 14.174 100.432 13.4087 101.293 12.8507C102.154 12.2852 103.167 12.0025 104.333 12.0025C105.506 12.0025 106.489 12.2852 107.281 12.8507C108.081 13.4087 108.686 14.174 109.098 15.1466C109.509 16.1192 109.715 17.2201 109.715 18.4491C109.715 19.663 109.509 20.76 109.098 21.7402C108.686 22.7128 108.073 23.4819 107.258 24.0474C106.443 24.6129 105.434 24.8956 104.23 24.8956ZM104.653 22.4527C105.392 22.4527 105.986 22.2868 106.435 21.9551C106.892 21.6158 107.224 21.1446 107.43 20.5414C107.643 19.9382 107.749 19.2407 107.749 18.4491C107.749 17.6498 107.643 16.9524 107.43 16.3568C107.224 15.7536 106.9 15.2861 106.458 14.9543C106.016 14.615 105.445 14.4454 104.744 14.4454C104.005 14.4454 103.396 14.6264 102.916 14.9883C102.436 15.3426 102.082 15.8252 101.853 16.4359C101.625 17.0391 101.51 17.7102 101.51 18.4491C101.51 19.1955 101.621 19.8741 101.842 20.4848C102.07 21.088 102.417 21.5668 102.882 21.9212C103.346 22.2755 103.937 22.4527 104.653 22.4527ZM107.749 24.5563V15.9835H107.407V8.27026H110.183V24.5563H107.749Z"
+                                fill="#101828" />
+                            <path
+                                d="M118.609 24.8956C117.375 24.8956 116.297 24.6204 115.375 24.07C114.454 23.5196 113.738 22.7619 113.227 21.7968C112.724 20.8241 112.473 19.7082 112.473 18.4491C112.473 17.1673 112.732 16.0438 113.25 15.0787C113.768 14.1136 114.488 13.3597 115.41 12.8168C116.332 12.2739 117.398 12.0025 118.609 12.0025C119.851 12.0025 120.933 12.2777 121.855 12.8281C122.776 13.3785 123.492 14.14 124.003 15.1127C124.513 16.0778 124.768 17.1899 124.768 18.4491C124.768 19.7158 124.509 20.8354 123.991 21.8081C123.481 22.7732 122.765 23.5309 121.843 24.0813C120.921 24.6242 119.843 24.8956 118.609 24.8956ZM118.609 22.3396C119.706 22.3396 120.521 21.9777 121.055 21.2539C121.588 20.5301 121.855 19.5951 121.855 18.4491C121.855 17.2653 121.584 16.3228 121.043 15.6216C120.502 14.9129 119.691 14.5585 118.609 14.5585C117.87 14.5585 117.261 14.7244 116.781 15.0561C116.309 15.3803 115.958 15.8365 115.73 16.4246C115.501 17.0052 115.387 17.68 115.387 18.4491C115.387 19.6328 115.657 20.5791 116.198 21.2878C116.747 21.989 117.55 22.3396 118.609 22.3396Z"
+                                fill="#101828" />
+                            <path
+                                d="M135.593 24.5563V18.6753C135.593 18.2907 135.567 17.8647 135.513 17.3972C135.46 16.9298 135.334 16.4812 135.136 16.0514C134.946 15.6141 134.656 15.2559 134.268 14.977C133.887 14.698 133.369 14.5585 132.714 14.5585C132.363 14.5585 132.017 14.615 131.674 14.7281C131.331 14.8412 131.019 15.0373 130.737 15.3163C130.463 15.5877 130.242 15.9647 130.074 16.4472C129.907 16.9222 129.823 17.533 129.823 18.2794L128.189 17.5895C128.189 16.549 128.391 15.6065 128.794 14.7621C129.206 13.9176 129.808 13.2466 130.6 12.7489C131.392 12.2438 132.367 11.9912 133.525 11.9912C134.439 11.9912 135.194 12.142 135.788 12.4436C136.382 12.7452 136.854 13.1297 137.205 13.5972C137.555 14.0646 137.814 14.5623 137.982 15.0901C138.149 15.6178 138.256 16.1192 138.302 16.5943C138.355 17.0617 138.382 17.4425 138.382 17.7365V24.5563H135.593ZM127.035 24.5563V12.3418H129.492V16.1306H129.823V24.5563H127.035Z"
+                                fill="#101828" />
+                            <path
+                                d="M146.545 24.8956C145.295 24.8956 144.198 24.628 143.254 24.0926C142.309 23.5573 141.57 22.8146 141.037 21.8646C140.511 20.9146 140.249 19.8213 140.249 18.5848C140.249 17.2502 140.508 16.0929 141.026 15.1127C141.544 14.125 142.263 13.3597 143.185 12.8168C144.107 12.2739 145.174 12.0025 146.385 12.0025C147.665 12.0025 148.75 12.3003 149.641 12.896C150.54 13.4841 151.207 14.3172 151.641 15.3954C152.075 16.4736 152.239 17.7441 152.133 19.2068H149.401V18.2116C149.394 16.8845 149.158 15.9157 148.693 15.3049C148.228 14.6942 147.497 14.3889 146.499 14.3889C145.372 14.3889 144.534 14.7357 143.985 15.4293C143.437 16.1155 143.162 17.122 143.162 18.4491C143.162 19.6856 143.437 20.6432 143.985 21.3217C144.534 22.0003 145.334 22.3396 146.385 22.3396C147.063 22.3396 147.646 22.1926 148.133 21.8985C148.628 21.5969 149.009 21.1634 149.276 20.5979L151.995 21.4122C151.523 22.513 150.792 23.3688 149.801 23.9795C148.819 24.5903 147.733 24.8956 146.545 24.8956ZM142.294 19.2068V17.1484H150.784V19.2068H142.294Z"
+                                fill="#101828" />
+                            <path
+                                d="M24.3337 12.7675C24.9234 13.3301 24.9383 14.2569 24.3671 14.8376L19.0274 20.2659C18.4561 20.8466 17.515 20.8613 16.9253 20.2987C16.3357 19.7362 16.3207 18.8094 16.892 18.2286L22.2317 12.8004C22.8029 12.2197 23.744 12.205 24.3337 12.7675Z"
+                                fill="url(#paint0_linear_8128_9502)" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.83203 6.01591C1.83203 3.70842 3.73146 1.83783 6.07454 1.83783H21.5769V1.83897C28.4069 1.92959 33.9154 7.41042 33.9154 14.1583C33.9154 20.9627 28.3143 26.4787 21.4049 26.4787C18.9414 26.4787 16.6442 25.7775 14.7078 24.5666L7.87117 31.1566C5.62181 33.3248 1.83203 31.7553 1.83203 28.6556V6.01591ZM12.3915 22.7023C10.226 20.4873 8.89451 17.4759 8.89451 14.1583C8.89451 13.3498 9.56005 12.6943 10.381 12.6943C11.202 12.6943 11.8676 13.3498 11.8676 14.1583C11.8676 19.3456 16.1376 23.5508 21.4049 23.5508C26.6723 23.5508 30.9423 19.3456 30.9423 14.1583C30.9423 8.97092 26.6723 4.76574 21.4049 4.76574H6.07454C5.37344 4.76574 4.80509 5.32546 4.80509 6.01591V28.6556C4.80509 29.1619 5.42414 29.4183 5.79156 29.0641L12.3915 22.7023Z"
+                                fill="url(#paint1_linear_8128_9502)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_8128_9502" x1="30.7368" y1="3.8711" x2="2.68092"
+                                    y2="32.3596" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#9038FF" />
+                                    <stop offset="0.993738" stop-color="#5551FF" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_8128_9502" x1="30.7368" y1="3.8711" x2="2.68092"
+                                    y2="32.3596" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#9038FF" />
+                                    <stop offset="0.993738" stop-color="#5551FF" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+
+                    </a>
+                </div>
+                <div class="hidden w-full justify-center min-[1310px]:flex items-center gap-5 2xl:gap-12">
+                    <a href="#"
+                        class="text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Components</a>
+                    <button
+                        class="flex items-center gap-2 text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Blocks
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M4 6L6.58579 8.58579C7.25245 9.25245 7.58579 9.58579 8 9.58579C8.41421 9.58579 8.74755 9.25245 9.41421 8.58579L12 6"
+                                stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button
+                        class="flex items-center gap-2 text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Inspiration
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M4 6L6.58579 8.58579C7.25245 9.25245 7.58579 9.58579 8 9.58579C8.41421 9.58579 8.74755 9.25245 9.41421 8.58579L12 6"
+                                stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <a href="#"
+                        class="text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Figma</a>
+                    <a href="#"
+                        class="text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Icons</a>
+                    <a href="#"
+                        class="text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Templates</a>
+                    <a href="#"
+                        class="text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Tools</a>
+                    <a href="#"
+                        class="text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Pricing</a>
+                    <a href="#"
+                        class="text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Affiliate</a>
+                </div>
+                <div class="w-max px-6 py-[12px] flex items-center justify-between">
+                    <div class="flex items-center gap-4 max-md:w-full justify-end max-[1310px]:w-full">
+                        <button
+                            class="max-sm:hidden py-2.5 px-8 border border-gray-300 rounded-full bg-white text-sm font-semibold leading-[22px] text-gray-900 transition-all duration-500 hover:bg-gray-300">Login</button>
+                        <button
+                            class="max-sm:hidden py-2.5 px-8 bg-indigo-600 text-white rounded-full text-sm font-semibold leading-[22px] transition-all duration-500 hover:bg-indigo-700">Login</button>
+                        <button
+                            class="nav-toggler min-[1310px]:hidden cursor-pointer rounded-md w-11 h-11 flex items-center justify-center border ml-2 border-theme-border text-[#888888] transition-all duration-500 hover:border-[#c9c9c9] hover:text-primary-black">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6H21" stroke="currentColor" stroke-width="null" stroke-linecap="round"
+                                    class="my-path">
+                                </path>
+                                <path d="M3 12H21" stroke="currentColor" stroke-width="null" stroke-linecap="round"
+                                    class="my-path">
+                                </path>
+                                <path d="M7 18H21" stroke="currentColor" stroke-width="null" stroke-linecap="round"
+                                    class="my-path">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!----------Navbar End---------->
+        <main>
+            <div class="w-full relative z-10 bg-white lg:flex pt-28 pb-14">
+                <div class="w-full max-w-screen-lg px-4 lg:px-8 mx-auto">
+                    <h1 class="text-2xl leading-9 font-semibold font-manrope text-gray-900 mb-1.5">Riley - Parenting
+                        with Superpowers. - Riley</h1>
+                    <p class="text-base font-medium leading-[26px] text-gray-500 mb-6">
+                        Riley learns and grows with your family, offering personalized, data-backed guidance so you're
+                        ready for anything that life - or your kids - throws your way.
+                    </p>
+                    <div class="flex items-center justify-between mb-9">
+                        <div class="flex items-center gap-2.5">
+                            <a href="#"
+                                class="py-2 px-[18px] rounded-full bg-indigo-50 text-sm font-medium leading-[22px] text-indigo-600 transition-all duration-500 hover:bg-indigo-100">SaaS</a>
+                            <a href="#"
+                                class="py-2 px-[18px] rounded-full bg-indigo-50 text-sm font-medium leading-[22px] text-indigo-600 transition-all duration-500 hover:bg-indigo-100">Product</a>
+                        </div>
+                        <button
+                            class="py-2 px-5 rounded-lg bg-indigo-600 text-sm font-medium leading-[22px] text-white whitespace-nowrap transition-all duration-500 hover:bg-indigo-700">
+                            Visit Site
+                        </button>
+                    </div>
+                    <img src="images/ss-preview-1.png" alt="image" class="w-full h-auto">
+                </div>
+            </div>
+
+            <!-- related lending pages  -->
+            <div class="w-full relative pb-16">
+                <div class="w-full max-w-screen-lg px-4 lg:px-8 mx-auto">
+                    <h2 class="text-4xl leading-[52px] font-semibold text-gray-900 mb-9">More Landing pages</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                        <div
+                            class="w-full aspect-[377/500] overflow-hidden relative rounded-xl border border-gray-200 group">
+                            <div class="w-full aspect-[377/500] overflow-clip rounded-xl  relative ">
+
+                                <!-- Image -->
+                                <img src="images/ss-2.png" alt="image"
+                                    class="w-full h-auto transition-transform duration-[3.5s] group-hover:-translate-y-96">
+
+                                <!-- Overlay -->
+                                <div
+                                    class="absolute top-full z-[1] left-0 w-full h-full max-h-[500px] bg-gradient-to-b from-black/0 to-black/50 p-1 flex flex-col items-center justify-end opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:top-0">
+                                    <p class="text-sm font-medium leading-[22px] text-white text-center mb-[51px]">
+                                        Click to view full page</p>
+                                </div>
+
+                                <!-- Link -->
+
+                            </div>
+                            <a href="#"
+                                class="absolute left-1 right-1 bottom-1 z-[2] w-[calc(100%-8px)] flex rounded-[10px] items-center justify-between py-2.5 px-3.5 bg-white/80 backdrop-blur-[5px] drop-shadow-[0_-2px_20px_rgba(0,0,0,0.06)] text-sm leading-[22px] text-black font-medium">
+                                https://rileyapp.com/
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                    fill="none">
+                                    <path
+                                        d="M13.5 9.75V14.25C13.5 14.6478 13.342 15.0294 13.0607 15.3107C12.7794 15.592 12.3978 15.75 12 15.75H3.75C3.35218 15.75 2.97064 15.592 2.68934 15.3107C2.40804 15.0294 2.25 14.6478 2.25 14.25V6C2.25 5.60218 2.40804 5.22064 2.68934 4.93934C2.97064 4.65804 3.35218 4.5 3.75 4.5H8.25"
+                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.25 2.25H15.75V6.75" stroke="black" stroke-width="1.4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5 10.5L15.75 2.25" stroke="black" stroke-width="1.4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div
+                            class="w-full aspect-[377/500] overflow-hidden relative rounded-xl border border-gray-200 group">
+                            <div class="w-full aspect-[377/500] overflow-clip rounded-xl  relative ">
+
+                                <!-- Image -->
+                                <img src="images/ss-3.png" alt="image"
+                                    class="w-full h-auto transition-transform duration-[3.5s] group-hover:-translate-y-96">
+
+                                <!-- Overlay -->
+                                <div
+                                    class="absolute top-full z-[1] left-0 w-full h-full max-h-[500px] bg-gradient-to-b from-black/0 to-black/50 p-1 flex flex-col items-center justify-end opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:top-0">
+                                    <p class="text-sm font-medium leading-[22px] text-white text-center mb-[51px]">
+                                        Click to view full page</p>
+                                </div>
+
+                                <!-- Link -->
+
+                            </div>
+                            <a href="#"
+                                class="absolute left-1 right-1 bottom-1 z-[2] w-[calc(100%-8px)] flex rounded-[10px] items-center justify-between py-2.5 px-3.5 bg-white/80 backdrop-blur-[5px] drop-shadow-[0_-2px_20px_rgba(0,0,0,0.06)] text-sm leading-[22px] text-black font-medium">
+                                https://rileyapp.com/
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                    fill="none">
+                                    <path
+                                        d="M13.5 9.75V14.25C13.5 14.6478 13.342 15.0294 13.0607 15.3107C12.7794 15.592 12.3978 15.75 12 15.75H3.75C3.35218 15.75 2.97064 15.592 2.68934 15.3107C2.40804 15.0294 2.25 14.6478 2.25 14.25V6C2.25 5.60218 2.40804 5.22064 2.68934 4.93934C2.97064 4.65804 3.35218 4.5 3.75 4.5H8.25"
+                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.25 2.25H15.75V6.75" stroke="black" stroke-width="1.4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5 10.5L15.75 2.25" stroke="black" stroke-width="1.4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div
+                            class="w-full aspect-[377/500] overflow-hidden relative rounded-xl border border-gray-200 group">
+                            <div class="w-full aspect-[377/500] overflow-clip rounded-xl  relative ">
+
+                                <!-- Image -->
+                                <img src="images/ss-4.png" alt="image"
+                                    class="w-full h-auto transition-transform duration-[3.5s] group-hover:-translate-y-96">
+
+                                <!-- Overlay -->
+                                <div
+                                    class="absolute top-full z-[1] left-0 w-full h-full max-h-[500px] bg-gradient-to-b from-black/0 to-black/50 p-1 flex flex-col items-center justify-end opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:top-0">
+                                    <p class="text-sm font-medium leading-[22px] text-white text-center mb-[51px]">
+                                        Click to view full page</p>
+                                </div>
+
+                                <!-- Link -->
+
+                            </div>
+                            <a href="#"
+                                class="absolute left-1 right-1 bottom-1 z-[2] w-[calc(100%-8px)] flex rounded-[10px] items-center justify-between py-2.5 px-3.5 bg-white/80 backdrop-blur-[5px] drop-shadow-[0_-2px_20px_rgba(0,0,0,0.06)] text-sm leading-[22px] text-black font-medium">
+                                https://rileyapp.com/
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                    fill="none">
+                                    <path
+                                        d="M13.5 9.75V14.25C13.5 14.6478 13.342 15.0294 13.0607 15.3107C12.7794 15.592 12.3978 15.75 12 15.75H3.75C3.35218 15.75 2.97064 15.592 2.68934 15.3107C2.40804 15.0294 2.25 14.6478 2.25 14.25V6C2.25 5.60218 2.40804 5.22064 2.68934 4.93934C2.97064 4.65804 3.35218 4.5 3.75 4.5H8.25"
+                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.25 2.25H15.75V6.75" stroke="black" stroke-width="1.4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5 10.5L15.75 2.25" stroke="black" stroke-width="1.4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+
+    <script src="./node_modules/@fullcalendar/core/index.global.js"></script>
+    <script src="./node_modules/@fullcalendar/daygrid/index.global.js"></script>
+    <script src="./node_modules/@fullcalendar/list/index.global.js"></script>
+    <script src="./node_modules/@fullcalendar/timegrid/index.global.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get form element by its new ID
+            const form = document.getElementById('registrationForm');
+
+            // Get input elements by their new unique IDs
+            const firstNameInput = document.getElementById('firstName');
+            const lastNameInput = document.getElementById('lastName');
+            const emailInput = document.getElementById('email');
+            const phoneInput = document.getElementById('phone');
+            const passwordInput = document.getElementById('password');
+            const confirmPasswordInput = document.getElementById('confirmPassword'); // Corrected ID
+
+            // Get error message elements by their new unique IDs
+            const firstNameError = document.getElementById('firstName-error');
+            const lastNameError = document.getElementById('lastName-error');
+            const emailError = document.getElementById('email-error');
+            const phoneError = document.getElementById('phone-error');
+            const passwordError = document.getElementById('password-error');
+            const confirmPasswordError = document.getElementById('confirmPassword-error'); // Corrected ID
+
+            // Get toggle button elements
+            const togglePasswordButton = document.getElementById('togglePassword');
+            const toggleConfirmPasswordButton = document.getElementById('toggleConfirmPassword');
+
+            // Get icon elements for password by their IDs
+            const showPasswordIcon = document.getElementById('showPasswordIcon');
+            const hidePasswordIcon = document.getElementById('hidePasswordIcon');
+
+            // Get icon elements for confirm password by their IDs
+            const showConfirmPasswordIcon = document.getElementById('showConfirmPasswordIcon');
+            const hideConfirmPasswordIcon = document.getElementById('hideConfirmPasswordIcon');
+
+
+            // --- Helper functions (remain the same) ---
+            function showError(inputElement, errorElement, message) {
+                errorElement.textContent = message;
+                // Assuming border-red-500 is the error class, and border-gray-300 is default
+                inputElement.classList.add('border-red-500');
+                inputElement.classList.remove('border-gray-300');
+                inputElement.classList.remove('border-green-500'); // Remove success border if present
+            }
+
+            function clearError(inputElement, errorElement) {
+                errorElement.textContent = '';
+                inputElement.classList.remove('border-red-500');
+                inputElement.classList.remove('border-green-500'); // Remove success border
+                inputElement.classList.add('border-gray-300'); // Restore default border
+            }
+
+            function showSuccess(inputElement) {
+                inputElement.classList.remove('border-red-500');
+                inputElement.classList.remove('border-gray-300');
+                inputElement.classList.add('border-green-500'); // Add Tailwind success border
+            }
+            // --- End Helper functions ---
+
+
+            // --- Validation functions (updated for new IDs) ---
+            // Validation function for First Name (only alphabets and spaces)
+            function validateFirstName() { // Renamed from validateName
+                const name = firstNameInput.value.trim(); // Use firstNameInput
+                const namePattern = /^[a-zA-Z\s]+$/;
+
+                if (name === '') {
+                    showError(firstNameInput, firstNameError, 'First Name is required.'); // Use firstNameError
+                    return false;
+                } else if (!namePattern.test(name)) {
+                    showError(firstNameInput, firstNameError, 'First Name can only contain alphabets and spaces.'); // Use firstNameError
+                    return false;
+                }
+                else {
+                    clearError(firstNameInput, firstNameError); // Use firstNameError
+                    showSuccess(firstNameInput);
+                    return true;
+                }
+            }
+
+            // Validation function for Last Name (same as First Name)
+            function validateLastName() {
+                const lastName = lastNameInput.value.trim(); // Use lastNameInput
+                const lastNamePattern = /^[a-zA-Z\s]+$/;
+
+                if (lastName === '') {
+                    showError(lastNameInput, lastNameError, 'Last Name is required.'); // Use lastNameError
+                    return false;
+                } else if (!lastNamePattern.test(lastName)) {
+                    showError(lastNameInput, lastNameError, 'Last Name can only contain alphabets and spaces.'); // Use lastNameError
+                    return false;
+                }
+                else {
+                    clearError(lastNameInput, lastNameError); // Use lastNameError
+                    showSuccess(lastNameInput);
+                    return true;
+                }
+            }
+
+
+            // Validation function for Email
+            function validateEmail() {
+                const email = emailInput.value.trim(); // Use emailInput
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (email === '') {
+                    showError(emailInput, emailError, 'Email is required.'); // Use emailError
+                    return false;
+                } else if (!emailPattern.test(email)) {
+                    showError(emailInput, emailError, 'Please enter a valid email address.'); // Use emailError
+                    return false;
+                } else {
+                    clearError(emailInput, emailError); // Use emailError
+                    showSuccess(emailInput);
+                    return true;
+                }
+            }
+
+            // Validation function for Phone Number
+            function validatePhone() {
+                const phone = phoneInput.value.trim(); // Use phoneInput
+                const phonePattern = /^\d+$/; // Regex for only digits
+
+                if (phone === '') {
+                    showError(phoneInput, phoneError, 'Phone Number is required.'); // Use phoneError
+                    return false;
+                } else if (!phonePattern.test(phone)) {
+                    showError(phoneInput, phoneError, 'Phone Number must contain only digits.'); // Use phoneError
+                    return false;
+                } else if (phone.length < 10) {
+                    showError(phoneInput, phoneError, `Phone Number must be at least 10 digits long. (Current: ${phone.length})`); // Use phoneError, add current length feedback
+                    return false;
+                } else if (phone.length > 12) {
+                    showError(phoneInput, phoneError, `Phone Number cannot exceed 12 digits. (Current: ${phone.length})`); // Use phoneError, add current length feedback
+                    return false;
+                }
+                else {
+                    clearError(phoneInput, phoneError); // Use phoneError
+                    showSuccess(phoneInput);
+                    return true;
+                }
+            }
+
+
+            // Validation function for Password (complex rules)
+            function validatePassword() {
+                const password = passwordInput.value; // Use passwordInput
+                const passwordError = document.getElementById('password-error'); // Get error element reference
+
+                clearError(passwordInput, passwordError);
+
+                if (password === '') {
+                    showError(passwordInput, passwordError, 'Password is required.');
+                    return false;
+                }
+
+                if (password.length < 8) {
+                    showError(passwordInput, passwordError, 'Password must be at least 8 characters long.');
+                    return false;
+                }
+
+                if (!/[A-Z]/.test(password)) {
+                    showError(passwordInput, passwordError, 'Password must contain at least one uppercase letter.');
+                    return false;
+                }
+
+                if (!/[a-z]/.test(password)) {
+                    showError(passwordInput, passwordError, 'Password must contain at least one lowercase letter.');
+                    return false;
+                }
+
+                if (!/[0-9]/.test(password)) {
+                    showError(passwordInput, passwordError, 'Password must contain at least one number.');
+                    return false;
+                }
+
+                if (!/[^\w\s]/.test(password)) { // Matches non-word, non-whitespace (most symbols)
+                    showError(passwordInput, passwordError, 'Password must contain at least one special character (e.g., !@#$%^&*).');
+                    return false;
+                }
+
+                showSuccess(passwordInput);
+                return true;
+            }
+
+            // Validation function for Confirm Password (matches password)
+            function validateConfirmPassword() {
+                const password = passwordInput.value; // Use passwordInput
+                const confirmPassword = confirmPasswordInput.value; // Use confirmPasswordInput
+                const confirmPasswordError = document.getElementById('confirmPassword-error'); // Get error element reference
+
+
+                clearError(confirmPasswordInput, confirmPasswordError);
+
+                if (confirmPassword === '') {
+                    showError(confirmPasswordInput, confirmPasswordError, 'Please confirm your password.');
+                    return false;
+                } else if (password !== confirmPassword) {
+                    showError(confirmPasswordInput, confirmPasswordError, 'Passwords do not match.');
+                    return false;
+                } else {
+                    showSuccess(confirmPasswordInput);
+                    return true;
+                }
+            }
+            // --- End Validation functions ---
+
+
+            // --- Toggle Password Visibility Logic (updated for new IDs) ---
+            // Add event listener for password toggle
+            if (togglePasswordButton && showPasswordIcon && hidePasswordIcon) { // Check elements exist
+                togglePasswordButton.addEventListener('click', function () {
+                    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    passwordInput.setAttribute('type', type);
+
+                    // Toggle icon visibility
+                    showPasswordIcon.classList.toggle('hidden');
+                    hidePasswordIcon.classList.toggle('hidden');
+                });
+            }
+
+
+            // Add event listener for confirm password toggle (optional)
+            if (toggleConfirmPasswordButton && showConfirmPasswordIcon && hideConfirmPasswordIcon) {
+                toggleConfirmPasswordButton.addEventListener('click', function () {
+                    const type = confirmPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    confirmPasswordInput.setAttribute('type', type);
+
+                    // Toggle icon visibility
+                    showConfirmPasswordIcon.classList.toggle('hidden');
+                    hideConfirmPasswordIcon.classList.toggle('hidden');
+                });
+            }
+            // --- End Toggle Logic ---
+
+
+            // --- Form Submission Listener (updated to include new validations) ---
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Run ALL validation checks and store results
+                const isFirstNameValid = validateFirstName(); // Renamed
+                const isLastNameValid = validateLastName();
+                const isEmailValid = validateEmail();
+                const isPhoneValid = validatePhone();
+                const isPasswordValid = validatePassword();
+                const isConfirmPasswordValid = validateConfirmPassword();
+
+                // Check if ALL fields are valid
+                if (isFirstNameValid && isLastNameValid && isEmailValid && isPhoneValid && isPasswordValid && isConfirmPasswordValid) {
+                    // Form is valid - you can now submit it programmatically or do something else
+                    alert('Form submitted successfully!');
+                    // form.submit(); // Uncomment this line to actually submit the form
+                } else {
+                    // Form is invalid - validation messages are already shown next to fields
+                    console.log('Form validation failed.'); // Log instead of alert for less intrusive feedback
+                }
+            });
+            // --- End Submission Listener ---
+
+
+            // --- Real-time Validation Listeners (updated for new IDs) ---
+            // Add blur listeners for most fields
+            firstNameInput.addEventListener('blur', validateFirstName);
+            lastNameInput.addEventListener('blur', validateLastName);
+            emailInput.addEventListener('blur', validateEmail);
+            phoneInput.addEventListener('blur', validatePhone);
+            passwordInput.addEventListener('blur', validatePassword);
+            confirmPasswordInput.addEventListener('blur', validateConfirmPassword);
+
+            // Add input listeners for specific real-time feedback while typing
+            emailInput.addEventListener('input', validateEmail); // Validate email format as typing
+            phoneInput.addEventListener('input', validatePhone); // Validate phone format/length as typing
+
+            passwordInput.addEventListener('input', function () {
+                // You can uncomment validatePassword() here if you want instant complex feedback while typing
+                // validatePassword();
+                // Always re-validate confirm password whenever the main password changes
+                validateConfirmPassword();
+            });
+            confirmPasswordInput.addEventListener('input', validateConfirmPassword); // Validate confirm as typing
+
+
+            // --- End Real-time Validation Listeners ---
+
+        });
+    </script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('myForm');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+            const confirmPasswordInput = document.getElementById('confirm-password');
+
+            const nameError = document.getElementById('name-error');
+            const emailError = document.getElementById('email-error');
+            const passwordError = document.getElementById('password-error');
+            const confirmPasswordError = document.getElementById('confirm-password-error');
+            // Inside your <script> tag, within the DOMContentLoaded listener:
+
+            // Inside your <script> tag, within the DOMContentLoaded listener:
+
+            // Get the toggle button elements
+            const togglePasswordButton = document.getElementById('togglePassword');
+            const toggleConfirmPasswordButton = document.getElementById('toggleConfirmPassword');
+
+            // Get the icon elements for password
+            const showPasswordIcon = document.getElementById('showPasswordIcon');
+            const hidePasswordIcon = document.getElementById('hidePasswordIcon');
+
+            // Get the icon elements for confirm password (optional)
+            const showConfirmPasswordIcon = document.getElementById('showConfirmPasswordIcon');
+            const hideConfirmPasswordIcon = document.getElementById('hideConfirmPasswordIcon');
+
+            // ... (rest of element getting code remains the same) ...
+
+            // Add event listener for password toggle
+            togglePasswordButton.addEventListener('click', function () {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+
+                // Toggle icon visibility using Tailwind's hidden class
+                showPasswordIcon.classList.toggle('hidden');
+                hidePasswordIcon.classList.toggle('hidden');
+            });
+
+            // Add event listener for confirm password toggle (optional)
+            if (toggleConfirmPasswordButton && showConfirmPasswordIcon && hideConfirmPasswordIcon) {
+                toggleConfirmPasswordButton.addEventListener('click', function () {
+                    const type = confirmPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    confirmPasswordInput.setAttribute('type', type);
+
+                    // Toggle icon visibility
+                    showConfirmPasswordIcon.classList.toggle('hidden');
+                    hideConfirmPasswordIcon.classList.toggle('hidden');
+                });
+            }
+
+
+            // ... (rest of your script, including the complex validatePassword function and form submit listener) ...
+
+            // ... (rest of your script, including validation functions and form submit listener) ...
+            // Helper function to display error messages and apply error styling
+            function showError(inputElement, errorElement, message) {
+                errorElement.textContent = message;
+                inputElement.classList.add('border-red-500'); // Add Tailwind error border
+                inputElement.classList.remove('border-gray-300'); // Remove default border
+                inputElement.classList.remove('border-green-500'); // Remove success border
+            }
+
+            // Helper function to clear error messages and styling
+            function clearError(inputElement, errorElement) {
+                errorElement.textContent = '';
+                inputElement.classList.remove('border-red-500'); // Remove Tailwind error border
+                inputElement.classList.remove('border-green-500'); // Remove success border
+                inputElement.classList.add('border-gray-300'); // Restore default border (adjust as needed)
+            }
+
+            // Helper function to apply success styling (Optional)
+            function showSuccess(inputElement) {
+                inputElement.classList.remove('border-red-500');
+                inputElement.classList.remove('border-gray-300');
+                inputElement.classList.add('border-green-500'); // Add Tailwind success border
+            }
+
+
+            // Validation functions for each field
+            function validateName() {
+                const name = nameInput.value.trim();
+                // Regex explained:
+                // ^         - Start of the string
+                // [a-zA-Z\s] - Matches any character that is an alphabet (a-z, A-Z) OR a whitespace character (\s)
+                // +         - Matches one or more of the preceding characters
+                // $         - End of the string
+                const namePattern = /^[a-zA-Z\s]+$/;
+
+                if (name === '') {
+                    showError(nameInput, nameError, 'Name is required.');
+                    return false;
+                } else if (!namePattern.test(name)) {
+                    // Check if the name contains only alphabets and spaces
+                    showError(nameInput, nameError, 'Name can only contain alphabets and spaces.');
+                    return false;
+                }
+                else {
+                    clearError(nameInput, nameError);
+                    showSuccess(nameInput); // Optional: show success state
+                    return true;
+                }
+            }
+
+            function validateEmail() {
+                const email = emailInput.value.trim();
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email regex
+
+                if (email === '') {
+                    showError(emailInput, emailError, 'Email is required.');
+                    return false;
+                } else if (!emailPattern.test(email)) {
+                    showError(emailInput, emailError, 'Please enter a valid email address.');
+                    return false;
+                } else {
+                    clearError(emailInput, emailError);
+                    showSuccess(emailInput); // Optional: show success state
+                    return true;
+                }
+            }
+
+            // Inside your <script> tag, within the DOMContentLoaded listener:
+
+            // ... (previous code including toggle listeners) ...
+
+            function validatePassword() {
+                const password = passwordInput.value;
+                const passwordError = document.getElementById('password-error'); // Ensure you get the error element inside the function or pass it
+
+                // Clear previous errors before validating
+                clearError(passwordInput, passwordError); // Use the helper function
+
+                if (password === '') {
+                    showError(passwordInput, passwordError, 'Password is required.');
+                    return false;
+                }
+
+                if (password.length < 8) {
+                    showError(passwordInput, passwordError, 'Password must be at least 8 characters long.');
+                    return false;
+                }
+
+                // Check for at least one uppercase letter
+                if (!/[A-Z]/.test(password)) {
+                    showError(passwordInput, passwordError, 'Password must contain at least one uppercase letter.');
+                    return false;
+                }
+
+                // Check for at least one lowercase letter
+                if (!/[a-z]/.test(password)) {
+                    showError(passwordInput, passwordError, 'Password must contain at least one lowercase letter.');
+                    return false;
+                }
+
+                // Check for at least one number (0-9)
+                if (!/[0-9]/.test(password)) {
+                    showError(passwordInput, passwordError, 'Password must contain at least one number.');
+                    return false;
+                }
+
+                // Check for at least one special character
+                // This regex matches any character that is NOT a word character (\w includes a-z, A-Z, 0-9, _)
+                // and NOT a whitespace character (\s). This effectively matches most symbols/punctuation.
+                // You could use a more specific set like /[!@#$%^&*(),.?":{}|<>]/ if needed.
+                if (!/[^\w\s]/.test(password)) {
+                    showError(passwordInput, passwordError, 'Password must contain at least one special character (e.g., !@#$%^&*).');
+                    return false;
+                }
+
+                // If all checks pass
+                showSuccess(passwordInput); // Optional: show success state
+                return true;
+            }
+
+            // ... (rest of the script including validateConfirmPassword and form submit listener) ...
+
+            // Add blur/input listeners for real-time validation on the password field
+            passwordInput.addEventListener('blur', validatePassword);
+            // Optional: Validate password and confirm password as user types in password field
+            passwordInput.addEventListener('input', function () {
+                // validatePassword(); // Uncomment if you want validation messages to appear while typing
+                validateConfirmPassword(); // Always re-validate confirm password when password changes
+            });
+
+            // Add blur/input listeners for the confirm password field
+            confirmPasswordInput.addEventListener('blur', validateConfirmPassword);
+            confirmPasswordInput.addEventListener('input', validateConfirmPassword);
+
+            function validateConfirmPassword() {
+                const password = passwordInput.value;
+                const confirmPassword = confirmPasswordInput.value;
+
+                if (confirmPassword === '') {
+                    showError(confirmPasswordInput, confirmPasswordError, 'Please confirm your password.');
+                    return false;
+                } else if (password !== confirmPassword) {
+                    showError(confirmPasswordInput, confirmPasswordError, 'Passwords do not match.');
+                    return false;
+                } else {
+                    clearError(confirmPasswordInput, confirmPasswordError);
+                    showSuccess(confirmPasswordInput); // Optional: show success state
+                    return true;
+                }
+            }
+
+
+            // Event listener for form submission
+            form.addEventListener('submit', function (event) {
+                // Prevent the default form submission
+                event.preventDefault();
+
+                // Run all validation checks
+                const isNameValid = validateName();
+                const isEmailValid = validateEmail();
+                const isPasswordValid = validatePassword();
+                const isConfirmPasswordValid = validateConfirmPassword();
+
+
+                // If all checks pass, the form is valid
+                if (isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid) {
+                    // Form is valid - you can now submit it programmatically or do something else
+
+                    alert('Form submitted successfully!'); // Replace with actual form submission or action
+                    // form.submit(); // Uncomment this line to actually submit the form
+                } else {
+                    // Form is invalid - validation messages are already shown
+                    inputElement.classList.add('border-red-500');
+                    alert('Please fix the errors in the form.');
+                }
+            });
+
+            // Optional: Add real-time validation on input blur
+            nameInput.addEventListener('blur', validateName);
+            emailInput.addEventListener('blur', validateEmail);
+            passwordInput.addEventListener('blur', validatePassword);
+            confirmPasswordInput.addEventListener('blur', validateConfirmPassword);
+
+            // Optional: Add real-time validation on input for confirm password (as password changes)
+            passwordInput.addEventListener('input', validateConfirmPassword);
+            confirmPasswordInput.addEventListener('input', validateConfirmPassword);
+
+
+        });
+    </script> -->
+
+
+
+</body>
+
+</html>
+
+<!--  -->
+<!--  -->
+<!-- we have one more option to desife to can user define their own opacity class by using tailwind config file -->
+<!--  -->
+<!--  -->
