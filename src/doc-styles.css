@@ -551,7 +551,7 @@
         @apply text-sm leading-[22px] font-medium text-primary-black pb-1.5
     }
    .menu-item.active>.drop-top .side-link {
-        color: #002225 !important;
+        color: #4f46e5 !important;
     }
     /*==modal===*/
     .modalTrigger.modal-show {
@@ -585,7 +585,10 @@
     background: #FFF;
     color: #4F46E5;
 }
-
+.menu-item.active,.menu-item.active {
+    color:#4f46e5;
+    background: #eef2ff;
+}
     @media(max-width:768px){
         .account-list li>a{
             padding: 0px 10px;
