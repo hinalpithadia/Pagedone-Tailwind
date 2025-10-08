@@ -14,20 +14,21 @@ body {
 }
 
 .grid {
-    display: flex;
+     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px; /* gutter */
+    width: 101%;
+  
+    
 }
 
 .grid-sizer, .grid-item {
-    width: calc((100% - 20px) / 3); /* 3 columns with 10px gutter */
-    margin-left: 10px;
-    margin-bottom: 10px;
+    width: 32.50%; /* 3 columns + spacing */
+  
 }
 
 @media (max-width: 1024px) {
     .grid-sizer, .grid-item {
-        width: calc((100% - 20px) / 2); /* 2 columns on tablet */
+        width: calc((100% - 0px) / 2); /* 2 columns on tablet */
     }
 }
 
@@ -196,7 +197,7 @@ body {
     </div>
 
 </header>
- <main class="max-[640px]:pt-0 max-[800px]:pt-[120px] min-[800px]:pt-[126px] w-full  flex-1 p-4 min-h-screen overflow-visible transition-[width] duration-300">
+ <main class="max-[640px]:pt-0 max-[800px]:pt-[120px] min-[800px]:pt-[126px] w-full  flex-1  min-h-screen overflow-visible transition-[width] duration-300">
      <div class="relative flex items-start ">
           <div x-cloak wire:ignore
         :class="{
@@ -424,7 +425,7 @@ body {
 
           <!-- grid area  -->
           <div class="py-7 px-4 lg:px-8 ">
-          <div  class="grid transition-all duration-300 gap-6">
+          <div  class="grid transition-all duration-300 ">
             <div class="grid-sizer"></div>
   <div class="grid-item inline-block w-auto break-inside-avoid mb-6 bg-white rounded-xl shadow overflow-hidden ">
     <div class="card group break-inside-avoid">
@@ -774,7 +775,7 @@ body {
                 this.$grid = $('.grid').masonry({
                     itemSelector: '.grid-item',
                     columnWidth: '.grid-sizer',
-                    gutter: 10,
+                    gutter: 20,
                     percentPosition: true
                 });
 
