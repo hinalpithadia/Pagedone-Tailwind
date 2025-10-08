@@ -6449,6 +6449,10 @@ input[type="radio"]:checked:disabled + label span{
   top: 68px;
 }
 
+.top-\[80px\]{
+  top: 80px;
+}
+
 .top-auto{
   top: auto;
 }
@@ -8717,6 +8721,10 @@ input[type="radio"]:checked:disabled + label span{
 
 .ml-96{
   margin-left: 24rem;
+}
+
+.ml-\[280px\]{
+  margin-left: 280px;
 }
 
 .ml-auto{
@@ -17635,6 +17643,11 @@ input[type="radio"]:checked:disabled + label span{
 .bg-\[\#F7F9FF\]{
   --tw-bg-opacity: 1;
   background-color: rgb(247 249 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F8FAFB\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 251 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#FF3000\]{
@@ -26797,6 +26810,12 @@ input[type="radio"]:checked:disabled + label span{
   transition-duration: 150ms;
 }
 
+.transition-\[width\]{
+  transition-property: width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -31756,16 +31775,6 @@ input[type="radio"]:checked:disabled + label span{
   .md\:columns-xs{
     -moz-columns: 20rem;
          columns: 20rem;
-  }
-
-  .md\:columns-3{
-    -moz-columns: 3;
-         columns: 3;
-  }
-
-  .md\:columns-4{
-    -moz-columns: 4;
-         columns: 4;
   }
 
   .md\:grid-flow-col{

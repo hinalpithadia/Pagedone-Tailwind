@@ -13,11 +13,28 @@ body {
   font-family: sans-serif;
 }
 
-/* ---- grid ---- */
-.grid-item {
-  break-inside: avoid;
-  margin-bottom: 1.5rem; /* spacing between items */
-  width: 28%;
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px; /* gutter */
+}
+
+.grid-sizer, .grid-item {
+    width: calc((100% - 20px) / 3); /* 3 columns with 10px gutter */
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .grid-sizer, .grid-item {
+        width: calc((100% - 20px) / 2); /* 2 columns on tablet */
+    }
+}
+
+@media (max-width: 640px) {
+    .grid-sizer, .grid-item {
+        width: 100%; /* 1 column on mobile */
+    }
 }
 
   </style>
@@ -133,7 +150,7 @@ body {
 <header class="w-full h-auto bg-[#F7F9FF] border border-theme-border border-t-0 border-x-0 flex max-[580px]:flex-col items-center justify-between max-sm:mt-[69px] sm:fixed top-[68px] left-0 z-40">
     <div class="px-5 py-2 min-[580px]:py-[14px] max-[580px]:border-b min-[580px]:border-r border-theme-border w-full min-[580px]:max-w-max min-[800px]:max-w-[280px] flex items-center justify-between ">
         <p class="text-sm leading-[18px] font-medium text-primary-black max-[800px]:hidden">Category</p>
-        <button @click="sidebarOpen = !sidebarOpen" :class="{ '': !sidebarOpen, 'hover:!text-primary-black': sidebarOpen }" class="transition-all cursor-pointer text-[#4F46E5] duration-300 p-1 flex items-center gap-2 rounded-lg focus:outline-none max-[580px]:py-2.5 min-h-[29px] max-[580px]:border max-[580px]:border-theme-border max-[580px]:w-full max-[580px]:justify-center hover:!text-primary-black">
+        <button @click="toggleSidebar()" :class="{ 'hover:!text-primary-black': sidebarOpen }" class="transition-all cursor-pointer text-[#4F46E5] duration-300 p-1 flex items-center gap-2 rounded-lg focus:outline-none max-[580px]:py-2.5 min-h-[29px] max-[580px]:border max-[580px]:border-theme-border max-[580px]:w-full max-[580px]:justify-center hover:!text-primary-black">
             <svg :class="{ 'hidden min-[580px]:hidden': !sidebarOpen, 'block': sidebarOpen }" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="block">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5001 3.56514C4.20223 3.56514 3.1501 4.61727 3.1501 5.91514V14.9151C3.1501 16.213 4.20223 17.2651 5.5001 17.2651H14.5001C15.798 17.2651 16.8501 16.213 16.8501 14.9151V5.91514C16.8501 4.61727 15.798 3.56514 14.5001 3.56514H5.5001ZM1.8501 5.91514C1.8501 3.8993 3.48426 2.26514 5.5001 2.26514H14.5001C16.5159 2.26514 18.1501 3.8993 18.1501 5.91514V14.9151C18.1501 16.931 16.5159 18.5651 14.5001 18.5651H5.5001C3.48426 18.5651 1.8501 16.931 1.8501 14.9151V5.91514Z" fill="currentColor"></path>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.31685 2.65967V17.9596H7.01685V2.65967H8.31685Z" fill="currentColor"></path>
@@ -179,7 +196,7 @@ body {
     </div>
 
 </header>
- <main class="max-[640px]:pt-0 max-[800px]:pt-[120px] min-[800px]:pt-[126px] w-full  ">
+ <main class="max-[640px]:pt-0 max-[800px]:pt-[120px] min-[800px]:pt-[126px] w-full  flex-1 p-4 min-h-screen overflow-visible transition-[width] duration-300">
      <div class="relative flex items-start ">
           <div x-cloak wire:ignore
         :class="{
@@ -407,8 +424,8 @@ body {
 
           <!-- grid area  -->
           <div class="py-7 px-4 lg:px-8 ">
-          <div  class="grid transition-all duration-300 gap-6"
-  :class="sidebarOpen ? 'columns-3' : 'columns-4'">
+          <div  class="grid transition-all duration-300 gap-6">
+            <div class="grid-sizer"></div>
   <div class="grid-item inline-block w-auto break-inside-avoid mb-6 bg-white rounded-xl shadow overflow-hidden ">
     <div class="card group break-inside-avoid">
         <div class="relative overflow-hidden">
@@ -741,29 +758,50 @@ body {
 </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.1/alpine.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
  
  <script>
-let $grid = $('.grid').isotope({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  masonry: {
-    columnWidth: '.grid-item',
-    gutter: 10
-  }
-});
+ function sidebar() {
+        return {
+            sidebarOpen: true,
+            $grid: null,
 
-document.addEventListener('alpine:init', () => {
-  Alpine.data('sidebar', () => ({
-    sidebarOpen: true,
-    toggleSidebar() {
-      this.sidebarOpen = !this.sidebarOpen;
-      setTimeout(() => $grid.isotope('layout'), 300); // reflow Isotope
+            init() {
+                // Initialize Masonry
+                this.$grid = $('.grid').masonry({
+                    itemSelector: '.grid-item',
+                    columnWidth: '.grid-sizer',
+                    gutter: 10,
+                    percentPosition: true
+                });
+
+                // Layout after images load
+                this.$grid.imagesLoaded().progress(() => {
+                    this.$grid.masonry('layout');
+                });
+
+                // Layout on window resize
+                window.addEventListener('resize', () => {
+                    this.$grid.masonry('layout');
+                });
+            },
+
+            toggleSidebar() {
+                this.sidebarOpen = !this.sidebarOpen;
+
+                // Wait for DOM & CSS transitions
+                const gridEl = document.querySelector('.grid');
+                const transitionDuration = parseFloat(getComputedStyle(gridEl).transitionDuration) * 1000 || 300;
+
+                setTimeout(() => {
+                    this.$grid.masonry('layout');
+                }, transitionDuration + 50);
+            }
+        }
     }
-  }));
-});
  </script>
 </body>
 
