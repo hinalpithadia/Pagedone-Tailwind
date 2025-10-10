@@ -402,7 +402,7 @@
                                     <div class="w-full aspect-[377/500] overflow-clip rounded-xl  relative h-full">
 
                                         <!-- Image -->
-                                        <img src="images/ss-1.png" alt="image" class="absolute top-0 left-0 w-full h-auto object-contain transition-transform duration-[3.5s] ease-linear">
+                                        <img src="images/ss-1.png" alt="image" class="absolute top-0 left-0 w-full h-auto object-contain transition-transform ease-linear">
 
                                         <!-- Overlay -->
                                         <div class="absolute top-full z-[1] left-0 w-full h-full bg-gradient-to-b from-black/0 to-black/50 p-1 flex flex-col items-center justify-end opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:top-0">
@@ -428,7 +428,7 @@
          <img
     src="images/ss-2.png"
     alt="image"
-    class="absolute top-0 left-0 w-full h-auto object-contain transition-transform duration-[3.5s] ease-linear"
+    class="absolute top-0 left-0 w-full h-auto object-contain transition-transform ease-linear"
   >
 
                                         <!-- Overlay -->
@@ -453,7 +453,7 @@
                                     <div class="w-full aspect-[377/500] overflow-clip rounded-xl  relative ">
 
                                         <!-- Image -->
-                                        <img src="images/ss-3.png" alt="image" class="absolute top-0 left-0 w-full h-auto object-contain transition-transform duration-[3.5s] ease-linear">
+                                        <img src="images/ss-3.png" alt="image" class="absolute top-0 left-0 w-full h-auto object-contain transition-transform ease-linear">
 
                                         <!-- Overlay -->
                                         <div class="absolute top-full z-[1] left-0 w-full h-full max-h-[500px] bg-gradient-to-b from-black/0 to-black/50 p-1 flex flex-col items-center justify-end opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:top-0">
@@ -477,7 +477,7 @@
                                     <div class="w-full aspect-[377/500] overflow-clip rounded-xl  relative ">
 
                                         <!-- Image -->
-                                        <img src="images/ss-4.png" alt="image" class="absolute top-0 left-0 w-full h-auto object-contain transition-transform duration-[3.5s] ease-linear">
+                                        <img src="images/ss-4.png" alt="image" class="absolute top-0 left-0 w-full h-auto object-contain transition-transform ease-linear">
 
                                         <!-- Overlay -->
                                         <div class="absolute top-full z-[1] left-0 w-full h-full max-h-[500px] bg-gradient-to-b from-black/0 to-black/50 p-1 flex flex-col items-center justify-end opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:top-0">
@@ -751,31 +751,43 @@ $(document).ready(function () {
 });
   </script>
   <script>
-    document.querySelectorAll('.group').forEach(group => {
+document.querySelectorAll('.group').forEach(group => {
   const img = group.querySelector('img');
-
   if (!img) return;
 
-  // Wait until image is fully loaded
   img.addEventListener('load', () => {
     const containerHeight = group.offsetHeight;
     const imageHeight = img.offsetHeight;
+    const translateDistance = Math.max(0, imageHeight - containerHeight);
 
-    // If image is taller than container, calculate how far it can scroll
-    const translateDistance = imageHeight > containerHeight
-      ? imageHeight - containerHeight
-      : 0;
+    // Define fixed scroll speed (pixels per second)
+    const scrollSpeed = 50; // adjust for faster/slower movement
+    const duration = translateDistance / scrollSpeed;
 
-    // Apply hover animation dynamically
+    let hoverOutTimeout;
+
     group.addEventListener('mouseenter', () => {
+      clearTimeout(hoverOutTimeout);
+      img.style.transition = `transform ${duration}s linear`;
       img.style.transform = `translateY(-${translateDistance}px)`;
     });
 
     group.addEventListener('mouseleave', () => {
-      img.style.transform = `translateY(0px)`;
+      // Small delay to prevent flicker when switching quickly
+      hoverOutTimeout = setTimeout(() => {
+        img.style.transition = `transform 0.4s ease-out`;
+        img.style.transform = `translateY(0px)`;
+      }, 150);
     });
   });
+
+  // Handle already loaded images
+  if (img.complete) {
+    const event = new Event('load');
+    img.dispatchEvent(event);
+  }
 });
+
 
   </script>
 </body>
