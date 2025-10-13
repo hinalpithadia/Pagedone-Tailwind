@@ -9448,6 +9448,10 @@ input[type="radio"]:checked:disabled + label span{
   height: calc(100vh - 100px);
 }
 
+.h-\[calc\(100vh-130px\)\]{
+  height: calc(100vh - 130px);
+}
+
 .h-auto{
   height: auto;
 }
@@ -32026,6 +32030,10 @@ input[type="radio"]:checked:disabled + label span{
     bottom: 0px;
   }
 
+  .lg\:-left-40{
+    left: -10rem;
+  }
+
   .lg\:-left-80{
     left: -20rem;
   }
@@ -32387,6 +32395,10 @@ input[type="radio"]:checked:disabled + label span{
 
   .lg\:min-w-\[392px\]{
     min-width: 392px;
+  }
+
+  .lg\:min-w-\[700px\]{
+    min-width: 700px;
   }
 
   .lg\:min-w-\[750px\]{

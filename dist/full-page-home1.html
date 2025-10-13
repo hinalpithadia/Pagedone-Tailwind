@@ -67,7 +67,8 @@
         <div class="hidden min-[1310px]:flex items-center gap-5 2xl:gap-12">
           <a href="#"
             class="text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Components</a>
-          <button
+          
+            <button
             class="flex items-center gap-2 text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Blocks
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path
@@ -75,14 +76,69 @@
                 stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
-          <button
-            class="flex items-center gap-2 text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Inspiration
+          <div class="dropdown relative inline-flex">
+     
+        <button data-target="megamenu"
+            class="dropdown-toggle flex items-center gap-2 text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Inspiration
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path
                 d="M4 6L6.58579 8.58579C7.25245 9.25245 7.58579 9.58579 8 9.58579C8.41421 9.58579 8.74755 9.25245 9.41421 8.58579L12 6"
                 stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
+     <div id="megamenu" aria-labelledby="megamenu" class="dropdown-menu animate-fade z-10 relative top-3 max-lg:mb-5 lg:absolute lg:top-14 lg:-left-40 rounded-lg bg-white shadow-[0px_15px_30px_0px_rgba(16,24,40,0.1)] xl:p-4 lg:p-4 p-2 lg:min-w-[700px]  min-w-full transition-transform open" >
+                                                  <div class="block ">
+                                                  
+                                                      <ul class="text-sm text-gray-700 flex lg:flex-row flex-col">
+                                                         
+                                                          <li class="w-1/2">
+                                                              <a href="javascript:;" class="px-3 py-5 transition-all duration-500 hover:bg-gray-50 hover:rounded-xl flex flex-col gap-3">
+                                                                  <!-- <div class="bg-orange-50 rounded-lg w-12 h-12 flex items-center justify-center">
+                                                                      <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                          <path opacity="0.3" d="M23.75 16.625C23.75 15.3133 22.6867 14.25 21.375 14.25H7.125C5.81332 14.25 4.75 15.3133 4.75 16.625V30.875C4.75 32.1867 5.81332 33.25 7.125 33.25H21.375C22.6867 33.25 23.75 32.1867 23.75 30.875V16.625Z" fill="#F59E0B">
+                                                                          </path>
+                                                                          <path d="M12.6665 15.0417C12.6665 20.7256 17.2742 25.3333 22.9582 25.3333C28.6421 25.3333 33.2498 20.7256 33.2498 15.0417C33.2498 9.35774 28.6421 4.75 22.9582 4.75C17.2742 4.75 12.6665 9.35774 12.6665 15.0417Z" fill="#F59E0B">
+                                                                          </path>
+                                                                      </svg>
+
+                                                                  </div> -->
+                                                                  <div class="block">
+                                                                      <h5 class="text-gray-900 text-base mb-1.5 font-semibold">
+                                                                         Site & Landing Page Inspiration</h5>
+                                                                      <p class="text-xs font-medium text-gray-400">
+                                                                         Get inspired by the best landing page designs on the web.</p>
+                                                                  </div>
+                                                              </a>
+                                                          </li>
+                                                        <li class="w-1/2">
+                                                              <a href="javascript:;" class="px-3 py-5 transition-all duration-500 hover:bg-gray-50 hover:rounded-xl flex flex-col gap-3">
+                                                                  <!-- <div class="bg-orange-50 rounded-lg w-12 h-12 flex items-center justify-center">
+                                                                      <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                          <path opacity="0.3" d="M23.75 16.625C23.75 15.3133 22.6867 14.25 21.375 14.25H7.125C5.81332 14.25 4.75 15.3133 4.75 16.625V30.875C4.75 32.1867 5.81332 33.25 7.125 33.25H21.375C22.6867 33.25 23.75 32.1867 23.75 30.875V16.625Z" fill="#F59E0B">
+                                                                          </path>
+                                                                          <path d="M12.6665 15.0417C12.6665 20.7256 17.2742 25.3333 22.9582 25.3333C28.6421 25.3333 33.2498 20.7256 33.2498 15.0417C33.2498 9.35774 28.6421 4.75 22.9582 4.75C17.2742 4.75 12.6665 9.35774 12.6665 15.0417Z" fill="#F59E0B">
+                                                                          </path>
+                                                                      </svg>
+
+                                                                  </div> -->
+                                                                  <div class="block">
+                                                                      <h5 class="text-gray-900 text-base mb-1.5 font-semibold">
+                                                                         
+              Section & Component Examples
+            </h5>
+                                                                      <p class="text-xs font-medium text-gray-400">
+                                                                        
+              A growing list of landing page components from hundreds of websites
+            </p>
+                                                                  </div>
+                                                              </a>
+                                                          </li>
+                                                      </ul>
+                                                   
+                                                  </div>
+                                              </div>
+      </div>
+        
           <a href="#"
             class="text-base leading-[26px] font-medium text-gray-900 transition-all duration-500 hover:text-indigo-600">Figma</a>
           <a href="#"
@@ -175,7 +231,7 @@
         'w-0':
             !sidebarOpen
     }"
-        class="fixed max-[580px]:top-[69px] max-[800px]:top-[67px] top-[126px] bottom-0 left-0 z-50 block min-[580px]:w-[280px] h-full min-h-screen border-r border-theme-border overflow-y-auto transition-all duration-300 overflow-x-hidden 
+        class="fixed max-[580px]:top-[69px] max-[800px]:top-[67px] top-[126px] bottom-0 left-0 z-50 block min-[580px]:w-[280px] h-[calc(100vh-130px)]  border-r border-theme-border overflow-y-auto transition-all duration-300 overflow-x-hidden 
         [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-[#fff] [&::-webkit-scrollbar-thumb]:bg-[#E2EBE6] [&::-webkit-scrollbar-track]:rounded-[10px] w-full max-[580px]:max-w-[280px] max-lg:bg-white [&::-webkit-scrollbar-thumb]:rounded-[10px]">
 
       
@@ -635,6 +691,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.1/alpine.js"></script>
+    <script src="https://alpha.pagedone.io/asset/js/index-npm.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
     // Each bookmark button toggles independently - RECOMMENDED for bookmarks
