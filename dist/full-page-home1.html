@@ -6,6 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>mintwint/components</title>
   <link rel="stylesheet" href="css/styles-output.css">
+  <style>
+    @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .tooltip {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: all 0.25s ease;
+    pointer-events: none;
+  }
+
+  .group:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    animation: fadeInUp 0.25s ease forwards;
+  }
+  </style>
 </head>
 
 <body class="font-inter box-border overflow-x-hidden" x-cloak x-data="sidebar()">
@@ -210,13 +237,25 @@
                     </svg>
                 </button> -->
           </div>
-          <div class="p-0.5 rounded-xl bg-indigo-50 shadow-[0_0_0_1px_rgba(79,70,229,0.20)] flex items-center gap-0.5">
-                                    <a href="#" class="section-tab-btn py-2 px-[18px] whitespace-nowrap rounded-[10px] bg-indigo-50 text-sm leading-[23px] font-medium text-indigo-900 transition-all duration-500 hover:bg-white hover:text-indigo-600 active">
-                                        Website &amp; Landing Page
-                                    </a>
-                                    <a href="#" class="section-tab-btn py-2 px-[18px] whitespace-nowrap rounded-[10px] bg-indigo-50 text-sm leading-[23px] font-medium text-indigo-900 transition-all duration-500 hover:bg-white hover:text-indigo-600">
-                                        Section &amp; Component
-                                    </a>
+          <div class="p-0.5 rounded-xl bg-indigo-50 shadow-[0_0_0_1px_rgba(79,70,229,0.20)] flex items-center gap-0.5 relative">
+  <a href="#" class="section-tab-btn py-2 px-[18px] whitespace-nowrap rounded-[10px] bg-indigo-50 text-sm leading-[23px] font-medium text-indigo-900 transition-all duration-500 hover:bg-white hover:text-indigo-600 active">
+    Website &amp; Landing Page
+  </a>
+
+  <!-- Wrap the second link in a relative group for tooltip hover -->
+  <div class="relative group">
+    <a class="section-tab-btn py-2 px-[18px] whitespace-nowrap rounded-[10px] bg-indigo-50 text-sm leading-[23px] font-medium text-indigo-900 transition-all duration-500 hover:bg-white hover:text-indigo-600 cursor-pointer">
+      Section &amp; Component
+    </a>
+
+    <!-- Tooltip -->
+    <div class="tooltip absolute left-0 right-0 m-auto w-fit -bottom-[50px] z-[1000]  mb-2 px-2 py-1 text-xs text-white bg-gray-900 shadow-md whitespace-nowrap bg-[#4f46e5] rounded-full">
+      Coming Soon
+      <div class="absolute bottom-auto left-0 right-0 m-auto top-[-3px] bg-[#4f46e5] w-2 h-2 bg-gray-900 rotate-45"></div>
+    </div>
+  </div>
+</div>
+
                                 </div>
     </div>
 

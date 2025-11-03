@@ -6461,6 +6461,14 @@ input[type="radio"]:checked:disabled + label span{
   top: 100%;
 }
 
+.-bottom-\[50px\]{
+  bottom: -50px;
+}
+
+.top-\[-3px\]{
+  top: -3px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -6543,6 +6551,14 @@ input[type="radio"]:checked:disabled + label span{
 
 .z-auto{
   z-index: auto;
+}
+
+.z-\[1000px\]{
+  z-index: 1000px;
+}
+
+.z-\[1000\]{
+  z-index: 1000;
 }
 
 .order-1{
@@ -18710,6 +18726,11 @@ input[type="radio"]:checked:disabled + label span{
 .bg-yellow-900{
   --tw-bg-opacity: 1;
   background-color: rgb(113 63 18 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#4f46e5\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-0{
